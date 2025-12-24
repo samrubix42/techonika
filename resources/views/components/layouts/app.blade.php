@@ -3,61 +3,74 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ $title ?? 'Technonika' }}</title>
 
-    <!-- Favicon: SVG preferred with ICO fallback -->
-    <link  rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
 
-    @if (file_exists(public_path('build/manifest.json')))
-    @php
-    $manifest = json_decode(file_get_contents(public_path('build/manifest.json')), true);
-    $cssFile = $manifest['resources/css/app.css']['file'] ?? null;
-    $jsFile = $manifest['resources/js/app.js']['file'] ?? null;
-    @endphp
-
-    @if ($cssFile)
-    <link rel="stylesheet" href="{{ asset('build/' . $cssFile) }}">
-    @endif
-    @else
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @endif
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-    
-    <!-- Page-specific meta tags -->
+    <!-- Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+
+    <!-- Page specific meta -->
     @stack('meta')
-    
+
+    <!-- Styles & Scripts -->
+    @if (file_exists(public_path('build/manifest.json')))
+        @php
+            $manifest = json_decode(file_get_contents(public_path('build/manifest.json')), true);
+            $css = $manifest['resources/css/app.css']['file'] ?? null;
+            $js  = $manifest['resources/js/app.js']['file'] ?? null;
+        @endphp
+
+        @if ($css)
+            <link rel="stylesheet" href="{{ asset('build/'.$css) }}">
+        @endif
+
+        @if ($js)
+            <script src="{{ asset('build/'.$js) }}" defer></script>
+        @endif
+    @else
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @endif
     @vite('resources/css/app.css')
+
     @livewireStyles
-    <style>[x-cloak]{display:none!important;} .transition-fast{transition:all .25s ease}</style>
+
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+        .transition-fast {
+            transition: all 0.25s ease;
+        }
+    </style>
 </head>
 
 <body class="antialiased bg-gray-50 text-gray-800">
+
+    <!-- Header -->
     <livewire:includes.header />
 
-    {{ $slot }}
+    <!-- Page Content -->
+    <main class="min-h-screen">
+        {{ $slot }}
+    </main>
+
+    <!-- Footer -->
     <livewire:includes.footer />
-    @if (file_exists(public_path('build/manifest.json')))
-    @php
-    $manifest = json_decode(file_get_contents(public_path('build/manifest.json')), true);
-    $jsFile = $manifest['resources/js/app.js']['file'] ?? null;
-    @endphp
-
-    @if ($jsFile)
-    @endif
-    @endif
-    @livewireScripts
-</head>
-
-<body>
 
     @livewireScripts
 </body>
-
 </html>
