@@ -35,6 +35,13 @@ class AdminSidebar
                 'hasSubmenu' => false,
                 'submenu' => [],
             ],
+            (object)[
+                'title' => 'Service Categories',
+                'icon' => 'ti ti-list',
+                'url' => route('admin.service-category'),
+                'hasSubmenu' => false,
+                'submenu' => [],
+            ],
             
            
         ]);
