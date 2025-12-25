@@ -42,6 +42,13 @@ class AdminSidebar
                 'hasSubmenu' => false,
                 'submenu' => [],
             ],
+            (object)[
+                'title' => 'FAQ Management',
+                'icon' => 'ti ti-help-circle',
+                'url' => route('admin.faq-management'),
+                'hasSubmenu' => false,
+                'submenu' => [],
+            ],
             
            
         ]);
