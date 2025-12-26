@@ -21,6 +21,7 @@ class AdminSidebar
     public function get(): Collection
     {
         $menu = collect([
+
             (object)[
                 'title' => 'Dashboard',
                 'icon' => 'ti ti-home',
@@ -28,6 +29,37 @@ class AdminSidebar
                 'hasSubmenu' => false,
                 'submenu' => [],
             ],
+
+            (object)[
+                'title' => 'Users',
+                'icon' => 'ti ti-users',
+                'url' => 'javascript:void(0)',
+                'hasSubmenu' => true,
+                'submenu' => [
+                    (object)[
+                        'title' => 'User List',
+                        'icon' => 'ti ti-user',
+                        'url' => route('admin.users'),
+                        'hasSubmenu' => false,
+                        'submenu' => [],
+                    ],
+                    (object)[
+                        'title' => 'Permissions',
+                        'icon' => 'ti ti-lock',
+                        'url' => route('admin.permission'),
+                        'hasSubmenu' => false,
+                        'submenu' => [],
+                    ],
+                    (object)[
+                        'title' => 'Roles & Permissions',
+                        'icon' => 'ti ti-shield-check',
+                        'url' => route('admin.role-permission'),
+                        'hasSubmenu' => false,
+                        'submenu' => [],
+                    ],
+                ],
+            ],
+
             (object)[
                 'title' => 'Page Management',
                 'icon' => 'ti ti-file-text',
@@ -35,6 +67,7 @@ class AdminSidebar
                 'hasSubmenu' => false,
                 'submenu' => [],
             ],
+
             (object)[
                 'title' => 'Service Categories',
                 'icon' => 'ti ti-list',
@@ -42,6 +75,7 @@ class AdminSidebar
                 'hasSubmenu' => false,
                 'submenu' => [],
             ],
+
             (object)[
                 'title' => 'FAQ Management',
                 'icon' => 'ti ti-help-circle',
@@ -49,9 +83,9 @@ class AdminSidebar
                 'hasSubmenu' => false,
                 'submenu' => [],
             ],
-            
-           
+
         ]);
+
         return $menu;
     }
 }
