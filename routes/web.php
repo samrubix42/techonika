@@ -1,5 +1,9 @@
 <?php
 
+use App\Livewire\Admin\Blog\AddBlog;
+use App\Livewire\Admin\Blog\BlogList;
+use App\Livewire\Admin\Blog\CategoryList;
+use App\Livewire\Admin\Blog\UpdateBlog;
 use App\Livewire\Admin\Dashboard\Dashboard;
 use App\Livewire\Admin\Faq\Faq;
 use App\Livewire\Admin\Page\PageManagement;
@@ -20,6 +24,10 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/Users',UserList::class)->name('users');
     Route::get('/permission',PermissionList::class)->name('permission');
     Route::get('/role-permission',RoleList::class)->name('role-permission');
+    Route::get('/add-blog',AddBlog::class)->name('add-blog');
+    Route::get('/update-blog',UpdateBlog::class)->name('update-blog');
+    Route::get('/blog-list',BlogList::class)->name('blog-list');
+    Route::get('/blog-category',CategoryList::class)->name('blog-category');
 });
 
 Route::get('/clear-cache', function () {

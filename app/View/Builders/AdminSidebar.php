@@ -61,7 +61,7 @@ class AdminSidebar
             ],
 
             (object)[
-                'title' => 'Page Management',
+                'title' => 'Page',
                 'icon' => 'ti ti-file-text',
                 'url' => route('admin.page-management'),
                 'hasSubmenu' => false,
@@ -77,12 +77,41 @@ class AdminSidebar
             ],
 
             (object)[
-                'title' => 'FAQ Management',
+                'title' => 'FAQ',
                 'icon' => 'ti ti-help-circle',
                 'url' => route('admin.faq-management'),
                 'hasSubmenu' => false,
                 'submenu' => [],
             ],
+            (object)[
+                'title' => 'Blog',
+                'icon' => 'ti ti-article',
+                'url' => 'javascript:void(0)',
+                'hasSubmenu' => true,
+                'submenu' => [
+                    (object)[
+                        'title' => 'Add Blog',
+                        'icon' => 'ti ti-plus',
+                        'url' => route('admin.add-blog'),
+                        'hasSubmenu' => false,
+                        'submenu' => [],
+                    ],
+                    (object)[
+                        'title'=> 'Blog Categories',
+                        'icon' => 'ti ti-list',
+                        'url' => route('admin.blog-category'),
+                        'hasSubmenu' => false,
+                        'submenu' => [],
+                    ],
+                    (object)[
+                        'title' => 'Blog List',
+                        'icon' => 'ti ti-list-details',
+                        'url' => route('admin.blog-list'),
+                        'hasSubmenu' => false,
+                        'submenu' => [],
+                    ],
+                ],
+            ],  
 
         ]);
 
