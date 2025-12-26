@@ -11,12 +11,14 @@ use App\Livewire\Admin\RolePermission\PermissionList;
 use App\Livewire\Admin\RolePermission\RoleList;
 use App\Livewire\Admin\RolePermission\UserList;
 use App\Livewire\Admin\Service\ServiceCategoryList;
+use App\Livewire\Auth\Login;
 use App\Livewire\Public\Home\Index;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',action: Index::class)->name('index');
-Route::prefix('admin')->name('admin.')->group(function () {
+Route::get('/login',Login::class)->name('login');
+Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/',Dashboard::class)->name('dashboard');
     Route::get('/page-management',PageManagement::class)->name('page-management');
     Route::get('/service-category',ServiceCategoryList::class)->name('service-category');
@@ -25,7 +27,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/permission',PermissionList::class)->name('permission');
     Route::get('/role-permission',RoleList::class)->name('role-permission');
     Route::get('/add-blog',AddBlog::class)->name('add-blog');
-    Route::get('/update-blog',UpdateBlog::class)->name('update-blog');
+    Route::get('/update-blog/{post}',UpdateBlog::class)->name('update-blog');
     Route::get('/blog-list',BlogList::class)->name('blog-list');
     Route::get('/blog-category',CategoryList::class)->name('blog-category');
 });
