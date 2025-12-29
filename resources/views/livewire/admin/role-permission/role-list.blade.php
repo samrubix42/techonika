@@ -81,8 +81,7 @@
                                 </button>
 
                                 <button
-                                    wire:click="delete({{ $role->id }})"
-                                    onclick="confirm('Delete this role?') || event.stopImmediatePropagation()"
+                                    wire:click="confirmDelete({{ $role->id }})"
                                     class="btn btn-sm btn-danger">
                                     <i class="ti ti-trash"></i>
                                 </button>
@@ -105,7 +104,7 @@
         </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal (Livewire-only) -->
     @if($modalOpen)
         <div class="modal modal-blur fade show d-block" tabindex="-1">
             <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -169,6 +168,25 @@
         </div>
 
         <!-- Backdrop -->
+        <div class="modal-backdrop fade show"></div>
+    @endif
+
+    <!-- Delete Confirmation Modal -->
+    @if($confirmingDelete)
+        <div class="modal modal-blur fade show d-block" tabindex="-1">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal-title">Delete Role</div>
+                        <p>Are you sure you want to delete <strong>{{ $deleteName }}</strong>?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button wire:click="cancelDelete" class="btn btn-secondary">Cancel</button>
+                        <button wire:click="deleteConfirmed" class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="modal-backdrop fade show"></div>
     @endif
 </div>

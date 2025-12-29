@@ -146,8 +146,8 @@
     @endif
 
     <!-- DELETE MODAL -->
-    @if($confirmDelete)
-        <div class="modal modal-blur fade show d-block" wire:ignore.self>
+    @if($confirmingDelete)
+        <div class="modal modal-blur fade show d-block">
             <div class="modal-dialog modal-sm modal-dialog-centered">
                 <div class="modal-content">
 

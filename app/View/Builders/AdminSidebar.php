@@ -89,13 +89,7 @@ class AdminSidebar
                 'url' => 'javascript:void(0)',
                 'hasSubmenu' => true,
                 'submenu' => [
-                    (object)[
-                        'title' => 'Add Blog',
-                        'icon' => 'ti ti-plus',
-                        'url' => route('admin.add-blog'),
-                        'hasSubmenu' => false,
-                        'submenu' => [],
-                    ],
+                  
                     (object)[
                         'title'=> 'Blog Categories',
                         'icon' => 'ti ti-list',

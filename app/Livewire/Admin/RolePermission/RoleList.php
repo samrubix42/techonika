@@ -21,6 +21,11 @@ class RoleList extends Component
     public $name = '';
     public $selectedPermissions = [];
 
+    // Delete confirmation
+    public $confirmingDelete = false;
+    public $deleteId = null;
+    public $deleteName = '';
+
     protected function rules()
     {
         return [
@@ -90,6 +95,33 @@ class RoleList extends Component
         $this->selectedPermissions = $role->permissions->pluck('name')->toArray();
 
         $this->modalOpen = true;
+    }
+
+    /* ---------------- Delete Confirmation ---------------- */
+
+    public function confirmDelete($id)
+    {
+        $role = Role::find($id);
+        $this->deleteId = $id;
+        $this->deleteName = $role ? $role->name : '';
+        $this->confirmingDelete = true;
+    }
+
+    public function cancelDelete()
+    {
+        $this->confirmingDelete = false;
+        $this->deleteId = null;
+        $this->deleteName = '';
+    }
+
+    public function deleteConfirmed()
+    {
+        if ($this->deleteId) {
+            Role::findOrFail($this->deleteId)->delete();
+            session()->flash('success', 'Role deleted successfully');
+        }
+
+        $this->cancelDelete();
     }
 
     public function delete($id)

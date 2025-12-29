@@ -19,6 +19,11 @@ class BlogList extends Component
         'search' => ['except' => ''],
     ];
 
+    // Delete confirmation state
+    public $confirmingDelete = false;
+    public $deleteId = null;
+    public $deleteTitle = '';
+
     public function updatingSearch()
     {
         $this->resetPage();
@@ -45,5 +50,32 @@ class BlogList extends Component
     public function edit($id)
     {
         return redirect()->route('admin.update-blog', ['post' => $id]);
+    }
+
+    // Delete confirmation methods
+    public function showDelete($id)
+    {
+        $post = Post::find($id);
+        $this->deleteId = $id;
+        $this->deleteTitle = $post ? $post->title : '';
+        $this->confirmingDelete = true;
+    }
+
+    public function cancelDelete()
+    {
+        $this->confirmingDelete = false;
+        $this->deleteId = null;
+        $this->deleteTitle = '';
+    }
+
+    public function deleteConfirmed()
+    {
+        if ($this->deleteId) {
+            Post::findOrFail($this->deleteId)->delete();
+            session()->flash('success', 'Post deleted successfully');
+        }
+
+        $this->cancelDelete();
+        $this->resetPage();
     }
 }

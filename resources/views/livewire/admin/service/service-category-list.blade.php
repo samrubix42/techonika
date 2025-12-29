@@ -81,7 +81,7 @@
                                         Edit
                                     </button>
                                     <button class="btn btn-sm btn-outline-danger"
-                                        wire:click="confirmDelete({{ $category->id }})">
+                                        wire:click="showDeleteModal({{ $category->id }})">
                                         Delete
                                     </button>
                                 </div>

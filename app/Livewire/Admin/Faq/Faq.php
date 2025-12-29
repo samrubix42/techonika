@@ -22,7 +22,7 @@ class Faq extends Component
     public $status = true;
 
     public $modalOpen = false;
-    public $confirmDelete = false;
+    public $confirmingDelete = false;
     public $deleteId;
 
     #[Layout('components.layouts.admin')]
@@ -98,7 +98,7 @@ class Faq extends Component
     public function confirmDelete($id)
     {
         $this->deleteId = $id;
-        $this->confirmDelete = true;
+        $this->confirmingDelete = true;
     }
 
     public function deleteConfirmed()
@@ -107,12 +107,12 @@ class Faq extends Component
 
         session()->flash('success', 'FAQ deleted successfully.');
 
-        $this->confirmDelete = false;
+        $this->confirmingDelete = false;
     }
 
     public function closeDeleteModal()
     {
-        $this->confirmDelete = false;
+        $this->confirmingDelete = false;
         $this->deleteId = null;
     }
 

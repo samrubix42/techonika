@@ -53,7 +53,7 @@ class ServiceCategoryList extends Component
         $this->modalOpen = false;
     }
 
-    public function confirmDelete($id)
+    public function showDeleteModal($id)
     {
         $this->deleteId = $id;
         $this->confirmDelete = true;
