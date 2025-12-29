@@ -78,8 +78,7 @@
                                 </button>
 
                                 <button
-                                    wire:click="delete({{ $permission->id }})"
-                                    onclick="confirm('Delete this permission?') || event.stopImmediatePropagation()"
+                                    wire:click="confirmDelete({{ $permission->id }})"
                                     class="btn btn-sm btn-danger"
                                     title="Delete">
                                     <i class="ti ti-trash"></i>
@@ -150,6 +149,32 @@
         </div>
 
         <!-- Backdrop -->
+        <div class="modal-backdrop fade show"></div>
+    @endif
+    
+    <!-- Delete Confirmation Modal -->
+    @if($confirmingDelete)
+        <div class="modal modal-blur fade show d-block" tabindex="-1" role="dialog" aria-modal="true">
+            <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-status bg-danger"></div>
+
+                    <div class="modal-body text-center py-4">
+                        <i class="ti ti-trash ti-3x text-danger mb-2"></i>
+                        <h3 class="mb-1">Delete Permission</h3>
+                        <p class="text-muted mb-0">Are you sure you want to delete <strong>{{ $deleteName }}</strong>?</p>
+                        <p class="text-muted small mt-2">This action cannot be undone.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <div class="w-100 d-flex justify-content-end gap-2">
+                            <button wire:click="cancelDelete" class="btn btn-outline-secondary">Cancel</button>
+                            <button wire:click="deleteConfirmed" class="btn btn-danger">Yes, delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="modal-backdrop fade show"></div>
     @endif
 </div>

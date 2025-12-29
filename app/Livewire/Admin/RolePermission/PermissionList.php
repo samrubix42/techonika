@@ -17,6 +17,10 @@ class PermissionList extends Component
     public $permissionId = null;
     public $name = '';
     public $modalOpen = false;
+    // Delete confirmation state
+    public $confirmingDelete = false;
+    public $deleteId = null;
+    public $deleteName = '';
 
     protected $rules = [
         'name' => 'required|unique:permissions,name',
@@ -75,9 +79,29 @@ class PermissionList extends Component
         $this->modalOpen = true;
     }
 
-    public function delete($id)
+    // Delete confirmation flow
+    public function confirmDelete($id)
     {
-        Permission::findOrFail($id)->delete();
-        session()->flash('success', 'Permission deleted');
+        $permission = Permission::find($id);
+        $this->deleteId = $id;
+        $this->deleteName = $permission ? $permission->name : '';
+        $this->confirmingDelete = true;
+    }
+
+    public function cancelDelete()
+    {
+        $this->confirmingDelete = false;
+        $this->deleteId = null;
+        $this->deleteName = '';
+    }
+
+    public function deleteConfirmed()
+    {
+        if ($this->deleteId) {
+            Permission::findOrFail($this->deleteId)->delete();
+            session()->flash('success', 'Permission deleted');
+        }
+
+        $this->cancelDelete();
     }
 }
