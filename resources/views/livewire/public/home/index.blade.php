@@ -1,65 +1,61 @@
 <div>
-    <section class="relative bg-gradient-to-br from-black via-slate-950 to-black overflow-hidden">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-24 sm:py-36 text-center relative z-10">
+    <section class="relative isolate font-mono  px-6 pt-32 lg:px-8 bg-black overflow-hidden">
 
-            <span class="inline-flex items-center gap-2 mb-6 text-xs sm:text-sm font-semibold
-          text-amber-400 bg-white/5 backdrop-blur
-          px-5 py-2 rounded-full border border-white/10">
+        <!-- TOP GRADIENT -->
+        <div class="absolute inset-x-0 -top-40 -z-10 blur-3xl">
+            <div class="w-[600px] h-[600px] bg-gradient-to-tr
+                from-amber-400 to-yellow-400
+                opacity-20 rounded-full mx-auto"></div>
+        </div>
+
+        <div class="mx-auto max-w-4xl text-center py-32">
+
+            <span class="inline-flex items-center gap-2 mb-6
+      text-xs font-semibold text-amber-400
+      bg-white/5 px-5 py-2 rounded-full border border-white/10">
                 Software Development Company
             </span>
 
-            <h1 class="text-4xl sm:text-6xl font-bold leading-tight tracking-tight text-white">
+            <h1 class="text-5xl sm:text-7xl  tracking-tight text-white">
                 We Build
-                <span class="font-[Pacifico] bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent font-normal">
+                <span class="bg-gradient-to-r from-amber-400 to-yellow-400
+                   bg-clip-text text-transparent font-normal">
                     Scalable Software
                 </span>
-                <br class="hidden sm:block">
+                <br class="hidden sm:block" />
                 For the Next Generation
             </h1>
 
-            <p class="mt-6 sm:mt-8 text-base sm:text-xl text-slate-400 max-w-3xl mx-auto">
-                Empowering startups and enterprises with modern, secure, and high-performance
-                web & mobile applications built for growth and scale.
+            <p class="mt-8 text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">
+                Empowering startups and enterprises with secure, high-performance
+                web & mobile applications.
             </p>
 
-            <!-- CALLBACK -->
-            <div class="mt-10 flex justify-center">
-                <div class="flex flex-col sm:flex-row w-full max-w-xl rounded-2xl sm:rounded-full
-                  bg-white/10 backdrop-blur border border-white/20 overflow-hidden">
-
-                    <input
-                        type="tel"
-                        placeholder="Enter Your Mobile No *"
-                        class="flex-1 px-6 py-4 bg-transparent text-white placeholder-slate-400 focus:outline-none">
-
-                    <button
-                        class="px-6 py-4 font-semibold text-white
-                 bg-gradient-to-r from-orange-500 to-amber-500">
-                        Request Callback
-                    </button>
-                </div>
-            </div>
-
             <!-- CTA -->
-            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+            <div class="mt-10 flex justify-center gap-6">
                 <a href="#contact"
-                    class="px-8 py-3 rounded-xl font-semibold text-black
-                bg-gradient-to-r from-amber-400 to-yellow-400">
+                    class="rounded-md bg-amber-400 px-6 py-3
+                font-semibold text-black">
                     Get Free Consultation
                 </a>
 
                 <a href="#services"
-                    class="px-8 py-3 rounded-xl font-semibold
-                border border-amber-400 text-amber-400">
-                    Explore Services
+                    class="text-white font-semibold">
+                    Explore Services →
                 </a>
             </div>
         </div>
 
-        <div class="absolute -top-40 left-1/2 -translate-x-1/2
-              w-[400px] sm:w-[600px] h-[400px] sm:h-[600px]
-              bg-amber-400/20 blur-3xl"></div>
+        <!-- BOTTOM GRADIENT -->
+        <div class="absolute inset-x-0 top-[calc(100%-20rem)] -z-10 blur-3xl">
+            <div class="w-[600px] h-[600px] bg-gradient-to-tr
+                from-yellow-400 to-amber-400
+                opacity-20 rounded-full mx-auto"></div>
+        </div>
     </section>
+
+
+
     <section class="bg-black py-16 sm:py-24 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
@@ -144,7 +140,7 @@
                 </div>
                 <style>
                     .client-logo {
-                        height: 48px;
+                        height: 58px;
                         width: auto;
                         opacity: 0.8;
                         transition: all 0.3s ease;
@@ -158,7 +154,7 @@
 
                     @media (min-width: 640px) {
                         .client-logo {
-                            height: 56px;
+                            height: 100px;
                         }
                     }
 
@@ -189,7 +185,7 @@
 
             <!-- Section Heading -->
             <div class="text-center mb-16">
-                <h2 class="text-3xl sm:text-5xl font-bold text-white">
+                <h2 class="text-4xl sm:text-5xl  text-white">
                     What We Do
                 </h2>
                 <p class="mt-4 text-slate-400 max-w-3xl mx-auto">

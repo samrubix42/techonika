@@ -12,11 +12,15 @@ use App\Livewire\Admin\RolePermission\RoleList;
 use App\Livewire\Admin\RolePermission\UserList;
 use App\Livewire\Admin\Service\ServiceCategoryList;
 use App\Livewire\Auth\Login;
+use App\Livewire\Public\Blog\Blog;
+use App\Livewire\Public\Blog\BlogView;
 use App\Livewire\Public\Home\Index;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',action: Index::class)->name('index');
+Route::get('/blog',Blog::class)->name('blog');
+Route::get('/blog-view',BlogView::class)->name('blog.view');
 Route::get('/login',Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/',Dashboard::class)->name('dashboard');

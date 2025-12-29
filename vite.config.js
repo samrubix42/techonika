@@ -10,6 +10,13 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
+     theme: {
+    extend: {
+      fontFamily: {
+        mono: ['"JetBrains Mono"', 'monospace'], // Use 'mono' as the key
+      },
+    },
+  },
     server: {
         watch: {
             ignored: ['**/storage/framework/views/**'],
