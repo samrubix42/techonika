@@ -55,7 +55,7 @@
                     <p>We retain data as long as necessary to provide the service and comply with legal obligations. You can request deletion as described below.</p>
 
                     <h2 id="your-rights">Your rights</h2>
-                    <p>You may access, correct, or request deletion of your personal data. For requests, contact us at <a href="mailto:privacy@techonika.example" class="text-amber-300">privacy@techonika.example</a>.</p>
+                    <p>You may access, correct, or request deletion of your personal data. For requests, contact us at <a href="mailto:info@techonika.com" class="text-amber-300">info@techonika.com</a> or call <a href="tel:+918810599816" class="text-amber-300">+91-8810599816</a>.</p>
 
                     <h2 id="children">Children's privacy</h2>
                     <p>Our services are not directed at children under 13 (or local minimum age). We do not knowingly collect information from children.</p>
@@ -64,7 +64,7 @@
                     <p>We may update this policy. We will post the effective date at the top of the page and notify users as appropriate.</p>
 
                     <h2 id="contact">Contact</h2>
-                    <p>If you have questions or requests, email us at <a href="mailto:privacy@techonika.example" class="text-amber-300">privacy@techonika.example</a> or use our contact form.</p>
+                    <p>If you have questions or requests, email us at <a href="mailto:info@techonika.com" class="text-amber-300">info@techonika.com</a> or call <a href="tel:+918810599816" class="text-amber-300">+91-8810599816</a>, or use our contact form.</p>
                 </article>
             </main>
 
@@ -86,7 +86,7 @@
 
                 <div class="mt-6 bg-white/3 p-4 rounded-lg text-sm text-slate-300">
                     <div class="font-semibold text-white">Need help?</div>
-                    <p class="mt-2">Reach out at <a href="mailto:privacy@techonika.example" class="text-amber-300">privacy@techonika.example</a></p>
+                    <p class="mt-2">Reach out at <a href="mailto:info@techonika.com" class="text-amber-300">info@techonika.com</a> or <a href="tel:+918810599816" class="text-amber-300">+91-8810599816</a></p>
                 </div>
             </aside>
         </div>

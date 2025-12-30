@@ -50,7 +50,8 @@
             <div class="lg:w-1/4">
                 <h4 class="text-sm tracking-widest uppercase text-[#f6b615] mb-4">Get in touch</h4>
                 <p class="text-gray-300 text-sm">Have a project or question? We’re ready to help.</p>
-                <a href="mailto:hello@technonika.com" class="mt-4 inline-block text-sm text-gray-400 hover:text-white transition">hello@technonika.com</a>
+                <a href="mailto:info@techonika.com" class="mt-4 inline-block text-sm text-gray-400 hover:text-white transition">info@techonika.com</a>
+                <p class="mt-2 text-sm text-gray-400">Call us: <a href="tel:+918810599816" class="text-amber-300 hover:underline">+91-8810599816</a></p>
 
                 <div class="mt-6 flex items-center gap-4">
                     <!-- LinkedIn -->
