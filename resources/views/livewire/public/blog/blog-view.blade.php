@@ -1,13 +1,13 @@
 <div class="w-full bg-black text-white min-h-screen">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+    <div class="max-w-7xl mx-auto px-[9%] py-[10%] sm:px-6 py-10">
 
 
 
         <!-- LAYOUT -->
-        <div class="flex flex-col lg:flex-row lg:gap-12 lg:items-start lg:items-stretch lg:justify-between lg:space-y-0 space-y-10 lg:min-h-[800px]">
+        <div class="flex flex-col lg:flex-row lg:gap-12 lg:items-start lg:items-stretch lg:justify-between lg:space-y-0 space-y-10 lg:min-h-[800px] ">
 
             <!-- LEFT CONTENT -->
-            <main class="lg:col-span-8">
+            <main class="lg:col-span-7">
 
                 <!-- DATE -->
                 <span class="inline-block mb-2 text-xs tracking-wide text-amber-400 uppercase">
@@ -96,7 +96,7 @@ if ('loading' in HTMLImageElement.prototype) {
             </main>
 
             <!-- RIGHT SIDEBAR -->
-            <aside class="lg:col-span-4 lg:border-l border-white/10 lg:pl-8 space-y-8">
+            <aside class="lg:col-span-5 lg:border-l border-white/10 lg:pl-8 space-y-8">
 
                 <!-- SEARCH -->
                 <div class="bg-white/3 p-4 rounded-lg">

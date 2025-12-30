@@ -12,6 +12,7 @@ use App\Livewire\Admin\RolePermission\RoleList;
 use App\Livewire\Admin\RolePermission\UserList;
 use App\Livewire\Admin\Service\ServiceCategoryList;
 use App\Livewire\Auth\Login;
+use App\Livewire\PrivacyPolicy;
 use App\Livewire\Public\About\About;
 use App\Livewire\Public\Blog\Blog;
 use App\Livewire\Public\Blog\BlogView;
@@ -30,6 +31,7 @@ Route::get('/about',About::class)->name('about');
 Route::get('/portfolio',Portfolio::class)->name('portfolio');
 Route::get('/services',Service::class)->name('services');
 Route::get('/services-view',ServiceView::class)->name('services.view');
+Route::get('/privacy-policy',PrivacyPolicy::class)->name('privacy-policy');
 Route::get('/login',Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/',Dashboard::class)->name('dashboard');
