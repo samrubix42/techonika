@@ -4,7 +4,7 @@
   :class="scrolled
     ? 'bg-black/60 backdrop-blur-xl border-b border-white/10'
     : 'bg-transparent'"
-  class="fixed font-mono inset-x-0 top-0 z-50 transition-all">
+  class="fixed font-sans inset-x-0 top-0 z-50 transition-all">
 
   <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
@@ -70,7 +70,7 @@
             <div class="bg-black/60 rounded-xl p-6 border border-white/10">
               <h5 class="font-semibold mb-2">Free Consultation</h5>
               <p class="text-sm text-gray-400">Let’s discuss your idea.</p>
-                      <a href="{{ Route::has('contact') ? route('contact') : '#contact' }}"
+              <a href="{{ Route::has('contact') ? route('contact') : '#contact' }}"
                 wire:navigate
                 class="mt-4 block text-center bg-amber-400
                         text-black font-semibold py-2 rounded-lg">

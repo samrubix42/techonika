@@ -13,8 +13,10 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 
     <!-- Icons -->
     <link
@@ -59,15 +61,15 @@
     </style>
 </head>
 
-<body class="antialiased bg-gray-50 text-gray-800">
+<body class="antialiased bg-gray-50 text-gray-800 font-sans">
 
     <!-- Header -->
     <livewire:includes.header />
 
-    <!-- Page Content -->
-    <main class="min-h-screen font-mono">
+    <main class="min-h-screen max-w-full overflow-x-hidden">
         {{ $slot }}
     </main>
+
 
     <!-- Footer -->
     <livewire:includes.footer />

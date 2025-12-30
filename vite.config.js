@@ -10,13 +10,18 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
-     theme: {
-    extend: {
-      fontFamily: {
-        mono: ['"JetBrains Mono"', 'monospace'], // Use 'mono' as the key
-      },
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ['Montserrat', 'ui-sans-serif', 'system-ui'],
+            },
+            colors: {
+                primary: '#f6b615',   // Main brand color
+                dark: '#000000',      // Black
+                light: '#ffffff',     // White
+            },
+        },
     },
-  },
     server: {
         watch: {
             ignored: ['**/storage/framework/views/**'],

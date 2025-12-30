@@ -15,6 +15,7 @@ use App\Livewire\Auth\Login;
 use App\Livewire\Public\About\About;
 use App\Livewire\Public\Blog\Blog;
 use App\Livewire\Public\Blog\BlogView;
+use App\Livewire\Public\Home\Home;
 use App\Livewire\Public\Home\Index;
 use App\Livewire\Public\Portfolio\Portfolio;
 use App\Livewire\Public\Service\Service;
@@ -22,13 +23,13 @@ use App\Livewire\Public\Service\ServiceView;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/',action: Index::class)->name('index');
+Route::get('/',action: Home::class)->name('index');
 Route::get('/blog',Blog::class)->name('blog');
 Route::get('/blog-view',BlogView::class)->name('blog.view');
 Route::get('/about',About::class)->name('about');
 Route::get('/portfolio',Portfolio::class)->name('portfolio');
 Route::get('/services',Service::class)->name('services');
-Route::get('/services-view',ServiceView::class)->name('services.view');
+Route::get('/service-view',ServiceView::class)->name('services.view');
 Route::get('/login',Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/',Dashboard::class)->name('dashboard');
