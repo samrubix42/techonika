@@ -1,8 +1,5 @@
 <div x-data="{ mobileSearch: false }" class="min-h-screen bg-black text-white relative isolate overflow-hidden">
-    <!-- TOP GRADIENT -->
-    <div class="absolute left-1/2 -top-36 -z-10 blur-3xl -translate-x-1/2 pointer-events-none">
-        <div class="w-[500px] h-[500px] bg-gradient-to-tr from-amber-400 to-yellow-400 opacity-12 rounded-full"></div>
-    </div>
+
 
     <div class="max-w-6xl mx-auto px-4 py-16 sm:py-20">
         <header class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">

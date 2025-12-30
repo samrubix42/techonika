@@ -163,123 +163,123 @@
             </div>
         </section>
 
-<div class="bg-black py-8 flex flex-col">
-    <!-- Heading -->
-    <h2 class="text-white text-4xl md:text-5xl font-bold py-10 px-6 text-center">
-        Why Choose Us
-    </h2>
+        <div class="bg-black py-8 flex flex-col">
+            <!-- Heading -->
+            <h2 class="text-white text-4xl md:text-5xl font-bold py-10 px-6 text-center">
+                Why Choose Us
+            </h2>
 
- <section class="relative bg-black py-6 overflow-hidden bg-center bg-no-repeat bg-cover"
-    style="background-image: url('{{ asset('images/lines.png') }}'); object-fit: contain;">
+            <section class="relative bg-black py-6 overflow-hidden bg-center bg-no-repeat bg-cover"
+                style="background-image: url('{{ asset('images/lines.png') }}'); object-fit: contain;">
 
-    <!-- Yellow blur circles -->
-    <div class="absolute top-20 right-0 md:right-20 lg:right-32 w-72 h-72 bg-primary opacity-20 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-20 left-0 md:left-20 lg:left-32 w-72 h-72 bg-primary opacity-20 rounded-full blur-3xl"></div>
+                <!-- Yellow blur circles -->
+                <div class="absolute top-20 right-0 md:right-20 lg:right-32 w-72 h-72 bg-primary opacity-20 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 left-0 md:left-20 lg:left-32 w-72 h-72 bg-primary opacity-20 rounded-full blur-3xl"></div>
 
-    <!-- Content wrapper -->
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+                <!-- Content wrapper -->
+                <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
 
-        <!-- Card 1 -->
-        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
-            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-yellow-400/10">
-                <svg class="w-6 h-6 text-[#f6b615]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M9.75 17L9 21l3-1.5L15 21l-.75-4M12 3l3.09 6.26L22 10l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.87 2 10l6.91-.74L12 3z" />
-                </svg>
-            </div>
-            <h3 class="text-white font-semibold text-lg">Experienced Developers</h3>
-            <p class="text-gray-200 italic">
-                A skilled team delivering scalable, secure, and high-performance web solutions.
-            </p>
-            <a href="#" class="text-[#f6b615] font-medium hover:underline">Read More</a>
+                    <!-- Card 1 -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-yellow-400/10">
+                            <svg class="w-6 h-6 text-[#f6b615]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.75 17L9 21l3-1.5L15 21l-.75-4M12 3l3.09 6.26L22 10l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.87 2 10l6.91-.74L12 3z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-semibold text-lg">Experienced Developers</h3>
+                        <p class="text-gray-200 italic">
+                            A skilled team delivering scalable, secure, and high-performance web solutions.
+                        </p>
+                        <a href="#" class="text-[#f6b615] font-medium hover:underline">Read More</a>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-yellow-400/10">
+                            <svg class="w-6 h-6 text-[#f6b615]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-10v2m0 8v2" />
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-semibold text-lg">Custom Solutions</h3>
+                        <p class="text-gray-200 italic">
+                            Tailor-made development aligned with your business goals and brand identity.
+                        </p>
+                        <a href="#" class="text-[#f6b615] font-medium hover:underline">Read More</a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-yellow-400/10">
+                            <svg class="w-6 h-6 text-[#f6b615]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16l4-4-4-4m16 8l-4-4 4-4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-semibold text-lg">Modern UI / UX</h3>
+                        <p class="text-gray-200 italic">
+                            Clean, intuitive, and responsive interfaces that enhance user engagement.
+                        </p>
+                        <a href="#" class="text-[#f6b615] font-medium hover:underline">Read More</a>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-yellow-400/10">
+                            <svg class="w-6 h-6 text-[#f6b615]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-semibold text-lg">High Performance</h3>
+                        <p class="text-gray-200 italic">
+                            Optimized websites built for speed, SEO, and smooth performance.
+                        </p>
+                        <a href="#" class="text-[#f6b615] font-medium hover:underline">Read More</a>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-yellow-400/10">
+                            <svg class="w-6 h-6 text-[#f6b615]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 11c0-3.866-3.582-7-8-7v14c4.418 0 8-3.134 8-7zm0 0c0 3.866 3.582 7 8 7V4c-4.418 0-8 3.134-8 7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-semibold text-lg">Secure Architecture</h3>
+                        <p class="text-gray-200 italic">
+                            Strong security practices to protect data and ensure reliability.
+                        </p>
+                        <a href="#" class="text-[#f6b615] font-medium hover:underline">Read More</a>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-yellow-400/10">
+                            <svg class="w-6 h-6 text-[#f6b615]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M18.364 5.636l-1.414 1.414M6.343 17.657l-1.414 1.414M5.636 5.636l1.414 1.414M17.657 17.657l1.414 1.414M12 8v4l3 3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-semibold text-lg">Ongoing Support</h3>
+                        <p class="text-gray-200 italic">
+                            Continuous support and maintenance even after project delivery.
+                        </p>
+                        <a href="#" class="text-[#f6b615] font-medium hover:underline">Read More</a>
+                    </div>
+
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-12 text-center relative z-10">
+                    <button class="bg-[#f6b615] text-black px-6 py-3 rounded-lg font-semibold shadow-lg hover:brightness-110 transition">
+                        Book Your Call
+                    </button>
+                </div>
+            </section>
+
         </div>
-
-        <!-- Card 2 -->
-        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
-            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-yellow-400/10">
-                <svg class="w-6 h-6 text-[#f6b615]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-10v2m0 8v2" />
-                </svg>
-            </div>
-            <h3 class="text-white font-semibold text-lg">Custom Solutions</h3>
-            <p class="text-gray-200 italic">
-                Tailor-made development aligned with your business goals and brand identity.
-            </p>
-            <a href="#" class="text-[#f6b615] font-medium hover:underline">Read More</a>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
-            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-yellow-400/10">
-                <svg class="w-6 h-6 text-[#f6b615]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 16l4-4-4-4m16 8l-4-4 4-4" />
-                </svg>
-            </div>
-            <h3 class="text-white font-semibold text-lg">Modern UI / UX</h3>
-            <p class="text-gray-200 italic">
-                Clean, intuitive, and responsive interfaces that enhance user engagement.
-            </p>
-            <a href="#" class="text-[#f6b615] font-medium hover:underline">Read More</a>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
-            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-yellow-400/10">
-                <svg class="w-6 h-6 text-[#f6b615]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-            </div>
-            <h3 class="text-white font-semibold text-lg">High Performance</h3>
-            <p class="text-gray-200 italic">
-                Optimized websites built for speed, SEO, and smooth performance.
-            </p>
-            <a href="#" class="text-[#f6b615] font-medium hover:underline">Read More</a>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
-            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-yellow-400/10">
-                <svg class="w-6 h-6 text-[#f6b615]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 11c0-3.866-3.582-7-8-7v14c4.418 0 8-3.134 8-7zm0 0c0 3.866 3.582 7 8 7V4c-4.418 0-8 3.134-8 7z" />
-                </svg>
-            </div>
-            <h3 class="text-white font-semibold text-lg">Secure Architecture</h3>
-            <p class="text-gray-200 italic">
-                Strong security practices to protect data and ensure reliability.
-            </p>
-            <a href="#" class="text-[#f6b615] font-medium hover:underline">Read More</a>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
-            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-yellow-400/10">
-                <svg class="w-6 h-6 text-[#f6b615]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M18.364 5.636l-1.414 1.414M6.343 17.657l-1.414 1.414M5.636 5.636l1.414 1.414M17.657 17.657l1.414 1.414M12 8v4l3 3" />
-                </svg>
-            </div>
-            <h3 class="text-white font-semibold text-lg">Ongoing Support</h3>
-            <p class="text-gray-200 italic">
-                Continuous support and maintenance even after project delivery.
-            </p>
-            <a href="#" class="text-[#f6b615] font-medium hover:underline">Read More</a>
-        </div>
-
-    </div>
-
-    <!-- CTA -->
-    <div class="mt-12 text-center relative z-10">
-        <button class="bg-[#f6b615] text-black px-6 py-3 rounded-lg font-semibold shadow-lg hover:brightness-110 transition">
-            Book Your Call
-        </button>
-    </div>
-</section>
-
-</div>
 
 
         <section class="bg-black py-24">
