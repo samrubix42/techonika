@@ -29,7 +29,7 @@ Route::get('/blog-view',BlogView::class)->name('blog.view');
 Route::get('/about',About::class)->name('about');
 Route::get('/portfolio',Portfolio::class)->name('portfolio');
 Route::get('/services',Service::class)->name('services');
-Route::get('/service-view',ServiceView::class)->name('services.view');
+Route::get('/services-view',ServiceView::class)->name('services.view');
 Route::get('/login',Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/',Dashboard::class)->name('dashboard');
