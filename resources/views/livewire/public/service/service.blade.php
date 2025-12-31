@@ -2,10 +2,10 @@
     <!-- TOP ACCENT -->
 
 
-    <div class="max-w-6xl mx-auto px-4 py-16 sm:py-20">
+    <div class="max-w-6xl mx-auto px-6 md:px-8 py-16 sm:py-20">
         <header class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
             <div>
-                <h1 class="text-5xl sm:text-4xl font-bold">Our Services</h1>
+                <h1 class="text-4xl md:text-5xl font-bold">Our Services</h1>
                 <p class="mt-2 text-sm text-slate-400 max-w-xl">End-to-end services that help you build, launch and scale secure, high-performance digital products.</p>
             </div>
 
@@ -57,156 +57,156 @@
         </nav>
 
         <main>
-           <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
-    <!-- Card: Web Development -->
-    <div class="group relative rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-6
+                <!-- Card: Web Development -->
+                <div class="group relative rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-6
                 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/40 hover:shadow-[0_20px_60px_-20px_rgba(246,182,21,0.35)]">
-        <h3 class="text-lg font-semibold text-white mb-3">Web Development</h3>
-        <ul class="text-sm text-slate-300 list-disc list-inside space-y-1">
-            <li>Custom website design reflecting brand identity</li>
-            <li>Responsive & mobile-friendly layouts</li>
-            <li>Modern frameworks and best practices</li>
-            <li>Immersive UX/UI with intuitive navigation</li>
-        </ul>
-        <div class="mt-6 flex justify-end">
-            <a href="#"
-                class="inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-white transition">
-                Read More
-                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-            </a>
-        </div>
-    </div>
+                    <h3 class="text-lg font-semibold text-white mb-3">Web Development</h3>
+                    <ul class="text-sm text-slate-300 list-disc list-inside space-y-1">
+                        <li>Custom website design reflecting brand identity</li>
+                        <li>Responsive & mobile-friendly layouts</li>
+                        <li>Modern frameworks and best practices</li>
+                        <li>Immersive UX/UI with intuitive navigation</li>
+                    </ul>
+                    <div class="mt-6 flex justify-end">
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-white transition">
+                            Read More
+                            <svg class="h-4 w-4 transition-transform group-hover:translate-x-1"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
 
-    <!-- Card: App Development -->
-    <div class="group relative rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-6
+                <!-- Card: App Development -->
+                <div class="group relative rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-6
                 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/40 hover:shadow-[0_20px_60px_-20px_rgba(246,182,21,0.35)]">
-        <h3 class="text-lg font-semibold text-white mb-3">App Development</h3>
-        <ul class="text-sm text-slate-300 list-disc list-inside space-y-1">
-            <li>Native & cross-platform apps</li>
-            <li>Intuitive UX/UI design</li>
-            <li>Integration with performant APIs</li>
-            <li>Up-to-date features for app genre</li>
-        </ul>
-        <div class="mt-6 flex justify-end">
-            <a href="#"
-                class="inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-white transition">
-                Read More
-                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-            </a>
-        </div>
-    </div>
+                    <h3 class="text-lg font-semibold text-white mb-3">App Development</h3>
+                    <ul class="text-sm text-slate-300 list-disc list-inside space-y-1">
+                        <li>Native & cross-platform apps</li>
+                        <li>Intuitive UX/UI design</li>
+                        <li>Integration with performant APIs</li>
+                        <li>Up-to-date features for app genre</li>
+                    </ul>
+                    <div class="mt-6 flex justify-end">
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-white transition">
+                            Read More
+                            <svg class="h-4 w-4 transition-transform group-hover:translate-x-1"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
 
-    <!-- Card: Digital Marketing -->
-    <div class="group relative rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-6
+                <!-- Card: Digital Marketing -->
+                <div class="group relative rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-6
                 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/40 hover:shadow-[0_20px_60px_-20px_rgba(246,182,21,0.35)]">
-        <h3 class="text-lg font-semibold text-white mb-3">Digital Marketing</h3>
-        <ul class="text-sm text-slate-300 list-disc list-inside space-y-1">
-            <li>Build strong online presence</li>
-            <li>Proven digital strategies</li>
-            <li>Creative campaigns & designs</li>
-            <li>Targeted audience engagement</li>
-        </ul>
-        <div class="mt-6 flex justify-end">
-            <a href="#"
-                class="inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-white transition">
-                Read More
-                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-            </a>
-        </div>
-    </div>
+                    <h3 class="text-lg font-semibold text-white mb-3">Digital Marketing</h3>
+                    <ul class="text-sm text-slate-300 list-disc list-inside space-y-1">
+                        <li>Build strong online presence</li>
+                        <li>Proven digital strategies</li>
+                        <li>Creative campaigns & designs</li>
+                        <li>Targeted audience engagement</li>
+                    </ul>
+                    <div class="mt-6 flex justify-end">
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-white transition">
+                            Read More
+                            <svg class="h-4 w-4 transition-transform group-hover:translate-x-1"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
 
-    <!-- Card: Branding Solutions -->
-    <div class="group relative rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-6
+                <!-- Card: Branding Solutions -->
+                <div class="group relative rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-6
                 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/40 hover:shadow-[0_20px_60px_-20px_rgba(246,182,21,0.35)]">
-        <h3 class="text-lg font-semibold text-white mb-3">Branding Solutions</h3>
-        <ul class="text-sm text-slate-300 list-disc list-inside space-y-1">
-            <li>Logo & visual identity design</li>
-            <li>Brand messaging and tone</li>
-            <li>Creative assets for marketing</li>
-            <li>Consistent brand representation</li>
-        </ul>
-        <div class="mt-6 flex justify-end">
-            <a href="#"
-                class="inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-white transition">
-                Read More
-                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-            </a>
-        </div>
-    </div>
+                    <h3 class="text-lg font-semibold text-white mb-3">Branding Solutions</h3>
+                    <ul class="text-sm text-slate-300 list-disc list-inside space-y-1">
+                        <li>Logo & visual identity design</li>
+                        <li>Brand messaging and tone</li>
+                        <li>Creative assets for marketing</li>
+                        <li>Consistent brand representation</li>
+                    </ul>
+                    <div class="mt-6 flex justify-end">
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-white transition">
+                            Read More
+                            <svg class="h-4 w-4 transition-transform group-hover:translate-x-1"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
 
-    <!-- Card: Custom Software -->
-    <div class="group relative rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-6
+                <!-- Card: Custom Software -->
+                <div class="group relative rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-6
                 transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/40 hover:shadow-[0_20px_60px_-20px_rgba(246,182,21,0.35)]">
-        <h3 class="text-lg font-semibold text-white mb-3">Custom Software</h3>
-        <ul class="text-sm text-slate-300 list-disc list-inside space-y-1">
-            <li>Tailor-made business software solutions</li>
-            <li>Workflow automation & process improvement</li>
-            <li>Scalable and efficient applications</li>
-            <li>Secure and maintainable codebase</li>
-        </ul>
-        <div class="mt-6 flex justify-end">
-            <a href="#"
-                class="inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-white transition">
-                Read More
-                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-            </a>
-        </div>
-    </div>
-    <!-- Card: Designing -->
-<div class="group relative rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-6
+                    <h3 class="text-lg font-semibold text-white mb-3">Custom Software</h3>
+                    <ul class="text-sm text-slate-300 list-disc list-inside space-y-1">
+                        <li>Tailor-made business software solutions</li>
+                        <li>Workflow automation & process improvement</li>
+                        <li>Scalable and efficient applications</li>
+                        <li>Secure and maintainable codebase</li>
+                    </ul>
+                    <div class="mt-6 flex justify-end">
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-white transition">
+                            Read More
+                            <svg class="h-4 w-4 transition-transform group-hover:translate-x-1"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card: Designing -->
+                <div class="group relative rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-6
             transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/40
             hover:shadow-[0_20px_60px_-20px_rgba(246,182,21,0.35)]">
-    <h3 class="text-lg font-semibold text-white mb-3">Designing</h3>
+                    <h3 class="text-lg font-semibold text-white mb-3">Designing</h3>
 
-    <ul class="text-sm text-slate-300 list-disc list-inside space-y-1">
-        <li>Creative UI/UX design solutions</li>
-        <li>User-focused and modern layouts</li>
-        <li>Wireframes & high-fidelity mockups</li>
-        <li>Consistency across web and mobile</li>
-    </ul>
+                    <ul class="text-sm text-slate-300 list-disc list-inside space-y-1">
+                        <li>Creative UI/UX design solutions</li>
+                        <li>User-focused and modern layouts</li>
+                        <li>Wireframes & high-fidelity mockups</li>
+                        <li>Consistency across web and mobile</li>
+                    </ul>
 
-    <div class="mt-6 flex justify-end">
-        <a href="#"
-            class="inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-white transition">
-            Read More
-            <svg class="h-4 w-4 transition-transform group-hover:translate-x-1"
-                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-        </a>
-    </div>
-</div>
+                    <div class="mt-6 flex justify-end">
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-white transition">
+                            Read More
+                            <svg class="h-4 w-4 transition-transform group-hover:translate-x-1"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
 
 
-</div>
+            </div>
 
 
 
@@ -214,9 +214,9 @@
             <div class="mt-12 text-center">
                 <a href="#contact" class="inline-block px-8 py-3 rounded-xl font-semibold text-black bg-[#f6b615] shadow-md hover:brightness-110 transition">Start Your Project</a>
             </div>
-            <div class="bg-black py-8 px-[6%] flex flex-col ">
+            <div class="bg-black py-8 md:px-[6%] flex flex-col ">
                 <div class="flex justify-center items-center">
-                    <h2 class="text-white text-5xl font-bold py-10 px-6">Achieve your competitive advantage</h2>
+                    <h2 class="text-white text-4xl text-center md:text-left md:text-5xl font-bold py-10 px-6">Achieve your competitive advantage</h2>
 
                 </div>
                 <section class="relative bg-black py-6 overflow-hidden bg-center bg-no-repeat bg-cover"
@@ -227,7 +227,7 @@
                     <div class="absolute bottom-20 left-0 md:left-20 lg:left-32 w-72 h-72 bg-primary opacity-20 rounded-full blur-3xl"></div>
 
                     <!-- Content wrapper -->
-                    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+                    <div class="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
 
                         <!-- Card 1 -->
                         <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
@@ -332,7 +332,7 @@
 
             </div>
             <section class="bg-black py-24">
-                <div class="max-w-4xl mx-auto px-4 sm:px-6">
+                <div class="mx-auto md:px-4 ">
 
                     <!-- SECTION TITLE -->
                     <div class="text-center mb-16">
