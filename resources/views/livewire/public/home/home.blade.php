@@ -1,6 +1,6 @@
 <div>
     <!-- Hero Section -->
-    <section class="bg-black text-white min-h-screen flex items-center px-4 sm:px-6 md:px-[9%]">
+    <section class="bg-black text-white min-h-screen py-16 md:py-10 flex items-center px-4 sm:px-6 md:px-[9%]">
         <div class="w-full">
             <div class="flex flex-col md:flex-row md:items-center gap-10 xl:gap-24 py-12 lg:py-20">
 
@@ -53,7 +53,7 @@
                         <!-- Secondary CTA -->
                         <a
                             href="#"
-                            class="group inline-flex items-center justify-center sm:justify-start gap-3
+                            class="group inline-flex items-center md:border-none border border-1 border-slate-200 px-4 py-2 rounded-2xl justify-center sm:justify-start gap-3
       text-sm tracking-wide text-white/90 mt-2 sm:mt-0">
                             <span>Have an idea or existing product? Let’s discuss</span>
                             <span class="text-lg transform transition group-hover:translate-x-1">
@@ -162,8 +162,8 @@
 
         </div>
     </section>
-    <div class="bg-black py-8 px-[10%] flex flex-col ">
-        <h2 class="text-white text-5xl font-bold py-10 px-6">Achieve your competitive advantage</h2>
+    <div class="bg-black py-8 px-3 md:px-[10%] flex flex-col ">
+        <h2 class="text-white text-4xl text-center md:text-left  md:text-5xl font-bold py-6 md:py-10 px-2 md:px-6">Achieve your competitive </h2>
 
         <section class="relative bg-black py-6 overflow-hidden bg-center bg-no-repeat bg-cover" style="background-image: url('{{ asset('images/lines.png') }}'); object-fit: contain;">
 
@@ -172,7 +172,7 @@
             <div class="absolute bottom-20 left-0 md:left-20 lg:left-32 w-72 h-72 bg-primary opacity-20 rounded-full filter blur-3xl"></div>
 
             <!-- Content wrapper -->
-            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+            <div class="mx-auto px-2 md:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
                 <!-- Example card -->
                 <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transform transition">
                     <img src="/images/chelsea-logo.png" alt="Chelsea Logo" class="w-12 h-12 object-contain">
