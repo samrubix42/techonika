@@ -21,7 +21,10 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->string('featured_image')->nullable();
             $table->text('intro')->nullable();
+            $table->text('at_a_glance')->nullable();
             $table->longText('content')->nullable();
+            $table->string('tags')->nullable();
+
 
             // SEO
             $table->string('meta_title')->nullable();

@@ -19,7 +19,9 @@ class UpdateBlog extends Component
     public $slug;
     public $featured_image;
     public $intro;
+    public $at_a_glance;
     public $content;
+    public $tags;
     public $meta_title;
     public $meta_description;
     public $meta_keywords;
@@ -33,6 +35,8 @@ class UpdateBlog extends Component
             'slug' => 'required|unique:posts,slug,' . ($this->postId ?? 'NULL'),
             'featured_image' => 'nullable|image|max:2048',
             'intro' => 'nullable|string',
+            'at_a_glance' => 'nullable|string',
+            'tags' => 'nullable|string',
             'content' => 'required|string',
             'status' => 'boolean',
         ];
@@ -46,8 +50,10 @@ class UpdateBlog extends Component
             $this->blog_category_id = $p->blog_category_id;
             $this->title = $p->title;
             $this->slug = $p->slug;
+            $this->at_a_glance = $p->at_a_glance;
             $this->intro = $p->intro;
             $this->content = $p->content;
+            $this->tags = $p->tags;
             $this->meta_title = $p->meta_title;
             $this->meta_description = $p->meta_description;
             $this->meta_keywords = $p->meta_keywords;
@@ -75,7 +81,9 @@ class UpdateBlog extends Component
         $post->title = $this->title;
         $post->slug = $this->slug;
         $post->intro = $this->intro;
+        $post->at_a_glance = $this->at_a_glance;
         $post->content = $this->content;
+        $post->tags = $this->tags;
         $post->meta_title = $this->meta_title;
         $post->meta_description = $this->meta_description;
         $post->meta_keywords = $this->meta_keywords;

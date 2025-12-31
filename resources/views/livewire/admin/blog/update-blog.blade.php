@@ -43,12 +43,25 @@
                         <div class="col-12 mb-3">
                             <label class="form-label">Intro</label>
                             <textarea class="form-control" rows="3" wire:model="intro"></textarea>
+                            @error('intro') <small class="text-danger">{{ $message }}</small> @enderror
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label class="form-label">At a Glance</label>
+                            <textarea class="form-control" rows="2" wire:model="at_a_glance"></textarea>
+                            @error('at_a_glance') <small class="text-danger">{{ $message }}</small> @enderror
                         </div>
 
                         <div class="col-12 mb-3" wire:ignore>
                             <label class="form-label">Content</label>
                             <textarea id="content-editor" class="form-control"></textarea>
                             @error('content') <small class="text-danger">{{ $message }}</small> @enderror
+                        </div>
+
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label">Tags</label>
+                            <input type="text" class="form-control" wire:model="tags" placeholder="Comma separated tags">
+                            @error('tags') <small class="text-danger">{{ $message }}</small> @enderror
                         </div>
 
                         <div class="col-md-4 mb-3">

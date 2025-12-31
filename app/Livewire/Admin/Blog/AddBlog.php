@@ -19,7 +19,9 @@ class AddBlog extends Component
     public $slug;
     public $featured_image;
     public $intro;
+    public $at_a_glance;
     public $content;
+    public $tags;
 
     public $meta_title;
     public $meta_description;
@@ -32,6 +34,8 @@ class AddBlog extends Component
         'slug'             => 'required|unique:posts,slug',
         'featured_image'   => 'nullable|image|max:2048',
         'intro'            => 'nullable|string',
+        'at_a_glance'      => 'nullable|string',
+        'tags'             => 'nullable|string',
         'content'          => 'required|string',
         'status'           => 'boolean',
     ];
@@ -58,7 +62,9 @@ class AddBlog extends Component
             'slug'             => $this->slug,
             'featured_image'   => $imagePath,
             'intro'            => $this->intro,
+            'at_a_glance'      => $this->at_a_glance,
             'content'          => $this->content,
+            'tags'             => $this->tags,
             'meta_title'       => $this->meta_title,
             'meta_description' => $this->meta_description,
             'meta_keywords'    => $this->meta_keywords,

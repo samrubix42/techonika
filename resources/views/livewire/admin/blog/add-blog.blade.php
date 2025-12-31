@@ -59,6 +59,14 @@
                         <div class="col-12">
                             <label class="form-label">Intro</label>
                             <textarea class="form-control" rows="3" wire:model="intro" placeholder="Short introduction"></textarea>
+                            @error('intro') <small class="text-danger">{{ $message }}</small> @enderror
+                        </div>
+
+                        <!-- At a glance -->
+                        <div class="col-12">
+                            <label class="form-label">At a Glance</label>
+                            <textarea class="form-control" rows="2" wire:model="at_a_glance" placeholder="Short summary or bullets"></textarea>
+                            @error('at_a_glance') <small class="text-danger">{{ $message }}</small> @enderror
                         </div>
 
                         <!-- Content (TinyMCE) -->
@@ -66,6 +74,13 @@
                             <label class="form-label">Content</label>
                             <textarea id="content-editor" class="form-control"></textarea>
                             @error('content') <small class="text-danger">{{ $message }}</small> @enderror
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="col-12 mt-2">
+                            <label class="form-label">Tags</label>
+                            <input type="text" class="form-control" wire:model="tags" placeholder="Comma separated tags (example: php,laravel,vue)">
+                            @error('tags') <small class="text-danger">{{ $message }}</small> @enderror
                         </div>
 
                         <!-- SEO -->

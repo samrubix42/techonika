@@ -24,5 +24,7 @@ class DatabaseSeeder extends Seeder
 
         // Role & Permission seeder
         $this->call(\Database\Seeders\RolePermissionSeeder::class);
+        // Blog seeder
+        $this->call(\Database\Seeders\BlogSeeder::class);
     }
 }

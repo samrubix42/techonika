@@ -13,6 +13,8 @@ class Post extends Model
         'slug',
         'featured_image',
         'intro',
+        'at_a_glance',
+        'tags',
         'content',
         'meta_title',
         'meta_description',
