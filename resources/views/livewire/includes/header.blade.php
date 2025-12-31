@@ -106,36 +106,49 @@
 
   <!-- MOBILE MENU -->
   <div x-show="open" x-cloak x-transition
-    class="fixed inset-0 bg-black/80 backdrop-blur-xl z-50 p-6 md:hidden">
+    class="fixed inset-0 bg-black z-50 p-6 md:hidden overflow-y-auto">
 
-    <button @click="open=false" class="text-white text-xl mb-6">✕</button>
+    <button @click="open=false" class="text-white text-2xl mb-8">✕</button>
 
-    <nav class="space-y-6 text-lg text-white">
-      <a href="{{ Route::has('home') ? route('home') : url('/') }}" wire:navigate>Home</a>
+    <nav class="flex flex-col gap-4 text-lg text-white font-medium">
+      <a href="{{ Route::has('home') ? route('home') : url('/') }}" wire:navigate class="px-2 py-2 rounded hover:bg-white/10 transition">Home</a>
 
-      <div class="mt-3">
-        <button @click="mobileServices=!mobileServices"
-          class="flex justify-between w-full">
-          Services <span>+</span>
+      <!-- MEGA SERVICES MOBILE -->
+      <div>
+        <button @click="mobileServices=!mobileServices" class="flex items-center justify-between w-full px-2 py-2 rounded hover:bg-white/10 transition">
+          <span>Services</span>
+          <svg :class="{'rotate-180': mobileServices}" class="w-5 h-5 ml-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
         </button>
-
-        <div x-show="mobileServices" class="mt-4 space-y-4 text-gray-300">
-          <p class="text-amber-400 uppercase text-xs">Web</p>
-          <a href="{{ Route::has('services') ? route('services', ['service' => 'laravel']) : url('/services#laravel') }}" wire:navigate class="block">Laravel</a>
-          <a href="{{ Route::has('services') ? route('services', ['service' => 'nextjs']) : url('/services#nextjs') }}" wire:navigate class="block">Next.js</a>
-          <a href="{{ Route::has('services') ? route('services', ['service' => 'django']) : url('/services#django') }}" wire:navigate class="block">Django</a>
+        <div x-show="mobileServices" x-transition class="pl-4 mt-2 flex flex-col gap-2">
+          <div>
+            <p class="text-amber-400 uppercase text-xs mb-1">Web Development</p>
+            <a href="{{ Route::has('services') ? route('services', ['service' => 'laravel']) : url('/services#laravel') }}" wire:navigate class="block text-white/80 hover:text-amber-400 transition-colors">Laravel</a>
+            <a href="{{ Route::has('services') ? route('services', ['service' => 'nextjs']) : url('/services#nextjs') }}" wire:navigate class="block text-white/80 hover:text-amber-400 transition-colors">Next.js</a>
+            <a href="{{ Route::has('services') ? route('services', ['service' => 'django']) : url('/services#django') }}" wire:navigate class="block text-white/80 hover:text-amber-400 transition-colors">Django</a>
+          </div>
+          <div class="mt-3">
+            <p class="text-amber-400 uppercase text-xs mb-1">Mobile Apps</p>
+            <span class="block text-white/80">Flutter</span>
+            <span class="block text-white/80">React Native</span>
+          </div>
+          <div class="mt-3">
+            <p class="text-amber-400 uppercase text-xs mb-1">Cloud & DevOps</p>
+            <span class="block text-white/80">AWS</span>
+            <span class="block text-white/80">CI / CD</span>
+            <span class="block text-white/80">Nginx</span>
+          </div>
+          <div class="mt-4">
+            <a href="{{ Route::has('contact') ? route('contact') : '#contact' }}" wire:navigate class="block text-center bg-amber-400 text-black font-semibold py-2 rounded-lg mt-2">Book Call →</a>
+          </div>
         </div>
       </div>
 
-      <a href="{{ Route::has('about') ? route('about') : url('/about') }}" wire:navigate>About Us</a>
-      <br>
-      <a href="{{ Route::has('portfolio') ? route('portfolio') : url('/portfolio') }}" wire:navigate>Portfolio</a>
+      <a href="{{ Route::has('about') ? route('about') : url('/about') }}" wire:navigate class="px-2 py-2 rounded hover:bg-white/10 transition">About</a>
+      <a href="{{ Route::has('portfolio') ? route('portfolio') : url('/portfolio') }}" wire:navigate class="px-2 py-2 rounded hover:bg-white/10 transition">Portfolio</a>
+      <a href="{{ Route::has('blog') ? route('blog') : url('/blog') }}" wire:navigate class="px-2 py-2 rounded hover:bg-white/10 transition">Blog</a>
+      <a href="{{ Route::has('clients') ? route('clients') : url('/clients') }}" wire:navigate class="px-2 py-2 rounded hover:bg-white/10 transition">Clients</a>
 
-
-      <a href="#contact"
-        class="block text-center bg-amber-400 text-black py-3 rounded-xl">
-        Contact
-      </a>
+      <a href="{{ Route::has('contact') ? route('contact') : '#contact' }}" wire:navigate class="block text-center bg-amber-400 text-black font-semibold py-3 rounded-xl mt-4">Contact</a>
     </nav>
   </div>
 </header>
