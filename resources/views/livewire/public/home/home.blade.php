@@ -1,6 +1,6 @@
 <div>
     <!-- Hero Section -->
-    <section class="bg-black text-white min-h-screen py-16 md:py-10 flex items-center px-4 sm:px-6 md:px-[9%]">
+    <section class="bg-black text-white min-h-screen py-16 md:py-10 flex items-center px-6 md:px-[13%]">
         <div class="w-full">
             <div class="flex flex-col md:flex-row md:items-center gap-10 xl:gap-24 py-12 lg:py-20">
 
