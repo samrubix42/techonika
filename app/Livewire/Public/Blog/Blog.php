@@ -13,9 +13,7 @@ class Blog extends Component
     public $search = '';
     public $perPage = 9;
 
-    protected $queryString = [
-        'search' => ['except' => ''],
-    ];
+ 
 
     public function updatingSearch()
     {
@@ -24,7 +22,7 @@ class Blog extends Component
 
     public function render()
     {
-        $query = Post::where('status', true)->orderBy('published_at', 'desc');
+        $query = Post::where('status', true)->orderBy('created_at', 'desc');
 
         if ($this->search) {
             $s = "%{$this->search}%";

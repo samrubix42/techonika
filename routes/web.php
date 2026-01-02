@@ -31,6 +31,7 @@ Route::get('/about',About::class)->name('about');
 Route::get('/portfolio',Portfolio::class)->name('portfolio');
 Route::get('/services',Service::class)->name('services');
 Route::get('/services-view',ServiceView::class)->name('services.view');
+Route::get('/contact',App\Livewire\Public\Contact\Contact::class)->name('contact');
 Route::get('/privacy-policy',PrivacyPolicy::class)->name('privacy-policy');
 Route::get('/login',Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {

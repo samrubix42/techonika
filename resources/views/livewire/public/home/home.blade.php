@@ -397,6 +397,62 @@
             </div>
         </div>
     </section>
+    <section class="min-h-screen flex items-center bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            <!-- LEFT CONTENT -->
+            <div>
+                <p class="text-lg text-gray-300 mb-3">
+                    Want A Professional Website
+                </p>
+
+                <h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold leading-tight mb-6">
+                    <span class="text-primary italic">THAT CONVERTS</span>
+                    <span class="text-primary italic"> VISITORS INTO</span><br>
+                    <span class="text-primary italic">CUSTOMERS?</span>
+                </h1>
+
+                <p class="text-gray-400 max-w-xl mb-8">
+                    Partner with our expert web design services to build a responsive,
+                    high-converting website. Contact us now and get a free quote
+                    tailored to your business needs.
+                </p>
+
+                <!-- CTA BUTTONS -->
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="#"
+                        class="flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-full font-semibold transition">
+
+                      <i class="ri-plane-line"></i>
+
+                        Request Proposal
+                    </a>
+
+                    <span class="text-gray-500 font-semibold">OR</span>
+
+                    <a href="#"
+                        class="flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-full font-semibold transition">
+
+                     <i class="ri-phone-line"></i>
+
+
+                        Contact Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="flex justify-center lg:justify-end">
+                <img
+                    src="/images/hero-man.png"
+                    alt="Professional"
+                    class="max-h-[520px] object-contain">
+            </div>
+
+        </div>
+    </section>
+
+
     <section class="bg-black py-24">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
 

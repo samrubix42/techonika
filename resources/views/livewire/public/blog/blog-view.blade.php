@@ -9,90 +9,39 @@
             <!-- LEFT CONTENT -->
             <main class="lg:col-span-7">
 
-                <!-- DATE -->
-                <span class="inline-block mb-2 text-xs tracking-wide text-amber-400 uppercase">
-                    Dec 30, 2025
-                </span>
+                @if(isset($post) && $post)
+                    <!-- DATE -->
+                    <span class="inline-block mb-2 text-xs tracking-wide text-amber-400 uppercase">
+                        {{ optional($post->published_at ?? $post->created_at)->format('M d, Y') }}
+                    </span>
 
-                <!-- TITLE -->
-                <h1 class="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
-                    Modern Web Development: Building Fast, Accessible Apps
-                </h1>
+                    <!-- TITLE -->
+                    <h1 class="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
+                        {{ $post->title }}
+                    </h1>
 
-                <!-- FEATURED IMAGE -->
-                <div class="w-full overflow-hidden rounded-lg mb-6">
-                    <img src="https://source.unsplash.com/collection/190727/1600x900" alt="Featured image" class="w-full h-64 sm:h-96 object-cover brightness-90">
-                </div>
+                    <!-- FEATURED IMAGE -->
+                    @if($post->featured_image)
+                        <div class="w-full overflow-hidden rounded-lg mb-6">
+                            <img src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title }}" class="w-full h-64 sm:h-96 object-cover brightness-90">
+                        </div>
+                    @endif
 
-                <!-- AT A GLANCE -->
-                <div class="border-l-4 border-amber-400 pl-4 mb-8">
-                    <h3 class="font-semibold text-white mb-1">
-                        At a Glance
-                    </h3>
-                    <p class="text-slate-300 text-sm leading-relaxed max-w-2xl">
-                        Practical guide to building modern web applications: architecture, tooling, performance, and accessible UI patterns using JavaScript and modern frameworks.
-                    </p>
-                </div>
+                    <!-- AT A GLANCE -->
+                    @if($post->at_a_glance)
+                        <div class="border-l-4 border-amber-400 pl-4 mb-8">
+                            <h3 class="font-semibold text-white mb-1">At a Glance</h3>
+                            <p class="text-slate-300 text-sm leading-relaxed max-w-2xl">{{ $post->at_a_glance }}</p>
+                        </div>
+                    @endif
 
-                <!-- CONTENT -->
-                <article class="space-y-8 text-slate-300 leading-relaxed text-sm sm:text-base bg-white/3 p-8 rounded-lg ring-1 ring-white/5">
-
-                    <section>
-                        <h2 class="text-xl font-semibold text-white mb-2">
-                            Introduction
-                        </h2>
-                        <p>
-                            Modern web development focuses on building fast, resilient, and accessible experiences. This article walks through core principles, tooling, and patterns to ship production-ready web apps.
-                        </p>
-                    </section>
-
-                    <section>
-                        <h2 class="text-xl font-semibold text-white mb-2">
-                            Core Principles
-                        </h2>
-                        <p>
-                            Favor progressive enhancement, maintainable component structure, and measured performance. Prioritize developer ergonomics with clear tooling and CI.
-                        </p>
-                    </section>
-
-                    <section>
-                        <h2 class="text-xl font-semibold text-white mb-2">
-                            Performance & Optimization
-                        </h2>
-                        <p>
-                            Measure real-world performance (RUM/Lighthouse) and optimize critical rendering paths: minimize JS, use efficient images, and leverage caching and CDN strategies.
-                        </p>
-                        <pre class="bg-slate-900 p-4 rounded text-sm overflow-auto"><code class="language-js">// Lazy-load a module in modern browsers
-if ('loading' in HTMLImageElement.prototype) {
-  const imgs = document.querySelectorAll('img[loading="lazy"]');
-  imgs.forEach(img =&gt; { img.src = img.dataset.src; });
-} else {
-  import('lazysizes');
-}
-</code></pre>
-                    </section>
-
-                    <section>
-                        <h2 class="text-xl font-semibold text-white mb-2">
-                            Accessibility & Inclusive Design
-                        </h2>
-                        <p>
-                            Use semantic HTML, ensure keyboard focus states, provide alt text for images, and test with screen readers. Accessibility improves usability for everyone.
-                        </p>
-                    </section>
-
-                    <section>
-                        <h2 class="text-xl font-semibold text-white mb-2">
-                            Deployment & DevOps
-                        </h2>
-                        <p>
-                            Automate builds with CI, run linting and tests on every push, and deploy immutable artifacts to a CDN or serverless platform for reliable delivery.
-                        </p>
-                    </section>
-
-                    <p class="mt-6">Concluding thoughts: Focus on human-centered design, keep bundles small, and measure what matters in production.</p>
-
-                </article> 
+                    <!-- CONTENT -->
+                    <article class="space-y-8 text-slate-300 leading-relaxed text-sm sm:text-base bg-white/3 p-8 rounded-lg ring-1 ring-white/5">
+                        {!! $post->content !!}
+                    </article>
+                @else
+                    <div class="text-center text-slate-400">Post not found.</div>
+                @endif
             </main>
 
             <!-- RIGHT SIDEBAR -->

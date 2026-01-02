@@ -59,106 +59,62 @@
         <main>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                @for($i = 0; $i < 6; $i++)
-                    <article
-                    class="group flex flex-col border-t border-white/10 pt-4">
+                @forelse($posts as $post)
+                    <article class="group flex flex-col border-t border-white/10 pt-4">
 
-                    <!-- IMAGE -->
-                    <div class="overflow-hidden rounded-lg">
-                        <img src="https://source.unsplash.com/collection/190727/800x600?sig={{ $i }}"
-                            class="w-full h-44 object-cover transition duration-300
-                                    group-hover:opacity-90">
-                    </div>
-
-                    <!-- CONTENT -->
-                    <div class="flex flex-col flex-1 mt-4">
-
-                        <span class="inline-block mb-2 text-xs text-amber-400">
-                            Category
-                        </span>
-
-                        <h3 class="text-lg font-semibold leading-snug mb-2">
-                            Sample Article Title {{ $i + 1 }}
-                        </h3>
-
-                        <p class="text-sm text-slate-400 leading-relaxed mb-4 line-clamp-3">
-                            A short excerpt that describes the article. This is placeholder
-                            content designed to preview how real blog text will appear.
-                        </p>
-
-                        <!-- META -->
-                        <div class="mt-auto pt-4 border-t border-white/10 text-sm flex items-center justify-between">
-                            <span class="text-slate-400">
-                                By Author Name
-                            </span>
-                            <span class="text-slate-500">
-                                Dec 29, 2025 · 5 min
-                            </span>
+                        <!-- IMAGE -->
+                        <div class="overflow-hidden rounded-lg">
+                            @if($post->featured_image)
+                                <img src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title }}"
+                                     class="w-full h-44 object-cover transition duration-300 group-hover:opacity-90">
+                            @else
+                                <img src="https://source.unsplash.com/collection/190727/800x600?sig={{ $loop->index }}"
+                                     class="w-full h-44 object-cover transition duration-300 group-hover:opacity-90">
+                            @endif
                         </div>
 
-                        <!-- ACTION -->
-                        <a href="#"
-                            class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-amber-400">
-                            Read article →
-                        </a>
+                        <!-- CONTENT -->
+                        <div class="flex flex-col flex-1 mt-4">
 
-                    </div>
+                            <span class="inline-block mb-2 text-xs text-amber-400">
+                                {{ $post->category?->name ?? 'Uncategorized' }}
+                            </span>
+
+                            <h3 class="text-lg font-semibold leading-snug mb-2">
+                                {{ $post->title }}
+                            </h3>
+
+                            <p class="text-sm text-slate-400 leading-relaxed mb-4 line-clamp-3">
+                                {{ $post->intro ?? Str::limit(strip_tags($post->content), 120) }}
+                            </p>
+
+                            <!-- META -->
+                            <div class="mt-auto pt-4 border-t border-white/10 text-sm flex items-center justify-between">
+                                <span class="text-slate-400">
+                                    {{ $post->author?->name ?? 'Author' }}
+                                </span>
+                                <span class="text-slate-500">
+                                    {{ optional($post->published_at ?? $post->created_at)->format('M d, Y') }}
+                                </span>
+                            </div>
+
+                            <!-- ACTION -->
+                            <a href="{{ route('blog.view', ['slug' => $post->slug]) }}"
+                                class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-amber-400">
+                                Read article →
+                            </a>
+
+                        </div>
                     </article>
-                    @endfor
+                @empty
+                    <div class="col-span-3 text-center text-slate-400">No posts found.</div>
+                @endforelse
 
             </div>
 
-            <!-- PAGINATION -->
-            <div class="mt-20 flex items-center justify-center gap-3 text-sm">
+            <div class="mt-8">{{ $posts->links('vendor.pagination.theme') }}</div>
 
-                <!-- PREV -->
-                <a href="#"
-                    class="px-4 py-2
-              hover:border-amber-400 hover:text-amber-400 transition">
-                    ← Prev
-                </a>
-
-                <!-- PAGES -->
-                <div class="flex items-center gap-2">
-                    <a href="#"
-                        class="w-9 h-9 flex items-center justify-center rounded-full
-                  border border-white/15 text-slate-400
-                  hover:border-amber-400 hover:text-amber-400 transition">
-                        1
-                    </a>
-
-                    <!-- ACTIVE -->
-                    <span
-                        class="w-9 h-9 flex items-center justify-center rounded-full
-                   bg-amber-400 text-black font-semibold shadow">
-                        2
-                    </span>
-
-                    <a href="#"
-                        class="w-9 h-9 flex items-center justify-center rounded-full
-                  border border-white/15 text-slate-400
-                  hover:border-amber-400 hover:text-amber-400 transition">
-                        3
-                    </a>
-
-                    <span class="text-slate-500 px-1">…</span>
-
-                    <a href="#"
-                        class="w-9 h-9 flex items-center justify-center rounded-full
-                  border border-white/15 text-slate-400
-                  hover:border-amber-400 hover:text-amber-400 transition">
-                        9
-                    </a>
-                </div>
-
-                <!-- NEXT -->
-                <a href="#"
-                    class="px-4 py-2text-slate-400
-              hover:border-amber-400 hover:text-amber-400 transition">
-                    Next →
-                </a>
-
-            </div>
+       
 
         </main>
 
