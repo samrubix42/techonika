@@ -106,6 +106,13 @@ class AdminSidebar
                     ],
                 ],
             ],  
+            (object)[
+                'title' => 'Contacts',
+                'icon' => 'ti ti-mail',
+                'url' => route('admin.contact-list'),
+                'hasSubmenu' => false,
+                'submenu' => [],
+            ],
 
         ]);
 
