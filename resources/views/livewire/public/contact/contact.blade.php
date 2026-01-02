@@ -3,11 +3,17 @@
     <!-- Hero -->
     <section class="py-20 md:py-28 px-4 md:px-[6%]">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <span class="inline-flex items-center justify-center bg-[#f6b615] text-black rounded-full px-3 py-1 text-xs font-semibold">LT</span>
+                    <span class="text-sm text-gray-400 uppercase tracking-widest">Let’s talk</span>
+                </div>
+
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
-                    Get in touch
+                    Get in touch <span class="text-[#f6b615]">with TECHNONIKA</span>
                 </h1>
-                <p class="text-gray-300 max-w-2xl">
+
+                <p class="text-gray-300 max-w-2xl text-lg">
                     Have a project, question, or idea? Tell us about it — we design and build tailored digital products that scale. Share some details and we’ll get back to you within 1–2 business days.
                 </p>
 
@@ -60,47 +66,57 @@
 
             <!-- Right: Form Card -->
             <div>
-                <div class="bg-white p-6 rounded-xl shadow-xl bg-zinc-900 text-white">
+                <div class="bg-zinc-900/80 p-6 rounded-xl shadow-xl text-white border border-white/5">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-lg font-semibold">Send us a message</h3>
+                            <p class="text-sm text-gray-400">Fill the form and we’ll reply shortly.</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="inline-flex items-center justify-center bg-[#f6b615] text-black rounded-full px-3 py-1 text-xs font-semibold">LT</span>
+                        </div>
+                    </div>
+
                     @if (session()->has('success'))
-                        <div class="mb-4 rounded-md bg-green-50 border border-green-100 p-4">
-                            <p class="text-green-800">{{ session('success') }}</p>
+                        <div class="mb-4 rounded-md bg-green-900/40 border border-green-800 p-3">
+                            <p class="text-green-200">{{ session('success') }}</p>
                         </div>
                     @endif
 
                     <form wire:submit.prevent="submit" class="space-y-4">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-sm font-medium text-gray-700">Name</label>
-                                <input type="text" wire:model.defer="name" class="mt-1 block w-full px-3 py-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Your full name">
-                                @error('name') <span class="text-sm text-red-600">{{ $message }}</span> @enderror
+                                <label class="block text-sm font-medium text-gray-300">Name</label>
+                                <input type="text" wire:model.defer="name" class="mt-1 block w-full px-3 py-2 rounded-md bg-transparent border border-white/10 placeholder:text-gray-500 text-white focus:border-[#f6b615] focus:ring-[#f6b615]" placeholder="Your full name">
+                                @error('name') <span class="text-sm text-red-400">{{ $message }}</span> @enderror
                             </div>
 
                             <div>
-                                <label class="block text-sm font-medium text-gray-700">Email</label>
-                                <input type="email" wire:model.defer="email" class="mt-1 block w-full px-3 py-2 px-3 py-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="you@example.com">
-                                @error('email') <span class="text-sm text-red-600">{{ $message }}</span> @enderror
+                                <label class="block text-sm font-medium text-gray-300">Email</label>
+                                <input type="email" wire:model.defer="email" class="mt-1 block w-full px-3 py-2 rounded-md bg-transparent border border-white/10 placeholder:text-gray-500 text-white focus:border-[#f6b615] focus:ring-[#f6b615]" placeholder="you@example.com">
+                                @error('email') <span class="text-sm text-red-400">{{ $message }}</span> @enderror
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-sm font-medium text-gray-700">Subject</label>
-                            <input type="text" wire:model.defer="subject" class="mt-1 block w-full px-3 py-2 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Subject (optional)">
-                            @error('subject') <span class="text-sm text-red-600">{{ $message }}</span> @enderror
+                            <label class="block text-sm font-medium text-gray-300">Subject</label>
+                            <input type="text" wire:model.defer="subject" class="mt-1 block w-full px-3 py-2 rounded-md bg-transparent border border-white/10 placeholder:text-gray-500 text-white focus:border-[#f6b615] focus:ring-[#f6b615]" placeholder="Subject (optional)">
+                            @error('subject') <span class="text-sm text-red-400">{{ $message }}</span> @enderror
                         </div>
 
                         <div>
-                            <label class="block text-sm font-medium text-gray-700">Message</label>
-                            <textarea wire:model.defer="message" rows="6" class="mt-1 block w-full px-3 py-2  rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="How can we help?"></textarea>
-                            @error('message') <span class="text-sm text-red-600">{{ $message }}</span> @enderror
+                            <label class="block text-sm font-medium text-gray-300">Message</label>
+                            <textarea wire:model.defer="message" rows="6" class="mt-1 block w-full px-3 py-2 rounded-md bg-transparent border border-white/10 placeholder:text-gray-500 text-white focus:border-[#f6b615] focus:ring-[#f6b615]" placeholder="How can we help?"></textarea>
+                            @error('message') <span class="text-sm text-red-400">{{ $message }}</span> @enderror
                         </div>
 
                         <div class="flex items-center justify-between">
-                            <button type="submit" wire:loading.attr="disabled" class="inline-flex items-center px-4 py-2 bg-[#111827] border border-transparent rounded-md font-semibold text-sm text-white hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <button type="submit" wire:loading.attr="disabled" class="inline-flex items-center px-4 py-2 bg-[#f6b615] border border-transparent rounded-md font-semibold text-sm text-black hover:brightness-105 focus:outline-none focus:ring-2 focus:ring-[#f6b615]">
                                 <span wire:loading.remove>Send Message</span>
                                 <span wire:loading>Sending...</span>
                             </button>
 
-                            <p class="text-sm text-gray-500">We reply within 1–2 business days.</p>
+                            <p class="text-sm text-gray-400">We reply within 1–2 business days.</p>
                         </div>
                     </form>
                 </div>

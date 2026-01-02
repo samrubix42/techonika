@@ -43,6 +43,7 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/permission',PermissionList::class)->name('permission');
     Route::get('/role-permission',RoleList::class)->name('role-permission');
     Route::get('/add-blog',AddBlog::class)->name('add-blog');
+    Route::get('/contact',App\Livewire\Admin\Contact\Contact::class)->name('contact-list');
     Route::get('/update-blog/{post}',UpdateBlog::class)->name('update-blog');
     Route::get('/blog-list',BlogList::class)->name('blog-list');
     Route::get('/blog-category',CategoryList::class)->name('blog-category');
