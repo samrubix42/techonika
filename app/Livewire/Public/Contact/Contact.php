@@ -3,6 +3,7 @@
 namespace App\Livewire\Public\Contact;
 
 use Livewire\Component;
+use App\Models\Contact as ContactModel;
 
 class Contact extends Component
 {
@@ -22,7 +23,10 @@ class Contact extends Component
     {
         $validated = $this->validate();
 
-        // TODO: dispatch mail, store to DB, or integrate with a ticket system.
+        // Store message in database
+        ContactModel::create($validated);
+
+        // TODO: dispatch mail or integrate with a ticket system.
 
         session()->flash('success', 'Thank you — your message has been sent.');
 
