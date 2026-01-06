@@ -17,18 +17,29 @@
 
                     <!-- Heading -->
                     <h1 class="font-light tracking-wide leading-tight
-        text-3xl sm:text-4xl lg:text-5xl xl:text-[64px]">
-                        GENERIC <br />
-                        DEVELOPMENT <span class="font-semibold">LIMITS</span><br />
-                        DIGITAL <span class="font-semibold">GROWTH</span>
+           text-3xl sm:text-4xl lg:text-5xl xl:text-[64px] text-slate-200">
+                        Welcome to <span class="font-semibold">Techonika</span><br>
+
+                        <span class="block mt-3">
+                            Simple.
+                            <span class="font-semibold">Smart.</span>
+                            Reliable
+                            <span class="font-semibold">Digital Solutions</span>
+                        </span>
                     </h1>
+
 
                     <!-- Description -->
                     <p class="text-neutral-400 text-base sm:text-lg text-justify leading-relaxed">
-                        Every business has different users, goals, and technical constraints,
-                        yet most websites and applications are built using
-                        <span class="text-white font-medium"> the same templates and patterns</span>.
+                        Your business isn’t generic your website shouldn’t be either.
+                        Every brand has unique users, goals, and workflows,
+                        but many digital products still rely on
+                        <span class="text-white font-medium">
+                            one-size-fits-all templates that limit growth.
+                        </span>
                     </p>
+
+
 
                     <p class="text-neutral-400 text-base sm:text-lg text-justify leading-relaxed">
                         The right architecture, the right technology stack, and the right
@@ -41,18 +52,18 @@
 
                         <!-- Primary Button -->
                         <a
-                            href="#"
+                            href="{{ route('contact') }}"
                             class="inline-flex items-center justify-center
       bg-[#f6b615] text-black
       px-6 sm:px-8 py-4 rounded-2xl
       font-light text-sm sm:text-base
       hover:brightness-110 transition">
-                            See how scalable products are built
+                            Get a free Quote <i class="ri-arrow-right-line ml-2"></i>
                         </a>
 
                         <!-- Secondary CTA -->
                         <a
-                            href="#"
+                            href="{{ route('contact') }}"
                             class="group inline-flex items-center md:border-none border border-1 border-slate-200 px-4 py-2 rounded-2xl justify-center sm:justify-start gap-3
       text-sm tracking-wide text-white/90 mt-2 sm:mt-0">
                             <span>Have an idea or existing product? Let’s discuss</span>
@@ -423,7 +434,7 @@
                     <a href="#"
                         class="flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-full font-semibold transition">
 
-                      <i class="ri-plane-line"></i>
+                        <i class="ri-plane-line"></i>
 
                         Request Proposal
                     </a>
@@ -433,7 +444,7 @@
                     <a href="#"
                         class="flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-full font-semibold transition">
 
-                     <i class="ri-phone-line"></i>
+                        <i class="ri-phone-line"></i>
 
 
                         Contact Now

@@ -17,6 +17,7 @@ use App\Livewire\Public\About\About;
 use App\Livewire\Public\Blog\Blog;
 use App\Livewire\Public\Blog\BlogView;
 use App\Livewire\Public\Home\Home;
+use App\Livewire\Public\Home\Home2;
 use App\Livewire\Public\Home\Index;
 use App\Livewire\Public\Portfolio\Portfolio;
 use App\Livewire\Public\Service\Service;
@@ -24,7 +25,8 @@ use App\Livewire\Public\Service\ServiceView;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/',action: Home::class)->name('index');
+Route::get('/',action: Home2::class)->name('index');
+Route::get('/2',action: Home::class)->name('index2');
 Route::get('/blog',Blog::class)->name('blog');
 Route::get('/blog-view',BlogView::class)->name('blog.view');
 Route::get('/about',About::class)->name('about');
