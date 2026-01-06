@@ -460,7 +460,72 @@
             </div>
 
         </section>
+    </div>
+<section class="relative bg-gradient-to-r from-black via-[#111] to-black text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16 sm:py-20">
 
+        <div class="flex flex-col gap-8 md:gap-10 text-justify">
+
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+                Why Choose <span class="text-primary">TECHONIKA</span>
+            </h2>
+
+            <p class="text-gray-300 leading-relaxed">
+                Choosing the right digital partner is an important decision.
+                You are trusting someone with your brand, your ideas,
+                and your future growth. At Techonika, we understand the
+                responsibility that comes with that trust.
+            </p>
+
+            <p class="text-gray-400 leading-relaxed">
+                We take time to listen, understand your goals,
+                and learn what truly matters to your business
+                before suggesting any solution. Our approach
+                starts with clarity and continues with steady,
+                well-planned progress that feels reliable and comfortable.
+            </p>
+
+            <p class="text-gray-400 leading-relaxed">
+                We do not rush projects just to finish quickly.
+                Instead, we focus on doing things the right way from the start,
+                so you don’t face problems later. We stay updated with modern
+                tools and technologies, but we always choose what fits your
+                business needs, budget, and long-term plans.
+            </p>
+
+            <p class="text-gray-400 leading-relaxed">
+                Clear communication is at the heart of how we work.
+                We explain every step in simple, easy-to-understand language,
+                so you always know what is happening, why it matters,
+                and how it supports your growth.
+            </p>
+
+            <p class="text-gray-400 leading-relaxed">
+                Our work does not end at delivery.
+                We stay connected, support you as your needs change,
+                and help you improve and evolve over time.
+                As your business grows, we grow with you.
+            </p>
+
+            <a href="#"
+               class="inline-flex items-center gap-2 bg-[#f6b615] text-black
+                      px-6 py-3 rounded-lg font-semibold
+                      hover:bg-yellow-400 transition w-fit">
+                Learn more
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 5l7 7-7 7" />
+                </svg>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+    <div class="px-[9%] bg-black">
+      
         <section>
             <div class="bg-black text-white py-12">
                 <div class="container mx-auto flex flex-col  my-12 md:my-24">
@@ -513,7 +578,7 @@
                                         <p class="text-xs md:text-sm text-base md:text-justify text-white/80 leading-relaxed">
                                             We follow a simple and transparent process that keeps everything clear and comfortable for you from start to finish. Each step is designed to reduce confusion, save time, and make sure the final result truly supports your business goals in a practical way.
                                         </p>
-                                    </div>  
+                                    </div>
                                 </div>
 
                                 <!-- STEP 2 -->
@@ -936,7 +1001,7 @@
 
             </div>
         </section>
-        <section class="bg-black py-24">
+        <section class="bg-black py-20">
             <div class="max-w-4xl mx-auto px-4 sm:px-6">
 
                 <!-- SECTION TITLE -->
@@ -1149,10 +1214,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
 
     </div>
 
