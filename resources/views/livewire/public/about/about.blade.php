@@ -91,7 +91,7 @@
         </div>
     </div>
 </section>
-<section class="bg-black text-white py-10">
+<section class="bg-black text-white py-20 mb-10">
     <div class="max-w-7xl mx-auto px-6">
 
         <!-- Heading -->
@@ -221,105 +221,114 @@
 
     </div>
 </section>
-<section class="bg-black text-white py-10">
+<section class="bg-black text-white py-20 relative">
     <div class="max-w-7xl mx-auto px-6">
 
-        <!-- Section Header -->
-        <div class="max-w-4xl mb-16">
-            <span class="text-primary uppercase tracking-wider text-sm font-semibold">
-                Few Words
-            </span>
+        <!-- Header -->
+        <div class="grid lg:grid-cols-2 gap-12 items-start mb-20">
 
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-3 mb-6">
-                A Bit More <span class="text-primary">About Us</span>
-            </h2>
+            <div>
+                <span class="text-primary uppercase tracking-wider text-sm font-semibold">
+                    Few Words
+                </span>
+
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-3 mb-6 leading-tight">
+                    A Bit More <span class="text-primary">About Us</span>
+                </h2>
+
+                <p class="text-white/70 text-lg leading-relaxed">
+                    We focus on strategies that deliver real business growth,
+                    measurable results, and long-term value.
+                </p>
+            </div>
+
+            <!-- Highlight Box -->
+            <div class="bg-white/10 backdrop-blur border border-white/20
+                        rounded-2xl p-8 lg:p-10 shadow-lg">
+
+                <h3 class="text-xl font-semibold text-primary mb-4">
+                    Techonika.Com: Achieve Better Results & Goals — 2026
+                </h3>
+
+                <div class="space-y-4 text-white/80 leading-relaxed text-sm">
+                    <p>
+                        Our goal is to achieve results & goals. Therefore, as part of our
+                        tool belt, we use various tools to accomplish those objectives.
+                        For example, a combination of SEO, PPC, or paid media may be used.
+                    </p>
+
+                    <p>
+                        We may or may not use other media types, such as social media,
+                        news releases, etc. Ultimately, you are never pressured into
+                        choosing services that are not the right fit for your business.
+                    </p>
+
+                    <p>
+                        We develop a customized plan with you, your budget, and your
+                        business objectives. This outcome-driven approach adapts as
+                        your needs evolve over time.
+                    </p>
+                </div>
+            </div>
+
         </div>
 
-        <!-- Main Content Grid -->
-        <div class="grid md:grid-cols-2 gap-12">
+        <!-- Content Row -->
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
 
-            <!-- Left Column -->
-            <div class="space-y-8 text-white/80 leading-relaxed">
+            <!-- Left Content -->
+            <div class="space-y-10 text-white/80 leading-relaxed">
 
                 <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">
+                    <h3 class="text-xl font-semibold text-white mb-4">
                         Marketing Strategies That Drive Results
                     </h3>
 
                     <p>
-                        Most agencies are focused on selling what they want – design jobs,
-                        SEO, social media, paid media, etc. They would instead push their
-                        product rather than offer a real solution. Clients wish results –
-                        we want to make their phones ring. They are looking for growth in
-                        their business.
+                        Most agencies focus on selling what they want — design jobs,
+                        SEO, social media, paid media, etc. They push their services
+                        instead of offering real solutions. Clients want results.
+                        We want to make their phones ring and help their businesses grow.
                     </p>
                 </div>
 
                 <div>
                     <p>
-                        Profits are essential to them. We must understand what you want
-                        to develop a strategy that works for you. We assist clients in
-                        identifying and achieving profitable elements and goals.
+                        Profits are essential. To create strategies that work, we first
+                        understand what you want to achieve. We help identify profitable
+                        elements and goals that lead to sustainable business growth.
                     </p>
                 </div>
 
             </div>
 
-            <!-- Right Highlight Card -->
-            <div class="bg-white/10 backdrop-blur border border-white/20
-                        rounded-2xl p-10 space-y-6">
+            <!-- Right Supporting Content -->
+            <div class="space-y-6 text-white/80 leading-relaxed">
 
-                <h3 class="text-xl font-semibold text-primary">
-                    Techonika.Com: Achieve Better Results & Goals This year’26
-                </h3>
-
-                <p class="text-white/80 leading-relaxed">
-                    Our goal is to achieve results & goals. Therefore, as part of our
-                    tool belt, we use various tools to accomplish those objectives.
-                    For example, a combination of SEO, PPC, or paid media may be used.
+                <p>
+                    You shouldn’t work with mediocre vendors or freelancers when you can
+                    partner with a team that has proven experience generating revenue.
                 </p>
 
-                <p class="text-white/80 leading-relaxed">
-                    We may or may not use other media types, such as social media,
-                    news releases, etc. Ultimately, it would be best if you were not
-                    pressured into choosing services that are not the right fit for you.
+                <p>
+                    Digital marketing can be challenging. Reaching the right audience
+                    is essential for consistent business growth and improvement.
                 </p>
 
-                <p class="text-white/80 leading-relaxed">
-                    We develop a customized plan for you with you, your budget, and your
-                    business objectives. It is possible for this approach, which is based
-                    on outcomes and changing business needs, to change over time.
+                <p>
+                    When you attract prospects to your website and retain them with
+                    strong online strategies and digital solutions, conversion becomes
+                    natural. Techonika is the digital advertising and marketing company
+                    in Delhi that makes it all happen.
                 </p>
 
             </div>
-
-        </div>
-
-        <!-- Bottom Content -->
-        <div class="mt-20 max-w-5xl text-white/80 leading-relaxed space-y-6">
-
-            <p>
-                It would be best if you didn’t work with mediocre vendors or freelancers
-                when you can work with a team with proven experience generating more
-                revenue for its clients.
-            </p>
-
-            <p>
-                The digital marketing process can be challenging. It is essential to
-                have a targeted audience if you want your business to grow and improve.
-            </p>
-
-            <p>
-                When you attract prospects to your website and retain them with excellent
-                online strategies & digital solutions, your business has the best chance
-                of converting them into customers. Techonika is the best digital
-                advertising and marketing company in Delhi that can make it all happen!
-            </p>
 
         </div>
 
     </div>
 </section>
+
 <section class="bg-black text-white py-28 relative overflow-hidden">
 
     <!-- Subtle Background -->
@@ -455,10 +464,10 @@
                 <div class="container mx-auto flex flex-col my-12 md:my-24">
 
                     <!-- LEFT INFO -->
-                    <div class="flex flex-col w-full md:sticky md:top-36 lg:w-2/3 px-4 mb-12 md:mb-0">
+                    <div class="flex flex-col md:px-10 w-full md:sticky md:top-36 lg:w-2/3 px-4 mb-12 md:mb-0">
                         <div class="max-w-3xl mb-16">
 
-                            <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-white mb-4">
+                            <h2 class="text-3xl md:text-4xl  lg:text-5xl font-semibold leading-tight text-white mb-4">
                                 Our <span class="text-primary font-bold">Process</span>
                             </h2>
 
