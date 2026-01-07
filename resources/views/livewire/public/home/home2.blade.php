@@ -16,14 +16,14 @@
 
                     <!-- Heading -->
                     <h1 class="font-light tracking-wide leading-tight
-           text-3xl sm:text-4xl lg:text-5xl xl:text-[64px] text-slate-200">
-                        Welcome to <span class="font-semibold">Techonika</span><br>
+           text-3xl sm:text-4xl lg:text-4xl xl:text-[62px] text-slate-200">
+                        Welcome to <span class="font-semibold text-primary  md:text-[64px]">Techonika</span><br>
 
                         <span class="block mt-3">
                             Simple.
                             <span class="font-semibold">Smart.</span>
                             Reliable
-                            <span class="font-semibold">Digital Solutions</span>
+                            <span class="font-semibold text-primary">Digital Solutions</span>
                         </span>
                     </h1>
 
@@ -705,7 +705,7 @@
             </div>
         </section>
 
-        <section class="py-24 bg-black">
+        <section class="py-8 bg-black">
             <div class="max-w-7xl mx-auto px-6">
 
                 <!-- Heading -->
