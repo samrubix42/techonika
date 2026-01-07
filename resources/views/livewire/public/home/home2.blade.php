@@ -76,10 +76,10 @@
                 </div>
 
     </section>
-    <section class="py-20 sm:py-24 lg:py-28 bg-black">
+    <section class="py-10 sm:py-10 lg:py-10 bg-black">
         <div class="px-5 sm:px-8 lg:px-[9%]">
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            <div class=" items-start">
 
                 <!-- LEFT -->
                 <div>
@@ -96,7 +96,7 @@
                     </h2>
 
                     <!-- Paragraphs -->
-                    <div class="mt-6 sm:mt-8 space-y-5">
+                    <div class="mt-6 sm:mt-8 space-y-4">
                         <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
                             At <span class="font-medium text-white">Techonika</span>,
                             we believe that technology should feel simple, helpful,
@@ -137,6 +137,31 @@
                             startups that need smart digital foundations,
                             and established brands looking to scale.
                         </p>
+                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
+                            Some clients come to us for a fresh website,
+                            others for better visibility through digital marketing,
+                            stronger identity through online branding,
+                            or smoother operations using smart resource
+                            management solutions.
+                            No matter where you are in your journey,
+                            we meet you at your level and guide you forward
+                            with patience, honesty, and clear direction.
+                        </p>
+                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
+                            When you work with us, you do not just receive a service.
+                            You gain a reliable digital partner.
+                            We take time to listen, explain every step in simple
+                            language, and make sure you always understand what
+                            is happening and why it matters.
+                        </p>
+                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
+                            Even after your project is delivered,
+                            we stay connected to support improvements,
+                            updates, and growth.
+                            We believe progress works best when it is shared,
+                            and we grow when you grow.
+                            That belief shapes the way we work every single day.
+                        </p>
                     </div>
 
                     <!-- CTA -->
@@ -162,52 +187,12 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- RIGHT -->
-                <div class="bg-black border border-white/10 rounded-3xl
-                        p-6 sm:p-8 lg:p-10 space-y-5">
-
-                    <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
-                        Some clients come to us for a fresh website,
-                        others for better visibility through digital marketing,
-                        stronger identity through online branding,
-                        or smoother operations using smart resource
-                        management solutions.
-                        No matter where you are in your journey,
-                        we meet you at your level and guide you forward
-                        with patience, honesty, and clear direction.
-                    </p>
-
-                    <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
-                        When you work with us, you do not just receive a service.
-                        You gain a reliable digital partner.
-                        We take time to listen, explain every step in simple
-                        language, and make sure you always understand what
-                        is happening and why it matters.
-                    </p>
-
-                    <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
-                        Even after your project is delivered,
-                        we stay connected to support improvements,
-                        updates, and growth.
-                        We believe progress works best when it is shared,
-                        and we grow when you grow.
-                        That belief shapes the way we work every single day.
-                    </p>
-
-                    <div class="pt-4 flex items-center gap-3 font-medium text-white">
-                        <i class="ri-hand-heart-line text-2xl text-[color:var(--color-primary)]"></i>
-                        We grow when you grow
-                    </div>
-
-                </div>
-
             </div>
 
         </div>
     </section>
 
-    <section class="py-16 sm:py-20 lg:py-24 bg-black">
+    <section class="py-10 sm:py-10 lg:py-10 bg-black">
         <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
             <!-- Heading -->
@@ -267,7 +252,7 @@
                     </div>
 
                     <div class="space-y-4 sm:space-y-5">
-                        <p class="text-white/80 text-sm sm:text-justify lg:text-lg leading-relaxed">
+                        <p class="text-white/80 text-sm sm:text-justify lg:text-lg ">
                             Our vision is to become a trusted digital partner
                             for businesses around the world.
                             We want people to feel confident when they hear
@@ -403,75 +388,75 @@
             rounded-xl p-6 flex flex-col gap-4 shadow-lg
             hover:scale-105 transition">
 
-    <!-- Icon -->
-    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary
+                    <!-- Icon -->
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary
                 flex items-center justify-center text-2xl">
-        <i class="ri-settings-4-line"></i>
-    </div>
+                        <i class="ri-settings-4-line"></i>
+                    </div>
 
-    <h3 class="text-white font-semibold text-lg">Resource Management</h3>
+                    <h3 class="text-white font-semibold text-lg">Resource Management</h3>
 
-    <p class="text-white/80 text-sm leading-relaxed">
-        Every business needs clear systems to manage work and resources.
-        Our resource management solutions help you organize data, tasks,
-        and internal processes more easily.
-        We build tools that reduce manual work, improve clarity, and help
-        your team work together more smoothly every day.
-    </p>
+                    <p class="text-white/80 text-sm leading-relaxed">
+                        Every business needs clear systems to manage work and resources.
+                        Our resource management solutions help you organize data, tasks,
+                        and internal processes more easily.
+                        We build tools that reduce manual work, improve clarity, and help
+                        your team work together more smoothly every day.
+                    </p>
 
-    <a href="#" class="text-primary font-medium hover:underline">
-        Read More →
-    </a>
-</div>
+                    <a href="#" class="text-primary font-medium hover:underline">
+                        Read More →
+                    </a>
+                </div>
 
-<div class="bg-white/10 backdrop-blur-md border border-white/20
+                <div class="bg-white/10 backdrop-blur-md border border-white/20
             rounded-xl p-6 flex flex-col gap-4 shadow-lg
             hover:scale-105 transition">
 
-    <!-- Icon -->
-    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary
+                    <!-- Icon -->
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary
                 flex items-center justify-center text-2xl">
-        <i class="ri-shield-star-line"></i>
-    </div>
+                        <i class="ri-shield-star-line"></i>
+                    </div>
 
-    <h3 class="text-white font-semibold text-lg">Online Branding</h3>
+                    <h3 class="text-white font-semibold text-lg">Online Branding</h3>
 
-    <p class="text-white/80 text-sm leading-relaxed">
-        Your brand is how people recognize and remember you online.
-        Our online branding services help your business stay clear,
-        consistent, and trustworthy across all digital platforms.
-        We support your brand message, visuals, and presence so people
-        feel confident when they see your business.
-    </p>
+                    <p class="text-white/80 text-sm leading-relaxed">
+                        Your brand is how people recognize and remember you online.
+                        Our online branding services help your business stay clear,
+                        consistent, and trustworthy across all digital platforms.
+                        We support your brand message, visuals, and presence so people
+                        feel confident when they see your business.
+                    </p>
 
-    <a href="#" class="text-primary font-medium hover:underline">
-        Read More →
-    </a>
-</div>
-<div class="bg-white/10 backdrop-blur-md border border-white/20
+                    <a href="#" class="text-primary font-medium hover:underline">
+                        Read More →
+                    </a>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20
             rounded-xl p-6 flex flex-col gap-4 shadow-lg
             hover:scale-105 transition">
 
-    <!-- Icon -->
-    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary
+                    <!-- Icon -->
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary
                 flex items-center justify-center text-2xl">
-        <i class="ri-chat-smile-3-line"></i>
-    </div>
+                        <i class="ri-chat-smile-3-line"></i>
+                    </div>
 
-    <h3 class="text-white font-semibold text-lg">Social Media Marketing</h3>
+                    <h3 class="text-white font-semibold text-lg">Social Media Marketing</h3>
 
-    <p class="text-white/80 text-sm leading-relaxed">
-        Social media helps you stay connected with people and build trust
-        over time. Our social media marketing services help your brand stay
-        active, friendly, and relatable.
-        We focus on steady communication and meaningful content that builds
-        long-term relationships instead of short-term attention.
-    </p>
+                    <p class="text-white/80 text-sm leading-relaxed">
+                        Social media helps you stay connected with people and build trust
+                        over time. Our social media marketing services help your brand stay
+                        active, friendly, and relatable.
+                        We focus on steady communication and meaningful content that builds
+                        long-term relationships instead of short-term attention.
+                    </p>
 
-    <a href="#" class="text-primary font-medium hover:underline">
-        Read More →
-    </a>
-</div>
+                    <a href="#" class="text-primary font-medium hover:underline">
+                        Read More →
+                    </a>
+                </div>
 
 
             </div>
@@ -551,130 +536,163 @@
     </section>
 
     <div class="px-[2%] md:px-[9%] bg-black">
-
         <section>
             <div class="bg-black text-white py-12">
-                <div class="container mx-auto flex flex-col  my-12 md:my-24">
+                <div class="container mx-auto flex flex-col my-12 md:my-24">
 
                     <!-- LEFT INFO -->
                     <div class="flex flex-col w-full md:sticky md:top-36 lg:w-2/3 px-4 mb-12 md:mb-0">
                         <div class="max-w-3xl mb-16">
 
-
-
-                            <!-- Main Heading -->
-                            <h2 class="text-3xl md:text-4xl lg:text-5xl
-               font-semibold leading-tight text-white mb-4">
+                            <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-white mb-4">
                                 Our <span class="text-primary font-bold">Process</span>
                             </h2>
 
-                            <!-- Description -->
                             <p class="text-sm md:text-justify text-white/80 leading-relaxed">
-                                We follow a simple and transparent process that keeps everything clear and comfortable for you from start to finish. Each step is designed to reduce confusion, save time, and make sure the final result truly supports your business goals in a practical way.
+                                We follow a simple and transparent process that keeps everything clear
+                                and comfortable for you from start to finish. Each step is designed
+                                to reduce confusion, save time, and support your business goals.
                             </p>
-
                         </div>
-
 
                         <a href="#contact"
                             class="mr-auto px-6 py-2.5 rounded-full
-                  border border-primary text-primary
-                  hover:bg-primary hover:text-black transition">
+                          border border-primary text-primary
+                          hover:bg-primary hover:text-black transition">
                             Start Your Project
                         </a>
                     </div>
 
+                    <!-- RIGHT TIMELINE -->
                     <div class="w-full justify-center flex">
-                        <!-- TIMELINE -->
                         <div class="md:ml-12 lg:w-2/3">
                             <div class="relative overflow-hidden p-6 md:p-10">
 
-                                <!-- CENTER LINES -->
+                                <!-- CENTER LINE -->
                                 <div class="absolute h-full border-l border-primary left-1/2"></div>
-                                <div class="absolute h-full border-r border-primary left-1/2"></div>
 
-                                <!-- STEP 1 -->
-                                <div class="mb-10 flex justify-between flex-row-reverse items-center w-full">
+                                <!-- STEP 01 -->
+                                <div class="mb-14 flex justify-between flex-row-reverse items-center w-full relative">
+
+                                    <div class="absolute left-1/2 -translate-x-1/2
+                                        w-12 h-12 rounded-full bg-primary text-black
+                                        flex items-center justify-center shadow-lg z-20">
+                                        <i class="ri-chat-3-line text-xl"></i>
+                                    </div>
+
                                     <div class="w-5/12"></div>
+
                                     <div class="w-5/12 text-right">
                                         <p class="text-primary font-semibold mb-1">Step 01</p>
-                                        <h4 class="font-bold text-lg md:text-2xl mb-2">
-                                            Discuss & Agree
-                                        </h4>
-                                        <p class="text-xs md:text-sm text-base md:text-justify text-white/80 leading-relaxed">
-                                            We follow a simple and transparent process that keeps everything clear and comfortable for you from start to finish. Each step is designed to reduce confusion, save time, and make sure the final result truly supports your business goals in a practical way.
+                                        <h4 class="font-bold text-lg md:text-2xl mb-2">Discuss & Agree</h4>
+                                        <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
+                                            We understand your ideas, goals, and expectations clearly so
+                                            everyone starts on the same page.
                                         </p>
                                     </div>
                                 </div>
 
-                                <!-- STEP 2 -->
-                                <div class="mb-10 flex justify-between items-center w-full">
+                                <!-- STEP 02 -->
+                                <div class="mb-14 flex justify-between items-center w-full relative">
+
+                                    <div class="absolute left-1/2 -translate-x-1/2
+                                        w-12 h-12 rounded-full bg-primary text-black
+                                        flex items-center justify-center shadow-lg z-20">
+                                        <i class="ri-road-map-line text-xl"></i>
+                                    </div>
+
                                     <div class="w-5/12"></div>
+
                                     <div class="w-5/12 text-left">
                                         <p class="text-primary font-semibold mb-1">Step 02</p>
-                                        <h4 class="font-bold text-lg md:text-2xl mb-2">
-                                            Planning
-                                        </h4>
-                                        <p class="text-xs md:text-sm text-base md:text-justify text-white/80 leading-relaxed">
-                                            Once we agree on the direction, we move into planning with care and attention. We create a clear plan that explains what will be done, how it will be done, and when each step will take place. This planning stage helps everything stay organized and gives you a clear picture of how the project will move forward in a smooth and steady way.
+                                        <h4 class="font-bold text-lg md:text-2xl mb-2">Planning</h4>
+                                        <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
+                                            We create a clear roadmap explaining tasks, timelines, and
+                                            execution so everything stays organized.
                                         </p>
                                     </div>
                                 </div>
 
-                                <!-- STEP 3 -->
-                                <div class="mb-10 flex justify-between flex-row-reverse items-center w-full">
+                                <!-- STEP 03 -->
+                                <div class="mb-14 flex justify-between flex-row-reverse items-center w-full relative">
+
+                                    <div class="absolute left-1/2 -translate-x-1/2
+                                        w-12 h-12 rounded-full bg-primary text-black
+                                        flex items-center justify-center shadow-lg z-20">
+                                        <i class="ri-pencil-ruler-2-line text-xl"></i>
+                                    </div>
+
                                     <div class="w-5/12"></div>
+
                                     <div class="w-5/12 text-right">
                                         <p class="text-primary font-semibold mb-1">Step 03</p>
-                                        <h4 class="font-bold text-lg md:text-2xl mb-2">
-                                            Designing
-                                        </h4>
-                                        <p class="text-xs md:text-sm text-base md:text-justify text-white/80 leading-relaxed">
-                                            During the designing stage, we turn ideas into visual layouts that are easy to understand and comfortable to use. We focus on structure, colors, and flow so users can move through the design without effort. We also share designs with you and listen carefully to your feedback, making changes until everything feels right and matches your vision.
+                                        <h4 class="font-bold text-lg md:text-2xl mb-2">Designing</h4>
+                                        <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
+                                            We turn ideas into clear, user-friendly designs and refine them
+                                            until they match your vision.
                                         </p>
                                     </div>
                                 </div>
 
-                                <!-- STEP 4 -->
-                                <div class="mb-10 flex justify-between items-center w-full">
+                                <!-- STEP 04 -->
+                                <div class="mb-14 flex justify-between items-center w-full relative">
+
+                                    <div class="absolute left-1/2 -translate-x-1/2
+                                        w-12 h-12 rounded-full bg-primary text-black
+                                        flex items-center justify-center shadow-lg z-20">
+                                        <i class="ri-code-box-line text-xl"></i>
+                                    </div>
+
                                     <div class="w-5/12"></div>
+
                                     <div class="w-5/12 text-left">
                                         <p class="text-primary font-semibold mb-1">Step 04</p>
-                                        <h4 class="font-bold text-lg md:text-2xl mb-2">
-                                            Development
-                                        </h4>
-                                        <p class="text-xs md:text-sm text-base md:text-justify text-white/80 leading-relaxed">
-                                            After the design is approved, we begin development by building everything step by step with care. We focus on making the solution stable, secure, and easy to use while keeping performance smooth on all devices. Throughout this stage, we stay connected with you and share progress updates so you always know how the work is moving forward.
+                                        <h4 class="font-bold text-lg md:text-2xl mb-2">Development</h4>
+                                        <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
+                                            We build the solution step by step with secure, scalable,
+                                            and high-performance code.
                                         </p>
                                     </div>
                                 </div>
 
-                                <!-- STEP 5 -->
-                                <div class="mb-10 flex justify-between flex-row-reverse items-center w-full">
+                                <!-- STEP 05 -->
+                                <div class="mb-14 flex justify-between flex-row-reverse items-center w-full relative">
+
+                                    <div class="absolute left-1/2 -translate-x-1/2
+                                        w-12 h-12 rounded-full bg-primary text-black
+                                        flex items-center justify-center shadow-lg z-20">
+                                        <i class="ri-bug-line text-xl"></i>
+                                    </div>
+
                                     <div class="w-5/12"></div>
+
                                     <div class="w-5/12 text-right">
                                         <p class="text-primary font-semibold mb-1">Step 05</p>
-                                        <h4 class="font-bold text-lg md:text-2xl mb-2">
-                                            Testing
-                                        </h4>
-                                        <p class="text-xs md:text-sm text-base md:text-justify text-white/80 leading-relaxed">
-                                            Testing
-                                            Before the final launch, we test everything carefully to make sure it works as expected. We check performance, usability, and possible issues so users have a smooth and reliable experience. This step helps us fix small problems early and ensures the final result feels complete and dependable.
-
+                                        <h4 class="font-bold text-lg md:text-2xl mb-2">Testing</h4>
+                                        <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
+                                            We test performance, usability, and reliability to ensure
+                                            a smooth and stable experience.
                                         </p>
                                     </div>
                                 </div>
 
-                                <!-- STEP 6 -->
-                                <div class="mb-10 flex justify-between items-center w-full">
+                                <!-- STEP 06 -->
+                                <div class="mb-14 flex justify-between items-center w-full relative">
+
+                                    <div class="absolute left-1/2 -translate-x-1/2
+                                        w-12 h-12 rounded-full bg-primary text-black
+                                        flex items-center justify-center shadow-lg z-20">
+                                        <i class="ri-rocket-line text-xl"></i>
+                                    </div>
+
                                     <div class="w-5/12"></div>
+
                                     <div class="w-5/12 text-left">
                                         <p class="text-primary font-semibold mb-1">Step 06</p>
-                                        <h4 class="font-bold text-lg md:text-2xl mb-2">
-                                            Final Launch
-                                        </h4>
-                                        <p class="text-xs md:text-sm text-base md:text-justify text-white/80 leading-relaxed">
-                                            Once testing is complete and everything is approved, we move to the final launch. We carefully release the project and make sure it works smoothly in the real environment. Even after launch, we stay available to support you, handle updates, and help you move forward with confidence as your business grows.
+                                        <h4 class="font-bold text-lg md:text-2xl mb-2">Final Launch</h4>
+                                        <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
+                                            We launch carefully and continue supporting you as your
+                                            business grows.
                                         </p>
                                     </div>
                                 </div>
@@ -686,6 +704,7 @@
                 </div>
             </div>
         </section>
+
         <section class="py-24 bg-black">
             <div class="max-w-7xl mx-auto px-6">
 
@@ -779,12 +798,12 @@
 
         </section>
 
-        <section class="w-full bg-black py-20 overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <section class="w-full bg-black py-10 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4  lg:px-4">
 
                 <!-- SECTION TITLE -->
-                <h2 class=" text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-                    Our Satisfied <span class="text-primary">CLIENTS</span>
+                <h2 class=" text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-6">
+                    Our Satisfied <span class="text-primary">Clients</span>
                 </h2>
                 <p class="text-sm mb-20 md:text-justify text-white/80 leading-relaxed">We are proud to work with clients from different industries. Each project helps us learn and improve.
                     Our clients stay with us because we communicate clearly, deliver on time, and care about their success.
