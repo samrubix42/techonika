@@ -460,8 +460,8 @@
 
 <section class="w-full px-[4%] md:[8%]">
    <section>
-            <div class="bg-black text-white py-12">
-                <div class="container mx-auto flex flex-col my-12 md:my-24">
+            <div class="bg-black text-white">
+                <div class="container mx-auto flex flex-col my-12 md:my-18">
 
                     <!-- LEFT INFO -->
                     <div class="flex flex-col md:px-10 w-full md:sticky md:top-36 lg:w-2/3 px-4 mb-12 md:mb-0">
