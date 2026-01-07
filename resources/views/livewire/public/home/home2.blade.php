@@ -227,18 +227,23 @@
                     <div class="space-y-4 sm:space-y-5">
                         <p class="text-white/80 text-sm sm:text-justify lg:text-lg leading-relaxed">
                             Our mission is simple.
-                            We help businesses use technology in a smart
-                            and stress-free way.
-                            We focus on solutions that solve real problems
-                            instead of adding extra confusion.
+                            We help businesses use technology in a smart,
+                            practical, and stress-free way.
+                            We focus on building solutions that solve real problems
+                            instead of adding unnecessary complexity,
+                            so technology supports growth rather than slowing it down.
                         </p>
 
                         <p class="text-white/80 text-sm sm:text-justify lg:text-lg leading-relaxed">
-                            Every project starts with understanding your needs
-                            and ends with a solution that makes your daily work
-                            easier, smoother, and more efficient.
+                            Every project begins with understanding your needs,
+                            challenges, and goals.
+                            It ends with a solution that makes daily work
+                            easier, smoother, and more efficient,
+                            helping teams work better and businesses move forward
+                            with confidence.
                         </p>
                     </div>
+
                 </div>
 
                 <!-- Vision -->
@@ -252,19 +257,25 @@
                     </div>
 
                     <div class="space-y-4 sm:space-y-5">
-                        <p class="text-white/80 text-sm sm:text-justify lg:text-lg ">
+                        <p class="text-white/80 text-sm sm:text-justify lg:text-lg leading-relaxed">
                             Our vision is to become a trusted digital partner
-                            for businesses around the world.
-                            We want people to feel confident when they hear
-                            the name <span class="text-white font-medium">Techonika</span>.
+                            for businesses across the world.
+                            We want technology to feel reliable and meaningful,
+                            and we want people to feel confident
+                            when they hear the name
+                            <span class="text-white font-medium">Techonika</span>.
                         </p>
 
                         <p class="text-white/80 text-sm sm:text-justify lg:text-lg leading-relaxed">
                             That confidence comes from honest work,
                             clear communication,
-                            and results that truly help businesses grow.
+                            and results that truly support business growth.
+                            By building strong relationships and delivering
+                            consistent value, we aim to create digital solutions
+                            that make a lasting and positive impact.
                         </p>
                     </div>
+
                 </div>
 
             </div>
