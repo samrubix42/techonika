@@ -290,177 +290,203 @@
 
         <!-- Heading -->
         <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold
-               text-center md:text-left py-6 md:py-10 px-2 md:px-6">
+           text-center md:text-left py-6 md:py-10 px-2 md:px-6">
             What We Do
         </h2>
 
         <p class="text-white/80 max-w-3xl px-2 md:px-6 mb-12 text-justify md:text-lg">
-            We offer a wide range of digital and technology services. Each service is designed to support your business goals and improve your connection with customers. Below is a detailed look at what we do and how each service helps you.
-        </p>
+            We offer a wide range of digital and technology services. Each service is designed to support your
+            business goals and improve your connection with customers. Below is a detailed look at what we do
+            and how each service helps you. </p>
 
         <!-- Background Section -->
         <section class="relative bg-black py-6 overflow-hidden bg-center bg-no-repeat bg-cover"
             style="background-image: url('{{ asset('images/lines.png') }}');">
 
-            <!-- Yellow blur circles -->
-            <div class="absolute top-20 right-0 md:right-20 lg:right-32
-                    w-72 h-72 bg-primary opacity-20 rounded-full blur-3xl"></div>
-
-            <div class="absolute bottom-20 left-0 md:left-20 lg:left-32
-                    w-72 h-72 bg-primary opacity-20 rounded-full blur-3xl"></div>
+            <!-- Glow -->
+            <div class="absolute top-20 right-0 md:right-20 w-72 h-72 bg-primary opacity-20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 left-0 md:left-20 w-72 h-72 bg-primary opacity-20 rounded-full blur-3xl"></div>
 
             <!-- Cards -->
-            <div class="mx-auto px-2 md:px-6
-                    grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-                    gap-8 relative z-10">
+            <div class="mx-auto px-2 md:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
 
                 <!-- Web Design -->
-                <div class="bg-white/10 backdrop-blur-md border border-white/20
-                        rounded-xl p-6 flex flex-col gap-4 shadow-lg
-                        hover:scale-105 transition">
-                    <h3 class="text-white font-semibold text-lg">Web Design</h3>
-                    <p class="text-white/80 text-sm leading-relaxed">
-                        Your website is often the first interaction people have with your brand. Our web design services focus on creating websites that are easy to navigate, simple to understand, and pleasant to use. We design layouts that feel natural, guide visitors smoothly, and make information easy to find.
-                        Every page is crafted to build trust, improve clarity, and offer a comfortable browsing experience across all devices.
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
 
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                        <i class="ri-layout-4-line"></i>
+                    </div>
+
+                    <h3 class="text-white font-semibold text-lg">Web Design</h3>
+                    <p class="text-white/80 text-sm">
+                        Your website is often the first interaction people have with your brand. Our web design services focus
+                        on creating websites that are easy to navigate, simple to understand, and pleasant to use. We design
+                        layouts that feel natural, guide visitors smoothly, and make information easy to find.​
+                        Every page is crafted to build trust, improve clarity, and offer a comfortable browsing experience
+                        across all devices.
                     </p>
-                    <a href="#" class="text-primary font-medium hover:underline">
-                        Read More →
-                    </a>
+                    <a href="#" class="text-primary font-medium hover:underline">Read More →</a>
                 </div>
 
                 <!-- Graphic Design -->
-                <div class="bg-white/10 backdrop-blur-md border border-white/20
-                        rounded-xl p-6 flex flex-col gap-4 shadow-lg
-                        hover:scale-105 transition">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                        <i class="ri-palette-line"></i>
+                    </div>
                     <h3 class="text-white font-semibold text-lg">Graphic Design</h3>
-                    <p class="text-white/80 text-sm leading-relaxed">
-                        Strong visuals help people understand and remember your brand. Our graphic design services create clean, meaningful visuals that communicate clearly and feel consistent. From branding elements to marketing graphics, we design with balance, readability, and purpose in mind.
-                        Colors, typography, and visuals are chosen carefully so your message feels clear, professional, and easy to connect with.
-
-                    </p>
-                    <a href="#" class="text-primary font-medium hover:underline">
-                        Read More →
-                    </a>
+                    <p class="text-white/80 text-sm">
+                        Strong visuals help people understand and remember your brand. Our graphic design services create
+                        clean, meaningful visuals that communicate clearly and feel consistent. From branding elements to
+                        marketing graphics, we design with balance, readability, and purpose in mind.​
+                        Colors, typography, and visuals are chosen carefully so your message feels clear, professional, and
+                        easy to connect with. </p>
+                    <a href="#" class="text-primary font-medium hover:underline">Read More →</a>
                 </div>
 
                 <!-- Web Development -->
-                <div class="bg-white/10 backdrop-blur-md border border-white/20
-                        rounded-xl p-6 flex flex-col gap-4 shadow-lg
-                        hover:scale-105 transition">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                        <i class="ri-code-box-line"></i>
+                    </div>
                     <h3 class="text-white font-semibold text-lg">Web Development</h3>
-                    <p class="text-white/80 text-sm leading-relaxed">
-                        A strong website needs a solid base. Our web development services focus on building websites that work smoothly every day. We make sure your site loads fast, stays secure, and works well on all devices.
-                        We build websites that are easy to manage and ready to grow with your business. Our work stays clear, stable, and reliable so you can focus on serving your customers.
-
-                    </p>
-                    <a href="#" class="text-primary font-medium hover:underline">
-                        Read More →
-                    </a>
+                    <p class="text-white/80 text-sm">
+                        A strong website needs a solid base. Our web development services focus on building websites that
+                        work smoothly every day. We make sure your site loads fast, stays secure, and works well on all
+                        devices.
+                        We build websites that are easy to manage and ready to grow with your business. Our work stays
+                        clear, stable, and reliable so you can focus on serving your customers. </p>
+                    <a href="#" class="text-primary font-medium hover:underline">Read More →</a>
                 </div>
 
                 <!-- Digital Marketing -->
-                <div class="bg-white/10 backdrop-blur-md border border-white/20
-                        rounded-xl p-6 flex flex-col gap-4 shadow-lg
-                        hover:scale-105 transition">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                        <i class="ri-megaphone-line"></i>
+                    </div>
                     <h3 class="text-white font-semibold text-lg">Digital Marketing</h3>
-                    <p class="text-white/80 text-sm leading-relaxed">
-                        Being visible online helps people find and trust your business. Our digital marketing services help you reach the right audience in a clear and steady way.
-                        We plan and manage marketing activities that support real growth. Every step stays focused on your goals and helps you build long-term connections with people.
-
-                    </p>
-                    <a href="#" class="text-primary font-medium hover:underline">
-                        Read More →
-                    </a>
-                </div>
-
-                <!-- Online Branding -->
-                <div class="bg-white/10 backdrop-blur-md border border-white/20
-                        rounded-xl p-6 flex flex-col gap-4 shadow-lg
-                        hover:scale-105 transition">
-                    <h3 class="text-white font-semibold text-lg">Online Branding</h3>
-                    <p class="text-white/80 text-sm leading-relaxed">
-                        Your brand is how people recognize and remember you online. Our online branding services help your business stay clear, consistent, and trustworthy across all digital platforms.
-                        We support your brand message, visuals, and presence so people feel familiar and confident when they see your business.
-
-                    </p>
-                    <a href="#" class="text-primary font-medium hover:underline">
-                        Read More →
-                    </a>
+                    <p class="text-white/80 text-sm">
+                        Being visible online helps people find and trust your business. Our digital marketing services help
+                        you reach the right audience in a clear and steady way.
+                        We plan and manage marketing activities that support real growth. Every step stays focused on your
+                        goals and helps you build long-term connections with people. </p>
+                    <a href="#" class="text-primary font-medium hover:underline">Read More →</a>
                 </div>
 
                 <!-- Ecommerce -->
-                <div class="bg-white/10 backdrop-blur-md border border-white/20
-                        rounded-xl p-6 flex flex-col gap-4 shadow-lg
-                        hover:scale-105 transition">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                        <i class="ri-shopping-cart-2-line"></i>
+                    </div>
                     <h3 class="text-white font-semibold text-lg">Ecommerce Solutions</h3>
-                    <p class="text-white/80 text-sm leading-relaxed">
-                        Selling online should feel organized and simple. Our ecommerce solutions help you manage products, orders, and customers without stress.
-                        We build systems that make shopping easy for buyers and management easy for you, supporting steady growth for your online business.
-
-                    </p>
-                    <a href="#" class="text-primary font-medium hover:underline">
-                        Read More →
-                    </a>
+                    <p class="text-white/80 text-sm">
+                        Your brand is how people recognize and remember you online. Our online branding services help
+                        your business stay clear, consistent, and trustworthy across all digital platforms.
+                        We support your brand message, visuals, and presence so people feel familiar and confident when
+                        they see your business. </p>
+                    <a href="#" class="text-primary font-medium hover:underline">Read More →</a>
                 </div>
 
-                <!-- Social Media -->
-                <div class="bg-white/10 backdrop-blur-md border border-white/20
-                        rounded-xl p-6 flex flex-col gap-4 shadow-lg
-                        hover:scale-105 transition">
-                    <h3 class="text-white font-semibold text-lg">Social Media Marketing</h3>
-                    <p class="text-white/80 text-sm leading-relaxed">
-                        Social media helps you stay connected with people and build trust over time. Our social media marketing services help your brand stay active, friendly, and relatable.
-                        We focus on steady communication and meaningful content that supports long-term relationships instead of short-term attention.
-
-                    </p>
-                    <a href="#" class="text-primary font-medium hover:underline">
-                        Read More →
-                    </a>
-                </div>
-
-                <!-- Mobile Apps -->
-                <div class="bg-white/10 backdrop-blur-md border border-white/20
-                        rounded-xl p-6 flex flex-col gap-4 shadow-lg
-                        hover:scale-105 transition">
+                <!-- Mobile App -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                        <i class="ri-smartphone-line"></i>
+                    </div>
                     <h3 class="text-white font-semibold text-lg">Mobile App Development</h3>
-                    <p class="text-white/80 text-sm leading-relaxed">
-                        Mobile apps help you stay close to your users. Our mobile apps are designed to feel simple, smooth, and easy to use.
-                        We build apps that work well every day and stay ready for future updates. This helps you serve users better as needs change.
-
-                    </p>
-                    <a href="#" class="text-primary font-medium hover:underline">
-                        Read More →
-                    </a>
+                    <p class="text-white/80 text-sm">
+                        Mobile apps help you stay close to your users. Our mobile apps are designed to feel simple, smooth,
+                        and easy to use.
+                        We build apps that work well every day and stay ready for future updates. This helps you serve users
+                        better as needs change. </p>
+                    <a href="#" class="text-primary font-medium hover:underline">Read More →</a>
                 </div>
-
-                <!-- Resource Management -->
                 <div class="bg-white/10 backdrop-blur-md border border-white/20
-                        rounded-xl p-6 flex flex-col gap-4 shadow-lg
-                        hover:scale-105 transition">
-                    <h3 class="text-white font-semibold text-lg">Resource Management</h3>
-                    <p class="text-white/80 text-sm leading-relaxed">
-                        Every business needs clear systems to manage work and resources. Our resource management solutions help you organize data, tasks, and internal processes more easily.
-                        We build tools that reduce manual work, improve clarity, and help your team work together more smoothly every day.
+            rounded-xl p-6 flex flex-col gap-4 shadow-lg
+            hover:scale-105 transition">
 
-                    </p>
-                    <a href="#" class="text-primary font-medium hover:underline">
-                        Read More →
-                    </a>
-                </div>
+    <!-- Icon -->
+    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary
+                flex items-center justify-center text-2xl">
+        <i class="ri-settings-4-line"></i>
+    </div>
+
+    <h3 class="text-white font-semibold text-lg">Resource Management</h3>
+
+    <p class="text-white/80 text-sm leading-relaxed">
+        Every business needs clear systems to manage work and resources.
+        Our resource management solutions help you organize data, tasks,
+        and internal processes more easily.
+        We build tools that reduce manual work, improve clarity, and help
+        your team work together more smoothly every day.
+    </p>
+
+    <a href="#" class="text-primary font-medium hover:underline">
+        Read More →
+    </a>
+</div>
+
+<div class="bg-white/10 backdrop-blur-md border border-white/20
+            rounded-xl p-6 flex flex-col gap-4 shadow-lg
+            hover:scale-105 transition">
+
+    <!-- Icon -->
+    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary
+                flex items-center justify-center text-2xl">
+        <i class="ri-shield-star-line"></i>
+    </div>
+
+    <h3 class="text-white font-semibold text-lg">Online Branding</h3>
+
+    <p class="text-white/80 text-sm leading-relaxed">
+        Your brand is how people recognize and remember you online.
+        Our online branding services help your business stay clear,
+        consistent, and trustworthy across all digital platforms.
+        We support your brand message, visuals, and presence so people
+        feel confident when they see your business.
+    </p>
+
+    <a href="#" class="text-primary font-medium hover:underline">
+        Read More →
+    </a>
+</div>
+<div class="bg-white/10 backdrop-blur-md border border-white/20
+            rounded-xl p-6 flex flex-col gap-4 shadow-lg
+            hover:scale-105 transition">
+
+    <!-- Icon -->
+    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary
+                flex items-center justify-center text-2xl">
+        <i class="ri-chat-smile-3-line"></i>
+    </div>
+
+    <h3 class="text-white font-semibold text-lg">Social Media Marketing</h3>
+
+    <p class="text-white/80 text-sm leading-relaxed">
+        Social media helps you stay connected with people and build trust
+        over time. Our social media marketing services help your brand stay
+        active, friendly, and relatable.
+        We focus on steady communication and meaningful content that builds
+        long-term relationships instead of short-term attention.
+    </p>
+
+    <a href="#" class="text-primary font-medium hover:underline">
+        Read More →
+    </a>
+</div>
+
 
             </div>
 
             <!-- CTA -->
             <div class="mt-14 text-center relative z-10">
-                <button class="bg-primary text-black px-8 py-3 rounded-lg
-                           font-semibold shadow-lg hover:opacity-90 transition">
+                <button class="bg-primary text-black px-8 py-3 rounded-lg font-semibold shadow-lg hover:opacity-90 transition">
                     Book Your Call
                 </button>
             </div>
 
         </section>
     </div>
+
+
     <section class="relative px-[2%] md:px-[9%] bg-gradient-to-r from-black via-[#111] to-black text-white overflow-hidden">
         <div class="mx-auto px-4 sm:px-6 lg:px-12 py-16 sm:py-20">
             <h2 class="text-3xl sm:text-4xl lg:text-5xl mb-10 font-bold leading-tight">
