@@ -12,7 +12,7 @@
                 </div>
 
                 <!-- RIGHT CONTENT -->
-                <div class="space-y-6 sm:space-y-8 lg:space-y-4 w-full md:w-10/12 text-left font-semibold text-slate-200">
+                <div class="space-y-6 sm:space-y-8 lg:space-y-4 w-full md:w-10/12 px-[4%] md:px-0 text-left font-semibold text-slate-200">
 
                     <!-- Heading -->
                     <h1 class="font-light tracking-wide leading-tight
@@ -461,71 +461,71 @@
 
         </section>
     </div>
-<section class="relative bg-gradient-to-r from-black via-[#111] to-black text-white overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16 sm:py-20">
-
-        <div class="flex flex-col gap-8 md:gap-10 text-justify">
-
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+    <section class="relative px-[2%] md:px-[9%] bg-gradient-to-r from-black via-[#111] to-black text-white overflow-hidden">
+        <div class="mx-auto px-4 sm:px-6 lg:px-12 py-16 sm:py-20">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl mb-10 font-bold leading-tight">
                 Why Choose <span class="text-primary">TECHONIKA</span>
             </h2>
+            <div class="flex flex-col gap-6 md:gap-10 text-justify">
 
-            <p class="text-gray-300 leading-relaxed">
-                Choosing the right digital partner is an important decision.
-                You are trusting someone with your brand, your ideas,
-                and your future growth. At Techonika, we understand the
-                responsibility that comes with that trust.
-            </p>
 
-            <p class="text-gray-400 leading-relaxed">
-                We take time to listen, understand your goals,
-                and learn what truly matters to your business
-                before suggesting any solution. Our approach
-                starts with clarity and continues with steady,
-                well-planned progress that feels reliable and comfortable.
-            </p>
 
-            <p class="text-gray-400 leading-relaxed">
-                We do not rush projects just to finish quickly.
-                Instead, we focus on doing things the right way from the start,
-                so you don’t face problems later. We stay updated with modern
-                tools and technologies, but we always choose what fits your
-                business needs, budget, and long-term plans.
-            </p>
+                <p class="text-gray-300 leading-relaxed">
+                    Choosing the right digital partner is an important decision.
+                    You are trusting someone with your brand, your ideas,
+                    and your future growth. At Techonika, we understand the
+                    responsibility that comes with that trust.
+                </p>
 
-            <p class="text-gray-400 leading-relaxed">
-                Clear communication is at the heart of how we work.
-                We explain every step in simple, easy-to-understand language,
-                so you always know what is happening, why it matters,
-                and how it supports your growth.
-            </p>
+                <p class="text-gray-400 leading-relaxed">
+                    We take time to listen, understand your goals,
+                    and learn what truly matters to your business
+                    before suggesting any solution. Our approach
+                    starts with clarity and continues with steady,
+                    well-planned progress that feels reliable and comfortable.
+                </p>
 
-            <p class="text-gray-400 leading-relaxed">
-                Our work does not end at delivery.
-                We stay connected, support you as your needs change,
-                and help you improve and evolve over time.
-                As your business grows, we grow with you.
-            </p>
+                <p class="text-gray-400 leading-relaxed">
+                    We do not rush projects just to finish quickly.
+                    Instead, we focus on doing things the right way from the start,
+                    so you don’t face problems later. We stay updated with modern
+                    tools and technologies, but we always choose what fits your
+                    business needs, budget, and long-term plans.
+                </p>
 
-            <a href="#"
-               class="inline-flex items-center gap-2 bg-[#f6b615] text-black
+                <p class="text-gray-400 leading-relaxed">
+                    Clear communication is at the heart of how we work.
+                    We explain every step in simple, easy-to-understand language,
+                    so you always know what is happening, why it matters,
+                    and how it supports your growth.
+                </p>
+
+                <p class="text-gray-400 leading-relaxed">
+                    Our work does not end at delivery.
+                    We stay connected, support you as your needs change,
+                    and help you improve and evolve over time.
+                    As your business grows, we grow with you.
+                </p>
+
+                <a href="#"
+                    class="inline-flex items-center gap-2 bg-[#f6b615] text-black
                       px-6 py-3 rounded-lg font-semibold
                       hover:bg-yellow-400 transition w-fit">
-                Learn more
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
-                     viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M9 5l7 7-7 7" />
-                </svg>
-            </a>
+                    Learn more
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+
+            </div>
 
         </div>
+    </section>
 
-    </div>
-</section>
+    <div class="px-[2%] md:px-[9%] bg-black">
 
-    <div class="px-[9%] bg-black">
-      
         <section>
             <div class="bg-black text-white py-12">
                 <div class="container mx-auto flex flex-col  my-12 md:my-24">
@@ -880,7 +880,7 @@
 
 
         <section class="bg-black py-20">
-            <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-7xl mx-auto px-4 md:px-5">
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
