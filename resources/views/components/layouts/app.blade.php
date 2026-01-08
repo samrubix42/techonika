@@ -69,7 +69,7 @@
     <!-- Header -->
     <livewire:includes.header />
 
-    <main class="min-h-screen max-w-full overflow-x-hidden">
+    <main class="min-h-screen max-w-full bg-black overflow-x-hidden">
         {{ $slot }}
     </main>
 

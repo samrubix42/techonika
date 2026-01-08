@@ -1,5 +1,5 @@
 <div>
-    <section class="bg-black text-white py-24 relative overflow-hidden">
+    <section class="bg-black text-white mt-24 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
 
             <div class="grid lg:grid-cols-2 gap-16 items-center">
@@ -145,7 +145,7 @@
 
         </div>
     </section>
-    <section class="bg-black py-10 relative overflow-hidden">
+    <section class="bg-black py-12 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Section Heading -->
@@ -220,7 +220,7 @@
 
         </div>
     </section>
-    <section class="bg-black text-white py-24 relative overflow-hidden">
+    <section class="bg-black text-white py-20 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
 
             <div class="grid lg:grid-cols-2 gap-16 items-center">
@@ -240,27 +240,26 @@
                     </p>
 
                     <p class="text-white/80 text-lg leading-relaxed mb-8">
-                        A well-structured, SEO-friendly website builds trust, improves
-                        search visibility, and increases conversions — turning visitors
-                        into customers.
+                        On the other hand, a
+                        well-structured, SEO-friendly website builds trust, improves visibility on search engines, and
+                        increases conversions.
                     </p>
 
-                    <div class="flex items-center gap-3 text-white/70">
-                        <i class="ri-map-pin-line text-primary text-xl"></i>
-                        <p>
-                            As a trusted Noida web development company, we build websites
-                            focused on performance, growth, and long-term success.
-                        </p>
-                    </div>
+
 
                 </div>
 
                 <!-- RIGHT FEATURE CARD -->
                 <div class="bg-white/5 backdrop-blur border border-white/15
                         rounded-2xl p-8 lg:p-10 shadow-lg">
-
-                    <h3 class="text-xl font-semibold mb-8 text-primary">
-                        Our Development Focus
+                    <div class="flex items-center font-semibold gap-3 text-white/70">
+                        <p>
+                            As a trusted Noida web development company, we build websites
+                            focused on performance, growth, and long-term success.
+                        </p>
+                    </div>
+                    <h3 class="text-xl font-semibold py-5 text-primary">
+                        Our Development Focus :
                     </h3>
 
                     <ul class="space-y-5 text-white/80">
@@ -309,7 +308,7 @@
 
         </div>
     </section>
-    <section class="bg-black text-white py-24">
+    <section class="bg-black text-white py-16">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Section Header -->
@@ -334,8 +333,8 @@
                     </div>
                     <h3 class="text-lg font-semibold mb-3">Website Development</h3>
                     <p class="text-white/70 text-sm leading-relaxed mb-5">
-                        High-performance business websites designed for speed,
-                        security, and scalability.
+                        High-performance business websites designed for speed, security, and scalability. Ideal for
+                        startups, SMEs, and enterprises looking to build a strong online presence.
                     </p>
                     <a href="#" class="text-primary text-sm font-medium inline-flex items-center gap-2">
                         Learn more <i class="ri-arrow-right-line"></i>
@@ -350,8 +349,8 @@
                     </div>
                     <h3 class="text-lg font-semibold mb-3">Ecommerce Development</h3>
                     <p class="text-white/70 text-sm leading-relaxed mb-5">
-                        Conversion-focused eCommerce websites with secure
-                        payment integration and smooth checkout.
+                        Conversion-focused eCommerce websites with secure payment integration, smooth checkout,
+                        and scalable architecture to grow online sales.
                     </p>
                     <a href="#" class="text-primary text-sm font-medium inline-flex items-center gap-2">
                         Learn more <i class="ri-arrow-right-line"></i>
@@ -366,8 +365,8 @@
                     </div>
                     <h3 class="text-lg font-semibold mb-3">PHP Development</h3>
                     <p class="text-white/70 text-sm leading-relaxed mb-5">
-                        Robust PHP-based web solutions built for flexibility
-                        and long-term maintainability.
+                        Robust PHP-based web solutions built for performance, flexibility, and long-term
+                        maintainability across business applications.
                     </p>
                     <a href="#" class="text-primary text-sm font-medium inline-flex items-center gap-2">
                         Learn more <i class="ri-arrow-right-line"></i>
@@ -382,8 +381,8 @@
                     </div>
                     <h3 class="text-lg font-semibold mb-3">WordPress Development</h3>
                     <p class="text-white/70 text-sm leading-relaxed mb-5">
-                        SEO-friendly WordPress websites customized for
-                        business growth and lead generation.
+                        SEO-friendly and easy-to-manage WordPress websites customized for business growth, lead
+                        generation, and content scalability.
                     </p>
                     <a href="#" class="text-primary text-sm font-medium inline-flex items-center gap-2">
                         Learn more <i class="ri-arrow-right-line"></i>
@@ -398,8 +397,50 @@
                     </div>
                     <h3 class="text-lg font-semibold mb-3">Magento Development</h3>
                     <p class="text-white/70 text-sm leading-relaxed mb-5">
-                        Enterprise-grade Magento solutions for large
-                        catalogs and high-traffic stores.
+                        Enterprise-grade Magento eCommerce solutions designed for large catalogs, advanced
+                        integrations, and high-traffic online stores.
+                    </p>
+                    <a href="#" class="text-primary text-sm font-medium inline-flex items-center gap-2">
+                        Learn more <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+                <div class="bg-white/5 border border-white/15 rounded-2xl p-7 hover:border-primary transition group">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-white/10 mb-5 group-hover:bg-white/15 transition">
+                        <img src="{{ asset('images/tech/joomla.png') }}" alt="Magento Development"
+                            class="max-h-7 w-auto object-contain opacity-90 group-hover:opacity-100 transition">
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Joomla Development</h3>
+                    <p class="text-white/70 text-sm leading-relaxed mb-5">
+                        Flexible Joomla websites with custom components and extensions, suitable for content-heavy
+                        and multilingual business platforms.​
+                    </p>
+                    <a href="#" class="text-primary text-sm font-medium inline-flex items-center gap-2">
+                        Learn more <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+                <div class="bg-white/5 border border-white/15 rounded-2xl p-7 hover:border-primary transition group">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-white/10 mb-5 group-hover:bg-white/15 transition">
+                        <img src="{{ asset('images/tech/wix.jpg') }}" alt="Magento Development"
+                            class="max-h-7 w-auto object-contain opacity-90 group-hover:opacity-100 transition">
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Wix Development</h3>
+                    <p class="text-white/70 text-sm leading-relaxed mb-5">
+                        Modern Wix websites built for small businesses and professionals who need quick deployment
+                        with clean design and functionality.
+                    </p>
+                    <a href="#" class="text-primary text-sm font-medium inline-flex items-center gap-2">
+                        Learn more <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+                <div class="bg-white/5 border border-white/15 rounded-2xl p-7 hover:border-primary transition group">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-white/10 mb-5 group-hover:bg-white/15 transition">
+                        <img src="{{ asset('images/tech/codeigniter.png') }}" alt="Magento Development"
+                            class="max-h-7 w-auto object-contain opacity-90 group-hover:opacity-100 transition">
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Codeigniter Development</h3>
+                    <p class="text-white/70 text-sm leading-relaxed mb-5">
+                        Lightweight and high-performance web applications developed using CodeIgniter for faster
+                        execution and clean architecture.
                     </p>
                     <a href="#" class="text-primary text-sm font-medium inline-flex items-center gap-2">
                         Learn more <i class="ri-arrow-right-line"></i>
@@ -416,6 +457,20 @@
                     <p class="text-white/70 text-sm leading-relaxed mb-5">
                         Fast and scalable Shopify stores optimized
                         for mobile experience and conversions.
+                    </p>
+                    <a href="#" class="text-primary text-sm font-medium inline-flex items-center gap-2">
+                        Learn more <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+                <div class="bg-white/5 border border-white/15 rounded-2xl p-7 hover:border-primary transition group">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-white/10 mb-5 group-hover:bg-white/15 transition">
+                        <img src="{{ asset('images/tech/symfonypng.png') }}" alt="Symfony Development"
+                            class="max-h-7 w-auto object-contain opacity-90 group-hover:opacity-100 transition">
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Symfony Development</h3>
+                    <p class="text-white/70 text-sm leading-relaxed mb-5">
+                        Enterprise-level Symfony solutions for complex, high-performance web applications with long-
+                        term scalability.
                     </p>
                     <a href="#" class="text-primary text-sm font-medium inline-flex items-center gap-2">
                         Learn more <i class="ri-arrow-right-line"></i>
@@ -441,13 +496,13 @@
                 <!-- Frameworks -->
                 <div class="bg-white/5 border border-white/15 rounded-2xl p-7 hover:border-primary transition group">
                     <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-white/10 mb-5 group-hover:bg-white/15 transition">
-                        <img src="{{ asset('images/tech/cakephp.png') }}" alt="Symfony Yii CakePHP"
+                        <img src="{{ asset('images/tech/yii.png') }}" alt="Symfony Yii CakePHP"
                             class="max-h-7 w-auto object-contain opacity-90 group-hover:opacity-100 transition">
                     </div>
-                    <h3 class="text-lg font-semibold mb-3">Symfony · Yii · CakePHP</h3>
+                    <h3 class="text-lg font-semibold mb-3">Yii Development</h3>
                     <p class="text-white/70 text-sm leading-relaxed mb-5">
-                        Enterprise-level framework development
-                        for secure and scalable applications.
+                        High-speed Yii framework development for complex web applications requiring efficiency,
+                        security, and scalability.
                     </p>
                     <a href="#" class="text-primary text-sm font-medium inline-flex items-center gap-2">
                         Learn more <i class="ri-arrow-right-line"></i>
@@ -459,7 +514,7 @@
         </div>
     </section>
 
-    <section class="bg-black text-white py-24">
+    <section class="bg-black text-white py-18">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Section Header -->
@@ -585,7 +640,7 @@
 
         </div>
     </section>
-    <section class="bg-black text-white py-24">
+    <section class="bg-black text-white py-18">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Section Header -->
@@ -705,7 +760,7 @@
 
         </div>
     </section>
-    <section class="bg-black text-white py-24 relative overflow-hidden">
+    <section class="bg-black text-white py-18 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Section Header -->
@@ -809,16 +864,182 @@
             <!-- Bottom Recommendation -->
             <div class="max-w-4xl mx-auto text-center mt-20">
                 <p class="text-white/70 text-lg leading-relaxed">
-                    As an experienced web development company in Noida,
+
+                    As an experienced <span class="text-white font-medium">web development company in Noida</span>,
                     we recommend <span class="text-white font-medium">custom website development</span>
-                    for businesses that want long-term growth, stronger SEO performance,
-                    and better conversion potential — not just a quick launch.
+                    for businesses focused on long-term growth, higher Google visibility,
+                    and improved conversion potential not just a quick launch.
                 </p>
             </div>
 
+
+
         </div>
     </section>
-    <section class="bg-black text-white py-24 relative overflow-hidden">
+    <section class="bg-black py-18 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+
+            <!-- Section Header -->
+            <div class="text-center max-w-4xl mx-auto mb-20">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                    Why Choose Us as the
+                    <span class="text-primary">Best Web Development Company in Noida</span>
+                </h2>
+                <p class="mt-6 text-white/70 text-lg leading-relaxed">
+                    Businesses choose us because we focus on outcomes, not just design.
+                </p>
+            </div>
+
+            <!-- Feature Cards -->
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Card -->
+                <div class="group bg-white/5 backdrop-blur
+                        border border-white/15 rounded-2xl p-8
+                        hover:border-primary/60 hover:bg-white/10
+                        transition-all duration-300">
+
+                    <div class="w-12 h-12 flex items-center justify-center
+                            rounded-xl bg-primary/10 text-primary mb-6
+                            group-hover:bg-primary/20 transition">
+                        <i class="ri-team-line text-2xl"></i>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                        Highly Skilled Development Team
+                    </h3>
+
+                    <p class="text-white/70 leading-relaxed">
+                        Our experienced developers build customized web solutions
+                        aligned with your business goals, industry requirements,
+                        and long-term growth strategy.
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="group bg-white/5 backdrop-blur
+                        border border-white/15 rounded-2xl p-8
+                        hover:border-primary/60 hover:bg-white/10
+                        transition-all duration-300">
+
+                    <div class="w-12 h-12 flex items-center justify-center
+                            rounded-xl bg-primary/10 text-primary mb-6
+                            group-hover:bg-primary/20 transition">
+                        <i class="ri-search-eye-line text-2xl"></i>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                        SEO-Focused Development from Day One
+                    </h3>
+
+                    <p class="text-white/70 leading-relaxed">
+                        Every website is built with clean code, fast loading speed,
+                        and SEO best practices to support strong Google rankings
+                        and long-term visibility.
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="group bg-white/5 backdrop-blur
+                        border border-white/15 rounded-2xl p-8
+                        hover:border-primary/60 hover:bg-white/10
+                        transition-all duration-300">
+
+                    <div class="w-12 h-12 flex items-center justify-center
+                            rounded-xl bg-primary/10 text-primary mb-6
+                            group-hover:bg-primary/20 transition">
+                        <i class="ri-price-tag-3-line text-2xl"></i>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                        Transparent Pricing & Clear Deliverables
+                    </h3>
+
+                    <p class="text-white/70 leading-relaxed">
+                        We follow a clear pricing structure with defined scope,
+                        timelines, and deliverables — no hidden costs,
+                        no surprises.
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="group bg-white/5 backdrop-blur
+                        border border-white/15 rounded-2xl p-8
+                        hover:border-primary/60 hover:bg-white/10
+                        transition-all duration-300">
+
+                    <div class="w-12 h-12 flex items-center justify-center
+                            rounded-xl bg-primary/10 text-primary mb-6
+                            group-hover:bg-primary/20 transition">
+                        <i class="ri-user-settings-line text-2xl"></i>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                        Dedicated Project Manager
+                    </h3>
+
+                    <p class="text-white/70 leading-relaxed">
+                        You get a single point of contact who ensures smooth
+                        coordination, regular updates, and clear communication
+                        throughout the project lifecycle.
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="group bg-white/5 backdrop-blur
+                        border border-white/15 rounded-2xl p-8
+                        hover:border-primary/60 hover:bg-white/10
+                        transition-all duration-300">
+
+                    <div class="w-12 h-12 flex items-center justify-center
+                            rounded-xl bg-primary/10 text-primary mb-6
+                            group-hover:bg-primary/20 transition">
+                        <i class="ri-time-line text-2xl"></i>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                        Timely Delivery & Consistent Communication
+                    </h3>
+
+                    <p class="text-white/70 leading-relaxed">
+                        Our structured workflows and regular progress updates
+                        help us deliver projects on time without compromising
+                        quality or performance.
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="group bg-white/5 backdrop-blur
+                        border border-white/15 rounded-2xl p-8
+                        hover:border-primary/60 hover:bg-white/10
+                        transition-all duration-300">
+
+                    <div class="w-12 h-12 flex items-center justify-center
+                            rounded-xl bg-primary/10 text-primary mb-6
+                            group-hover:bg-primary/20 transition">
+                        <i class="ri-line-chart-line text-2xl"></i>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-white mb-3">
+                        Competitive Advantage by Design
+                    </h3>
+
+                    <p class="text-white/70 leading-relaxed">
+                        By combining design, development, and SEO,
+                        we create websites that stand out, perform better,
+                        and deliver measurable business results.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Subtle Background Glow -->
+        <div class="absolute top-1/3 left-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/3 right-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+    </section>
+
+    <section class="bg-black text-white py-18 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Section Header -->
@@ -945,7 +1166,7 @@
 
         </div>
     </section>
-    <section class="py-24 bg-black">
+    <section class="py-18 bg-black">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Heading -->
@@ -987,6 +1208,9 @@
                     <img src="{{ asset('images/tech/shopify.png') }}" class="tech-logo" alt="Shopify">
                     <img src="{{ asset('images/tech/mysql.png') }}" class="tech-logo" alt="MySQL">
                     <img src="{{ asset('images/tech/mongodb.png') }}" class="tech-logo" alt="MongoDB">
+                     <img src="{{ asset('images/tech/codeigniter.png') }}" class="tech-logo" alt="CodeIgniter">
+                    <img src="{{ asset('images/tech/yii.png') }}" class="tech-logo" alt="Yii">
+
 
                     <!-- DUPLICATE SET (FOR LOOP) -->
                     <img src="{{ asset('images/tech/html.png') }}" class="tech-logo" alt="HTML">
@@ -994,7 +1218,6 @@
                     <img src="{{ asset('images/tech/javascript.png') }}" class="tech-logo" alt="JavaScript">
                     <img src="{{ asset('images/tech/react.png') }}" class="tech-logo" alt="React">
                     <img src="{{ asset('images/tech/angular.png') }}" class="tech-logo" alt="Angular">
-                    <img src="{{ asset('images/tech/tailwind.png') }}" class="tech-logo" alt="Tailwind">
                     <img src="{{ asset('images/tech/php.png') }}" class="tech-logo" alt="PHP">
                     <img src="{{ asset('images/tech/python.png') }}" class="tech-logo" alt="Python">
                     <img src="{{ asset('images/tech/nodejs.png') }}" class="tech-logo" alt="Node.js">
@@ -1002,7 +1225,9 @@
                     <img src="{{ asset('images/tech/wordpress.png') }}" class="tech-logo" alt="WordPress">
                     <img src="{{ asset('images/tech/shopify.png') }}" class="tech-logo" alt="Shopify">
                     <img src="{{ asset('images/tech/mysql.png') }}" class="tech-logo" alt="MySQL">
-                    <img src="{{ asset('images/tech/mongodb.png') }}" class="tech-logo" alt="MongoDB">
+                    <img src="{{ asset('images/tech/codeigniter.png') }}" class="tech-logo" alt="CodeIgniter">
+                    <img src="{{ asset('images/tech/yii.png') }}" class="tech-logo" alt="Yii">
+
                 </div>
 
             </div>
@@ -1050,7 +1275,7 @@
         </style>
     </section>
 
-    <section class="bg-black text-white py-24 relative overflow-hidden">
+    <section class="bg-black text-white py-18 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Section Header -->
@@ -1061,7 +1286,7 @@
                 </h2>
                 <p class="mt-6 text-white/70 text-lg leading-relaxed">
                     Our development process is aligned with SEO and marketing goals
-                    from the very beginning — ensuring visibility, engagement,
+                    from the very beginning ensuring visibility, engagement,
                     and consistent lead generation.
                 </p>
             </div>
@@ -1180,19 +1405,19 @@
         </div>
     </section>
 
-            <section class="w-full bg-black py-10 overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4  lg:px-4">
+    <section class="w-full bg-black py-18 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4  lg:px-4">
 
-                <!-- SECTION TITLE -->
-                <h2 class=" text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-6">
-                  Real Results That Build Trust <span class="text-primary">Testimonials</span>
-                </h2>
-                <p class="text-sm mb-20 md:text-justify text-white/80 leading-relaxed">Our clients value us for reliability, clarity, and measurable growt
-                </p>
+            <!-- SECTION TITLE -->
+            <h2 class=" text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-6">
+                Real Results That Build Trust <span class="text-primary">Testimonials</span>
+            </h2>
+            <p class="text-sm mb-20 md:text-justify text-white/80 leading-relaxed">Our clients value us for reliability, clarity, and measurable growt
+            </p>
 
-                <!-- SLIDER -->
-                <div
-                    x-data="{
+            <!-- SLIDER -->
+            <div
+                x-data="{
                 active: 0,
                 interval: null,
                 cardWidth: 340,
@@ -1243,67 +1468,67 @@
                     }, 4000)
                 }
             }"
-                    x-init="start()"
-                    class="relative"
-                    @mouseenter="pause = true"
-                    @mouseleave="pause = false">
+                x-init="start()"
+                class="relative"
+                @mouseenter="pause = true"
+                @mouseleave="pause = false">
 
-                    <!-- VIEWPORT -->
-                    <div class="overflow-hidden">
+                <!-- VIEWPORT -->
+                <div class="overflow-hidden">
 
-                        <!-- TRACK -->
-                        <div
-                            class="flex gap-6 transition-transform duration-700 ease-out"
-                            :style="`transform: translateX(-${active * cardWidth}px)`">
+                    <!-- TRACK -->
+                    <div
+                        class="flex gap-6 transition-transform duration-700 ease-out"
+                        :style="`transform: translateX(-${active * cardWidth}px)`">
 
-                            <template x-for="(card, index) in cards" :key="index">
-                                <div
-                                    class="min-w-[300px] sm:min-w-[320px] max-w-[320px]
+                        <template x-for="(card, index) in cards" :key="index">
+                            <div
+                                class="min-w-[300px] sm:min-w-[320px] max-w-[320px]
                                    bg-gradient-to-b from-[#1a1a1a] to-[#111]
                                    rounded-2xl p-6 shadow-xl
                                    border border-white/5">
 
-                                    <!-- PROFILE -->
-                                    <div class="flex items-center gap-4 mb-4">
-                                        <img
-                                            :src="card.img"
-                                            class="w-12 h-12 rounded-full object-cover
+                                <!-- PROFILE -->
+                                <div class="flex items-center gap-4 mb-4">
+                                    <img
+                                        :src="card.img"
+                                        class="w-12 h-12 rounded-full object-cover
                                            border border-primary" />
-                                        <div>
-                                            <h4 class="text-white font-semibold text-sm"
-                                                x-text="card.name"></h4>
-                                            <p class="text-gray-400 text-xs"
-                                                x-text="card.role"></p>
-                                        </div>
+                                    <div>
+                                        <h4 class="text-white font-semibold text-sm"
+                                            x-text="card.name"></h4>
+                                        <p class="text-gray-400 text-xs"
+                                            x-text="card.role"></p>
                                     </div>
-
-                                    <!-- TEXT -->
-                                    <p class="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-6"
-                                        x-text="card.text"></p>
-
-                                    <span class="text-primary text-xs font-medium">
-                                        Verified Client
-                                    </span>
                                 </div>
-                            </template>
-                        </div>
-                    </div>
 
-                    <!-- PAGINATION DOTS -->
-                    <div class="flex justify-center gap-3 mt-10">
-                        <template x-for="(dot, i) in cards" :key="i">
-                            <button
-                                @click="active = i"
-                                class="w-2.5 h-2.5 rounded-full transition"
-                                :class="active === i ? 'bg-primary' : 'bg-gray-600'">
-                            </button>
+                                <!-- TEXT -->
+                                <p class="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-6"
+                                    x-text="card.text"></p>
+
+                                <span class="text-primary text-xs font-medium">
+                                    Verified Client
+                                </span>
+                            </div>
                         </template>
                     </div>
-
                 </div>
+
+                <!-- PAGINATION DOTS -->
+                <div class="flex justify-center gap-3 mt-10">
+                    <template x-for="(dot, i) in cards" :key="i">
+                        <button
+                            @click="active = i"
+                            class="w-2.5 h-2.5 rounded-full transition"
+                            :class="active === i ? 'bg-primary' : 'bg-gray-600'">
+                        </button>
+                    </template>
+                </div>
+
             </div>
-        </section>
-    <section class="bg-black text-white py-24 relative overflow-hidden">
+        </div>
+    </section>
+    <section class="bg-black text-white py-18 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Header -->
@@ -1314,7 +1539,7 @@
                 </h2>
                 <p class="text-white/70 text-lg leading-relaxed">
                     Our development process is aligned with SEO and marketing goals
-                    from the start — ensuring better visibility, stronger engagement,
+                    from the start ensuring better visibility, stronger engagement,
                     and consistent lead generation.
                 </p>
             </div>
@@ -1437,7 +1662,7 @@
 
         </div>
     </section>
-    <section class="bg-black text-white py-24 relative overflow-hidden">
+    <section class="bg-black text-white py-18 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Section Header -->
@@ -1447,7 +1672,7 @@
                 </h2>
                 <p class="text-white/70 text-lg leading-relaxed">
                     Being based in Noida allows us to understand the local business
-                    landscape, competition, and customer behavior — helping us
+                    landscape, competition, and customer behavior  helping us
                     deliver solutions that work in the real market.
                 </p>
             </div>
@@ -1519,7 +1744,7 @@
 
         </div>
     </section>
-    <section class="bg-black text-white py-24">
+    <section class="bg-black text-white py-18">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Heading -->
@@ -1540,7 +1765,7 @@
 
         </div>
     </section>
-    <section class="bg-black py-24">
+    <section class="bg-black py-18">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- CARD -->
@@ -1639,7 +1864,7 @@
 
         </div>
     </section>
-    <section class="bg-black text-white py-24">
+    <section class="bg-black text-white py-18">
         <div class="max-w-5xl mx-auto px-6">
 
             <!-- Section Header -->
