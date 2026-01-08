@@ -652,7 +652,8 @@
 
         </div>
     </section>
-    <section class="bg-black text-white py-18">
+
+    <section class="bg-black text-white py-10">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Section Header -->
