@@ -228,99 +228,99 @@
         <div class="absolute bottom-1/2 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
     </section>
 
-   <section class="bg-black text-white py-6 md:py-16 sm:py-20 lg:py-24 relative overflow-hidden">
-    <div class=" mx-auto">
+    <section class="bg-black text-white py-6 md:py-16 sm:py-20 lg:py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-2 md:px-6">
 
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-12 items-center">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-            <!-- LEFT CONTENT -->
-            <div class="text-center lg:text-left max-w-xl mx-auto lg:mx-0">
+                <!-- LEFT CONTENT -->
+                <div class="text-center lg:text-left max-w-xl mx-auto lg:mx-0">
 
-                <h2 class="font-bold leading-tight mb-6
+                    <h2 class="font-bold leading-tight mb-6
                     text-[clamp(26px,5vw,48px)]">
-                    Why a
-                    <span class="text-primary block sm:inline">
-                        Professionally Developed Website
-                    </span>
-                    Matters Today
-                </h2>
+                        Why a
+                        <span class="text-primary block sm:inline">
+                            Professionally Developed Website
+                        </span>
+                        Matters Today
+                    </h2>
 
-                <p class="text-white/80 text-base sm:text-lg
+                    <p class="text-white/80 text-base sm:text-lg
                     leading-relaxed mb-5">
-                    Your website is often the first interaction a potential
-                    customer has with your brand. A slow, outdated, or poorly
-                    optimized site can push users away within seconds.
-                </p>
+                        Your website is often the first interaction a potential
+                        customer has with your brand. A slow, outdated, or poorly
+                        optimized site can push users away within seconds.
+                    </p>
 
-                <p class="text-white/80 text-base sm:text-lg
+                    <p class="text-white/80 text-base sm:text-lg
                     leading-relaxed">
-                    A well-structured, SEO-friendly website builds trust,
-                    improves visibility on search engines, and increases
-                    conversions over time.
-                </p>
+                        A well-structured, SEO-friendly website builds trust,
+                        improves visibility on search engines, and increases
+                        conversions over time.
+                    </p>
 
-            </div>
+                </div>
 
-            <!-- RIGHT FEATURE CARD -->
-            <div class="bg-white/5 backdrop-blur border border-white/15
+                <!-- RIGHT FEATURE CARD -->
+                <div class="bg-white/5 backdrop-blur border border-white/15
                         rounded-2xl p-6 sm:p-8 lg:p-10 shadow-lg
                         max-w-xl mx-auto lg:mx-0">
 
-                <p class="text-white/70 leading-relaxed mb-6">
-                    As a trusted Noida web development company, we build
-                    websites focused on performance, growth, and long-term
-                    success.
-                </p>
+                    <p class="text-white/70 leading-relaxed mb-6">
+                        As a trusted Noida web development company, we build
+                        websites focused on performance, growth, and long-term
+                        success.
+                    </p>
 
-                <h3 class="text-lg sm:text-xl font-semibold
+                    <h3 class="text-lg sm:text-xl font-semibold
                            mb-5 text-primary">
-                    Our Development Focus
-                </h3>
+                        Our Development Focus
+                    </h3>
 
-                <ul class="space-y-5 text-white/80">
+                    <ul class="space-y-5 text-white/80">
 
-                    <li class="flex items-start gap-4">
-                        <i class="ri-smartphone-line text-primary text-xl mt-1"></i>
-                        <span>
-                            Mobile-first and fully responsive layouts for
-                            all devices
-                        </span>
-                    </li>
+                        <li class="flex items-start gap-4">
+                            <i class="ri-smartphone-line text-primary text-xl mt-1"></i>
+                            <span>
+                                Mobile-first and fully responsive layouts for
+                                all devices
+                            </span>
+                        </li>
 
-                    <li class="flex items-start gap-4">
-                        <i class="ri-speed-line text-primary text-xl mt-1"></i>
-                        <span>
-                            Fast loading speed with Core Web Vitals
-                            optimization
-                        </span>
-                    </li>
+                        <li class="flex items-start gap-4">
+                            <i class="ri-speed-line text-primary text-xl mt-1"></i>
+                            <span>
+                                Fast loading speed with Core Web Vitals
+                                optimization
+                            </span>
+                        </li>
 
-                    <li class="flex items-start gap-4">
-                        <i class="ri-code-s-slash-line text-primary text-xl mt-1"></i>
-                        <span>
-                            Clean, structured code for better crawlability
-                            and SEO
-                        </span>
-                    </li>
+                        <li class="flex items-start gap-4">
+                            <i class="ri-code-s-slash-line text-primary text-xl mt-1"></i>
+                            <span>
+                                Clean, structured code for better crawlability
+                                and SEO
+                            </span>
+                        </li>
 
-                    <li class="flex items-start gap-4">
-                        <i class="ri-user-heart-line text-primary text-xl mt-1"></i>
-                        <span>
-                            User-centric design focused on engagement
-                            and conversions
-                        </span>
-                    </li>
+                        <li class="flex items-start gap-4">
+                            <i class="ri-user-heart-line text-primary text-xl mt-1"></i>
+                            <span>
+                                User-centric design focused on engagement
+                                and conversions
+                            </span>
+                        </li>
 
-                </ul>
+                    </ul>
+
+                </div>
 
             </div>
 
         </div>
+    </section>
 
-    </div>
-</section>
-
-    <section class="bg-black text-white py-16">
+    <section class="bg-black text-white py-10">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Section Header -->
@@ -335,7 +335,7 @@
             </div>
 
             <!-- Services Grid -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-5">
 
                 <!-- Website Development -->
                 <div class="bg-white/5 border border-white/15 rounded-2xl p-7 hover:border-primary transition group">
@@ -526,7 +526,7 @@
         </div>
     </section>
 
-    <section class="bg-black text-white py-18">
+    <section class="bg-black text-white py-10">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Section Header -->
