@@ -1,80 +1,155 @@
 <div>
-    <section class="bg-black text-white min-h-screen py-16 md:py-10 flex items-center px-2 md:px-[9%]">
-        <div class="w-full">
-            <div class="flex flex-col md:flex-row md:items-center gap-10 xl:gap-24 py-12 lg:py-20">
+    <section class="relative bg-black overflow-hidden">
 
-                <!-- LEFT IMAGE -->
-                <div class="relative flex justify-center md:justify-start w-full md:w-7/12">
-                    <img
-                        src="/images/2151948231.jpg"
-                        alt="Web Development"
-                        class="w-full max-w-[250px] sm:max-w-[360px] lg:max-w-[460px] object-contain" />
-                </div>
+        <!-- Decorative Glow -->
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2
+                w-[700px] h-[700px] rounded-full
+                bg-primary/20 blur-[140px]"></div>
 
-                <!-- RIGHT CONTENT -->
-                <div class="space-y-6 sm:space-y-8 lg:space-y-4 w-full md:w-10/12 px-[4%] md:px-0 text-left font-semibold text-slate-200">
+        <!-- Subtle Grid Texture -->
+        <div class="absolute inset-0 opacity-[0.04]
+                bg-[radial-gradient(#ffffff_1px,transparent_1px)]
+                bg-[size:24px_24px]"></div>
 
-                    <!-- Heading -->
-                    <h1 class="font-light tracking-wide leading-tight
-           text-3xl sm:text-4xl lg:text-4xl xl:text-[62px] text-slate-200">
-                        Welcome to <span class="font-semibold text-primary  md:text-[64px]">Techonika</span><br>
+        <!-- Content -->
+        <div class="relative max-w-6xl mx-auto px-6
+                py-24 sm:py-28 text-center text-white">
 
-                        <span class="block mt-3">
-                            Simple.
-                            <span class="font-semibold">Smart.</span>
-                            Reliable
-                            <span class="font-semibold text-primary">Digital Solutions</span>
-                        </span>
-                    </h1>
+            <!-- Eyebrow -->
+            <span class="inline-flex items-center gap-2
+                     px-4 py-1.5 rounded-full
+                     bg-white/10 border border-white/10
+                     text-xs tracking-wide uppercase
+                     text-white/80 mb-6">
+                Digital Solutions Agency
+            </span>
 
+            <!-- Heading (Original Meaning) -->
+            <h1 class="font-bold tracking-tight leading-[1.1]
+                   text-[clamp(34px,5vw,60px)] mb-6">
+                Welcome to <span class="text-primary">Techonika</span><br>
+                <span class="block mt-2">
+                    Simple, Smart, and Reliable Digital Solutions
+                </span>
+            </h1>
 
-                    <!-- Description -->
-                    <p class="text-neutral-400 text-justify sm:text-lg text-justify leading-relaxed">
-                        Your business isn’t generic your website shouldn’t be either.
-                        Every brand has unique users, goals, and workflows,
-                        but many digital products still rely on
-                        <span class="text-white font-medium">
-                            one-size-fits-all templates that limit growth.
-                        </span>
-                    </p>
+            <!-- Description (Original Content) -->
+            <p class="max-w-3xl mx-auto
+                  text-white/70
+                  text-sm sm:text-base md:text-lg
+                  leading-relaxed mb-14">
+                Techonika is your trusted digital partner, delivering smart and reliable
+                solutions designed for real business impact. We blend clean design,
+                modern technology, and strategic thinking to create digital experiences
+                that connect, convert, and scale.
+            </p>
 
+            <!-- Service Pills (UNCHANGED CONTENT) -->
+            <div class="flex flex-wrap justify-center gap-3 sm:gap-4 mb-10">
 
+                <span class="group inline-flex items-center gap-2
+                         px-5 py-2 rounded-full
+                         bg-white/10 backdrop-blur
+                         border border-white/10
+                         text-xs sm:text-sm font-medium
+                         hover:bg-primary hover:border-primary
+                         transition-all duration-300">
+                    <i class="ri-brush-line text-primary group-hover:text-white"></i>
+                    Website Designing
+                </span>
 
-                    <p class="text-neutral-400 text-justify sm:text-lg text-justify leading-relaxed">
-                        The right architecture, the right technology stack, and the right
-                        user experience designed specifically for your product
-                        is what drives performance, scalability, and long-term success.
-                    </p>
+                <span class="group inline-flex items-center gap-2
+                         px-5 py-2.5 rounded-full
+                         bg-white/10 backdrop-blur
+                         border border-white/10
+                         text-xs sm:text-sm font-medium
+                         hover:bg-primary hover:border-primary
+                         transition-all duration-300">
+                    <i class="ri-code-box-line text-primary group-hover:text-white"></i>
+                    Website Development
+                </span>
 
-                    <!-- CTA ROW -->
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-5 pt-2">
+                <span class="group inline-flex items-center gap-2
+                         px-5 py-2.5 rounded-full
+                         bg-white/10 backdrop-blur
+                         border border-white/10
+                         text-xs sm:text-sm font-medium
+                         hover:bg-primary hover:border-primary
+                         transition-all duration-300">
+                    <i class="ri-search-eye-line text-primary group-hover:text-white"></i>
+                    Search Engine Optimization
+                </span>
 
-                        <!-- Primary Button -->
-                        <a
-                            href="{{ route('contact') }}"
-                            class="inline-flex items-center justify-center
-      bg-[#f6b615] text-black
-      px-6 sm:px-8 py-4 rounded-2xl
-      font-light text-sm sm:text-justify
-      hover:brightness-110 transition">
-                            Get a free Quote <i class="ri-arrow-right-line ml-2"></i>
-                        </a>
+                <span class="group inline-flex items-center gap-2
+                         px-5 py-2.5 rounded-full
+                         bg-white/10 backdrop-blur
+                         border border-white/10
+                         text-xs sm:text-sm font-medium
+                         hover:bg-primary hover:border-primary
+                         transition-all duration-300">
+                    <i class="ri-megaphone-line text-primary group-hover:text-white"></i>
+                    Social Marketing
+                </span>
 
-                        <!-- Secondary CTA -->
-                        <a
-                            href="{{ route('contact') }}"
-                            class="group inline-flex items-center md:border-none border border-1 border-slate-200 px-4 py-2 rounded-2xl justify-center sm:justify-start gap-3
-      text-sm tracking-wide text-white/90 mt-2 sm:mt-0">
-                            <span>Have an idea or existing product? Let’s discuss</span>
-                            <span class="text-lg transform transition group-hover:translate-x-1">
-                                →
-                            </span>
-                        </a>
+                <span class="group inline-flex items-center gap-2
+                         px-5 py-2.5 rounded-full
+                         bg-white/10 backdrop-blur
+                         border border-white/10
+                         text-xs sm:text-sm font-medium
+                         hover:bg-primary hover:border-primary
+                         transition-all duration-300">
+                    <i class="ri-store-2-line text-primary group-hover:text-white"></i>
+                    E-Commerce
+                </span>
 
-                    </div>
+                <span class="group inline-flex items-center gap-2
+                         px-5 py-2.5 rounded-full
+                         bg-white/10 backdrop-blur
+                         border border-white/10
+                         text-xs sm:text-sm font-medium
+                         hover:bg-primary hover:border-primary
+                         transition-all duration-300">
+                    <i class="ri-layout-2-line text-primary group-hover:text-white"></i>
+                    Custom Design
+                </span>
 
-                </div>
+                <span class="group inline-flex items-center gap-2
+                         px-5 py-2.5 rounded-full
+                         bg-white/10 backdrop-blur
+                         border border-white/10
+                         text-xs sm:text-sm font-medium
+                         hover:bg-primary hover:border-primary
+                         transition-all duration-300">
+                    <i class="ri-settings-3-line text-primary group-hover:text-white"></i>
+                    Maintenance
+                </span>
 
+                <span class="group inline-flex items-center gap-2
+                         px-5 py-2.5 rounded-full
+                         bg-white/10 backdrop-blur
+                         border border-white/10
+                         text-xs sm:text-sm font-medium
+                         hover:bg-primary hover:border-primary
+                         transition-all duration-300">
+                    <i class="ri-smartphone-line text-primary group-hover:text-white"></i>
+                    App Development
+                </span>
+
+            </div>
+
+            <!-- CTA -->
+            <a href="#contact"
+                class="inline-flex text-black items-center gap-3
+                  bg-primary 
+                  px-8 py-3.5 rounded-lg
+                  font-semibold text-sm sm:text-base
+                  hover:bg-primary/90 hover:scale-105
+                  transition-all duration-300">
+                Get in Touch
+                <i class="ri-arrow-right-line"></i>
+            </a>
+
+        </div>
     </section>
     <section class="py-10 sm:py-10 lg:py-10 bg-black">
         <div class="px-5 sm:px-8 lg:px-[9%]">
@@ -191,6 +266,7 @@
 
         </div>
     </section>
+
 
     <section class="py-10 sm:py-10 lg:py-10 bg-black">
         <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
@@ -481,6 +557,163 @@
 
         </section>
     </div>
+    <section class="relative py-20 bg-black overflow-hidden">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+            <!-- Heading -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+                    WHY <span class="text-primary">CHOOSE US?</span>
+                </h2>
+                <p class="mt-4 text-white/60 max-w-2xl mx-auto text-sm sm:text-base">
+                    Smart strategies, clean execution, and measurable digital growth
+                    built to scale your business.
+                </p>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-14 items-center">
+
+                <!-- LEFT FEATURES -->
+                <div class="space-y-8">
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 flex-shrink-0 rounded-full bg-primary/15
+                        flex items-center justify-center">
+                            <i class="ri-line-chart-line text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-lg">
+                                ROI-Focused Performance
+                            </h4>
+                            <p class="text-white/60 text-sm mt-1 leading-relaxed">
+                                Data-driven strategies designed to boost traffic,
+                                conversions, and measurable growth.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 flex-shrink-0 rounded-full bg-primary/15
+                        flex items-center justify-center">
+                            <i class="ri-layout-2-line text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-lg">
+                                Conversion-Optimized Websites
+                            </h4>
+                            <p class="text-white/60 text-sm mt-1 leading-relaxed">
+                                High-performance, SEO-friendly websites that engage
+                                users and generate quality leads.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 flex-shrink-0 rounded-full bg-primary/15
+                        flex items-center justify-center">
+                            <i class="ri-shield-check-line text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-lg">
+                                Proven Organic Growth
+                            </h4>
+                            <p class="text-white/60 text-sm mt-1 leading-relaxed">
+                                Sustainable SEO strategies that build authority and
+                                long-term brand visibility.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 rounded-full
+                    bg-gradient-to-br from-primary/30 to-primary/5
+                    flex items-center justify-center">
+                            <i class="ri-questionnaire-line text-primary text-6xl"></i>
+                        </div>
+
+                        <!-- Floating Icons -->
+                        <span class="absolute -top-4 left-6 w-10 h-10 bg-black
+                    border border-white/10 rounded-full
+                    flex items-center justify-center">
+                            <i class="ri-lightbulb-line text-primary"></i>
+                        </span>
+
+                        <span class="absolute right-4 top-10 w-10 h-10 bg-black
+                    border border-white/10 rounded-full
+                    flex items-center justify-center">
+                            <i class="ri-star-smile-line text-primary"></i>
+                        </span>
+
+                        <span class="absolute bottom-6 left-10 w-10 h-10 bg-black
+                    border border-white/10 rounded-full
+                    flex items-center justify-center">
+                            <i class="ri-bar-chart-2-line text-primary"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- RIGHT FEATURES -->
+                <div class="space-y-8">
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 flex-shrink-0 rounded-full bg-primary/15
+                        flex items-center justify-center">
+                            <i class="ri-hand-heart-line text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-lg">
+                                Dedicated Partnership
+                            </h4>
+                            <p class="text-white/60 text-sm mt-1 leading-relaxed">
+                                We work as your extended team, providing personalized
+                                strategies and expert support.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 flex-shrink-0 rounded-full bg-primary/15
+                        flex items-center justify-center">
+                            <i class="ri-bar-chart-box-line text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-lg">
+                                Transparent Reporting
+                            </h4>
+                            <p class="text-white/60 text-sm mt-1 leading-relaxed">
+                                Clear analytics, regular insights, and full visibility
+                                into campaign performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 flex-shrink-0 rounded-full bg-primary/15
+                        flex items-center justify-center">
+                            <i class="ri-user-heart-line text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-lg">
+                                Customer-Centric Focus
+                            </h4>
+                            <p class="text-white/60 text-sm mt-1 leading-relaxed">
+                                Ethical practices, high-value delivery, and long-term
+                                client success.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
 
     <section class="relative px-[2%] md:px-[9%] bg-gradient-to-r from-black via-[#111] to-black text-white overflow-hidden">
