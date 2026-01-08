@@ -9,6 +9,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
+    <meta name="robots" content="noindex, nofollow">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -17,10 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-<link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+        rel="stylesheet" />
     <!-- Icons -->
     <link
         rel="stylesheet"

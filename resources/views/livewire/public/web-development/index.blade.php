@@ -1,59 +1,58 @@
 <div>
-    <section class="bg-black text-white mt-24 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6">
+    <section class="bg-black text-white mt-24 md:mt-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
                 <!-- LEFT CONTENT -->
-                <div>
+                <div class="text-center lg:text-left">
 
                     <!-- H1 -->
-                    <h1 class="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight mb-6">
-                        Build a High-Performing Website <br>
-                        <span class="text-primary">
+                    <h1 class="font-bold leading-tight mb-6
+                    text-[clamp(28px,6vw,52px)]">
+                        Build a High-Performing Website
+                        <span class="block text-primary mt-2">
                             Best Web Development Company in Noida
                         </span>
                     </h1>
 
                     <!-- Sub-headline -->
-                    <p class="text-white/80 text-lg md:text-xl leading-relaxed mb-8">
+                    <p class="text-white/80 text-base sm:text-lg md:text-xl
+                    leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
                         Fast, responsive, SEO-friendly websites that grow
                         traffic, leads, and sales.
                     </p>
 
                     <!-- Bullet Points -->
-                    <ul class="space-y-3 mb-8 text-white/80 text-base">
+                    <ul class="space-y-4 mb-8 text-white/80
+                    max-w-xl mx-auto lg:mx-0">
 
-                        <li class="flex items-center  gap-3">
-                            <span class="flex-shrink-0 text-primary text-xl mt-0.5">
-                                <i class="ri-checkbox-circle-line"></i>
-                            </span>
+                        <li class="flex items-start gap-3 text-left">
+                            <i class="ri-checkbox-circle-line text-primary text-xl mt-1"></i>
                             <span>
                                 Custom web development tailored to your business goals
                             </span>
                         </li>
 
-                        <li class="flex items-center gap-3">
-                            <span class="flex-shrink-0 text-primary text-xl mt-0.5">
-                                <i class="ri-checkbox-circle-line"></i>
-                            </span>
+                        <li class="flex items-start gap-3 text-left">
+                            <i class="ri-checkbox-circle-line text-primary text-xl mt-1"></i>
                             <span>
                                 E-commerce, WordPress, SaaS & enterprise web solutions
                             </span>
                         </li>
-                        <li class="flex items-center gap-3">
-                            <span class="flex-shrink-0 text-primary text-xl mt-0.5">
-                                <i class="ri-checkbox-circle-line"></i>
-                            </span>
+
+                        <li class="flex items-start gap-3 text-left">
+                            <i class="ri-checkbox-circle-line text-primary text-xl mt-1"></i>
                             <span>
-                                Optimized for Google rankings, speed, and user engagement
+                                Optimized for Google rankings, speed, and engagement
                             </span>
                         </li>
 
                     </ul>
 
                     <!-- Supporting Line -->
-                    <p class="text-white/70 leading-relaxed mb-10 max-w-xl">
+                    <p class="text-white/70 leading-relaxed mb-10
+                    max-w-xl mx-auto lg:mx-0">
                         As a trusted web development company in Noida, we help startups,
                         SMEs, and enterprises build websites that not only look great
                         but are strategically developed to rank on Google and convert
@@ -62,55 +61,52 @@
 
                     <!-- CTA -->
                     <a href="#portfolio"
-                        class="inline-flex items-center gap-2 text-primary font-semibold
-              hover:underline transition">
+                        class="inline-flex items-center gap-2 text-primary
+                          font-semibold hover:underline transition">
                         <i class="ri-arrow-right-line"></i>
                         View Our Portfolio
                     </a>
 
                 </div>
 
-
                 <!-- RIGHT FORM -->
                 <div class="bg-white/5 backdrop-blur border border-white/15
-            rounded-xl p-6 lg:p-7 shadow-lg max-w-md ml-auto">
+                        rounded-xl p-6 shadow-lg
+                        max-w-md w-full mx-auto lg:ml-auto">
 
-                    <h3 class="text-lg font-semibold mb-1">
+                    <h3 class="text-lg font-semibold mb-1 text-center lg:text-left">
                         Get a <span class="text-primary">Free Quote</span>
                     </h3>
 
-                    <p class="text-white/60 text-sm mb-5">
-                        Tell us about your project and we’ll get back to you shortly.
+                    <p class="text-white/60 text-sm mb-5
+                          text-center lg:text-left">
+                        Tell us about your project and we’ll get back shortly.
                     </p>
 
                     <form class="space-y-4">
 
-                        <!-- Name -->
                         <input type="text" placeholder="Full Name"
                             class="w-full bg-transparent border border-white/20
-                      rounded-md px-3 py-2.5 text-sm text-white
-                      placeholder-white/40 focus:outline-none
-                      focus:border-primary transition">
+                               rounded-md px-3 py-2.5 text-sm text-white
+                               placeholder-white/40 focus:outline-none
+                               focus:border-primary transition">
 
-                        <!-- Email -->
                         <input type="email" placeholder="Email Address"
                             class="w-full bg-transparent border border-white/20
-                      rounded-md px-3 py-2.5 text-sm text-white
-                      placeholder-white/40 focus:outline-none
-                      focus:border-primary transition">
+                               rounded-md px-3 py-2.5 text-sm text-white
+                               placeholder-white/40 focus:outline-none
+                               focus:border-primary transition">
 
-                        <!-- Phone -->
                         <input type="tel" placeholder="Phone Number"
                             class="w-full bg-transparent border border-white/20
-                      rounded-md px-3 py-2.5 text-sm text-white
-                      placeholder-white/40 focus:outline-none
-                      focus:border-primary transition">
+                               rounded-md px-3 py-2.5 text-sm text-white
+                               placeholder-white/40 focus:outline-none
+                               focus:border-primary transition">
 
-                        <!-- Service -->
                         <select
                             class="w-full bg-transparent border border-white/20
-                   rounded-md px-3 py-2.5 text-sm text-white
-                   focus:outline-none focus:border-primary">
+                               rounded-md px-3 py-2.5 text-sm text-white
+                               focus:outline-none focus:border-primary">
                             <option class="bg-black">Select Service</option>
                             <option class="bg-black">Website Development</option>
                             <option class="bg-black">E-commerce Website</option>
@@ -118,100 +114,107 @@
                             <option class="bg-black">Custom Web Application</option>
                         </select>
 
-                        <!-- Message -->
                         <textarea rows="3" placeholder="Project details (optional)"
                             class="w-full bg-transparent border border-white/20
-                         rounded-md px-3 py-2.5 text-sm text-white
-                         placeholder-white/40 focus:outline-none
-                         focus:border-primary transition"></textarea>
+                               rounded-md px-3 py-2.5 text-sm text-white
+                               placeholder-white/40 focus:outline-none
+                               focus:border-primary transition"></textarea>
 
-                        <!-- Submit -->
                         <button type="submit"
                             class="w-full bg-primary text-black
-                       font-medium py-2.5 rounded-md
-                       hover:opacity-90 transition">
+                               font-medium py-2.5 rounded-md
+                               hover:opacity-90 transition">
                             Get Free Quote
                         </button>
 
-                        <p class="text-[11px] text-white/50 text-center mt-2">
+                        <p class="text-[11px] text-white/50 text-center">
                             No spam. Your information is safe with us.
                         </p>
 
                     </form>
                 </div>
 
-
             </div>
 
         </div>
     </section>
-    <section class="bg-black py-12 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6">
+
+    <section class="bg-black py-16 sm:py-20 lg:py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
             <!-- Section Heading -->
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white">
+            <div class="text-center max-w-3xl mx-auto mb-14 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+                       font-bold text-white leading-tight">
                     Work <span class="text-primary">We’ve Delivered</span>
                 </h2>
-                <p class="mt-4 text-white/60 text-lg">
-                    Numbers that reflect our experience, trust, and long-term partnerships.
+                <p class="mt-4 text-white/70 text-base sm:text-lg leading-relaxed">
+                    Numbers that reflect our experience, trust,
+                    and long-term partnerships.
                 </p>
             </div>
 
             <!-- Stats Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8">
 
-                <!-- Stat 1 -->
-                <div class="bg-white/5 border border-white/15 backdrop-blur
-                        rounded-xl p-6 text-center hover:border-primary transition">
-                    <h3 class="text-4xl font-bold text-primary mb-2">
+                <!-- Stat Card -->
+                <div class="group bg-white/5 border border-white/15 backdrop-blur
+                        rounded-xl p-5 sm:p-6 text-center
+                        hover:border-primary/60 transition-all">
+
+                    <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
                         80+
                     </h3>
-                    <p class="text-white/70 text-sm">
+                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
                         Projects Delivered
                     </p>
                 </div>
 
-                <!-- Stat 2 -->
-                <div class="bg-white/5 border border-white/15 backdrop-blur
-                        rounded-xl p-6 text-center hover:border-primary transition">
-                    <h3 class="text-4xl font-bold text-primary mb-2">
+                <div class="group bg-white/5 border border-white/15 backdrop-blur
+                        rounded-xl p-5 sm:p-6 text-center
+                        hover:border-primary/60 transition-all">
+
+                    <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
                         80+
                     </h3>
-                    <p class="text-white/70 text-sm">
+                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
                         Clients Served
                     </p>
                 </div>
 
-                <!-- Stat 3 -->
-                <div class="bg-white/5 border border-white/15 backdrop-blur
-                        rounded-xl p-6 text-center hover:border-primary transition">
-                    <h3 class="text-4xl font-bold text-primary mb-2">
+                <div class="group bg-white/5 border border-white/15 backdrop-blur
+                        rounded-xl p-5 sm:p-6 text-center
+                        hover:border-primary/60 transition-all">
+
+                    <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
                         15+
                     </h3>
-                    <p class="text-white/70 text-sm">
+                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
                         Ongoing Client Engagements
                     </p>
                 </div>
 
-                <!-- Stat 4 -->
-                <div class="bg-white/5 border border-white/15 backdrop-blur
-                        rounded-xl p-6 text-center hover:border-primary transition">
-                    <h3 class="text-4xl font-bold text-primary mb-2">
+                <div class="group bg-white/5 border border-white/15 backdrop-blur
+                        rounded-xl p-5 sm:p-6 text-center
+                        hover:border-primary/60 transition-all">
+
+                    <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
                         10+
                     </h3>
-                    <p class="text-white/70 text-sm">
+                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
                         Expert Professionals
                     </p>
                 </div>
 
-                <!-- Stat 5 -->
-                <div class="bg-white/5 border border-white/15 backdrop-blur
-                        rounded-xl p-6 text-center hover:border-primary transition">
-                    <h3 class="text-4xl font-bold text-primary mb-2">
+                <div class="group bg-white/5 border border-white/15 backdrop-blur
+                        rounded-xl p-5 sm:p-6 text-center
+                        hover:border-primary/60 transition-all
+                        sm:col-span-3 lg:col-span-1">
+
+                    <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
                         7+
                     </h3>
-                    <p class="text-white/70 text-sm">
+                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
                         Years of Proven Experience
                     </p>
                 </div>
@@ -219,95 +222,104 @@
             </div>
 
         </div>
+
+        <!-- Subtle Glow -->
+        <div class="absolute top-1/2 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/2 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
     </section>
-    <section class="bg-black text-white py-20 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6">
 
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
+   <section class="bg-black text-white py-6 md:py-16 sm:py-20 lg:py-24 relative overflow-hidden">
+    <div class=" mx-auto">
 
-                <!-- LEFT CONTENT -->
-                <div>
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-12 items-center">
 
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
-                        Why a <span class="text-primary">Professionally Developed Website</span>
-                        Matters Today
-                    </h2>
+            <!-- LEFT CONTENT -->
+            <div class="text-center lg:text-left max-w-xl mx-auto lg:mx-0">
 
-                    <p class="text-white/80 text-lg leading-relaxed mb-6">
-                        Your website is often the first interaction a potential customer has
-                        with your brand. A slow, outdated, or poorly optimized site can push
-                        users away within seconds.
-                    </p>
+                <h2 class="font-bold leading-tight mb-6
+                    text-[clamp(26px,5vw,48px)]">
+                    Why a
+                    <span class="text-primary block sm:inline">
+                        Professionally Developed Website
+                    </span>
+                    Matters Today
+                </h2>
 
-                    <p class="text-white/80 text-lg leading-relaxed mb-8">
-                        On the other hand, a
-                        well-structured, SEO-friendly website builds trust, improves visibility on search engines, and
-                        increases conversions.
-                    </p>
+                <p class="text-white/80 text-base sm:text-lg
+                    leading-relaxed mb-5">
+                    Your website is often the first interaction a potential
+                    customer has with your brand. A slow, outdated, or poorly
+                    optimized site can push users away within seconds.
+                </p>
 
+                <p class="text-white/80 text-base sm:text-lg
+                    leading-relaxed">
+                    A well-structured, SEO-friendly website builds trust,
+                    improves visibility on search engines, and increases
+                    conversions over time.
+                </p>
 
+            </div>
 
-                </div>
+            <!-- RIGHT FEATURE CARD -->
+            <div class="bg-white/5 backdrop-blur border border-white/15
+                        rounded-2xl p-6 sm:p-8 lg:p-10 shadow-lg
+                        max-w-xl mx-auto lg:mx-0">
 
-                <!-- RIGHT FEATURE CARD -->
-                <div class="bg-white/5 backdrop-blur border border-white/15
-                        rounded-2xl p-8 lg:p-10 shadow-lg">
-                    <div class="flex items-center font-semibold gap-3 text-white/70">
-                        <p>
-                            As a trusted Noida web development company, we build websites
-                            focused on performance, growth, and long-term success.
-                        </p>
-                    </div>
-                    <h3 class="text-xl font-semibold py-5 text-primary">
-                        Our Development Focus :
-                    </h3>
+                <p class="text-white/70 leading-relaxed mb-6">
+                    As a trusted Noida web development company, we build
+                    websites focused on performance, growth, and long-term
+                    success.
+                </p>
 
-                    <ul class="space-y-5 text-white/80">
+                <h3 class="text-lg sm:text-xl font-semibold
+                           mb-5 text-primary">
+                    Our Development Focus
+                </h3>
 
-                        <li class="flex items-start gap-4">
-                            <span class="flex-shrink-0 text-primary text-xl mt-0.5">
-                                <i class="ri-smartphone-line"></i>
-                            </span>
-                            <span>
-                                Mobile-first and fully responsive layouts for all devices
-                            </span>
-                        </li>
+                <ul class="space-y-5 text-white/80">
 
-                        <li class="flex items-start gap-4">
-                            <span class="flex-shrink-0 text-primary text-xl mt-0.5">
-                                <i class="ri-speed-line"></i>
-                            </span>
-                            <span>
-                                Fast loading speed with Core Web Vitals optimization
-                            </span>
-                        </li>
+                    <li class="flex items-start gap-4">
+                        <i class="ri-smartphone-line text-primary text-xl mt-1"></i>
+                        <span>
+                            Mobile-first and fully responsive layouts for
+                            all devices
+                        </span>
+                    </li>
 
-                        <li class="flex items-start gap-4">
-                            <span class="flex-shrink-0 text-primary text-xl mt-0.5">
-                                <i class="ri-code-s-slash-line"></i>
-                            </span>
-                            <span>
-                                Clean, structured code for better crawlability and SEO
-                            </span>
-                        </li>
+                    <li class="flex items-start gap-4">
+                        <i class="ri-speed-line text-primary text-xl mt-1"></i>
+                        <span>
+                            Fast loading speed with Core Web Vitals
+                            optimization
+                        </span>
+                    </li>
 
-                        <li class="flex items-start gap-4">
-                            <span class="flex-shrink-0 text-primary text-xl mt-0.5">
-                                <i class="ri-user-heart-line"></i>
-                            </span>
-                            <span>
-                                User-centric design focused on engagement and conversions
-                            </span>
-                        </li>
+                    <li class="flex items-start gap-4">
+                        <i class="ri-code-s-slash-line text-primary text-xl mt-1"></i>
+                        <span>
+                            Clean, structured code for better crawlability
+                            and SEO
+                        </span>
+                    </li>
 
-                    </ul>
+                    <li class="flex items-start gap-4">
+                        <i class="ri-user-heart-line text-primary text-xl mt-1"></i>
+                        <span>
+                            User-centric design focused on engagement
+                            and conversions
+                        </span>
+                    </li>
 
-                </div>
+                </ul>
 
             </div>
 
         </div>
-    </section>
+
+    </div>
+</section>
+
     <section class="bg-black text-white py-16">
         <div class="max-w-7xl mx-auto px-6">
 
@@ -1208,7 +1220,7 @@
                     <img src="{{ asset('images/tech/shopify.png') }}" class="tech-logo" alt="Shopify">
                     <img src="{{ asset('images/tech/mysql.png') }}" class="tech-logo" alt="MySQL">
                     <img src="{{ asset('images/tech/mongodb.png') }}" class="tech-logo" alt="MongoDB">
-                     <img src="{{ asset('images/tech/codeigniter.png') }}" class="tech-logo" alt="CodeIgniter">
+                    <img src="{{ asset('images/tech/codeigniter.png') }}" class="tech-logo" alt="CodeIgniter">
                     <img src="{{ asset('images/tech/yii.png') }}" class="tech-logo" alt="Yii">
 
 
@@ -1672,7 +1684,7 @@
                 </h2>
                 <p class="text-white/70 text-lg leading-relaxed">
                     Being based in Noida allows us to understand the local business
-                    landscape, competition, and customer behavior  helping us
+                    landscape, competition, and customer behavior helping us
                     deliver solutions that work in the real market.
                 </p>
             </div>
