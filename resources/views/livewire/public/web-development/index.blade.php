@@ -1,4 +1,5 @@
 <div>
+
     <section class="bg-black text-white mt-24 md:mt-24 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
@@ -83,53 +84,68 @@
                         Tell us about your project and we’ll get back shortly.
                     </p>
 
-                    <form class="space-y-4">
+                    <form wire:submit.prevent="submitTop" class="space-y-4">
 
                         <input type="text" placeholder="Full Name"
+                            wire:model.defer="top.name"
                             class="w-full bg-transparent border border-white/20
                                rounded-md px-3 py-2.5 text-sm text-white
                                placeholder-white/40 focus:outline-none
                                focus:border-primary transition">
+                        @error('top.name') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
 
-                        <input type="email" placeholder="Email Address"
+                        <input type="email" placeholder="Email Address (optional)"
+                            wire:model.defer="top.email"
                             class="w-full bg-transparent border border-white/20
                                rounded-md px-3 py-2.5 text-sm text-white
                                placeholder-white/40 focus:outline-none
                                focus:border-primary transition">
+                        @error('top.email') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
 
-                        <input type="tel" placeholder="Phone Number"
+                        <input type="tel" placeholder="Phone Number (required)"
+                            required aria-required="true"
+                            wire:model.defer="top.phone"
                             class="w-full bg-transparent border border-white/20
                                rounded-md px-3 py-2.5 text-sm text-white
                                placeholder-white/40 focus:outline-none
                                focus:border-primary transition">
+                        @error('top.phone') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
 
-                        <select
+                        <select wire:model.defer="top.service"
                             class="w-full bg-transparent border border-white/20
                                rounded-md px-3 py-2.5 text-sm text-white
                                focus:outline-none focus:border-primary">
-                            <option class="bg-black">Select Service</option>
-                            <option class="bg-black">Website Development</option>
-                            <option class="bg-black">E-commerce Website</option>
-                            <option class="bg-black">WordPress Development</option>
-                            <option class="bg-black">Custom Web Application</option>
+                            <option value="">Select Service</option>
+                            <option value="Website Development">Website Development</option>
+                            <option value="E-commerce Website">E-commerce Website</option>
+                            <option value="WordPress Development">WordPress Development</option>
+                            <option value="Custom Web Application">Custom Web Application</option>
                         </select>
 
                         <textarea rows="3" placeholder="Project details (optional)"
+                            wire:model.defer="top.message"
                             class="w-full bg-transparent border border-white/20
                                rounded-md px-3 py-2.5 text-sm text-white
                                placeholder-white/40 focus:outline-none
                                focus:border-primary transition"></textarea>
+                        @error('top.message') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
 
                         <button type="submit"
+                            wire:loading.attr="disabled"
                             class="w-full bg-primary text-black
                                font-medium py-2.5 rounded-md
                                hover:opacity-90 transition">
-                            Get Free Quote
+                            <span wire:loading.remove>Get Free Quote</span>
+                            <span wire:loading>Sending...</span>
                         </button>
 
                         <p class="text-[11px] text-white/50 text-center">
                             No spam. Your information is safe with us.
                         </p>
+
+                        @if($successTop)
+                            <p class="text-sm text-primary text-center">Thanks — we will contact you shortly.</p>
+                        @endif
 
                     </form>
                 </div>
@@ -1974,44 +1990,58 @@
                             Get a <span class="text-primary">Free Quote</span>
                         </h3>
 
-                        <form class="space-y-4">
+                        <form wire:submit.prevent="submitBottom" class="space-y-4">
 
                             <input type="text" placeholder="Your Name"
+                                wire:model.defer="bottom.name"
                                 class="w-full bg-transparent border border-white/20
                                    rounded-md px-4 py-2.5 text-sm text-white
                                    placeholder-white/50 focus:outline-none
                                    focus:border-primary">
+                            @error('bottom.name') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
 
-                            <input type="email" placeholder="Email Address"
+
+                            <input type="email" placeholder="Email Address (optional)"
+                                wire:model.defer="bottom.email"
                                 class="w-full bg-transparent border border-white/20
                                    rounded-md px-4 py-2.5 text-sm text-white
                                    placeholder-white/50 focus:outline-none
                                    focus:border-primary">
+                            @error('bottom.email') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
 
-                            <input type="tel" placeholder="Phone Number"
+                            <input type="tel" placeholder="Phone Number (required)"
+                                required aria-required="true"
+                                wire:model.defer="bottom.phone"
                                 class="w-full bg-transparent border border-white/20
                                    rounded-md px-4 py-2.5 text-sm text-white
                                    placeholder-white/50 focus:outline-none
                                    focus:border-primary">
+                            @error('bottom.phone') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
 
-                            <select
+                            <select wire:model.defer="bottom.service"
                                 class="w-full bg-transparent border border-white/20
                                    rounded-md px-4 py-2.5 text-sm text-white
                                    focus:outline-none focus:border-primary">
-                                <option class="bg-black">Select Service</option>
-                                <option class="bg-black">Website Development</option>
-                                <option class="bg-black">E-commerce Development</option>
-                                <option class="bg-black">Custom Web Application</option>
+                                <option value="">Select Service</option>
+                                <option value="Website Development">Website Development</option>
+                                <option value="E-commerce Development">E-commerce Development</option>
+                                <option value="Custom Web Application">Custom Web Application</option>
                             </select>
 
                             <button type="submit"
+                                wire:loading.attr="disabled"
                                 class="w-full bg-primary text-black
                                    font-semibold py-2.5 rounded-md
                                    hover:opacity-90 transition
                                    flex items-center justify-center gap-2">
                                 <i class="ri-send-plane-line"></i>
-                                Get a Free Quote
+                                <span wire:loading.remove>Get a Free Quote</span>
+                                <span wire:loading>Sending...</span>
                             </button>
+
+                            @if($successBottom)
+                                <p class="text-sm text-primary text-center">Thanks — we will contact you shortly.</p>
+                            @endif
 
                         </form>
 

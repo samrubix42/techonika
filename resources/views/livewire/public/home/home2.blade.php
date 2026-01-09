@@ -679,9 +679,9 @@
                hover:bg-primary hover:text-black hover:border-primary transition-all">
                     <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
                      bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
-                        <img src="{{ asset('images/tech/joomla.png') }}" class="w-6 h-6 object-contain">
+                        <img src="{{ asset('images/tech/nodejs.png') }}" class="w-6 h-6 object-contain">
                     </span>
-                    <span>Joomla Development</span>
+                    <span>Mern Development</span>
                 </span>
 
                 <!-- Mobile App -->

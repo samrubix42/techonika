@@ -62,6 +62,24 @@
             transition: all 0.25s ease;
         }
     </style>
+        <style>
+        /* Make native selects and their options visible on the dark layout */
+        select, select option {
+            background-color: #000 !important;
+            color: #fff !important;
+        }
+
+        /* Improve placeholder contrast */
+        input::placeholder, textarea::placeholder {
+            color: rgba(255,255,255,0.5) !important;
+        }
+
+        /* Remove native focus outline clash */
+        select:focus, input:focus, textarea:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255,255,255,0.03);
+        }
+    </style>
 </head>
 
 <body class="antialiased bg-gray-50 text-gray-800 font-sans">
