@@ -48,102 +48,104 @@
                 class="grid grid-cols-2
            sm:grid-cols-3
            lg:grid-cols-4
-           gap-2 mb-6
-           place-content-center">
+           gap-4 lg:gap-3 mb-6
+           place-content-center px-4 sm:px-0">
 
                 <!-- Item -->
                 <span
                     class="group flex flex-col sm:flex-row
                items-center justify-center
                gap-2
-               px-3 py-4 sm:px-6 sm:py-3
-               min-h-[90px] sm:min-h-[44px]
+               px-2 py-4
+               sm:px-3 sm:py-2
+               min-h-[90px] sm:min-h-[36px]
                rounded-xl sm:rounded-full
                bg-white/10 backdrop-blur-md
                border border-white/20
-               text-xs sm:text-sm font-medium
+               text-xs sm:text-[13px] font-medium
                text-white text-center
                shadow-lg shadow-primary/10
                hover:bg-primary hover:text-black
                hover:border-primary
                transition-all duration-300">
 
-                    <i class="ri-brush-line text-lg sm:text-base
+                    <i class="ri-brush-line text-lg sm:text-sm
                   text-primary group-hover:text-black"></i>
                     <span>Website Designing</span>
                 </span>
 
                 <span class="group flex flex-col sm:flex-row items-center justify-center gap-2
-               px-3 py-4 sm:px-6 sm:py-3 min-h-[90px] sm:min-h-[44px]
+               px-2 py-4 sm:px-3 sm:py-2 min-h-[90px] sm:min-h-[36px]
                rounded-xl sm:rounded-full bg-white/10 backdrop-blur-md
-               border border-white/20 text-xs sm:text-sm font-medium
+               border border-white/20 text-xs sm:text-[13px] font-medium
                text-white text-center shadow-lg shadow-primary/10
                hover:bg-primary hover:text-black hover:border-primary transition-all">
-                    <i class="ri-code-box-line text-lg sm:text-base text-primary group-hover:text-black"></i>
+                    <i class="ri-code-box-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
                     <span>Website Development</span>
                 </span>
 
                 <span class="group flex flex-col sm:flex-row items-center justify-center gap-2
-               px-3 py-4 sm:px-6 sm:py-3 min-h-[90px] sm:min-h-[44px]
+               px-2 py-4 sm:px-3 sm:py-2 min-h-[90px] sm:min-h-[36px]
                rounded-xl sm:rounded-full bg-white/10 backdrop-blur-md
-               border border-white/20 text-xs sm:text-sm font-medium
+               border border-white/20 text-xs sm:text-[13px] font-medium
                text-white text-center shadow-lg shadow-primary/10
                hover:bg-primary hover:text-black hover:border-primary transition-all">
-                    <i class="ri-search-eye-line text-lg sm:text-base text-primary group-hover:text-black"></i>
-                    <span>SEO</span>
+                    <i class="ri-search-eye-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    <span>Search Engine Optimization</span>
                 </span>
 
                 <span class="group flex flex-col sm:flex-row items-center justify-center gap-2
-               px-3 py-4 sm:px-6 sm:py-3 min-h-[90px] sm:min-h-[44px]
+               px-2 py-4 sm:px-3 sm:py-2 min-h-[90px] sm:min-h-[36px]
                rounded-xl sm:rounded-full bg-white/10 backdrop-blur-md
-               border border-white/20 text-xs sm:text-sm font-medium
+               border border-white/20 text-xs sm:text-[13px] font-medium
                text-white text-center shadow-lg shadow-primary/10
                hover:bg-primary hover:text-black hover:border-primary transition-all">
-                    <i class="ri-megaphone-line text-lg sm:text-base text-primary group-hover:text-black"></i>
+                    <i class="ri-megaphone-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
                     <span>Social Marketing</span>
                 </span>
 
                 <span class="group flex flex-col sm:flex-row items-center justify-center gap-2
-               px-3 py-4 sm:px-6 sm:py-3 min-h-[90px] sm:min-h-[44px]
+               px-2 py-4 sm:px-3 sm:py-2 min-h-[90px] sm:min-h-[36px]
                rounded-xl sm:rounded-full bg-white/10 backdrop-blur-md
-               border border-white/20 text-xs sm:text-sm font-medium
+               border border-white/20 text-xs sm:text-[13px] font-medium
                text-white text-center shadow-lg shadow-primary/10
                hover:bg-primary hover:text-black hover:border-primary transition-all">
-                    <i class="ri-store-2-line text-lg sm:text-base text-primary group-hover:text-black"></i>
-                    <span>E-Commerce</span>
+                    <i class="ri-store-2-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    <span>E-Commerce Development</span>
                 </span>
 
                 <span class="group flex flex-col sm:flex-row items-center justify-center gap-2
-               px-3 py-4 sm:px-6 sm:py-3 min-h-[90px] sm:min-h-[44px]
+               px-2 py-4 sm:px-3 sm:py-2 min-h-[90px] sm:min-h-[36px]
                rounded-xl sm:rounded-full bg-white/10 backdrop-blur-md
-               border border-white/20 text-xs sm:text-sm font-medium
+               border border-white/20 text-xs sm:text-[13px] font-medium
                text-white text-center shadow-lg shadow-primary/10
                hover:bg-primary hover:text-black hover:border-primary transition-all">
-                    <i class="ri-layout-2-line text-lg sm:text-base text-primary group-hover:text-black"></i>
-                    <span>Custom Design</span>
+                    <i class="ri-layout-2-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    <span>Custom Design Development</span>
                 </span>
 
                 <span class="group flex flex-col sm:flex-row items-center justify-center gap-2
-               px-3 py-4 sm:px-6 sm:py-3 min-h-[90px] sm:min-h-[44px]
+               px-2 py-4 sm:px-3 sm:py-2 min-h-[90px] sm:min-h-[36px]
                rounded-xl sm:rounded-full bg-white/10 backdrop-blur-md
-               border border-white/20 text-xs sm:text-sm font-medium
+               border border-white/20 text-xs sm:text-[13px] font-medium
                text-white text-center shadow-lg shadow-primary/10
                hover:bg-primary hover:text-black hover:border-primary transition-all">
-                    <i class="ri-settings-3-line text-lg sm:text-base text-primary group-hover:text-black"></i>
+                    <i class="ri-settings-3-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
                     <span>Maintenance</span>
                 </span>
 
                 <span class="group flex flex-col sm:flex-row items-center justify-center gap-2
-               px-3 py-4 sm:px-6 sm:py-3 min-h-[90px] sm:min-h-[44px]
+               px-2 py-4 sm:px-3 sm:py-2 min-h-[90px] sm:min-h-[36px]
                rounded-xl sm:rounded-full bg-white/10 backdrop-blur-md
-               border border-white/20 text-xs sm:text-sm font-medium
+               border border-white/20 text-xs sm:text-[13px] font-medium
                text-white text-center shadow-lg shadow-primary/10
                hover:bg-primary hover:text-black hover:border-primary transition-all">
-                    <i class="ri-smartphone-line text-lg sm:text-base text-primary group-hover:text-black"></i>
+                    <i class="ri-smartphone-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
                     <span>App Development</span>
                 </span>
 
             </div>
+
 
 
             <!-- CTA -->
