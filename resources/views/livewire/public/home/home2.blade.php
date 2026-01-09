@@ -45,102 +45,152 @@
             </p>
             <!-- Services: Mobile Cards → Desktop Pills (Aligned Everywhere) -->
             <div
-                class="grid grid-cols-2
+                class="grid grid-cols-2 mb-10
            sm:grid-cols-3
            lg:grid-cols-4
-           gap-4 lg:gap-3 mb-6
-           place-content-center px-4 sm:px-0">
+           gap-4 lg:gap-2
+           place-content-center
+           px-4 sm:px-0">
 
                 <!-- Item -->
                 <span
-                    class="group flex flex-col sm:flex-row
+                    class="group relative
+               flex flex-col sm:flex-row
                items-center justify-center
                gap-2
-               px-2 py-4
-               sm:px-3 sm:py-2
-               min-h-[90px] sm:min-h-[36px]
-               rounded-xl sm:rounded-full
-               bg-white/10 backdrop-blur-md
+               px-3 py-4 sm:px-4 sm:py-2
+               min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full
+               bg-white/10 backdrop-blur-xl
                border border-white/20
                text-xs sm:text-[13px] font-medium
                text-white text-center
-               shadow-lg shadow-primary/10
-               hover:bg-primary hover:text-black
-               hover:border-primary
-               transition-all duration-300">
+               shadow-lg shadow-black/40
+               transition-all duration-300
+               hover:-translate-y-1
+               hover:bg-primary
+               hover:text-black
+               hover:border-primary">
 
-                    <i class="ri-brush-line text-lg sm:text-sm
-                  text-primary group-hover:text-black"></i>
+                    <!-- Icon Bubble -->
+                    <span
+                        class="flex items-center justify-center
+                   w-9 h-9 sm:w-7 sm:h-7
+                   rounded-full
+                   bg-white/10 border border-white/20
+                   transition-all duration-300
+                   group-hover:bg-white/30">
+
+                        <i class="ri-brush-line text-lg sm:text-sm
+                      text-primary group-hover:text-black"></i>
+                    </span>
+
                     <span>Website Designing</span>
                 </span>
 
-                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2
-               px-2 py-4 sm:px-3 sm:py-2 min-h-[90px] sm:min-h-[36px]
-               rounded-xl sm:rounded-full bg-white/10 backdrop-blur-md
+                <!-- Repeat -->
+                <span class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+               px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
                border border-white/20 text-xs sm:text-[13px] font-medium
-               text-white text-center shadow-lg shadow-primary/10
-               hover:bg-primary hover:text-black hover:border-primary transition-all">
-                    <i class="ri-code-box-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+               text-white text-center shadow-lg shadow-black/40
+               transition-all duration-300 hover:-translate-y-1
+               hover:bg-primary hover:text-black hover:border-primary">
+
+                    <span class="flex items-center justify-center w-9 h-9 sm:w-7 sm:h-7 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/30 transition">
+                        <i class="ri-code-box-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    </span>
                     <span>Website Development</span>
                 </span>
 
-                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2
-               px-2 py-4 sm:px-3 sm:py-2 min-h-[90px] sm:min-h-[36px]
-               rounded-xl sm:rounded-full bg-white/10 backdrop-blur-md
+                <span class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+               px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
                border border-white/20 text-xs sm:text-[13px] font-medium
-               text-white text-center shadow-lg shadow-primary/10
-               hover:bg-primary hover:text-black hover:border-primary transition-all">
-                    <i class="ri-search-eye-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+               text-white text-center shadow-lg shadow-black/40
+               transition-all duration-300 hover:-translate-y-1
+               hover:bg-primary hover:text-black hover:border-primary">
+
+                    <span class="flex items-center justify-center w-9 h-9 sm:w-7 sm:h-7 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/30 transition">
+                        <i class="ri-search-eye-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    </span>
                     <span>Search Engine Optimization</span>
                 </span>
 
-                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2
-               px-2 py-4 sm:px-3 sm:py-2 min-h-[90px] sm:min-h-[36px]
-               rounded-xl sm:rounded-full bg-white/10 backdrop-blur-md
+                <span class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+               px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
                border border-white/20 text-xs sm:text-[13px] font-medium
-               text-white text-center shadow-lg shadow-primary/10
-               hover:bg-primary hover:text-black hover:border-primary transition-all">
-                    <i class="ri-megaphone-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+               text-white text-center shadow-lg shadow-black/40
+               transition-all duration-300 hover:-translate-y-1
+               hover:bg-primary hover:text-black hover:border-primary">
+
+                    <span class="flex items-center justify-center w-9 h-9 sm:w-7 sm:h-7 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/30 transition">
+                        <i class="ri-megaphone-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    </span>
                     <span>Social Marketing</span>
                 </span>
 
-                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2
-               px-2 py-4 sm:px-3 sm:py-2 min-h-[90px] sm:min-h-[36px]
-               rounded-xl sm:rounded-full bg-white/10 backdrop-blur-md
+                <span class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+               px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
                border border-white/20 text-xs sm:text-[13px] font-medium
-               text-white text-center shadow-lg shadow-primary/10
-               hover:bg-primary hover:text-black hover:border-primary transition-all">
-                    <i class="ri-store-2-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+               text-white text-center shadow-lg shadow-black/40
+               transition-all duration-300 hover:-translate-y-1
+               hover:bg-primary hover:text-black hover:border-primary">
+
+                    <span class="flex items-center justify-center w-9 h-9 sm:w-7 sm:h-7 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/30 transition">
+                        <i class="ri-store-2-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    </span>
                     <span>E-Commerce Development</span>
                 </span>
 
-                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2
-               px-2 py-4 sm:px-3 sm:py-2 min-h-[90px] sm:min-h-[36px]
-               rounded-xl sm:rounded-full bg-white/10 backdrop-blur-md
+                <span class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+               px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
                border border-white/20 text-xs sm:text-[13px] font-medium
-               text-white text-center shadow-lg shadow-primary/10
-               hover:bg-primary hover:text-black hover:border-primary transition-all">
-                    <i class="ri-layout-2-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+               text-white text-center shadow-lg shadow-black/40
+               transition-all duration-300 hover:-translate-y-1
+               hover:bg-primary hover:text-black hover:border-primary">
+
+                    <span class="flex items-center justify-center w-9 h-9 sm:w-7 sm:h-7 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/30 transition">
+                        <i class="ri-layout-2-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    </span>
                     <span>Custom Design Development</span>
                 </span>
 
-                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2
-               px-2 py-4 sm:px-3 sm:py-2 min-h-[90px] sm:min-h-[36px]
-               rounded-xl sm:rounded-full bg-white/10 backdrop-blur-md
+                <span class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+               px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
                border border-white/20 text-xs sm:text-[13px] font-medium
-               text-white text-center shadow-lg shadow-primary/10
-               hover:bg-primary hover:text-black hover:border-primary transition-all">
-                    <i class="ri-settings-3-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+               text-white text-center shadow-lg shadow-black/40
+               transition-all duration-300 hover:-translate-y-1
+               hover:bg-primary hover:text-black hover:border-primary">
+
+                    <span class="flex items-center justify-center w-9 h-9 sm:w-7 sm:h-7 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/30 transition">
+                        <i class="ri-settings-3-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    </span>
                     <span>Maintenance</span>
                 </span>
 
-                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2
-               px-2 py-4 sm:px-3 sm:py-2 min-h-[90px] sm:min-h-[36px]
-               rounded-xl sm:rounded-full bg-white/10 backdrop-blur-md
+                <span class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+               px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
                border border-white/20 text-xs sm:text-[13px] font-medium
-               text-white text-center shadow-lg shadow-primary/10
-               hover:bg-primary hover:text-black hover:border-primary transition-all">
-                    <i class="ri-smartphone-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+               text-white text-center shadow-lg shadow-black/40
+               transition-all duration-300 hover:-translate-y-1
+               hover:bg-primary hover:text-black hover:border-primary">
+
+                    <span class="flex items-center justify-center w-9 h-9 sm:w-7 sm:h-7 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/30 transition">
+                        <i class="ri-smartphone-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    </span>
                     <span>App Development</span>
                 </span>
 
@@ -166,9 +216,9 @@
 
         <!-- Glow Background -->
         <div class="absolute -top-40 -left-40
-            w-[600px] h-[600px]
-            bg-[color:var(--color-primary)]/20
-            blur-[160px] rounded-full"></div>
+        w-[600px] h-[600px]
+        bg-[color:var(--color-primary)]/20
+        blur-[160px] rounded-full"></div>
 
         <div class="relative px-5 sm:px-8 lg:px-[9%]">
 
@@ -176,30 +226,33 @@
             <div class="grid lg:grid-cols-2 gap-14 items-center">
 
                 <!-- LEFT IMAGE -->
-                <div class="relative order-1 lg:order-none">
+                <div class="relative order-1 lg:order-none flex justify-center">
 
                     <!-- Image Card -->
-                    <div class="relative z-10 overflow-hidden
-                        rounded-[40px]
-                        border border-white/10
-                        bg-white/5 backdrop-blur">
+                    <div
+                        class="relative z-10 overflow-hidden
+                           w-full
+                           max-w-md sm:max-w-lg lg:max-w-xl
+                           aspect-[4/3]
+                           rounded-[32px]
+                           border border-white/10
+                           bg-white/5 backdrop-blur">
 
                         <img
-                            src="{{asset('images/Revolutionize_Your_Workplace_Office_Digital_Signage_Solutions_for_Modern_Businesses.jpg')}}"
+                            src="{{ asset('images/Revolutionize_Your_Workplace_Office_Digital_Signage_Solutions_for_Modern_Businesses.jpg') }}"
                             alt="Digital Solutions"
                             class="w-full h-full object-cover
-                               scale-105 hover:scale-110
-                               transition-transform duration-700">
+                               transition-transform duration-500
+                               hover:scale-105">
                     </div>
-
 
                 </div>
 
-                <!-- RIGHT CONTENT (UNCHANGED TEXT) -->
+                <!-- RIGHT CONTENT -->
                 <div>
 
                     <h2 class="text-3xl sm:text-3xl md:text-3xl xl:text-[45px]
-                       font-light tracking-wide leading-tight text-white">
+                   font-light tracking-wide leading-tight text-white">
                         We Build
                         <span class="font-semibold text-[color:var(--color-primary)]">
                             Digital Solutions
@@ -211,8 +264,8 @@
                     </h2>
 
                     <!-- Paragraphs -->
-                    <div class="mt-6 sm:mt-8 space-y-2">
-                        <p class="text-white/80 text-justify sm:text-lg">
+                    <div class="mt-6 sm:mt-8 space-y-3">
+                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
                             At <span class="font-medium text-white">Techonika</span>,
                             we believe that technology should feel simple, helpful,
                             and easy to understand for everyone.
@@ -220,7 +273,7 @@
                             words like digital, software, or online marketing.
                         </p>
 
-                        <p class="text-white/80 text-justify sm:text-lg">
+                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
                             We see this every day, and that is exactly why we exist.
                             We work hard to remove fear, confusion, and hesitation
                             around technology so you can move forward with confidence.
@@ -229,43 +282,33 @@
                             business needs.
                         </p>
 
-                        <p class="text-white/80 text-justify sm:text-lg">
+                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
                             We are a full-service digital and technology company,
                             which means we offer a wide range of solutions under one roof.
                             You do not need to manage different agencies for web design,
                             graphic design, web development, digital marketing,
                             mobile apps, or online branding.
                         </p>
-
-                        <p class="text-white/80 text-justify sm:text-lg">
-                            Everything is handled by one dedicated team that understands
-                            your business from start to finish.
-                            From early planning and creative design to development,
-                            promotion, and long-term support,
-                            we manage each step with care and clarity.
-                        </p>
-
-
                     </div>
 
                     <!-- CTA -->
                     <div class="mt-8 sm:mt-10 flex flex-wrap gap-4">
                         <a href="#contact"
                             class="inline-flex items-center gap-2
-                          px-7 py-3.5 rounded-full
-                          bg-[color:var(--color-primary)]
-                          text-black font-semibold
-                          hover:opacity-90 transition">
+                               px-7 py-3.5 rounded-full
+                               bg-[color:var(--color-primary)]
+                               text-black font-semibold
+                               hover:opacity-90 transition">
                             <i class="ri-chat-3-line"></i>
                             Get Free Consultation
                         </a>
 
                         <a href="#services"
                             class="inline-flex items-center gap-2
-                          px-7 py-3.5 rounded-full
-                          border border-white/20
-                          text-white font-medium
-                          hover:bg-white hover:text-black transition">
+                               px-7 py-3.5 rounded-full
+                               border border-white/20
+                               text-white font-medium
+                               hover:bg-white hover:text-black transition">
                             <i class="ri-arrow-right-line"></i>
                             Explore Services
                         </a>
@@ -274,6 +317,403 @@
                 </div>
 
             </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="relative bg-black py-14 sm:py-20 overflow-hidden">
+
+        <!-- Soft Background Glow -->
+        <div class="absolute -top-32 -left-32
+        w-[520px] h-[520px]
+        bg-primary/15 blur-[160px] rounded-full"></div>
+
+        <div class="relative max-w-6xl mx-auto px-4">
+
+            <!-- Heading -->
+            <div class="mb-10 sm:mb-14 text-center">
+                <h2 class="text-3xl sm:text-4xl lg:text-4xl font-light text-white">
+                    Industries We
+                    <span class="text-primary font-semibold">Serve</span>
+                </h2>
+                <p class="mt-3 max-w-xl mx-auto text-white/60 text-sm">
+                    Industry-focused digital solutions designed to scale, convert,
+                    and create lasting impact.
+                </p>
+            </div>
+
+            <!-- Grid -->
+            <div
+                class="grid grid-cols-2
+                   sm:grid-cols-3
+                   lg:grid-cols-5
+                   gap-px
+                   bg-white/10
+                   rounded-2xl overflow-hidden">
+
+                <template x-for="item in [
+                { title: 'Fashion', desc: 'Digital solutions for fashion brands.', icon: '{{ asset('images/icons/shirt.png') }}' },
+                { title: 'Apparel', desc: 'Custom ecommerce and branding.', icon: '{{ asset('images/icons/dress.png') }}' },
+                { title: 'Businesses', desc: 'Scalable business platforms.', icon: '{{ asset('images/icons/cooperation.png') }}' },
+                { title: 'Jewellery', desc: 'Luxury digital presence.', icon: '{{ asset('images/icons/treasure.png') }}' },
+                { title: 'Healthcare', desc: 'Healthcare-focused solutions.', icon: '{{ asset('images/icons/healthcare.png') }}' },
+                { title: 'Food', desc: 'Online ordering & branding.', icon: '{{ asset('images/icons/fast-food.png') }}' },
+                { title: 'Doctors Clinics', desc: 'Clinic appointment systems.', icon: '{{ asset('images/icons/clinic.png') }}' },
+                { title: 'Real Estate', desc: 'High-converting property platforms.', icon: '{{ asset('images/icons/house.png') }}' },
+                { title: 'Education', desc: 'Digital education platforms.', icon: '{{ asset('images/icons/education.png') }}' },
+                { title: 'Beauty', desc: 'Beauty brand websites.', icon: '{{ asset('images/icons/skin-care.png') }}' },
+                { title: 'Consumer Products', desc: 'Ecommerce-driven growth.', icon: '{{ asset('images/icons/sale.png') }}' },
+                { title: 'Hospitality', desc: 'Hospitality & booking systems.', icon: '{{ asset('images/icons/medical-team.png') }}' },
+                { title: 'Pest Control', desc: 'Lead-focused service websites.', icon: '{{ asset('images/icons/bug-truck.png') }}' },
+                { title: 'Musical Instruments', desc: 'Music ecommerce platforms.', icon: '{{ asset('images/icons/headphones.png') }}' },
+                { title: 'Sports', desc: 'Sports brands & academies.', icon: '{{ asset('images/icons/sports-ball.png') }}' }
+            ]" :key="item.title">
+
+                    <!-- Card -->
+                    <div
+                        x-data="{ hover: false }"
+                        @mouseenter="hover = true"
+                        @mouseleave="hover = false"
+                        class="relative h-[170px] sm:h-[190px]
+                           flex flex-col items-center justify-center
+                           text-center
+                           bg-white/5 backdrop-blur
+                           transition-all duration-300
+                           hover:bg-white/10
+                           hover:shadow-xl hover:shadow-primary/10">
+
+                        <!-- Icon Wrapper -->
+                        <div
+                            class="flex items-center justify-center
+                               w-12 h-12 sm:w-14 sm:h-14
+                               rounded-full
+                               bg-white/10 border border-white/20
+                               mb-3
+                               transition-all duration-300"
+                            :class="hover ? 'scale-110 bg-primary/20' : 'scale-100'">
+
+                            <img
+                                :src="item.icon"
+                                alt=""
+                                class="w-6 h-6 sm:w-7 sm:h-7 object-contain">
+                        </div>
+
+                        <!-- Title -->
+                        <h4
+                            class="text-white font-semibold tracking-wide
+                               text-[12px] sm:text-sm
+                               transition-all duration-300"
+                            :class="hover
+                        ? '-translate-y-1 text-primary'
+                        : 'translate-y-1'">
+                            <span x-text="item.title.toUpperCase()"></span>
+                        </h4>
+
+                        <!-- Description -->
+                        <p
+                            class="mt-2 px-4 text-[11px] sm:text-xs
+                               text-white/60 leading-snug
+                               transition-all duration-300"
+                            :class="hover
+                        ? 'opacity-100 translate-y-0'
+                        : 'opacity-0 translate-y-2'">
+                            <span x-text="item.desc"></span>
+                        </p>
+
+                        <!-- Subtle Hover Glow -->
+                        <div
+                            class="absolute inset-0 rounded-xl
+                               bg-primary/5 opacity-0
+                               transition duration-300"
+                            :class="hover ? 'opacity-100' : 'opacity-0'">
+                        </div>
+
+                    </div>
+                </template>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="relative bg-black py-20 sm:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+                <!-- LEFT CONTENT -->
+                <div>
+                    <span
+                        class="inline-block mb-4 px-4 py-1.5
+                           rounded-full text-xs font-medium
+                           bg-white/10 text-primary">
+                        Trusted Digital Agency in Noida
+                    </span>
+
+                    <h2
+                        class="text-3xl sm:text-4xl lg:text-5xl
+                           font-bold leading-tight text-white">
+                        Best Web Designing &<br>
+                        <span class="text-primary">
+                            Development Company in Noida
+                        </span>
+                    </h2>
+
+                    <p
+                        class="mt-6 text-white/70
+                           text-sm sm:text-base leading-relaxed">
+                        We are a leading web designing and web development company in Noida,
+                        helping businesses build strong digital identities.
+                        Our team creates visually stunning, high-performing websites
+                        that are fast, secure, SEO-friendly, and designed to convert visitors
+                        into customers.
+                    </p>
+
+                    <p
+                        class="mt-4 text-white/70
+                           text-sm sm:text-base leading-relaxed">
+                        From custom website design and scalable web development
+                        to UI/UX optimization and ongoing support,
+                        we deliver complete digital solutions tailored to your business goals.
+                    </p>
+
+                    <!-- Highlights -->
+                    <div class="mt-6 grid grid-cols-2 gap-4 max-w-md">
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            Custom Web Design
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            SEO-Optimized Websites
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            Fast & Secure Development
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            Long-Term Support
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a
+                            href="#contact"
+                            class="inline-flex items-center gap-2
+                               px-7 py-3.5 rounded-full
+                               bg-primary text-black
+                               font-semibold text-sm
+                               hover:opacity-90 transition">
+                            Get Free Consultation
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+
+                        <a
+                            href="#portfolio"
+                            class="inline-flex items-center gap-2
+                               px-7 py-3.5 rounded-full
+                               border border-white/20
+                               text-white text-sm font-medium
+                               hover:bg-white hover:text-black transition">
+                            View Our Work
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="relative">
+                    <div
+                        class="relative overflow-hidden
+                           rounded-2xl
+                           border border-white/10
+                           bg-white/5 backdrop-blur">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+                            alt="Best Web Design Company in Noida"
+                            class="w-full h-full object-cover
+                               scale-105 hover:scale-110
+                               transition-transform duration-700">
+                    </div>
+
+                    <!-- Glow -->
+                    <div
+                        class="absolute -bottom-12 -right-12
+                           w-48 h-48
+                           bg-primary/30
+                           rounded-full blur-[120px]">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="relative bg-black py-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <!-- Heading -->
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
+                    Technologies We
+                    <span class="text-primary">Work With</span>
+                </h2>
+            </div>
+
+            <!-- Technologies Pills -->
+            <div
+                class="grid grid-cols-2 gap-3
+           sm:flex sm:flex-wrap sm:justify-center sm:gap-4
+           max-w-5xl mx-auto">
+
+                <!-- Pill / Card -->
+                <span
+                    class="group flex flex-col sm:flex-row
+               items-center justify-center sm:justify-start
+               gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3
+               rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md
+               border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black
+               hover:border-primary
+               transition-all duration-300">
+
+                    <!-- Icon -->
+                    <span
+                        class="flex items-center justify-center
+                   w-10 h-10 sm:w-9 sm:h-9
+                   rounded-full
+                   bg-white/10 border border-white/20
+                   group-hover:bg-white/20
+                   transition-all duration-300">
+
+                        <img src="{{ asset('images/tech/shopify.png') }}"
+                            alt="Shopify"
+                            class="w-6 h-6 object-contain">
+                    </span>
+
+                    <span class="text-center sm:text-left">
+                        Shopify Development
+                    </span>
+                </span>
+
+                <!-- React -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/react.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>React Development</span>
+                </span>
+
+                <!-- PHP -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/php.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>PHP Development</span>
+                </span>
+
+                <!-- Magento -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/magento.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>Magento Development</span>
+                </span>
+
+                <!-- Laravel -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/laravel.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>Laravel Development</span>
+                </span>
+
+                <!-- CodeIgniter -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/codeigniter.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>CodeIgniter Development</span>
+                </span>
+
+                <!-- Joomla -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/joomla.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>Joomla Development</span>
+                </span>
+
+                <!-- Mobile App -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/native.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>Mobile App Development</span>
+                </span>
+
+                <!-- WordPress -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/wordpress.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>WordPress Development</span>
+                </span>
+
+            </div>
+
         </div>
     </section>
 
@@ -312,7 +752,7 @@
                     </div>
 
                     <div class="space-y-4 sm:space-y-5">
-                        <p class="text-white/80 text-sm sm:text-justify lg:text-lg leading-relaxed">
+                        <p class="text-white/80 text-sm sm:text-base lg:text-lg">
                             Our mission is simple.
                             We help businesses use technology in a smart,
                             practical, and stress-free way.
@@ -321,7 +761,7 @@
                             so technology supports growth rather than slowing it down.
                         </p>
 
-                        <p class="text-white/80 text-sm sm:text-justify lg:text-lg leading-relaxed">
+                        <p class="text-white/80 text-sm sm:text-base lg:text-lg">
                             Every project begins with understanding your needs,
                             challenges, and goals.
                             It ends with a solution that makes daily work
@@ -344,7 +784,7 @@
                     </div>
 
                     <div class="space-y-4 sm:space-y-5">
-                        <p class="text-white/80 text-sm sm:text-justify lg:text-lg leading-relaxed">
+                        <p class="text-white/80 text-sm sm:text-base lg:text-lg">
                             Our vision is to become a trusted digital partner
                             for businesses across the world.
                             We want technology to feel reliable and meaningful,
@@ -353,7 +793,7 @@
                             <span class="text-white font-medium">Techonika</span>.
                         </p>
 
-                        <p class="text-white/80 text-sm sm:text-justify lg:text-lg leading-relaxed">
+                        <p class="text-white/80 text-sm sm:text-base lg:text-lg">
                             That confidence comes from honest work,
                             clear communication,
                             and results that truly support business growth.
@@ -369,6 +809,336 @@
 
         </div>
     </section>
+    <section class="relative overflow-hidden py-16 sm:py-20 bg-black">
+
+
+        <!-- Soft Glow -->
+        <div class="absolute -top-40 left-1/4
+            w-[420px] h-[420px]
+            bg-primary/40 blur-[180px] rounded-full">
+        </div>
+
+        <div class="absolute -bottom-40 right-1/4
+            w-[420px] h-[420px]
+            bg-primary/25 blur-[180px] rounded-full">
+        </div>
+
+
+        <!-- Content -->
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
+
+                <!-- Item -->
+                <div
+                    class="group bg-white/10 backdrop-blur-xl
+                       border border-white/20
+                       rounded-2xl px-6 py-8
+                       transition-all duration-300
+                       hover:-translate-y-1 hover:border-primary">
+
+                    <div
+                        class="w-14 h-14 mx-auto mb-4
+                           rounded-full
+                           bg-white/10 border border-white/20
+                           flex items-center justify-center
+                           text-primary text-2xl
+                           group-hover:bg-primary/20 transition">
+                        <i class="ri-user-smile-line"></i>
+                    </div>
+
+                    <h3 class="text-3xl font-bold text-white">
+                        800<span class="text-primary">+</span>
+                    </h3>
+                    <p class="mt-1 text-white/70 text-sm tracking-wide uppercase">
+                        Happy Customers
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div
+                    class="group bg-white/10 backdrop-blur-xl
+                       border border-white/20
+                       rounded-2xl px-6 py-8
+                       transition-all duration-300
+                       hover:-translate-y-1 hover:border-primary">
+
+                    <div
+                        class="w-14 h-14 mx-auto mb-4
+                           rounded-full
+                           bg-white/10 border border-white/20
+                           flex items-center justify-center
+                           text-primary text-2xl
+                           group-hover:bg-primary/20 transition">
+                        <i class="ri-briefcase-4-line"></i>
+                    </div>
+
+                    <h3 class="text-3xl font-bold text-white">
+                        15<span class="text-primary">+</span>
+                    </h3>
+                    <p class="mt-1 text-white/70 text-sm tracking-wide uppercase">
+                        Years Experience
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div
+                    class="group bg-white/10 backdrop-blur-xl
+                       border border-white/20
+                       rounded-2xl px-6 py-8
+                       transition-all duration-300
+                       hover:-translate-y-1 hover:border-primary">
+
+                    <div
+                        class="w-14 h-14 mx-auto mb-4
+                           rounded-full
+                           bg-white/10 border border-white/20
+                           flex items-center justify-center
+                           text-primary text-2xl
+                           group-hover:bg-primary/20 transition">
+                        <i class="ri-checkbox-circle-line"></i>
+                    </div>
+
+                    <h3 class="text-3xl font-bold text-white">
+                        1100<span class="text-primary">+</span>
+                    </h3>
+                    <p class="mt-1 text-white/70 text-sm tracking-wide uppercase">
+                        Successful Projects
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div
+                    class="group bg-white/10 backdrop-blur-xl
+                       border border-white/20
+                       rounded-2xl px-6 py-8
+                       transition-all duration-300
+                       hover:-translate-y-1 hover:border-primary">
+
+                    <div
+                        class="w-14 h-14 mx-auto mb-4
+                           rounded-full
+                           bg-white/10 border border-white/20
+                           flex items-center justify-center
+                           text-primary text-2xl
+                           group-hover:bg-primary/20 transition">
+                        <i class="ri-earth-line"></i>
+                    </div>
+
+                    <h3 class="text-3xl font-bold text-white">
+                        40<span class="text-primary">+</span>
+                    </h3>
+                    <p class="mt-1 text-white/70 text-sm tracking-wide uppercase">
+                        Countries Served
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="relative bg-black py-16 sm:py-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- RIGHT IMAGE -->
+                <div class="relative order-first lg:order-none">
+                    <div
+                        class="relative overflow-hidden
+                           rounded-2xl
+                           border border-white/10
+                           bg-white/5 backdrop-blur">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
+                            alt="Best SEO Company in Noida"
+                            class="w-full h-full object-cover
+                               transition-transform duration-700
+                               hover:scale-105">
+                    </div>
+
+                    <!-- Soft Glow -->
+                    <div
+                        class="absolute -bottom-10 -right-10
+                           w-40 h-40
+                           bg-primary/30
+                           rounded-full blur-[120px]">
+                    </div>
+                </div>
+
+                <!-- LEFT CONTENT -->
+                <div>
+                    <span
+                        class="inline-flex items-center mb-4
+                           px-4 py-1.5 rounded-full
+                           text-xs font-medium
+                           bg-white/10 text-primary">
+                        SEO-Driven Digital Growth
+                    </span>
+
+                    <h2
+                        class="text-3xl sm:text-4xl lg:text-5xl
+                           font-bold leading-tight text-white">
+                        Best
+                        <span class="text-primary">SEO Company in Noida</span><br>
+                        Focused on Real Results
+                    </h2>
+
+                    <p
+                        class="mt-6 text-white/70
+                           text-sm sm:text-base leading-relaxed">
+                        We are a results-oriented SEO company in Noida helping businesses
+                        achieve higher Google rankings, consistent organic traffic,
+                        and long-term online growth. Our SEO strategies are data-driven,
+                        ethical, and aligned with Google’s latest algorithms.
+                    </p>
+
+                    <p
+                        class="mt-4 text-white/70
+                           text-sm sm:text-base leading-relaxed">
+                        From keyword research and technical SEO to on-page optimization,
+                        content strategy, and link building, we deliver complete
+                        SEO solutions designed to convert visitors into customers.
+                    </p>
+
+                    <!-- Highlights -->
+                    <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg">
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            Google-Focused SEO Strategy
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            Keyword & Competitor Research
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            Technical & On-Page SEO
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            Measurable Ranking Growth
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a
+                            href="#contact"
+                            class="inline-flex items-center gap-2
+                               px-7 py-3.5 rounded-full
+                               bg-primary text-black
+                               font-semibold text-sm
+                               hover:opacity-90 transition">
+                            Get Free SEO Audit
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+
+                        <a
+                            href="#seo-services"
+                            class="inline-flex items-center gap-2
+                               px-7 py-3.5 rounded-full
+                               border border-white/20
+                               text-white text-sm font-medium
+                               hover:bg-white hover:text-black transition">
+                            View SEO Services
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <section class="relative bg-black py-16 sm:py-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <!-- Heading -->
+            <div class="text-center mb-10">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
+                    SEO For
+                    <span class="text-primary">Different Industries</span>
+                </h2>
+            </div>
+
+            <!-- Pills -->
+            <div
+                class="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
+
+                <!-- Pill -->
+                <span
+                    class="group px-6 py-3
+                       rounded-full
+                       bg-white/10 backdrop-blur-md
+                       border border-white/20
+                       text-sm font-medium text-white
+                       shadow-lg shadow-primary/10
+                       hover:bg-primary hover:text-black
+                       hover:border-primary
+                       transition-all duration-300">
+                    SEO For Startups
+                </span>
+
+                <span class="group px-6 py-3 rounded-full
+                       bg-white/10 backdrop-blur-md border border-white/20
+                       text-sm font-medium text-white
+                       shadow-lg shadow-primary/10
+                       hover:bg-primary hover:text-black hover:border-primary
+                       transition-all duration-300">
+                    Ecommerce SEO
+                </span>
+
+                <span class="group px-6 py-3 rounded-full
+                       bg-white/10 backdrop-blur-md border border-white/20
+                       text-sm font-medium text-white
+                       shadow-lg shadow-primary/10
+                       hover:bg-primary hover:text-black hover:border-primary
+                       transition-all duration-300">
+                    Limousine Services SEO
+                </span>
+
+                <span class="group px-6 py-3 rounded-full
+                       bg-white/10 backdrop-blur-md border border-white/20
+                       text-sm font-medium text-white
+                       shadow-lg shadow-primary/10
+                       hover:bg-primary hover:text-black hover:border-primary
+                       transition-all duration-300">
+                    Healthcare SEO
+                </span>
+
+                <span class="group px-6 py-3 rounded-full
+                       bg-white/10 backdrop-blur-md border border-white/20
+                       text-sm font-medium text-white
+                       shadow-lg shadow-primary/10
+                       hover:bg-primary hover:text-black hover:border-primary
+                       transition-all duration-300">
+                    SEO For Doctors
+                </span>
+
+                <span class="group px-6 py-3 rounded-full
+                       bg-white/10 backdrop-blur-md border border-white/20
+                       text-sm font-medium text-white
+                       shadow-lg shadow-primary/10
+                       hover:bg-primary hover:text-black hover:border-primary
+                       transition-all duration-300">
+                    NGOs / NPO Website SEO
+                </span>
+
+                <span class="group px-6 py-3 rounded-full
+                       bg-white/10 backdrop-blur-md border border-white/20
+                       text-sm font-medium text-white
+                       shadow-lg shadow-primary/10
+                       hover:bg-primary hover:text-black hover:border-primary
+                       transition-all duration-300">
+                    Hospitality Website SEO
+                </span>
+
+            </div>
+        </div>
+    </section>
+
+
     <div class="bg-black py-12 px-3 md:px-[10%] flex flex-col">
 
         <!-- Heading -->
@@ -489,23 +1259,25 @@
                     <!-- Icon -->
                     <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary
                 flex items-center justify-center text-2xl">
-                        <i class="ri-settings-4-line"></i>
+                        <i class="ri-line-chart-line"></i>
                     </div>
 
-                    <h3 class="text-white font-semibold text-lg">Resource Management</h3>
+                    <h3 class="text-white font-semibold text-lg">
+                        Search Engine Optimization (SEO)
+                    </h3>
 
                     <p class="text-white/80 text-sm leading-relaxed">
-                        Every business needs clear systems to manage work and resources.
-                        Our resource management solutions help you organize data, tasks,
-                        and internal processes more easily.
-                        We build tools that reduce manual work, improve clarity, and help
-                        your team work together more smoothly every day.
+                        Our SEO services are designed to help your business rank higher on Google,
+                        attract quality organic traffic, and generate consistent leads.
+                        We focus on keyword research, on-page optimization, technical SEO,
+                        and content strategy to improve visibility and long-term search performance.
                     </p>
 
-                    <a href="#" class="text-primary font-medium hover:underline">
+                    <a href="#seo-services" class="text-primary font-medium hover:underline">
                         Read More →
                     </a>
                 </div>
+
 
                 <div class="bg-white/10 backdrop-blur-md border border-white/20
             rounded-xl p-6 flex flex-col gap-4 shadow-lg
@@ -702,7 +1474,6 @@
         </div>
     </section>
 
-
     <section
         class="relative px-[2%] md:px-[9%]
            bg-gradient-to-r from-black via-[#111] to-black
@@ -710,50 +1481,49 @@
 
         <!-- Decorative Glow -->
         <div class="absolute -top-32 -right-32
-            w-[500px] h-[500px]
-            bg-primary/20 blur-[140px] rounded-full"></div>
+        w-[500px] h-[500px]
+        bg-primary/20 blur-[140px] rounded-full"></div>
 
         <div class="relative mx-auto px-4 sm:px-6 lg:px-12 py-16 sm:py-20">
 
             <!-- GRID -->
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-                <!-- LEFT CONTENT (UNCHANGED) -->
-                <div class="flex flex-col gap-6 md:gap-5 text-justify">
+                <!-- LEFT CONTENT -->
+                <div class="flex flex-col gap-5 text-justify">
 
                     <h2 class="text-3xl sm:text-4xl lg:text-4xl font-bold leading-tight">
-                        Why Choose <span class="text-primary">TECHONIKA</span>
+                        A Digital Partner You Can
+                        <span class="text-primary"> Trust & Grow With</span>
                     </h2>
 
                     <p class="text-gray-300 leading-relaxed">
-                        Choosing the right digital partner is an important decision.
-                        You are trusting someone with your brand, your ideas,
-                        and your future growth. At Techonika, we understand the
-                        responsibility that comes with that trust.
+                        Choosing the right digital partner is about more than just services.
+                        It’s about finding a team that understands your vision, respects your
+                        investment, and is committed to your long-term success.
                     </p>
 
                     <p class="text-gray-400 leading-relaxed">
-                        We take time to listen, understand your goals,
-                        and learn what truly matters to your business
-                        before suggesting any solution. Our approach
-                        starts with clarity and continues with steady,
-                        well-planned progress that feels reliable and comfortable.
+                        At Techonika, we focus on building strong digital foundations that
+                        help businesses grow with confidence. We take the time to understand
+                        your goals, challenges, and audience before crafting solutions that
+                        actually work in the real world.
                     </p>
 
                     <p class="text-gray-400 leading-relaxed">
-                        We do not rush projects just to finish quickly.
-                        Instead, we focus on doing things the right way from the start,
-                        so you don’t face problems later. We stay updated with modern
-                        tools and technologies, but we always choose what fits your
-                        business needs, budget, and long-term plans.
+                        Our approach is simple and transparent. We avoid unnecessary
+                        complexity, communicate clearly at every stage, and deliver solutions
+                        that are scalable, secure, and aligned with your business objectives.
+                        From strategy and design to development and ongoing support,
+                        we stay with you at every step.
                     </p>
 
-                    <a href="#"
+                    <a href="#contact"
                         class="inline-flex items-center gap-2
-                      bg-[#f6b615] text-black
-                      px-6 py-3 rounded-lg font-semibold
-                      hover:bg-yellow-400 transition w-fit">
-                        Learn more
+                           bg-[#f6b615] text-black
+                           px-6 py-3 rounded-lg font-semibold
+                           hover:bg-yellow-400 transition w-fit">
+                        Talk to Our Experts
                         <svg xmlns="http://www.w3.org/2000/svg"
                             class="w-4 h-4" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
@@ -766,27 +1536,29 @@
                 </div>
 
                 <!-- RIGHT IMAGE -->
-                <div class="relative">
+                <div class="relative flex justify-center">
 
                     <div
                         class="relative z-10 overflow-hidden
-                           rounded-[36px]
+                           w-full max-w-md sm:max-w-lg lg:max-w-xl
+                           aspect-[4/3]
+                           rounded-[32px]
                            border border-white/10
                            bg-white/5 backdrop-blur">
 
                         <img
                             src="{{asset('images/vector-business-success-growth-green-arrow-chart_1005794-6310.jpg')}}"
-                            alt="Why Choose Techonika"
-                            class="w-full h-[70vh] object-cover
-                               scale-105 hover:scale-110
-                               transition-transform duration-700">
+                            alt="Business Growth & Digital Success"
+                            class="w-full h-full object-cover
+                               transition-transform duration-500
+                               hover:scale-105">
                     </div>
 
                     <!-- Curve Glow -->
-                    <div class="absolute -bottom-14 -right-14
-                        w-[240px] h-[240px]
-                        bg-primary rounded-full
-                        blur-[120px] opacity-30">
+                    <div class="absolute -bottom-10 -right-10
+                    w-[220px] h-[220px]
+                    bg-primary rounded-full
+                    blur-[120px] opacity-30">
                     </div>
                 </div>
 
@@ -798,66 +1570,102 @@
 
     <div class="px-[2%] md:px-[9%] bg-black">
 
-
-        <section class="py-8 bg-black">
+        <section class="py-10 bg-black overflow-hidden">
             <div class="max-w-7xl mx-auto px-6">
 
                 <!-- Heading -->
-                <div class="mb-16">
+                <div class="mb-14">
                     <h2 class="text-3xl sm:text-4xl lg:text-5xl
                        font-semibold tracking-wide leading-tight text-white">
                         Our
                         <span class="font-bold text-primary">Clientele</span>
                     </h2>
 
-                    <p class="mt-6 text-white/80 text-justify sm:text-lg leading-relaxed">
-                        We are proud to work with businesses of all sizes, from small startups to well-established companies. Each client is unique, and we take time to understand their goals, challenges, and vision. Our focus is always on building strong relationships, delivering reliable results, and supporting our clients every step of the way so they feel confident and valued throughout their journey.
+                    <p class="mt-6 max-w-3xl text-white/80 sm:text-lg leading-relaxed">
+                        We proudly collaborate with startups, growing brands, and established
+                        businesses across industries. Our long-term partnerships are built
+                        on trust, consistency, and real results.
                     </p>
                 </div>
 
-                <!-- MARQUEE VIEWPORT -->
-                <div class="relative overflow-hidden w-full">
+                <!-- SLIDER WRAPPER -->
+                <div class="space-y-10">
 
-                    <!-- MARQUEE TRACK -->
-                    <div
-                        x-data="{ pause: false }"
-                        class="flex w-max gap-16 animate-marquee"
-                        :class="{ 'pause-marquee': pause }"
-                        @mouseenter="pause = true"
-                        @mouseleave="pause = false">
+                    <!-- ROW 1 (LEFT) -->
+                    <div class="relative overflow-hidden">
+                        <div
+                            x-data="{ pause: false }"
+                            class="flex w-max gap-16 animate-marquee-left"
+                            :class="{ 'pause-marquee': pause }"
+                            @mouseenter="pause = true"
+                            @mouseleave="pause = false">
 
-                        <!-- LOGOS (first set) -->
-                        <img src="/clients/6.jpg" class="client-logo" alt="">
-                        <img src="/clients/7.jpg" class="client-logo" alt="">
-                        <img src="/clients/8.jpg" class="client-logo" alt="">
-                        <img src="/clients/9.jpg" class="client-logo" alt="">
-                        <img src="/clients/10.jpg" class="client-logo" alt="">
-                        <img src="/clients/11.jpg" class="client-logo" alt="">
-                        <img src="/clients/12.jpg" class="client-logo" alt="">
-                        <img src="/clients/13.jpg" class="client-logo" alt="">
-                        <img src="/clients/14.jpg" class="client-logo" alt="">
+                            <!-- Logos -->
+                            <template x-for="i in 2">
+                                <div class="flex gap-16">
+                                    <img src="/clients/6.jpg" class="client-logo" alt="">
+                                    <img src="/clients/7.jpg" class="client-logo" alt="">
+                                    <img src="/clients/8.jpg" class="client-logo" alt="">
+                                    <img src="/clients/9.jpg" class="client-logo" alt="">
+                                    <img src="/clients/10.jpg" class="client-logo" alt="">
+                                </div>
+                            </template>
+                        </div>
+                    </div>
 
-                        <!-- DUPLICATE SET (for seamless loop) -->
-                        <img src="/clients/6.jpg" class="client-logo" alt="">
-                        <img src="/clients/7.jpg" class="client-logo" alt="">
-                        <img src="/clients/8.jpg" class="client-logo" alt="">
-                        <img src="/clients/9.jpg" class="client-logo" alt="">
-                        <img src="/clients/10.jpg" class="client-logo" alt="">
-                        <img src="/clients/11.jpg" class="client-logo" alt="">
-                        <img src="/clients/12.jpg" class="client-logo" alt="">
-                        <img src="/clients/13.jpg" class="client-logo" alt="">
-                        <img src="/clients/14.jpg" class="client-logo" alt="">
+                    <!-- ROW 2 (RIGHT) -->
+                    <div class="relative overflow-hidden">
+                        <div
+                            x-data="{ pause: false }"
+                            class="flex w-max gap-16 animate-marquee-right"
+                            :class="{ 'pause-marquee': pause }"
+                            @mouseenter="pause = true"
+                            @mouseleave="pause = false">
+
+                            <template x-for="i in 2">
+                                <div class="flex gap-16">
+                                    <img src="/clients/11.jpg" class="client-logo" alt="">
+                                    <img src="/clients/12.jpg" class="client-logo" alt="">
+                                    <img src="/clients/13.jpg" class="client-logo" alt="">
+                                    <img src="/clients/14.jpg" class="client-logo" alt="">
+                                    <img src="/clients/6.jpg" class="client-logo" alt="">
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
+                    <!-- ROW 3 (LEFT) -->
+                    <div class="relative overflow-hidden">
+                        <div
+                            x-data="{ pause: false }"
+                            class="flex w-max gap-16 animate-marquee-left"
+                            :class="{ 'pause-marquee': pause }"
+                            @mouseenter="pause = true"
+                            @mouseleave="pause = false">
+
+                            <template x-for="i in 2">
+                                <div class="flex gap-16">
+                                    <img src="/clients/7.jpg" class="client-logo" alt="">
+                                    <img src="/clients/8.jpg" class="client-logo" alt="">
+                                    <img src="/clients/9.jpg" class="client-logo" alt="">
+                                    <img src="/clients/10.jpg" class="client-logo" alt="">
+                                    <img src="/clients/11.jpg" class="client-logo" alt="">
+                                </div>
+                            </template>
+                        </div>
                     </div>
 
                 </div>
             </div>
+
+            <!-- STYLES -->
             <style>
                 .client-logo {
-                    height: 58px;
+                    height: 56px;
                     width: auto;
-                    opacity: 0.8;
-                    transition: all 0.3s ease;
+                    opacity: 0.75;
                     filter: grayscale(100%);
+                    transition: all 0.3s ease;
                 }
 
                 .client-logo:hover {
@@ -867,11 +1675,11 @@
 
                 @media (min-width: 640px) {
                     .client-logo {
-                        height: 100px;
+                        height: 90px;
                     }
                 }
 
-                @keyframes marquee {
+                @keyframes marquee-left {
                     0% {
                         transform: translateX(0);
                     }
@@ -881,16 +1689,30 @@
                     }
                 }
 
-                .animate-marquee {
-                    animation: marquee 30s linear infinite;
+                @keyframes marquee-right {
+                    0% {
+                        transform: translateX(-50%);
+                    }
+
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
+
+                .animate-marquee-left {
+                    animation: marquee-left 28s linear infinite;
+                }
+
+                .animate-marquee-right {
+                    animation: marquee-right 32s linear infinite;
                 }
 
                 .pause-marquee {
                     animation-play-state: paused;
                 }
             </style>
-
         </section>
+
 
         <section class="w-full bg-black py-10 overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 lg:px-4">

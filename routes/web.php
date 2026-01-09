@@ -26,8 +26,8 @@ use App\Livewire\Public\WebDevelopment\Index as WebDevelopmentIndex;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/',action: Home2::class)->name('index');
-Route::get('/2',action: Home::class)->name('index2');
+Route::get('/',action: Home2::class)->name('home');
+Route::get('/2',action: Home::class)->name('clients');
 Route::get('web',WebDevelopmentIndex::class)->name('webdevelopment');
 Route::get('/blog',Blog::class)->name('blog');
 Route::get('/blog-view',BlogView::class)->name('blog.view');
