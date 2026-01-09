@@ -18,17 +18,17 @@
 
     <!-- LOGO -->
     <a href="{{ Route::has('home') ? route('home') : url('/') }}" wire:navigate>
-      <img src="{{ asset('techonika-logo-dark.png') }}" class="h-8" />
+      <img src="{{ asset('techonika-logo-dark.png') }}" class="md:h-11 h-9" />
     </a>
 
     <!-- DESKTOP NAV -->
-    <nav class="hidden md:flex items-center gap-10 text-xs text-white">
+    <nav class="hidden md:flex items-center uppercase tracking-loose gap-10 text-sm text-white">
 
       <a href="{{ route('home') }}" class="hover:text-amber-400">Home</a>
 
       <!-- DESKTOP MEGA MENU -->
-      <div class="relative" @mouseenter="mega=true" @mouseleave="mega=false">
-        <button class="flex items-center gap-1 hover:text-amber-400">
+      <div class="relative uppercase" @mouseenter="mega=true" @mouseleave="mega=false">
+        <button class="flex items-center gap-1 hover:text-amber-400 uppercase">
           Services
           <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -119,13 +119,13 @@
 
     <nav class="flex flex-col gap-4 text-lg text-white font-medium">
 
-      <a href="{{ route('home') }}" class="px-2 py-2 rounded hover:bg-white/10">Home</a>
+      <a href="{{ route('home') }}" class="mt-2 rounded hover:bg-white/10">Home</a>
 
       <!-- MOBILE MEGA -->
       <div>
         <button
           @click="mobileServices = !mobileServices"
-          class="flex items-center justify-between w-full px-2 py-2 rounded hover:bg-white/10">
+          class="flex items-center justify-between w-full  rounded hover:bg-white/10">
           <span>Services</span>
           <svg :class="mobileServices && 'rotate-180'"
                class="w-5 h-5 transition-transform"
