@@ -525,174 +525,174 @@
 
         </div>
     </section>
-        <section>
-            <div class="bg-black text-white py-12 px-[2%] md:px-[9%] bg-black">
-                <div class="container mx-auto flex flex-col my-12 md:my-24">
+    <section>
+        <div class="bg-black text-white py-12 px-[2%] md:px-[9%] bg-black">
+            <div class="container mx-auto flex flex-col my-12 md:my-24">
 
-                    <!-- LEFT INFO -->
-                    <div class="flex flex-col w-full md:sticky md:top-36 lg:w-2/3 px-4 mb-12 md:mb-0">
-                        <div class="max-w-3xl mb-16">
+                <!-- LEFT INFO -->
+                <div class="flex flex-col w-full md:sticky md:top-36 lg:w-2/3 px-4 mb-12 md:mb-0">
+                    <div class="max-w-3xl mb-16">
 
-                            <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-white mb-4">
-                                Our <span class="text-primary font-bold">Process</span>
-                            </h2>
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-white mb-4">
+                            Our <span class="text-primary font-bold">Process</span>
+                        </h2>
 
-                            <p class="text-sm md:text-justify text-white/80 leading-relaxed">
-                                We follow a simple and transparent process that keeps everything clear
-                                and comfortable for you from start to finish. Each step is designed
-                                to reduce confusion, save time, and support your business goals.
-                            </p>
-                        </div>
+                        <p class="text-sm md:text-justify text-white/80 leading-relaxed">
+                            We follow a simple and transparent process that keeps everything clear
+                            and comfortable for you from start to finish. Each step is designed
+                            to reduce confusion, save time, and support your business goals.
+                        </p>
+                    </div>
 
-                        <a href="#contact"
-                            class="mr-auto px-6 py-2.5 rounded-full
+                    <a href="#contact"
+                        class="mr-auto px-6 py-2.5 rounded-full
                           border border-primary text-primary
                           hover:bg-primary hover:text-black transition">
-                            Start Your Project
-                        </a>
-                    </div>
+                        Start Your Project
+                    </a>
+                </div>
 
-                    <!-- RIGHT TIMELINE -->
-                    <div class="w-full justify-center flex">
-                        <div class="md:ml-12 lg:w-2/3">
-                            <div class="relative overflow-hidden p-6 md:p-10">
+                <!-- RIGHT TIMELINE -->
+                <div class="w-full justify-center flex">
+                    <div class="md:ml-12 lg:w-2/3">
+                        <div class="relative overflow-hidden p-6 md:p-10">
 
-                                <!-- CENTER LINE -->
-                                <div class="absolute h-full border-l border-primary left-1/2"></div>
+                            <!-- CENTER LINE -->
+                            <div class="absolute h-full border-l border-primary left-1/2"></div>
 
-                                <!-- STEP 01 -->
-                                <div class="mb-14 flex justify-between flex-row-reverse items-center w-full relative">
+                            <!-- STEP 01 -->
+                            <div class="mb-14 flex justify-between flex-row-reverse items-center w-full relative">
 
-                                    <div class="absolute left-1/2 -translate-x-1/2
+                                <div class="absolute left-1/2 -translate-x-1/2
                                         w-12 h-12 rounded-full bg-primary text-black
                                         flex items-center justify-center shadow-lg z-20">
-                                        <i class="ri-chat-3-line text-xl"></i>
-                                    </div>
-
-                                    <div class="w-5/12"></div>
-
-                                    <div class="w-5/12 text-right">
-                                        <p class="text-primary font-semibold mb-1">Step 01</p>
-                                        <h4 class="font-bold text-lg md:text-2xl mb-2">Discuss & Agree</h4>
-                                        <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
-                                            We understand your ideas, goals, and expectations clearly so
-                                            everyone starts on the same page.
-                                        </p>
-                                    </div>
+                                    <i class="ri-chat-3-line text-xl"></i>
                                 </div>
 
-                                <!-- STEP 02 -->
-                                <div class="mb-14 flex justify-between items-center w-full relative">
+                                <div class="w-5/12"></div>
 
-                                    <div class="absolute left-1/2 -translate-x-1/2
-                                        w-12 h-12 rounded-full bg-primary text-black
-                                        flex items-center justify-center shadow-lg z-20">
-                                        <i class="ri-road-map-line text-xl"></i>
-                                    </div>
-
-                                    <div class="w-5/12"></div>
-
-                                    <div class="w-5/12 text-left">
-                                        <p class="text-primary font-semibold mb-1">Step 02</p>
-                                        <h4 class="font-bold text-lg md:text-2xl mb-2">Planning</h4>
-                                        <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
-                                            We create a clear roadmap explaining tasks, timelines, and
-                                            execution so everything stays organized.
-                                        </p>
-                                    </div>
+                                <div class="w-5/12 text-right">
+                                    <p class="text-primary font-semibold mb-1">Step 01</p>
+                                    <h4 class="font-bold text-lg md:text-2xl mb-2">Discuss & Agree</h4>
+                                    <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
+                                        We understand your ideas, goals, and expectations clearly so
+                                        everyone starts on the same page.
+                                    </p>
                                 </div>
-
-                                <!-- STEP 03 -->
-                                <div class="mb-14 flex justify-between flex-row-reverse items-center w-full relative">
-
-                                    <div class="absolute left-1/2 -translate-x-1/2
-                                        w-12 h-12 rounded-full bg-primary text-black
-                                        flex items-center justify-center shadow-lg z-20">
-                                        <i class="ri-pencil-ruler-2-line text-xl"></i>
-                                    </div>
-
-                                    <div class="w-5/12"></div>
-
-                                    <div class="w-5/12 text-right">
-                                        <p class="text-primary font-semibold mb-1">Step 03</p>
-                                        <h4 class="font-bold text-lg md:text-2xl mb-2">Designing</h4>
-                                        <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
-                                            We turn ideas into clear, user-friendly designs and refine them
-                                            until they match your vision.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- STEP 04 -->
-                                <div class="mb-14 flex justify-between items-center w-full relative">
-
-                                    <div class="absolute left-1/2 -translate-x-1/2
-                                        w-12 h-12 rounded-full bg-primary text-black
-                                        flex items-center justify-center shadow-lg z-20">
-                                        <i class="ri-code-box-line text-xl"></i>
-                                    </div>
-
-                                    <div class="w-5/12"></div>
-
-                                    <div class="w-5/12 text-left">
-                                        <p class="text-primary font-semibold mb-1">Step 04</p>
-                                        <h4 class="font-bold text-lg md:text-2xl mb-2">Development</h4>
-                                        <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
-                                            We build the solution step by step with secure, scalable,
-                                            and high-performance code.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- STEP 05 -->
-                                <div class="mb-14 flex justify-between flex-row-reverse items-center w-full relative">
-
-                                    <div class="absolute left-1/2 -translate-x-1/2
-                                        w-12 h-12 rounded-full bg-primary text-black
-                                        flex items-center justify-center shadow-lg z-20">
-                                        <i class="ri-bug-line text-xl"></i>
-                                    </div>
-
-                                    <div class="w-5/12"></div>
-
-                                    <div class="w-5/12 text-right">
-                                        <p class="text-primary font-semibold mb-1">Step 05</p>
-                                        <h4 class="font-bold text-lg md:text-2xl mb-2">Testing</h4>
-                                        <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
-                                            We test performance, usability, and reliability to ensure
-                                            a smooth and stable experience.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- STEP 06 -->
-                                <div class="mb-14 flex justify-between items-center w-full relative">
-
-                                    <div class="absolute left-1/2 -translate-x-1/2
-                                        w-12 h-12 rounded-full bg-primary text-black
-                                        flex items-center justify-center shadow-lg z-20">
-                                        <i class="ri-rocket-line text-xl"></i>
-                                    </div>
-
-                                    <div class="w-5/12"></div>
-
-                                    <div class="w-5/12 text-left">
-                                        <p class="text-primary font-semibold mb-1">Step 06</p>
-                                        <h4 class="font-bold text-lg md:text-2xl mb-2">Final Launch</h4>
-                                        <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
-                                            We launch carefully and continue supporting you as your
-                                            business grows.
-                                        </p>
-                                    </div>
-                                </div>
-
                             </div>
+
+                            <!-- STEP 02 -->
+                            <div class="mb-14 flex justify-between items-center w-full relative">
+
+                                <div class="absolute left-1/2 -translate-x-1/2
+                                        w-12 h-12 rounded-full bg-primary text-black
+                                        flex items-center justify-center shadow-lg z-20">
+                                    <i class="ri-road-map-line text-xl"></i>
+                                </div>
+
+                                <div class="w-5/12"></div>
+
+                                <div class="w-5/12 text-left">
+                                    <p class="text-primary font-semibold mb-1">Step 02</p>
+                                    <h4 class="font-bold text-lg md:text-2xl mb-2">Planning</h4>
+                                    <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
+                                        We create a clear roadmap explaining tasks, timelines, and
+                                        execution so everything stays organized.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- STEP 03 -->
+                            <div class="mb-14 flex justify-between flex-row-reverse items-center w-full relative">
+
+                                <div class="absolute left-1/2 -translate-x-1/2
+                                        w-12 h-12 rounded-full bg-primary text-black
+                                        flex items-center justify-center shadow-lg z-20">
+                                    <i class="ri-pencil-ruler-2-line text-xl"></i>
+                                </div>
+
+                                <div class="w-5/12"></div>
+
+                                <div class="w-5/12 text-right">
+                                    <p class="text-primary font-semibold mb-1">Step 03</p>
+                                    <h4 class="font-bold text-lg md:text-2xl mb-2">Designing</h4>
+                                    <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
+                                        We turn ideas into clear, user-friendly designs and refine them
+                                        until they match your vision.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- STEP 04 -->
+                            <div class="mb-14 flex justify-between items-center w-full relative">
+
+                                <div class="absolute left-1/2 -translate-x-1/2
+                                        w-12 h-12 rounded-full bg-primary text-black
+                                        flex items-center justify-center shadow-lg z-20">
+                                    <i class="ri-code-box-line text-xl"></i>
+                                </div>
+
+                                <div class="w-5/12"></div>
+
+                                <div class="w-5/12 text-left">
+                                    <p class="text-primary font-semibold mb-1">Step 04</p>
+                                    <h4 class="font-bold text-lg md:text-2xl mb-2">Development</h4>
+                                    <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
+                                        We build the solution step by step with secure, scalable,
+                                        and high-performance code.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- STEP 05 -->
+                            <div class="mb-14 flex justify-between flex-row-reverse items-center w-full relative">
+
+                                <div class="absolute left-1/2 -translate-x-1/2
+                                        w-12 h-12 rounded-full bg-primary text-black
+                                        flex items-center justify-center shadow-lg z-20">
+                                    <i class="ri-bug-line text-xl"></i>
+                                </div>
+
+                                <div class="w-5/12"></div>
+
+                                <div class="w-5/12 text-right">
+                                    <p class="text-primary font-semibold mb-1">Step 05</p>
+                                    <h4 class="font-bold text-lg md:text-2xl mb-2">Testing</h4>
+                                    <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
+                                        We test performance, usability, and reliability to ensure
+                                        a smooth and stable experience.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- STEP 06 -->
+                            <div class="mb-14 flex justify-between items-center w-full relative">
+
+                                <div class="absolute left-1/2 -translate-x-1/2
+                                        w-12 h-12 rounded-full bg-primary text-black
+                                        flex items-center justify-center shadow-lg z-20">
+                                    <i class="ri-rocket-line text-xl"></i>
+                                </div>
+
+                                <div class="w-5/12"></div>
+
+                                <div class="w-5/12 text-left">
+                                    <p class="text-primary font-semibold mb-1">Step 06</p>
+                                    <h4 class="font-bold text-lg md:text-2xl mb-2">Final Launch</h4>
+                                    <p class="text-xs md:text-sm text-white/80 leading-relaxed md:text-justify">
+                                        We launch carefully and continue supporting you as your
+                                        business grows.
+                                    </p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-
                 </div>
+
             </div>
-        </section>
+        </div>
+    </section>
 
     <section class="bg-black text-white py-10">
         <div class="max-w-7xl mx-auto px-6">
@@ -1595,7 +1595,6 @@
             </h2>
             <p class="text-sm mb-20 md:text-justify text-white/80 leading-relaxed">Our clients value us for reliability, clarity, and measurable growt
             </p>
-
             <!-- SLIDER -->
             <div
                 x-data="{
@@ -1604,42 +1603,12 @@
                 cardWidth: 340,
                 pause: false,
                 cards: [
-                    {
-                        name: 'Rashmi Ingle',
-                        role: 'Eduonix',
-                        img: 'https://randomuser.me/api/portraits/women/65.jpg',
-                        text: `Don’t wait another second to connect with Techonika Solutions. Their ability to test and adjust strategies in real time is impressive. From intuitive digital strategy to cost-effective plans, they provide everything needed to build a qualified audience.`
-                    },
-                    {
-                        name: 'Dr Vilas Chakor',
-                        role: 'Dr Chakor Clinic',
-                        img: 'https://randomuser.me/api/portraits/men/52.jpg',
-                        text: `Simply put, the best and most reliable services. Designs, communication, understanding, and effort — everything is handled professionally and with care.`
-                    },
-                    {
-                        name: 'Aayush Bajaj',
-                        role: 'A R Finance Room',
-                        img: 'https://randomuser.me/api/portraits/men/44.jpg',
-                        text: `Prateek has a strong command over his work and has been very professional throughout. Overall, it was a smooth and pleasant experience.`
-                    },
-                    {
-                        name: 'Biren Matiyali',
-                        role: 'H M Foods',
-                        img: 'https://randomuser.me/api/portraits/men/61.jpg',
-                        text: `Very professional. Very responsive. Very qualified. Worth giving them a try without hesitation.`
-                    },
-                    {
-                        name: 'Manisha',
-                        role: 'Saffron Cuisine',
-                        img: 'https://randomuser.me/api/portraits/women/48.jpg',
-                        text: `Techonika perfectly combines analytical thinking with creativity. Their data-driven marketing and outstanding support helped us generate excellent results. Highly recommended.`
-                    },
-                    {
-                        name: 'Tao Rima Bhatt',
-                        role: 'RuralLinks',
-                        img: 'https://randomuser.me/api/portraits/women/72.jpg',
-                        text: `Great quality work at affordable prices. They are open to feedback and changes, which makes the collaboration smooth and trustworthy.`
-                    }
+                    { name: 'Rashmi Ingle', role: 'Eduonix', text: `Don’t wait another second to connect with Techonika Solutions. Their ability to test and adjust strategies in real time is impressive.` },
+                    { name: 'Dr Vilas Chakor', role: 'Dr Chakor Clinic', text: `Simply put, the best and most reliable services. Designs, communication, understanding, and effort — everything is handled professionally.` },
+                    { name: 'Aayush Bajaj', role: 'A R Finance Room', text: `Prateek has a strong command over his work and has been very professional throughout.` },
+                    { name: 'Biren Matiyali', role: 'H M Foods', text: `Very professional. Very responsive. Very qualified. Worth giving them a try without hesitation.` },
+                    { name: 'Manisha', role: 'Saffron Cuisine', text: `Techonika perfectly combines analytical thinking with creativity. Highly recommended.` },
+                    { name: 'Tao Rima Bhatt', role: 'RuralLinks', text: `Great quality work at affordable prices. Open to feedback and changes.` }
                 ],
                 start() {
                     this.interval = setInterval(() => {
@@ -1656,8 +1625,6 @@
 
                 <!-- VIEWPORT -->
                 <div class="overflow-hidden">
-
-                    <!-- TRACK -->
                     <div
                         class="flex gap-6 transition-transform duration-700 ease-out"
                         :style="`transform: translateX(-${active * cardWidth}px)`">
@@ -1665,16 +1632,20 @@
                         <template x-for="(card, index) in cards" :key="index">
                             <div
                                 class="min-w-[300px] sm:min-w-[320px] max-w-[320px]
-                                   bg-gradient-to-b from-[#1a1a1a] to-[#111]
-                                   rounded-2xl p-6 shadow-xl
-                                   border border-white/5">
+                            bg-gradient-to-b from-[#1a1a1a] to-[#111]
+                            rounded-2xl p-6 shadow-xl
+                            border border-white/5">
 
-                                <!-- PROFILE -->
+                                <!-- HEADER (NO IMAGE) -->
                                 <div class="flex items-center gap-4 mb-4">
-                                    <img
-                                        :src="card.img"
-                                        class="w-12 h-12 rounded-full object-cover
-                                           border border-primary" />
+                                    <!-- INITIAL BADGE -->
+                                    <div
+                                        class="w-12 h-12 flex items-center justify-center
+                                    rounded-full bg-primary/20 text-primary
+                                    font-semibold uppercase">
+                                        <span x-text="card.name.charAt(0)"></span>
+                                    </div>
+
                                     <div>
                                         <h4 class="text-white font-semibold text-sm"
                                             x-text="card.name"></h4>
@@ -1695,7 +1666,7 @@
                     </div>
                 </div>
 
-                <!-- PAGINATION DOTS -->
+                <!-- DOTS -->
                 <div class="flex justify-center gap-3 mt-10">
                     <template x-for="(dot, i) in cards" :key="i">
                         <button
@@ -1706,8 +1677,8 @@
                     </template>
                 </div>
 
+
             </div>
-        </div>
     </section>
     <section class="bg-black text-white py-18 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
@@ -1843,7 +1814,7 @@
 
         </div>
     </section>
-    <section class="bg-black text-white py-18 relative overflow-hidden">
+    <section class="bg-black text-white py-10 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Section Header -->
@@ -1925,11 +1896,11 @@
 
         </div>
     </section>
-    <section class="bg-black text-white py-18">
+    <section class="bg-black text-white py-10">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Heading -->
-            <div class="max-w-4xl mb-16">
+            <div class=" mb-16">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-5">
                     Serving <span class="text-primary">Noida & Nearby Areas</span>
                 </h2>
@@ -1946,53 +1917,60 @@
 
         </div>
     </section>
-    <section class="bg-black py-18">
-        <div class="max-w-7xl mx-auto px-6">
+    <section class="bg-black mb-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
             <!-- CARD -->
-            <div class="bg-white/5 border border-white/15 rounded-3xl
-                    p-8 md:p-12 lg:p-16">
+            <div
+                class="bg-white/5 border border-white/15 rounded-3xl
+                   p-6 sm:p-8 md:p-12 lg:p-16">
 
-                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
                     <!-- LEFT CONTENT -->
                     <div>
 
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl
-                               font-bold leading-tight mb-6 text-white">
+                        <h2
+                            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+                               font-bold leading-tight mb-5 text-white">
                             Let’s Build a Website That
                             <span class="text-primary">Grows Your Business</span>
                         </h2>
 
-                        <p class="text-white/70 text-lg leading-relaxed mb-10 max-w-xl">
+                        <p
+                            class="text-white/70 text-sm sm:text-base lg:text-lg
+                               leading-relaxed mb-8 max-w-xl">
                             If you’re looking for a reliable web development company
                             in Noida that understands performance, SEO, and user
                             behavior, we’re here to help you build a website that
                             delivers real business results.
                         </p>
 
-                        <ul class="space-y-4 text-white/70">
+                        <ul class="space-y-3 sm:space-y-4 text-white/70 text-sm sm:text-base">
                             <li class="flex items-start gap-3">
-                                <i class="ri-check-line text-primary text-xl mt-0.5"></i>
+                                <i class="ri-check-line text-primary text-lg mt-0.5"></i>
                                 Performance-first development approach
                             </li>
                             <li class="flex items-start gap-3">
-                                <i class="ri-check-line text-primary text-xl mt-0.5"></i>
+                                <i class="ri-check-line text-primary text-lg mt-0.5"></i>
                                 SEO-ready structure from day one
                             </li>
                             <li class="flex items-start gap-3">
-                                <i class="ri-check-line text-primary text-xl mt-0.5"></i>
+                                <i class="ri-check-line text-primary text-lg mt-0.5"></i>
                                 Conversion-focused user experience
                             </li>
                         </ul>
 
                     </div>
 
-                    <!-- RIGHT FORM (SMALL & CLEAN) -->
-                    <div class="bg-black/40 border border-white/15
-                            rounded-2xl p-6 md:p-8 max-w-md ml-auto">
+                    <!-- RIGHT FORM -->
+                    <div
+                        class="bg-black/40 border border-white/15
+                           rounded-2xl p-6 sm:p-8
+                           max-w-full sm:max-w-md
+                           mx-auto lg:ml-auto">
 
-                        <h3 class="text-xl font-semibold text-white mb-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-white mb-6">
                             Get a <span class="text-primary">Free Quote</span>
                         </h3>
 
@@ -2045,6 +2023,7 @@
 
         </div>
     </section>
+
     <section class="bg-black text-white py-18">
         <div class="max-w-5xl mx-auto px-6">
 

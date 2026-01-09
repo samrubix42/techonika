@@ -137,20 +137,20 @@
         <div x-show="mobileServices" x-transition class="pl-4 mt-3 space-y-4">
 
           <div>
-            <p class="text-amber-400 uppercase text-xs mb-1">Web Development</p>
+            <p class="text-amber-400 uppercase mb-1">Web Development</p>
             <span class="block text-white/80">Laravel</span>
             <span class="block text-white/80">Next.js</span>
             <span class="block text-white/80">Django</span>
           </div>
 
           <div>
-            <p class="text-amber-400 uppercase text-xs mb-1">Mobile Apps</p>
+            <p class="text-amber-400 uppercase mb-1">Mobile Apps</p>
             <span class="block text-white/80">Flutter</span>
             <span class="block text-white/80">React Native</span>
           </div>
 
           <div>
-            <p class="text-amber-400 uppercase text-xs mb-1">Cloud & DevOps</p>
+            <p class="text-amber-400 uppercase mb-1">Cloud & DevOps</p>
             <span class="block text-white/80">AWS</span>
             <span class="block text-white/80">CI / CD</span>
             <span class="block text-white/80">Nginx</span>
