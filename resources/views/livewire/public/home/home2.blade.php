@@ -630,30 +630,7 @@
 
                 <div class="flex justify-center">
                     <div class="relative">
-                        <div class="w-64 h-64 rounded-full
-                    bg-gradient-to-br from-primary/30 to-primary/5
-                    flex items-center justify-center">
-                            <i class="ri-questionnaire-line text-primary text-6xl"></i>
-                        </div>
-
-                        <!-- Floating Icons -->
-                        <span class="absolute -top-4 left-6 w-10 h-10 bg-black
-                    border border-white/10 rounded-full
-                    flex items-center justify-center">
-                            <i class="ri-lightbulb-line text-primary"></i>
-                        </span>
-
-                        <span class="absolute right-4 top-10 w-10 h-10 bg-black
-                    border border-white/10 rounded-full
-                    flex items-center justify-center">
-                            <i class="ri-star-smile-line text-primary"></i>
-                        </span>
-
-                        <span class="absolute bottom-6 left-10 w-10 h-10 bg-black
-                    border border-white/10 rounded-full
-                    flex items-center justify-center">
-                            <i class="ri-bar-chart-2-line text-primary"></i>
-                        </span>
+                    <img class="object-cover rounded-full" src="{{asset('images/why.jpg')}}" alt="">
                     </div>
                 </div>
 
@@ -875,61 +852,32 @@
 
         </section>
 
-        <section class="w-full bg-black py-10 overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4  lg:px-4">
+<section class="w-full bg-black py-10 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 lg:px-4">
 
-                <!-- SECTION TITLE -->
-                <h2 class=" text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-6">
-                    Our Satisfied <span class="text-primary">Clients</span>
-                </h2>
-                <p class="text-sm mb-20 md:text-justify text-white/80 leading-relaxed">We are proud to work with clients from different industries. Each project helps us learn and improve.
-                    Our clients stay with us because we communicate clearly, deliver on time, and care about their success.
-                </p>
+        <!-- SECTION TITLE -->
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-6">
+            Our Satisfied <span class="text-primary">Clients</span>
+        </h2>
+        <p class="text-sm mb-20 md:text-justify text-white/80 leading-relaxed">
+            We are proud to work with clients from different industries. Each project helps us learn and improve.
+            Our clients stay with us because we communicate clearly, deliver on time, and care about their success.
+        </p>
 
-                <!-- SLIDER -->
-                <div
-                    x-data="{
+        <!-- SLIDER -->
+        <div
+            x-data="{
                 active: 0,
                 interval: null,
                 cardWidth: 340,
                 pause: false,
                 cards: [
-                    {
-                        name: 'Rashmi Ingle',
-                        role: 'Eduonix',
-                        img: 'https://randomuser.me/api/portraits/women/65.jpg',
-                        text: `Don’t wait another second to connect with Techonika Solutions. Their ability to test and adjust strategies in real time is impressive. From intuitive digital strategy to cost-effective plans, they provide everything needed to build a qualified audience.`
-                    },
-                    {
-                        name: 'Dr Vilas Chakor',
-                        role: 'Dr Chakor Clinic',
-                        img: 'https://randomuser.me/api/portraits/men/52.jpg',
-                        text: `Simply put, the best and most reliable services. Designs, communication, understanding, and effort — everything is handled professionally and with care.`
-                    },
-                    {
-                        name: 'Aayush Bajaj',
-                        role: 'A R Finance Room',
-                        img: 'https://randomuser.me/api/portraits/men/44.jpg',
-                        text: `Prateek has a strong command over his work and has been very professional throughout. Overall, it was a smooth and pleasant experience.`
-                    },
-                    {
-                        name: 'Biren Matiyali',
-                        role: 'H M Foods',
-                        img: 'https://randomuser.me/api/portraits/men/61.jpg',
-                        text: `Very professional. Very responsive. Very qualified. Worth giving them a try without hesitation.`
-                    },
-                    {
-                        name: 'Manisha',
-                        role: 'Saffron Cuisine',
-                        img: 'https://randomuser.me/api/portraits/women/48.jpg',
-                        text: `Techonika perfectly combines analytical thinking with creativity. Their data-driven marketing and outstanding support helped us generate excellent results. Highly recommended.`
-                    },
-                    {
-                        name: 'Tao Rima Bhatt',
-                        role: 'RuralLinks',
-                        img: 'https://randomuser.me/api/portraits/women/72.jpg',
-                        text: `Great quality work at affordable prices. They are open to feedback and changes, which makes the collaboration smooth and trustworthy.`
-                    }
+                    { name: 'Rashmi Ingle', role: 'Eduonix', text: `Don’t wait another second to connect with Techonika Solutions. Their ability to test and adjust strategies in real time is impressive.` },
+                    { name: 'Dr Vilas Chakor', role: 'Dr Chakor Clinic', text: `Simply put, the best and most reliable services. Designs, communication, understanding, and effort — everything is handled professionally.` },
+                    { name: 'Aayush Bajaj', role: 'A R Finance Room', text: `Prateek has a strong command over his work and has been very professional throughout.` },
+                    { name: 'Biren Matiyali', role: 'H M Foods', text: `Very professional. Very responsive. Very qualified. Worth giving them a try without hesitation.` },
+                    { name: 'Manisha', role: 'Saffron Cuisine', text: `Techonika perfectly combines analytical thinking with creativity. Highly recommended.` },
+                    { name: 'Tao Rima Bhatt', role: 'RuralLinks', text: `Great quality work at affordable prices. Open to feedback and changes.` }
                 ],
                 start() {
                     this.interval = setInterval(() => {
@@ -939,66 +887,69 @@
                     }, 4000)
                 }
             }"
-                    x-init="start()"
-                    class="relative"
-                    @mouseenter="pause = true"
-                    @mouseleave="pause = false">
+            x-init="start()"
+            class="relative"
+            @mouseenter="pause = true"
+            @mouseleave="pause = false">
 
-                    <!-- VIEWPORT -->
-                    <div class="overflow-hidden">
+            <!-- VIEWPORT -->
+            <div class="overflow-hidden">
+                <div
+                    class="flex gap-6 transition-transform duration-700 ease-out"
+                    :style="`transform: translateX(-${active * cardWidth}px)`">
 
-                        <!-- TRACK -->
+                    <template x-for="(card, index) in cards" :key="index">
                         <div
-                            class="flex gap-6 transition-transform duration-700 ease-out"
-                            :style="`transform: translateX(-${active * cardWidth}px)`">
+                            class="min-w-[300px] sm:min-w-[320px] max-w-[320px]
+                            bg-gradient-to-b from-[#1a1a1a] to-[#111]
+                            rounded-2xl p-6 shadow-xl
+                            border border-white/5">
 
-                            <template x-for="(card, index) in cards" :key="index">
+                            <!-- HEADER (NO IMAGE) -->
+                            <div class="flex items-center gap-4 mb-4">
+                                <!-- INITIAL BADGE -->
                                 <div
-                                    class="min-w-[300px] sm:min-w-[320px] max-w-[320px]
-                                   bg-gradient-to-b from-[#1a1a1a] to-[#111]
-                                   rounded-2xl p-6 shadow-xl
-                                   border border-white/5">
-
-                                    <!-- PROFILE -->
-                                    <div class="flex items-center gap-4 mb-4">
-                                        <img
-                                            :src="card.img"
-                                            class="w-12 h-12 rounded-full object-cover
-                                           border border-primary" />
-                                        <div>
-                                            <h4 class="text-white font-semibold text-sm"
-                                                x-text="card.name"></h4>
-                                            <p class="text-gray-400 text-xs"
-                                                x-text="card.role"></p>
-                                        </div>
-                                    </div>
-
-                                    <!-- TEXT -->
-                                    <p class="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-6"
-                                        x-text="card.text"></p>
-
-                                    <span class="text-primary text-xs font-medium">
-                                        Verified Client
-                                    </span>
+                                    class="w-12 h-12 flex items-center justify-center
+                                    rounded-full bg-primary/20 text-primary
+                                    font-semibold uppercase">
+                                    <span x-text="card.name.charAt(0)"></span>
                                 </div>
-                            </template>
+
+                                <div>
+                                    <h4 class="text-white font-semibold text-sm"
+                                        x-text="card.name"></h4>
+                                    <p class="text-gray-400 text-xs"
+                                        x-text="card.role"></p>
+                                </div>
+                            </div>
+
+                            <!-- TEXT -->
+                            <p class="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-6"
+                                x-text="card.text"></p>
+
+                            <span class="text-primary text-xs font-medium">
+                                Verified Client
+                            </span>
                         </div>
-                    </div>
-
-                    <!-- PAGINATION DOTS -->
-                    <div class="flex justify-center gap-3 mt-10">
-                        <template x-for="(dot, i) in cards" :key="i">
-                            <button
-                                @click="active = i"
-                                class="w-2.5 h-2.5 rounded-full transition"
-                                :class="active === i ? 'bg-primary' : 'bg-gray-600'">
-                            </button>
-                        </template>
-                    </div>
-
+                    </template>
                 </div>
             </div>
-        </section>
+
+            <!-- DOTS -->
+            <div class="flex justify-center gap-3 mt-10">
+                <template x-for="(dot, i) in cards" :key="i">
+                    <button
+                        @click="active = i"
+                        class="w-2.5 h-2.5 rounded-full transition"
+                        :class="active === i ? 'bg-primary' : 'bg-gray-600'">
+                    </button>
+                </template>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
 
         <section class="bg-black py-20">
