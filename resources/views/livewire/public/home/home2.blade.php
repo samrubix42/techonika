@@ -549,7 +549,7 @@
             </div>
         </div>
     </section>
-    <section class="relative bg-black py-20 overflow-hidden">
+    <section class="relative bg-black mb-20 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4">
 
             <!-- Heading -->
@@ -1051,7 +1051,7 @@
             </div>
         </div>
     </section>
-    <section class="relative bg-black py-16 sm:py-20 overflow-hidden">
+    <section class="relative bg-black  md:mb-20 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4">
 
             <!-- Heading -->
