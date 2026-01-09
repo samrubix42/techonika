@@ -1,271 +1,299 @@
 <div>
-    <section class="relative bg-black overflow-hidden">
+<section class="relative bg-black overflow-hidden">
 
-        <!-- Decorative Glow -->
-        <div class="absolute -top-40 left-1/2 -translate-x-1/2
-                w-[700px] h-[700px] rounded-full
-                bg-primary/20 blur-[140px]"></div>
+    <!-- Decorative Glow -->
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2
+            w-[700px] h-[700px] rounded-full
+            bg-primary/20 blur-[140px]"></div>
 
-        <!-- Subtle Grid Texture -->
-        <div class="absolute inset-0 opacity-[0.04]
-                bg-[radial-gradient(#ffffff_1px,transparent_1px)]
-                bg-[size:24px_24px]"></div>
+    <!-- Subtle Grid Texture -->
+    <div class="absolute inset-0 opacity-[0.04]
+            bg-[radial-gradient(#ffffff_1px,transparent_1px)]
+            bg-[size:24px_24px]"></div>
 
-        <!-- Content -->
-        <div class="relative max-w-6xl mx-auto px-6
-                py-24 sm:py-28 text-center text-white">
+    <!-- Content -->
+    <div class="relative max-w-6xl mx-auto px-6
+            py-24 sm:py-28 text-center text-white">
 
-            <!-- Eyebrow -->
-            <span class="inline-flex items-center gap-2
-                     px-4 py-1.5 rounded-full
-                     bg-white/10 border border-white/10
-                     text-xs tracking-wide uppercase
-                     text-white/80 mb-6">
-                Digital Solutions Agency
+        <!-- Eyebrow -->
+        <span class="inline-flex items-center gap-2
+                 px-4 py-1.5 rounded-full
+                 bg-white/10 border border-white/10
+                 text-xs tracking-wide uppercase
+                 text-white/80 mb-6">
+            Digital Solutions Agency
+        </span>
+
+        <!-- Heading -->
+        <h1 class="font-bold tracking-tight leading-[1.1]
+               text-[clamp(34px,5vw,60px)] mb-6">
+            Welcome to <span class="text-primary">Techonika</span><br>
+            <span class="block mt-2">
+                Simple, Smart, and Reliable Digital Solutions
+            </span>
+        </h1>
+
+        <!-- Description -->
+        <p class="max-w-3xl mx-auto
+              text-white/70
+              text-sm sm:text-base md:text-lg
+              leading-relaxed mb-14">
+            Techonika is your trusted digital partner, delivering smart and reliable
+            solutions designed for real business impact. We blend clean design,
+            modern technology, and strategic thinking to create digital experiences
+            that connect, convert, and scale.
+        </p>
+
+        <!-- Services (Mobile Cards → Desktop Pills) -->
+        <div
+            class="grid grid-cols-2 gap-4
+                   sm:flex sm:flex-wrap sm:justify-center sm:gap-4
+                   mb-12">
+
+            <!-- Card / Pill -->
+            <span class="group flex flex-col sm:inline-flex
+                   items-center justify-center sm:flex-row
+                   gap-2 px-4 py-4 sm:px-5 sm:py-2.5
+                   rounded-xl sm:rounded-full
+                   bg-white/10 backdrop-blur
+                   border border-white/10
+                   text-xs sm:text-sm font-medium text-center
+                   hover:bg-primary hover:border-primary
+                   transition-all duration-300">
+                <i class="ri-brush-line text-lg sm:text-base
+                          text-primary group-hover:text-white"></i>
+                Website Designing
             </span>
 
-            <!-- Heading (Original Meaning) -->
-            <h1 class="font-bold tracking-tight leading-[1.1]
-                   text-[clamp(34px,5vw,60px)] mb-6">
-                Welcome to <span class="text-primary">Techonika</span><br>
-                <span class="block mt-2">
-                    Simple, Smart, and Reliable Digital Solutions
-                </span>
-            </h1>
+            <span class="group flex flex-col sm:inline-flex
+                   items-center justify-center sm:flex-row
+                   gap-2 px-4 py-4 sm:px-5 sm:py-2.5
+                   rounded-xl sm:rounded-full
+                   bg-white/10 backdrop-blur
+                   border border-white/10
+                   text-xs sm:text-sm font-medium text-center
+                   hover:bg-primary hover:border-primary
+                   transition-all duration-300">
+                <i class="ri-code-box-line text-lg sm:text-base
+                          text-primary group-hover:text-white"></i>
+                Website Development
+            </span>
 
-            <!-- Description (Original Content) -->
-            <p class="max-w-3xl mx-auto
-                  text-white/70
-                  text-sm sm:text-base md:text-lg
-                  leading-relaxed mb-14">
-                Techonika is your trusted digital partner, delivering smart and reliable
-                solutions designed for real business impact. We blend clean design,
-                modern technology, and strategic thinking to create digital experiences
-                that connect, convert, and scale.
-            </p>
+            <span class="group flex flex-col sm:inline-flex
+                   items-center justify-center sm:flex-row
+                   gap-2 px-4 py-4 sm:px-5 sm:py-2.5
+                   rounded-xl sm:rounded-full
+                   bg-white/10 backdrop-blur
+                   border border-white/10
+                   text-xs sm:text-sm font-medium text-center
+                   hover:bg-primary hover:border-primary
+                   transition-all duration-300">
+                <i class="ri-search-eye-line text-lg sm:text-base
+                          text-primary group-hover:text-white"></i>
+                SEO
+            </span>
 
-            <!-- Service Pills (UNCHANGED CONTENT) -->
-            <div class="flex flex-wrap justify-center gap-3 sm:gap-4 mb-10">
+            <span class="group flex flex-col sm:inline-flex
+                   items-center justify-center sm:flex-row
+                   gap-2 px-4 py-4 sm:px-5 sm:py-2.5
+                   rounded-xl sm:rounded-full
+                   bg-white/10 backdrop-blur
+                   border border-white/10
+                   text-xs sm:text-sm font-medium text-center
+                   hover:bg-primary hover:border-primary
+                   transition-all duration-300">
+                <i class="ri-megaphone-line text-lg sm:text-base
+                          text-primary group-hover:text-white"></i>
+                Social Marketing
+            </span>
 
-                <span class="group inline-flex items-center gap-2
-                         px-5 py-2 rounded-full
-                         bg-white/10 backdrop-blur
-                         border border-white/10
-                         text-xs sm:text-sm font-medium
-                         hover:bg-primary hover:border-primary
-                         transition-all duration-300">
-                    <i class="ri-brush-line text-primary group-hover:text-white"></i>
-                    Website Designing
-                </span>
+            <span class="group flex flex-col sm:inline-flex
+                   items-center justify-center sm:flex-row
+                   gap-2 px-4 py-4 sm:px-5 sm:py-2.5
+                   rounded-xl sm:rounded-full
+                   bg-white/10 backdrop-blur
+                   border border-white/10
+                   text-xs sm:text-sm font-medium text-center
+                   hover:bg-primary hover:border-primary
+                   transition-all duration-300">
+                <i class="ri-store-2-line text-lg sm:text-base
+                          text-primary group-hover:text-white"></i>
+                E-Commerce
+            </span>
 
-                <span class="group inline-flex items-center gap-2
-                         px-5 py-2.5 rounded-full
-                         bg-white/10 backdrop-blur
-                         border border-white/10
-                         text-xs sm:text-sm font-medium
-                         hover:bg-primary hover:border-primary
-                         transition-all duration-300">
-                    <i class="ri-code-box-line text-primary group-hover:text-white"></i>
-                    Website Development
-                </span>
+            <span class="group flex flex-col sm:inline-flex
+                   items-center justify-center sm:flex-row
+                   gap-2 px-4 py-4 sm:px-5 sm:py-2.5
+                   rounded-xl sm:rounded-full
+                   bg-white/10 backdrop-blur
+                   border border-white/10
+                   text-xs sm:text-sm font-medium text-center
+                   hover:bg-primary hover:border-primary
+                   transition-all duration-300">
+                <i class="ri-layout-2-line text-lg sm:text-base
+                          text-primary group-hover:text-white"></i>
+                Custom Design
+            </span>
 
-                <span class="group inline-flex items-center gap-2
-                         px-5 py-2.5 rounded-full
-                         bg-white/10 backdrop-blur
-                         border border-white/10
-                         text-xs sm:text-sm font-medium
-                         hover:bg-primary hover:border-primary
-                         transition-all duration-300">
-                    <i class="ri-search-eye-line text-primary group-hover:text-white"></i>
-                    Search Engine Optimization
-                </span>
+            <span class="group flex flex-col sm:inline-flex
+                   items-center justify-center sm:flex-row
+                   gap-2 px-4 py-4 sm:px-5 sm:py-2.5
+                   rounded-xl sm:rounded-full
+                   bg-white/10 backdrop-blur
+                   border border-white/10
+                   text-xs sm:text-sm font-medium text-center
+                   hover:bg-primary hover:border-primary
+                   transition-all duration-300">
+                <i class="ri-settings-3-line text-lg sm:text-base
+                          text-primary group-hover:text-white"></i>
+                Maintenance
+            </span>
 
-                <span class="group inline-flex items-center gap-2
-                         px-5 py-2.5 rounded-full
-                         bg-white/10 backdrop-blur
-                         border border-white/10
-                         text-xs sm:text-sm font-medium
-                         hover:bg-primary hover:border-primary
-                         transition-all duration-300">
-                    <i class="ri-megaphone-line text-primary group-hover:text-white"></i>
-                    Social Marketing
-                </span>
-
-                <span class="group inline-flex items-center gap-2
-                         px-5 py-2.5 rounded-full
-                         bg-white/10 backdrop-blur
-                         border border-white/10
-                         text-xs sm:text-sm font-medium
-                         hover:bg-primary hover:border-primary
-                         transition-all duration-300">
-                    <i class="ri-store-2-line text-primary group-hover:text-white"></i>
-                    E-Commerce
-                </span>
-
-                <span class="group inline-flex items-center gap-2
-                         px-5 py-2.5 rounded-full
-                         bg-white/10 backdrop-blur
-                         border border-white/10
-                         text-xs sm:text-sm font-medium
-                         hover:bg-primary hover:border-primary
-                         transition-all duration-300">
-                    <i class="ri-layout-2-line text-primary group-hover:text-white"></i>
-                    Custom Design
-                </span>
-
-                <span class="group inline-flex items-center gap-2
-                         px-5 py-2.5 rounded-full
-                         bg-white/10 backdrop-blur
-                         border border-white/10
-                         text-xs sm:text-sm font-medium
-                         hover:bg-primary hover:border-primary
-                         transition-all duration-300">
-                    <i class="ri-settings-3-line text-primary group-hover:text-white"></i>
-                    Maintenance
-                </span>
-
-                <span class="group inline-flex items-center gap-2
-                         px-5 py-2.5 rounded-full
-                         bg-white/10 backdrop-blur
-                         border border-white/10
-                         text-xs sm:text-sm font-medium
-                         hover:bg-primary hover:border-primary
-                         transition-all duration-300">
-                    <i class="ri-smartphone-line text-primary group-hover:text-white"></i>
-                    App Development
-                </span>
-
-            </div>
-
-            <!-- CTA -->
-            <a href="#contact"
-                class="inline-flex text-black items-center gap-3
-                  bg-primary 
-                  px-8 py-3.5 rounded-lg
-                  font-semibold text-sm sm:text-base
-                  hover:bg-primary/90 hover:scale-105
-                  transition-all duration-300">
-                Get in Touch
-                <i class="ri-arrow-right-line"></i>
-            </a>
+            <span class="group flex flex-col sm:inline-flex
+                   items-center justify-center sm:flex-row
+                   gap-2 px-4 py-4 sm:px-5 sm:py-2.5
+                   rounded-xl sm:rounded-full
+                   bg-white/10 backdrop-blur
+                   border border-white/10
+                   text-xs sm:text-sm font-medium text-center
+                   hover:bg-primary hover:border-primary
+                   transition-all duration-300">
+                <i class="ri-smartphone-line text-lg sm:text-base
+                          text-primary group-hover:text-white"></i>
+                App Development
+            </span>
 
         </div>
-    </section>
-    <section class="py-10 sm:py-10 lg:py-10 bg-black">
-        <div class="px-5 sm:px-8 lg:px-[9%]">
 
-            <div class=" items-start">
+        <!-- CTA -->
+        <a href="#contact"
+           class="inline-flex items-center gap-3
+              bg-primary text-black
+              px-8 py-3.5 rounded-lg
+              font-semibold text-sm sm:text-base
+              hover:bg-primary/90 hover:scale-105
+              transition-all duration-300">
+            Get in Touch
+            <i class="ri-arrow-right-line"></i>
+        </a>
 
-                <!-- LEFT -->
-                <div>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-[60px]
-                           font-light tracking-wide leading-tight text-white">
-                        We Build
-                        <span class="font-semibold text-[color:var(--color-primary)]">
-                            Digital Solutions
-                        </span><br>
-                        That Help You
-                        <span class="font-semibold">
-                            Grow
-                        </span>
-                    </h2>
+    </div>
+</section>
+<section class="relative bg-black overflow-hidden py-16 sm:py-20 lg:py-24">
 
-                    <!-- Paragraphs -->
-                    <div class="mt-6 sm:mt-8 space-y-4">
-                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
-                            At <span class="font-medium text-white">Techonika</span>,
-                            we believe that technology should feel simple, helpful,
-                            and easy to understand for everyone.
-                            Many people feel confused or even stressed when they hear
-                            words like digital, software, or online marketing.
-                        </p>
+    <!-- Glow Background -->
+    <div class="absolute -top-40 -left-40
+            w-[600px] h-[600px]
+            bg-[color:var(--color-primary)]/20
+            blur-[160px] rounded-full"></div>
 
-                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
-                            We see this every day, and that is exactly why we exist.
-                            We work hard to remove fear, confusion, and hesitation
-                            around technology so you can move forward with confidence.
-                            Our goal is to make technology work for you in a clear,
-                            friendly, and practical way that supports your daily
-                            business needs.
-                        </p>
+    <div class="relative px-5 sm:px-8 lg:px-[9%]">
 
-                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
-                            We are a full-service digital and technology company,
-                            which means we offer a wide range of solutions under one roof.
-                            You do not need to manage different agencies for web design,
-                            graphic design, web development, digital marketing,
-                            mobile apps, or online branding.
-                        </p>
+        <!-- GRID -->
+        <div class="grid lg:grid-cols-2 gap-14 items-center">
 
-                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
-                            Everything is handled by one dedicated team that understands
-                            your business from start to finish.
-                            From early planning and creative design to development,
-                            promotion, and long-term support,
-                            we manage each step with care and clarity.
-                        </p>
+            <!-- LEFT IMAGE -->
+            <div class="relative order-1 lg:order-none">
 
-                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
-                            Our work supports businesses at every stage.
-                            We collaborate with small businesses taking their first
-                            steps online, growing companies that want stronger systems,
-                            startups that need smart digital foundations,
-                            and established brands looking to scale.
-                        </p>
-                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
-                            Some clients come to us for a fresh website,
-                            others for better visibility through digital marketing,
-                            stronger identity through online branding,
-                            or smoother operations using smart resource
-                            management solutions.
-                            No matter where you are in your journey,
-                            we meet you at your level and guide you forward
-                            with patience, honesty, and clear direction.
-                        </p>
-                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
-                            When you work with us, you do not just receive a service.
-                            You gain a reliable digital partner.
-                            We take time to listen, explain every step in simple
-                            language, and make sure you always understand what
-                            is happening and why it matters.
-                        </p>
-                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
-                            Even after your project is delivered,
-                            we stay connected to support improvements,
-                            updates, and growth.
-                            We believe progress works best when it is shared,
-                            and we grow when you grow.
-                            That belief shapes the way we work every single day.
-                        </p>
-                    </div>
+                <!-- Image Card -->
+                <div class="relative z-10 overflow-hidden
+                        rounded-[40px]
+                        border border-white/10
+                        bg-white/5 backdrop-blur">
 
-                    <!-- CTA -->
-                    <div class="mt-8 sm:mt-10 flex flex-wrap gap-4">
-                        <a href="#contact"
-                            class="inline-flex items-center gap-2
-                              px-7 py-3.5 rounded-full
-                              bg-[color:var(--color-primary)]
-                              text-black font-semibold
-                              hover:opacity-90 transition">
-                            <i class="ri-chat-3-line"></i>
-                            Get Free Consultation
-                        </a>
-
-                        <a href="#services"
-                            class="inline-flex items-center gap-2
-                              px-7 py-3.5 rounded-full
-                              border border-white/20
-                              text-white font-medium
-                              hover:bg-white hover:text-black transition">
-                            <i class="ri-arrow-right-line"></i>
-                            Explore Services
-                        </a>
-                    </div>
+                    <img
+                        src="{{asset('images/Revolutionize_Your_Workplace_Office_Digital_Signage_Solutions_for_Modern_Businesses.jpg')}}"
+                        alt="Digital Solutions"
+                        class="w-full h-full object-cover
+                               scale-105 hover:scale-110
+                               transition-transform duration-700">
                 </div>
+
+               
+            </div>
+
+            <!-- RIGHT CONTENT (UNCHANGED TEXT) -->
+            <div>
+
+                <h2 class="text-3xl sm:text-3xl md:text-3xl xl:text-[45px]
+                       font-light tracking-wide leading-tight text-white">
+                    We Build
+                    <span class="font-semibold text-[color:var(--color-primary)]">
+                        Digital Solutions
+                    </span><br>
+                    That Help You
+                    <span class="font-semibold">
+                        Grow
+                    </span>
+                </h2>
+
+                <!-- Paragraphs -->
+                <div class="mt-6 sm:mt-8 space-y-2">
+                    <p class="text-white/80 text-justify sm:text-lg">
+                        At <span class="font-medium text-white">Techonika</span>,
+                        we believe that technology should feel simple, helpful,
+                        and easy to understand for everyone.
+                        Many people feel confused or even stressed when they hear
+                        words like digital, software, or online marketing.
+                    </p>
+
+                    <p class="text-white/80 text-justify sm:text-lg">
+                        We see this every day, and that is exactly why we exist.
+                        We work hard to remove fear, confusion, and hesitation
+                        around technology so you can move forward with confidence.
+                        Our goal is to make technology work for you in a clear,
+                        friendly, and practical way that supports your daily
+                        business needs.
+                    </p>
+
+                    <p class="text-white/80 text-justify sm:text-lg">
+                        We are a full-service digital and technology company,
+                        which means we offer a wide range of solutions under one roof.
+                        You do not need to manage different agencies for web design,
+                        graphic design, web development, digital marketing,
+                        mobile apps, or online branding.
+                    </p>
+
+                    <p class="text-white/80 text-justify sm:text-lg">
+                        Everything is handled by one dedicated team that understands
+                        your business from start to finish.
+                        From early planning and creative design to development,
+                        promotion, and long-term support,
+                        we manage each step with care and clarity.
+                    </p>
+
+           
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-8 sm:mt-10 flex flex-wrap gap-4">
+                    <a href="#contact"
+                        class="inline-flex items-center gap-2
+                          px-7 py-3.5 rounded-full
+                          bg-[color:var(--color-primary)]
+                          text-black font-semibold
+                          hover:opacity-90 transition">
+                        <i class="ri-chat-3-line"></i>
+                        Get Free Consultation
+                    </a>
+
+                    <a href="#services"
+                        class="inline-flex items-center gap-2
+                          px-7 py-3.5 rounded-full
+                          border border-white/20
+                          text-white font-medium
+                          hover:bg-white hover:text-black transition">
+                        <i class="ri-arrow-right-line"></i>
+                        Explore Services
+                    </a>
+                </div>
+
             </div>
 
         </div>
-    </section>
+    </div>
+</section>
+
 
 
     <section class="py-10 sm:py-10 lg:py-10 bg-black">
@@ -692,15 +720,27 @@
     </section>
 
 
+<section
+    class="relative px-[2%] md:px-[9%]
+           bg-gradient-to-r from-black via-[#111] to-black
+           text-white overflow-hidden">
 
-    <section class="relative px-[2%] md:px-[9%] bg-gradient-to-r from-black via-[#111] to-black text-white overflow-hidden">
-        <div class="mx-auto px-4 sm:px-6 lg:px-12 py-16 sm:py-20">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl mb-10 font-bold leading-tight">
-                Why Choose <span class="text-primary">TECHONIKA</span>
-            </h2>
-            <div class="flex flex-col gap-6 md:gap-10 text-justify">
+    <!-- Decorative Glow -->
+    <div class="absolute -top-32 -right-32
+            w-[500px] h-[500px]
+            bg-primary/20 blur-[140px] rounded-full"></div>
 
+    <div class="relative mx-auto px-4 sm:px-6 lg:px-12 py-16 sm:py-20">
 
+        <!-- GRID -->
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+            <!-- LEFT CONTENT (UNCHANGED) -->
+            <div class="flex flex-col gap-6 md:gap-5 text-justify">
+
+                <h2 class="text-3xl sm:text-4xl lg:text-4xl font-bold leading-tight">
+                    Why Choose <span class="text-primary">TECHONIKA</span>
+                </h2>
 
                 <p class="text-gray-300 leading-relaxed">
                     Choosing the right digital partner is an important decision.
@@ -725,36 +765,53 @@
                     business needs, budget, and long-term plans.
                 </p>
 
-                <p class="text-gray-400 leading-relaxed">
-                    Clear communication is at the heart of how we work.
-                    We explain every step in simple, easy-to-understand language,
-                    so you always know what is happening, why it matters,
-                    and how it supports your growth.
-                </p>
-
-                <p class="text-gray-400 leading-relaxed">
-                    Our work does not end at delivery.
-                    We stay connected, support you as your needs change,
-                    and help you improve and evolve over time.
-                    As your business grows, we grow with you.
-                </p>
-
                 <a href="#"
-                    class="inline-flex items-center gap-2 bg-[#f6b615] text-black
+                    class="inline-flex items-center gap-2
+                      bg-[#f6b615] text-black
                       px-6 py-3 rounded-lg font-semibold
                       hover:bg-yellow-400 transition w-fit">
                     Learn more
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
                             d="M9 5l7 7-7 7" />
                     </svg>
                 </a>
+            </div>
 
+            <!-- RIGHT IMAGE -->
+            <div class="relative">
+
+                <div
+                    class="relative z-10 overflow-hidden
+                           rounded-[36px]
+                           border border-white/10
+                           bg-white/5 backdrop-blur">
+
+                    <img
+                        src="{{asset('images/vector-business-success-growth-green-arrow-chart_1005794-6310.jpg')}}"
+                        alt="Why Choose Techonika"
+                        class="w-full h-[70vh] object-cover
+                               scale-105 hover:scale-110
+                               transition-transform duration-700">
+                </div>
+
+                <!-- Curve Glow -->
+                <div class="absolute -bottom-14 -right-14
+                        w-[240px] h-[240px]
+                        bg-primary rounded-full
+                        blur-[120px] opacity-30">
+                </div>
             </div>
 
         </div>
-    </section>
+    </div>
+</section>
+
+
 
     <div class="px-[2%] md:px-[9%] bg-black">
     
