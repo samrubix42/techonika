@@ -4,7 +4,7 @@
             <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent"></div>
 
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6
-                py-20 sm:py-24 lg:py-28">
+                py-20 sm:py-28 lg:py-28">
 
                 <div class="grid lg:grid-cols-2 gap-12 lg:gap-14 items-center">
 
@@ -135,7 +135,7 @@
                 </div>
             </div>
         </section>
-        <section class="relative bg-black text-white py-24 overflow-hidden">
+        <section class="relative bg-black text-white py-10 overflow-hidden">
             <!-- subtle background effect -->
             <div class="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-transparent"></div>
 
@@ -230,7 +230,7 @@
                 </div>
             </div>
         </section>
-        <section class="relative bg-black text-white py-24 overflow-hidden">
+        <section class="relative bg-black text-white py-10 overflow-hidden">
             <!-- subtle accent -->
             <div class="absolute inset-0 bg-gradient-to-bl from-primary/5 via-transparent to-transparent"></div>
 
@@ -300,7 +300,7 @@
                 </div>
             </div>
         </section>
-        <section class="relative bg-black text-white py-28 overflow-hidden">
+        <section class="relative bg-black text-white py-12 overflow-hidden">
             <!-- layered background accents -->
             <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent"></div>
             <div class="absolute right-0 top-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
@@ -405,7 +405,7 @@
 
             </div>
         </section>
-        <section class="relative bg-black text-white py-24 overflow-hidden">
+        <section class="relative bg-black text-white py-10 overflow-hidden">
             <!-- subtle background accent -->
             <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent"></div>
 
@@ -491,7 +491,7 @@
                 </div>
             </div>
         </section>
-        <section class="relative bg-black text-white py-28 overflow-hidden">
+        <section class="relative bg-black text-white py-12 overflow-hidden">
             <!-- layered background accents -->
             <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent"></div>
             <div class="absolute left-0 bottom-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
@@ -604,7 +604,7 @@
 
             </div>
         </section>
-        <section class="relative bg-black text-white py-28 overflow-hidden">
+        <section class="relative bg-black text-white py-12 overflow-hidden">
             <!-- subtle background accent -->
             <div class="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-transparent"></div>
 
@@ -706,7 +706,7 @@
 
             </div>
         </section>
-        <section class="bg-black py-24 relative overflow-hidden">
+        <section class="bg-black py-10 relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-6">
 
                 <!-- Decorative Glow -->
@@ -804,7 +804,7 @@
                 </div>
             </div>
         </section>
-        <section class="bg-black py-24 relative overflow-hidden">
+        <section class="bg-black py-10 relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-6">
 
                 <!-- Soft Accent Glow -->
@@ -907,7 +907,7 @@
                 </div>
             </div>
         </section>
-        <section class="bg-black py-24 relative overflow-hidden">
+        <section class="bg-black py-10 relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-6">
 
                 <!-- Subtle Glow -->
@@ -1026,7 +1026,7 @@
 
             </div>
         </section>
-        <section class="bg-black py-24 relative overflow-hidden">
+        <section class="bg-black py-10 relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-6">
 
                 <!-- Local Accent Glow -->
@@ -1134,7 +1134,7 @@
 
             </div>
         </section>
-        <section class="bg-black py-24 relative overflow-hidden">
+        <section class="bg-black py-10 relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-6">
 
                 <!-- Soft Accent Glow -->
@@ -1231,7 +1231,7 @@
             </div>
         </section>
 
-        <section class="relative bg-black text-white py-28 overflow-hidden">
+        <section class="relative bg-black text-white py-12 overflow-hidden">
             <!-- layered glow -->
             <div class="absolute inset-0 bg-gradient-to-br from-primary/15 via-transparent to-transparent"></div>
             <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
@@ -1281,7 +1281,7 @@
 
             </div>
         </section>
-        <section class="relative bg-black text-white py-28 overflow-hidden">
+        <section class="relative bg-black text-white py-12 overflow-hidden">
             <!-- subtle background accent -->
             <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent"></div>
 
@@ -1379,123 +1379,22 @@
                 </div>
             </div>
         </section>
-        <section class="relative bg-black text-white py-28 overflow-hidden">
-            <!-- subtle background accent -->
-            <div class="absolute inset-0 bg-gradient-to-bl from-primary/5 via-transparent to-transparent"></div>
+       
 
-            <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
-                <div class="grid lg:grid-cols-2 gap-14 items-center">
-
-                    <!-- LEFT GLASS CARD -->
-                    <div class="order-2 lg:order-1 bg-white/5 border border-white/15
-                        rounded-3xl p-6 sm:p-8 lg:p-10
-                        backdrop-blur-xl">
-
-                        <h3 class="text-lg sm:text-xl font-semibold mb-6">
-                            Our content helps to:
-                        </h3>
-
-                        <ul class="space-y-5">
-                            <li class="flex gap-4">
-                                <span class="mt-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
-                                <p class="text-white/80">
-                                    Explain your
-                                    <span class="text-white font-medium">
-                                        services clearly
-                                    </span>
-                                    without jargon
-                                </p>
-                            </li>
-
-                            <li class="flex gap-4">
-                                <span class="mt-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
-                                <p class="text-white/80">
-                                    Build
-                                    <span class="text-white font-medium">
-                                        trust and credibility
-                                    </span>
-                                    with readers
-                                </p>
-                            </li>
-
-                            <li class="flex gap-4">
-                                <span class="mt-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
-                                <p class="text-white/80">
-                                    Support
-                                    <span class="text-white font-medium">
-                                        SEO and social media
-                                    </span>
-                                    naturally
-                                </p>
-                            </li>
-
-                            <li class="flex gap-4">
-                                <span class="mt-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
-                                <p class="text-white/80">
-                                    Guide users toward
-                                    <span class="text-white font-medium">
-                                        meaningful action
-                                    </span>
-                                </p>
-                            </li>
-                        </ul>
-
-                        <div class="mt-8 pt-6 border-t border-white/10">
-                            <p class="text-white/80 text-sm sm:text-base leading-relaxed">
-                                At Techonika, content is never created just to fill space.
-                                <span class="text-primary font-medium">
-                                    Every piece has a clear reason.
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- RIGHT CONTENT -->
-                    <div class="order-1 lg:order-2">
-                        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
-                            Content That
-                            <span class="text-primary font-bold">
-                                Explains, Not Confuses
-                            </span>
-                        </h2>
-
-                        <div class="mt-6 space-y-4 max-w-xl">
-                            <p class="text-white/80 leading-relaxed">
-                                Good content answers questions before people even ask them.
-                                We create content that feels easy to read and genuinely useful —
-                                not heavy, technical, or overly salesy.
-                            </p>
-
-                            <p class="text-white/80 leading-relaxed">
-                                Clear content helps users understand what you offer,
-                                builds confidence in your brand, and supports long-term
-                                digital growth.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="relative bg-black text-white py-28 overflow-hidden">
+        <section class="relative bg-black text-white py-12 overflow-hidden">
             <!-- subtle background -->
             <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent"></div>
 
             <div class="relative max-w-4xl mx-auto px-4 sm:px-6">
 
-                <!-- Section Header -->
-                <div class="mb-16 text-center">
-                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
-                        Frequently Asked
-                        <span class="text-primary font-bold">
-                            Questions (FAQs)
-                        </span>
+             <!-- SECTION TITLE -->
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+                        FREQUENTLY ASKED <span class="text-[#f6b615]">QUESTIONS</span>
                     </h2>
-
-                    <p class="mt-4 text-white/70 max-w-2xl mx-auto">
-                        Clear answers to common questions about working with a
-                        digital marketing company in Noida.
+                    <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+                        Answers to common questions about our services, process,
+                        pricing, and how we work with clients.
                     </p>
                 </div>
 
