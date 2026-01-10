@@ -85,7 +85,7 @@
 <body class="antialiased bg-gray-50 text-gray-800 font-sans">
 
     <!-- Header -->
-    <livewire:includes.header />
+    <livewire:public.includes.header2 />
 
     <main class="min-h-screen max-w-full bg-black overflow-x-hidden">
         {{ $slot }}
