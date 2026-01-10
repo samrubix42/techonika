@@ -1,44 +1,110 @@
 <div class="bg-black text-white min-h-screen">
 
     <!-- Hero -->
-    <section class="py-20 md:py-28 px-4 md:px-[6%]">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-4">
-                <div class="flex items-center gap-3">
-                    <span class="inline-flex items-center justify-center bg-[#f6b615] text-black rounded-full px-3 py-1 text-xs font-semibold">LT</span>
-                    <span class="text-sm text-gray-400 uppercase tracking-widest">Let’s talk</span>
-                </div>
+<section class="relative bg-black py-20 md:py-28 px-4 md:px-[6%] overflow-hidden">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
-                    Get in touch <span class="text-[#f6b615]">with TECHNONIKA</span>
-                </h1>
+        <!-- LEFT CONTENT -->
+        <div class="space-y-6">
 
-                <p class="text-gray-300 max-w-2xl text-lg">
-                    Have a project, question, or idea? Tell us about it — we design and build tailored digital products that scale. Share some details and we’ll get back to you within 1–2 business days.
-                </p>
-
-                <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="#contact-form" class="inline-flex items-center justify-center bg-[#f6b615] text-black px-6 py-3 rounded-2xl font-semibold hover:brightness-110 transition">Start a conversation</a>
-                    <a href="#" class="inline-flex items-center gap-2 border border-white/10 px-5 py-3 rounded-2xl font-medium text-white/90">See our services</a>
-                </div>
-
-                <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md">
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h4 class="text-sm text-[#f6b615] font-semibold">Email</h4>
-                        <p class="text-gray-300">hello@technonika.com</p>
-                    </div>
-                    <div class="bg-white/5 p-4 rounded-lg">
-                        <h4 class="text-sm text-[#f6b615] font-semibold">Phone</h4>
-                        <p class="text-gray-300">+1 (555) 123-4567</p>
-                    </div>
-                </div>
+            <!-- Badge -->
+            <div class="flex items-center gap-3">
+                <span
+                    class="inline-flex items-center justify-center
+                           bg-primary/90 text-black
+                           rounded-full px-3 py-1
+                           text-xs font-semibold tracking-wide">
+                    LT
+                </span>
+                <span class="text-sm text-white/50 uppercase tracking-widest">
+                    Let’s Talk
+                </span>
             </div>
 
-            <div class="flex justify-center lg:justify-end">
-                <img src="/images/contact-illustration.png" alt="Contact" class="max-w-[420px] object-contain" />
+            <!-- Heading -->
+            <h1
+                class="text-4xl sm:text-5xl lg:text-6xl
+                       font-light leading-tight text-white">
+                Get in touch
+                <span class="block font-semibold text-primary">
+                    with TECHNONIKA
+                </span>
+            </h1>
+
+            <!-- Description -->
+            <p class="text-white/70 max-w-2xl text-base sm:text-lg leading-relaxed">
+                Have a project, question, or idea?
+                Tell us about it — we design and build
+                tailored digital solutions that scale.
+                Share a few details and we’ll get back to you
+                within <span class="text-white">1–2 business days</span>.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="#contact-form"
+                   class="inline-flex items-center justify-center
+                          bg-primary text-black
+                          px-7 py-3.5 rounded-2xl
+                          font-semibold
+                          hover:brightness-110 transition">
+                    Start a conversation
+                </a>
+
+                <a href="#services"
+                   class="inline-flex items-center gap-2
+                          border border-white/15
+                          px-6 py-3.5 rounded-2xl
+                          font-medium text-white/80
+                          hover:border-primary hover:text-primary transition">
+                    See our services
+                </a>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md">
+
+                <div
+                    class="bg-white/5 border border-white/10
+                           p-4 rounded-xl backdrop-blur-sm">
+                    <h4 class="text-xs uppercase tracking-widest text-primary font-semibold mb-1">
+                        Email
+                    </h4>
+                    <p class="text-white/80 text-sm">
+                        hello@technonika.com
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white/5 border border-white/10
+                           p-4 rounded-xl backdrop-blur-sm">
+                    <h4 class="text-xs uppercase tracking-widest text-primary font-semibold mb-1">
+                        Phone
+                    </h4>
+                    <p class="text-white/80 text-sm">
+                        +1 (555) 123-4567
+                    </p>
+                </div>
+
             </div>
         </div>
-    </section>
+
+        <!-- RIGHT IMAGE -->
+        <div class="flex justify-center lg:justify-end relative">
+            <div
+                class="absolute -inset-6
+                       bg-primary/10 blur-3xl rounded-full opacity-60">
+            </div>
+
+            <img
+                src="/images/contact-illustration.png"
+                alt="Contact Techonika"
+                class="relative max-w-[420px] w-full object-contain" />
+        </div>
+
+    </div>
+</section>
+
 
     <!-- Contact Form Section -->
     <section id="contact-form" class="py-16 px-4 md:px-[6%]">

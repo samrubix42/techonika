@@ -17,14 +17,14 @@
   <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
     <!-- LOGO -->
-    <a href="{{ Route::has('home') ? route('home') : url('/') }}" wire:navigate>
+    <a wire:navigate href="{{ Route::has('home') ? route('home') : url('/') }}" wire:navigate>
       <img src="{{ asset('techonika-logo-dark.png') }}" class="md:h-11 h-9" />
     </a>
 
     <!-- DESKTOP NAV -->
     <nav class="hidden md:flex items-center uppercase tracking-loose gap-10 text-sm text-white">
 
-      <a href="{{ route('home') }}" class="hover:text-amber-400">Home</a>
+      <a wire:navigate href="{{ route('home') }}" class="hover:text-amber-400">Home</a>
 
       <!-- DESKTOP MEGA MENU -->
       <div class="relative uppercase" @mouseenter="mega=true" @mouseleave="mega=false">
@@ -77,7 +77,7 @@
             <div class="bg-black/60 rounded-xl p-6 border border-white/10">
               <h5 class="font-semibold mb-2">Free Consultation</h5>
               <p class="text-sm text-gray-400">Let’s discuss your idea.</p>
-              <a href="{{ route('contact') }}"
+              <a wire:navigate href="{{ route('contact') }}"
                  class="mt-4 block text-center bg-amber-400 text-black font-semibold py-2 rounded-lg">
                 Book Call →
               </a>
@@ -87,14 +87,14 @@
         </div>
       </div>
 
-      <a href="{{ route('about') }}" class="hover:text-amber-400">About</a>
-      <a href="{{ route('portfolio') }}" class="hover:text-amber-400">Portfolio</a>
-      <a href="{{ route('blog') }}" class="hover:text-amber-400">Blog</a>
-      <a href="{{ route('clients') }}" class="hover:text-amber-400">Clients</a>
+      <a wire:navigate href="{{ route('about') }}" class="hover:text-amber-400">About</a>
+      <a wire:navigate href="{{ route('portfolio') }}" class="hover:text-amber-400">Portfolio</a>
+      <a wire:navigate href="{{ route('blog') }}" class="hover:text-amber-400">Blog</a>
+      <a wire:navigate href="{{ route('clients') }}" class="hover:text-amber-400">Clients</a>
     </nav>
 
     <!-- DESKTOP CTA -->
-    <a href="{{ route('contact') }}"
+    <a wire:navigate href="{{ route('contact') }}"
        class="hidden md:block bg-amber-400 text-black px-4 py-2 rounded-lg font-semibold">
       Contact
     </a>
@@ -119,7 +119,7 @@
 
     <nav class="flex flex-col gap-4 text-lg text-white font-medium">
 
-      <a href="{{ route('home') }}" class="mt-2 rounded hover:bg-white/10">Home</a>
+      <a wire:navigate href="{{ route('home') }}" class="mt-2 rounded hover:bg-white/10">Home</a>
 
       <!-- MOBILE MEGA -->
       <div>
@@ -158,12 +158,12 @@
         </div>
       </div>
 
-      <a href="{{ route('about') }}">About</a>
-      <a href="{{ route('portfolio') }}">Portfolio</a>
-      <a href="{{ route('blog') }}">Blog</a>
-      <a href="{{ route('clients') }}">Clients</a>
+      <a wire:navigate href="{{ route('about') }}">About</a>
+      <a wire:navigate href="{{ route('portfolio') }}">Portfolio</a>
+      <a wire:navigate href="{{ route('blog') }}">Blog</a>
+      <a wire:navigate href="{{ route('clients') }}">Clients</a>
 
-      <a href="{{ route('contact') }}"
+      <a wire:navigate href="{{ route('contact') }}"
          class="mt-6 bg-amber-400 text-black font-semibold py-3 rounded-xl text-center">
         Contact
       </a>
