@@ -56,7 +56,7 @@
                 bg-primary/10 rounded-full blur-3xl"></div>
 </section>
 
-<section class="relative bg-black py-28 border-t border-white/10 overflow-hidden">
+<section class="relative bg-black py-6 border-t border-white/10 overflow-hidden">
 
     <!-- Soft background glow -->
     <div class="absolute -top-40 -left-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
