@@ -10,14 +10,7 @@
     "
 >
 
-    <!-- Open Contact Button -->
-    <button @click="contactopen = true"
-        class="px-5 py-2 text-sm font-medium
-               bg-primary text-black
-               rounded-lg shadow-lg shadow-primary/20
-               hover:bg-primary/90 transition">
-        Contact Us
-    </button>
+
 
     <!-- Contact Form Modal -->
     <div x-show="contactopen" x-cloak

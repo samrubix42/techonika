@@ -113,6 +113,13 @@ class AdminSidebar
                 'hasSubmenu' => false,
                 'submenu' => [],
             ],
+            (object)[
+                'title' => 'Portfolio',
+                'icon' => 'ti ti-briefcase',
+                'url' => route('admin.portfolio.list'),
+                'hasSubmenu' => false,
+                'submenu' => [],
+            ],
 
         ]);
 

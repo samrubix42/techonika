@@ -28,5 +28,7 @@ class DatabaseSeeder extends Seeder
         $this->call(\Database\Seeders\BlogSeeder::class);
         // Contact seeder
         $this->call(\Database\Seeders\ContactSeeder::class);
+        // Portfolio categories
+        $this->call(\Database\Seeders\PortfolioCategorySeeder::class);
     }
 }

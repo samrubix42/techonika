@@ -7,6 +7,7 @@ use App\Livewire\Admin\Blog\UpdateBlog;
 use App\Livewire\Admin\Dashboard\Dashboard;
 use App\Livewire\Admin\Faq\Faq;
 use App\Livewire\Admin\Page\PageManagement;
+use App\Livewire\Admin\Portfolio\PortfolioList;
 use App\Livewire\Admin\RolePermission\PermissionList;
 use App\Livewire\Admin\RolePermission\RoleList;
 use App\Livewire\Admin\RolePermission\UserList;
@@ -62,6 +63,7 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/role-permission',RoleList::class)->name('role-permission');
     Route::get('/add-blog',AddBlog::class)->name('add-blog');
     Route::get('/contact',App\Livewire\Admin\Contact\Contact::class)->name('contact-list');
+    Route::get('/portfolio',PortfolioList::class)->name('portfolio.list');
     Route::get('/update-blog/{post}',UpdateBlog::class)->name('update-blog');
     Route::get('/blog-list',BlogList::class)->name('blog-list');
     Route::get('/blog-category',CategoryList::class)->name('blog-category');
