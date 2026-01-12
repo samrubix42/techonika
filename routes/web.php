@@ -38,7 +38,7 @@ Route::get('/web-development',WebDevelopmentIndex::class)->name('webdevelopment'
 Route::get('/seo-package',SeoPackage::class)->name('seo-package');
 Route::get('/smo-package',SmoPackage::class)->name('smo-package');
 Route::get('/startup-package',StartupPackage::class)->name('startup-package');
-Route::get('/marketing',DigitalMarktingIndex::class)->name('marketing');
+Route::get('/digital-marketing',DigitalMarktingIndex::class)->name('digital-marketing');
 Route::get('/web-designing',WebDesigningIndex::class)->name('webdesigning');
 Route::get('/graphic-designing',GraphicDesigningIndex::class)->name('graphicdesigning');
 Route::get('/mobile-app-development',App\Livewire\Public\MobileDevelopment\Index::class)->name('mobileappdevelopment');
