@@ -178,9 +178,9 @@
                          focus:outline-none focus:border-primary
                          focus:ring-1 focus:ring-primary/40 transition"></textarea>
                     </div>
-                      <div class="g-recaptcha"
-         data-sitekey="{{ config('services.recaptcha.site_key') }}">
-    </div>
+                    <div class="g-recaptcha"
+                        data-sitekey="{{ config('services.recaptcha.site_key') }}">
+                    </div>
 
                     <!-- CTA -->
                     <button type="submit"
@@ -191,15 +191,16 @@
                         <i class="ri-send-plane-line"></i>
                     </button>
                     <script>
-grecaptcha.ready(function () {
-    grecaptcha.execute(
-        "{{ config('services.recaptcha_v3.site_key') }}",
-        {action: 'submit'}
-    ).then(function (token) {
-        document.getElementById('recaptcha_token').value = token;
-    });
-});
-</script>
+                        grecaptcha.ready(function() {
+                            grecaptcha.execute(
+                                "{{ config('services.recaptcha_v3.site_key') }}", {
+                                    action: 'submit'
+                                }
+                            ).then(function(token) {
+                                document.getElementById('recaptcha_token').value = token;
+                            });
+                        });
+                    </script>
 
                     <!-- Privacy Note -->
                     <p class="text-center text-xs text-white/40">
@@ -454,163 +455,163 @@ grecaptcha.ready(function () {
 
 
 
- <section class="bg-black py-10">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <section class="bg-black py-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
 
-        <!-- Heading -->
-        <div class="text-center mb-16">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-                FREQUENTLY ASKED <span class="text-primary">QUESTIONS</span>
-            </h2>
-            <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
-                Clear answers about our process, timelines, and how we work together.
-            </p>
+            <!-- Heading -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+                    FREQUENTLY ASKED <span class="text-primary">QUESTIONS</span>
+                </h2>
+                <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+                    Clear answers about our process, timelines, and how we work together.
+                </p>
+            </div>
+
+            <!-- FAQ List -->
+            <div x-data="{ active: null }" class="space-y-4">
+
+                <!-- Q1 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden">
+                    <button @click="active === 1 ? active = null : active = 1"
+                        class="w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="text-white font-medium">
+                            What services does Techonika offer?
+                        </span>
+                        <span class="text-primary text-xl transition"
+                            :class="active === 1 ? 'rotate-45' : ''">+</span>
+                    </button>
+                    <div x-show="active === 1" x-collapse
+                        class="px-6 pb-5 text-gray-400 leading-relaxed">
+                        We offer website development, SEO, social media marketing (SMO),
+                        graphic design, paid ads, branding, and startup growth packages —
+                        all under one roof.
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden">
+                    <button @click="active === 2 ? active = null : active = 2"
+                        class="w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="text-white font-medium">
+                            Do you build custom websites or use templates?
+                        </span>
+                        <span class="text-primary text-xl transition"
+                            :class="active === 2 ? 'rotate-45' : ''">+</span>
+                    </button>
+                    <div x-show="active === 2" x-collapse
+                        class="px-6 pb-5 text-gray-400 leading-relaxed">
+                        Every website we build is custom. We do not rely on generic templates.
+                        Each project is designed based on your brand, goals, and users.
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden">
+                    <button @click="active === 3 ? active = null : active = 3"
+                        class="w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="text-white font-medium">
+                            How long does a typical project take?
+                        </span>
+                        <span class="text-primary text-xl transition"
+                            :class="active === 3 ? 'rotate-45' : ''">+</span>
+                    </button>
+                    <div x-show="active === 3" x-collapse
+                        class="px-6 pb-5 text-gray-400 leading-relaxed">
+                        Timelines depend on the scope. A standard website usually takes
+                        3–6 weeks, while larger platforms or apps may take 8–16 weeks.
+                        We always share a clear timeline before starting.
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden">
+                    <button @click="active === 4 ? active = null : active = 4"
+                        class="w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="text-white font-medium">
+                            Can I see progress during development?
+                        </span>
+                        <span class="text-primary text-xl transition"
+                            :class="active === 4 ? 'rotate-45' : ''">+</span>
+                    </button>
+                    <div x-show="active === 4" x-collapse
+                        class="px-6 pb-5 text-gray-400 leading-relaxed">
+                        Yes. We share regular updates, previews, and demos so you can
+                        review progress and give feedback at every stage.
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden">
+                    <button @click="active === 5 ? active = null : active = 5"
+                        class="w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="text-white font-medium">
+                            Do you provide SEO and marketing after launch?
+                        </span>
+                        <span class="text-primary text-xl transition"
+                            :class="active === 5 ? 'rotate-45' : ''">+</span>
+                    </button>
+                    <div x-show="active === 5" x-collapse
+                        class="px-6 pb-5 text-gray-400 leading-relaxed">
+                        Absolutely. We offer SEO, SMO, paid ads, and ongoing digital
+                        marketing support to help your business grow after launch.
+                    </div>
+                </div>
+
+                <!-- Q6 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden">
+                    <button @click="active === 6 ? active = null : active = 6"
+                        class="w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="text-white font-medium">
+                            How do payments and pricing work?
+                        </span>
+                        <span class="text-primary text-xl transition"
+                            :class="active === 6 ? 'rotate-45' : ''">+</span>
+                    </button>
+                    <div x-show="active === 6" x-collapse
+                        class="px-6 pb-5 text-gray-400 leading-relaxed">
+                        Pricing depends on project requirements. Payments are usually
+                        split into milestones so everything stays transparent and fair.
+                    </div>
+                </div>
+
+                <!-- Q7 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden">
+                    <button @click="active === 7 ? active = null : active = 7"
+                        class="w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="text-white font-medium">
+                            Do you sign NDAs and keep projects confidential?
+                        </span>
+                        <span class="text-primary text-xl transition"
+                            :class="active === 7 ? 'rotate-45' : ''">+</span>
+                    </button>
+                    <div x-show="active === 7" x-collapse
+                        class="px-6 pb-5 text-gray-400 leading-relaxed">
+                        Yes. We respect your ideas and business information.
+                        NDAs can be signed before starting any project.
+                    </div>
+                </div>
+
+                <!-- Q8 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden">
+                    <button @click="active === 8 ? active = null : active = 8"
+                        class="w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="text-white font-medium">
+                            What makes Techonika different from other agencies?
+                        </span>
+                        <span class="text-primary text-xl transition"
+                            :class="active === 8 ? 'rotate-45' : ''">+</span>
+                    </button>
+                    <div x-show="active === 8" x-collapse
+                        class="px-6 pb-5 text-gray-400 leading-relaxed">
+                        We focus on clarity, honest communication, and long-term value.
+                        No jargon, no pressure — just practical solutions that work.
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-        <!-- FAQ List -->
-        <div x-data="{ active: null }" class="space-y-4">
-
-            <!-- Q1 -->
-            <div class="border border-white/10 rounded-xl overflow-hidden">
-                <button @click="active === 1 ? active = null : active = 1"
-                        class="w-full flex items-center justify-between px-6 py-5 text-left">
-                    <span class="text-white font-medium">
-                        What services does Techonika offer?
-                    </span>
-                    <span class="text-primary text-xl transition"
-                          :class="active === 1 ? 'rotate-45' : ''">+</span>
-                </button>
-                <div x-show="active === 1" x-collapse
-                     class="px-6 pb-5 text-gray-400 leading-relaxed">
-                    We offer website development, SEO, social media marketing (SMO),
-                    graphic design, paid ads, branding, and startup growth packages —
-                    all under one roof.
-                </div>
-            </div>
-
-            <!-- Q2 -->
-            <div class="border border-white/10 rounded-xl overflow-hidden">
-                <button @click="active === 2 ? active = null : active = 2"
-                        class="w-full flex items-center justify-between px-6 py-5 text-left">
-                    <span class="text-white font-medium">
-                        Do you build custom websites or use templates?
-                    </span>
-                    <span class="text-primary text-xl transition"
-                          :class="active === 2 ? 'rotate-45' : ''">+</span>
-                </button>
-                <div x-show="active === 2" x-collapse
-                     class="px-6 pb-5 text-gray-400 leading-relaxed">
-                    Every website we build is custom. We do not rely on generic templates.
-                    Each project is designed based on your brand, goals, and users.
-                </div>
-            </div>
-
-            <!-- Q3 -->
-            <div class="border border-white/10 rounded-xl overflow-hidden">
-                <button @click="active === 3 ? active = null : active = 3"
-                        class="w-full flex items-center justify-between px-6 py-5 text-left">
-                    <span class="text-white font-medium">
-                        How long does a typical project take?
-                    </span>
-                    <span class="text-primary text-xl transition"
-                          :class="active === 3 ? 'rotate-45' : ''">+</span>
-                </button>
-                <div x-show="active === 3" x-collapse
-                     class="px-6 pb-5 text-gray-400 leading-relaxed">
-                    Timelines depend on the scope. A standard website usually takes
-                    3–6 weeks, while larger platforms or apps may take 8–16 weeks.
-                    We always share a clear timeline before starting.
-                </div>
-            </div>
-
-            <!-- Q4 -->
-            <div class="border border-white/10 rounded-xl overflow-hidden">
-                <button @click="active === 4 ? active = null : active = 4"
-                        class="w-full flex items-center justify-between px-6 py-5 text-left">
-                    <span class="text-white font-medium">
-                        Can I see progress during development?
-                    </span>
-                    <span class="text-primary text-xl transition"
-                          :class="active === 4 ? 'rotate-45' : ''">+</span>
-                </button>
-                <div x-show="active === 4" x-collapse
-                     class="px-6 pb-5 text-gray-400 leading-relaxed">
-                    Yes. We share regular updates, previews, and demos so you can
-                    review progress and give feedback at every stage.
-                </div>
-            </div>
-
-            <!-- Q5 -->
-            <div class="border border-white/10 rounded-xl overflow-hidden">
-                <button @click="active === 5 ? active = null : active = 5"
-                        class="w-full flex items-center justify-between px-6 py-5 text-left">
-                    <span class="text-white font-medium">
-                        Do you provide SEO and marketing after launch?
-                    </span>
-                    <span class="text-primary text-xl transition"
-                          :class="active === 5 ? 'rotate-45' : ''">+</span>
-                </button>
-                <div x-show="active === 5" x-collapse
-                     class="px-6 pb-5 text-gray-400 leading-relaxed">
-                    Absolutely. We offer SEO, SMO, paid ads, and ongoing digital
-                    marketing support to help your business grow after launch.
-                </div>
-            </div>
-
-            <!-- Q6 -->
-            <div class="border border-white/10 rounded-xl overflow-hidden">
-                <button @click="active === 6 ? active = null : active = 6"
-                        class="w-full flex items-center justify-between px-6 py-5 text-left">
-                    <span class="text-white font-medium">
-                        How do payments and pricing work?
-                    </span>
-                    <span class="text-primary text-xl transition"
-                          :class="active === 6 ? 'rotate-45' : ''">+</span>
-                </button>
-                <div x-show="active === 6" x-collapse
-                     class="px-6 pb-5 text-gray-400 leading-relaxed">
-                    Pricing depends on project requirements. Payments are usually
-                    split into milestones so everything stays transparent and fair.
-                </div>
-            </div>
-
-            <!-- Q7 -->
-            <div class="border border-white/10 rounded-xl overflow-hidden">
-                <button @click="active === 7 ? active = null : active = 7"
-                        class="w-full flex items-center justify-between px-6 py-5 text-left">
-                    <span class="text-white font-medium">
-                        Do you sign NDAs and keep projects confidential?
-                    </span>
-                    <span class="text-primary text-xl transition"
-                          :class="active === 7 ? 'rotate-45' : ''">+</span>
-                </button>
-                <div x-show="active === 7" x-collapse
-                     class="px-6 pb-5 text-gray-400 leading-relaxed">
-                    Yes. We respect your ideas and business information.
-                    NDAs can be signed before starting any project.
-                </div>
-            </div>
-
-            <!-- Q8 -->
-            <div class="border border-white/10 rounded-xl overflow-hidden">
-                <button @click="active === 8 ? active = null : active = 8"
-                        class="w-full flex items-center justify-between px-6 py-5 text-left">
-                    <span class="text-white font-medium">
-                        What makes Techonika different from other agencies?
-                    </span>
-                    <span class="text-primary text-xl transition"
-                          :class="active === 8 ? 'rotate-45' : ''">+</span>
-                </button>
-                <div x-show="active === 8" x-collapse
-                     class="px-6 pb-5 text-gray-400 leading-relaxed">
-                    We focus on clarity, honest communication, and long-term value.
-                    No jargon, no pressure — just practical solutions that work.
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
+    </section>
 
 
 </div>

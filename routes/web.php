@@ -83,8 +83,7 @@ Route::post('/captcha-v3-test', function (Request $request) {
         ]
     )->json();
 
-    // Debug (temporarily)
-    // dd($response);
+
 
     if (!($response['success'] ?? false)) {
         return '❌ reCAPTCHA failed';
