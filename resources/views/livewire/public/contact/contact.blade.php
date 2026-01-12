@@ -124,92 +124,80 @@
                 </p>
             </div>
 
-            <!-- FORM CARD -->
             <div class="relative bg-white/5 backdrop-blur-lg
-                    border border-white/15
-                    rounded-3xl p-8 sm:p-10 shadow-2xl">
+            border border-white/15 rounded-3xl
+            p-8 sm:p-10 shadow-2xl">
 
-                <form class="space-y-6">
+                <form wire:submit.prevent="submit" class="space-y-6">
 
-                    <!-- Name -->
-                    <div>
-                        <label class="block text-sm text-white/60 mb-2">
-                            Your Name
-                        </label>
-                        <input type="text" placeholder="John Doe"
-                            class="w-full bg-black/40 border border-white/15
-                      rounded-xl px-4 py-3 text-white placeholder-white/40
-                      focus:outline-none focus:border-primary
-                      focus:ring-1 focus:ring-primary/40 transition">
-                    </div>
+    {{-- Success --}}
+    @if (session('success'))
+        <div class="p-3 rounded bg-green-600/20 text-green-400 text-sm font-medium">
+            {{ session('success') }}
+        </div>
+    @endif
 
-                    <!-- Contact Number -->
-                    <div>
-                        <label class="block text-sm text-white/60 mb-2">
-                            Contact Number
-                        </label>
-                        <input type="tel" placeholder="+91 98765 43210"
-                            class="w-full bg-black/40 border border-white/15
-                      rounded-xl px-4 py-3 text-white placeholder-white/40
-                      focus:outline-none focus:border-primary
-                      focus:ring-1 focus:ring-primary/40 transition">
-                    </div>
+    <!-- Name -->
+    <div>
+        <label class="block text-sm text-white/60 mb-2">Your Name</label>
+        <input type="text" wire:model.defer="name"
+            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white">
+        @error('name') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
+    </div>
 
-                    <!-- Email -->
-                    <div>
-                        <label class="block text-sm text-white/60 mb-2">
-                            Email Address
-                        </label>
-                        <input type="email" placeholder="you@example.com"
-                            class="w-full bg-black/40 border border-white/15
-                      rounded-xl px-4 py-3 text-white placeholder-white/40
-                      focus:outline-none focus:border-primary
-                      focus:ring-1 focus:ring-primary/40 transition">
-                    </div>
+    <!-- Email -->
+    <div>
+        <label class="block text-sm text-white/60 mb-2">Email</label>
+        <input type="email" wire:model.defer="email"
+            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white">
+        @error('email') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
+    </div>
 
-                    <!-- Message -->
-                    <div>
-                        <label class="block text-sm text-white/60 mb-2">
-                            Tell us about your project
-                        </label>
-                        <textarea rows="5" placeholder="Briefly describe what you’re looking to build…"
-                            class="w-full bg-black/40 border border-white/15
-                         rounded-xl px-4 py-3 text-white placeholder-white/40
-                         focus:outline-none focus:border-primary
-                         focus:ring-1 focus:ring-primary/40 transition"></textarea>
-                    </div>
-                    <div class="g-recaptcha"
-                        data-sitekey="{{ config('services.recaptcha.site_key') }}">
-                    </div>
+    <!-- Subject -->
+    <div>
+        <label class="block text-sm text-white/60 mb-2">Subject</label>
+        <input type="text" wire:model.defer="subject"
+            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white">
+        @error('subject') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
+    </div>
 
-                    <!-- CTA -->
-                    <button type="submit"
-                        class="w-full flex items-center justify-center gap-2
-                   bg-primary text-black py-3.5 rounded-full
-                   font-semibold hover:brightness-110 transition">
-                        Send Message
-                        <i class="ri-send-plane-line"></i>
-                    </button>
-                    <script>
-                        grecaptcha.ready(function() {
-                            grecaptcha.execute(
-                                "{{ config('services.recaptcha_v3.site_key') }}", {
-                                    action: 'submit'
-                                }
-                            ).then(function(token) {
-                                document.getElementById('recaptcha_token').value = token;
-                            });
-                        });
-                    </script>
+    <!-- Message -->
+    <div>
+        <label class="block text-sm text-white/60 mb-2">Message</label>
+        <textarea rows="4" wire:model.defer="message"
+            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white"></textarea>
+        @error('message') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
+    </div>
 
-                    <!-- Privacy Note -->
-                    <p class="text-center text-xs text-white/40">
-                        We respect your privacy. Your details stay confidential.
-                    </p>
+    <!-- Turnstile -->
+    <div wire:ignore>
+        <div class="cf-turnstile"
+            data-sitekey="{{ config('services.turnstile.site_key') }}"
+            data-callback="turnstileCallback">
+        </div>
+    </div>
 
-                </form>
+    @error('turnstileToken')
+        <p class="text-xs text-red-400">{{ $message }}</p>
+    @enderror
+
+    <!-- Submit -->
+    <button type="submit"
+        wire:loading.attr="disabled"
+        class="w-full bg-primary text-black py-3.5 rounded-full font-semibold">
+        <span wire:loading.remove>Send Message</span>
+        <span wire:loading>Sending...</span>
+    </button>
+
+    <p class="text-center text-xs text-white/40">
+        We respect your privacy.
+    </p>
+</form>
+
 
             </div>
+
+
 
         </div>
     </section>
@@ -612,6 +600,16 @@
             </div>
         </div>
     </section>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+    <script>
+        function turnstileCallback(token) {
+            @this.set('turnstileToken', token);
+        }
+    </script>
+
+
+
 
 
 </div>

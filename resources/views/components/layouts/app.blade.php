@@ -85,7 +85,7 @@
 <body class="antialiased bg-gray-50 text-gray-800 font-sans">
 
     <!-- Header -->
-    <livewire:public.includes.header2 />
+    <livewire:includes.header/>
 
     <main class="min-h-screen max-w-full bg-black overflow-x-hidden">
         {{ $slot }}
@@ -94,9 +94,13 @@
 
     <!-- Footer -->
     <livewire:includes.footer />
-    <script src="https://www.google.com/recaptcha/api.js?render={{ config('services.recaptcha_v3.site_key') }}"></script>
+@if (!request()->routeIs('contact'))
+    <livewire:model.contact-modal />
+@endif
 
     @livewireScripts
+    
 </body>
+
 
 </html>

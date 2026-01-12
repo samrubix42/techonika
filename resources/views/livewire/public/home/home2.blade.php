@@ -199,7 +199,8 @@
 
 
             <!-- CTA -->
-            <a href="#contact"
+            <button     @click="$dispatch('open-modal', { to: 'contact' })"
+
                 class="inline-flex items-center gap-3
               bg-primary text-black
               px-8 py-3.5 rounded-lg
@@ -208,7 +209,7 @@
               transition-all duration-300">
                 Get in Touch
                 <i class="ri-arrow-right-line"></i>
-            </a>
+</button>
 
         </div>
     </section>
@@ -1913,13 +1914,14 @@
 
                         <!-- CTA -->
                         <div class="mt-10 flex flex-wrap gap-4">
-                            <a href="#contact"
+                            <button 
+                            @click="contactopen = true"
                                 class="inline-flex items-center gap-2
                               px-8 py-3.5 rounded-full
                               bg-primary text-black font-semibold
                               hover:opacity-90 transition">
                                 Get in Touch
-                            </a>
+</button>
 
                             <a href="#services"
                                 class="inline-flex items-center gap-2
