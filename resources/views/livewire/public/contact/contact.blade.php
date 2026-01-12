@@ -178,6 +178,9 @@
                          focus:outline-none focus:border-primary
                          focus:ring-1 focus:ring-primary/40 transition"></textarea>
                     </div>
+                      <div class="g-recaptcha"
+         data-sitekey="{{ config('services.recaptcha.site_key') }}">
+    </div>
 
                     <!-- CTA -->
                     <button type="submit"
