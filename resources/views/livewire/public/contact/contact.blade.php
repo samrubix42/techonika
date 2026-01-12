@@ -190,6 +190,16 @@
                         Send Message
                         <i class="ri-send-plane-line"></i>
                     </button>
+                    <script>
+grecaptcha.ready(function () {
+    grecaptcha.execute(
+        "{{ config('services.recaptcha_v3.site_key') }}",
+        {action: 'submit'}
+    ).then(function (token) {
+        document.getElementById('recaptcha_token').value = token;
+    });
+});
+</script>
 
                     <!-- Privacy Note -->
                     <p class="text-center text-xs text-white/40">

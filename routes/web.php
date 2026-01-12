@@ -29,6 +29,8 @@ use App\Livewire\Public\Service\Service;
 use App\Livewire\Public\Service\ServiceView;
 use App\Livewire\Public\WebDesigning\Index as WebDesigningIndex;
 use App\Livewire\Public\WebDevelopment\Index as WebDevelopmentIndex;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -64,6 +66,36 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/update-blog/{post}',UpdateBlog::class)->name('update-blog');
     Route::get('/blog-list',BlogList::class)->name('blog-list');
     Route::get('/blog-category',CategoryList::class)->name('blog-category');
+});
+
+Route::post('/captcha-v3-test', function (Request $request) {
+
+    $request->validate([
+        'recaptcha_token' => 'required',
+    ]);
+
+    $response = Http::asForm()->post(
+        'https://www.google.com/recaptcha/api/siteverify',
+        [
+            'secret'   => config('services.recaptcha_v3.secret_key'),
+            'response' => $request->recaptcha_token,
+            'remoteip'=> $request->ip(),
+        ]
+    )->json();
+
+    // Debug (temporarily)
+    // dd($response);
+
+    if (!($response['success'] ?? false)) {
+        return '❌ reCAPTCHA failed';
+    }
+
+    // Score check (IMPORTANT)
+    if (($response['score'] ?? 0) < 0.5) {
+        return '❌ Low score – suspected bot';
+    }
+
+    return '✅ reCAPTCHA v3 working';
 });
 
 Route::get('/clear-cache', function () {

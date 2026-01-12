@@ -94,7 +94,7 @@
 
     <!-- Footer -->
     <livewire:includes.footer />
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?render={{ config('services.recaptcha_v3.site_key') }}"></script>
 
     @livewireScripts
 </body>
