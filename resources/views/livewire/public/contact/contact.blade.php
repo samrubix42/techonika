@@ -132,32 +132,40 @@
                     <!-- Name -->
                     <div>
                         <label class="block text-sm text-white/60 mb-2">Your Name</label>
-                        <input type="text" wire:model.defer="name"
-                            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white">
+                        <input type="text" wire:model.defer="name" placeholder="John Doe"
+                            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white placeholder:text-white/40">
                         @error('name') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
                     </div>
 
                     <!-- Email -->
                     <div>
                         <label class="block text-sm text-white/60 mb-2">Email</label>
-                        <input type="email" wire:model.defer="email"
-                            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white">
+                        <input type="email" wire:model.defer="email" placeholder="your@email.com"
+                            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white placeholder:text-white/40">
                         @error('email') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div>
+                        <label class="block text-sm text-white/60 mb-2">Phone Number</label>
+                        <input type="tel" wire:model.defer="phone" placeholder="+91 987659999"
+                            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white placeholder:text-white/40">
+                        @error('phone') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
                     </div>
 
                     <!-- Subject -->
                     <div>
                         <label class="block text-sm text-white/60 mb-2">Subject</label>
-                        <input type="text" wire:model.defer="subject"
-                            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white">
+                        <input type="text" wire:model.defer="subject" placeholder="How can we help you?"
+                            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white placeholder:text-white/40">
                         @error('subject') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
                     </div>
 
                     <!-- Message -->
                     <div>
                         <label class="block text-sm text-white/60 mb-2">Message</label>
-                        <textarea rows="4" wire:model.defer="message"
-                            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white"></textarea>
+                        <textarea rows="4" wire:model.defer="message" placeholder="Tell us about your project or inquiry..."
+                            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white placeholder:text-white/40"></textarea>
                         @error('message') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
                     </div>
 

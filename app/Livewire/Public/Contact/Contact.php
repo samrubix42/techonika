@@ -12,13 +12,15 @@ class Contact extends Component
 {
     public $name = '';
     public $email = '';
+    public $phone = '';
     public $subject = '';
     public $message = '';
     public $turnstileToken;
 
     protected $rules = [
         'name'    => 'required|string|min:2',
-        'email'   => 'required|email',
+        'email'   => 'nullable|email',
+        'phone'   => 'required|string|min:7',
         'subject' => 'nullable|string|max:150',
         'message' => 'required|string|min:5',
     ];
@@ -53,12 +55,12 @@ class Contact extends Component
 
         // Send email notification
         try {
-            Mail::to('techonika.com@gmail.com')->send(new ContactMail($contact));
+            Mail::to('techonika@gmail.com')->send(new ContactMail($contact));
         } catch (\Exception $e) {
             \Log::error('Failed to send contact form email: ' . $e->getMessage());
         }
 
-        $this->reset(['name', 'email', 'subject', 'message', 'turnstileToken']);
+        $this->reset(['name', 'email', 'phone', 'subject', 'message', 'turnstileToken']);
 
         session()->flash('success', 'Thank you — your message has been sent.');
     }
