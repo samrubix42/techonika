@@ -66,16 +66,16 @@
 
                 <!-- CTA -->
                 <div class="mt-12 flex flex-wrap gap-4">
-                    <a href="#contact"
+                    <button @click="$dispatch('open-modal', { to: 'contact' })"
                        class="inline-flex items-center gap-2
                               bg-primary text-black
                               px-8 py-3.5 rounded-full
                               font-semibold hover:brightness-110 transition">
                         Start Your Design Project
                         <i class="ri-arrow-right-line"></i>
-                    </a>
+                    </button>
 
-                    <a href="#portfolio"
+                    <a href="{{route('portfolio')}}"
                        class="inline-flex items-center gap-2
                               px-8 py-3.5 rounded-full
                               border border-white/20
@@ -978,13 +978,13 @@
 
             <!-- CTA -->
             <div class="mt-16">
-                <a href="#contact"
+                <button @click="$dispatch('open-modal', { to: 'contact' })"
                    class="inline-flex items-center justify-center
                           px-8 py-4 rounded-full
                           bg-primary text-black font-medium
                           hover:opacity-90 transition">
                     Start with Clarity
-                </a>
+                </button>
             </div>
 
         </div>
