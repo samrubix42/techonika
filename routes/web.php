@@ -46,7 +46,7 @@ Route::get('/web-designing',WebDesigningIndex::class)->name('webdesigning');
 Route::get('/graphic-designing',GraphicDesigningIndex::class)->name('graphicdesigning');
 Route::get('/mobile-app-development',App\Livewire\Public\MobileDevelopment\Index::class)->name('mobileappdevelopment');
 Route::get('/blog',Blog::class)->name('blog');
-Route::get('/blog-view',BlogView::class)->name('blog.view');
+Route::get('/blog-view/{slug}',BlogView::class)->name('blog.view');
 Route::get('/about',About::class)->name('about');
 Route::get('/portfolio',Portfolio::class)->name('portfolio');
 Route::get('/services',Service::class)->name('services');
