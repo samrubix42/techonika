@@ -820,109 +820,67 @@
         <!-- Content -->
         <div class="relative max-w-7xl mx-auto px-6">
 
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
+              <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8">
 
-                <!-- Item -->
-                <div
-                    class="group bg-white/10 backdrop-blur-xl
-                       border border-white/20
-                       rounded-2xl px-6 py-8
-                       transition-all duration-300
-                       hover:-translate-y-1 hover:border-primary">
+                <!-- Stat Card -->
+                <div class="group bg-white/5 border border-white/15 backdrop-blur
+                        rounded-xl p-5 sm:p-6 text-center
+                        hover:border-primary/60 transition-all">
 
-                    <div
-                        class="w-14 h-14 mx-auto mb-4
-                           rounded-full
-                           bg-white/10 border border-white/20
-                           flex items-center justify-center
-                           text-primary text-2xl
-                           group-hover:bg-primary/20 transition">
-                        <i class="ri-user-smile-line"></i>
-                    </div>
-
-                    <h3 class="text-3xl font-bold text-white">
-                        800<span class="text-primary">+</span>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
+                        80+
                     </h3>
-                    <p class="mt-1 text-white/70 text-sm tracking-wide uppercase">
-                        Happy Customers
+                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
+                        Projects Delivered
                     </p>
                 </div>
 
-                <!-- Item -->
-                <div
-                    class="group bg-white/10 backdrop-blur-xl
-                       border border-white/20
-                       rounded-2xl px-6 py-8
-                       transition-all duration-300
-                       hover:-translate-y-1 hover:border-primary">
+                <div class="group bg-white/5 border border-white/15 backdrop-blur
+                        rounded-xl p-5 sm:p-6 text-center
+                        hover:border-primary/60 transition-all">
 
-                    <div
-                        class="w-14 h-14 mx-auto mb-4
-                           rounded-full
-                           bg-white/10 border border-white/20
-                           flex items-center justify-center
-                           text-primary text-2xl
-                           group-hover:bg-primary/20 transition">
-                        <i class="ri-briefcase-4-line"></i>
-                    </div>
-
-                    <h3 class="text-3xl font-bold text-white">
-                        15<span class="text-primary">+</span>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
+                        80+
                     </h3>
-                    <p class="mt-1 text-white/70 text-sm tracking-wide uppercase">
-                        Years Experience
+                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
+                        Clients Served
                     </p>
                 </div>
 
-                <!-- Item -->
-                <div
-                    class="group bg-white/10 backdrop-blur-xl
-                       border border-white/20
-                       rounded-2xl px-6 py-8
-                       transition-all duration-300
-                       hover:-translate-y-1 hover:border-primary">
+                <div class="group bg-white/5 border border-white/15 backdrop-blur
+                        rounded-xl p-5 sm:p-6 text-center
+                        hover:border-primary/60 transition-all">
 
-                    <div
-                        class="w-14 h-14 mx-auto mb-4
-                           rounded-full
-                           bg-white/10 border border-white/20
-                           flex items-center justify-center
-                           text-primary text-2xl
-                           group-hover:bg-primary/20 transition">
-                        <i class="ri-checkbox-circle-line"></i>
-                    </div>
-
-                    <h3 class="text-3xl font-bold text-white">
-                        1100<span class="text-primary">+</span>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
+                        15+
                     </h3>
-                    <p class="mt-1 text-white/70 text-sm tracking-wide uppercase">
-                        Successful Projects
+                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
+                        Ongoing Client Engagements
                     </p>
                 </div>
 
-                <!-- Item -->
-                <div
-                    class="group bg-white/10 backdrop-blur-xl
-                       border border-white/20
-                       rounded-2xl px-6 py-8
-                       transition-all duration-300
-                       hover:-translate-y-1 hover:border-primary">
+                <div class="group bg-white/5 border border-white/15 backdrop-blur
+                        rounded-xl p-5 sm:p-6 text-center
+                        hover:border-primary/60 transition-all">
 
-                    <div
-                        class="w-14 h-14 mx-auto mb-4
-                           rounded-full
-                           bg-white/10 border border-white/20
-                           flex items-center justify-center
-                           text-primary text-2xl
-                           group-hover:bg-primary/20 transition">
-                        <i class="ri-earth-line"></i>
-                    </div>
-
-                    <h3 class="text-3xl font-bold text-white">
-                        40<span class="text-primary">+</span>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
+                        10+
                     </h3>
-                    <p class="mt-1 text-white/70 text-sm tracking-wide uppercase">
-                        Countries Served
+                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
+                        Expert Professionals
+                    </p>
+                </div>
+
+                <div class="group bg-white/5 border border-white/15 backdrop-blur
+                        rounded-xl p-5 sm:p-6 text-center
+                        hover:border-primary/60 transition-all
+                        sm:col-span-3 lg:col-span-1">
+
+                    <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
+                        7+
+                    </h3>
+                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
+                        Years of Proven Experience
                     </p>
                 </div>
 
