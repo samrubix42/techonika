@@ -53,7 +53,7 @@
            px-4 sm:px-0">
 
                 <!-- Item -->
-                <span
+                <a href="{{ route('webdesigning') }}"
                     class="group relative
                flex flex-col sm:flex-row
                items-center justify-center
@@ -86,10 +86,10 @@
                     </span>
 
                     <span>Website Designing</span>
-                </span>
+                </a>
 
                 <!-- Repeat -->
-                <span class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+                <a href="{{ route('webdevelopment') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
                px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
                rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
                border border-white/20 text-xs sm:text-[13px] font-medium
@@ -102,9 +102,9 @@
                         <i class="ri-code-box-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
                     </span>
                     <span>Website Development</span>
-                </span>
+                </a>
 
-                <span class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+                <a href="{{ route('digital-marketing') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
                px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
                rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
                border border-white/20 text-xs sm:text-[13px] font-medium
@@ -117,9 +117,9 @@
                         <i class="ri-search-eye-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
                     </span>
                     <span>Search Engine Optimization</span>
-                </span>
+                </a>
 
-                <span class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+                <a href="{{ route('digital-marketing') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
                px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
                rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
                border border-white/20 text-xs sm:text-[13px] font-medium
@@ -132,9 +132,9 @@
                         <i class="ri-megaphone-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
                     </span>
                     <span>Social Marketing</span>
-                </span>
+                </a>
 
-                <span class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+                <a href="{{ route('webdevelopment') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
                px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
                rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
                border border-white/20 text-xs sm:text-[13px] font-medium
@@ -147,9 +147,9 @@
                         <i class="ri-store-2-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
                     </span>
                     <span>E-Commerce Development</span>
-                </span>
+                </a>
 
-                <span class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+                <a href="{{ route('webdevelopment') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
                px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
                rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
                border border-white/20 text-xs sm:text-[13px] font-medium
@@ -162,9 +162,9 @@
                         <i class="ri-layout-2-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
                     </span>
                     <span>Custom Design Development</span>
-                </span>
+                </a>
 
-                <span class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+                <a href="{{ route('webdevelopment') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
                px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
                rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
                border border-white/20 text-xs sm:text-[13px] font-medium
@@ -177,9 +177,9 @@
                         <i class="ri-settings-3-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
                     </span>
                     <span>Maintenance</span>
-                </span>
+                </a>
 
-                <span class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+                <a href="{{ route('mobileappdevelopment') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
                px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
                rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
                border border-white/20 text-xs sm:text-[13px] font-medium
@@ -192,7 +192,7 @@
                         <i class="ri-smartphone-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
                     </span>
                     <span>App Development</span>
-                </span>
+                </a>
 
             </div>
 
@@ -1284,7 +1284,7 @@
 
             <!-- CTA -->
             <div class="mt-14 text-center relative z-10">
-                <button class="bg-primary text-black px-8 py-3 rounded-lg font-semibold shadow-lg hover:opacity-90 transition">
+                <button @click="$dispatch('open-modal', { to: 'contact' })" class="bg-primary text-black px-8 py-3 rounded-lg font-semibold shadow-lg hover:opacity-90 transition">
                     Book Your Call
                 </button>
             </div>
