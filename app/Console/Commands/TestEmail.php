@@ -14,11 +14,11 @@ class TestEmail extends Command
     {
         try {
             Mail::raw('This is a test email from Techonika to verify email configuration is working.', function ($message) {
-                $message->to('samcool3203@gmail.com')
+                $message->to('techonika.com@gmail.com')
                         ->subject('Test Email - Techonika');
             });
 
-            $this->info('✅ Test email sent successfully to samcool3203@gmail.com');
+            $this->info('✅ Test email sent successfully to techonika.com@gmail.com');
             $this->info('Check your inbox (and spam folder)');
         } catch (\Exception $e) {
             $this->error('❌ Failed to send email');
