@@ -33,7 +33,7 @@
         <!-- SERVICES -->
         <div class="relative" @mouseenter="mega=true" @mouseleave="mega=false">
           <button class="flex items-center gap-1 hover:text-amber-400">
-            Services <i class="ri-arrow-down-s-line text-amber-400"></i>
+            SERVICES <i class="ri-arrow-down-s-line text-amber-400"></i>
           </button>
 
           <div x-show="mega" x-cloak x-transition
@@ -52,7 +52,7 @@
         <!-- PACKAGES -->
         <div class="relative" @mouseenter="packages=true" @mouseleave="packages=false">
           <button class="flex items-center gap-1 hover:text-amber-400">
-            Packages <i class="ri-arrow-down-s-line text-amber-400"></i>
+            PACKAGES <i class="ri-arrow-down-s-line text-amber-400"></i>
           </button>
 
           <div x-show="packages" x-cloak x-transition
@@ -84,12 +84,11 @@
       <div class="md:hidden flex items-center gap-3">
 
         <!-- MESSAGE -->
-        <a href="{{ route('contact') }}"
+        <button  @click="$dispatch('open-modal', { to: 'contact' })"
           class="w-10 h-10 flex items-center justify-center rounded-full
                  bg-white/10 backdrop-blur border border-white/20 text-amber-400">
           <i class="ri-chat-3-line text-lg"></i>
-        </a>
-
+        </button>
         <!-- MENU -->
         <button @click="open=true" class="text-amber-400 text-2xl">
           <i class="ri-menu-4-line"></i>
@@ -114,11 +113,11 @@
 
         <!-- SERVICES -->
         <div>
-          <button @click="mobileServices=!mobileServices" class="flex justify-between w-full">
+          <button @click="mobileServices=!mobileServices" class="flex justify-between  w-full">
             Services <i class="ri-arrow-down-s-line"></i>
           </button>
 
-          <div x-show="mobileServices" x-transition class="pl-4 mt-3 space-y-3 text-white/80">
+          <div x-show="mobileServices" x-transition class="pl-4 mt-3 space-y-3 flex flex-col text-white/80">
             <a href="{{ route('webdevelopment') }}">Web Development</a>
             <a href="{{ route('webdesigning') }}">Web Designing</a>
             <a href="{{ route('digital-marketing') }}">Digital Marketing</a>
@@ -133,7 +132,7 @@
             Packages <i class="ri-arrow-down-s-line"></i>
           </button>
 
-          <div x-show="mobilePackages" x-transition class="pl-4 mt-3 space-y-3 text-white/80">
+          <div x-show="mobilePackages" x-transition class="pl-4 mt-3 flex flex-col space-y-3 text-white/80">
             <a href="{{ route('seo-package') }}">SEO Package</a>
             <a href="{{ route('smo-package') }}">SMO Package</a>
             <a href="{{ route('startup-package') }}">Startup Package</a>
@@ -159,13 +158,13 @@
 
     <div class="flex justify-around py-3">
 
-      <a href="tel:+919999999999"
+      <a href="tel:+918810599816"
         class="flex flex-col items-center text-white/70 hover:text-amber-400 transition">
         <i class="ri-phone-line text-xl"></i>
         <span class="text-[11px] mt-1">Call</span>
       </a>
 
-      <a href="https://wa.me/919999999999" target="_blank"
+      <a href="https://wa.me/918810599816" target="_blank"
         class="flex flex-col items-center text-white/70 hover:text-green-400 transition">
         <i class="ri-whatsapp-line text-xl"></i>
         <span class="text-[11px] mt-1">WhatsApp</span>
