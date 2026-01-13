@@ -347,13 +347,17 @@
                         </li>
                     </ul>
 
-                    <a href="#contact"
+                    <button
+                        @click="
+                            Livewire.dispatch('setPackage', 'SMO Starter Package');
+                            window.dispatchEvent(new CustomEvent('open-package-modal'));
+                        "
                         class="mt-10 inline-flex justify-center items-center gap-2
                            py-3 rounded-full border border-primary
                            text-primary hover:bg-primary hover:text-black transition">
                         Get Started
                         <i class="ri-arrow-right-line"></i>
-                    </a>
+                    </button>
                 </div>
 
                 <!-- GROWTH SMO -->
@@ -420,13 +424,17 @@
                         </li>
                     </ul>
 
-                    <a href="#contact"
+                    <button
+                        @click="
+                            Livewire.dispatch('setPackage', 'SMO Growth Package');
+                            window.dispatchEvent(new CustomEvent('open-package-modal'));
+                        "
                         class="mt-10 inline-flex justify-center items-center gap-2
                            py-3 rounded-full bg-primary
                            text-black font-semibold hover:opacity-90 transition">
                         Choose Plan
                         <i class="ri-check-line"></i>
-                    </a>
+                    </button>
                 </div>
 
                 <!-- ADVANCED SMO -->
@@ -482,13 +490,17 @@
                         </li>
                     </ul>
 
-                    <a href="#contact"
+                    <button
+                        @click="
+                            Livewire.dispatch('setPackage', 'SMO Advanced Package');
+                            window.dispatchEvent(new CustomEvent('open-package-modal'));
+                        "
                         class="mt-10 inline-flex justify-center items-center gap-2
                            py-3 rounded-full border border-primary
                            text-primary hover:bg-primary hover:text-black transition">
                         Talk to Us
                         <i class="ri-chat-3-line"></i>
-                    </a>
+                    </button>
                 </div>
 
             </div>
@@ -870,6 +882,6 @@
     </div>
 </section>
 
-
+<livewire:model.package-modal />
 
 </div>

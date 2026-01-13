@@ -148,13 +148,17 @@
                     </li>
                 </ul>
 
-                <a href="#contact"
-                   class="mt-8 inline-block w-full text-center
-                          py-3 rounded-full
-                          border border-primary text-primary
-                          hover:bg-primary hover:text-black transition">
+                <button
+                    @click="
+                        Livewire.dispatch('setPackage', 'SEO Starter Package');
+                        window.dispatchEvent(new CustomEvent('open-package-modal'));
+                    "
+                    class="mt-8 inline-block w-full text-center
+                           py-3 rounded-full
+                           border border-primary text-primary
+                           hover:bg-primary hover:text-black transition">
                     Get Started
-                </a>
+                </button>
             </div>
 
             <!-- GROWTH (POPULAR) -->
@@ -219,13 +223,17 @@
                     </li>
                 </ul>
 
-                <a href="#contact"
-                   class="mt-8 inline-block w-full text-center
-                          py-3 rounded-full
-                          bg-primary text-black font-semibold
-                          hover:opacity-90 transition">
+                <button
+                    @click="
+                        Livewire.dispatch('setPackage', 'SEO Growth Package');
+                        window.dispatchEvent(new CustomEvent('open-package-modal'));
+                    "
+                    class="mt-8 inline-block w-full text-center
+                           py-3 rounded-full
+                           bg-primary text-black font-semibold
+                           hover:opacity-90 transition">
                     Choose Plan
-                </a>
+                </button>
             </div>
 
             <!-- ADVANCED -->
@@ -279,13 +287,17 @@
                     </li>
                 </ul>
 
-                <a href="#contact"
-                   class="mt-8 inline-block w-full text-center
-                          py-3 rounded-full
-                          border border-primary text-primary
-                          hover:bg-primary hover:text-black transition">
+                <button
+                    @click="
+                        Livewire.dispatch('setPackage', 'SEO Advanced Package');
+                        window.dispatchEvent(new CustomEvent('open-package-modal'));
+                    "
+                    class="mt-8 inline-block w-full text-center
+                           py-3 rounded-full
+                           border border-primary text-primary
+                           hover:bg-primary hover:text-black transition">
                     Talk to Us
-                </a>
+                </button>
             </div>
 
         </div>
@@ -831,4 +843,5 @@
         </div>
     </div>
 </section>
+<livewire:model.package-modal />
 </div>

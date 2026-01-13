@@ -276,7 +276,7 @@
 
             <!-- LAUNCH PACKAGE -->
             <div class="bg-white/5 border border-white/10 rounded-3xl p-8
-                        hover:border-primary/50 transition">
+                        hover:border-primary/50 transition flex flex-col">
 
                 <div class="flex items-center gap-3 mb-6">
                     <div class="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center">
@@ -289,26 +289,62 @@
                     Perfect for founders launching their startup for the first time.
                 </p>
 
-                <p class="text-4xl font-bold text-primary mb-6">₹19,999</p>
+                <p class="text-4xl font-bold text-primary mb-2">₹19,999</p>
+                <p class="text-white/50 text-sm mb-6">one-time</p>
 
-                <ul class="space-y-4 text-white/80 text-sm">
-                    <li class="flex gap-3"><i class="ri-check-line text-primary"></i> 5-page professional website</li>
-                    <li class="flex gap-3"><i class="ri-check-line text-primary"></i> Basic branding & visuals</li>
-                    <li class="flex gap-3"><i class="ri-check-line text-primary"></i> Mobile & SEO friendly setup</li>
-                    <li class="flex gap-3"><i class="ri-check-line text-primary"></i> Contact & enquiry forms</li>
-                    <li class="flex gap-3"><i class="ri-check-line text-primary"></i> Launch support</li>
+                <ul class="space-y-3 text-white/80 text-sm flex-1">
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>5-page professional website (Home, About, Services, Contact, Blog/Portfolio)</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Responsive design (mobile & tablet optimized)</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Basic SEO setup (meta tags, sitemap, speed optimization)</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Professional logo design & basic branding</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Contact & enquiry forms with email notifications</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Google Analytics setup & tracking</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Social media integration (links & share buttons)</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>1 month post-launch support & bug fixes</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Website training & handover documentation</span>
+                    </li>
                 </ul>
 
-                <a href="#contact"
-                   class="mt-8 block text-center py-3 rounded-full
-                          border border-primary text-primary
-                          hover:bg-primary hover:text-black transition">
+                <button
+                    @click="
+                        Livewire.dispatch('setPackage', 'Startup Launch Package');
+                        window.dispatchEvent(new CustomEvent('open-package-modal'));
+                    "
+                    class="mt-8 block w-full text-center py-3 rounded-full
+                           border border-primary text-primary
+                           hover:bg-primary hover:text-black transition">
                     Start Launch
-                </a>
+                </button>
             </div>
 
             <!-- GROWTH PACKAGE (POPULAR) -->
-            <div class="relative bg-primary/5 border-2 border-primary rounded-3xl p-8">
+            <div class="relative bg-primary/5 border-2 border-primary rounded-3xl p-8 flex flex-col">
 
                 <span class="absolute -top-4 left-1/2 -translate-x-1/2
                              bg-primary text-black px-4 py-1 rounded-full
@@ -327,26 +363,67 @@
                     Best for startups ready to attract users and build visibility.
                 </p>
 
-                <p class="text-4xl font-bold text-primary mb-6">₹39,999</p>
+                <p class="text-4xl font-bold text-primary mb-2">₹39,999</p>
+                <p class="text-white/50 text-sm mb-6">one-time + monthly support</p>
 
-                <ul class="space-y-4 text-white/80 text-sm">
-                    <li class="flex gap-3"><i class="ri-check-line text-primary"></i> Everything in Launch</li>
-                    <li class="flex gap-3"><i class="ri-check-line text-primary"></i> SEO foundation & keywords</li>
-                    <li class="flex gap-3"><i class="ri-check-line text-primary"></i> Social media setup</li>
-                    <li class="flex gap-3"><i class="ri-check-line text-primary"></i> Content guidance</li>
-                    <li class="flex gap-3"><i class="ri-check-line text-primary"></i> Monthly performance review</li>
+                <ul class="space-y-3 text-white/80 text-sm flex-1">
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span><strong class="text-white">Everything in Launch Package</strong></span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Advanced SEO foundation (keyword research, on-page optimization)</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Social media profile setup (Instagram, Facebook, LinkedIn)</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>12 social media posts (first month content)</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Blog setup with 3 SEO-optimized articles</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Google Business Profile setup & optimization</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Email marketing setup (newsletter integration)</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Growth strategy roadmap & content calendar</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Monthly performance review & insights (first 3 months)</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Priority support & consultation calls</span>
+                    </li>
                 </ul>
 
-                <a href="#contact"
-                   class="mt-8 block text-center py-3 rounded-full
-                          bg-primary text-black font-semibold">
+                <button
+                    @click="
+                        Livewire.dispatch('setPackage', 'Startup Growth Package');
+                        window.dispatchEvent(new CustomEvent('open-package-modal'));
+                    "
+                    class="mt-8 block w-full text-center py-3 rounded-full
+                           bg-primary text-black font-semibold
+                           hover:opacity-90 transition">
                     Choose Growth
-                </a>
+                </button>
             </div>
 
             <!-- SCALE PACKAGE -->
             <div class="bg-white/5 border border-white/10 rounded-3xl p-8
-                        hover:border-primary/50 transition">
+                        hover:border-primary/50 transition flex flex-col">
 
                 <div class="flex items-center gap-3 mb-6">
                     <div class="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center">
@@ -359,22 +436,66 @@
                     Designed for funded or fast-growing startups.
                 </p>
 
-                <p class="text-4xl font-bold text-primary mb-6">Custom</p>
+                <p class="text-4xl font-bold text-primary mb-2">Custom</p>
+                <p class="text-white/50 text-sm mb-6">tailored pricing</p>
 
-                <ul class="space-y-4 text-white/80 text-sm">
-                    <li class="flex gap-3"><i class="ri-check-line text-primary"></i> Full digital strategy</li>
-                    <li class="flex gap-3"><i class="ri-check-line text-primary"></i> Advanced SEO & content</li>
-                    <li class="flex gap-3"><i class="ri-check-line text-primary"></i> Paid ads planning</li>
-                    <li class="flex gap-3"><i class="ri-check-line text-primary"></i> Conversion optimization</li>
-                    <li class="flex gap-3"><i class="ri-check-line text-primary"></i> Dedicated account manager</li>
+                <ul class="space-y-3 text-white/80 text-sm flex-1">
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span><strong class="text-white">Everything in Growth Package</strong></span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Custom web application or advanced features</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Comprehensive digital marketing strategy</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Advanced SEO with link building & content marketing</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Paid advertising strategy (Google Ads, Meta Ads)</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Conversion rate optimization (CRO) & A/B testing</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Automated email marketing campaigns & funnels</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Social media management with ongoing content creation</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Dedicated account manager & growth strategist</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>Weekly strategy calls & detailed analytics reporting</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="ri-check-line text-primary text-lg shrink-0"></i>
+                        <span>24/7 priority support & rapid response</span>
+                    </li>
                 </ul>
 
-                <a href="#contact"
-                   class="mt-8 block text-center py-3 rounded-full
-                          border border-primary text-primary
-                          hover:bg-primary hover:text-black transition">
+                <button
+                    @click="
+                        Livewire.dispatch('setPackage', 'Startup Scale Package');
+                        window.dispatchEvent(new CustomEvent('open-package-modal'));
+                    "
+                    class="mt-8 block w-full text-center py-3 rounded-full
+                           border border-primary text-primary
+                           hover:bg-primary hover:text-black transition">
                     Talk to Us
-                </a>
+                </button>
             </div>
 
         </div>
@@ -694,5 +815,6 @@
   </div>
 </section>
 
+<livewire:model.package-modal />
 
 </div>
