@@ -14,6 +14,7 @@ use App\Livewire\Admin\RolePermission\RoleList;
 use App\Livewire\Admin\RolePermission\UserList;
 use App\Livewire\Admin\Service\ServiceCategoryList;
 use App\Livewire\Auth\Login;
+use App\Livewire\FooterPage\Disclaimer;
 use App\Livewire\FooterPage\RefundCancellation;
 use App\Livewire\FooterPage\TermAndCondition;
 use App\Livewire\PrivacyPolicy;
@@ -57,6 +58,7 @@ Route::get('/contact',App\Livewire\Public\Contact\Contact::class)->name('contact
 Route::get('/privacy-policy',PrivacyPolicy::class)->name('privacy-policy');
 Route::get('/refund-policy',RefundCancellation::class)->name('refund-policy');
 Route::get('/terms-and-conditions',TermAndCondition::class)->name('terms-conditions');
+Route::get('disclaimer',Disclaimer::class)->name('disclaimer');
 Route::get('/login',Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/',Dashboard::class)->name('dashboard');

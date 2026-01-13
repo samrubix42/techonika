@@ -1,156 +1,191 @@
-<div class="w-full bg-black text-white min-h-screen py-12">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 px-[6%] py-12">
-        <div class="flex flex-col lg:flex-row gap-8">
+<section class="bg-black text-white min-h-screen py-20">
+    <div class="max-w-4xl mx-auto px-6">
 
-            <!-- Main content -->
-            <main class="flex-1">
-                <div class="mb-6">
-                    <div class="flex items-start justify-between gap-4">
-                        <div>
-                            <h1 class="text-3xl sm:text-4xl font-bold">Privacy Policy</h1>
-                            <p class="text-sm text-slate-400 mt-1">Last updated: <strong>Dec 30, 2025</strong></p>
+        <!-- Page Header -->
+        <div class="text-center mb-16">
+            <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                Privacy Policy
+            </h1>
+            <p class="mt-4 text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
+                How Techonika collects, uses, and protects your personal information.
+            </p>
+        </div>
 
-                            <div class="mt-4 bg-white/3 rounded-lg p-4 max-w-2xl">
-                                <p class="text-sm text-slate-200">This policy explains how Techonika collects, uses, and protects personal data and the choices you have.</p>
-                                <ul class="mt-3 text-sm text-slate-300 list-disc pl-5">
-                                    <li>Data collection & usage</li>
-                                    <li>Cookies & tracking</li>
-                                    <li>Your rights & contact options</li>
-                                </ul>
-                            </div>
-                        </div>
+        <!-- Policy Card -->
+        <div class="space-y-12 bg-white/5 border border-white/10 rounded-2xl p-8 sm:p-10">
 
-                        <div class="flex items-center gap-2">
-                            <!-- <button onclick="window.print()" class="px-3 py-2 rounded bg-amber-400 text-black text-sm font-semibold">Print</button>
-                            <a id="download-pdf" href="#" class="px-3 py-2 rounded bg-white/5 text-sm hover:bg-white/10">Download PDF</a>
-                            <a href="#contact" class="px-3 py-2 rounded border border-white/10 text-sm hover:bg-white/5">Contact</a> -->
-                        </div>
-                    </div>
-                </div>
+            <!-- Intro -->
+            <section>
+                <p class="text-gray-300 leading-relaxed">
+                    At <span class="font-semibold text-white">Techonika</span>, a unit of
+                    <span class="font-semibold text-white">GrowthVault Innovations Pvt. Ltd.</span>,
+                    we value your privacy and are committed to protecting the personal information
+                    you share with us. This Privacy Policy explains how we collect, use, store,
+                    and safeguard your data when you visit our website or communicate with us.
+                </p>
 
-                <article class="prose prose-lg dark:prose-invert max-w-none text-slate-200">
-                    <p>Techonika ("we", "us", "our") is committed to protecting your privacy and personal data. This policy explains what data we collect, how we use it, and the choices you have.</p>
+                <p class="mt-4 text-gray-300 leading-relaxed">
+                    Your trust matters to us. That is why we follow transparent and responsible
+                    data practices to ensure your personal information remains safe, secure,
+                    and confidential at all times.
+                </p>
+            </section>
 
-                    <h2 id="what-we-collect">What we collect</h2>
-                    <p>We collect information you provide directly and information collected automatically when you use our services.</p>
-                    <ul>
-                        <li><strong>Account data:</strong> name, email, profile information (when you sign up).</li>
-                        <li><strong>Usage data:</strong> pages visited, features used, performance metrics.</li>
-                        <li><strong>Cookies and tracking:</strong> identifiers used to personalize experience and measure usage.</li>
-                    </ul>
+            <!-- Why Privacy Matters -->
+            <section>
+                <h2 class="text-xl font-semibold mb-4">
+                    Why Your Privacy Matters to Us
+                </h2>
+                <p class="text-gray-300 leading-relaxed">
+                    When you interact with Techonika—by filling out a form, subscribing to our
+                    newsletter, or contacting us—you share certain personal details with us.
+                    We use this information only to improve our services, respond to inquiries,
+                    and provide a better website experience.
+                </p>
+                <p class="mt-4 text-gray-300 leading-relaxed">
+                    We never misuse your data or sell it to unauthorized parties.
+                    Your privacy is not just a legal requirement—it is our responsibility.
+                </p>
+            </section>
 
-                    <h2 id="how-we-use">How we use your information</h2>
-                    <p>We use data to operate and improve our services, personalize content, provide support, and comply with legal obligations.</p>
+            <!-- Info Collected -->
+            <section>
+                <h2 class="text-xl font-semibold mb-4">
+                    Information We Collect
+                </h2>
 
-                    <h2 id="cookies">Cookies and similar technologies</h2>
-                    <p>We use cookies to remember preferences, enable features, and analyze traffic. You can control cookie preferences via your browser settings.</p>
+                <p class="text-gray-300 mb-4">
+                    We may collect personal information such as:
+                </p>
 
-                    <h2 id="third-parties">Third-party services</h2>
-                    <p>We may share data with trusted service providers (analytics, hosting, email) to provide our services. We require vendors to protect your information and not use it for other purposes.</p>
+                <ul class="space-y-3 text-gray-300">
+                    <li>• First and last name</li>
+                    <li>• Email address</li>
+                    <li>• Phone number</li>
+                    <li>• Company name</li>
+                    <li>• Location</li>
+                    <li>• Information submitted through contact forms or service requests</li>
+                </ul>
 
-                    <h2 id="security">Security</h2>
-                    <p>We implement technical and organizational measures to protect data. However, no transmission over the internet is 100% secure.</p>
+                <p class="mt-4 text-gray-300 leading-relaxed">
+                    We only collect data that is relevant and necessary for communication
+                    and service delivery.
+                </p>
+            </section>
 
-                    <h2 id="retention">Data retention</h2>
-                    <p>We retain data as long as necessary to provide the service and comply with legal obligations. You can request deletion as described below.</p>
+            <!-- Technical Info -->
+            <section>
+                <h2 class="text-xl font-semibold mb-4">
+                    How We Collect Technical Information
+                </h2>
 
-                    <h2 id="your-rights">Your rights</h2>
-                    <p>You may access, correct, or request deletion of your personal data. For requests, contact us at <a href="mailto:info@techonika.com" class="text-amber-300">info@techonika.com</a> or call <a href="tel:+918810599816" class="text-amber-300">+91-8810599816</a>.</p>
+                <p class="text-gray-300 mb-4">
+                    Like most modern websites, we automatically collect certain technical data:
+                </p>
 
-                    <h2 id="children">Children's privacy</h2>
-                    <p>Our services are not directed at children under 13 (or local minimum age). We do not knowingly collect information from children.</p>
+                <ul class="space-y-3 text-gray-300">
+                    <li>• IP address</li>
+                    <li>• Browser type</li>
+                    <li>• Operating system</li>
+                    <li>• Pages visited</li>
+                    <li>• Time and date of visit</li>
+                    <li>• Referring website</li>
+                </ul>
 
-                    <h2 id="changes">Changes to this policy</h2>
-                    <p>We may update this policy. We will post the effective date at the top of the page and notify users as appropriate.</p>
+                <p class="mt-4 text-gray-300 leading-relaxed">
+                    This data is collected through cookies, log files, and analytics tools
+                    for performance improvement and user experience optimization.
+                    It does not personally identify you.
+                </p>
+            </section>
 
-                    <h2 id="contact">Contact</h2>
-                    <p>If you have questions or requests, email us at <a href="mailto:info@techonika.com" class="text-amber-300">info@techonika.com</a> or call <a href="tel:+918810599816" class="text-amber-300">+91-8810599816</a>, or use our contact form.</p>
-                </article>
-            </main>
+            <!-- Usage -->
+            <section>
+                <h2 class="text-xl font-semibold mb-4">
+                    How We Use Your Information
+                </h2>
 
-            <!-- Sidebar / TOC -->
-            <aside class="hidden lg:block w-72 sticky top-28 self-start">
-                <div class="bg-white/3 p-4 rounded-lg">
-                    <h4 class="text-sm font-semibold text-white mb-3">On this page</h4>
-                    <nav class="text-sm text-slate-300 space-y-2" aria-label="Table of contents">
-                        <a href="#what-we-collect" class="flex items-center gap-2 px-2 py-1 rounded hover:bg-white/5 transition"><span class="w-2 h-2 bg-amber-400 rounded-full"></span>What we collect</a>
-                        <a href="#how-we-use" class="flex items-center gap-2 px-2 py-1 rounded hover:bg-white/5 transition"><span class="w-2 h-2 bg-amber-400 rounded-full"></span>How we use your information</a>
-                        <a href="#cookies" class="flex items-center gap-2 px-2 py-1 rounded hover:bg-white/5 transition"><span class="w-2 h-2 bg-amber-400 rounded-full"></span>Cookies</a>
-                        <a href="#third-parties" class="flex items-center gap-2 px-2 py-1 rounded hover:bg-white/5 transition"><span class="w-2 h-2 bg-amber-400 rounded-full"></span>Third-party services</a>
-                        <a href="#security" class="flex items-center gap-2 px-2 py-1 rounded hover:bg-white/5 transition"><span class="w-2 h-2 bg-amber-400 rounded-full"></span>Security</a>
-                        <a href="#retention" class="flex items-center gap-2 px-2 py-1 rounded hover:bg-white/5 transition"><span class="w-2 h-2 bg-amber-400 rounded-full"></span>Data retention</a>
-                        <a href="#your-rights" class="flex items-center gap-2 px-2 py-1 rounded hover:bg-white/5 transition"><span class="w-2 h-2 bg-amber-400 rounded-full"></span>Your rights</a>
-                        <a href="#contact" class="flex items-center gap-2 px-2 py-1 rounded hover:bg-white/5 transition"><span class="w-2 h-2 bg-amber-400 rounded-full"></span>Contact</a>
-                    </nav>
-                </div>
+                <ul class="space-y-3 text-gray-300">
+                    <li>• Respond to inquiries and requests</li>
+                    <li>• Provide services you request</li>
+                    <li>• Send updates or newsletters (only if opted in)</li>
+                    <li>• Improve website performance</li>
+                    <li>• Analyze user behavior for better service delivery</li>
+                </ul>
 
-                <div class="mt-6 bg-white/3 p-4 rounded-lg text-sm text-slate-300">
-                    <div class="font-semibold text-white">Need help?</div>
-                    <p class="mt-2">Reach out at <a href="mailto:info@techonika.com" class="text-amber-300">info@techonika.com</a> or <a href="tel:+918810599816" class="text-amber-300">+91-8810599816</a></p>
-                </div>
-            </aside>
+                <p class="mt-4 text-gray-300 leading-relaxed">
+                    Your information is shared only with trusted internal teams or partners
+                    involved in service delivery. We never sell or disclose your data
+                    for marketing or resale purposes.
+                </p>
+            </section>
+
+            <!-- Communication Control -->
+            <section>
+                <h2 class="text-xl font-semibold mb-4">
+                    Your Control Over Communication
+                </h2>
+                <p class="text-gray-300 leading-relaxed">
+                    You are always in control of your data. You may unsubscribe from emails
+                    at any time using the “Unsubscribe” link or contact us to update or remove
+                    your personal information.
+                </p>
+            </section>
+
+            <!-- Security -->
+            <section>
+                <h2 class="text-xl font-semibold mb-4">
+                    Data Security and Protection
+                </h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Techonika follows strict security practices using encrypted systems,
+                    secure servers, and modern protection tools to prevent unauthorized access,
+                    misuse, or loss of data.
+                </p>
+                <p class="mt-3 text-gray-300">
+                    Only authorized personnel have access to personal information and are
+                    trained to handle it responsibly.
+                </p>
+            </section>
+
+            <!-- Updates -->
+            <section>
+                <h2 class="text-xl font-semibold mb-4">
+                    Updates to This Privacy Policy
+                </h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Techonika may update this Privacy Policy at any time to reflect changes
+                    in laws, technology, or business practices. We encourage visitors to
+                    review this page periodically.
+                </p>
+            </section>
+
+            <!-- Liability -->
+            <section>
+                <h2 class="text-xl font-semibold mb-4">
+                    Limitation of Liability
+                </h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Techonika is not responsible for damages caused by third-party websites,
+                    external links, or unauthorized individuals falsely claiming association
+                    with our company.
+                </p>
+            </section>
+
+            <!-- Contact -->
+            <section class="border-t border-white/10 pt-8">
+                <h2 class="text-xl font-semibold mb-3">
+                    Contact Us
+                </h2>
+                <p class="text-gray-300">
+                    If you have any questions regarding this Privacy Policy or how your data
+                    is handled, please contact us through our official website.
+                </p>
+                <p class="mt-4 font-semibold text-white">
+                    Your privacy, trust, and confidence are important to us.
+                </p>
+            </section>
+
         </div>
     </div>
-
-    <!-- Mobile TOC toggle & drawer -->
-    <button id="toc-toggle-mobile" class="md:hidden fixed bottom-6 right-4 z-50 bg-amber-400 text-black p-3 rounded-full shadow-lg">TOC</button>
-
-    <div id="mobile-toc" class="md:hidden fixed bottom-20 right-4 z-50 hidden bg-black/80 p-4 rounded-lg w-72">
-        <div class="flex items-center justify-between mb-2">
-            <strong class="text-sm">Contents</strong>
-            <button id="close-mobile-toc" class="text-amber-300 text-sm">Close</button>
-        </div>
-        <nav class="text-sm text-slate-300 space-y-2">
-            <a href="#what-we-collect" class="block px-2 py-1 rounded hover:bg-white/5">What we collect</a>
-            <a href="#how-we-use" class="block px-2 py-1 rounded hover:bg-white/5">How we use your information</a>
-            <a href="#cookies" class="block px-2 py-1 rounded hover:bg-white/5">Cookies</a>
-            <a href="#third-parties" class="block px-2 py-1 rounded hover:bg-white/5">Third-party services</a>
-            <a href="#security" class="block px-2 py-1 rounded hover:bg-white/5">Security</a>
-            <a href="#retention" class="block px-2 py-1 rounded hover:bg-white/5">Data retention</a>
-            <a href="#your-rights" class="block px-2 py-1 rounded hover:bg-white/5">Your rights</a>
-            <a href="#contact" class="block px-2 py-1 rounded hover:bg-white/5">Contact</a>
-        </nav>
-    </div>
-
-    <script>
-        // Smooth scroll for TOC links (desktop and mobile)
-        const smoothLinks = document.querySelectorAll('a[href^="#"]');
-        smoothLinks.forEach(a=>{
-            a.addEventListener('click', function(e){
-                const target = document.querySelector(this.getAttribute('href'));
-                if(target){
-                    e.preventDefault();
-                    target.scrollIntoView({behavior:'smooth', block:'start'});
-                }
-                // close mobile toc after navigating
-                document.getElementById('mobile-toc')?.classList.add('hidden');
-            });
-        });
-
-        // Mobile TOC toggle
-        const tocToggle = document.getElementById('toc-toggle-mobile');
-        const mobileToc = document.getElementById('mobile-toc');
-        const closeMobileToc = document.getElementById('close-mobile-toc');
-
-        tocToggle?.addEventListener('click', function(){ mobileToc?.classList.toggle('hidden'); });
-        closeMobileToc?.addEventListener('click', function(){ mobileToc?.classList.add('hidden'); });
-
-        // Active link highlighting
-        const sections = Array.from(document.querySelectorAll('main article h2[id]'));
-        const tocLinks = Array.from(document.querySelectorAll('aside nav a, #mobile-toc nav a'));
-
-        function updateActiveToc(){
-            const scrollPos = window.scrollY + 140;
-            let current = sections[0];
-            for(const s of sections){
-                if(s.offsetTop <= scrollPos) current = s;
-            }
-            tocLinks.forEach(l => l.classList.remove('text-amber-300', 'font-semibold'));
-            const active = tocLinks.find(l => l.getAttribute('href') === ('#' + current.id));
-            if(active) active.classList.add('text-amber-300', 'font-semibold');
-        }
-
-        window.addEventListener('scroll', updateActiveToc);
-        window.addEventListener('load', updateActiveToc);
-    </script>
-</div>
+</section>

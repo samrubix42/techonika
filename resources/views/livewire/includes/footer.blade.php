@@ -11,8 +11,8 @@
                     We build powerful digital solutions that help businesses scale, automate and innovate — with clarity and impact.
                 </p>
                 <div class="mt-6 flex items-center gap-3">
-                    <a href="#" class="inline-flex items-center gap-2 bg-[#f6b615] text-black px-4 py-2 rounded-lg font-semibold hover:brightness-110 transition">Book a Call</a>
-                    <a href="#contact" class="text-sm text-gray-400 hover:text-white transition">Contact</a>
+                    <button @click="$dispatch('open-modal', { to: 'contact' })" class="inline-flex items-center gap-2 bg-[#f6b615] text-black px-4 py-2 rounded-lg font-semibold hover:brightness-110 transition">Book a Call</button>
+                    <a href="{{ route('contact') }}" class="text-sm text-gray-400 hover:text-white transition">Contact</a>
                 </div>
             </div>
 
@@ -21,27 +21,30 @@
                 <div>
                     <h4 class="text-sm tracking-widest uppercase text-[#f6b615] mb-4">Company</h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="#about" class="hover:text-white transition">About us</a></li>
-                        <li><a href="#careers" class="hover:text-white transition">Careers</a></li>
-                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="{{ route('about') }}" class="hover:text-white transition">About us</a></li>
+                        <li><a href="{{ route('portfolio') }}" class="hover:text-white transition">Portfolio</a></li>
+                        <li><a href="{{ route('contact') }}" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="{{ route('blog') }}" class="hover:text-white transition">Blog</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="text-sm tracking-widest uppercase text-[#f6b615] mb-4">Services</h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="#consulting" class="hover:text-white transition">Consulting</a></li>
-                        <li><a href="#speaking" class="hover:text-white transition">Speaking</a></li>
-                        <li><a href="#projects" class="hover:text-white transition">Projects</a></li>
+                        <li><a href="{{ route('webdevelopment') }}" class="hover:text-white transition">Web Development</a></li>
+                        <li><a href="{{ route('webdesigning') }}" class="hover:text-white transition">Web Designing</a></li>
+                        <li><a href="{{ route('digital-marketing') }}" class="hover:text-white transition">Digital Marketing</a></li>
+                        <li><a href="{{ route('graphicdesigning') }}" class="hover:text-white transition">Graphic Design</a></li>
+                        <li><a href="{{ route('mobileappdevelopment') }}" class="hover:text-white transition">Mobile App</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="text-sm tracking-widest uppercase text-[#f6b615] mb-4">Resources</h4>
+                    <h4 class="text-sm tracking-widest uppercase text-[#f6b615] mb-4">Packages</h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="#blog" class="hover:text-white transition">Blog</a></li>
-                        <li><a href="#case-studies" class="hover:text-white transition">Case Studies</a></li>
-                        <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+                        <li><a href="{{ route('seo-package') }}" class="hover:text-white transition">SEO Package</a></li>
+                        <li><a href="{{ route('smo-package') }}" class="hover:text-white transition">SMO Package</a></li>
+                        <li><a href="{{ route('startup-package') }}" class="hover:text-white transition">Startup Package</a></li>
                     </ul>
                 </div>
             </div>
@@ -50,7 +53,7 @@
             <div class="lg:w-1/4">
                 <h4 class="text-sm tracking-widest uppercase text-[#f6b615] mb-4">Get in touch</h4>
                 <p class="text-gray-300 text-sm">Have a project or question? We’re ready to help.</p>
-                <a href="mailto:info@techonika.com" class="mt-4 inline-block text-sm text-gray-400 hover:text-white transition">info@techonika.com</a>
+                <a href="mailto:techonika.com@gmail.com" class="mt-4 inline-block text-sm text-gray-400 hover:text-white transition">techonika.com@gmail.com</a>
                 <p class="mt-2 text-sm text-gray-400">Call us: <a href="tel:+918810599816" class="text-amber-300 hover:underline">+91-8810599816</a></p>
 
                 <div class="mt-6 flex items-center gap-4">
@@ -82,11 +85,13 @@
             <p>© {{ date('Y') }} <span class="font-semibold text-white">TECHNONIKA</span>. All rights reserved.</p>
 
             <div class="flex items-center gap-4">
-                <a href="#" class="hover:text-white transition">Privacy</a>
+                <a href="{{ route('privacy-policy') }}" class="hover:text-white transition">Privacy Policy</a>
                 <span class="text-white/10">•</span>
-                <a href="#" class="hover:text-white transition">Terms</a>
+                <a href="{{ route('terms-conditions') }}" class="hover:text-white transition">Terms & Conditions</a>
                 <span class="text-white/10">•</span>
-                <a href="#" class="hover:text-white transition">Sitemap</a>
+                <a href="{{ route('disclaimer') }}" class="hover:text-white transition">Disclaimer</a>
+                <span class="text-white/10">•</span>
+                <a href="{{ route('refund-policy') }}" class="hover:text-white transition">Refund Policy</a>
             </div>
         </div>
     </footer>
