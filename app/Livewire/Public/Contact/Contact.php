@@ -4,7 +4,9 @@ namespace App\Livewire\Public\Contact;
 
 use Livewire\Component;
 use App\Models\Contact as ContactModel;
+use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Mail;
 
 class Contact extends Component
 {
@@ -47,7 +49,14 @@ class Contact extends Component
             return;
         }
 
-        ContactModel::create($validated);
+        $contact = ContactModel::create($validated);
+
+        // Send email notification
+        try {
+            Mail::to('samcool3203@gmail.com')->send(new ContactMail($contact));
+        } catch (\Exception $e) {
+            \Log::error('Failed to send contact form email: ' . $e->getMessage());
+        }
 
         $this->reset(['name', 'email', 'subject', 'message', 'turnstileToken']);
 

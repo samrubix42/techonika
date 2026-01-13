@@ -3,8 +3,10 @@
 namespace App\Livewire\Model;
 
 use App\Models\Contact;
+use App\Mail\ContactMail;
 use Livewire\Component;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Attributes\On;
 
 class ContactModal extends Component
@@ -45,8 +47,14 @@ class ContactModal extends Component
             return;
         }
 
-       Contact::create($validated);
+       $contact = Contact::create($validated);
     
+        // Send email notification
+        try {
+            Mail::to('samcool3203@gmail.com')->send(new ContactMail($contact));
+        } catch (\Exception $e) {
+            \Log::error('Failed to send contact modal email: ' . $e->getMessage());
+        }
 
         $this->reset();
         session()->flash('success', 'Message sent successfully!');

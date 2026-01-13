@@ -4,7 +4,9 @@ namespace App\Livewire\Model;
 
 use Livewire\Component;
 use App\Models\PackageEnquiry;
+use App\Mail\PackageEnquirySubmitted;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Attributes\On;
 
 class PackageModal extends Component
@@ -69,13 +71,20 @@ class PackageModal extends Component
             return;
         }
 
-        PackageEnquiry::create([
+        $enquiry = PackageEnquiry::create([
             'name' => $this->name,
             'email' => $this->email,
             'phone' => $this->phone,
             'package' => $this->package,
             'message' => $this->message,
         ]);
+
+        // Send email notification
+        try {
+            Mail::to('samcool3203@gmail.com')->send(new PackageEnquirySubmitted($enquiry));
+        } catch (\Exception $e) {
+            \Log::error('Failed to send package enquiry email: ' . $e->getMessage());
+        }
 
         $this->reset(['name', 'email', 'phone', 'message', 'turnstileToken']);
         $this->submitted = true;
