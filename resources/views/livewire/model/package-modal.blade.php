@@ -5,7 +5,7 @@
     x-show="open"
     x-transition.opacity.duration.200ms
     x-cloak
-    class="fixed inset-0 z-[999] flex items-end sm:items-center justify-center px-2 sm:px-4"
+    class="fixed inset-0 z-[999] flex items-center justify-center px-2 sm:px-4 pb-4"
 >
     <!-- Backdrop -->
     <div
@@ -17,7 +17,7 @@
     <div
         x-transition.scale.duration.200ms
         class="relative w-full sm:max-w-sm
-               rounded-t-3xl sm:rounded-2xl
+               rounded-2xl
                bg-white/5 backdrop-blur-xl
                border border-white/10
                shadow-[0_20px_80px_rgba(0,0,0,0.7)]"

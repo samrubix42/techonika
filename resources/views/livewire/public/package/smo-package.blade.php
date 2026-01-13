@@ -287,7 +287,7 @@
                 <p class="mt-6 text-white/80 text-base sm:text-lg leading-relaxed">
                     Social media plans built with clarity, consistency, and purpose.
                     We focus on meaningful engagement, strong brand presence,
-                    and steady growth  not shortcuts.
+                    and steady growth not shortcuts.
                 </p>
             </div>
 
@@ -296,7 +296,7 @@
 
                 <!-- STARTER SMO -->
                 <div class="bg-white/5 border border-white/10
-                        rounded-3xl p-8 flex flex-col">
+            rounded-3xl p-8 flex flex-col">
 
                     <h3 class="text-white font-semibold text-xl">
                         Starter SMO
@@ -349,12 +349,12 @@
 
                     <button
                         @click="
-                            Livewire.dispatch('setPackage', 'SMO Starter Package');
-                            window.dispatchEvent(new CustomEvent('open-package-modal'));
-                        "
-                        class="mt-10 inline-flex justify-center items-center gap-2
-                           py-3 rounded-full border border-primary
-                           text-primary hover:bg-primary hover:text-black transition">
+                Livewire.dispatch('setPackage', 'SMO Starter Package');
+                window.dispatchEvent(new CustomEvent('open-package-modal'));
+            "
+                        class="relative z-10 mt-10 inline-flex justify-center items-center gap-2
+               py-3 rounded-full border border-primary
+               text-primary hover:bg-primary hover:text-black transition">
                         Get Started
                         <i class="ri-arrow-right-line"></i>
                     </button>
@@ -362,11 +362,12 @@
 
                 <!-- GROWTH SMO -->
                 <div class="relative bg-primary/5 border-2 border-primary
-                        rounded-3xl p-8 flex flex-col scale-[1.04]">
+            rounded-3xl p-8 flex flex-col overflow-visible">
 
-                    <span class="absolute -top-4 left-1/2 -translate-x-1/2
-                             bg-primary text-black px-4 py-1
-                             rounded-full text-xs font-semibold">
+                    <!-- FIX: pointer-events-none added -->
+                    <span class="pointer-events-none absolute -top-4 left-1/2 -translate-x-1/2
+                 bg-primary text-black px-4 py-1
+                 rounded-full text-xs font-semibold">
                         MOST POPULAR
                     </span>
 
@@ -425,13 +426,13 @@
                     </ul>
 
                     <button
-                        @click="
-                            Livewire.dispatch('setPackage', 'SMO Growth Package');
-                            window.dispatchEvent(new CustomEvent('open-package-modal'));
-                        "
-                        class="mt-10 inline-flex justify-center items-center gap-2
-                           py-3 rounded-full bg-primary
-                           text-black font-semibold hover:opacity-90 transition">
+                        @click.prevent.stop="
+                Livewire.dispatch('setPackage', 'SMO Growth Package');
+                window.dispatchEvent(new CustomEvent('open-package-modal'));
+            "
+                        class="relative z-10 mt-10 inline-flex justify-center items-center gap-2
+               py-3 rounded-full bg-primary
+               text-black font-semibold hover:opacity-90 transition">
                         Choose Plan
                         <i class="ri-check-line"></i>
                     </button>
@@ -439,7 +440,7 @@
 
                 <!-- ADVANCED SMO -->
                 <div class="bg-white/5 border border-white/10
-                        rounded-3xl p-8 flex flex-col">
+            rounded-3xl p-8 flex flex-col">
 
                     <h3 class="text-white font-semibold text-xl">
                         Advanced SMO
@@ -492,18 +493,19 @@
 
                     <button
                         @click="
-                            Livewire.dispatch('setPackage', 'SMO Advanced Package');
-                            window.dispatchEvent(new CustomEvent('open-package-modal'));
-                        "
-                        class="mt-10 inline-flex justify-center items-center gap-2
-                           py-3 rounded-full border border-primary
-                           text-primary hover:bg-primary hover:text-black transition">
+                Livewire.dispatch('setPackage', 'SMO Advanced Package');
+                window.dispatchEvent(new CustomEvent('open-package-modal'));
+            "
+                        class="relative z-10 mt-10 inline-flex justify-center items-center gap-2
+               py-3 rounded-full border border-primary
+               text-primary hover:bg-primary hover:text-black transition">
                         Talk to Us
                         <i class="ri-chat-3-line"></i>
                     </button>
                 </div>
 
             </div>
+
 
             <!-- Glow Effect -->
             <div class="absolute -bottom-40 left-1/2 -translate-x-1/2
@@ -513,7 +515,7 @@
         </div>
     </section>
     <section class="px-[2%] md:px-[8%]">
-          <section class="py-10 bg-black overflow-hidden">
+        <section class="py-10 bg-black overflow-hidden">
             <div class="max-w-7xl mx-auto px-6">
 
                 <!-- Heading -->
@@ -655,7 +657,7 @@
                 }
             </style>
         </section>
-</section>
+    </section>
 
     <section class="relative bg-black py-6 border-t border-white/10 overflow-hidden">
 
@@ -712,176 +714,176 @@
         </div>
     </section>
     <section class="bg-black py-28 border-t border-white/10">
-    <div class="max-w-4xl mx-auto px-6">
+        <div class="max-w-4xl mx-auto px-6">
 
-        <!-- Heading -->
-        <div class="text-center mb-16">
-            <span class="text-primary uppercase tracking-widest text-sm">
-                FAQs
-            </span>
+            <!-- Heading -->
+            <div class="text-center mb-16">
+                <span class="text-primary uppercase tracking-widest text-sm">
+                    FAQs
+                </span>
 
-            <h2 class="mt-3 text-3xl sm:text-4xl lg:text-5xl
+                <h2 class="mt-3 text-3xl sm:text-4xl lg:text-5xl
                        font-light text-white">
-                Social Media Optimization
-                <span class="font-semibold text-primary">Questions</span>
-            </h2>
+                    Social Media Optimization
+                    <span class="font-semibold text-primary">Questions</span>
+                </h2>
 
-            <p class="mt-5 text-white/80 text-base sm:text-lg max-w-2xl mx-auto">
-                Clear answers to help you understand how we build
-                social presence that feels natural, consistent, and trustworthy.
-            </p>
+                <p class="mt-5 text-white/80 text-base sm:text-lg max-w-2xl mx-auto">
+                    Clear answers to help you understand how we build
+                    social presence that feels natural, consistent, and trustworthy.
+                </p>
+            </div>
+
+            <!-- FAQ LIST -->
+            <div x-data="{ active: null }" class="space-y-4">
+
+                <!-- FAQ ITEM 1 -->
+                <div class="border border-white/10 rounded-2xl overflow-hidden">
+                    <button
+                        @click="active === 1 ? active = null : active = 1"
+                        class="w-full flex justify-between items-center px-6 py-5 text-left">
+                        <span class="text-white font-medium">
+                            What is Social Media Optimization (SMO)?
+                        </span>
+                        <i
+                            class="ri-add-line text-primary text-xl transition"
+                            :class="active === 1 ? 'rotate-45' : ''"></i>
+                    </button>
+
+                    <div
+                        x-show="active === 1"
+                        x-collapse
+                        class="px-6 pb-5 text-white/70 leading-relaxed">
+                        Social Media Optimization focuses on improving your brand’s
+                        visibility, consistency, and engagement on social platforms.
+                        It’s not about running ads, but about building trust,
+                        presence, and long-term connection with your audience.
+                    </div>
+                </div>
+
+                <!-- FAQ ITEM 2 -->
+                <div class="border border-white/10 rounded-2xl overflow-hidden">
+                    <button
+                        @click="active === 2 ? active = null : active = 2"
+                        class="w-full flex justify-between items-center px-6 py-5 text-left">
+                        <span class="text-white font-medium">
+                            Which social media platforms do you manage?
+                        </span>
+                        <i
+                            class="ri-add-line text-primary text-xl transition"
+                            :class="active === 2 ? 'rotate-45' : ''"></i>
+                    </button>
+
+                    <div
+                        x-show="active === 2"
+                        x-collapse
+                        class="px-6 pb-5 text-white/70 leading-relaxed">
+                        We work with platforms like Instagram, Facebook, LinkedIn,
+                        Twitter (X), and others depending on your business type
+                        and audience. We only recommend platforms that truly
+                        make sense for your goals.
+                    </div>
+                </div>
+
+                <!-- FAQ ITEM 3 -->
+                <div class="border border-white/10 rounded-2xl overflow-hidden">
+                    <button
+                        @click="active === 3 ? active = null : active = 3"
+                        class="w-full flex justify-between items-center px-6 py-5 text-left">
+                        <span class="text-white font-medium">
+                            How is SMO different from social media ads?
+                        </span>
+                        <i
+                            class="ri-add-line text-primary text-xl transition"
+                            :class="active === 3 ? 'rotate-45' : ''"></i>
+                    </button>
+
+                    <div
+                        x-show="active === 3"
+                        x-collapse
+                        class="px-6 pb-5 text-white/70 leading-relaxed">
+                        SMO focuses on organic growth, consistency, and engagement,
+                        while ads focus on paid reach. SMO builds trust over time
+                        and supports long-term brand value instead of quick,
+                        short-term visibility.
+                    </div>
+                </div>
+
+                <!-- FAQ ITEM 4 -->
+                <div class="border border-white/10 rounded-2xl overflow-hidden">
+                    <button
+                        @click="active === 4 ? active = null : active = 4"
+                        class="w-full flex justify-between items-center px-6 py-5 text-left">
+                        <span class="text-white font-medium">
+                            How long does it take to see results from SMO?
+                        </span>
+                        <i
+                            class="ri-add-line text-primary text-xl transition"
+                            :class="active === 4 ? 'rotate-45' : ''"></i>
+                    </button>
+
+                    <div
+                        x-show="active === 4"
+                        x-collapse
+                        class="px-6 pb-5 text-white/70 leading-relaxed">
+                        SMO is a gradual process. Most businesses start seeing
+                        better engagement and consistency within 1–2 months,
+                        while strong brand presence builds steadily over time.
+                        We focus on sustainable growth, not shortcuts.
+                    </div>
+                </div>
+
+                <!-- FAQ ITEM 5 -->
+                <div class="border border-white/10 rounded-2xl overflow-hidden">
+                    <button
+                        @click="active === 5 ? active = null : active = 5"
+                        class="w-full flex justify-between items-center px-6 py-5 text-left">
+                        <span class="text-white font-medium">
+                            Will you handle content creation and posting?
+                        </span>
+                        <i
+                            class="ri-add-line text-primary text-xl transition"
+                            :class="active === 5 ? 'rotate-45' : ''"></i>
+                    </button>
+
+                    <div
+                        x-show="active === 5"
+                        x-collapse
+                        class="px-6 pb-5 text-white/70 leading-relaxed">
+                        Yes. We handle content planning, visuals, captions,
+                        and posting schedules based on your package.
+                        We also keep your brand voice natural and aligned
+                        with your business identity.
+                    </div>
+                </div>
+
+                <!-- FAQ ITEM 6 -->
+                <div class="border border-white/10 rounded-2xl overflow-hidden">
+                    <button
+                        @click="active === 6 ? active = null : active = 6"
+                        class="w-full flex justify-between items-center px-6 py-5 text-left">
+                        <span class="text-white font-medium">
+                            Do you provide reports and performance updates?
+                        </span>
+                        <i
+                            class="ri-add-line text-primary text-xl transition"
+                            :class="active === 6 ? 'rotate-45' : ''"></i>
+                    </button>
+
+                    <div
+                        x-show="active === 6"
+                        x-collapse
+                        class="px-6 pb-5 text-white/70 leading-relaxed">
+                        Absolutely. We share clear and simple reports that explain
+                        what’s working, what needs improvement, and how your
+                        social presence is growing — without complicated terms.
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-        <!-- FAQ LIST -->
-        <div x-data="{ active: null }" class="space-y-4">
-
-            <!-- FAQ ITEM 1 -->
-            <div class="border border-white/10 rounded-2xl overflow-hidden">
-                <button
-                    @click="active === 1 ? active = null : active = 1"
-                    class="w-full flex justify-between items-center px-6 py-5 text-left">
-                    <span class="text-white font-medium">
-                        What is Social Media Optimization (SMO)?
-                    </span>
-                    <i
-                        class="ri-add-line text-primary text-xl transition"
-                        :class="active === 1 ? 'rotate-45' : ''"></i>
-                </button>
-
-                <div
-                    x-show="active === 1"
-                    x-collapse
-                    class="px-6 pb-5 text-white/70 leading-relaxed">
-                    Social Media Optimization focuses on improving your brand’s
-                    visibility, consistency, and engagement on social platforms.
-                    It’s not about running ads, but about building trust,
-                    presence, and long-term connection with your audience.
-                </div>
-            </div>
-
-            <!-- FAQ ITEM 2 -->
-            <div class="border border-white/10 rounded-2xl overflow-hidden">
-                <button
-                    @click="active === 2 ? active = null : active = 2"
-                    class="w-full flex justify-between items-center px-6 py-5 text-left">
-                    <span class="text-white font-medium">
-                        Which social media platforms do you manage?
-                    </span>
-                    <i
-                        class="ri-add-line text-primary text-xl transition"
-                        :class="active === 2 ? 'rotate-45' : ''"></i>
-                </button>
-
-                <div
-                    x-show="active === 2"
-                    x-collapse
-                    class="px-6 pb-5 text-white/70 leading-relaxed">
-                    We work with platforms like Instagram, Facebook, LinkedIn,
-                    Twitter (X), and others depending on your business type
-                    and audience. We only recommend platforms that truly
-                    make sense for your goals.
-                </div>
-            </div>
-
-            <!-- FAQ ITEM 3 -->
-            <div class="border border-white/10 rounded-2xl overflow-hidden">
-                <button
-                    @click="active === 3 ? active = null : active = 3"
-                    class="w-full flex justify-between items-center px-6 py-5 text-left">
-                    <span class="text-white font-medium">
-                        How is SMO different from social media ads?
-                    </span>
-                    <i
-                        class="ri-add-line text-primary text-xl transition"
-                        :class="active === 3 ? 'rotate-45' : ''"></i>
-                </button>
-
-                <div
-                    x-show="active === 3"
-                    x-collapse
-                    class="px-6 pb-5 text-white/70 leading-relaxed">
-                    SMO focuses on organic growth, consistency, and engagement,
-                    while ads focus on paid reach. SMO builds trust over time
-                    and supports long-term brand value instead of quick,
-                    short-term visibility.
-                </div>
-            </div>
-
-            <!-- FAQ ITEM 4 -->
-            <div class="border border-white/10 rounded-2xl overflow-hidden">
-                <button
-                    @click="active === 4 ? active = null : active = 4"
-                    class="w-full flex justify-between items-center px-6 py-5 text-left">
-                    <span class="text-white font-medium">
-                        How long does it take to see results from SMO?
-                    </span>
-                    <i
-                        class="ri-add-line text-primary text-xl transition"
-                        :class="active === 4 ? 'rotate-45' : ''"></i>
-                </button>
-
-                <div
-                    x-show="active === 4"
-                    x-collapse
-                    class="px-6 pb-5 text-white/70 leading-relaxed">
-                    SMO is a gradual process. Most businesses start seeing
-                    better engagement and consistency within 1–2 months,
-                    while strong brand presence builds steadily over time.
-                    We focus on sustainable growth, not shortcuts.
-                </div>
-            </div>
-
-            <!-- FAQ ITEM 5 -->
-            <div class="border border-white/10 rounded-2xl overflow-hidden">
-                <button
-                    @click="active === 5 ? active = null : active = 5"
-                    class="w-full flex justify-between items-center px-6 py-5 text-left">
-                    <span class="text-white font-medium">
-                        Will you handle content creation and posting?
-                    </span>
-                    <i
-                        class="ri-add-line text-primary text-xl transition"
-                        :class="active === 5 ? 'rotate-45' : ''"></i>
-                </button>
-
-                <div
-                    x-show="active === 5"
-                    x-collapse
-                    class="px-6 pb-5 text-white/70 leading-relaxed">
-                    Yes. We handle content planning, visuals, captions,
-                    and posting schedules based on your package.
-                    We also keep your brand voice natural and aligned
-                    with your business identity.
-                </div>
-            </div>
-
-            <!-- FAQ ITEM 6 -->
-            <div class="border border-white/10 rounded-2xl overflow-hidden">
-                <button
-                    @click="active === 6 ? active = null : active = 6"
-                    class="w-full flex justify-between items-center px-6 py-5 text-left">
-                    <span class="text-white font-medium">
-                        Do you provide reports and performance updates?
-                    </span>
-                    <i
-                        class="ri-add-line text-primary text-xl transition"
-                        :class="active === 6 ? 'rotate-45' : ''"></i>
-                </button>
-
-                <div
-                    x-show="active === 6"
-                    x-collapse
-                    class="px-6 pb-5 text-white/70 leading-relaxed">
-                    Absolutely. We share clear and simple reports that explain
-                    what’s working, what needs improvement, and how your
-                    social presence is growing — without complicated terms.
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<livewire:model.package-modal />
+    <livewire:model.package-modal />
 
 </div>
