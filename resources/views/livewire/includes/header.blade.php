@@ -73,12 +73,12 @@
       </nav>
 
       <!-- DESKTOP CTA -->
-      <a href="{{ route('contact') }}"
+      <button @click="$dispatch('open-modal', { to: 'contact' })"
         class="hidden md:inline-flex px-8 py-2.5 rounded-full font-semibold text-black
                bg-gradient-to-r from-orange-500 via-amber-400 to-amber-600
                hover:scale-105 transition shadow-lg">
         Quick Enquiry
-      </a>
+      </button>
 
       <!-- MOBILE ACTIONS -->
       <div class="md:hidden flex items-center gap-3">
