@@ -51,15 +51,7 @@
                     <i class="ri-arrow-right-line"></i>
                 </a>
 
-                <a href="#services"
-                    class="inline-flex items-center gap-2
-                      px-8 py-3.5 rounded-full
-                      border border-white/20
-                      text-white/80
-                      hover:border-primary hover:text-primary transition">
-                    View Our Services
-                    <i class="ri-eye-line"></i>
-                </a>
+
             </div>
 
             <!-- Trust Line -->
@@ -128,71 +120,71 @@
             border border-white/15 rounded-3xl
             p-8 sm:p-10 shadow-2xl">
 
-                <form wire:submit.prevent="submit" class="space-y-6">
+                <form wire:submit.prevent="submit" id="contact-form" class="space-y-6">
 
-    {{-- Success --}}
-    @if (session('success'))
-        <div class="p-3 rounded bg-green-600/20 text-green-400 text-sm font-medium">
-            {{ session('success') }}
-        </div>
-    @endif
+                    {{-- Success --}}
+                    @if (session('success'))
+                    <div class="p-3 rounded bg-green-600/20 text-green-400 text-sm font-medium">
+                        {{ session('success') }}
+                    </div>
+                    @endif
 
-    <!-- Name -->
-    <div>
-        <label class="block text-sm text-white/60 mb-2">Your Name</label>
-        <input type="text" wire:model.defer="name"
-            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white">
-        @error('name') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
-    </div>
+                    <!-- Name -->
+                    <div>
+                        <label class="block text-sm text-white/60 mb-2">Your Name</label>
+                        <input type="text" wire:model.defer="name"
+                            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white">
+                        @error('name') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
+                    </div>
 
-    <!-- Email -->
-    <div>
-        <label class="block text-sm text-white/60 mb-2">Email</label>
-        <input type="email" wire:model.defer="email"
-            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white">
-        @error('email') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
-    </div>
+                    <!-- Email -->
+                    <div>
+                        <label class="block text-sm text-white/60 mb-2">Email</label>
+                        <input type="email" wire:model.defer="email"
+                            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white">
+                        @error('email') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
+                    </div>
 
-    <!-- Subject -->
-    <div>
-        <label class="block text-sm text-white/60 mb-2">Subject</label>
-        <input type="text" wire:model.defer="subject"
-            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white">
-        @error('subject') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
-    </div>
+                    <!-- Subject -->
+                    <div>
+                        <label class="block text-sm text-white/60 mb-2">Subject</label>
+                        <input type="text" wire:model.defer="subject"
+                            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white">
+                        @error('subject') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
+                    </div>
 
-    <!-- Message -->
-    <div>
-        <label class="block text-sm text-white/60 mb-2">Message</label>
-        <textarea rows="4" wire:model.defer="message"
-            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white"></textarea>
-        @error('message') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
-    </div>
+                    <!-- Message -->
+                    <div>
+                        <label class="block text-sm text-white/60 mb-2">Message</label>
+                        <textarea rows="4" wire:model.defer="message"
+                            class="w-full bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-white"></textarea>
+                        @error('message') <p class="text-xs text-red-400 mt-1">{{ $message }}</p> @enderror
+                    </div>
 
-    <!-- Turnstile -->
-    <div wire:ignore>
-        <div class="cf-turnstile"
-            data-sitekey="{{ config('services.turnstile.site_key') }}"
-            data-callback="turnstileCallback">
-        </div>
-    </div>
+                    <!-- Turnstile -->
+                    <div wire:ignore>
+                        <div class="cf-turnstile"
+                            data-sitekey="{{ config('services.turnstile.site_key') }}"
+                            data-callback="turnstileCallback">
+                        </div>
+                    </div>
 
-    @error('turnstileToken')
-        <p class="text-xs text-red-400">{{ $message }}</p>
-    @enderror
+                    @error('turnstileToken')
+                    <p class="text-xs text-red-400">{{ $message }}</p>
+                    @enderror
 
-    <!-- Submit -->
-    <button type="submit"
-        wire:loading.attr="disabled"
-        class="w-full bg-primary text-black py-3.5 rounded-full font-semibold">
-        <span wire:loading.remove>Send Message</span>
-        <span wire:loading>Sending...</span>
-    </button>
+                    <!-- Submit -->
+                    <button type="submit"
+                        wire:loading.attr="disabled"
+                        class="w-full bg-primary text-black py-3.5 rounded-full font-semibold">
+                        <span wire:loading.remove>Send Message</span>
+                        <span wire:loading>Sending...</span>
+                    </button>
 
-    <p class="text-center text-xs text-white/40">
-        We respect your privacy.
-    </p>
-</form>
+                    <p class="text-center text-xs text-white/40">
+                        We respect your privacy.
+                    </p>
+                </form>
 
 
             </div>
@@ -432,7 +424,7 @@
                 No confusion. No pressure. Just clarity.
             </p>
 
-            <a href="#contact"
+            <a href="#contact-form"
                 class="inline-flex mt-10 px-10 py-3.5 rounded-full
                   bg-primary text-black font-semibold hover:opacity-90 transition">
                 Start the Conversation

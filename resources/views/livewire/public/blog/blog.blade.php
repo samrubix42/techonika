@@ -125,14 +125,7 @@
                     <option>12 / page</option>
                 </select>
 
-                <a
-                    href="#subscribe"
-                    class="px-4 py-2 rounded-md
-                           bg-amber-400 text-black
-                           font-semibold text-sm flex items-center gap-2">
-                    <i class="ri-mail-line"></i>
-                    Subscribe
-                </a>
+         
             </div>
         </header>
 
@@ -221,15 +214,15 @@
             <h3 class="text-xl font-semibold mb-3">
                 Have a project in mind?
             </h3>
-            <a
-                href="#contact"
+            <button
+                @click="$dispatch('open-modal', { to: 'contact' })"
                 class="inline-flex items-center gap-2
                        px-8 py-3 rounded-lg font-semibold
                        bg-gradient-to-r from-amber-400 to-yellow-400
                        text-black">
                 <i class="ri-briefcase-line"></i>
                 Work With Us
-            </a>
+</button>
         </div>
 
     </div>

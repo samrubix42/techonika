@@ -46,14 +46,14 @@
                 <i class="ri-arrow-right-line"></i>
             </a>
 
-            <a href="#contact"
+            <button @click="$dispatch('open-modal', { to: 'contact' })"
                class="inline-flex items-center gap-2
                       px-9 py-4 rounded-full
                       border border-white/20
                       text-white font-medium
                       hover:bg-white hover:text-black transition">
                 Free SEO Consultation
-            </a>
+            </button>
 
         </div>
 

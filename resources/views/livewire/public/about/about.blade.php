@@ -1,150 +1,150 @@
 <div class="min-h-screen bg-black text-white relative isolate overflow-hidden">
- <section class="relative bg-black text-white py-32 overflow-hidden">
-    
-    <!-- Subtle background glow -->
-    <div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-0 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+    <section class="relative bg-black text-white py-32 overflow-hidden">
 
-    <div class="relative max-w-6xl mx-auto px-6 text-center">
+        <!-- Subtle background glow -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
 
-        <!-- Small badge -->
-        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
+        <div class="relative max-w-6xl mx-auto px-6 text-center">
+
+            <!-- Small badge -->
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
                      bg-white/5 border border-white/10
                      text-primary text-sm uppercase tracking-widest mb-6">
-            Digital Growth Partner
-        </span>
-
-        <!-- Main heading -->
-        <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl
-                   font-light leading-tight mb-6">
-            Welcome To
-            <span class="font-semibold text-primary">
-                Techonika
+                Digital Growth Partner
             </span>
-        </h1>
 
-        <!-- Subheading -->
-        <p class="text-white/80 max-w-3xl mx-auto
+            <!-- Main heading -->
+            <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl
+                   font-light leading-tight mb-6">
+                Welcome To
+                <span class="font-semibold text-primary">
+                    Techonika
+                </span>
+            </h1>
+
+            <!-- Subheading -->
+            <p class="text-white/80 max-w-3xl mx-auto
                   text-base sm:text-lg md:text-xl leading-relaxed">
-            A digital advertising company focused on
-            <span class="text-white font-medium">accountability</span>,
-            <span class="text-white font-medium">performance</span>,
-            and real business growth  without confusion or wasted effort.
-        </p>
+                A digital advertising company focused on
+                <span class="text-white font-medium">accountability</span>,
+                <span class="text-white font-medium">performance</span>,
+                and real business growth without confusion or wasted effort.
+            </p>
 
-        <!-- CTA buttons -->
-        <div class="mt-10 flex flex-wrap justify-center gap-4">
-           
+            <!-- CTA buttons -->
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
 
-            <a href="#contact"
-               class="inline-flex items-center gap-2
+
+                <button @click="$dispatch('open-modal', { to: 'contact' })"
+                    class="inline-flex items-center gap-2
                       px-8 py-3.5 rounded-full
                       border border-white/20
                       text-white font-medium
                       hover:bg-white hover:text-black transition">
-                Talk to Us
-                <i class="ri-chat-3-line"></i>
-            </a>
-        </div>
-
-    </div>
-</section>
-
-<section class="relative bg-black text-white py-10 overflow-hidden">
-
-    <!-- Soft background accents -->
-    <div class="absolute -top-40 -left-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-0 -right-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
-
-    <div class="relative max-w-7xl mx-auto px-6">
-
-        <!-- Heading -->
-        <div class="max-w-4xl mb-20">
-            <span class="inline-flex items-center gap-2 text-primary uppercase tracking-widest text-sm mb-4">
-                <i class="ri-information-line text-lg"></i>
-                Who We Are
-            </span>
-
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-light leading-tight mb-6">
-                About
-                <span class="font-semibold text-primary">Techonika</span>
-            </h2>
-
-            <p class="text-white/80 leading-relaxed text-base sm:text-lg">
-                Most advertising and marketing agencies focus on creativity alone.
-                At Techonika, we believe creativity without accountability
-                and performance delivers no real value.
-            </p>
-        </div>
-
-        <!-- Content Grid -->
-        <div class="grid lg:grid-cols-2 gap-16 items-start">
-
-            <!-- Left Content -->
-            <div class="space-y-6 text-white/80 text-base sm:text-lg leading-relaxed">
-
-                <p>
-                    <span class="text-white font-medium">Techonika</span> is a
-                    digital advertising company based in Delhi, working with
-                    businesses across industries and locations.
-                    Our focus is always on clarity, results, and long-term growth.
-                </p>
-
-                <p>
-                    We offer website development, SEO, web design, social media marketing,
-                    business process outsourcing, and lead generation services.
-                    Everything we do supports one clear goal —
-                    <span class="text-primary font-semibold">strong ROI</span>.
-                </p>
-
-                <p>
-                    Each client receives personalized attention from our full-service team.
-                    We build strategies that feel practical, reliable,
-                    and aligned with your business vision.
-                </p>
-
+                    Talk to Us
+                    <i class="ri-chat-3-line"></i>
+                </button>
             </div>
 
-            <!-- Right Glass Card -->
-            <div class="bg-white/10 backdrop-blur-xl
+        </div>
+    </section>
+
+    <section class="relative bg-black text-white py-10 overflow-hidden">
+
+        <!-- Soft background accents -->
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 -right-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+            <div class="max-w-4xl mb-20">
+                <span class="inline-flex items-center gap-2 text-primary uppercase tracking-widest text-sm mb-4">
+                    <i class="ri-information-line text-lg"></i>
+                    Who We Are
+                </span>
+
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-light leading-tight mb-6">
+                    About
+                    <span class="font-semibold text-primary">Techonika</span>
+                </h2>
+
+                <p class="text-white/80 leading-relaxed text-base sm:text-lg">
+                    Most advertising and marketing agencies focus on creativity alone.
+                    At Techonika, we believe creativity without accountability
+                    and performance delivers no real value.
+                </p>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+                <!-- Left Content -->
+                <div class="space-y-6 text-white/80 text-base sm:text-lg leading-relaxed">
+
+                    <p>
+                        <span class="text-white font-medium">Techonika</span> is a
+                        digital advertising company based in Delhi, working with
+                        businesses across industries and locations.
+                        Our focus is always on clarity, results, and long-term growth.
+                    </p>
+
+                    <p>
+                        We offer website development, SEO, web design, social media marketing,
+                        business process outsourcing, and lead generation services.
+                        Everything we do supports one clear goal —
+                        <span class="text-primary font-semibold">strong ROI</span>.
+                    </p>
+
+                    <p>
+                        Each client receives personalized attention from our full-service team.
+                        We build strategies that feel practical, reliable,
+                        and aligned with your business vision.
+                    </p>
+
+                </div>
+
+                <!-- Right Glass Card -->
+                <div class="bg-white/10 backdrop-blur-xl
                         border border-white/20
                         rounded-3xl p-10 shadow-xl">
 
-                <h3 class="text-xl sm:text-2xl font-semibold mb-6">
-                    What We
-                    <span class="text-primary">Stand For</span>
-                </h3>
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-6">
+                        What We
+                        <span class="text-primary">Stand For</span>
+                    </h3>
 
-                <ul class="space-y-5 text-white/80 text-sm sm:text-base">
+                    <ul class="space-y-5 text-white/80 text-sm sm:text-base">
 
-                    <li class="flex gap-4 items-start">
-                        <i class="ri-bar-chart-2-line text-primary text-xl"></i>
-                        Accountable and result-driven campaigns
-                    </li>
+                        <li class="flex gap-4 items-start">
+                            <i class="ri-bar-chart-2-line text-primary text-xl"></i>
+                            Accountable and result-driven campaigns
+                        </li>
 
-                    <li class="flex gap-4 items-start">
-                        <i class="ri-chat-3-line text-primary text-xl"></i>
-                        Clear communication and full transparency
-                    </li>
+                        <li class="flex gap-4 items-start">
+                            <i class="ri-chat-3-line text-primary text-xl"></i>
+                            Clear communication and full transparency
+                        </li>
 
-                    <li class="flex gap-4 items-start">
-                        <i class="ri-focus-3-line text-primary text-xl"></i>
-                        Business-focused digital strategies
-                    </li>
+                        <li class="flex gap-4 items-start">
+                            <i class="ri-focus-3-line text-primary text-xl"></i>
+                            Business-focused digital strategies
+                        </li>
 
-                    <li class="flex gap-4 items-start">
-                        <i class="ri-handshake-line text-primary text-xl"></i>
-                        Long-term partnerships built on trust
-                    </li>
+                        <li class="flex gap-4 items-start">
+                            <i class="ri-handshake-line text-primary text-xl"></i>
+                            Long-term partnerships built on trust
+                        </li>
 
-                </ul>
+                    </ul>
+
+                </div>
 
             </div>
 
         </div>
-
-    </div>
-</section>
+    </section>
 
 
     <section class="bg-black text-white py-20 mb-10">
@@ -534,12 +534,12 @@
                             </p>
                         </div>
 
-                        <a href="#contact"
+                        <button @click="$dispatch('open-modal', { to: 'contact' })"
                             class="mr-auto px-6 py-2.5 rounded-full
                           border border-primary text-primary
                           hover:bg-primary hover:text-black transition">
                             Start Your Project
-                        </a>
+                        </button>
                     </div>
 
                     <!-- RIGHT TIMELINE -->

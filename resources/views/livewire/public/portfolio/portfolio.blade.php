@@ -43,14 +43,14 @@
                     View Our Projects
                 </a>
 
-                <a href="#contact"
+                <button @click="$dispatch('open-modal', { to: 'contact' })" 
                    class="inline-flex items-center justify-center
                           px-8 py-4 rounded-full
                           border border-white/20
                           text-white/80
                           hover:bg-white/5 transition">
                     Start a Project
-                </a>
+                </button>
 
             </div>
 

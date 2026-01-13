@@ -43,13 +43,13 @@
                     <i class="ri-arrow-right-line"></i>
                 </a>
 
-                <a href="#contact"
+                <button @click="$dispatch('open-modal', { to: 'contact' })"
                     class="inline-flex items-center gap-2
                       px-10 py-3.5 rounded-full
                       border border-white/20 text-white
                       hover:bg-white hover:text-black transition">
                     Talk to Expert
-                </a>
+                </button>
             </div>
 
         </div>
@@ -694,7 +694,7 @@
 
             <!-- CTA -->
             <div class="mt-12 flex justify-center">
-                <a href="#contact"
+                <button @click="$dispatch('open-modal', { to: 'contact' })"
                     class="inline-flex items-center gap-3
                       px-10 py-4 rounded-full
                       bg-primary text-black
@@ -703,7 +703,7 @@
                       transition duration-300">
                     Talk to Our Team
                     <i class="ri-arrow-right-line text-lg"></i>
-                </a>
+                </button>
             </div>
 
             <!-- Trust Line -->

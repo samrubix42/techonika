@@ -46,13 +46,13 @@
 
                 <!-- CTA -->
                 <div class="mt-12 flex gap-4 flex-wrap">
-                    <a href="#contact"
+                    <button @click="$dispatch('open-modal', { to: 'contact' })"
                        class="inline-flex items-center justify-center
                               px-8 py-4 rounded-full
                               bg-primary text-black font-medium
                               hover:opacity-90 transition">
                         Discuss Your App Idea
-                    </a>
+                    </button>
 
                     <a href="#process"
                        class="inline-flex items-center justify-center
@@ -1045,7 +1045,7 @@
         <!-- CTA -->
         <div class="mt-14 flex flex-wrap justify-center gap-6">
 
-            <a href="#contact"
+            <button @click="$dispatch('open-modal', { to: 'contact' })"
                class="inline-flex items-center gap-2
                       bg-primary text-black
                       px-10 py-3.5 rounded-full
@@ -1053,7 +1053,7 @@
                       hover:brightness-110 transition">
                 Discuss Your App Idea
                 <i class="ri-arrow-right-line"></i>
-            </a>
+            </button>
 
             <a href="#process"
                class="inline-flex items-center gap-2

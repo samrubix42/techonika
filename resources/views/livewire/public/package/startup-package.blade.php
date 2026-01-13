@@ -36,7 +36,7 @@
                 <i class="ri-arrow-right-line"></i>
             </a>
 
-            <a href="#contact"
+            <button @click="$dispatch('open-modal', { to: 'contact' })"
                class="inline-flex items-center gap-2
                       px-8 py-3.5 rounded-full
                       border border-white/20
@@ -44,7 +44,7 @@
                       hover:bg-white hover:text-black transition">
                 Talk to an Expert
                 <i class="ri-chat-3-line"></i>
-            </a>
+            </button>
         </div>
 
     </div>
