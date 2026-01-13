@@ -87,31 +87,31 @@
                     <form wire:submit.prevent="submitTop" class="space-y-4">
 
                         <input type="text" placeholder="Full Name"
-                            wire:model.defer="top.name"
+                            wire:model.defer="topName"
                             class="w-full bg-transparent border border-white/20
                                rounded-md px-3 py-2.5 text-sm text-white
                                placeholder-white/40 focus:outline-none
                                focus:border-primary transition">
-                        @error('top.name') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
+                        @error('topName') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
 
                         <input type="email" placeholder="Email Address (optional)"
-                            wire:model.defer="top.email"
+                            wire:model.defer="topEmail"
                             class="w-full bg-transparent border border-white/20
                                rounded-md px-3 py-2.5 text-sm text-white
                                placeholder-white/40 focus:outline-none
                                focus:border-primary transition">
-                        @error('top.email') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
+                        @error('topEmail') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
 
                         <input type="tel" placeholder="Phone Number (required)"
                             required aria-required="true"
-                            wire:model.defer="top.phone"
+                            wire:model.defer="topPhone"
                             class="w-full bg-transparent border border-white/20
                                rounded-md px-3 py-2.5 text-sm text-white
                                placeholder-white/40 focus:outline-none
                                focus:border-primary transition">
-                        @error('top.phone') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
+                        @error('topPhone') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
 
-                        <select wire:model.defer="top.service"
+                        <select wire:model.defer="topService"
                             class="w-full bg-transparent border border-white/20
                                rounded-md px-3 py-2.5 text-sm text-white
                                focus:outline-none focus:border-primary">
@@ -123,12 +123,21 @@
                         </select>
 
                         <textarea rows="3" placeholder="Project details (optional)"
-                            wire:model.defer="top.message"
+                            wire:model.defer="topMessage"
                             class="w-full bg-transparent border border-white/20
                                rounded-md px-3 py-2.5 text-sm text-white
                                placeholder-white/40 focus:outline-none
                                focus:border-primary transition"></textarea>
-                        @error('top.message') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
+                        @error('topMessage') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
+
+                        <!-- Turnstile Captcha -->
+                        <!-- Top Form -->
+                        <div wire:ignore
+                            class="cf-turnstile"
+                            data-sitekey="{{ config('services.turnstile.site_key') }}"
+                            data-callback="onTurnstileSuccessTop">
+                        </div>
+                        @error('turnstileTokenTop') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
 
                         <button type="submit"
                             wire:loading.attr="disabled"
@@ -144,7 +153,7 @@
                         </p>
 
                         @if($successTop)
-                            <p class="text-sm text-primary text-center">Thanks — we will contact you shortly.</p>
+                        <p class="text-sm text-primary text-center">Thanks — we will contact you shortly.</p>
                         @endif
 
                     </form>
@@ -1993,32 +2002,32 @@
                         <form wire:submit.prevent="submitBottom" class="space-y-4">
 
                             <input type="text" placeholder="Your Name"
-                                wire:model.defer="bottom.name"
+                                wire:model.defer="bottomName"
                                 class="w-full bg-transparent border border-white/20
                                    rounded-md px-4 py-2.5 text-sm text-white
                                    placeholder-white/50 focus:outline-none
                                    focus:border-primary">
-                            @error('bottom.name') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
+                            @error('bottomName') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
 
 
                             <input type="email" placeholder="Email Address (optional)"
-                                wire:model.defer="bottom.email"
+                                wire:model.defer="bottomEmail"
                                 class="w-full bg-transparent border border-white/20
                                    rounded-md px-4 py-2.5 text-sm text-white
                                    placeholder-white/50 focus:outline-none
                                    focus:border-primary">
-                            @error('bottom.email') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
+                            @error('bottomEmail') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
 
                             <input type="tel" placeholder="Phone Number (required)"
                                 required aria-required="true"
-                                wire:model.defer="bottom.phone"
+                                wire:model.defer="bottomPhone"
                                 class="w-full bg-transparent border border-white/20
                                    rounded-md px-4 py-2.5 text-sm text-white
                                    placeholder-white/50 focus:outline-none
                                    focus:border-primary">
-                            @error('bottom.phone') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
+                            @error('bottomPhone') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
 
-                            <select wire:model.defer="bottom.service"
+                            <select wire:model.defer="bottomService"
                                 class="w-full bg-transparent border border-white/20
                                    rounded-md px-4 py-2.5 text-sm text-white
                                    focus:outline-none focus:border-primary">
@@ -2027,6 +2036,14 @@
                                 <option value="E-commerce Development">E-commerce Development</option>
                                 <option value="Custom Web Application">Custom Web Application</option>
                             </select>
+
+                            <!-- Turnstile Captcha -->
+                            <div wire:ignore
+                                class="cf-turnstile"
+                                data-sitekey="{{ config('services.turnstile.site_key') }}"
+                                data-callback="onTurnstileSuccessBottom">
+                            </div>
+                            @error('turnstileTokenBottom') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
 
                             <button type="submit"
                                 wire:loading.attr="disabled"
@@ -2040,7 +2057,7 @@
                             </button>
 
                             @if($successBottom)
-                                <p class="text-sm text-primary text-center">Thanks — we will contact you shortly.</p>
+                            <p class="text-sm text-primary text-center">Thanks — we will contact you shortly.</p>
                             @endif
 
                         </form>
@@ -2213,6 +2230,26 @@
 
         </div>
     </section>
+    <script>
+        /**
+         * Top form success
+         */
+        function onTurnstileSuccessTop(token) {
+            Livewire.dispatch('turnstile-top-solved', {
+                token
+            });
+        }
+
+        /**
+         * Bottom form success
+         */
+        function onTurnstileSuccessBottom(token) {
+            Livewire.dispatch('turnstile-bottom-solved', {
+                token
+            });
+        }
+    </script>
+
 
 
 

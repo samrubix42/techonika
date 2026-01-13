@@ -4,70 +4,85 @@ namespace App\Livewire\Public\WebDevelopment;
 
 use Livewire\Component;
 use App\Models\Contact;
+use Illuminate\Support\Facades\Http;
+use Livewire\Attributes\On;
 
 class Index extends Component
 {
-    public $top = [
-        'name' => '',
-        'email' => '',
-        'phone' => '',
-        'service' => '',
-        'message' => '',
-    ];
-
-    public $bottom = [
-        'name' => '',
-        'email' => '',
-        'phone' => '',
-        'service' => '',
-        'message' => '',
-    ];
-
+    // Top Form
+    public $topName = '';
+    public $topEmail = '';
+    public $topPhone = '';
+    public $topService = '';
+    public $topMessage = '';
+    public $turnstileTokenTop;
     public $successTop = false;
+
+    // Bottom Form
+    public $bottomName = '';
+    public $bottomEmail = '';
+    public $bottomPhone = '';
+    public $bottomService = '';
+    public $bottomMessage = '';
+    public $turnstileTokenBottom;
     public $successBottom = false;
 
     protected $messagesTop = [
-        'top.phone.digits' => 'The phone number must be exactly 10 digits long.',
-        'top.phone.numeric' => 'The phone number appears invalid — please correct it.',
-        'top.name.required' => 'Please tell us your name so we know who to contact.',
-        'top.phone.required' => 'Please provide a phone number so we can reach you.',
-        'top.email.email' => 'The email address appears invalid — please correct it or leave it blank.',
+        'topPhone.digits' => 'The phone number must be exactly 10 digits long.',
+        'topPhone.numeric' => 'The phone number appears invalid — please correct it.',
+        'topName.required' => 'Please tell us your name so we know who to contact.',
+        'topPhone.required' => 'Please provide a phone number so we can reach you.',
+        'topEmail.email' => 'The email address appears invalid — please correct it or leave it blank.',
+        'turnstileTokenTop.required' => 'Please verify you are human.',
     ];
 
     protected $messagesBottom = [
-        'bottom.phone.digits' => 'The phone number must be exactly 10 digits long.',
-        'bottom.phone.numeric' => 'The phone number appears invalid — please correct it.',
-        'bottom.name.required' => 'Please tell us your name so we know who to contact.',
-        'bottom.phone.required' => 'Please provide a phone number so we can reach you.',
-        'bottom.email.email' => 'The email address appears invalid — please correct it or leave it blank.',
+        'bottomPhone.digits' => 'The phone number must be exactly 10 digits long.',
+        'bottomPhone.numeric' => 'The phone number appears invalid — please correct it.',
+        'bottomName.required' => 'Please tell us your name so we know who to contact.',
+        'bottomPhone.required' => 'Please provide a phone number so we can reach you.',
+        'bottomEmail.email' => 'The email address appears invalid — please correct it or leave it blank.',
+        'turnstileTokenBottom.required' => 'Please verify you are human.',
     ];
 
     public function mount()
     {
-        // initialize arrays (ensures reset works predictably)
-        $this->top = array_merge($this->top);
-        $this->bottom = array_merge($this->bottom);
+        // No initialization needed for simple properties
     }
+
+    #[On('turnstile-top-solved')]
+public function setTopToken($token)
+{
+    $this->turnstileTokenTop = $token;
+}
+
+#[On('turnstile-bottom-solved')]
+public function setBottomToken($token)
+{
+    $this->turnstileTokenBottom = $token;
+}
 
     protected function rulesTop()
     {
         return [
-            'top.name' => 'required|string|max:191',
-            'top.email' => 'nullable|email|max:191',
-            'top.phone' => 'required|numeric|digits:10',
-            'top.service' => 'nullable|string|max:191',
-            'top.message' => 'nullable|string',
+            'topName' => 'required|string|max:191',
+            'topEmail' => 'nullable|email|max:191',
+            'topPhone' => 'required|numeric|digits:10',
+            'topService' => 'nullable|string|max:191',
+            'topMessage' => 'nullable|string',
+            'turnstileTokenTop' => 'required',
         ];
     }
 
     protected function rulesBottom()
     {
         return [
-            'bottom.name' => 'required|string|max:191',
-            'bottom.email' => 'nullable|email|max:191',
-            'bottom.phone' => 'required|numeric|digits:10',
-            'bottom.service' => 'nullable|string|max:191',
-            'bottom.message' => 'nullable|string',
+            'bottomName' => 'required|string|max:191',
+            'bottomEmail' => 'nullable|email|max:191',
+            'bottomPhone' => 'required|numeric|digits:10',
+            'bottomService' => 'nullable|string|max:191',
+            'bottomMessage' => 'nullable|string',
+            'turnstileTokenBottom' => 'required',
         ];
     }
 
@@ -75,36 +90,68 @@ class Index extends Component
     {
         $this->validate($this->rulesTop(), $this->messagesTop ?? []);
 
+        $response = Http::withOptions([
+            'verify'  => app()->environment('local') ? false : true,
+            'timeout' => 10
+        ])->asForm()->post(
+            'https://challenges.cloudflare.com/turnstile/v0/siteverify',
+            [
+                'secret'   => config('services.turnstile.secret_key'),
+                'response' => $this->turnstileTokenTop,
+                'remoteip' => request()->ip()
+            ]
+        );
+
+        if (!$response->json('success')) {
+            $this->addError('turnstileTokenTop', 'Captcha verification failed.');
+            return;
+        }
+
         Contact::create([
-            'name' => $this->top['name'],
-            'email' => $this->top['email'],
-            'phone' => $this->top['phone'] ?? null,
-            'subject' => $this->top['service'] ?? 'Web Development - Quote',
-            'message' => $this->top['message'] ?? null,
+            'name' => $this->topName,
+            'email' => $this->topEmail,
+            'phone' => $this->topPhone ?? null,
+            'subject' => $this->topService ?? 'Web Development - Quote',
+            'message' => $this->topMessage ?? null,
         ]);
 
         $this->successTop = true;
-        $this->top = [
-            'name' => '', 'email' => '', 'phone' => '', 'service' => '', 'message' => '',
-        ];
+        $this->reset(['topName', 'topEmail', 'topPhone', 'topService', 'topMessage', 'turnstileTokenTop']);
+        $this->dispatch('turnstile-reset-top');
     }
 
     public function submitBottom()
     {
         $this->validate($this->rulesBottom(), $this->messagesBottom ?? []);
 
+        $response = Http::withOptions([
+            'verify'  => app()->environment('local') ? false : true,
+            'timeout' => 10
+        ])->asForm()->post(
+            'https://challenges.cloudflare.com/turnstile/v0/siteverify',
+            [
+                'secret'   => config('services.turnstile.secret_key'),
+                'response' => $this->turnstileTokenBottom,
+                'remoteip' => request()->ip()
+            ]
+        );
+
+        if (!$response->json('success')) {
+            $this->addError('turnstileTokenBottom', 'Captcha verification failed.');
+            return;
+        }
+
         Contact::create([
-            'name' => $this->bottom['name'],
-            'email' => $this->bottom['email'],
-            'phone' => $this->bottom['phone'] ?? null,
-            'subject' => $this->bottom['service'] ?? 'Web Development - Quote',
-            'message' => $this->bottom['message'] ?? null,
+            'name' => $this->bottomName,
+            'email' => $this->bottomEmail,
+            'phone' => $this->bottomPhone ?? null,
+            'subject' => $this->bottomService ?? 'Web Development - Quote',
+            'message' => $this->bottomMessage ?? null,
         ]);
 
         $this->successBottom = true;
-        $this->bottom = [
-            'name' => '', 'email' => '', 'phone' => '', 'service' => '', 'message' => '',
-        ];
+        $this->reset(['bottomName', 'bottomEmail', 'bottomPhone', 'bottomService', 'bottomMessage', 'turnstileTokenBottom']);
+        $this->dispatch('turnstile-reset-bottom');
     }
 
     public function render()

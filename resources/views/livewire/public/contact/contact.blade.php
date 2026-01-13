@@ -600,7 +600,6 @@
             </div>
         </div>
     </section>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
     <script>
         function turnstileCallback(token) {

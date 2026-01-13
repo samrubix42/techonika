@@ -70,9 +70,9 @@
                  <div class="relative">
 
                      <div class="bg-white/5 border border-white/15
-                            rounded-2xl sm:rounded-3xl
-                            p-6 sm:p-8 lg:p-10
-                            backdrop-blur-xl">
+                        rounded-2xl sm:rounded-3xl
+                        p-6 sm:p-8 lg:p-10
+                        backdrop-blur-xl">
 
                          <h3 class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">
                              Let’s Grow Your Business
@@ -81,49 +81,107 @@
                              Fill in the details and our team will get back to you.
                          </p>
 
-                         <form class="space-y-3 sm:space-y-4">
+                         <!-- SUCCESS MESSAGE -->
+                         @if (session()->has('success'))
+                         <div class="mb-4 p-3 rounded-lg bg-green-500/20 text-green-400 text-sm">
+                             {{ session('success') }}
+                         </div>
+                         @endif
 
-                             <input type="text" placeholder="Your Name"
-                                 class="w-full px-4 py-3 rounded-xl
-                                      bg-black/40 border border-white/15
-                                      text-sm sm:text-base text-white
-                                      placeholder-white/40
-                                      focus:outline-none focus:border-primary" />
+                         <form wire:submit.prevent="submit" class="space-y-4">
 
-                             <input type="email" placeholder="Email Address"
-                                 class="w-full px-4 py-3 rounded-xl
-                                      bg-black/40 border border-white/15
-                                      text-sm sm:text-base text-white
-                                      placeholder-white/40
-                                      focus:outline-none focus:border-primary" />
+                             <!-- NAME -->
+                             <div>
+                                 <input wire:model.defer="name" type="text" placeholder="Your Name"
+                                     class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/15 text-white">
+                                 @error('name') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
+                             </div>
 
-                             <input type="tel" placeholder="Phone Number"
-                                 class="w-full px-4 py-3 rounded-xl
-                                      bg-black/40 border border-white/15
-                                      text-sm sm:text-base text-white
-                                      placeholder-white/40
-                                      focus:outline-none focus:border-primary" />
+                             <!-- EMAIL -->
+                             <div>
+                                 <input wire:model.defer="email" type="email" placeholder="Email Address"
+                                     class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/15 text-white">
+                                 @error('email') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
+                             </div>
 
-                             <select
-                                 class="w-full px-4 py-3 rounded-xl
-                                   bg-black/40 border border-white/15
-                                   text-sm sm:text-base text-white
-                                   focus:outline-none focus:border-primary">
-                                 <option class="bg-black">Select Service</option>
-                                 <option class="bg-black">SEO</option>
-                                 <option class="bg-black">Google Ads</option>
-                                 <option class="bg-black">Social Media Marketing</option>
-                                 <option class="bg-black">Website Development</option>
-                             </select>
+                             <!-- PHONE -->
+                             <div>
+                                 <input wire:model.defer="phone" type="tel" placeholder="Phone Number"
+                                     class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/15 text-white">
+                                 @error('phone') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
+                             </div>
 
-                             <button
-                                 class="w-full mt-2 px-6 py-3 rounded-xl
-                                   bg-primary text-black font-medium
-                                   hover:bg-primary/90 transition">
-                                 Request Callback
+                             <!-- SERVICE -->
+                             <div>
+                                 <select wire:model.defer="service"
+                                     class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/15 text-white">
+                                     <option value="">Select Service</option>
+                                     <option>SEO</option>
+                                     <option>Google Ads</option>
+                                     <option>Social Media Marketing</option>
+                                     <option>Website Development</option>
+                                 </select>
+                                 @error('service') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
+                             </div>
+
+                             <!-- TURNSTILE -->
+                             <div wire:ignore>
+                                 <div id="turnstile-widget"></div>
+                             </div>
+
+                             @error('turnstileToken')
+                             <p class="text-red-400 text-xs mt-1">{{ $message }}</p>
+                             @enderror
+
+                             <!-- BUTTON -->
+                             <button wire:loading.attr="disabled"
+                                 class="w-full py-3 rounded-xl bg-primary text-black font-semibold">
+                                 <span wire:loading.remove>Request Callback</span>
+                                 <span wire:loading>Submitting...</span>
                              </button>
                          </form>
+
                      </div>
+
+                     <script>
+                         document.addEventListener('livewire:navigated', () => {
+
+                             let widgetId = null;
+                             let rendered = false;
+
+                             function renderTurnstile() {
+                                 if (!window.turnstile) return;
+                                 if (rendered) return;
+
+                                 const container = document.getElementById('turnstile-widget');
+                                 if (!container) return;
+
+                                 // Remove any existing iframe
+                                 container.innerHTML = '';
+
+                                 widgetId = turnstile.render(container, {
+                                     sitekey: "{{ config('services.turnstile.site_key') }}",
+                                     callback: function(token) {
+                                         @this.set('turnstileToken', token); // ✅ DIRECT SET
+                                     }
+                                 });
+
+                                 rendered = true;
+                             }
+
+                             renderTurnstile();
+
+                             Livewire.off('turnstile-reset');
+                             Livewire.on('turnstile-reset', () => {
+                                 if (widgetId !== null && window.turnstile) {
+                                     turnstile.reset(widgetId);
+                                     rendered = false; // allow re-render
+                                 }
+                             });
+                         });
+                     </script>
+
+
 
                  </div>
 

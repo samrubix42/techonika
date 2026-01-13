@@ -106,6 +106,7 @@
             <i class="ri-whatsapp-line text-white text-2xl"></i>
         </a>
         </a>
+        
 
     </main>
 
@@ -116,6 +117,7 @@
     <livewire:model.contact-modal />
     @endif
 
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     @livewireScripts
 
 </body>
