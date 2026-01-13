@@ -235,13 +235,12 @@
                  <!-- LEFT IMAGE -->
                  <div class="relative order-1 lg:order-none">
                      <div class="rounded-3xl overflow-hidden
-                            border border-white/15
                             bg-white/5 backdrop-blur-sm">
                          <img
-                             src="/images/how-people-find-businesses.jpg"
+                             src="{{ asset('images/prototyping-process-concept-illustration_114360-7588.jpg') }}"
                              alt="How people find businesses online"
-                             class="w-full h-full object-cover
-                               aspect-[4/3] sm:aspect-[16/11]" />
+                             class="w-auto h-full object-contain
+                               aspect-[2/3] sm:aspect-[16/11]" />
                      </div>
                  </div>
 

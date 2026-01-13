@@ -39,10 +39,7 @@
                     Get Free Consultation
 </button>
 
-                <a href="{{route('services')}}"
-                    class="text-white font-semibold">
-                    Explore Services →
-                </a>
+               
             </div>
         </div>
 

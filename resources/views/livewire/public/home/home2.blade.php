@@ -304,15 +304,7 @@
                             Get Free Consultation
                         </button>
 
-                        <a href="{{route('services')}}"
-                            class="inline-flex items-center gap-2
-                               px-7 py-3.5 rounded-full
-                               border border-white/20
-                               text-white font-medium
-                               hover:bg-white hover:text-black transition">
-                            <i class="ri-arrow-right-line"></i>
-                            Explore Services
-                        </a>
+                 
                     </div>
 
                 </div>
@@ -1036,7 +1028,7 @@
                         </button>
 
                         <a
-                            href="{{route('services')}}"
+                            href="{{route('digital-marketing')}}"
                             class="inline-flex items-center gap-2
                                px-7 py-3.5 rounded-full
                                border border-white/20
@@ -1923,14 +1915,6 @@
                                 Get in Touch
                             </button>
 
-                            <a href="#services"
-                                class="inline-flex items-center gap-2
-                              px-8 py-3.5 rounded-full
-                              border border-white/20
-                              text-white font-medium
-                              hover:bg-white hover:text-black transition">
-                                Explore Services
-                            </a>
                         </div>
                     </div>
 

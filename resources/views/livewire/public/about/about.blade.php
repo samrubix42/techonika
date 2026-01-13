@@ -34,14 +34,7 @@
 
         <!-- CTA buttons -->
         <div class="mt-10 flex flex-wrap justify-center gap-4">
-            <a wire:navigate href="{{ route('services') }}"
-               class="inline-flex items-center gap-2
-                      px-8 py-3.5 rounded-full
-                      bg-primary text-black font-semibold
-                      hover:opacity-90 transition">
-                Explore Services
-                <i class="ri-arrow-right-line"></i>
-            </a>
+           
 
             <a href="#contact"
                class="inline-flex items-center gap-2
