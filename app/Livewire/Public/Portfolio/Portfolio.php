@@ -2,12 +2,21 @@
 
 namespace App\Livewire\Public\Portfolio;
 
+use App\Models\Portfolio as PortfolioModel;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class Portfolio extends Component
 {
+    use WithPagination;
+
     public function render()
     {
-        return view('livewire.public.portfolio.portfolio');
+        $portfolios = PortfolioModel::latest()
+            ->paginate(6);
+
+        return view('livewire.public.portfolio.portfolio', [
+            'portfolios' => $portfolios,
+        ]);
     }
 }

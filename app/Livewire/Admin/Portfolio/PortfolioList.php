@@ -27,6 +27,7 @@ class PortfolioList extends Component
     public $description;
     public $image;
     public $tags;
+    public $project_url;
     public $imageFile;
 
     #[Layout('components.layouts.admin')]
@@ -71,6 +72,7 @@ class PortfolioList extends Component
         $this->category_id = $portfolio->category_id;
         $this->description = $portfolio->description;
         $this->image = $portfolio->image;
+        $this->project_url = $portfolio->project_url;
         $this->tags = is_array($portfolio->tags)
             ? implode(', ', $portfolio->tags)
             : $portfolio->tags;
@@ -84,6 +86,7 @@ class PortfolioList extends Component
             'title' => $this->title,
             'category_id' => $this->category_id,
             'description' => $this->description,
+            'project_url' => $this->project_url,
             'tags' => array_map('trim', explode(',', $this->tags)),
         ];
 
@@ -122,6 +125,7 @@ class PortfolioList extends Component
             'description',
             'image',
             'tags',
+            'project_url',
             'imageFile',
         ]);
     }

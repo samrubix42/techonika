@@ -74,95 +74,65 @@
         <!-- PROJECT GRID -->
         <div class="grid gap-8 sm:grid-cols-2">
 
-            <!-- CARD -->
-            <div class="group relative bg-white/5 backdrop-blur-xl
-                        border border-white/10 rounded-3xl
-                        overflow-hidden transition hover:border-white/25">
+            @forelse($portfolios as $portfolio)
+                <div class="group relative bg-white/5 backdrop-blur-xl
+                            border border-white/10 rounded-3xl
+                            overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2">
 
-                <!-- IMAGE -->
-                <div class="relative overflow-hidden">
-                    <img src="/images/project-1.jpg"
-                         class="w-full h-56 object-cover
-                                transition duration-500 group-hover:scale-105" />
-                </div>
-
-                <!-- CONTENT -->
-                <div class="p-6">
-                    <h3 class="text-lg font-semibold text-white">
-                        Electronics Platform
-                    </h3>
-                    <p class="mt-2 text-sm text-white/60 leading-relaxed">
-                        A scalable electronics manufacturing platform with PCB fabrication,
-                        order management, and admin dashboards.
-                    </p>
-
-                    <!-- TAGS -->
-                    <div class="flex flex-wrap gap-2 mt-4">
-                        <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-white">
-                            Laravel
-                        </span>
-                        <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-white">
-                            Tailwind
-                        </span>
-                        <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-white">
-                            Admin Panel
-                        </span>
+                    <div class="relative overflow-hidden">
+                        <img src="{{ $portfolio->image ? asset('storage/' . $portfolio->image) : asset('/images/project-placeholder.jpg') }}"
+                             alt="{{ $portfolio->title }}"
+                             class="w-full h-80 object-cover
+                                    transition duration-700 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
 
-                    <!-- CTA -->
-                    <a href="#"
-                       class="inline-flex items-center justify-center mt-6
-                              px-5 py-2.5 rounded-full
-                              bg-white text-black text-sm font-medium
-                              hover:bg-white/90 transition">
-                        View Full Project
-                    </a>
-                </div>
-            </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white group-hover:text-primary transition-colors">
+                            {{ $portfolio->title }}
+                        </h3>
 
-            <!-- CARD -->
-            <div class="group relative bg-white/5 backdrop-blur-xl
-                        border border-white/10 rounded-3xl
-                        overflow-hidden transition hover:border-white/25">
+                        <p class="mt-3 text-sm text-white/60 leading-relaxed">
+                            {{ \Illuminate\Support\Str::limit($portfolio->description, 150) }}
+                        </p>
 
-                <div class="relative overflow-hidden">
-                    <img src="/images/project-2.jpg"
-                         class="w-full h-56 object-cover
-                                transition duration-500 group-hover:scale-105" />
-                </div>
+                        @if($portfolio->tags && count($portfolio->tags) > 0)
+                            <div class="flex flex-wrap gap-2 mt-5">
+                                @foreach($portfolio->tags as $tag)
+                                    <span class="px-3 py-1.5 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20 backdrop-blur-sm">
+                                        {{ $tag }}
+                                    </span>
+                                @endforeach
+                            </div>
+                        @endif
 
-                <div class="p-6">
-                    <h3 class="text-lg font-semibold text-white">
-                        Tax Consultancy Platform
-                    </h3>
-                    <p class="mt-2 text-sm text-white/60 leading-relaxed">
-                        A client-first tax consultation system with booking,
-                        document uploads, and CRM workflows.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mt-4">
-                        <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-white">
-                            PHP
-                        </span>
-                        <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-white">
-                            CRM
-                        </span>
-                        <span class="px-3 py-1 text-xs rounded-full bg-white/10 text-white">
-                            SaaS
-                        </span>
+                        <a href="{{ $portfolio->project_url ?? '#' }}"
+                            target="_blank"
+                           class="inline-flex items-center justify-center mt-6
+                                  px-6 py-3 rounded-full
+                                  bg-gradient-to-r from-primary to-primary/80 text-black text-sm font-semibold
+                                  hover:from-primary/90 hover:to-primary/70 transition-all duration-300 shadow-lg shadow-primary/20">
+                            View Full Project
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
                     </div>
-
-                    <a href="#"
-                       class="inline-flex items-center justify-center mt-6
-                              px-5 py-2.5 rounded-full
-                              bg-white text-black text-sm font-medium
-                              hover:bg-white/90 transition">
-                        View Full Project
-                    </a>
                 </div>
-            </div>
+            @empty
+                <div class="col-span-2 text-center py-12">
+                    <p class="text-white/60 text-lg">No portfolio projects available yet.</p>
+                </div>
+            @endforelse
 
         </div>
+
+        @if($portfolios->hasPages())
+            <div class="mt-12">
+                {{ $portfolios->links() }}
+            </div>
+        @endif
     </div>
 </section>
 

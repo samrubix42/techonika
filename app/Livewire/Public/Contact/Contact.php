@@ -23,18 +23,15 @@ class Contact extends Component
 
     public function submit()
     {
-        // 1️⃣ Validate form
         $validated = $this->validate();
 
-        // 2️⃣ Validate Turnstile token exists
         if (!$this->turnstileToken) {
             $this->addError('turnstileToken', 'Please verify that you are human.');
             return;
         }
 
-        // 3️⃣ Verify Turnstile with Cloudflare
         $response = Http::withOptions([
-            'verify'  => app()->environment('local') ? false : true, // 👈 localhost fix
+            'verify'  => app()->environment('local') ? false : true, 
             'timeout' => 10,
         ])->asForm()->post(
             'https://challenges.cloudflare.com/turnstile/v0/siteverify',
@@ -50,10 +47,8 @@ class Contact extends Component
             return;
         }
 
-        // 4️⃣ Store message in database
         ContactModel::create($validated);
 
-        // 5️⃣ Reset form + captcha
         $this->reset(['name', 'email', 'subject', 'message', 'turnstileToken']);
 
         session()->flash('success', 'Thank you — your message has been sent.');

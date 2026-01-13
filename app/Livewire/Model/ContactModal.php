@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Model;
 
+use App\Models\Contact;
 use Livewire\Component;
 use Illuminate\Support\Facades\Http;
 use Livewire\Attributes\On;
@@ -25,10 +26,10 @@ class ContactModal extends Component
 
     public function submit()
     {
-        $this->validate();
+        $validated=$this->validate();
 
         $response = Http::withOptions([
-            'verify'  => false,
+            'verify'  => app()->environment('local') ? false : true, 
             'timeout' => 10,
         ])->asForm()->post(
             'https://challenges.cloudflare.com/turnstile/v0/siteverify',
@@ -44,8 +45,8 @@ class ContactModal extends Component
             return;
         }
 
-        // 👉 Save / Mail logic (optional)
-        // Contact::create([...]);
+       Contact::create($validated);
+    
 
         $this->reset();
         session()->flash('success', 'Message sent successfully!');

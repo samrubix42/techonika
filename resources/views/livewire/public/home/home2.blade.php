@@ -199,7 +199,7 @@
 
 
             <!-- CTA -->
-            <button     @click="$dispatch('open-modal', { to: 'contact' })"
+            <button @click="$dispatch('open-modal', { to: 'contact' })"
 
                 class="inline-flex items-center gap-3
               bg-primary text-black
@@ -209,7 +209,7 @@
               transition-all duration-300">
                 Get in Touch
                 <i class="ri-arrow-right-line"></i>
-</button>
+            </button>
 
         </div>
     </section>
@@ -294,7 +294,7 @@
 
                     <!-- CTA -->
                     <div class="mt-8 sm:mt-10 flex flex-wrap gap-4">
-                        <a href="#contact"
+                        <button @click="$dispatch('open-modal', { to: 'contact' })"
                             class="inline-flex items-center gap-2
                                px-7 py-3.5 rounded-full
                                bg-[color:var(--color-primary)]
@@ -302,9 +302,9 @@
                                hover:opacity-90 transition">
                             <i class="ri-chat-3-line"></i>
                             Get Free Consultation
-                        </a>
+                        </button>
 
-                        <a href="#services"
+                        <a href="{{route('services')}}"
                             class="inline-flex items-center gap-2
                                px-7 py-3.5 rounded-full
                                border border-white/20
@@ -499,8 +499,8 @@
 
                     <!-- CTA -->
                     <div class="mt-8 flex flex-wrap gap-4">
-                        <a
-                            href="#contact"
+                        <button
+                            @click="$dispatch('open-modal', { to: 'contact' })"
                             class="inline-flex items-center gap-2
                                px-7 py-3.5 rounded-full
                                bg-primary text-black
@@ -508,10 +508,10 @@
                                hover:opacity-90 transition">
                             Get Free Consultation
                             <i class="ri-arrow-right-line"></i>
-                        </a>
+                        </button>
 
                         <a
-                            href="#portfolio"
+                            href="{{route('portfolio')}}"
                             class="inline-flex items-center gap-2
                                px-7 py-3.5 rounded-full
                                border border-white/20
@@ -1024,8 +1024,8 @@
 
                     <!-- CTA -->
                     <div class="mt-8 flex flex-wrap gap-4">
-                        <a
-                            href="#contact"
+                        <button
+                            @click="$dispatch('open-modal', { to: 'contact' })"
                             class="inline-flex items-center gap-2
                                px-7 py-3.5 rounded-full
                                bg-primary text-black
@@ -1033,10 +1033,10 @@
                                hover:opacity-90 transition">
                             Get Free SEO Audit
                             <i class="ri-arrow-right-line"></i>
-                        </a>
+                        </button>
 
                         <a
-                            href="#seo-services"
+                            href="{{route('services')}}"
                             class="inline-flex items-center gap-2
                                px-7 py-3.5 rounded-full
                                border border-white/20
@@ -1914,14 +1914,14 @@
 
                         <!-- CTA -->
                         <div class="mt-10 flex flex-wrap gap-4">
-                            <button 
-                            @click="contactopen = true"
+                            <button
+                                @click="contactopen = true"
                                 class="inline-flex items-center gap-2
                               px-8 py-3.5 rounded-full
                               bg-primary text-black font-semibold
                               hover:opacity-90 transition">
                                 Get in Touch
-</button>
+                            </button>
 
                             <a href="#services"
                                 class="inline-flex items-center gap-2

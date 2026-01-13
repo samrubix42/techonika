@@ -12,9 +12,15 @@ class Portfolio extends Model
         'description',
         'image',
         'tags',
+        'project_url',
     ];
 
     protected $casts = [
         'tags' => 'json',
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(PortfolioCategory::class, 'category_id');
+    }
 }

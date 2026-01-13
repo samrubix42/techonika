@@ -55,14 +55,14 @@
                         <!-- CTA -->
                         <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4
                             justify-center lg:justify-start">
-                            <a href="#contact"
+                            <button  @click="$dispatch('open-modal', { to: 'contact' })"
                                 class="w-full sm:w-auto px-6 py-3 rounded-xl
                               bg-primary text-black font-medium
                               hover:bg-primary/90 transition text-center">
                                 Get Free Consultation
-                            </a>
+</button>
 
-                            <a href="#services"
+                            <a href="{{route('services')}}"
                                 class="w-full sm:w-auto px-6 py-3 rounded-xl
                               bg-white/10 border border-white/20
                               hover:bg-white/15 transition text-center">

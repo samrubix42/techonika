@@ -33,13 +33,13 @@
 
             <!-- CTA -->
             <div class="mt-10 flex justify-center gap-6">
-                <a href="#contact"
+                <button  @click="$dispatch('open-modal', { to: 'contact' })"
                     class="rounded-md bg-amber-400 px-6 py-3
                 font-semibold text-black">
                     Get Free Consultation
-                </a>
+</button>
 
-                <a href="#services"
+                <a href="{{route('services')}}"
                     class="text-white font-semibold">
                     Explore Services →
                 </a>
