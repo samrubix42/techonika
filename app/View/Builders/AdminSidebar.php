@@ -120,6 +120,13 @@ class AdminSidebar
                 'hasSubmenu' => false,
                 'submenu' => [],
             ],
+            (object)[
+                'title' => 'Package Enquiries',
+                'icon' => 'ti ti-package',
+                'url' => route('admin.package-enquiry'),
+                'hasSubmenu' => false,
+                'submenu' => [],
+            ]
 
         ]);
 

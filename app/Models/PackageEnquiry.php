@@ -12,5 +12,6 @@ class PackageEnquiry extends Model
         'phone',
         'package',
         'message',
+        'is_read',
     ];
 }

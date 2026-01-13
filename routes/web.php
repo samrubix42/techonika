@@ -4,6 +4,7 @@ use App\Livewire\Admin\Blog\AddBlog;
 use App\Livewire\Admin\Blog\BlogList;
 use App\Livewire\Admin\Blog\CategoryList;
 use App\Livewire\Admin\Blog\UpdateBlog;
+use App\Livewire\Admin\Contact\PackageEnquires;
 use App\Livewire\Admin\Dashboard\Dashboard;
 use App\Livewire\Admin\Faq\Faq;
 use App\Livewire\Admin\Page\PageManagement;
@@ -57,6 +58,7 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/',Dashboard::class)->name('dashboard');
     Route::get('/page-management',PageManagement::class)->name('page-management');
     Route::get('/service-category',ServiceCategoryList::class)->name('service-category');
+    Route::get('/package-enquiry',PackageEnquires::class)->name('package-enquiry');
     Route::get('/faq-management',Faq::class)->name('faq-management');
     Route::get('/Users',UserList::class)->name('users');
     Route::get('/permission',PermissionList::class)->name('permission');
