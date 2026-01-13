@@ -45,15 +45,15 @@
 
             <!-- Buttons -->
             <div class="mt-12 flex flex-wrap gap-4">
-                <a href="#contact"
+                <button @click="$dispatch('open-modal', { to: 'contact' })"
                    class="inline-flex items-center justify-center
                           px-7 py-3 rounded-full
                           bg-primary text-black font-medium
                           hover:bg-primary/90 transition">
                     Start Your Project
-                </a>
+                </button>
 
-                <a href="#design-process"
+                <a href="{{route('portfolio')}}"
                    class="inline-flex items-center justify-center
                           px-7 py-3 rounded-full
                           border border-white/20
@@ -1122,15 +1122,15 @@
 
         <!-- CTA Buttons -->
         <div class="mt-14 flex flex-wrap justify-center gap-4">
-            <a href="#contact"
+            <button @click="$dispatch('open-modal', { to: 'contact' })"
                class="inline-flex items-center justify-center
                       px-8 py-3 rounded-full
                       bg-primary text-black font-medium
                       hover:bg-primary/90 transition">
                 Start Your Website Design
-            </a>
+            </button>
 
-            <a href="#design-process"
+            <a href="{{route('portfolio')}}"
                class="inline-flex items-center justify-center
                       px-8 py-3 rounded-full
                       border border-white/20

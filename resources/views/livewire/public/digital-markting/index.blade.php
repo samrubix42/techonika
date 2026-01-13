@@ -338,7 +338,7 @@
 
                      <!-- Optional CTA -->
                      <div class="mt-8">
-                         <a href="#services"
+                         <a @click="$dispatch('open-modal', { to: 'contact' })"
                              class="inline-flex items-center justify-center
                               px-6 py-3 rounded-xl
                               bg-primary text-black font-medium
