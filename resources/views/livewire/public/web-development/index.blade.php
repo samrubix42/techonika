@@ -84,6 +84,15 @@
                         Tell us about your project and we’ll get back shortly.
                     </p>
 
+                    @if($successTop)
+                        <div class="bg-green-500/10 border border-green-500/30 rounded-lg p-4 mb-4">
+                            <p class="text-green-400 text-sm text-center font-medium flex items-center justify-center gap-2">
+                                <i class="ri-checkbox-circle-line text-lg"></i>
+                                Thanks! We will contact you shortly.
+                            </p>
+                        </div>
+                    @endif
+
                     <form wire:submit.prevent="submitTop" class="space-y-4">
 
                         <input type="text" placeholder="Full Name"
@@ -151,10 +160,6 @@
                         <p class="text-[11px] text-white/50 text-center">
                             No spam. Your information is safe with us.
                         </p>
-
-                        @if($successTop)
-                        <p class="text-sm text-primary text-center">Thanks — we will contact you shortly.</p>
-                        @endif
 
                     </form>
                 </div>
@@ -1999,6 +2004,15 @@
                             Get a <span class="text-primary">Free Quote</span>
                         </h3>
 
+                        @if($successBottom)
+                            <div class="bg-green-500/10 border border-green-500/30 rounded-lg p-4 mb-4">
+                                <p class="text-green-400 text-sm text-center font-medium flex items-center justify-center gap-2">
+                                    <i class="ri-checkbox-circle-line text-lg"></i>
+                                    Thanks! We will contact you shortly.
+                                </p>
+                            </div>
+                        @endif
+
                         <form wire:submit.prevent="submitBottom" class="space-y-4">
 
                             <input type="text" placeholder="Your Name"
@@ -2055,10 +2069,6 @@
                                 <span wire:loading.remove>Get a Free Quote</span>
                                 <span wire:loading>Sending...</span>
                             </button>
-
-                            @if($successBottom)
-                            <p class="text-sm text-primary text-center">Thanks — we will contact you shortly.</p>
-                            @endif
 
                         </form>
 

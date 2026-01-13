@@ -4,8 +4,10 @@ namespace App\Livewire\Public\DigitalMarkting;
 
 use App\Livewire\Public\Contact\Contact;
 use App\Models\Contact as ModelsContact;
+use App\Mail\ContactMail;
 use Livewire\Component;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Mail;
 
 class Index extends Component
 {
@@ -49,13 +51,20 @@ class Index extends Component
             return;
         }
 
-        ModelsContact::create([
+        $contact = ModelsContact::create([
             'name'    => $this->name,
             'email'   => $this->email,
             'phone'   => $this->phone,
             'subject' => 'Digital Marketing Enquiry - ' . $this->service,
             'message' => 'Interested in Digital Marketing service: ' . $this->service,
         ]);
+
+        // Send email notification
+        try {
+            Mail::to('samcool3203@gmail.com')->send(new ContactMail($contact));
+        } catch (\Exception $e) {
+            \Log::error('Failed to send digital marketing email: ' . $e->getMessage());
+        }
 
         $this->reset();
         $this->dispatch('turnstile-reset');

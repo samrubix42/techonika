@@ -4,7 +4,9 @@ namespace App\Livewire\Public\WebDevelopment;
 
 use Livewire\Component;
 use App\Models\Contact;
+use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Attributes\On;
 
 class Index extends Component
@@ -107,13 +109,20 @@ public function setBottomToken($token)
             return;
         }
 
-        Contact::create([
+        $contact = Contact::create([
             'name' => $this->topName,
             'email' => $this->topEmail,
             'phone' => $this->topPhone ?? null,
             'subject' => $this->topService ?? 'Web Development - Quote',
             'message' => $this->topMessage ?? null,
         ]);
+
+        // Send email notification
+        try {
+            Mail::to('samcool3203@gmail.com')->send(new ContactMail($contact));
+        } catch (\Exception $e) {
+            \Log::error('Failed to send web development top form email: ' . $e->getMessage());
+        }
 
         $this->successTop = true;
         $this->reset(['topName', 'topEmail', 'topPhone', 'topService', 'topMessage', 'turnstileTokenTop']);
@@ -141,13 +150,20 @@ public function setBottomToken($token)
             return;
         }
 
-        Contact::create([
+        $contact = Contact::create([
             'name' => $this->bottomName,
             'email' => $this->bottomEmail,
             'phone' => $this->bottomPhone ?? null,
             'subject' => $this->bottomService ?? 'Web Development - Quote',
             'message' => $this->bottomMessage ?? null,
         ]);
+
+        // Send email notification
+        try {
+            Mail::to('samcool3203@gmail.com')->send(new ContactMail($contact));
+        } catch (\Exception $e) {
+            \Log::error('Failed to send web development bottom form email: ' . $e->getMessage());
+        }
 
         $this->successBottom = true;
         $this->reset(['bottomName', 'bottomEmail', 'bottomPhone', 'bottomService', 'bottomMessage', 'turnstileTokenBottom']);
