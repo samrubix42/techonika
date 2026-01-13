@@ -61,7 +61,7 @@
                     </p>
 
                     <!-- CTA -->
-                    <a href="#portfolio"
+                    <a href="{{ route('portfolio') }}"
                         class="inline-flex items-center gap-2 text-primary
                           font-semibold hover:underline transition">
                         <i class="ri-arrow-right-line"></i>
@@ -574,12 +574,12 @@
                         </p>
                     </div>
 
-                    <a href="#contact"
+                    <button @click="$dispatch('open-modal', { to: 'contact' })"
                         class="mr-auto px-6 py-2.5 rounded-full
                           border border-primary text-primary
                           hover:bg-primary hover:text-black transition">
                         Start Your Project
-                    </a>
+                    </button>
                 </div>
 
                 <!-- RIGHT TIMELINE -->

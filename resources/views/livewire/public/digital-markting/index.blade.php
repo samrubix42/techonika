@@ -844,17 +844,13 @@
                      </p>
 
                      <!-- CTA -->
-                     <a href="#contact"
-                         class="inline-flex mt-8 items-center gap-2
-                          px-7 py-3 rounded-full
-                          bg-primary text-black font-semibold
-                          hover:opacity-90 transition">
-                         Plan My Ad Strategy
-                     </a>
-                 </div>
-
-             </div>
-         </div>
+                    <button @click="$dispatch('open-modal', { to: 'contact' })"
+                        class="inline-flex mt-8 items-center gap-2
+                         px-7 py-3 rounded-full
+                         bg-primary text-black font-semibold
+                         hover:opacity-90 transition">
+                        Plan My Ad Strategy
+                    </button>
      </section>
      <section class="bg-black py-10 relative overflow-hidden">
          <div class="max-w-7xl mx-auto px-6">
@@ -947,17 +943,13 @@
                      </p>
 
                      <!-- CTA -->
-                     <a href="#contact"
-                         class="inline-flex mt-8 items-center gap-2
-                          px-7 py-3 rounded-full
-                          bg-primary text-black font-semibold
-                          hover:opacity-90 transition">
-                         Build My Social Presence
-                     </a>
-                 </div>
-
-             </div>
-         </div>
+                    <button @click="$dispatch('open-modal', { to: 'contact' })"
+                        class="inline-flex mt-8 items-center gap-2
+                         px-7 py-3 rounded-full
+                         bg-primary text-black font-semibold
+                         hover:opacity-90 transition">
+                        Build My Social Presence
+                    </button>
      </section>
      <section class="bg-black py-10 relative overflow-hidden">
          <div class="max-w-7xl mx-auto px-6">
@@ -1173,17 +1165,13 @@
                      </p>
 
                      <!-- CTA -->
-                     <a href="#contact"
-                         class="inline-flex mt-8 items-center gap-2
-                          px-7 py-3 rounded-full
-                          bg-primary text-black font-semibold
-                          hover:opacity-90 transition">
-                         Improve Local Visibility
-                     </a>
-                 </div>
-
-             </div>
-
+                    <button @click="$dispatch('open-modal', { to: 'contact' })"
+                        class="inline-flex mt-8 items-center gap-2
+                         px-7 py-3 rounded-full
+                         bg-primary text-black font-semibold
+                         hover:opacity-90 transition">
+                        Improve Local Visibility
+                    </button>
          </div>
      </section>
      <section class="bg-black py-10 relative overflow-hidden">
@@ -1269,17 +1257,13 @@
                      </p>
 
                      <!-- CTA -->
-                     <a href="#contact"
-                         class="inline-flex mt-8 items-center gap-2
-                          px-7 py-3 rounded-full
-                          bg-primary text-black font-semibold
-                          hover:opacity-90 transition">
-                         View Sample Report
-                     </a>
-                 </div>
-
-             </div>
-
+                    <button @click="$dispatch('open-modal', { to: 'contact' })"
+                        class="inline-flex mt-8 items-center gap-2
+                         px-7 py-3 rounded-full
+                         bg-primary text-black font-semibold
+                         hover:opacity-90 transition">
+                        View Sample Report
+                    </button>
          </div>
      </section>
 
@@ -1313,13 +1297,11 @@
 
              <!-- CTA Buttons -->
              <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                 <a href="#contact"
-                     class="px-8 py-3 rounded-xl bg-primary text-black font-medium
-                      hover:bg-primary/90 transition text-center">
-                     Get a Free Consultation
-                 </a>
-
-                 <a href="#services"
+                <button @click="$dispatch('open-modal', { to: 'contact' })"
+                    class="px-8 py-3 rounded-xl bg-primary text-black font-medium
+                     hover:bg-primary/90 transition text-center">
+                    Get a Free Consultation
+                </button>
                      class="px-8 py-3 rounded-xl bg-white/10 border border-white/20
                       hover:bg-white/15 transition text-center">
                      Explore Our Services

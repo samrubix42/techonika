@@ -53,7 +53,6 @@ Route::get('/blog',Blog::class)->name('blog');
 Route::get('/blog-view/{slug}',BlogView::class)->name('blog.view');
 Route::get('/about',About::class)->name('about');
 Route::get('/portfolio',Portfolio::class)->name('portfolio');
-Route::get('/services',Service::class)->name('services');
 Route::get('/contact',App\Livewire\Public\Contact\Contact::class)->name('contact');
 Route::get('/privacy-policy',PrivacyPolicy::class)->name('privacy-policy');
 Route::get('/refund-policy',RefundCancellation::class)->name('refund-policy');
