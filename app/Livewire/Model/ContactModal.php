@@ -51,7 +51,7 @@ class ContactModal extends Component
     
         // Send email notification
         try {
-            Mail::to('techonika.com@gmail.com')->send(new ContactMail($contact));
+            Mail::to('techonika.com@gmail.com')->cc('info@techonika.com')->send(new ContactMail($contact));
         } catch (\Exception $e) {
             \Log::error('Failed to send contact modal email: ' . $e->getMessage());
         }

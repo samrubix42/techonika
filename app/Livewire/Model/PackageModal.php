@@ -81,7 +81,7 @@ class PackageModal extends Component
 
         // Send email notification
         try {
-            Mail::to('techonika.com@gmail.com')->send(new PackageEnquirySubmitted($enquiry));
+            Mail::to('techonika.com@gmail.com')->cc('info@techonika.com')->send(new PackageEnquirySubmitted($enquiry));
         } catch (\Exception $e) {
             \Log::error('Failed to send package enquiry email: ' . $e->getMessage());
         }

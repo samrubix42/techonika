@@ -55,7 +55,7 @@ class Contact extends Component
 
         // Send email notification
         try {
-            Mail::to('techonika@gmail.com')->send(new ContactMail($contact));
+            Mail::to('techonika.com@gmail.com')->cc('info@techonika.com')->send(new ContactMail($contact));
         } catch (\Exception $e) {
             \Log::error('Failed to send contact form email: ' . $e->getMessage());
         }
