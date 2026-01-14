@@ -53,28 +53,42 @@
             <div class="lg:w-1/4">
                 <h4 class="text-sm tracking-widest uppercase text-[#f6b615] mb-4">Get in touch</h4>
                 <p class="text-gray-300 text-sm">Have a project or question? We’re ready to help.</p>
-                <a href="mailto:techonika.com@gmail.com" class="mt-4 inline-block text-sm text-gray-400 hover:text-white transition">techonika.com@gmail.com</a>
+                <a href="mailto:info@techonika.com" class="mt-4 inline-block text-sm text-gray-400 hover:text-white transition">info@techonika.com</a>
                 <p class="mt-2 text-sm text-gray-400">Call us: <a href="tel:+918810599816" class="text-amber-300 hover:underline">+91-8810599816</a></p>
 
                 <div class="mt-6 flex items-center gap-4">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/techonika" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-gray-400 hover:text-white transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/techonika" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-gray-400 hover:text-white transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.4.4.6.2 1 .4 1.4.9.4.4.7.8.9 1.4.2.5.3 1.2.4 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.4-.2.6-.5 1-1 1.4-.4.4-.8.7-1.4.9-.5.2-1.2.3-2.4.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.4-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.5-.3-1.2-.4-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.4.2-.6.5-1 1-1.4.4-.4.8-.7 1.4-.9.5-.2 1.2-.3 2.4-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.1c-3 0-5.5 2.5-5.5 5.5s2.46 5.5 5.5 5.5 5.5-2.46 5.5-5.5S15 5.3 12 5.3zm0 9.1A3.6 3.6 0 1 1 12 7.1a3.6 3.6 0 0 1 0 7.3zM18.4 4.6a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6z" />
+                        </svg>
+                    </a>
+
                     <!-- LinkedIn -->
-                    <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-white transition">
+                    <a href="https://www.linkedin.com/company/techonika/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-gray-400 hover:text-white transition">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM8.5 8h3.7v2.2h.1c.5-.9 1.7-2 3.5-2 3.7 0 4.4 2.4 4.4 5.5V24h-4V15.6c0-2.0 0-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.4V24h-4V8z" />
                         </svg>
                     </a>
 
-                    <!-- Twitter -->
-                    <a href="#" aria-label="Twitter" class="text-gray-400 hover:text-white transition">
+                    <!-- Pinterest -->
+                    <a href="https://in.pinterest.com/techonika/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" class="text-gray-400 hover:text-white transition">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M24 4.6c-.9.4-1.8.6-2.8.8.99-.6 1.7-1.5 2.05-2.6-.95.6-2.01 1-3.14 1.2C19 3 17.9 2.4 16.6 2.4c-2.3 0-4.2 1.9-4.2 4.2 0 .33.03.65.1.96C8 7.5 4.3 5.8 1.67 3.1c-.36.62-.57 1.3-.57 2.05 0 1.4.71 2.6 1.8 3.3-.83-.03-1.62-.25-2.3-.64v.06c0 2.03 1.45 3.73 3.36 4.12-.35.1-.72.15-1.1.15-.27 0-.53-.02-.78-.07.53 1.64 2.05 2.83 3.86 2.86C5.8 18.8 3.9 19.5 1.9 19.5c-.39 0-.78-.02-1.17-.07 2.22 1.42 4.86 2.25 7.69 2.25 9.23 0 14.3-7.64 14.3-14.26 0-.22 0-.44-.02-.66.98-.7 1.82-1.57 2.5-2.57z" />
+                            <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
                         </svg>
                     </a>
 
-                    <!-- Instagram -->
-                    <a href="#" aria-label="Instagram" class="text-gray-400 hover:text-white transition">
+                    <!-- Twitter/X -->
+                    <a href="https://x.com/techonika" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="text-gray-400 hover:text-white transition">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.4.4.6.2 1 .4 1.4.9.4.4.7.8.9 1.4.2.5.3 1.2.4 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.4-.2.6-.5 1-1 1.4-.4.4-.8.7-1.4.9-.5.2-1.2.3-2.4.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.4-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.5-.3-1.2-.4-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.4.2-.6.5-1 1-1.4.4-.4.8-.7 1.4-.9.5-.2 1.2-.3 2.4-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.1c-3 0-5.5 2.5-5.5 5.5s2.46 5.5 5.5 5.5 5.5-2.46 5.5-5.5S15 5.3 12 5.3zm0 9.1A3.6 3.6 0 1 1 12 7.1a3.6 3.6 0 0 1 0 7.3zM18.4 4.6a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6z" />
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                         </svg>
                     </a>
                 </div>

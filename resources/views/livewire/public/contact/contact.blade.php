@@ -243,7 +243,7 @@
                         <div>
                             <h4 class="text-white font-medium mb-1">Phone</h4>
                             <p class="text-white/70 text-sm">
-                                +91 98765 43210
+                                +91 8810599816
                             </p>
                         </div>
                     </div>
@@ -256,7 +256,7 @@
                         <div>
                             <h4 class="text-white font-medium mb-1">Email</h4>
                             <p class="text-white/70 text-sm">
-                                hello@techonika.com
+                                 info@techonika.com
                             </p>
                         </div>
                     </div>
