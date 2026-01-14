@@ -34,6 +34,7 @@
                         <li><a href="{{ route('digital-marketing') }}" class="hover:text-white transition">Digital Marketing</a></li>
                         <li><a href="{{ route('graphicdesigning') }}" class="hover:text-white transition">Graphic Design</a></li>
                         <li><a href="{{ route('mobileappdevelopment') }}" class="hover:text-white transition">Mobile App</a></li>
+                        <li><a href="{{ route('branding') }}" class="hover:text-white transition">Branding</a></li>
                     </ul>
                 </div>
 

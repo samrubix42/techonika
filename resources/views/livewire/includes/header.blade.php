@@ -46,6 +46,7 @@
             <a wire:navigate href="{{ route('digital-marketing') }}" class="block px-4 py-2 rounded hover:bg-white/5">Digital Marketing</a>
             <a href="{{ route('graphicdesigning') }}" class="block px-4 py-2 rounded hover:bg-white/5">Graphic Designing</a>
             <a href="{{ route('mobileappdevelopment') }}" class="block px-4 py-2 rounded hover:bg-white/5">Mobile App Development</a>
+            <a href="{{ route('branding') }}" class="block px-4 py-2 rounded hover:bg-white/5">Branding</a>
           </div>
         </div>
 
@@ -123,6 +124,7 @@
             <a href="{{ route('digital-marketing') }}">Digital Marketing</a>
             <a href="{{ route('graphicdesigning') }}">Graphic Designing</a>
             <a href="{{ route('mobileappdevelopment') }}">Mobile App Development</a>
+            <a href="{{ route('branding') }}">Branding</a>
           </div>
         </div>
 
