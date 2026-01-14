@@ -22,7 +22,7 @@
 
       <!-- LOGO -->
       <a href="{{ route('home') }}">
-        <img src="{{ asset('techonika-logo-dark.png') }}" class="h-9 md:h-11">
+        <img src="{{ asset('logo.png') }}" class="h-9 md:h-11">
       </a>
 
       <!-- DESKTOP NAV -->
