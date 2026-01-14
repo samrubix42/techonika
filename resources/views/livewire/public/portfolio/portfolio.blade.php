@@ -136,7 +136,7 @@
 
         @if($portfolios->hasPages())
             <div class="mt-12">
-                {{ $portfolios->links() }}
+                {{ $portfolios->links('vendor.pagination.theme') }}
             </div>
         @endif
     </div>
