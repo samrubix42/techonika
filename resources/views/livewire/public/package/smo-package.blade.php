@@ -1,3 +1,9 @@
+@section('meta')
+    <title>SMO Packages | Social Media Optimization & Marketing Services</title>
+    <meta name="description" content="Enhance your social media presence with Technonika SMO packages. Get professional social media optimization and marketing services for all major platforms.">
+    <meta name="keywords" content="SMO packages, social media optimization, social media marketing, SMO services, social media management, SMO pricing">
+@endsection
+
 <div>
     <section class="relative bg-black py-32 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 text-center relative z-10">

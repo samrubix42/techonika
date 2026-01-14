@@ -5,7 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ $title ?? 'Technonika' }}</title>
+    @hasSection('meta')
+        @yield('meta')
+    @else
+        <title>{{ $title ?? 'Technonika - Web Development, Digital Marketing & IT Solutions' }}</title>
+        <meta name="description" content="Technonika offers professional web development, digital marketing, SEO, graphic designing, and IT solutions to grow your business online.">
+        <meta name="keywords" content="web development, digital marketing, SEO services, graphic designing, web designing, mobile app development">
+    @endif
+    
+    <meta name="author" content="Technonika">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">

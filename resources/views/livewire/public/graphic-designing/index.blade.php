@@ -1,3 +1,9 @@
+@section('meta')
+    <title>Professional Graphic Designing Services | Creative Design Solutions</title>
+    <meta name="description" content="Technonika offers professional graphic designing services including logo design, branding, marketing materials, and creative design solutions for your business.">
+    <meta name="keywords" content="graphic designing services, logo design, branding services, creative design, graphic design company, marketing materials design">
+@endsection
+
 <div>
     <section class="relative bg-black overflow-hidden">
 

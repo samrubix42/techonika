@@ -1,3 +1,9 @@
+@section('meta')
+    <title>Digital Marketing Services | SEO, SMO & Online Marketing Solutions</title>
+    <meta name="description" content="Boost your online presence with Technonika digital marketing services. We offer SEO, SMO, PPC, content marketing, and comprehensive online marketing solutions.">
+    <meta name="keywords" content="digital marketing services, SEO services, social media marketing, SMO, PPC advertising, online marketing, content marketing">
+@endsection
+
  <div>
      <section class="relative bg-black text-white overflow-hidden">
          <!-- Background glow -->

@@ -1,3 +1,9 @@
+@section('meta')
+    <title>Terms & Conditions | Technonika Service Agreement</title>
+    <meta name="description" content="Read Technonika terms and conditions for using our website and services. Understand the terms of service, user responsibilities, and service agreements.">
+    <meta name="keywords" content="terms and conditions, service agreement, terms of service, user agreement, legal terms, Technonika terms">
+@endsection
+
 <section class="bg-black text-white min-h-screen py-20">
     <div class="max-w-4xl mx-auto px-6">
 

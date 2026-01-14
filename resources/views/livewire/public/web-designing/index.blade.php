@@ -1,3 +1,9 @@
+@section('meta')
+    <title>Professional Web Designing Services | Creative Website Design Company</title>
+    <meta name="description" content="Get professional web designing services from Technonika. We create stunning, user-friendly website designs that engage visitors and drive conversions for your business.">
+    <meta name="keywords" content="web designing services, website design company, professional web design, UI UX design, creative web design, responsive website design">
+@endsection
+
 <div>
     <section class="relative bg-black overflow-hidden">
     <!-- Background Glow -->

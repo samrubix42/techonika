@@ -1,3 +1,9 @@
+@section('meta')
+    <title>Disclaimer | Technonika Website & Service Disclaimer</title>
+    <meta name="description" content="Read Technonika disclaimer regarding the use of our website, services, and materials. Important legal information and limitations of liability.">
+    <meta name="keywords" content="disclaimer, legal disclaimer, website disclaimer, service disclaimer, liability terms, Technonika disclaimer">
+@endsection
+
 <section class="bg-black text-white min-h-screen py-20">
     <div class="max-w-4xl mx-auto px-6">
 

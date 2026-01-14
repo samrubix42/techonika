@@ -1,3 +1,9 @@
+@section('meta')
+    <title>Mobile App Development Services | iOS & Android App Development</title>
+    <meta name="description" content="Professional mobile app development services by Technonika. We create custom iOS and Android apps with cutting-edge technology for your business needs.">
+    <meta name="keywords" content="mobile app development, iOS app development, Android app development, mobile application services, app development company">
+@endsection
+
 <div>
     <section class="bg-black pt-36 pb-32 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">

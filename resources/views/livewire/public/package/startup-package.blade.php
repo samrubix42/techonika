@@ -1,3 +1,9 @@
+@section('meta')
+    <title>Startup Package | Complete Digital Solutions for New Businesses</title>
+    <meta name="description" content="Launch your startup successfully with Technonika startup package. Get complete digital solutions including website, branding, SEO, and marketing at affordable rates.">
+    <meta name="keywords" content="startup package, startup digital solutions, business startup services, affordable startup package, new business solutions">
+@endsection
+
 <div>
 <section class="relative bg-black py-32 overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 text-center relative z-10">

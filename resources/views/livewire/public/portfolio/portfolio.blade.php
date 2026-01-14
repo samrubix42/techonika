@@ -1,3 +1,9 @@
+@section('meta')
+    <title>Portfolio | Our Web Development & Design Projects | Technonika</title>
+    <meta name="description" content="Explore Technonika portfolio showcasing our successful web development, design, and digital marketing projects. See how we have helped businesses achieve their goals.">
+    <meta name="keywords" content="portfolio, web development projects, design portfolio, client work, case studies, project showcase">
+@endsection
+
 <div>
     <section class="bg-black pt-40 pb-36 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 relative">

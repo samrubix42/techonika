@@ -1,3 +1,9 @@
+@section('meta')
+    <title>Refund & Cancellation Policy | Technonika Service Terms</title>
+    <meta name="description" content="Understand Technonika refund and cancellation policy. Learn about our transparent terms for service cancellations, refund eligibility, and processing timeframes.">
+    <meta name="keywords" content="refund policy, cancellation policy, service terms, refund terms, cancellation terms, Technonika policy">
+@endsection
+
 <section class="bg-black text-white min-h-screen py-20">
     <div class="max-w-4xl mx-auto px-6">
 

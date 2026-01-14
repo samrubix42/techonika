@@ -1,3 +1,9 @@
+@section('meta')
+    <title>Technonika - Leading Web Development & Digital Marketing Company</title>
+    <meta name="description" content="Technonika is a premier digital solutions provider offering web development, digital marketing, SEO, graphic designing, and IT services to help businesses grow online.">
+    <meta name="keywords" content="web development company, digital marketing services, SEO services, graphic designing, web designing company, IT solutions, Technonika">
+@endsection
+
 <div>
     <section class="relative bg-black overflow-hidden">
 

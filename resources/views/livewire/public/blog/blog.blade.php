@@ -1,3 +1,9 @@
+@section('meta')
+    <title>Blog | Latest Tech Insights, Web Development & Digital Marketing Tips</title>
+    <meta name="description" content="Read the latest articles on web development, digital marketing, SEO, graphic designing, and technology trends. Stay updated with Technonika expert insights and tips.">
+    <meta name="keywords" content="tech blog, web development blog, digital marketing tips, SEO articles, technology insights, IT blog">
+@endsection
+
 <div
     x-data="{ mobileSearch:false }"
     class="min-h-screen bg-black text-white relative overflow-hidden">

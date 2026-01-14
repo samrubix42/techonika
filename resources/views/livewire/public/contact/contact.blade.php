@@ -1,3 +1,9 @@
+@section('meta')
+    <title>Contact Us | Get in Touch with Technonika for IT Solutions</title>
+    <meta name="description" content="Contact Technonika for professional web development, digital marketing, and IT solutions. Get a free quote and consultation for your project today.">
+    <meta name="keywords" content="contact us, get quote, IT solutions inquiry, web development contact, digital marketing consultation">
+@endsection
+
 <div class="bg-black text-white min-h-screen">
 
     <section class="relative bg-black overflow-hidden">

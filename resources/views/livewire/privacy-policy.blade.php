@@ -1,3 +1,9 @@
+@section('meta')
+    <title>Privacy Policy | Technonika - Data Protection & Privacy Terms</title>
+    <meta name="description" content="Read Technonika privacy policy to understand how we collect, use, and protect your personal information. Your privacy and data security are our top priorities.">
+    <meta name="keywords" content="privacy policy, data protection, privacy terms, personal information, data security, Technonika privacy">
+@endsection
+
 <section class="bg-black text-white min-h-screen py-20">
     <div class="max-w-4xl mx-auto px-6">
 

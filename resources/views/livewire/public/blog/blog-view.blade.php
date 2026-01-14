@@ -1,3 +1,9 @@
+@section('meta')
+    <title>{{ $post->meta_title ?? $post->title . ' | Technonika Blog' }}</title>
+    <meta name="description" content="{{ $post->meta_description ?? Str::limit(strip_tags($post->description), 160) }}">
+    <meta name="keywords" content="{{ $post->meta_keywords ?? 'blog, tech article, web development, digital marketing' }}">
+@endsection
+
 <div class="w-full bg-black text-white min-h-screen relative py-20 overflow-hidden">
 
     <!-- BACKGROUND GLOW -->

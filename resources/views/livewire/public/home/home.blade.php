@@ -1,3 +1,9 @@
+@section('meta')
+    <title>Technonika - Professional Web Development & IT Solutions</title>
+    <meta name="description" content="Transform your business with Technonika professional web development, digital marketing, and IT solutions. We deliver innovative technology solutions for your success.">
+    <meta name="keywords" content="web development, IT solutions, digital transformation, web design, software development, Technonika">
+@endsection
+
 <div>
     <!-- Hero Section -->
     <section class="bg-black text-white min-h-screen py-16 md:py-10 flex items-center px-2 md:px-[9%]">

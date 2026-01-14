@@ -1,3 +1,9 @@
+@section('meta')
+    <title>SEO Packages | Affordable SEO Services for Better Rankings</title>
+    <meta name="description" content="Boost your website rankings with Technonika affordable SEO packages. We offer comprehensive SEO services including keyword research, on-page optimization, and link building.">
+    <meta name="keywords" content="SEO packages, affordable SEO services, search engine optimization, SEO pricing, SEO plans, website ranking">
+@endsection
+
 <div>
 <section class="relative bg-black py-32 overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
