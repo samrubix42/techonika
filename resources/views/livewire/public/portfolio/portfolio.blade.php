@@ -99,7 +99,7 @@
                         </h3>
 
                         <p class="mt-3 text-sm text-white/60 leading-relaxed">
-                            {{ \Illuminate\Support\Str::limit($portfolio->description, 150) }}
+                            {{ \Illuminate\Support\Str::limit($portfolio->description, 400) }}
                         </p>
 
                         @if($portfolio->tags && count($portfolio->tags) > 0)
