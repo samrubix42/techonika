@@ -21,6 +21,7 @@ use App\Livewire\PrivacyPolicy;
 use App\Livewire\Public\About\About;
 use App\Livewire\Public\Blog\Blog;
 use App\Livewire\Public\Blog\BlogView;
+use App\Livewire\Public\Branding\Index as BrandingIndex;
 use App\Livewire\Public\DigitalMarkting\Index as DigitalMarktingIndex;
 use App\Livewire\Public\GraphicDesigning\Index as GraphicDesigningIndex;
 use App\Livewire\Public\Home\Home;
@@ -40,7 +41,6 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',action: Home2::class)->name('home');
-Route::get('/2',action: Home::class)->name('clients');
 Route::get('/web-development',WebDevelopmentIndex::class)->name('webdevelopment');
 Route::get('/seo-package',SeoPackage::class)->name('seo-package');
 Route::get('/smo-package',SmoPackage::class)->name('smo-package');
@@ -57,7 +57,8 @@ Route::get('/contact',App\Livewire\Public\Contact\Contact::class)->name('contact
 Route::get('/privacy-policy',PrivacyPolicy::class)->name('privacy-policy');
 Route::get('/refund-policy',RefundCancellation::class)->name('refund-policy');
 Route::get('/terms-and-conditions',TermAndCondition::class)->name('terms-conditions');
-Route::get('disclaimer',Disclaimer::class)->name('disclaimer');
+Route::get('/disclaimer',Disclaimer::class)->name('disclaimer');
+Route::get('/branding',BrandingIndex::class)->name('branding');
 Route::get('/login',Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/',Dashboard::class)->name('dashboard');

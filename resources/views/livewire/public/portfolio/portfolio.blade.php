@@ -78,7 +78,7 @@
         </div>
 
         <!-- PROJECT GRID -->
-        <div class="grid gap-8 sm:grid-cols-2">
+        <div class="grid gap-8 sm:grid-cols-2" id="projects">
 
             @forelse($portfolios as $portfolio)
                 <div class="group relative bg-white/5 backdrop-blur-xl

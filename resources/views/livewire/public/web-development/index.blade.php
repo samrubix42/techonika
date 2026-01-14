@@ -1,5 +1,5 @@
 @section('meta')
-    <title>Best Web Development Company in Noida | Custom Website Development</title>
+    <title>Web Development Company in Noida | Custom Web Solutions </title>
     <meta name="description" content="Looking for the best web development company in Noida? Technonika offers custom website development, responsive web design, and scalable web solutions for your business.">
     <meta name="keywords" content="web development company Noida, custom website development, responsive web design, web development services, website design company">
 @endsection

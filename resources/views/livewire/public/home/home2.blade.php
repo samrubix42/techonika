@@ -1,7 +1,7 @@
 @section('meta')
-    <title>Technonika - Leading Web Development & Digital Marketing Company</title>
-    <meta name="description" content="Technonika is a premier digital solutions provider offering web development, digital marketing, SEO, graphic designing, and IT services to help businesses grow online.">
-    <meta name="keywords" content="web development company, digital marketing services, SEO services, graphic designing, web designing company, IT solutions, Technonika">
+<title>Technonika - Leading Web Development & Digital Marketing Company</title>
+<meta name="description" content="Technonika is a premier digital solutions provider offering web development, digital marketing, SEO, graphic designing, and IT services to help businesses grow online.">
+<meta name="keywords" content="web development company, digital marketing services, SEO services, graphic designing, web designing company, IT solutions, Technonika">
 @endsection
 
 <div>
@@ -310,7 +310,7 @@
                             Get Free Consultation
                         </button>
 
-                 
+
                     </div>
 
                 </div>
@@ -826,7 +826,7 @@
         <!-- Content -->
         <div class="relative max-w-7xl mx-auto px-6">
 
-              <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8">
 
                 <!-- Stat Card -->
                 <div class="group bg-white/5 border border-white/15 backdrop-blur
@@ -1135,7 +1135,7 @@
                         Every page is crafted to build trust, improve clarity, and offer a comfortable browsing experience
                         across all devices.
                     </p>
-                    <a href="#" class="text-primary font-medium hover:underline">Read More →</a>
+                    <a href="{{ route('webdesigning') }}" class="text-primary font-medium hover:underline">Read More →</a>
                 </div>
 
                 <!-- Graphic Design -->
@@ -1150,7 +1150,7 @@
                         marketing graphics, we design with balance, readability, and purpose in mind.​
                         Colors, typography, and visuals are chosen carefully so your message feels clear, professional, and
                         easy to connect with. </p>
-                    <a href="#" class="text-primary font-medium hover:underline">Read More →</a>
+                    <a href="{{ route('graphicdesigning') }}" class="text-primary font-medium hover:underline">Read More →</a>
                 </div>
 
                 <!-- Web Development -->
@@ -1165,7 +1165,7 @@
                         devices.
                         We build websites that are easy to manage and ready to grow with your business. Our work stays
                         clear, stable, and reliable so you can focus on serving your customers. </p>
-                    <a href="#" class="text-primary font-medium hover:underline">Read More →</a>
+                    <a href="{{ route('webdevelopment') }}" class="text-primary font-medium hover:underline">Read More →</a>
                 </div>
 
                 <!-- Digital Marketing -->
@@ -1179,7 +1179,7 @@
                         you reach the right audience in a clear and steady way.
                         We plan and manage marketing activities that support real growth. Every step stays focused on your
                         goals and helps you build long-term connections with people. </p>
-                    <a href="#" class="text-primary font-medium hover:underline">Read More →</a>
+                    <a href="{{ route('digital-marketing') }}" class="text-primary font-medium hover:underline">Read More →</a>
                 </div>
 
                 <!-- Ecommerce -->
@@ -1207,7 +1207,7 @@
                         and easy to use.
                         We build apps that work well every day and stay ready for future updates. This helps you serve users
                         better as needs change. </p>
-                    <a href="#" class="text-primary font-medium hover:underline">Read More →</a>
+                    <a href="{{ route('mobileappdevelopment') }}" class="text-primary font-medium hover:underline">Read More →</a>
                 </div>
                 <div class="bg-white/10 backdrop-blur-md border border-white/20
             rounded-xl p-6 flex flex-col gap-4 shadow-lg
@@ -1256,7 +1256,7 @@
                         feel confident when they see your business.
                     </p>
 
-                    <a href="#" class="text-primary font-medium hover:underline">
+                    <a href="{{ route('branding') }}" class="text-primary font-medium hover:underline">
                         Read More →
                     </a>
                 </div>
@@ -1871,7 +1871,7 @@
                         <!-- CTA -->
                         <div class="mt-10 flex flex-wrap gap-4">
                             <button
-                               @click="$dispatch('open-modal', { to: 'contact' })"
+                                @click="$dispatch('open-modal', { to: 'contact' })"
                                 class="inline-flex items-center gap-2
                               px-8 py-3.5 rounded-full
                               bg-primary text-black font-semibold
