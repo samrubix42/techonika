@@ -1469,7 +1469,7 @@
                         we stay with you at every step.
                     </p>
 
-                    <a href="#contact"
+                    <button @click="$dispatch('open-modal', { to: 'contact' })"
                         class="inline-flex items-center gap-2
                            bg-[#f6b615] text-black
                            px-6 py-3 rounded-lg font-semibold
@@ -1483,7 +1483,7 @@
                                 stroke-width="2"
                                 d="M9 5l7 7-7 7" />
                         </svg>
-                    </a>
+                    </button>
                 </div>
 
                 <!-- RIGHT IMAGE -->
@@ -1865,7 +1865,7 @@
                         <!-- CTA -->
                         <div class="mt-10 flex flex-wrap gap-4">
                             <button
-                                @click="contactopen = true"
+                               @click="$dispatch('open-modal', { to: 'contact' })"
                                 class="inline-flex items-center gap-2
                               px-8 py-3.5 rounded-full
                               bg-primary text-black font-semibold
