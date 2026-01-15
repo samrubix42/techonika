@@ -12,6 +12,7 @@ class Portfolio extends Model
         'description',
         'image',
         'tags',
+        'sequence',
         'project_url',
     ];
 

@@ -11,8 +11,8 @@
             <a href="{{ route('admin.dashboard') }}"
                 class="d-flex align-items-center justify-content-center gap-2 text-decoration-none">
 
-                <span class="fw-bold fs-4 text-white" style="font-weight: bold; font-size: 1.25rem;">
-                    Gift Ecom
+                <span class="fw-bold fs-4 text-white mt-6" style="font-weight: bold; font-size: 1.25rem;">
+                    Technonika Admin
                 </span>
             </a>
 
@@ -52,7 +52,7 @@
                     </ul>
                     @else
                     {{-- Single Menu Item --}}
-                    <a wire:navigate href="{{ $menu->url }}" class="nav-link {{ request()->is($menu->url . '*') ? 'active' : '' }}" >
+                    <a  href="{{ $menu->url }}" class="nav-link {{ request()->is($menu->url . '*') ? 'active' : '' }}" >
                         <span class="nav-link-icon d-md-none d-lg-inline-block">
                             <i class="{{ $menu->icon ?? '' }} h2"></i>
                         </span>
