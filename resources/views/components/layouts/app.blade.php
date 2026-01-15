@@ -16,7 +16,7 @@
     <meta name="author" content="Technonika">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Fonts -->
