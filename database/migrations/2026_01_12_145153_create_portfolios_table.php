@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->json('tags')->nullable();
             $table->string('project_url')->nullable();
-            $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
     }
