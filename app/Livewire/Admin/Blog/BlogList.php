@@ -72,7 +72,7 @@ class BlogList extends Component
     {
         if ($this->deleteId) {
             Post::findOrFail($this->deleteId)->delete();
-            session()->flash('success', 'Post deleted successfully');
+                $this->dispatch('toast', type: 'success', message:  'Post deleted successfully');
         }
 
         $this->cancelDelete();

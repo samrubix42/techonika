@@ -72,7 +72,7 @@ class CategoryList extends Component
         );
 
         $this->modalFormVisible = false;
-        session()->flash('success', $this->categoryId ? 'Category updated successfully!' : 'Category created successfully!');
+            $this->dispatch('toast', type: 'success', message:  $this->categoryId ? 'Category updated successfully!' : 'Category created successfully!');
         $this->resetForm();
     }
 
@@ -80,7 +80,7 @@ class CategoryList extends Component
     {
         BlogCategory::destroy($this->categoryId);
         $this->modalConfirmDeleteVisible = false;
-        session()->flash('success', 'Category deleted successfully!');
+            $this->dispatch('toast', type: 'success', message:  'Category deleted successfully!');
     }
 
     private function resetForm()

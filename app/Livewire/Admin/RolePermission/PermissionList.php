@@ -99,7 +99,7 @@ class PermissionList extends Component
     {
         if ($this->deleteId) {
             Permission::findOrFail($this->deleteId)->delete();
-            session()->flash('success', 'Permission deleted');
+                $this->dispatch('toast', type: 'success', message:  'Permission deleted');
         }
 
         $this->cancelDelete();

@@ -133,7 +133,7 @@ public function updateOrder($ids)
         
         $portfolio->delete();
         
-        session()->flash('success', 'Portfolio deleted successfully');
+            $this->dispatch('toast', type: 'success', message:  'Portfolio deleted successfully');
         $this->showDeleteModal = false;
     }
 

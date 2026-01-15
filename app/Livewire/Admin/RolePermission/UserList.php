@@ -72,7 +72,7 @@ class UserList extends Component
         $user = User::findOrFail($this->userId);
         $user->syncRoles($this->selectedRoles);
 
-        session()->flash('success', 'User roles updated successfully');
+            $this->dispatch('toast', type: 'success', message:  'User roles updated successfully');
 
         $this->closeModal();
     }
@@ -115,7 +115,7 @@ class UserList extends Component
 
         $user->update($data);
 
-        session()->flash('success', 'User details updated successfully');
+            $this->dispatch('toast', type: 'success', message:  'User details updated successfully');
 
         $this->closeEditModal();
     }

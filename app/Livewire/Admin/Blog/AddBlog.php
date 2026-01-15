@@ -71,7 +71,7 @@ class AddBlog extends Component
             'status'           => $this->status,
         ]);
 
-        session()->flash('success', 'Blog post created successfully.');
+            $this->dispatch('toast', type: 'success', message:  'Blog post created successfully.');
 
         $this->reset();
         // notify frontend to reset TinyMCE editor (textarea is inside wire:ignore)

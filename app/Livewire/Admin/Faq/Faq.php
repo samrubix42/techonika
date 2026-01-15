@@ -67,7 +67,7 @@ class Faq extends Component
             ]
         );
 
-        session()->flash('success', 'FAQ saved successfully.');
+            $this->dispatch('toast', type: 'success', message:  'FAQ saved successfully.');
 
         $this->closeModal();
         $this->resetForm();
@@ -105,7 +105,7 @@ class Faq extends Component
     {
         FaqModel::findOrFail($this->deleteId)->delete();
 
-        session()->flash('success', 'FAQ deleted successfully.');
+            $this->dispatch('toast', type: 'success', message:  'FAQ deleted successfully.');
 
         $this->confirmingDelete = false;
     }

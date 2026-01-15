@@ -85,7 +85,7 @@ class PageManagement extends Component
             ]
         );
 
-        session()->flash('success', 'Page saved successfully.');
+            $this->dispatch('toast', type: 'success', message:  'Page saved successfully.');
 
         $this->closeModal();
         $this->resetForm();
@@ -117,7 +117,7 @@ class PageManagement extends Component
     {
         Page::findOrFail($this->deleteId)->delete();
 
-        session()->flash('success', 'Page deleted successfully.');
+            $this->dispatch('toast', type: 'success', message:  'Page deleted successfully.');
 
         $this->confirmDelete = false;
         $this->deleteId = null;

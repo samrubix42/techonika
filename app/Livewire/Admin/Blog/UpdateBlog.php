@@ -90,7 +90,7 @@ class UpdateBlog extends Component
         $post->status = $this->status;
         $post->save();
 
-        session()->flash('success', 'Blog updated successfully.');
+            $this->dispatch('toast', type: 'success', message:  'Blog updated successfully.');
         return redirect()->route('admin.blog-list');
     }
     public function render()

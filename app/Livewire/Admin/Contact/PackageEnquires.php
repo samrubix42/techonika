@@ -57,7 +57,7 @@ class PackageEnquires extends Component
             $this->closeModal();
         }
 
-        session()->flash('success', 'Status updated successfully!');
+            $this->dispatch('toast', type: 'success', message:  'Status updated successfully!');
     }
 
     public function confirmDelete($id)
@@ -82,7 +82,7 @@ class PackageEnquires extends Component
             
             $this->deleteConfirmId = null;
 
-            session()->flash('success', 'Enquiry deleted successfully!');
+                $this->dispatch('toast', type: 'success', message:  'Enquiry deleted successfully!');
         }
     }
 

@@ -118,7 +118,7 @@ class RoleList extends Component
     {
         if ($this->deleteId) {
             Role::findOrFail($this->deleteId)->delete();
-            session()->flash('success', 'Role deleted successfully');
+                $this->dispatch('toast', type: 'success', message:  'Role deleted successfully');
         }
 
         $this->cancelDelete();
@@ -127,6 +127,6 @@ class RoleList extends Component
     public function delete($id)
     {
         Role::findOrFail($id)->delete();
-        session()->flash('success', 'Role deleted successfully');
+            $this->dispatch('toast', type: 'success', message:  'Role deleted successfully');
     }
 }
