@@ -5,7 +5,7 @@
 @endsection
 
 <div>
-    <section class="bg-black pt-36 pb-32 relative overflow-hidden">
+    <section class="bg-black pt-24 pb-32 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
 
         <!-- Ambient glow -->

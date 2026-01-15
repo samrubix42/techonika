@@ -7,7 +7,7 @@ professional web designers noida, custom website design noida">
 @endsection
 
 <div>
-    <section class="relative bg-black overflow-hidden">
+    <section class="relative bg-black py-10 overflow-hidden">
         <!-- Background Glow -->
         <div class="absolute inset-0">
             <div class="absolute -top-40 -left-40 w-[600px] h-[600px] 
