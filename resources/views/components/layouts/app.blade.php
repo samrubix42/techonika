@@ -2,17 +2,36 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TFTJW3BS');
+    </script>
+    
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     @hasSection('meta')
-        @yield('meta')
+    @yield('meta')
     @else
-        <title>{{ $title ?? 'Technonika - Web Development, Digital Marketing & IT Solutions' }}</title>
-        <meta name="description" content="Technonika offers professional web development, digital marketing, SEO, graphic designing, and IT solutions to grow your business online.">
-        <meta name="keywords" content="web development, digital marketing, SEO services, graphic designing, web designing, mobile app development">
+    <title>{{ $title ?? 'Technonika - Web Development, Digital Marketing & IT Solutions' }}</title>
+    <meta name="description" content="Technonika offers professional web development, digital marketing, SEO, graphic designing, and IT solutions to grow your business online.">
+    <meta name="keywords" content="web development, digital marketing, SEO services, graphic designing, web designing, mobile app development">
     @endif
-    
+
     <meta name="author" content="Technonika">
 
     <!-- Favicon -->
@@ -92,9 +111,14 @@
             box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.03);
         }
     </style>
+
 </head>
 
 <body class="antialiased bg-gray-50 text-gray-800 font-sans">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFTJW3BS"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Header -->
     <livewire:includes.header />
@@ -114,7 +138,7 @@
             <i class="ri-whatsapp-line text-white text-2xl"></i>
         </a>
         </a>
-        
+
 
     </main>
 
@@ -125,7 +149,7 @@
     <livewire:model.contact-modal />
     @endif
 
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     @livewireScripts
 
 </body>
