@@ -54,11 +54,11 @@ class Contact extends Component
 
         $contact = ContactModel::create($validated);
 
-        // try {
-        //     Mail::to('techonika.com@gmail.com')->cc('info@techonika.com')->send(new ContactMail($contact));
-        // } catch (\Exception $e) {
-        //     \Log::error('Failed to send contact form email: ' . $e->getMessage());
-        // }
+        try {
+            Mail::to('techonika.com@gmail.com')->cc('info@techonika.com')->send(new ContactMail($contact));
+        } catch (\Exception $e) {
+            \Log::error('Failed to send contact form email: ' . $e->getMessage());
+        }
 
         $this->reset(['name', 'email', 'phone', 'subject', 'message', 'turnstilecontactToken']);
 
