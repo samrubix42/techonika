@@ -146,9 +146,7 @@
 
     <!-- Footer -->
     <livewire:includes.footer />
-    @if (!request()->routeIs('contact'))
     <livewire:model.contact-modal />
-    @endif
 
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     @livewireScripts

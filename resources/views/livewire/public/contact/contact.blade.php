@@ -177,13 +177,14 @@
 
                     <!-- Turnstile -->
                     <div wire:ignore>
-                        <div class="cf-turnstile"
-                            data-sitekey="{{ config('services.turnstile.site_key') }}"
-                            data-callback="turnstileCallback">
-                        </div>
+                        <div id="turnstile-widget"></div>
                     </div>
 
-                    @error('turnstileToken')
+                    @error('turnstilecontactToken')
+                    <p class="text-red-400 text-xs mt-1">{{ $message }}</p>
+                    @enderror
+
+                    @error('turnstilecontactToken')
                     <p class="text-xs text-red-400">{{ $message }}</p>
                     @enderror
 
@@ -598,14 +599,44 @@
         </div>
     </section>
 
-    <script>
-        function turnstileCallback(token) {
-            @this.set('turnstileToken', token);
-        }
-    </script>
 
+                     <script>
+                         document.addEventListener('livewire:navigated', () => {
 
+                             let widgetId = null;
+                             let rendered = false;
 
+                             function renderTurnstile() {
+                                 if (!window.turnstile) return;
+                                 if (rendered) return;
+
+                                 const container = document.getElementById('turnstile-widget');
+                                 if (!container) return;
+
+                                 // Remove any existing iframe
+                                 container.innerHTML = '';
+
+                                 widgetId = turnstile.render(container, {
+                                     sitekey: "{{ config('services.turnstile.site_key') }}",
+                                     callback: function(token) {
+                                         @this.set('turnstilecontactToken', token); // ✅ DIRECT SET
+                                     }
+                                 });
+
+                                 rendered = true;
+                             }
+
+                             renderTurnstile();
+
+                             Livewire.off('turnstile-reset');
+                             Livewire.on('turnstile-reset', () => {
+                                 if (widgetId !== null && window.turnstile) {
+                                     turnstile.reset(widgetId);
+                                     rendered = false; // allow re-render
+                                 }
+                             });
+                         });
+                     </script>
 
 
 </div>
