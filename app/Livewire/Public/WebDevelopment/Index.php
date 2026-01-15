@@ -4,6 +4,7 @@ namespace App\Livewire\Public\WebDevelopment;
 
 use Livewire\Component;
 use App\Models\Contact;
+use App\Models\Testimonial;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
@@ -172,6 +173,10 @@ public function setBottomToken($token)
 
     public function render()
     {
-        return view('livewire.public.web-development.index');
+        return view('livewire.public.web-development.index', [
+            'testimonials' => Testimonial::where('is_active', true)
+                ->orderBy('sequence')
+                ->get()
+        ]);
     }
 }
