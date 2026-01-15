@@ -11,15 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('portfolios', function (Blueprint $table) {
+        Schema::create('testimonials', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->foreignId('category_id')->constrained('portfolio_categories')->onDelete('cascade');
-            $table->text('description')->nullable();
-            $table->string('image')->nullable();
-            $table->json('tags')->nullable();
-            $table->string('project_url')->nullable();
+            $table->json('data');
+
+            $table->integer('sequence')->default(0)->index();
+
             $table->boolean('is_active')->default(true);
+
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('portfolios');
+        Schema::dropIfExists('testimonials');
     }
 };

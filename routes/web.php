@@ -13,6 +13,7 @@ use App\Livewire\Admin\RolePermission\PermissionList;
 use App\Livewire\Admin\RolePermission\RoleList;
 use App\Livewire\Admin\RolePermission\UserList;
 use App\Livewire\Admin\Service\ServiceCategoryList;
+use App\Livewire\Admin\Testimonial\TestimonialList;
 use App\Livewire\Auth\Login;
 use App\Livewire\FooterPage\Disclaimer;
 use App\Livewire\FooterPage\RefundCancellation;
@@ -74,6 +75,7 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/portfolio',PortfolioList::class)->name('portfolio.list');
     Route::get('/update-blog/{post}',UpdateBlog::class)->name('update-blog');
     Route::get('/blog-list',BlogList::class)->name('blog-list');
+    Route::get('/testimonial',TestimonialList::class)->name('testimonial');
     Route::get('/blog-category',CategoryList::class)->name('blog-category');
 });
 

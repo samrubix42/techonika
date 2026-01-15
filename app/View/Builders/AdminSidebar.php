@@ -126,7 +126,14 @@ class AdminSidebar
                 'url' => route('admin.package-enquiry'),
                 'hasSubmenu' => false,
                 'submenu' => [],
-            ]
+            ],
+            (object)[
+                'title' => 'Testimonials',
+                'icon' => 'ti ti-message-circle',
+                'url' => route('admin.testimonial'),
+                'hasSubmenu' => false,
+                'submenu' => [],
+            ],
 
         ]);
 

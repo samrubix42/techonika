@@ -11,6 +11,23 @@
         </button>
     </div>
 
+    <!-- Search Bar -->
+    <div class="card mb-3">
+        <div class="card-body p-2">
+            <div class="input-icon">
+                <span class="input-icon-addon">
+                    <i class="ti ti-search"></i>
+                </span>
+                <input
+                    wire:model.live.debounce.300ms="search"
+                    type="text"
+                    class="form-control"
+                    placeholder="Search portfolios by title or description..."
+                >
+            </div>
+        </div>
+    </div>
+
     <!-- Success Alert -->
     @if (session()->has('success'))
         <div class="alert alert-success alert-dismissible fade show">
@@ -33,6 +50,7 @@
                     <th style="width:80px">Image</th>
                     <th>Title</th>
                     <th>Category</th>
+                    <th>Status</th>
                     <th>Order</th>
                     <th class="text-end">Actions</th>
                 </tr>
@@ -58,7 +76,19 @@
                         <td class="fw-semibold">{{ $p->title }}</td>
                         <td>{{ $categories->find($p->category_id)?->name }}</td>
                         <td>
-                            <span class="badge bg-dark">{{ $p->sequence }}</span>
+                            <label class="form-check form-switch mb-0">
+                                <input 
+                                    class="form-check-input" 
+                                    type="checkbox" 
+                                    wire:click="toggleActive({{ $p->id }})"
+                                    {{ $p->is_active ? 'checked' : '' }}>
+                                <span class="form-check-label text-muted small">
+                                    {{ $p->is_active ? 'Active' : 'Inactive' }}
+                                </span>
+                            </label>
+                        </td>
+                        <td>
+                            <span class="badge bg-primary-lt">{{ $p->sequence }}</span>
                         </td>
                         <td class="text-end">
                             <button class="btn btn-sm btn-outline-primary"
@@ -167,6 +197,19 @@
                             <textarea class="form-control"
                                       wire:model.defer="description"
                                       rows="3"></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-check form-switch">
+                                <input 
+                                    class="form-check-input" 
+                                    type="checkbox" 
+                                    wire:model.defer="is_active">
+                                <span class="form-check-label fw-semibold">
+                                    Active Status
+                                </span>
+                            </label>
+                            <small class="text-muted d-block">Enable to show this portfolio on the website</small>
                         </div>
 
                         <div class="col-12">

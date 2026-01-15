@@ -14,6 +14,7 @@ class Portfolio extends Model
         'tags',
         'sequence',
         'project_url',
+        'is_active',
     ];
 
     protected $casts = [

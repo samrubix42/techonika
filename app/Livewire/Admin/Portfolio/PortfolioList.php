@@ -29,11 +29,20 @@ class PortfolioList extends Component
     public $sequence;
     public $image;
     public $existingImage;
+    public $is_active = true;
+    public $search = '';
 
     public function render()
     {
+        $query = Portfolio::query();
+
+        if ($this->search) {
+            $query->where('title', 'like', '%' . $this->search . '%')
+                  ->orWhere('description', 'like', '%' . $this->search . '%');
+        }
+
         return view('livewire.admin.portfolio.portfolio-list', [
-            'portfolios' => Portfolio::orderBy('sequence')->get(),
+            'portfolios' => $query->orderBy('sequence')->get(),
             'categories' => PortfolioCategory::all(),
         ]);
     }
@@ -72,6 +81,7 @@ public function updateOrder($ids)
         $this->sequence = $p->sequence;
         $this->tags = is_array($p->tags) ? implode(', ', $p->tags) : '';
         $this->existingImage = $p->image;
+        $this->is_active = $p->is_active;
 
         $this->showModal = true;
     }
@@ -91,6 +101,7 @@ public function updateOrder($ids)
             'project_url' => $this->project_url,
             'sequence' => $this->sequence ?? Portfolio::max('sequence') + 1,
             'tags' => array_map('trim', explode(',', $this->tags)),
+            'is_active' => $this->is_active,
         ];
 
         // Handle image upload
@@ -150,6 +161,15 @@ public function updateOrder($ids)
             'image',
             'existingImage',
         ]);
+        $this->is_active = true;
         $this->resetValidation();
+    }
+
+    public function toggleActive($id)
+    {
+        $portfolio = Portfolio::findOrFail($id);
+        $portfolio->update(['is_active' => !$portfolio->is_active]);
+        
+        $this->dispatch('toast', type: 'success', message: 'Portfolio status updated successfully');
     }
 }
