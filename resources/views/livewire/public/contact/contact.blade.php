@@ -601,13 +601,18 @@
 
 
                      <script>
-                         document.addEventListener('livewire:navigated', () => {
+                         document.addEventListener('livewire:init', () => {
 
                              let widgetId = null;
                              let rendered = false;
 
                              function renderTurnstile() {
-                                 if (!window.turnstile) return;
+                                 if (!window.turnstile) {
+                                     // Wait for Turnstile to load
+                                     setTimeout(renderTurnstile, 100);
+                                     return;
+                                 }
+                                 
                                  if (rendered) return;
 
                                  const container = document.getElementById('turnstile-widget');
@@ -619,20 +624,21 @@
                                  widgetId = turnstile.render(container, {
                                      sitekey: "{{ config('services.turnstile.site_key') }}",
                                      callback: function(token) {
-                                         @this.set('turnstilecontactToken', token); // ✅ DIRECT SET
+                                         @this.set('turnstilecontactToken', token); 
                                      }
                                  });
 
                                  rendered = true;
                              }
 
+                             // Start rendering process
                              renderTurnstile();
 
                              Livewire.off('turnstile-reset');
                              Livewire.on('turnstile-reset', () => {
                                  if (widgetId !== null && window.turnstile) {
                                      turnstile.reset(widgetId);
-                                     rendered = false; // allow re-render
+                                     rendered = false;
                                  }
                              });
                          });
