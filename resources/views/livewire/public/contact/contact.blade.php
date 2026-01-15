@@ -1,7 +1,7 @@
 @section('meta')
-    <title>Contact Us | Get in Touch with Technonika for IT Solutions</title>
-    <meta name="description" content="Contact Technonika for professional web development, digital marketing, and IT solutions. Get a free quote and consultation for your project today.">
-    <meta name="keywords" content="contact us, get quote, IT solutions inquiry, web development contact, digital marketing consultation">
+<title>Contact Us | Get in Touch with Technonika for IT Solutions</title>
+<meta name="description" content="Contact Technonika for professional web development, digital marketing, and IT solutions. Get a free quote and consultation for your project today.">
+<meta name="keywords" content="contact us, get quote, IT solutions inquiry, web development contact, digital marketing consultation">
 @endsection
 
 <div class="bg-black text-white min-h-screen">
@@ -229,9 +229,7 @@
                         <div>
                             <h4 class="text-white font-medium mb-1">Office Address</h4>
                             <p class="text-white/70 text-sm leading-relaxed">
-                                Techonika Solutions<br>
-                                Noida, Uttar Pradesh, India
-                            </p>
+                                Techonika, Plot No. C79, C Block, Sector 2, Noida, Uttar Pradesh 201301 </p>
                         </div>
                     </div>
 
@@ -256,7 +254,7 @@
                         <div>
                             <h4 class="text-white font-medium mb-1">Email</h4>
                             <p class="text-white/70 text-sm">
-                                 info@techonika.com
+                                info@techonika.com
                             </p>
                         </div>
                     </div>
@@ -282,14 +280,7 @@
             <div class="bg-white/5 backdrop-blur-md
                     border border-white/15
                     rounded-3xl overflow-hidden shadow-xl">
-
-                <iframe
-                    src="https://www.google.com/maps?q=Noida%20Uttar%20Pradesh&output=embed"
-                    class="w-full h-[380px] sm:h-[420px] border-0"
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-
+                <iframe class="w-full h-[380px] sm:h-[420px] border-0" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d114952.1876140721!2d87.4901075!3d25.79513165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x390cf3b04325d403%3A0xd7c9c4a360456c75!2sPlot%20No.%20C79%2C%20C%20Block%2C%20Sector%202%2C%20Noida%2C%20Uttar%20Pradesh%20201301!3m2!1d28.583372999999998!2d77.315358!5e0!3m2!1sen!2sin!4v1768463644391!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </div>
