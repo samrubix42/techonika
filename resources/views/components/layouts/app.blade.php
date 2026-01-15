@@ -19,7 +19,7 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TFTJW3BS');
     </script>
-    
+
     <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +36,6 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
-    <meta name="robots" content="noindex, nofollow">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
