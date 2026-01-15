@@ -185,7 +185,7 @@
                                        flex justify-between text-sm text-slate-500">
                                 <span class="flex items-center gap-1">
                                     <i class="ri-user-3-line"></i>
-                                    {{ $post->author?->name ?? 'Author' }}
+                                    {{ $post->author?->name ?? 'Admin' }}
                                 </span>
                                 <span class="flex items-center gap-1">
                                     <i class="ri-calendar-line"></i>
