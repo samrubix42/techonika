@@ -74,11 +74,18 @@
 
                             <!-- Action -->
                             <td class="text-end">
-                                <button
-                                    wire:click="openModal({{ $user->id }})"
-                                    class="btn btn-sm btn-primary">
-                                    <i class="ti ti-user-cog"></i> Manage
-                                </button>
+                                <div class="btn-group">
+                                    <button
+                                        wire:click="openEditModal({{ $user->id }})"
+                                        class="btn btn-sm btn-info">
+                                        <i class="ti ti-edit"></i> Edit
+                                    </button>
+                                    <button
+                                        wire:click="openModal({{ $user->id }})"
+                                        class="btn btn-sm btn-primary">
+                                        <i class="ti ti-user-cog"></i> Roles
+                                    </button>
+                                </div>
                             </td>
                         </tr>
                     @empty
@@ -140,6 +147,97 @@
                         <button wire:click="save" class="btn btn-primary">
                             <i class="ti ti-device-floppy me-1"></i>
                             Save Roles
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Backdrop -->
+        <div class="modal-backdrop fade show"></div>
+    @endif
+
+    <!-- Edit User Modal -->
+    @if($editModalOpen)
+        <div class="modal modal-blur fade show d-block" tabindex="-1">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title">Edit User Details</h5>
+                        <button wire:click="closeEditModal" class="btn-close"></button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label required">Name</label>
+                            <input
+                                type="text"
+                                class="form-control @error('name') is-invalid @enderror"
+                                wire:model="name"
+                                placeholder="Enter user name"
+                            >
+                            @error('name')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label required">Email</label>
+                            <input
+                                type="email"
+                                class="form-control @error('email') is-invalid @enderror"
+                                wire:model="email"
+                                placeholder="Enter user email"
+                            >
+                            @error('email')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                        </div>
+
+                        <hr class="my-3">
+                        <small class="text-muted d-block mb-2">
+                            <i class="ti ti-info-circle"></i> Leave blank to keep current password
+                        </small>
+
+                        <div class="mb-3">
+                            <label class="form-label">New Password</label>
+                            <input
+                                type="password"
+                                class="form-control @error('password') is-invalid @enderror"
+                                wire:model="password"
+                                placeholder="Enter new password"
+                            >
+                            @error('password')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password</label>
+                            <input
+                                type="password"
+                                class="form-control @error('password_confirmation') is-invalid @enderror"
+                                wire:model="password_confirmation"
+                                placeholder="Confirm new password"
+                            >
+                            @error('password_confirmation')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button wire:click="closeEditModal" class="btn btn-secondary">
+                            Cancel
+                        </button>
+                        <button wire:click="updateUser" class="btn btn-primary">
+                            <i class="ti ti-device-floppy me-1"></i>
+                            Update User
                         </button>
                     </div>
 
