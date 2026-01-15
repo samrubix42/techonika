@@ -41,7 +41,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/',action: Home2::class)->name('home');
+Route::get('/',action: Home::class)->name('home');
 Route::get('/web-development',WebDevelopmentIndex::class)->name('webdevelopment');
 Route::get('/seo-package',SeoPackage::class)->name('seo-package');
 Route::get('/smo-package',SmoPackage::class)->name('smo-package');

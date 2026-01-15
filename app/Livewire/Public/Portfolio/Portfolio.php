@@ -12,7 +12,8 @@ class Portfolio extends Component
 
     public function render()
     {
-        $portfolios = PortfolioModel::latest()
+        $portfolios = PortfolioModel::where('is_active', true)
+            ->orderBy('sequence')
             ->paginate(6);
 
         return view('livewire.public.portfolio.portfolio', [

@@ -1,626 +1,2109 @@
 @section('meta')
-    <title>Technonika - Professional Web Development & IT Solutions</title>
-    <meta name="description" content="Transform your business with Technonika professional web development, digital marketing, and IT solutions. We deliver innovative technology solutions for your success.">
-    <meta name="keywords" content="web development, IT solutions, digital transformation, web design, software development, Technonika">
+<title>Technonika - Leading Web Development & Digital Marketing Company</title>
+<meta name="description" content="Technonika is a premier digital solutions provider offering web development, digital marketing, SEO, graphic designing, and IT services to help businesses grow online.">
+<meta name="keywords" content="web development company, digital marketing services, SEO services, graphic designing, web designing company, IT solutions, Technonika">
 @endsection
 
 <div>
-    <!-- Hero Section -->
-    <section class="bg-black text-white min-h-screen py-16 md:py-10 flex items-center px-2 md:px-[9%]">
-        <div class="w-full">
-            <div class="flex flex-col md:flex-row md:items-center gap-10 xl:gap-24 py-12 lg:py-20">
+    <section class="relative bg-black overflow-hidden">
+
+        <!-- Decorative Glow -->
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2
+            w-[700px] h-[700px] rounded-full
+            bg-primary/20 blur-[140px]"></div>
+
+        <!-- Subtle Grid Texture -->
+        <div class="absolute inset-0 opacity-[0.04]
+            bg-[radial-gradient(#ffffff_1px,transparent_1px)]
+            bg-[size:24px_24px]"></div>
+
+        <!-- Content -->
+        <div class="relative max-w-6xl mx-auto px-6
+            py-24 sm:py-28 text-center text-white">
+
+            <!-- Eyebrow -->
+            <span class="inline-flex items-center gap-2
+                 px-4 py-1.5 rounded-full
+                 bg-white/10 border border-white/10
+                 text-xs tracking-wide uppercase
+                 text-white/80 mb-6">
+                Digital Solutions Agency
+            </span>
+
+            <!-- Heading -->
+            <h1 class="font-bold tracking-tight leading-[1.1]
+               text-[clamp(34px,5vw,55px)] mb-6">
+                Welcome to <span class="text-primary">Techonika</span><br>
+                <span class="block mt-2">
+                    Simple, Smart, and Reliable Digital Solutions
+                </span>
+            </h1>
+
+            <!-- Description -->
+            <p class="max-w-3xl mx-auto
+              text-white/70
+              text-sm sm:text-base md:text-lg
+              leading-relaxed mb-14">
+                Techonika is your trusted digital partner, delivering smart and reliable
+                solutions designed for real business impact. We blend clean design,
+                modern technology, and strategic thinking to create digital experiences
+                that connect, convert, and scale.
+            </p>
+            <!-- Services: Mobile Cards → Desktop Pills (Aligned Everywhere) -->
+            <div
+                class="grid grid-cols-2 mb-10
+           sm:grid-cols-3
+           lg:grid-cols-4
+           gap-4 lg:gap-2
+           place-content-center
+           px-4 sm:px-0">
+
+                <!-- Item -->
+                <a href="{{ route('webdesigning') }}"
+                    class="group relative
+               flex flex-col sm:flex-row
+               items-center justify-center
+               gap-2
+               px-3 py-4 sm:px-4 sm:py-2
+               min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full
+               bg-white/10 backdrop-blur-xl
+               border border-white/20
+               text-xs sm:text-[13px] font-medium
+               text-white text-center
+               shadow-lg shadow-black/40
+               transition-all duration-300
+               hover:-translate-y-1
+               hover:bg-primary
+               hover:text-black
+               hover:border-primary">
+
+                    <!-- Icon Bubble -->
+                    <span
+                        class="flex items-center justify-center
+                   w-9 h-9 sm:w-7 sm:h-7
+                   rounded-full
+                   bg-white/10 border border-white/20
+                   transition-all duration-300
+                   group-hover:bg-white/30">
+
+                        <i class="ri-brush-line text-lg sm:text-sm
+                      text-primary group-hover:text-black"></i>
+                    </span>
+
+                    <span>Website Designing</span>
+                </a>
+
+                <!-- Repeat -->
+                <a href="{{ route('webdevelopment') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+               px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
+               border border-white/20 text-xs sm:text-[13px] font-medium
+               text-white text-center shadow-lg shadow-black/40
+               transition-all duration-300 hover:-translate-y-1
+               hover:bg-primary hover:text-black hover:border-primary">
+
+                    <span class="flex items-center justify-center w-9 h-9 sm:w-7 sm:h-7 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/30 transition">
+                        <i class="ri-code-box-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    </span>
+                    <span>Website Development</span>
+                </a>
+
+                <a href="{{ route('digital-marketing') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+               px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
+               border border-white/20 text-xs sm:text-[13px] font-medium
+               text-white text-center shadow-lg shadow-black/40
+               transition-all duration-300 hover:-translate-y-1
+               hover:bg-primary hover:text-black hover:border-primary">
+
+                    <span class="flex items-center justify-center w-9 h-9 sm:w-7 sm:h-7 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/30 transition">
+                        <i class="ri-search-eye-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    </span>
+                    <span>Search Engine Optimization</span>
+                </a>
+
+                <a href="{{ route('digital-marketing') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+               px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
+               border border-white/20 text-xs sm:text-[13px] font-medium
+               text-white text-center shadow-lg shadow-black/40
+               transition-all duration-300 hover:-translate-y-1
+               hover:bg-primary hover:text-black hover:border-primary">
+
+                    <span class="flex items-center justify-center w-9 h-9 sm:w-7 sm:h-7 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/30 transition">
+                        <i class="ri-megaphone-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    </span>
+                    <span>Social Marketing</span>
+                </a>
+
+                <a href="{{ route('webdevelopment') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+               px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
+               border border-white/20 text-xs sm:text-[13px] font-medium
+               text-white text-center shadow-lg shadow-black/40
+               transition-all duration-300 hover:-translate-y-1
+               hover:bg-primary hover:text-black hover:border-primary">
+
+                    <span class="flex items-center justify-center w-9 h-9 sm:w-7 sm:h-7 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/30 transition">
+                        <i class="ri-store-2-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    </span>
+                    <span>E-Commerce Development</span>
+                </a>
+
+                <a href="{{ route('webdevelopment') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+               px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
+               border border-white/20 text-xs sm:text-[13px] font-medium
+               text-white text-center shadow-lg shadow-black/40
+               transition-all duration-300 hover:-translate-y-1
+               hover:bg-primary hover:text-black hover:border-primary">
+
+                    <span class="flex items-center justify-center w-9 h-9 sm:w-7 sm:h-7 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/30 transition">
+                        <i class="ri-layout-2-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    </span>
+                    <span>Custom Design Development</span>
+                </a>
+
+                <a href="{{ route('webdevelopment') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+               px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
+               border border-white/20 text-xs sm:text-[13px] font-medium
+               text-white text-center shadow-lg shadow-black/40
+               transition-all duration-300 hover:-translate-y-1
+               hover:bg-primary hover:text-black hover:border-primary">
+
+                    <span class="flex items-center justify-center w-9 h-9 sm:w-7 sm:h-7 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/30 transition">
+                        <i class="ri-settings-3-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    </span>
+                    <span>Maintenance</span>
+                </a>
+
+                <a href="{{ route('mobileappdevelopment') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
+               px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
+               rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
+               border border-white/20 text-xs sm:text-[13px] font-medium
+               text-white text-center shadow-lg shadow-black/40
+               transition-all duration-300 hover:-translate-y-1
+               hover:bg-primary hover:text-black hover:border-primary">
+
+                    <span class="flex items-center justify-center w-9 h-9 sm:w-7 sm:h-7 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/30 transition">
+                        <i class="ri-smartphone-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
+                    </span>
+                    <span>App Development</span>
+                </a>
+
+            </div>
+
+
+
+            <!-- CTA -->
+            <button @click="$dispatch('open-modal', { to: 'contact' })"
+
+                class="inline-flex items-center gap-3
+              bg-primary text-black
+              px-8 py-3.5 rounded-lg
+              font-semibold text-sm sm:text-base
+              hover:bg-primary/90 hover:scale-105
+              transition-all duration-300">
+                Get in Touch
+                <i class="ri-arrow-right-line"></i>
+            </button>
+
+        </div>
+    </section>
+    <section class="relative bg-black overflow-hidden py-16 sm:py-20 lg:py-24">
+
+        <!-- Glow Background -->
+        <div class="absolute -top-40 -left-40
+        w-[600px] h-[600px]
+        bg-[color:var(--color-primary)]/20
+        blur-[160px] rounded-full"></div>
+
+        <div class="relative px-5 sm:px-8 lg:px-[9%]">
+
+            <!-- GRID -->
+            <div class="grid lg:grid-cols-2 gap-14 items-center">
 
                 <!-- LEFT IMAGE -->
-                <div class="relative flex justify-center md:justify-start w-full md:w-7/12">
-                    <img
-                        src="/images/2151948231.jpg"
-                        alt="Web Development"
-                        class="w-full max-w-[250px] sm:max-w-[360px] lg:max-w-[460px] object-contain" />
+                <div class="relative order-1 lg:order-none flex justify-center">
+
+                    <!-- Image Card -->
+                    <div
+                        class="relative z-10 overflow-hidden
+                           w-full
+                           max-w-md sm:max-w-lg lg:max-w-xl
+                           aspect-[4/3]
+                           rounded-[32px]
+                           border border-white/10
+                           bg-white/5 backdrop-blur">
+
+                        <img
+                            src="{{ asset('images/Revolutionize_Your_Workplace_Office_Digital_Signage_Solutions_for_Modern_Businesses.jpg') }}"
+                            alt="Digital Solutions"
+                            class="w-full h-full object-cover
+                               transition-transform duration-500
+                               hover:scale-105">
+                    </div>
+
                 </div>
 
                 <!-- RIGHT CONTENT -->
-                <div class="space-y-6 sm:space-y-8 lg:space-y-4 w-full md:w-10/12 text-left font-semibold text-slate-200">
+                <div>
 
-                    <!-- Heading -->
-                    <h1 class="font-light tracking-wide leading-tight
-           text-3xl sm:text-4xl lg:text-5xl xl:text-[64px] text-slate-200">
-                        Welcome to <span class="font-semibold">Techonika</span><br>
-
-                        <span class="block mt-3">
-                            Simple.
-                            <span class="font-semibold">Smart.</span>
-                            Reliable
-                            <span class="font-semibold">Digital Solutions</span>
+                    <h2 class="text-3xl sm:text-3xl md:text-3xl xl:text-[45px]
+                   font-light tracking-wide leading-tight text-white">
+                        We Build
+                        <span class="font-semibold text-[color:var(--color-primary)]">
+                            Digital Solutions
+                        </span><br>
+                        That Help You
+                        <span class="font-semibold">
+                            Grow
                         </span>
-                    </h1>
+                    </h2>
 
+                    <!-- Paragraphs -->
+                    <div class="mt-6 sm:mt-8 space-y-3">
+                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
+                            At <span class="font-medium text-white">Techonika</span>,
+                            we believe that technology should feel simple, helpful,
+                            and easy to understand for everyone.
+                            Many people feel confused or even stressed when they hear
+                            words like digital, software, or online marketing.
+                        </p>
 
-                    <!-- Description -->
-                    <p class="text-neutral-400 text-base sm:text-lg text-justify leading-relaxed">
-                        Your business isn’t generic your website shouldn’t be either.
-                        Every brand has unique users, goals, and workflows,
-                        but many digital products still rely on
-                        <span class="text-white font-medium">
-                            one-size-fits-all templates that limit growth.
-                        </span>
-                    </p>
+                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
+                            We see this every day, and that is exactly why we exist.
+                            We work hard to remove fear, confusion, and hesitation
+                            around technology so you can move forward with confidence.
+                            Our goal is to make technology work for you in a clear,
+                            friendly, and practical way that supports your daily
+                            business needs.
+                        </p>
 
+                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
+                            We are a full-service digital and technology company,
+                            which means we offer a wide range of solutions under one roof.
+                            You do not need to manage different agencies for web design,
+                            graphic design, web development, digital marketing,
+                            mobile apps, or online branding.
+                        </p>
+                    </div>
 
+                    <!-- CTA -->
+                    <div class="mt-8 sm:mt-10 flex flex-wrap gap-4">
+                        <button @click="$dispatch('open-modal', { to: 'contact' })"
+                            class="inline-flex items-center gap-2
+                               px-7 py-3.5 rounded-full
+                               bg-[color:var(--color-primary)]
+                               text-black font-semibold
+                               hover:opacity-90 transition">
+                            <i class="ri-chat-3-line"></i>
+                            Get Free Consultation
+                        </button>
 
-                    <p class="text-neutral-400 text-base sm:text-lg text-justify leading-relaxed">
-                        The right architecture, the right technology stack, and the right
-                        user experience designed specifically for your product
-                        is what drives performance, scalability, and long-term success.
-                    </p>
-
-                    <!-- CTA ROW -->
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-5 pt-2">
-
-                        <!-- Primary Button -->
-                        <a
-                            href="{{ route('contact') }}"
-                            class="inline-flex items-center justify-center
-      bg-[#f6b615] text-black
-      px-6 sm:px-8 py-4 rounded-2xl
-      font-light text-sm sm:text-base
-      hover:brightness-110 transition">
-                            Get a free Quote <i class="ri-arrow-right-line ml-2"></i>
-                        </a>
-
-                        <!-- Secondary CTA -->
-                        <a
-                            href="{{ route('contact') }}"
-                            class="group inline-flex items-center md:border-none border border-1 border-slate-200 px-4 py-2 rounded-2xl justify-center sm:justify-start gap-3
-      text-sm tracking-wide text-white/90 mt-2 sm:mt-0">
-                            <span>Have an idea or existing product? Let’s discuss</span>
-                            <span class="text-lg transform transition group-hover:translate-x-1">
-                                →
-                            </span>
-                        </a>
 
                     </div>
 
                 </div>
 
-    </section>
-
-    <!-- Clients Section -->
-    <section class="bg-black py-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <h2 class="text-2xl sm:text-3xl py-6 text-slate-200 font-semibold italic text-center sm:text-left">
-                Digital Experiences Built for Growing and Established Brands
-            </h2>
-
-            <!-- Logo Grid -->
-            <div
-                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8
-               gap-y-10 gap-x-6 items-center justify-items-center">
-                <!-- Repeat your logos -->
-                <img src="/clients/6.jpg" class="client-logo" alt="">
-                <img src="/clients/7.jpg" class="client-logo" alt="">
-                <img src="/clients/8.jpg" class="client-logo" alt="">
-                <img src="/clients/9.jpg" class="client-logo" alt="">
-                <img src="/clients/10.jpg" class="client-logo" alt="">
-                <img src="/clients/11.jpg" class="client-logo" alt="">
-                <img src="/clients/12.jpg" class="client-logo" alt="">
-                <img src="/clients/13.jpg" class="client-logo" alt="">
-                <img src="/clients/14.jpg" class="client-logo" alt="">
-                <!-- Add remaining logos similarly -->
             </div>
         </div>
-
-        <!-- Styles -->
-        <style>
-            .client-logo {
-                height: 56px;
-                width: auto;
-                opacity: 0.75;
-                filter: grayscale(100%);
-                transition: all 0.3s ease;
-            }
-
-            .client-logo:hover {
-                opacity: 1;
-                filter: grayscale(0%);
-            }
-
-            @media (min-width: 640px) {
-                .client-logo {
-                    height: 72px;
-                }
-            }
-
-            @media (min-width: 1024px) {
-                .client-logo {
-                    height: 80px;
-                }
-            }
-        </style>
     </section>
-    <section class="bg-black py-16">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-            <!-- LEFT IMAGE -->
-            <div class="flex justify-center lg:justify-start">
-                <img src="{{ asset('images/your-image.png') }}" alt="Profile" class="max-w-full h-auto rounded-lg">
-            </div>
+    <!-- Industries Section -->
+    <section class="relative bg-black py-14 sm:py-20 overflow-hidden">
 
-            <!-- RIGHT CONTENT -->
-            <div class="text-white space-y-6">
-                <h2 class="text-4xl sm:text-5xl font-bold">
-                    WHEN PRECISION <br> MATTERS
+        <!-- Soft Background Glow -->
+        <div class="absolute -top-32 -left-32
+        w-[520px] h-[520px]
+        bg-primary/15 blur-[160px] rounded-full"></div>
+
+        <div class="relative max-w-6xl mx-auto px-4">
+
+            <!-- Heading -->
+            <div class="mb-10 sm:mb-14 text-center">
+                <h2 class="text-3xl sm:text-4xl lg:text-4xl font-light text-white">
+                    Industries We
+                    <span class="text-primary font-semibold">Serve</span>
                 </h2>
-                <p class="text-primary text-lg font-medium">
-                    2 WAYS TO WORK TOGETHER
+                <p class="mt-3 max-w-xl mx-auto text-white/60 text-sm">
+                    Industry-focused digital solutions designed to scale, convert,
+                    and create lasting impact.
                 </p>
+            </div>
 
-                <!-- Consulting -->
-                <div class="space-y-2">
-                    <h3 class="text-white text-xl font-semibold">Consulting</h3>
-                    <p class="text-gray-300">
-                        Get clarity on how to structure and deliver conditioning for your squad, grounded in each athlete’s profile, and aligned to your sport’s demands.
+            <!-- Grid -->
+            <div
+                class="grid grid-cols-2
+                   sm:grid-cols-3
+                   lg:grid-cols-5
+                   gap-px
+                   bg-white/10
+                   rounded-2xl overflow-hidden">
+
+                <template x-for="item in [
+                { title: 'Fashion', desc: 'Digital solutions for fashion brands.', icon: '{{ asset('images/icons/shirt.png') }}' },
+                { title: 'Apparel', desc: 'Custom ecommerce and branding.', icon: '{{ asset('images/icons/dress.png') }}' },
+                { title: 'Businesses', desc: 'Scalable business platforms.', icon: '{{ asset('images/icons/cooperation.png') }}' },
+                { title: 'Jewellery', desc: 'Luxury digital presence.', icon: '{{ asset('images/icons/treasure.png') }}' },
+                { title: 'Healthcare', desc: 'Healthcare-focused solutions.', icon: '{{ asset('images/icons/healthcare.png') }}' },
+                { title: 'Food', desc: 'Online ordering & branding.', icon: '{{ asset('images/icons/fast-food.png') }}' },
+                { title: 'Doctors Clinics', desc: 'Clinic appointment systems.', icon: '{{ asset('images/icons/clinic.png') }}' },
+                { title: 'Real Estate', desc: 'High-converting property platforms.', icon: '{{ asset('images/icons/house.png') }}' },
+                { title: 'Education', desc: 'Digital education platforms.', icon: '{{ asset('images/icons/education.png') }}' },
+                { title: 'Beauty', desc: 'Beauty brand websites.', icon: '{{ asset('images/icons/skin-care.png') }}' },
+                { title: 'Consumer Products', desc: 'Ecommerce-driven growth.', icon: '{{ asset('images/icons/sale.png') }}' },
+                { title: 'Hospitality', desc: 'Hospitality & booking systems.', icon: '{{ asset('images/icons/medical-team.png') }}' },
+                { title: 'Pest Control', desc: 'Lead-focused service websites.', icon: '{{ asset('images/icons/bug-truck.png') }}' },
+                { title: 'Musical Instruments', desc: 'Music ecommerce platforms.', icon: '{{ asset('images/icons/headphones.png') }}' },
+                { title: 'Sports', desc: 'Sports brands & academies.', icon: '{{ asset('images/icons/sports-ball.png') }}' }
+            ]" :key="item.title">
+
+                    <!-- Card -->
+                    <div
+                        x-data="{ hover: false }"
+                        @mouseenter="hover = true"
+                        @mouseleave="hover = false"
+                        class="relative h-[170px] sm:h-[190px]
+                           flex flex-col items-center justify-center
+                           text-center
+                           bg-white/5 backdrop-blur
+                           transition-all duration-300
+                           hover:bg-white/10
+                           hover:shadow-xl hover:shadow-primary/10">
+
+                        <!-- Icon Wrapper -->
+                        <div
+                            class="flex items-center justify-center
+                               w-12 h-12 sm:w-14 sm:h-14
+                               rounded-full
+                               bg-white/10 border border-white/20
+                               mb-3
+                               transition-all duration-300"
+                            :class="hover ? 'scale-110 bg-primary/20' : 'scale-100'">
+
+                            <img
+                                :src="item.icon"
+                                alt=""
+                                class="w-6 h-6 sm:w-7 sm:h-7 object-contain">
+                        </div>
+
+                        <!-- Title -->
+                        <h4
+                            class="text-white font-semibold tracking-wide
+                               text-[12px] sm:text-sm
+                               transition-all duration-300"
+                            :class="hover
+                        ? '-translate-y-1 text-primary'
+                        : 'translate-y-1'">
+                            <span x-text="item.title.toUpperCase()"></span>
+                        </h4>
+
+                        <!-- Description -->
+                        <p
+                            class="mt-2 px-4 text-[11px] sm:text-xs
+                               text-white/60 leading-snug
+                               transition-all duration-300"
+                            :class="hover
+                        ? 'opacity-100 translate-y-0'
+                        : 'opacity-0 translate-y-2'">
+                            <span x-text="item.desc"></span>
+                        </p>
+
+                        <!-- Subtle Hover Glow -->
+                        <div
+                            class="absolute inset-0 rounded-xl
+                               bg-primary/5 opacity-0
+                               transition duration-300"
+                            :class="hover ? 'opacity-100' : 'opacity-0'">
+                        </div>
+
+                    </div>
+                </template>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="relative bg-black py-20 sm:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+                <!-- LEFT CONTENT -->
+                <div>
+                    <span
+                        class="inline-block mb-4 px-4 py-1.5
+                           rounded-full text-xs font-medium
+                           bg-white/10 text-primary">
+                        Trusted Digital Agency in Noida
+                    </span>
+
+                    <h2
+                        class="text-3xl sm:text-4xl lg:text-5xl
+                           font-bold leading-tight text-white">
+                        Best Web Designing &<br>
+                        <span class="text-primary">
+                            Development Company in Noida
+                        </span>
+                    </h2>
+
+                    <p
+                        class="mt-6 text-white/70
+                           text-sm sm:text-base leading-relaxed">
+                        We are a leading web designing and web development company in Noida,
+                        helping businesses build strong digital identities.
+                        Our team creates visually stunning, high-performing websites
+                        that are fast, secure, SEO-friendly, and designed to convert visitors
+                        into customers.
                     </p>
-                    <a href="#consulting" class="inline-block bg-primary text-black px-5 py-2 rounded-lg font-semibold hover:brightness-110 transition">
-                        Learn more
-                    </a>
+
+                    <p
+                        class="mt-4 text-white/70
+                           text-sm sm:text-base leading-relaxed">
+                        From custom website design and scalable web development
+                        to UI/UX optimization and ongoing support,
+                        we deliver complete digital solutions tailored to your business goals.
+                    </p>
+
+                    <!-- Highlights -->
+                    <div class="mt-6 grid grid-cols-2 gap-4 max-w-md">
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            Custom Web Design
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            SEO-Optimized Websites
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            Fast & Secure Development
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            Long-Term Support
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <button
+                            @click="$dispatch('open-modal', { to: 'contact' })"
+                            class="inline-flex items-center gap-2
+                               px-7 py-3.5 rounded-full
+                               bg-primary text-black
+                               font-semibold text-sm
+                               hover:opacity-90 transition">
+                            Get Free Consultation
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+
+                        <a
+                            href="{{route('portfolio')}}"
+                            class="inline-flex items-center gap-2
+                               px-7 py-3.5 rounded-full
+                               border border-white/20
+                               text-white text-sm font-medium
+                               hover:bg-white hover:text-black transition">
+                            View Our Work
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Speaking -->
-                <div class="space-y-2 mt-6">
-                    <h3 class="text-white text-xl font-semibold">Speaking</h3>
-                    <p class="text-gray-300">
-                        Bring the profiling model and high-performance insights behind top programs to your staff or event with clear takeaways for real-world application.
-                    </p>
-                    <a href="#speaking" class="inline-block bg-primary text-black px-5 py-2 rounded-lg font-semibold hover:brightness-110 transition">
-                        Learn more
-                    </a>
+                <!-- RIGHT IMAGE -->
+                <div class="relative">
+                    <div
+                        class="relative overflow-hidden
+                           rounded-2xl
+                           border border-white/10
+                           bg-white/5 backdrop-blur">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+                            alt="Best Web Design Company in Noida"
+                            class="w-full h-full object-cover
+                               scale-105 hover:scale-110
+                               transition-transform duration-700">
+                    </div>
+
+                    <!-- Glow -->
+                    <div
+                        class="absolute -bottom-12 -right-12
+                           w-48 h-48
+                           bg-primary/30
+                           rounded-full blur-[120px]">
+                    </div>
                 </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="relative bg-black mb-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <!-- Heading -->
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
+                    Technologies We
+                    <span class="text-primary">Work With</span>
+                </h2>
+            </div>
+
+            <!-- Technologies Pills -->
+            <div
+                class="grid grid-cols-2 gap-3
+           sm:flex sm:flex-wrap sm:justify-center sm:gap-4
+           max-w-5xl mx-auto">
+
+                <!-- Pill / Card -->
+                <span
+                    class="group flex flex-col sm:flex-row
+               items-center justify-center sm:justify-start
+               gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3
+               rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md
+               border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black
+               hover:border-primary
+               transition-all duration-300">
+
+                    <!-- Icon -->
+                    <span
+                        class="flex items-center justify-center
+                   w-10 h-10 sm:w-9 sm:h-9
+                   rounded-full
+                   bg-white/10 border border-white/20
+                   group-hover:bg-white/20
+                   transition-all duration-300">
+
+                        <img src="{{ asset('images/tech/shopify.png') }}"
+                            alt="Shopify"
+                            class="w-6 h-6 object-contain">
+                    </span>
+
+                    <span class="text-center sm:text-left">
+                        Shopify Development
+                    </span>
+                </span>
+
+                <!-- React -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/react.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>React Development</span>
+                </span>
+
+                <!-- PHP -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/php.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>PHP Development</span>
+                </span>
+
+                <!-- Magento -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/magento.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>Magento Development</span>
+                </span>
+
+                <!-- Laravel -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/laravel.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>Laravel Development</span>
+                </span>
+
+                <!-- CodeIgniter -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/codeigniter.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>CodeIgniter Development</span>
+                </span>
+
+                <!-- Joomla -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/nodejs.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>Mern Development</span>
+                </span>
+
+                <!-- Mobile App -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/native.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>Mobile App Development</span>
+                </span>
+
+                <!-- WordPress -->
+                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+               px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
+               bg-white/10 backdrop-blur-md border border-white/20
+               text-xs sm:text-sm font-medium text-white
+               shadow-lg shadow-primary/10
+               hover:bg-primary hover:text-black hover:border-primary transition-all">
+                    <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
+                     bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
+                        <img src="{{ asset('images/tech/wordpress.png') }}" class="w-6 h-6 object-contain">
+                    </span>
+                    <span>WordPress Development</span>
+                </span>
+
             </div>
 
         </div>
     </section>
-    <div class="bg-black py-8 px-3 md:px-[10%] flex flex-col ">
-        <h2 class="text-white text-4xl text-center md:text-left  md:text-5xl font-bold py-6 md:py-10 px-2 md:px-6">Achieve your competitive </h2>
 
-        <section class="relative bg-black py-6 overflow-hidden bg-center bg-no-repeat bg-cover" style="background-image: url('{{ asset('images/lines.png') }}'); object-fit: contain;">
 
-            <!-- Yellow blur circles -->
-            <div class="absolute top-20 right-0 md:right-20 lg:right-32 w-72 h-72 bg-primary opacity-20 rounded-full filter blur-3xl"></div>
-            <div class="absolute bottom-20 left-0 md:left-20 lg:left-32 w-72 h-72 bg-primary opacity-20 rounded-full filter blur-3xl"></div>
 
-            <!-- Content wrapper -->
-            <div class="mx-auto px-2 md:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
-                <!-- Example card -->
-                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transform transition">
-                    <img src="/images/chelsea-logo.png" alt="Chelsea Logo" class="w-12 h-12 object-contain">
-                    <h3 class="text-white font-semibold text-lg">Chelsea Football Club</h3>
-                    <p class="text-gray-200 italic">
-                        ‘Helped massively with our progression of the academy’s player profiling and physical conditioning methodology.’
-                    </p>
-                    <a href="#" class="text-yellow-400 font-medium hover:underline">Read More</a>
-                </div>
-                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transform transition">
-                    <img src="/images/chelsea-logo.png" alt="Chelsea Logo" class="w-12 h-12 object-contain">
-                    <h3 class="text-white font-semibold text-lg">Chelsea Football Club</h3>
-                    <p class="text-gray-200 italic">
-                        ‘Helped massively with our progression of the academy’s player profiling and physical conditioning methodology.’
-                    </p>
-                    <a href="#" class="text-yellow-400 font-medium hover:underline">Read More</a>
-                </div>
-                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transform transition">
-                    <img src="/images/chelsea-logo.png" alt="Chelsea Logo" class="w-12 h-12 object-contain">
-                    <h3 class="text-white font-semibold text-lg">Chelsea Football Club</h3>
-                    <p class="text-gray-200 italic">
-                        ‘Helped massively with our progression of the academy’s player profiling and physical conditioning methodology.’
-                    </p>
-                    <a href="#" class="text-yellow-400 font-medium hover:underline">Read More</a>
-                </div>
-                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transform transition">
-                    <img src="/images/chelsea-logo.png" alt="Chelsea Logo" class="w-12 h-12 object-contain">
-                    <h3 class="text-white font-semibold text-lg">Chelsea Football Club</h3>
-                    <p class="text-gray-200 italic">
-                        ‘Helped massively with our progression of the academy’s player profiling and physical conditioning methodology.’
-                    </p>
-                    <a href="#" class="text-yellow-400 font-medium hover:underline">Read More</a>
-                </div>
-                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transform transition">
-                    <img src="/images/chelsea-logo.png" alt="Chelsea Logo" class="w-12 h-12 object-contain">
-                    <h3 class="text-white font-semibold text-lg">Chelsea Football Club</h3>
-                    <p class="text-gray-200 italic">
-                        ‘Helped massively with our progression of the academy’s player profiling and physical conditioning methodology.’
-                    </p>
-                    <a href="#" class="text-yellow-400 font-medium hover:underline">Read More</a>
-                </div>
-                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transform transition">
-                    <img src="/images/chelsea-logo.png" alt="Chelsea Logo" class="w-12 h-12 object-contain">
-                    <h3 class="text-white font-semibold text-lg">Chelsea Football Club</h3>
-                    <p class="text-gray-200 italic">
-                        ‘Helped massively with our progression of the academy’s player profiling and physical conditioning methodology.’
-                    </p>
-                    <a href="#" class="text-yellow-400 font-medium hover:underline">Read More</a>
-                </div>
-                <!-- Add more cards here -->
+    <section class="py-10 sm:py-10 lg:py-10 bg-black">
+        <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+            <!-- Heading -->
+            <div class="max-w-3xl mb-12 sm:mb-16 lg:mb-20">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+                       font-light tracking-wide leading-tight text-white">
+                    Our
+                    <span class="font-semibold text-primary">
+                        Mission
+                    </span>
+                    & Vision
+                </h2>
+
+                <p class="mt-4 sm:mt-6 text-white/80 text-sm sm:text-justify lg:text-lg">
+                    What drives us every day and where we are headed.
+                </p>
             </div>
 
-            <!-- Book Your Call Button -->
-            <div class="mt-12 text-center relative z-10">
-                <button class="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-yellow-500 transition">
+            <!-- Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
+
+                <!-- Mission -->
+                <div class="border border-white/10 rounded-2xl sm:rounded-3xl
+                        p-6 sm:p-8 lg:p-10">
+                    <div class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                        <i class="ri-rocket-line text-2xl sm:text-3xl text-primary"></i>
+                        <h3 class="text-xl sm:text-2xl font-medium text-white">
+                            Our Mission
+                        </h3>
+                    </div>
+
+                    <div class="space-y-4 sm:space-y-5">
+                        <p class="text-white/80 text-sm sm:text-base lg:text-lg">
+                            Our mission is simple.
+                            We help businesses use technology in a smart,
+                            practical, and stress-free way.
+                            We focus on building solutions that solve real problems
+                            instead of adding unnecessary complexity,
+                            so technology supports growth rather than slowing it down.
+                        </p>
+
+                        <p class="text-white/80 text-sm sm:text-base lg:text-lg">
+                            Every project begins with understanding your needs,
+                            challenges, and goals.
+                            It ends with a solution that makes daily work
+                            easier, smoother, and more efficient,
+                            helping teams work better and businesses move forward
+                            with confidence.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Vision -->
+                <div class="border border-white/10 rounded-2xl sm:rounded-3xl
+                        p-6 sm:p-8 lg:p-10">
+                    <div class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                        <i class="ri-eye-line text-2xl sm:text-3xl text-primary"></i>
+                        <h3 class="text-xl sm:text-2xl font-medium text-white">
+                            Our Vision
+                        </h3>
+                    </div>
+
+                    <div class="space-y-4 sm:space-y-5">
+                        <p class="text-white/80 text-sm sm:text-base lg:text-lg">
+                            Our vision is to become a trusted digital partner
+                            for businesses across the world.
+                            We want technology to feel reliable and meaningful,
+                            and we want people to feel confident
+                            when they hear the name
+                            <span class="text-white font-medium">Techonika</span>.
+                        </p>
+
+                        <p class="text-white/80 text-sm sm:text-base lg:text-lg">
+                            That confidence comes from honest work,
+                            clear communication,
+                            and results that truly support business growth.
+                            By building strong relationships and delivering
+                            consistent value, we aim to create digital solutions
+                            that make a lasting and positive impact.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="relative overflow-hidden py-16 sm:py-20 bg-black">
+
+
+        <!-- Soft Glow -->
+        <div class="absolute -top-40 left-1/4
+            w-[420px] h-[420px]
+            bg-primary/40 blur-[180px] rounded-full">
+        </div>
+
+        <div class="absolute -bottom-40 right-1/4
+            w-[420px] h-[420px]
+            bg-primary/25 blur-[180px] rounded-full">
+        </div>
+
+
+        <!-- Content -->
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8">
+
+                <!-- Stat Card -->
+                <div class="group bg-white/5 border border-white/15 backdrop-blur
+                        rounded-xl p-5 sm:p-6 text-center
+                        hover:border-primary/60 transition-all">
+
+                    <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
+                        80+
+                    </h3>
+                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
+                        Projects Delivered
+                    </p>
+                </div>
+
+                <div class="group bg-white/5 border border-white/15 backdrop-blur
+                        rounded-xl p-5 sm:p-6 text-center
+                        hover:border-primary/60 transition-all">
+
+                    <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
+                        80+
+                    </h3>
+                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
+                        Clients Served
+                    </p>
+                </div>
+
+                <div class="group bg-white/5 border border-white/15 backdrop-blur
+                        rounded-xl p-5 sm:p-6 text-center
+                        hover:border-primary/60 transition-all">
+
+                    <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
+                        15+
+                    </h3>
+                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
+                        Ongoing Client Engagements
+                    </p>
+                </div>
+
+                <div class="group bg-white/5 border border-white/15 backdrop-blur
+                        rounded-xl p-5 sm:p-6 text-center
+                        hover:border-primary/60 transition-all">
+
+                    <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
+                        10+
+                    </h3>
+                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
+                        Expert Professionals
+                    </p>
+                </div>
+
+                <div class="group bg-white/5 border border-white/15 backdrop-blur
+                        rounded-xl p-5 sm:p-6 text-center
+                        hover:border-primary/60 transition-all
+                        sm:col-span-3 lg:col-span-1">
+
+                    <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
+                        7+
+                    </h3>
+                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
+                        Years of Proven Experience
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="relative bg-black py-16 sm:py-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- RIGHT IMAGE -->
+                <div class="relative order-first lg:order-none">
+                    <div
+                        class="relative overflow-hidden
+                           rounded-2xl
+                           border border-white/10
+                           bg-white/5 backdrop-blur">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
+                            alt="Best SEO Company in Noida"
+                            class="w-full h-full object-cover
+                               transition-transform duration-700
+                               hover:scale-105">
+                    </div>
+
+                    <!-- Soft Glow -->
+                    <div
+                        class="absolute -bottom-10 -right-10
+                           w-40 h-40
+                           bg-primary/30
+                           rounded-full blur-[120px]">
+                    </div>
+                </div>
+
+                <!-- LEFT CONTENT -->
+                <div>
+                    <span
+                        class="inline-flex items-center mb-4
+                           px-4 py-1.5 rounded-full
+                           text-xs font-medium
+                           bg-white/10 text-primary">
+                        SEO-Driven Digital Growth
+                    </span>
+
+                    <h2
+                        class="text-3xl sm:text-4xl lg:text-5xl
+                           font-bold leading-tight text-white">
+                        Best
+                        <span class="text-primary">SEO Company in Noida</span><br>
+                        Focused on Real Results
+                    </h2>
+
+                    <p
+                        class="mt-6 text-white/70
+                           text-sm sm:text-base leading-relaxed">
+                        We are a results-oriented SEO company in Noida helping businesses
+                        achieve higher Google rankings, consistent organic traffic,
+                        and long-term online growth. Our SEO strategies are data-driven,
+                        ethical, and aligned with Google’s latest algorithms.
+                    </p>
+
+                    <p
+                        class="mt-4 text-white/70
+                           text-sm sm:text-base leading-relaxed">
+                        From keyword research and technical SEO to on-page optimization,
+                        content strategy, and link building, we deliver complete
+                        SEO solutions designed to convert visitors into customers.
+                    </p>
+
+                    <!-- Highlights -->
+                    <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg">
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            Google-Focused SEO Strategy
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            Keyword & Competitor Research
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            Technical & On-Page SEO
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i class="ri-check-line text-primary"></i>
+                            Measurable Ranking Growth
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <button
+                            @click="$dispatch('open-modal', { to: 'contact' })"
+                            class="inline-flex items-center gap-2
+                               px-7 py-3.5 rounded-full
+                               bg-primary text-black
+                               font-semibold text-sm
+                               hover:opacity-90 transition">
+                            Get Free SEO Audit
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+
+                        <a
+                            href="{{route('digital-marketing')}}"
+                            class="inline-flex items-center gap-2
+                               px-7 py-3.5 rounded-full
+                               border border-white/20
+                               text-white text-sm font-medium
+                               hover:bg-white hover:text-black transition">
+                            View SEO Services
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <section class="relative bg-black  md:mb-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <!-- Heading -->
+            <div class="text-center mb-10">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
+                    SEO For
+                    <span class="text-primary">Different Industries</span>
+                </h2>
+            </div>
+
+            <!-- Pills -->
+            <div
+                class="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
+
+                <!-- Pill -->
+                <span
+                    class="group px-6 py-3
+                       rounded-full
+                       bg-white/10 backdrop-blur-md
+                       border border-white/20
+                       text-sm font-medium text-white
+                       shadow-lg shadow-primary/10
+                       hover:bg-primary hover:text-black
+                       hover:border-primary
+                       transition-all duration-300">
+                    SEO For Startups
+                </span>
+
+                <span class="group px-6 py-3 rounded-full
+                       bg-white/10 backdrop-blur-md border border-white/20
+                       text-sm font-medium text-white
+                       shadow-lg shadow-primary/10
+                       hover:bg-primary hover:text-black hover:border-primary
+                       transition-all duration-300">
+                    Ecommerce SEO
+                </span>
+
+                <span class="group px-6 py-3 rounded-full
+                       bg-white/10 backdrop-blur-md border border-white/20
+                       text-sm font-medium text-white
+                       shadow-lg shadow-primary/10
+                       hover:bg-primary hover:text-black hover:border-primary
+                       transition-all duration-300">
+                    Limousine Services SEO
+                </span>
+
+                <span class="group px-6 py-3 rounded-full
+                       bg-white/10 backdrop-blur-md border border-white/20
+                       text-sm font-medium text-white
+                       shadow-lg shadow-primary/10
+                       hover:bg-primary hover:text-black hover:border-primary
+                       transition-all duration-300">
+                    Healthcare SEO
+                </span>
+
+                <span class="group px-6 py-3 rounded-full
+                       bg-white/10 backdrop-blur-md border border-white/20
+                       text-sm font-medium text-white
+                       shadow-lg shadow-primary/10
+                       hover:bg-primary hover:text-black hover:border-primary
+                       transition-all duration-300">
+                    SEO For Doctors
+                </span>
+
+                <span class="group px-6 py-3 rounded-full
+                       bg-white/10 backdrop-blur-md border border-white/20
+                       text-sm font-medium text-white
+                       shadow-lg shadow-primary/10
+                       hover:bg-primary hover:text-black hover:border-primary
+                       transition-all duration-300">
+                    NGOs / NPO Website SEO
+                </span>
+
+                <span class="group px-6 py-3 rounded-full
+                       bg-white/10 backdrop-blur-md border border-white/20
+                       text-sm font-medium text-white
+                       shadow-lg shadow-primary/10
+                       hover:bg-primary hover:text-black hover:border-primary
+                       transition-all duration-300">
+                    Hospitality Website SEO
+                </span>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="bg-black py-12 px-3 md:px-[10%] flex flex-col">
+
+        <!-- Heading -->
+        <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold
+           text-center md:text-left py-6 md:py-10 px-2 md:px-6">
+            What We Do
+        </h2>
+
+        <p class="text-white/80 max-w-3xl px-2 md:px-6 mb-12 text-justify md:text-lg">
+            We offer a wide range of digital and technology services. Each service is designed to support your
+            business goals and improve your connection with customers. Below is a detailed look at what we do
+            and how each service helps you. </p>
+
+        <!-- Background Section -->
+        <section class="relative bg-black py-6 overflow-hidden bg-center bg-no-repeat bg-cover"
+            style="background-image: url('{{ asset('images/lines.png') }}');">
+
+            <!-- Glow -->
+            <div class="absolute top-20 right-0 md:right-20 w-72 h-72 bg-primary opacity-20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 left-0 md:left-20 w-72 h-72 bg-primary opacity-20 rounded-full blur-3xl"></div>
+
+            <!-- Cards -->
+            <div class="mx-auto px-2 md:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+
+                <!-- Web Design -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                        <i class="ri-layout-4-line"></i>
+                    </div>
+
+                    <h3 class="text-white font-semibold text-lg">Web Design</h3>
+                    <p class="text-white/80 text-sm">
+                        Your website is often the first interaction people have with your brand. Our web design services focus
+                        on creating websites that are easy to navigate, simple to understand, and pleasant to use. We design
+                        layouts that feel natural, guide visitors smoothly, and make information easy to find.​
+                        Every page is crafted to build trust, improve clarity, and offer a comfortable browsing experience
+                        across all devices.
+                    </p>
+                    <a href="{{ route('webdesigning') }}" class="text-primary font-medium hover:underline">Read More →</a>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                        <i class="ri-palette-line"></i>
+                    </div>
+                    <h3 class="text-white font-semibold text-lg">Graphic Design</h3>
+                    <p class="text-white/80 text-sm">
+                        Strong visuals help people understand and remember your brand. Our graphic design services create
+                        clean, meaningful visuals that communicate clearly and feel consistent. From branding elements to
+                        marketing graphics, we design with balance, readability, and purpose in mind.​
+                        Colors, typography, and visuals are chosen carefully so your message feels clear, professional, and
+                        easy to connect with. </p>
+                    <a href="{{ route('graphicdesigning') }}" class="text-primary font-medium hover:underline">Read More →</a>
+                </div>
+
+                <!-- Web Development -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                        <i class="ri-code-box-line"></i>
+                    </div>
+                    <h3 class="text-white font-semibold text-lg">Web Development</h3>
+                    <p class="text-white/80 text-sm">
+                        A strong website needs a solid base. Our web development services focus on building websites that
+                        work smoothly every day. We make sure your site loads fast, stays secure, and works well on all
+                        devices.
+                        We build websites that are easy to manage and ready to grow with your business. Our work stays
+                        clear, stable, and reliable so you can focus on serving your customers. </p>
+                    <a href="{{ route('webdevelopment') }}" class="text-primary font-medium hover:underline">Read More →</a>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                        <i class="ri-megaphone-line"></i>
+                    </div>
+                    <h3 class="text-white font-semibold text-lg">Digital Marketing</h3>
+                    <p class="text-white/80 text-sm">
+                        Being visible online helps people find and trust your business. Our digital marketing services help
+                        you reach the right audience in a clear and steady way.
+                        We plan and manage marketing activities that support real growth. Every step stays focused on your
+                        goals and helps you build long-term connections with people. </p>
+                    <a href="{{ route('digital-marketing') }}" class="text-primary font-medium hover:underline">Read More →</a>
+                </div>
+
+                <!-- Ecommerce -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                        <i class="ri-shopping-cart-2-line"></i>
+                    </div>
+                    <h3 class="text-white font-semibold text-lg">Ecommerce Solutions</h3>
+                    <p class="text-white/80 text-sm">
+                        Your brand is how people recognize and remember you online. Our online branding services help
+                        your business stay clear, consistent, and trustworthy across all digital platforms.
+                        We support your brand message, visuals, and presence so people feel familiar and confident when
+                        they see your business. </p>
+                    <a href="#" class="text-primary font-medium hover:underline">Read More →</a>
+                </div>
+
+                <!-- Mobile App -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 flex flex-col gap-4 shadow-lg hover:scale-105 transition">
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center text-2xl">
+                        <i class="ri-smartphone-line"></i>
+                    </div>
+                    <h3 class="text-white font-semibold text-lg">Mobile App Development</h3>
+                    <p class="text-white/80 text-sm">
+                        Mobile apps help you stay close to your users. Our mobile apps are designed to feel simple, smooth,
+                        and easy to use.
+                        We build apps that work well every day and stay ready for future updates. This helps you serve users
+                        better as needs change. </p>
+                    <a href="{{ route('mobileappdevelopment') }}" class="text-primary font-medium hover:underline">Read More →</a>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20
+            rounded-xl p-6 flex flex-col gap-4 shadow-lg
+            hover:scale-105 transition">
+
+                    <!-- Icon -->
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary
+                flex items-center justify-center text-2xl">
+                        <i class="ri-line-chart-line"></i>
+                    </div>
+
+                    <h3 class="text-white font-semibold text-lg">
+                        Search Engine Optimization (SEO)
+                    </h3>
+
+                    <p class="text-white/80 text-sm leading-relaxed">
+                        Our SEO services are designed to help your business rank higher on Google,
+                        attract quality organic traffic, and generate consistent leads.
+                        We focus on keyword research, on-page optimization, technical SEO,
+                        and content strategy to improve visibility and long-term search performance.
+                    </p>
+
+                    <a href="#seo-services" class="text-primary font-medium hover:underline">
+                        Read More →
+                    </a>
+                </div>
+
+
+                <div class="bg-white/10 backdrop-blur-md border border-white/20
+            rounded-xl p-6 flex flex-col gap-4 shadow-lg
+            hover:scale-105 transition">
+
+                    <!-- Icon -->
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary
+                flex items-center justify-center text-2xl">
+                        <i class="ri-shield-star-line"></i>
+                    </div>
+
+                    <h3 class="text-white font-semibold text-lg">Online Branding</h3>
+
+                    <p class="text-white/80 text-sm leading-relaxed">
+                        Your brand is how people recognize and remember you online.
+                        Our online branding services help your business stay clear,
+                        consistent, and trustworthy across all digital platforms.
+                        We support your brand message, visuals, and presence so people
+                        feel confident when they see your business.
+                    </p>
+
+                    <a href="{{ route('branding') }}" class="text-primary font-medium hover:underline">
+                        Read More →
+                    </a>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20
+            rounded-xl p-6 flex flex-col gap-4 shadow-lg
+            hover:scale-105 transition">
+
+                    <!-- Icon -->
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary
+                flex items-center justify-center text-2xl">
+                        <i class="ri-chat-smile-3-line"></i>
+                    </div>
+
+                    <h3 class="text-white font-semibold text-lg">Social Media Marketing</h3>
+
+                    <p class="text-white/80 text-sm leading-relaxed">
+                        Social media helps you stay connected with people and build trust
+                        over time. Our social media marketing services help your brand stay
+                        active, friendly, and relatable.
+                        We focus on steady communication and meaningful content that builds
+                        long-term relationships instead of short-term attention.
+                    </p>
+
+                    <a href="#" class="text-primary font-medium hover:underline">
+                        Read More →
+                    </a>
+                </div>
+
+
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-14 text-center relative z-10">
+                <button @click="$dispatch('open-modal', { to: 'contact' })" class="bg-primary text-black px-8 py-3 rounded-lg font-semibold shadow-lg hover:opacity-90 transition">
                     Book Your Call
                 </button>
+            </div>
+
+        </section>
+    </div>
+    <section class="relative py-20 bg-black overflow-hidden">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+            <!-- Heading -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+                    WHY <span class="text-primary">CHOOSE US?</span>
+                </h2>
+                <p class="mt-4 text-white/60 max-w-2xl mx-auto text-sm sm:text-base">
+                    Smart strategies, clean execution, and measurable digital growth
+                    built to scale your business.
+                </p>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-14 items-center">
+
+                <!-- LEFT FEATURES -->
+                <div class="space-y-8">
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 flex-shrink-0 rounded-full bg-primary/15
+                        flex items-center justify-center">
+                            <i class="ri-line-chart-line text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-lg">
+                                ROI-Focused Performance
+                            </h4>
+                            <p class="text-white/60 text-sm mt-1 leading-relaxed">
+                                Data-driven strategies designed to boost traffic,
+                                conversions, and measurable growth.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 flex-shrink-0 rounded-full bg-primary/15
+                        flex items-center justify-center">
+                            <i class="ri-layout-2-line text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-lg">
+                                Conversion-Optimized Websites
+                            </h4>
+                            <p class="text-white/60 text-sm mt-1 leading-relaxed">
+                                High-performance, SEO-friendly websites that engage
+                                users and generate quality leads.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 flex-shrink-0 rounded-full bg-primary/15
+                        flex items-center justify-center">
+                            <i class="ri-shield-check-line text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-lg">
+                                Proven Organic Growth
+                            </h4>
+                            <p class="text-white/60 text-sm mt-1 leading-relaxed">
+                                Sustainable SEO strategies that build authority and
+                                long-term brand visibility.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <img class="object-cover rounded-full" src="{{asset('images/why.jpg')}}" alt="">
+                    </div>
+                </div>
+
+                <!-- RIGHT FEATURES -->
+                <div class="space-y-8">
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 flex-shrink-0 rounded-full bg-primary/15
+                        flex items-center justify-center">
+                            <i class="ri-hand-heart-line text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-lg">
+                                Dedicated Partnership
+                            </h4>
+                            <p class="text-white/60 text-sm mt-1 leading-relaxed">
+                                We work as your extended team, providing personalized
+                                strategies and expert support.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 flex-shrink-0 rounded-full bg-primary/15
+                        flex items-center justify-center">
+                            <i class="ri-bar-chart-box-line text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-lg">
+                                Transparent Reporting
+                            </h4>
+                            <p class="text-white/60 text-sm mt-1 leading-relaxed">
+                                Clear analytics, regular insights, and full visibility
+                                into campaign performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 flex-shrink-0 rounded-full bg-primary/15
+                        flex items-center justify-center">
+                            <i class="ri-user-heart-line text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-lg">
+                                Customer-Centric Focus
+                            </h4>
+                            <p class="text-white/60 text-sm mt-1 leading-relaxed">
+                                Ethical practices, high-value delivery, and long-term
+                                client success.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="relative px-[2%] md:px-[9%]
+           bg-gradient-to-r from-black via-[#111] to-black
+           text-white overflow-hidden">
+
+        <!-- Decorative Glow -->
+        <div class="absolute -top-32 -right-32
+        w-[500px] h-[500px]
+        bg-primary/20 blur-[140px] rounded-full"></div>
+
+        <div class="relative mx-auto px-4 sm:px-6 lg:px-12 py-16 sm:py-20">
+
+            <!-- GRID -->
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+                <!-- LEFT CONTENT -->
+                <div class="flex flex-col gap-5 text-justify">
+
+                    <h2 class="text-3xl sm:text-4xl lg:text-4xl font-bold leading-tight">
+                        A Digital Partner You Can
+                        <span class="text-primary"> Trust & Grow With</span>
+                    </h2>
+
+                    <p class="text-gray-300 leading-relaxed">
+                        Choosing the right digital partner is about more than just services.
+                        It’s about finding a team that understands your vision, respects your
+                        investment, and is committed to your long-term success.
+                    </p>
+
+                    <p class="text-gray-400 leading-relaxed">
+                        At Techonika, we focus on building strong digital foundations that
+                        help businesses grow with confidence. We take the time to understand
+                        your goals, challenges, and audience before crafting solutions that
+                        actually work in the real world.
+                    </p>
+
+                    <p class="text-gray-400 leading-relaxed">
+                        Our approach is simple and transparent. We avoid unnecessary
+                        complexity, communicate clearly at every stage, and deliver solutions
+                        that are scalable, secure, and aligned with your business objectives.
+                        From strategy and design to development and ongoing support,
+                        we stay with you at every step.
+                    </p>
+
+                    <button @click="$dispatch('open-modal', { to: 'contact' })"
+                        class="inline-flex items-center gap-2
+                           bg-[#f6b615] text-black
+                           px-6 py-3 rounded-lg font-semibold
+                           hover:bg-yellow-400 transition w-fit">
+                        Talk to Our Experts
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-4 h-4" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="relative flex justify-center">
+
+                    <div
+                        class="relative z-10 overflow-hidden
+                           w-full max-w-md sm:max-w-lg lg:max-w-xl
+                           aspect-[4/3]
+                           rounded-[32px]
+                           border border-white/10
+                           bg-white/5 backdrop-blur">
+
+                        <img
+                            src="{{asset('images/vector-business-success-growth-green-arrow-chart_1005794-6310.jpg')}}"
+                            alt="Business Growth & Digital Success"
+                            class="w-full h-full object-cover
+                               transition-transform duration-500
+                               hover:scale-105">
+                    </div>
+
+                    <!-- Curve Glow -->
+                    <div class="absolute -bottom-10 -right-10
+                    w-[220px] h-[220px]
+                    bg-primary rounded-full
+                    blur-[120px] opacity-30">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="px-[2%] md:px-[9%] bg-black">
+
+        <section class="py-10 bg-black overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <!-- Heading -->
+                <div class="mb-14">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl
+                       font-semibold tracking-wide leading-tight text-white">
+                        Our
+                        <span class="font-bold text-primary">Clientele</span>
+                    </h2>
+
+                    <p class="mt-6 max-w-3xl text-white/80 sm:text-lg leading-relaxed">
+                        We proudly collaborate with startups, growing brands, and established
+                        businesses across industries. Our long-term partnerships are built
+                        on trust, consistency, and real results.
+                    </p>
+                </div>
+
+                <!-- SLIDER WRAPPER -->
+                <div class="space-y-10">
+
+                    <!-- ROW 1 (LEFT) -->
+                    <div class="relative overflow-hidden">
+                        <div
+                            x-data="{ pause: false }"
+                            class="flex w-max gap-16 animate-marquee-left"
+                            :class="{ 'pause-marquee': pause }"
+                            @mouseenter="pause = true"
+                            @mouseleave="pause = false">
+
+                            <!-- Logos -->
+                            <template x-for="i in 2">
+                                <div class="flex gap-16">
+                                    <img src="/clients/6.jpg" class="client-logo" alt="">
+                                    <img src="/clients/7.jpg" class="client-logo" alt="">
+                                    <img src="/clients/8.jpg" class="client-logo" alt="">
+                                    <img src="/clients/9.jpg" class="client-logo" alt="">
+                                    <img src="/clients/10.jpg" class="client-logo" alt="">
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
+                    <!-- ROW 2 (RIGHT) -->
+                    <div class="relative overflow-hidden">
+                        <div
+                            x-data="{ pause: false }"
+                            class="flex w-max gap-16 animate-marquee-right"
+                            :class="{ 'pause-marquee': pause }"
+                            @mouseenter="pause = true"
+                            @mouseleave="pause = false">
+
+                            <template x-for="i in 2">
+                                <div class="flex gap-16">
+                                    <img src="/clients/11.jpg" class="client-logo" alt="">
+                                    <img src="/clients/12.jpg" class="client-logo" alt="">
+                                    <img src="/clients/13.jpg" class="client-logo" alt="">
+                                    <img src="/clients/14.jpg" class="client-logo" alt="">
+                                    <img src="/clients/6.jpg" class="client-logo" alt="">
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
+                    <!-- ROW 3 (LEFT) -->
+                    <div class="relative overflow-hidden">
+                        <div
+                            x-data="{ pause: false }"
+                            class="flex w-max gap-16 animate-marquee-left"
+                            :class="{ 'pause-marquee': pause }"
+                            @mouseenter="pause = true"
+                            @mouseleave="pause = false">
+
+                            <template x-for="i in 2">
+                                <div class="flex gap-16">
+                                    <img src="/clients/7.jpg" class="client-logo" alt="">
+                                    <img src="/clients/8.jpg" class="client-logo" alt="">
+                                    <img src="/clients/9.jpg" class="client-logo" alt="">
+                                    <img src="/clients/10.jpg" class="client-logo" alt="">
+                                    <img src="/clients/11.jpg" class="client-logo" alt="">
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- STYLES -->
+            <style>
+                .client-logo {
+                    height: 56px;
+                    width: auto;
+                    opacity: 0.75;
+                    filter: grayscale(100%);
+                    transition: all 0.3s ease;
+                }
+
+                .client-logo:hover {
+                    opacity: 1;
+                    filter: grayscale(0%);
+                }
+
+                @media (min-width: 640px) {
+                    .client-logo {
+                        height: 90px;
+                    }
+                }
+
+                @keyframes marquee-left {
+                    0% {
+                        transform: translateX(0);
+                    }
+
+                    100% {
+                        transform: translateX(-50%);
+                    }
+                }
+
+                @keyframes marquee-right {
+                    0% {
+                        transform: translateX(-50%);
+                    }
+
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
+
+                .animate-marquee-left {
+                    animation: marquee-left 28s linear infinite;
+                }
+
+                .animate-marquee-right {
+                    animation: marquee-right 32s linear infinite;
+                }
+
+                .pause-marquee {
+                    animation-play-state: paused;
+                }
+            </style>
+        </section>
+
+
+        <section class="w-full bg-black py-10 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 lg:px-4">
+
+                <!-- SECTION TITLE -->
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-6">
+                    Our Satisfied <span class="text-primary">Clients</span>
+                </h2>
+                <p class="text-sm mb-20 md:text-justify text-white/80 leading-relaxed">
+                    We are proud to work with clients from different industries. Each project helps us learn and improve.
+                    Our clients stay with us because we communicate clearly, deliver on time, and care about their success.
+                </p>
+
+                <!-- SLIDER -->
+                <div
+                    x-data="{
+                active: 0,
+                interval: null,
+                cardWidth: 340,
+                pause: false,
+                cards: @js($testimonials->map(fn($t) => ['name' => $t->data['name'] ?? '', 'role' => $t->data['company'] ?? '', 'text' => $t->data['message'] ?? '', 'verified' => $t->data['verified'] ?? false])->values()),
+                start() {
+                    if (this.cards.length > 0) {
+                        this.interval = setInterval(() => {
+                            if (!this.pause) {
+                                this.active = (this.active + 1) % this.cards.length
+                            }
+                        }, 4000)
+                    }
+                }
+            }"
+                    x-init="start()"
+                    class="relative"
+                    @mouseenter="pause = true"
+                    @mouseleave="pause = false">
+
+                    <!-- VIEWPORT -->
+                    <div class="overflow-hidden">
+                        @if($testimonials->count() > 0)
+                        <div
+                            class="flex gap-6 transition-transform duration-700 ease-out"
+                            :style="`transform: translateX(-${active * cardWidth}px)`">
+
+                            <template x-for="(card, index) in cards" :key="index">
+                                <div
+                                    class="min-w-[300px] sm:min-w-[320px] max-w-[320px]
+                            bg-gradient-to-b from-[#1a1a1a] to-[#111]
+                            rounded-2xl p-6 shadow-xl
+                            border border-white/5">
+
+                                    <!-- HEADER (NO IMAGE) -->
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <!-- INITIAL BADGE -->
+                                        <div
+                                            class="w-12 h-12 flex items-center justify-center
+                                    rounded-full bg-primary/20 text-primary
+                                    font-semibold uppercase">
+                                            <span x-text="card.name.charAt(0)"></span>
+                                        </div>
+
+                                        <div>
+                                            <h4 class="text-white font-semibold text-sm"
+                                                x-text="card.name"></h4>
+                                            <p class="text-gray-400 text-xs"
+                                                x-text="card.role"></p>
+                                        </div>
+                                    </div>
+
+                                    <!-- TEXT -->
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-6"
+                                        x-text="card.text"></p>
+
+                                    <span class="text-primary text-xs font-medium" x-show="card.verified">
+                                        Verified Client
+                                    </span>
+                                </div>
+                            </template>
+                        </div>
+                        @else
+                        <div class="text-center py-12">
+                            <p class="text-white/60">No testimonials available at the moment.</p>
+                        </div>
+                        @endif
+                    </div>
+
+                    <!-- DOTS -->
+                    @if($testimonials->count() > 0)
+                    <div class="flex justify-center gap-3 mt-10">
+                        <template x-for="(dot, i) in cards" :key="i">
+                            <button
+                                @click="active = i"
+                                class="w-2.5 h-2.5 rounded-full transition"
+                                :class="active === i ? 'bg-primary' : 'bg-gray-600'">
+                            </button>
+                        </template>
+                    </div>
+                    @endif
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="bg-black py-20">
+            <div class="max-w-7xl mx-auto px-4 md:px-5">
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+                    <!-- LEFT : CONTENT -->
+                    <div>
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl
+                           font-semibold leading-tight text-white mb-6">
+                            Commitment to <span class="font-bold text-primary">Quality</span>
+                        </h2>
+
+                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
+                            Quality is at the heart of our work, and we treat it as a core
+                            part of everything we do. At every stage, we review our work
+                            carefully and follow clear standards so every detail feels
+                            complete, reliable, and well thought out.
+                        </p>
+
+                        <p class="mt-5 text-white/80 text-justify sm:text-lg leading-relaxed">
+                            We take time to check our results and make sure they truly meet
+                            your needs and expectations. We believe in honest feedback,
+                            open communication, and steady improvement over time.
+                        </p>
+
+                        <p class="mt-5 text-white/80 text-justify sm:text-lg leading-relaxed">
+                            This careful and thoughtful approach helps us learn from every
+                            project and serve you better, stronger, and more confidently
+                            each time we work together.
+                        </p>
+                    </div>
+
+                    <!-- RIGHT : IMAGE -->
+                    <div class="relative">
+                        <!-- Glow -->
+                        <div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"></div>
+
+                        <img
+                            src="{{ asset('images/2150938426.jpg') }}"
+                            alt="Commitment to quality"
+                            class="relative rounded-3xl border border-white/10
+                           shadow-2xl object-cover w-full
+                           h-[300px] sm:h-[360px] lg:h-[420px]" />
+                    </div>
+
+                </div>
+
+                <!-- Divider -->
+                <div class="mt-20 h-px bg-white/10"></div>
+
+            </div>
+        </section>
+
+        <section class="bg-black py-10">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+                    <!-- LEFT : IMAGE -->
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"></div>
+
+                        <img
+                            src="{{ asset('images/growth.svg') }}"
+                            alt="Let us grow together"
+                            class="relative rounded-3xl border border-white/10
+                           shadow-2xl object-cover w-full h-[320px] sm:h-[380px] lg:h-[420px]" />
+                    </div>
+
+                    <!-- RIGHT : CONTENT -->
+                    <div>
+
+
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl
+                           font-semibold leading-tight text-white mb-6">
+                            Let Us Grow <span class="text-primary font-bold">Together</span>
+                        </h2>
+
+                        <p class="text-white/80 text-justify sm:text-lg leading-relaxed">
+                            If you are looking for a digital partner who listens carefully,
+                            explains every step in simple words, and delivers work with
+                            care and attention, <span class="text-white font-medium">Techonika</span>
+                            is ready to support you.
+                        </p>
+
+                        <p class="mt-5 text-white/80 text-justify sm:text-lg leading-relaxed">
+                            We focus on creating solutions that truly help your business
+                            grow while making technology feel easy and approachable.
+                        </p>
+
+                        <p class="mt-5 text-white/80 text-justify sm:text-lg leading-relaxed">
+                            Reach out to us today, and let’s build something meaningful
+                            together that fits your goals and grows with your needs.
+                            We look forward to being part of your journey, helping you
+                            succeed, and supporting your growth every step of the way.
+                        </p>
+
+                        <!-- CTA -->
+                        <div class="mt-10 flex flex-wrap gap-4">
+                            <button
+                                @click="$dispatch('open-modal', { to: 'contact' })"
+                                class="inline-flex items-center gap-2
+                              px-8 py-3.5 rounded-full
+                              bg-primary text-black font-semibold
+                              hover:opacity-90 transition">
+                                Get in Touch
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="bg-black py-20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6">
+
+                <!-- SECTION TITLE -->
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+                        FREQUENTLY ASKED <span class="text-[#f6b615]">QUESTIONS</span>
+                    </h2>
+                    <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+                        Answers to common questions about our services, process,
+                        pricing, and how we work with clients.
+                    </p>
+                </div>
+
+                <!-- FAQ LIST -->
+                <div x-data="{ active: null }" class="space-y-4">
+
+                    <!-- 1 -->
+                    <div class="border border-white/10 rounded-xl overflow-hidden">
+                        <button @click="active === 1 ? active = null : active = 1"
+                            class="w-full flex items-center justify-between px-6 py-5 text-left">
+                            <span class="text-white font-medium">
+                                What services does Techonika offer as a digital solutions company?
+                            </span>
+                            <span class="text-[#f6b615] text-xl transform transition"
+                                :class="active === 1 ? 'rotate-45' : ''">+</span>
+                        </button>
+
+                        <div x-show="active === 1" x-collapse
+                            class="px-6 pb-5 text-gray-400 leading-relaxed">
+                            We offer a full range of digital services including web development,
+                            web design & graphic design, mobile app development, digital marketing,
+                            online branding, ecommerce solutions, social media marketing,
+                            and resource management everything under one roof.
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="border border-white/10 rounded-xl overflow-hidden">
+                        <button @click="active === 2 ? active = null : active = 2"
+                            class="w-full flex items-center justify-between px-6 py-5 text-left">
+                            <span class="text-white font-medium">
+                                Do you handle both website and mobile app development?
+                            </span>
+                            <span class="text-[#f6b615] text-xl transform transition"
+                                :class="active === 2 ? 'rotate-45' : ''">+</span>
+                        </button>
+
+                        <div x-show="active === 2" x-collapse
+                            class="px-6 pb-5 text-gray-400 leading-relaxed">
+                            Yes. We design and develop websites and mobile apps that are fast,
+                            secure, and easy to use. Whether it’s a simple website or a complex
+                            application, we build solutions that support your business.
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="border border-white/10 rounded-xl overflow-hidden">
+                        <button @click="active === 3 ? active = null : active = 3"
+                            class="w-full flex items-center justify-between px-6 py-5 text-left">
+                            <span class="text-white font-medium">
+                                Can Techonika help me generate more leads for my business?
+                            </span>
+                            <span class="text-[#f6b615] text-xl transform transition"
+                                :class="active === 3 ? 'rotate-45' : ''">+</span>
+                        </button>
+
+                        <div x-show="active === 3" x-collapse
+                            class="px-6 pb-5 text-gray-400 leading-relaxed">
+                            Absolutely. Our digital marketing and social media services focus on
+                            reaching the right audience and converting them into customers
+                            through clear strategies and steady, long-term growth.
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="border border-white/10 rounded-xl overflow-hidden">
+                        <button @click="active === 4 ? active = null : active = 4"
+                            class="w-full flex items-center justify-between px-6 py-5 text-left">
+                            <span class="text-white font-medium">
+                                How do I know Techonika is the right digital partner for my business?
+                            </span>
+                            <span class="text-[#f6b615] text-xl transform transition"
+                                :class="active === 4 ? 'rotate-45' : ''">+</span>
+                        </button>
+
+                        <div x-show="active === 4" x-collapse
+                            class="px-6 pb-5 text-gray-400 leading-relaxed">
+                            We focus on honest communication, clear explanations,
+                            and solutions that match your real business needs.
+                            We stay connected even after project completion
+                            so you always feel supported.
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="border border-white/10 rounded-xl overflow-hidden">
+                        <button @click="active === 5 ? active = null : active = 5"
+                            class="w-full flex items-center justify-between px-6 py-5 text-left">
+                            <span class="text-white font-medium">
+                                What is the average cost to build a website or app?
+                            </span>
+                            <span class="text-[#f6b615] text-xl transform transition"
+                                :class="active === 5 ? 'rotate-45' : ''">+</span>
+                        </button>
+
+                        <div x-show="active === 5" x-collapse
+                            class="px-6 pb-5 text-gray-400 leading-relaxed">
+                            The cost depends on the design, features, and complexity.
+                            We discuss your goals first and provide a clear estimate
+                            before starting so there are no surprises.
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="border border-white/10 rounded-xl overflow-hidden">
+                        <button @click="active === 6 ? active = null : active = 6"
+                            class="w-full flex items-center justify-between px-6 py-5 text-left">
+                            <span class="text-white font-medium">
+                                Do you sign a non-disclosure agreement (NDA)?
+                            </span>
+                            <span class="text-[#f6b615] text-xl transform transition"
+                                :class="active === 6 ? 'rotate-45' : ''">+</span>
+                        </button>
+
+                        <div x-show="active === 6" x-collapse
+                            class="px-6 pb-5 text-gray-400 leading-relaxed">
+                            Yes. We respect your privacy and business ideas.
+                            We are happy to sign an NDA to ensure your information
+                            stays fully protected.
+                        </div>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="border border-white/10 rounded-xl overflow-hidden">
+                        <button @click="active === 7 ? active = null : active = 7"
+                            class="w-full flex items-center justify-between px-6 py-5 text-left">
+                            <span class="text-white font-medium">
+                                How long does it take to complete a website or app project?
+                            </span>
+                            <span class="text-[#f6b615] text-xl transform transition"
+                                :class="active === 7 ? 'rotate-45' : ''">+</span>
+                        </button>
+
+                        <div x-show="active === 7" x-collapse
+                            class="px-6 pb-5 text-gray-400 leading-relaxed">
+                            Timelines depend on project size and requirements.
+                            After understanding your goals, we share a clear schedule
+                            and keep you updated throughout the project.
+                        </div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="border border-white/10 rounded-xl overflow-hidden">
+                        <button @click="active === 8 ? active = null : active = 8"
+                            class="w-full flex items-center justify-between px-6 py-5 text-left">
+                            <span class="text-white font-medium">
+                                Do you create websites using CMS platforms?
+                            </span>
+                            <span class="text-[#f6b615] text-xl transform transition"
+                                :class="active === 8 ? 'rotate-45' : ''">+</span>
+                        </button>
+
+                        <div x-show="active === 8" x-collapse
+                            class="px-6 pb-5 text-gray-400 leading-relaxed">
+                            Yes. We build websites using CMS platforms like WordPress,
+                            Shopify, and others so you can easily manage your content
+                            when needed.
+                        </div>
+                    </div>
+
+                    <!-- 9 -->
+                    <div class="border border-white/10 rounded-xl overflow-hidden">
+                        <button @click="active === 9 ? active = null : active = 9"
+                            class="w-full flex items-center justify-between px-6 py-5 text-left">
+                            <span class="text-white font-medium">
+                                Can I see my website or app while it’s being developed?
+                            </span>
+                            <span class="text-[#f6b615] text-xl transform transition"
+                                :class="active === 9 ? 'rotate-45' : ''">+</span>
+                        </button>
+
+                        <div x-show="active === 9" x-collapse
+                            class="px-6 pb-5 text-gray-400 leading-relaxed">
+                            Absolutely. We share regular updates and previews
+                            so you can review progress and give feedback
+                            throughout development.
+                        </div>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="border border-white/10 rounded-xl overflow-hidden">
+                        <button @click="active === 10 ? active = null : active = 10"
+                            class="w-full flex items-center justify-between px-6 py-5 text-left">
+                            <span class="text-white font-medium">
+                                How do domain, hosting, and payments work?
+                            </span>
+                            <span class="text-[#f6b615] text-xl transform transition"
+                                :class="active === 10 ? 'rotate-45' : ''">+</span>
+                        </button>
+
+                        <div x-show="active === 10" x-collapse
+                            class="px-6 pb-5 text-gray-400 leading-relaxed">
+                            We guide you in choosing the right domain and hosting.
+                            Payments are usually split into stages a deposit,
+                            milestones during development, and final payment on completion.
+                            Everything is explained clearly before we begin.
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
     </div>
-    <section class="relative bg-gradient-to-r from-black via-[#111] to-black text-white overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16 sm:py-20">
-
-            <div class="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16 px-[6%]">
-
-                <!-- LEFT CONTENT -->
-                <div class="text-center md:text-left max-w-xl">
-                    <h4 class="text-sm tracking-widest uppercase text-[#f6b615] mb-3">
-                        About Us
-                    </h4>
-
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
-                        We are <span class="text-primary">TECHNONIKA</span>
-                    </h2>
-
-                    <p class="text-gray-300 leading-relaxed mb-5">
-                        Since our inception, Technonika has been building powerful digital
-                        solutions that help businesses scale, automate, and innovate in a
-                        fast-changing technological landscape.
-                    </p>
-
-                    <p class="text-gray-400 leading-relaxed mb-8">
-                        From web and mobile applications to custom software and cloud-ready
-                        systems, we partner with startups and enterprises to deliver reliable,
-                        future-focused products with clarity and impact.
-                    </p>
-
-                    <a href="#"
-                        class="inline-flex items-center gap-2 bg-[#f6b615] text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition">
-                        Learn more
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- RIGHT IMAGE -->
-                <div class="relative flex justify-center md:justify-end w-full md:w-auto">
-                    <img
-                        src="{{ asset('techonika-logo-dark.png') }}"
-                        alt="Technonika Logo"
-                        class="w-[220px] sm:w-[280px] lg:w-[360px] object-contain" />
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section class="w-full bg-black py-20 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-
-            <!-- SECTION TITLE -->
-            <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-14">
-                USED WHERE <span class="text-[#f6b615]">MARGINS MATTER</span>
-            </h2>
-
-            <!-- SLIDER -->
-            <div
-                x-data="{
-        active: 0,
-        cardWidth: 340,
-        cards: [
-          {
-            name: 'Vern Gambetta',
-            role: 'Athletic Development Coach and Founder',
-            org: 'GAIN Coaching Network',
-            img: 'https://randomuser.me/api/portraits/men/32.jpg',
-            text: 'Gareth delivered an exceptional masterclass to the GAIN community, focusing on anaerobic speed reserve and training science.'
-          },
-          {
-            name: 'Ruth Waghorn',
-            role: 'Women’s Physical Performance Pathway Lead',
-            org: 'The English Football Association',
-            img: 'https://randomuser.me/api/portraits/women/44.jpg',
-            text: 'Gareth has been working with the FA and England teams for over four years and will challenge the way you think.'
-          },
-          {
-            name: 'Jason Hettler',
-            role: 'Assistant Head of Strength & Conditioning',
-            org: 'IMG Academy',
-            img: 'https://randomuser.me/api/portraits/men/54.jpg',
-            text: 'Gareth’s guidance played a key role in evolving my approach to sport conditioning.'
-          },
-            {
-                name: 'Chelsea Football Club',
-                role: 'Academy Strength & Conditioning',
-                org: 'Chelsea FC',
-                img: 'https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg',
-                text: 'Helped massively with our progression of the academy’s player profiling and physical conditioning methodology.'
-            },
-            {
-                name: 'Newcastle United FC',
-                role: 'First Team Strength & Conditioning',
-                org: 'Newcastle United',
-                img: 'https://upload.wikimedia.org/wikipedia/en/5/56/Newcastle_United_Logo.svg',
-                text: 'Provided invaluable insights that enhanced our team’s conditioning and performance strategies.'
-            },
-            {
-                name: 'Liverpool FC',
-                role: 'Youth Development Coach',
-                org: 'Liverpool FC',
-                img: 'https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg',
-                text: 'Their expertise significantly contributed to the advancement of our youth training programs.'
-            }
-           
-        ]
-      }"
-                class="relative">
-
-                <!-- VIEWPORT -->
-                <div class="overflow-hidden">
-
-                    <!-- TRACK -->
-                    <div
-                        class="flex gap-6 transition-transform duration-500 ease-out"
-                        :style="`transform: translateX(-${active * cardWidth}px)`">
-
-                        <template x-for="(card, index) in cards" :key="index">
-                            <div
-                                class="min-w-[300px] sm:min-w-[320px] max-w-[320px]
-                     bg-gradient-to-b from-[#1a1a1a] to-[#111]
-                     rounded-2xl p-6 shadow-xl border border-white/5">
-
-                                <!-- PROFILE -->
-                                <div class="flex items-center gap-4 mb-4">
-                                    <img :src="card.img"
-                                        class="w-12 h-12 rounded-full object-cover border border-[#f6b615]" />
-                                    <div>
-                                        <h4 class="text-white font-semibold text-sm" x-text="card.name"></h4>
-                                        <p class="text-gray-400 text-xs" x-text="card.role"></p>
-                                        <p class="text-gray-500 text-xs" x-text="card.org"></p>
-                                    </div>
-                                </div>
-
-                                <!-- TEXT -->
-                                <p class="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-5"
-                                    x-text="card.text"></p>
-
-                                <a href="#" class="text-[#f6b615] text-sm font-medium hover:underline">
-                                    Read more
-                                </a>
-                            </div>
-                        </template>
-                    </div>
-                </div>
-
-                <!-- PAGINATION DOTS -->
-                <div class="flex justify-center gap-3 mt-10">
-                    <template x-for="(dot, i) in cards" :key="i">
-                        <button
-                            @click="active = i"
-                            class="w-2.5 h-2.5 rounded-full transition"
-                            :class="active === i ? 'bg-[#f6b615]' : 'bg-gray-600'">
-                        </button>
-                    </template>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="min-h-screen flex items-center bg-zinc-900">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-            <!-- LEFT CONTENT -->
-            <div>
-                <p class="text-lg text-gray-300 mb-3">
-                    Want A Professional Website
-                </p>
-
-                <h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold leading-tight mb-6">
-                    <span class="text-primary italic">THAT CONVERTS</span>
-                    <span class="text-primary italic"> VISITORS INTO</span><br>
-                    <span class="text-primary italic">CUSTOMERS?</span>
-                </h1>
-
-                <p class="text-gray-400 max-w-xl mb-8">
-                    Partner with our expert web design services to build a responsive,
-                    high-converting website. Contact us now and get a free quote
-                    tailored to your business needs.
-                </p>
-
-                <!-- CTA BUTTONS -->
-                <div class="flex flex-wrap items-center gap-4">
-                    <a href="#"
-                        class="flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-full font-semibold transition">
-
-                        <i class="ri-plane-line"></i>
-
-                        Request Proposal
-                    </a>
-
-                    <span class="text-gray-500 font-semibold">OR</span>
-
-                    <a href="#"
-                        class="flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-full font-semibold transition">
-
-                        <i class="ri-phone-line"></i>
-
-
-                        Contact Now
-                    </a>
-                </div>
-            </div>
-
-            <!-- RIGHT IMAGE -->
-            <div class="flex justify-center lg:justify-end">
-                <img
-                    src="/images/hero-man.png"
-                    alt="Professional"
-                    class="max-h-[520px] object-contain">
-            </div>
-
-        </div>
-    </section>
-
-
-    <section class="bg-black py-24">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6">
-
-            <!-- SECTION TITLE -->
-            <div class="text-center mb-16">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-                    FREQUENTLY ASKED <span class="text-[#f6b615]">QUESTIONS</span>
-                </h2>
-                <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
-                    Everything you need to know about our web development process,
-                    technology stack, and collaboration.
-                </p>
-            </div>
-
-            <!-- FAQ LIST -->
-            <div
-                x-data="{ active: null }"
-                class="space-y-4">
-
-                <!-- ITEM -->
-                <div class="border border-white/10 rounded-xl overflow-hidden">
-                    <button
-                        @click="active === 1 ? active = null : active = 1"
-                        class="w-full flex items-center justify-between px-6 py-5 text-left">
-                        <span class="text-white font-medium">
-                            What technologies do you use for web development?
-                        </span>
-                        <span
-                            class="text-[#f6b615] text-xl transform transition"
-                            :class="active === 1 ? 'rotate-45' : ''">
-                            +
-                        </span>
-                    </button>
-
-                    <div
-                        x-show="active === 1"
-                        x-collapse
-                        class="px-6 pb-5 text-gray-400 leading-relaxed">
-                        We primarily work with modern stacks such as Laravel, React, Vue,
-                        Next.js, Tailwind CSS, and REST or GraphQL APIs. Our focus is on
-                        scalable, maintainable, and performance-driven architectures.
-                    </div>
-                </div>
-
-                <!-- ITEM -->
-                <div class="border border-white/10 rounded-xl overflow-hidden">
-                    <button
-                        @click="active === 2 ? active = null : active = 2"
-                        class="w-full flex items-center justify-between px-6 py-5 text-left">
-                        <span class="text-white font-medium">
-                            Do you build custom websites or use templates?
-                        </span>
-                        <span
-                            class="text-[#f6b615] text-xl transform transition"
-                            :class="active === 2 ? 'rotate-45' : ''">
-                            +
-                        </span>
-                    </button>
-
-                    <div
-                        x-show="active === 2"
-                        x-collapse
-                        class="px-6 pb-5 text-gray-400 leading-relaxed">
-                        Every project is built custom. We don’t rely on generic templates.
-                        Instead, we design and develop solutions tailored to your business
-                        goals, users, and long-term scalability.
-                    </div>
-                </div>
-
-                <!-- ITEM -->
-                <div class="border border-white/10 rounded-xl overflow-hidden">
-                    <button
-                        @click="active === 3 ? active = null : active = 3"
-                        class="w-full flex items-center justify-between px-6 py-5 text-left">
-                        <span class="text-white font-medium">
-                            How long does a typical project take?
-                        </span>
-                        <span
-                            class="text-[#f6b615] text-xl transform transition"
-                            :class="active === 3 ? 'rotate-45' : ''">
-                            +
-                        </span>
-                    </button>
-
-                    <div
-                        x-show="active === 3"
-                        x-collapse
-                        class="px-6 pb-5 text-gray-400 leading-relaxed">
-                        Timelines vary based on complexity. A standard website usually
-                        takes 3–6 weeks, while larger web applications or SaaS products
-                        may take 8–16 weeks including planning, development, and testing.
-                    </div>
-                </div>
-
-                <!-- ITEM -->
-                <div class="border border-white/10 rounded-xl overflow-hidden">
-                    <button
-                        @click="active === 4 ? active = null : active = 4"
-                        class="w-full flex items-center justify-between px-6 py-5 text-left">
-                        <span class="text-white font-medium">
-                            Will my website be scalable and secure?
-                        </span>
-                        <span
-                            class="text-[#f6b615] text-xl transform transition"
-                            :class="active === 4 ? 'rotate-45' : ''">
-                            +
-                        </span>
-                    </button>
-
-                    <div
-                        x-show="active === 4"
-                        x-collapse
-                        class="px-6 pb-5 text-gray-400 leading-relaxed">
-                        Yes. We follow best practices for security, performance, and
-                        scalability. This includes optimized database design, secure
-                        authentication, clean code architecture, and cloud-ready deployment.
-                    </div>
-                </div>
-
-                <!-- ITEM -->
-                <div class="border border-white/10 rounded-xl overflow-hidden">
-                    <button
-                        @click="active === 5 ? active = null : active = 5"
-                        class="w-full flex items-center justify-between px-6 py-5 text-left">
-                        <span class="text-white font-medium">
-                            Do you provide support after launch?
-                        </span>
-                        <span
-                            class="text-[#f6b615] text-xl transform transition"
-                            :class="active === 5 ? 'rotate-45' : ''">
-                            +
-                        </span>
-                    </button>
-
-                    <div
-                        x-show="active === 5"
-                        x-collapse
-                        class="px-6 pb-5 text-gray-400 leading-relaxed">
-                        Absolutely. We offer ongoing maintenance, performance monitoring,
-                        feature enhancements, and technical support to ensure your product
-                        continues to grow with your business.
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-
 
 
 </div>
