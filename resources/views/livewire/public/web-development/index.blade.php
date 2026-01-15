@@ -1,7 +1,7 @@
 @section('meta')
-    <title>Web Development Company in Noida | Custom Web Solutions </title>
-    <meta name="description" content="Looking for the best web development company in Noida? Technonika offers custom website development, responsive web design, and scalable web solutions for your business.">
-    <meta name="keywords" content="web development company Noida, custom website development, responsive web design, web development services, website design company">
+<title>Web Development Company in Noida | Custom Web Solutions </title>
+<meta name="description" content="Looking for the best web development company in Noida? Technonika offers custom website development, responsive web design, and scalable web solutions for your business.">
+<meta name="keywords" content="web development company Noida, custom website development, responsive web design, web development services, website design company">
 @endsection
 
 <div>
@@ -91,12 +91,12 @@
                     </p>
 
                     @if($successTop)
-                        <div class="bg-green-500/10 border border-green-500/30 rounded-lg p-4 mb-4">
-                            <p class="text-green-400 text-sm text-center font-medium flex items-center justify-center gap-2">
-                                <i class="ri-checkbox-circle-line text-lg"></i>
-                                Thanks! We will contact you shortly.
-                            </p>
-                        </div>
+                    <div class="bg-green-500/10 border border-green-500/30 rounded-lg p-4 mb-4">
+                        <p class="text-green-400 text-sm text-center font-medium flex items-center justify-center gap-2">
+                            <i class="ri-checkbox-circle-line text-lg"></i>
+                            Thanks! We will contact you shortly.
+                        </p>
+                    </div>
                     @endif
 
                     <form wire:submit.prevent="submitTop" class="space-y-4">
@@ -1638,14 +1638,8 @@
                 interval: null,
                 cardWidth: 340,
                 pause: false,
-                cards: [
-                    { name: 'Rashmi Ingle', role: 'Eduonix', text: `Don’t wait another second to connect with Techonika Solutions. Their ability to test and adjust strategies in real time is impressive.` },
-                    { name: 'Dr Vilas Chakor', role: 'Dr Chakor Clinic', text: `Simply put, the best and most reliable services. Designs, communication, understanding, and effort — everything is handled professionally.` },
-                    { name: 'Aayush Bajaj', role: 'A R Finance Room', text: `Prateek has a strong command over his work and has been very professional throughout.` },
-                    { name: 'Biren Matiyali', role: 'H M Foods', text: `Very professional. Very responsive. Very qualified. Worth giving them a try without hesitation.` },
-                    { name: 'Manisha', role: 'Saffron Cuisine', text: `Techonika perfectly combines analytical thinking with creativity. Highly recommended.` },
-                    { name: 'Tao Rima Bhatt', role: 'RuralLinks', text: `Great quality work at affordable prices. Open to feedback and changes.` }
-                ],
+                              cards: @js($testimonials->map(fn($t) => ['name' => $t->data['name'] ?? '', 'role' => $t->data['company'] ?? '', 'text' => $t->data['message'] ?? '', 'verified' => $t->data['verified'] ?? false])->values()),
+
                 start() {
                     this.interval = setInterval(() => {
                         if (!this.pause) {
@@ -2011,12 +2005,12 @@
                         </h3>
 
                         @if($successBottom)
-                            <div class="bg-green-500/10 border border-green-500/30 rounded-lg p-4 mb-4">
-                                <p class="text-green-400 text-sm text-center font-medium flex items-center justify-center gap-2">
-                                    <i class="ri-checkbox-circle-line text-lg"></i>
-                                    Thanks! We will contact you shortly.
-                                </p>
-                            </div>
+                        <div class="bg-green-500/10 border border-green-500/30 rounded-lg p-4 mb-4">
+                            <p class="text-green-400 text-sm text-center font-medium flex items-center justify-center gap-2">
+                                <i class="ri-checkbox-circle-line text-lg"></i>
+                                Thanks! We will contact you shortly.
+                            </p>
+                        </div>
                         @endif
 
                         <form wire:submit.prevent="submitBottom" class="space-y-4">
