@@ -371,5 +371,25 @@
     </div>
 </section>
 
+    <section class="relative bg-black py-24">
+        <div class="absolute inset-0 bg-primary/10 blur-[160px]"></div>
+
+        <div class="relative max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-semibold text-white">
+                Let’s Build Your <span class="text-primary">WordPress Website</span>
+            </h2>
+
+            <p class="mt-4 text-white/70 max-w-xl mx-auto">
+                Get a fast, secure, and conversion-focused WordPress site
+                built by experienced professionals.
+            </p>
+
+            <a @click="$dispatch('open-modal', { to: 'contact' })" 
+                class="inline-flex items-center gap-2 mt-10 px-8 py-3 bg-primary text-black rounded-full hover:scale-105 transition">
+                <i class="ri-chat-3-line"></i>
+                Get Free Consultation
+            </a>
+        </div>
+    </section>
 
 </div>
