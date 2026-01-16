@@ -27,17 +27,17 @@
 
         <!-- CTAs -->
         <div class="mt-12 flex flex-wrap items-center gap-4">
-            <a href="#contact"
+            <a @click="$dispatch('open-modal', { to: 'contact' })"
                class="group px-8 py-3 bg-primary text-black font-medium rounded-full flex items-center gap-2 transition hover:scale-105">
                 <i class="ri-rocket-line text-lg"></i>
                 Start Your Project
                 <i class="ri-arrow-right-line transition group-hover:translate-x-1"></i>
             </a>
 
-            <a href="#process"
+            <a href="{{ route('portfolio') }}"
                class="px-8 py-3 border border-white/20 rounded-full hover:bg-white/5 transition flex items-center gap-2">
                 <i class="ri-git-merge-line"></i>
-                View Process
+                View work
             </a>
         </div>
 
@@ -297,14 +297,14 @@
 
             <!-- CTA Buttons -->
             <div class="mt-10 flex flex-wrap justify-center gap-4">
-                <a href="#contact"
+                <a @click="$dispatch('open-modal', { to: 'contact' })"
                    class="group inline-flex items-center gap-2 px-8 py-3 bg-primary text-black font-medium rounded-full transition hover:scale-105">
                     <i class="ri-chat-3-line"></i>
                     Get Free Consultation
                     <i class="ri-arrow-right-line transition group-hover:translate-x-1"></i>
                 </a>
 
-                <a href="#portfolio"
+                <a href="{{ route('portfolio') }}"
                    class="inline-flex items-center gap-2 px-8 py-3 border border-white/20 rounded-full text-white hover:bg-white/5 transition">
                     <i class="ri-eye-line"></i>
                     View Our Work

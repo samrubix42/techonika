@@ -94,7 +94,7 @@
                     <span>Website Designing</span>
                 </a>
 
-                <!-- Repeat -->
+                <!-- Repeat --> 
                 <a href="{{ route('webdevelopment') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
                px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
                rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
