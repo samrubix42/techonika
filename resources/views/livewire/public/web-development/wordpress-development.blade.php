@@ -164,7 +164,7 @@
 
         </div>
     </section>
-    <section class="relative bg-black py-32 overflow-hidden">
+    <section class="relative bg-black py-12 overflow-hidden">
         <!-- Ambient Glow -->
         <div class="absolute -top-48 left-1/2 -translate-x-1/2 w-[520px] h-[520px] bg-primary/15 blur-[160px] rounded-full"></div>
 
@@ -491,7 +491,7 @@
         </div>
     </section>
 
-    <section class="relative bg-black py-32">
+    <section class="relative bg-black py-24">
         <div class="absolute inset-0 bg-primary/10 blur-[160px]"></div>
 
         <div class="relative max-w-6xl mx-auto px-4 text-center">
