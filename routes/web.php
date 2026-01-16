@@ -37,6 +37,7 @@ use App\Livewire\Public\Service\ServiceView;
 use App\Livewire\Public\WebDesigning\Index as WebDesigningIndex;
 use App\Livewire\Public\WebDevelopment\Index as WebDevelopmentIndex;
 use App\Livewire\Public\WebDevelopment\LaravelDevelopment;
+use App\Livewire\Public\WebDevelopment\MernDevelopment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Artisan;
@@ -62,6 +63,7 @@ Route::get('/terms-and-conditions',TermAndCondition::class)->name('terms-conditi
 Route::get('/disclaimer',Disclaimer::class)->name('disclaimer');
 Route::get('/branding',BrandingIndex::class)->name('branding');
 Route::get('laravel-development',LaravelDevelopment::class)->name('laravel-development');
+Route::get('mern-development',MernDevelopment::class)->name('mern-development');
 Route::get('/login',Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/',Dashboard::class)->name('dashboard');
