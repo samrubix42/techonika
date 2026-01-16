@@ -41,6 +41,7 @@
             </div>
         </div>
     </section>
+    
     <section class="relative bg-black py-14 overflow-hidden">
         <!-- Ambient Effects -->
         <div class="absolute -top-56 -right-56 w-[620px] h-[620px] bg-primary/20 blur-[200px] rounded-full"></div>
