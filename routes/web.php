@@ -39,6 +39,7 @@ use App\Livewire\Public\WebDevelopment\Index as WebDevelopmentIndex;
 use App\Livewire\Public\WebDevelopment\LaravelDevelopment;
 use App\Livewire\Public\WebDevelopment\MernDevelopment;
 use App\Livewire\Public\WebDevelopment\ShopifyDevelopment;
+use App\Livewire\Public\WebDevelopment\WooCommerce;
 use App\Livewire\Public\WebDevelopment\WordpressDevelopment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
@@ -68,6 +69,7 @@ Route::get('laravel-development',LaravelDevelopment::class)->name('laravel-devel
 Route::get('mern-development',MernDevelopment::class)->name('mern-development');
 Route::get('wordpress-development',WordpressDevelopment::class)->name('wordpress-development');
 Route::get('shopify-development',ShopifyDevelopment::class)->name('shopify-development');
+Route::get('woo-commerce-development',WooCommerce::class)->name('woo-commerce-development');
 Route::get('/login',Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/',Dashboard::class)->name('dashboard');
