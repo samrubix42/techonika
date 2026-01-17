@@ -454,18 +454,22 @@
                 </div>
                 <div class="bg-white/5 border border-white/15 rounded-2xl p-7 hover:border-primary transition group">
                     <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-white/10 mb-5 group-hover:bg-white/15 transition">
-                        <img src="{{ asset('images/tech/joomla.png') }}" alt="Magento Development"
+                        <img src="{{ asset('images/tech/nodejs.png') }}" alt="MERN Stack Development"
                             class="max-h-7 w-auto object-contain opacity-90 group-hover:opacity-100 transition">
                     </div>
-                    <h3 class="text-lg font-semibold mb-3">Joomla Development</h3>
+
+                    <h3 class="text-lg font-semibold mb-3">MERN Stack Development</h3>
+
                     <p class="text-white/70 text-sm leading-relaxed mb-5">
-                        Flexible Joomla websites with custom components and extensions, suitable for content-heavy
-                        and multilingual business platforms.​
+                        Scalable and high-performance web applications using MongoDB, Express,
+                        React, and Node.js — ideal for modern, real-time, and data-driven platforms.
                     </p>
+
                     <a href="#" class="text-primary text-sm font-medium inline-flex items-center gap-2">
                         Learn more <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>
+
                 <div class="bg-white/5 border border-white/15 rounded-2xl p-7 hover:border-primary transition group">
                     <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-white/10 mb-5 group-hover:bg-white/15 transition">
                         <img src="{{ asset('images/tech/wix.jpg') }}" alt="Magento Development"
