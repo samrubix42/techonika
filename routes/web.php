@@ -40,6 +40,7 @@ use App\Livewire\Public\WebDevelopment\Index as WebDevelopmentIndex;
 use App\Livewire\Public\WebDevelopment\LaravelDevelopment;
 use App\Livewire\Public\WebDevelopment\MagentoDevelopment;
 use App\Livewire\Public\WebDevelopment\MernDevelopment;
+use App\Livewire\Public\WebDevelopment\PhpDevelopment;
 use App\Livewire\Public\WebDevelopment\ShopifyDevelopment;
 use App\Livewire\Public\WebDevelopment\WooCommerce;
 use App\Livewire\Public\WebDevelopment\WordpressDevelopment;
@@ -75,6 +76,7 @@ Route::get('shopify-development', ShopifyDevelopment::class)->name('shopify-deve
 Route::get('woo-commerce-development', WooCommerce::class)->name('woo-commerce-development');
 Route::get('codeigniter-development', CodeigniterDevelopment::class)->name('codeigniter-development');
 Route::get('/magento-development', MagentoDevelopment::class)->name('magento-development');
+Route::get('/php-development',PhpDevelopment::class)->name('php-development');
 Route::get('/symfony-development', App\Livewire\Public\WebDevelopment\SymfonyDevelopment::class)->name('symfony-development');
 Route::get('/yii-development',YiiDevelopment::class)->name('yii-development');
 Route::get('/wix-development',App\Livewire\Public\WebDevelopment\WixDevelopment::class)->name('wix-development');
