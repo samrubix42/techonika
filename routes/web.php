@@ -77,6 +77,7 @@ Route::get('codeigniter-development', CodeigniterDevelopment::class)->name('code
 Route::get('/magento-development', MagentoDevelopment::class)->name('magento-development');
 Route::get('/symfony-development', App\Livewire\Public\WebDevelopment\SymfonyDevelopment::class)->name('symfony-development');
 Route::get('/yii-development',YiiDevelopment::class)->name('yii-development');
+Route::get('/wix-development',App\Livewire\Public\WebDevelopment\WixDevelopment::class)->name('wix-development');
 Route::get('/login', Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');
