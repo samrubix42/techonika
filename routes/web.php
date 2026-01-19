@@ -28,6 +28,7 @@ use App\Livewire\Public\GraphicDesigning\Index as GraphicDesigningIndex;
 use App\Livewire\Public\Home\Home;
 use App\Livewire\Public\Home\Home2;
 use App\Livewire\Public\Home\Index;
+use App\Livewire\Public\MobileDevelopment\AndriodDevelopment;
 use App\Livewire\Public\Package\SeoPackage;
 use App\Livewire\Public\Package\SmoPackage;
 use App\Livewire\Public\Package\StartupPackage;
@@ -80,6 +81,8 @@ Route::get('/php-development',PhpDevelopment::class)->name('php-development');
 Route::get('/symfony-development', App\Livewire\Public\WebDevelopment\SymfonyDevelopment::class)->name('symfony-development');
 Route::get('/yii-development',YiiDevelopment::class)->name('yii-development');
 Route::get('/wix-development',App\Livewire\Public\WebDevelopment\WixDevelopment::class)->name('wix-development');
+
+Route::get('android-development', AndriodDevelopment::class)->name('android-development');
 Route::get('/login', Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');
