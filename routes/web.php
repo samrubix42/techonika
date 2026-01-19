@@ -29,6 +29,7 @@ use App\Livewire\Public\Home\Home;
 use App\Livewire\Public\Home\Home2;
 use App\Livewire\Public\Home\Index;
 use App\Livewire\Public\MobileDevelopment\AndriodDevelopment;
+use App\Livewire\Public\MobileDevelopment\IosDevelopment;
 use App\Livewire\Public\Package\SeoPackage;
 use App\Livewire\Public\Package\SmoPackage;
 use App\Livewire\Public\Package\StartupPackage;
@@ -83,6 +84,7 @@ Route::get('/yii-development',YiiDevelopment::class)->name('yii-development');
 Route::get('/wix-development',App\Livewire\Public\WebDevelopment\WixDevelopment::class)->name('wix-development');
 
 Route::get('android-development', AndriodDevelopment::class)->name('android-development');
+Route::get('ios-development', IosDevelopment::class)->name('ios-development');
 Route::get('/login', Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');

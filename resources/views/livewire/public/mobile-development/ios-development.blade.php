@@ -1,0 +1,151 @@
+<div>
+<section class="relative bg-black text-white py-28 overflow-hidden">
+  <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[500px] h-[260px] bg-primary/20 blur-[160px] rounded-full"></div>
+
+  <div class="relative max-w-6xl mx-auto px-4 text-center">
+    <span class="text-xs tracking-widest uppercase text-primary/80">
+      iOS App Development
+    </span>
+
+    <h1 class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
+      High-Performance <span class="text-primary">iOS Apps</span><br>
+      Built for Apple Ecosystem
+    </h1>
+
+    <p class="mt-6 max-w-2xl mx-auto text-white/70 text-lg">
+      We design and develop secure, scalable, and user-friendly iOS apps
+      using Swift & modern Apple frameworks.
+    </p>
+
+    <div class="mt-10 flex justify-center gap-4 flex-wrap">
+      <a href="/contact"
+         class="px-8 py-3 rounded-xl bg-primary text-black font-medium hover:bg-primary/90 transition">
+        Get Free Consultation
+      </a>
+      <a href="/portfolio"
+         class="px-8 py-3 rounded-xl border border-white/20 hover:bg-white/5 transition">
+        View Our Apps
+      </a>
+    </div>
+  </div>
+</section>
+<section class="bg-black text-white py-24 border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-4">
+
+    <h2 class="text-3xl sm:text-4xl font-semibold text-center mb-16">
+      Our <span class="text-primary">iOS Services</span>
+    </h2>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+      <div class="group p-7 rounded-2xl border border-white/10 bg-white/5 hover:border-primary/40 transition">
+        <i class="ri-apple-line text-3xl text-primary"></i>
+        <h4 class="mt-4 text-lg font-medium">Custom iOS App Development</h4>
+        <p class="mt-2 text-sm text-white/70">
+          Tailor-made iPhone & iPad apps aligned with your business goals.
+        </p>
+      </div>
+
+      <div class="group p-7 rounded-2xl border border-white/10 bg-white/5 hover:border-primary/40 transition">
+        <i class="ri-code-s-slash-line text-3xl text-primary"></i>
+        <h4 class="mt-4 text-lg font-medium">Swift & SwiftUI Apps</h4>
+        <p class="mt-2 text-sm text-white/70">
+          Modern, fast, and maintainable apps using Swift & SwiftUI.
+        </p>
+      </div>
+
+      <div class="group p-7 rounded-2xl border border-white/10 bg-white/5 hover:border-primary/40 transition">
+        <i class="ri-cloud-line text-3xl text-primary"></i>
+        <h4 class="mt-4 text-lg font-medium">API & Backend Integration</h4>
+        <p class="mt-2 text-sm text-white/70">
+          Secure REST APIs, Firebase, and third-party integrations.
+        </p>
+      </div>
+
+      <div class="group p-7 rounded-2xl border border-white/10 bg-white/5 hover:border-primary/40 transition">
+        <i class="ri-shopping-cart-line text-3xl text-primary"></i>
+        <h4 class="mt-4 text-lg font-medium">iOS eCommerce Apps</h4>
+        <p class="mt-2 text-sm text-white/70">
+          Scalable shopping apps with payments & order tracking.
+        </p>
+      </div>
+
+      <div class="group p-7 rounded-2xl border border-white/10 bg-white/5 hover:border-primary/40 transition">
+        <i class="ri-refresh-line text-3xl text-primary"></i>
+        <h4 class="mt-4 text-lg font-medium">App Migration & Upgrade</h4>
+        <p class="mt-2 text-sm text-white/70">
+          Upgrade legacy Objective-C apps to Swift.
+        </p>
+      </div>
+
+      <div class="group p-7 rounded-2xl border border-white/10 bg-white/5 hover:border-primary/40 transition">
+        <i class="ri-shield-check-line text-3xl text-primary"></i>
+        <h4 class="mt-4 text-lg font-medium">Maintenance & Support</h4>
+        <p class="mt-2 text-sm text-white/70">
+          Performance optimization, bug fixes & OS updates.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="bg-black text-white py-24 border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-4">
+
+    <h2 class="text-3xl sm:text-4xl font-semibold text-center mb-16">
+      Our <span class="text-primary">iOS Development Process</span>
+    </h2>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
+      <div class="p-7 rounded-2xl border border-white/10 bg-white/5">
+        <i class="ri-search-line text-3xl text-primary"></i>
+        <h4 class="mt-4 font-medium">Requirement Analysis</h4>
+        <p class="text-sm text-white/70 mt-2">
+          Understanding user needs & business goals.
+        </p>
+      </div>
+
+      <div class="p-7 rounded-2xl border border-white/10 bg-white/5">
+        <i class="ri-layout-4-line text-3xl text-primary"></i>
+        <h4 class="mt-4 font-medium">UI/UX Design</h4>
+        <p class="text-sm text-white/70 mt-2">
+          Apple Human Interface Guidelines based design.
+        </p>
+      </div>
+
+      <div class="p-7 rounded-2xl border border-white/10 bg-white/5">
+        <i class="ri-code-line text-3xl text-primary"></i>
+        <h4 class="mt-4 font-medium">Development</h4>
+        <p class="text-sm text-white/70 mt-2">
+          Swift coding, API integration & testing.
+        </p>
+      </div>
+
+      <div class="p-7 rounded-2xl border border-white/10 bg-white/5">
+        <i class="ri-rocket-line text-3xl text-primary"></i>
+        <h4 class="mt-4 font-medium">App Store Launch</h4>
+        <p class="text-sm text-white/70 mt-2">
+          Submission, review handling & post-launch support.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="bg-black text-white py-20 border-t border-white/10 text-center">
+  <h2 class="text-3xl sm:text-4xl font-semibold mb-10">
+    Technologies <span class="text-primary">We Use</span>
+  </h2>
+
+  <div class="flex flex-wrap justify-center gap-4">
+    <span class="px-5 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary">Swift</span>
+    <span class="px-5 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary">SwiftUI</span>
+    <span class="px-5 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary">UIKit</span>
+    <span class="px-5 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary">Firebase</span>
+    <span class="px-5 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary">REST APIs</span>
+    <span class="px-5 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary">App Store Connect</span>
+  </div>
+</section>
+
+</div>
