@@ -1,34 +1,72 @@
 <div>
-<section class="relative bg-black text-white py-28 overflow-hidden">
-  <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[500px] h-[260px] bg-primary/20 blur-[160px] rounded-full"></div>
+<section class="relative bg-black text-white py-24 sm:py-28 lg:py-32 overflow-hidden">
+
+  <!-- Subtle Background Glows -->
+  <div class="absolute -top-48 left-1/2 -translate-x-1/2 w-[520px] h-[280px] bg-primary/15 blur-[160px] rounded-full"></div>
+  <div class="absolute top-24 -right-56 w-[420px] h-[420px] bg-primary/8 blur-[180px] rounded-full"></div>
 
   <div class="relative max-w-6xl mx-auto px-4 text-center">
-    <span class="text-xs tracking-widest uppercase text-primary/80">
+
+    <!-- Eyebrow -->
+    <span class="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-primary/70">
+      <i class="ri-apple-line text-sm"></i>
       iOS App Development
     </span>
 
-    <h1 class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
+    <!-- Headline -->
+    <h1 class="mt-6 text-3xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
       High-Performance <span class="text-primary">iOS Apps</span><br>
-      Built for Apple Ecosystem
+      Built for the Apple Ecosystem
     </h1>
 
-    <p class="mt-6 max-w-2xl mx-auto text-white/70 text-lg">
-      We design and develop secure, scalable, and user-friendly iOS apps
-      using Swift & modern Apple frameworks.
+    <!-- Description -->
+    <p class="mt-6 max-w-2xl mx-auto text-white/65 text-base sm:text-lg leading-relaxed">
+      We design and develop secure, scalable, and intuitive iOS applications
+      using Swift, SwiftUI, and modern Apple frameworks — engineered for
+      long-term performance and reliability.
     </p>
 
+    <!-- CTAs -->
     <div class="mt-10 flex justify-center gap-4 flex-wrap">
+
       <a href="/contact"
-         class="px-8 py-3 rounded-xl bg-primary text-black font-medium hover:bg-primary/90 transition">
+         class="inline-flex items-center gap-2 px-8 py-3 rounded-xl
+                bg-primary text-black font-medium
+                hover:bg-primary/90 transition">
+        <i class="ri-chat-3-line"></i>
         Get Free Consultation
       </a>
+
       <a href="/portfolio"
-         class="px-8 py-3 rounded-xl border border-white/20 hover:bg-white/5 transition">
+         class="inline-flex items-center gap-2 px-8 py-3 rounded-xl
+                border border-white/20 text-white/80
+                hover:border-primary hover:text-primary transition">
+        <i class="ri-layout-grid-line"></i>
         View Our Apps
       </a>
+
     </div>
+
+    <!-- Trust Strip -->
+    <div class="mt-14 flex flex-wrap justify-center gap-6 text-white/55 text-sm">
+      <span class="flex items-center gap-2">
+        <i class="ri-shield-check-line text-primary"></i>
+        App Store Compliant
+      </span>
+      <span class="flex items-center gap-2">
+        <i class="ri-speed-up-line text-primary"></i>
+        Performance Focused
+      </span>
+      <span class="flex items-center gap-2">
+        <i class="ri-lock-2-line text-primary"></i>
+        Security First
+      </span>
+    </div>
+
   </div>
 </section>
+
+
 <section class="bg-black text-white py-24 border-t border-white/10">
   <div class="max-w-6xl mx-auto px-4">
 
