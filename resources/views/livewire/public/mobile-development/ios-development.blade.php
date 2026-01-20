@@ -1,5 +1,5 @@
 <div>
-<section class="relative bg-black text-white py-24 sm:py-28 lg:py-32 overflow-hidden">
+<section class="relative bg-black text-white py-12 sm:py-28 lg:py-32 overflow-hidden">
 
   <!-- Subtle Background Glows -->
   <div class="absolute -top-48 left-1/2 -translate-x-1/2 w-[520px] h-[280px] bg-primary/15 blur-[160px] rounded-full"></div>
@@ -67,7 +67,7 @@
 </section>
 
 
-<section class="bg-black text-white py-24 border-t border-white/10">
+<section class="bg-black text-white py-12 border-t border-white/10">
   <div class="max-w-6xl mx-auto px-4">
 
     <h2 class="text-3xl sm:text-4xl font-semibold text-center mb-16">
@@ -127,7 +127,7 @@
     </div>
   </div>
 </section>
-<section class="bg-black text-white py-24 border-t border-white/10">
+<section class="bg-black text-white py-12 border-t border-white/10">
   <div class="max-w-6xl mx-auto px-4">
 
     <h2 class="text-3xl sm:text-4xl font-semibold text-center mb-16">
