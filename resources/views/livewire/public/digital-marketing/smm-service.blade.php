@@ -1,5 +1,5 @@
 <div>
-<section class="relative bg-black text-white py-16 border-b border-white/10 overflow-hidden">
+<section class="relative bg-black text-white py-28 border-b border-white/10 overflow-hidden">
 
   <!-- Glow -->
   <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[560px] h-[260px]
