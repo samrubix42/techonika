@@ -24,6 +24,7 @@ use App\Livewire\Public\Blog\Blog;
 use App\Livewire\Public\Blog\BlogView;
 use App\Livewire\Public\Branding\Index as BrandingIndex;
 use App\Livewire\Public\DigitalMarketing\LocalSeo;
+use App\Livewire\Public\DigitalMarketing\PpcService;
 use App\Livewire\Public\DigitalMarketing\SearchEngineOptmization;
 use App\Livewire\Public\DigitalMarkting\Index as DigitalMarktingIndex;
 use App\Livewire\Public\GraphicDesigning\Index as GraphicDesigningIndex;
@@ -97,6 +98,7 @@ Route::get('flutter-development',FlutterDevelopment::class)->name('flutter-devel
 
 Route::get('search-engine-optimization',SearchEngineOptmization::class)->name('search-engine-optimization');
 Route::get('local-seo',LocalSeo::class)->name('local-seo');
+Route::get('ppc-services',PpcService::class)->name('ppc-services');
 Route::get('/login', Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');
