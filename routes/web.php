@@ -23,13 +23,18 @@ use App\Livewire\Public\About\About;
 use App\Livewire\Public\Blog\Blog;
 use App\Livewire\Public\Blog\BlogView;
 use App\Livewire\Public\Branding\Index as BrandingIndex;
+use App\Livewire\Public\DigitalMarketing\LocalSeo;
+use App\Livewire\Public\DigitalMarketing\SearchEngineOptmization;
 use App\Livewire\Public\DigitalMarkting\Index as DigitalMarktingIndex;
 use App\Livewire\Public\GraphicDesigning\Index as GraphicDesigningIndex;
 use App\Livewire\Public\Home\Home;
 use App\Livewire\Public\Home\Home2;
 use App\Livewire\Public\Home\Index;
 use App\Livewire\Public\MobileDevelopment\AndriodDevelopment;
+use App\Livewire\Public\MobileDevelopment\FlutterDevelopment;
+use App\Livewire\Public\MobileDevelopment\HybridWebDevelopment;
 use App\Livewire\Public\MobileDevelopment\IosDevelopment;
+use App\Livewire\Public\MobileDevelopment\ReactNativeDevelopment;
 use App\Livewire\Public\Package\SeoPackage;
 use App\Livewire\Public\Package\SmoPackage;
 use App\Livewire\Public\Package\StartupPackage;
@@ -85,6 +90,13 @@ Route::get('/wix-development',App\Livewire\Public\WebDevelopment\WixDevelopment:
 
 Route::get('android-development', AndriodDevelopment::class)->name('android-development');
 Route::get('ios-development', IosDevelopment::class)->name('ios-development');
+Route::get('/hybrid-app-development',HybridWebDevelopment::class)->name('hybrid-app-development');
+Route::get('react-native-development',ReactNativeDevelopment::class)->name('react-native-development');
+Route::get('flutter-development',FlutterDevelopment::class)->name('flutter-development');
+
+
+Route::get('search-engine-optimization',SearchEngineOptmization::class)->name('search-engine-optimization');
+Route::get('local-seo',LocalSeo::class)->name('local-seo');
 Route::get('/login', Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');
