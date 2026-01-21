@@ -102,6 +102,7 @@ Route::get('local-seo',LocalSeo::class)->name('local-seo');
 Route::get('ppc-services',PpcService::class)->name('ppc-services');
 Route::get('smo-services',App\Livewire\Public\DigitalMarketing\SmoService::class)->name('smo-services');
 Route::get('smm-services',SmmService::class)->name('smm-service');
+Route::get('/orm-services',App\Livewire\Public\DigitalMarketing\OrmService::class)->name('orm-services');
 Route::get('/login', Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');

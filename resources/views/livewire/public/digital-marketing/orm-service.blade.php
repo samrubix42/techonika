@@ -50,7 +50,7 @@
 
   </div>
 </section>
-<section class="relative bg-black text-white py-28 border-t border-white/10">
+<section class="relative bg-black text-white py-16 border-t border-white/10">
 
   <div class="max-w-6xl mx-auto px-4">
 
@@ -122,7 +122,7 @@
     </div>
   </div>
 </section>
-<section class="bg-black text-white py-28">
+<section class="bg-black text-white py-16">
   <div class="max-w-6xl mx-auto px-4">
 
     <div class="text-center mb-20">
@@ -187,43 +187,121 @@
     </div>
   </div>
 </section>
-<section class="bg-black text-white py-28 border-t border-white/10">
-  <div class="max-w-6xl mx-auto px-4">
+<section class="relative bg-black text-white py-36 border-t border-white/10 overflow-hidden">
 
-    <h2 class="text-3xl sm:text-4xl font-semibold text-center">
-      Our <span class="text-primary">ORM Process</span>
-    </h2>
+  <!-- Layered trust background -->
+  <div class="absolute inset-0 bg-gradient-to-b from-primary/6 via-transparent to-transparent"></div>
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+              w-[520px] h-[520px] bg-primary/8 blur-[220px] rounded-full"></div>
 
-    <div class="mt-20 grid md:grid-cols-5 gap-10 text-center">
+  <div class="relative max-w-6xl mx-auto px-4">
 
-      <div>
-        <i class="ri-search-eye-line text-primary text-2xl"></i>
-        <h4 class="mt-3 font-medium">Monitor</h4>
+    <!-- Heading -->
+    <div class="text-center">
+      <h2 class="text-3xl sm:text-4xl font-semibold">
+        Our <span class="relative text-primary">
+          ORM Process
+          <span class="absolute -bottom-2 left-0 w-full h-[2px] bg-primary/60 rounded-full"></span>
+        </span>
+      </h2>
+      <p class="mt-4 text-white/60 max-w-2xl mx-auto text-lg">
+        A calm, structured approach to monitor, protect, and strengthen
+        your online reputation over time.
+      </p>
+    </div>
+
+    <!-- Steps -->
+    <div class="relative mt-28 grid md:grid-cols-5 gap-14 text-center">
+
+      <!-- Connecting line (desktop only) -->
+      <div class="hidden md:block absolute top-[30px] left-0 w-full h-[2px] bg-white/10"></div>
+
+      <!-- Step -->
+      <div class="group relative">
+        <div class="mx-auto flex items-center justify-center w-16 h-16
+                    rounded-full bg-white/5 border border-white/10
+                    text-primary text-2xl
+                    group-hover:border-primary/40 transition">
+          <i class="ri-search-eye-line"></i>
+        </div>
+        <span class="block mt-5 text-xs uppercase tracking-widest text-white/40">
+          Step 01
+        </span>
+        <h4 class="mt-2 font-medium">Monitor</h4>
+        <p class="mt-3 text-white/60 text-sm leading-relaxed">
+          Continuously track mentions, reviews, and brand sentiment.
+        </p>
       </div>
 
-      <div>
-        <i class="ri-alert-line text-primary text-2xl"></i>
-        <h4 class="mt-3 font-medium">Identify</h4>
+      <div class="group relative">
+        <div class="mx-auto flex items-center justify-center w-16 h-16
+                    rounded-full bg-white/5 border border-white/10
+                    text-primary text-2xl
+                    group-hover:border-primary/40 transition">
+          <i class="ri-alert-line"></i>
+        </div>
+        <span class="block mt-5 text-xs uppercase tracking-widest text-white/40">
+          Step 02
+        </span>
+        <h4 class="mt-2 font-medium">Identify</h4>
+        <p class="mt-3 text-white/60 text-sm leading-relaxed">
+          Detect risks, negative content, and reputation threats early.
+        </p>
       </div>
 
-      <div>
-        <i class="ri-tools-line text-primary text-2xl"></i>
-        <h4 class="mt-3 font-medium">Repair</h4>
+      <div class="group relative">
+        <div class="mx-auto flex items-center justify-center w-16 h-16
+                    rounded-full bg-white/5 border border-white/10
+                    text-primary text-2xl
+                    group-hover:border-primary/40 transition">
+          <i class="ri-tools-line"></i>
+        </div>
+        <span class="block mt-5 text-xs uppercase tracking-widest text-white/40">
+          Step 03
+        </span>
+        <h4 class="mt-2 font-medium">Repair</h4>
+        <p class="mt-3 text-white/60 text-sm leading-relaxed">
+          Respond strategically and suppress damaging information.
+        </p>
       </div>
 
-      <div>
-        <i class="ri-file-shield-2-line text-primary text-2xl"></i>
-        <h4 class="mt-3 font-medium">Protect</h4>
+      <div class="group relative">
+        <div class="mx-auto flex items-center justify-center w-16 h-16
+                    rounded-full bg-white/5 border border-white/10
+                    text-primary text-2xl
+                    group-hover:border-primary/40 transition">
+          <i class="ri-file-shield-2-line"></i>
+        </div>
+        <span class="block mt-5 text-xs uppercase tracking-widest text-white/40">
+          Step 04
+        </span>
+        <h4 class="mt-2 font-medium">Protect</h4>
+        <p class="mt-3 text-white/60 text-sm leading-relaxed">
+          Build safeguards to prevent future reputation issues.
+        </p>
       </div>
 
-      <div>
-        <i class="ri-award-line text-primary text-2xl"></i>
-        <h4 class="mt-3 font-medium">Strengthen</h4>
+      <div class="group relative">
+        <div class="mx-auto flex items-center justify-center w-16 h-16
+                    rounded-full bg-white/5 border border-white/10
+                    text-primary text-2xl
+                    group-hover:border-primary/40 transition">
+          <i class="ri-award-line"></i>
+        </div>
+        <span class="block mt-5 text-xs uppercase tracking-widest text-white/40">
+          Step 05
+        </span>
+        <h4 class="mt-2 font-medium">Strengthen</h4>
+        <p class="mt-3 text-white/60 text-sm leading-relaxed">
+          Build authority, trust, and long-term brand credibility.
+        </p>
       </div>
 
     </div>
   </div>
 </section>
+
+
 <section class="bg-black text-white py-28 border-t border-white/10">
   <div class="max-w-4xl mx-auto px-4 text-center">
 
