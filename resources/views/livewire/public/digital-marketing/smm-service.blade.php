@@ -1,4 +1,5 @@
 <div>
+    
 <section class="relative bg-black text-white py-28 border-b border-white/10 overflow-hidden">
 
   <!-- Glow -->
@@ -32,6 +33,7 @@
 
   </div>
 </section>
+
 <section class="relative bg-black text-white py-16 overflow-hidden">
 
   <!-- Soft background accent -->
