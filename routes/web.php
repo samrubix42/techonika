@@ -99,6 +99,7 @@ Route::get('flutter-development',FlutterDevelopment::class)->name('flutter-devel
 Route::get('search-engine-optimization',SearchEngineOptmization::class)->name('search-engine-optimization');
 Route::get('local-seo',LocalSeo::class)->name('local-seo');
 Route::get('ppc-services',PpcService::class)->name('ppc-services');
+Route::get('smo-services',App\Livewire\Public\DigitalMarketing\SmoService::class)->name('smo-services');
 Route::get('/login', Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');
