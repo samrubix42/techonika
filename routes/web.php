@@ -26,6 +26,7 @@ use App\Livewire\Public\Branding\Index as BrandingIndex;
 use App\Livewire\Public\DigitalMarketing\LocalSeo;
 use App\Livewire\Public\DigitalMarketing\PpcService;
 use App\Livewire\Public\DigitalMarketing\SearchEngineOptmization;
+use App\Livewire\Public\DigitalMarketing\SmmService;
 use App\Livewire\Public\DigitalMarkting\Index as DigitalMarktingIndex;
 use App\Livewire\Public\GraphicDesigning\Index as GraphicDesigningIndex;
 use App\Livewire\Public\Home\Home;
@@ -100,6 +101,7 @@ Route::get('search-engine-optimization',SearchEngineOptmization::class)->name('s
 Route::get('local-seo',LocalSeo::class)->name('local-seo');
 Route::get('ppc-services',PpcService::class)->name('ppc-services');
 Route::get('smo-services',App\Livewire\Public\DigitalMarketing\SmoService::class)->name('smo-services');
+Route::get('smm-services',SmmService::class)->name('smm-service');
 Route::get('/login', Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');
