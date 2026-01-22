@@ -23,6 +23,7 @@ use App\Livewire\Public\About\About;
 use App\Livewire\Public\Blog\Blog;
 use App\Livewire\Public\Blog\BlogView;
 use App\Livewire\Public\Branding\Index as BrandingIndex;
+use App\Livewire\Public\Branding\LogoDesign;
 use App\Livewire\Public\DigitalMarketing\ContentWriting;
 use App\Livewire\Public\DigitalMarketing\Copywriting;
 use App\Livewire\Public\DigitalMarketing\LocalSeo;
@@ -80,6 +81,8 @@ Route::get('/refund-policy', RefundCancellation::class)->name('refund-policy');
 Route::get('/terms-and-conditions', TermAndCondition::class)->name('terms-conditions');
 Route::get('/disclaimer', Disclaimer::class)->name('disclaimer');
 Route::get('/branding', BrandingIndex::class)->name('branding');
+
+//web development routes
 Route::get('laravel-development', LaravelDevelopment::class)->name('laravel-development');
 Route::get('mern-development', MernDevelopment::class)->name('mern-development');
 Route::get('wordpress-development', WordpressDevelopment::class)->name('wordpress-development');
@@ -92,13 +95,14 @@ Route::get('/symfony-development', App\Livewire\Public\WebDevelopment\SymfonyDev
 Route::get('/yii-development',YiiDevelopment::class)->name('yii-development');
 Route::get('/wix-development',App\Livewire\Public\WebDevelopment\WixDevelopment::class)->name('wix-development');
 
+//mobile development routes
 Route::get('android-development', AndriodDevelopment::class)->name('android-development');
 Route::get('ios-development', IosDevelopment::class)->name('ios-development');
 Route::get('/hybrid-app-development',HybridWebDevelopment::class)->name('hybrid-app-development');
 Route::get('react-native-development',ReactNativeDevelopment::class)->name('react-native-development');
 Route::get('flutter-development',FlutterDevelopment::class)->name('flutter-development');
 
-
+//digital marketing routes
 Route::get('search-engine-optimization',SearchEngineOptmization::class)->name('search-engine-optimization');
 Route::get('local-seo',LocalSeo::class)->name('local-seo');
 Route::get('ppc-services',PpcService::class)->name('ppc-services');
@@ -107,6 +111,10 @@ Route::get('smm-services',SmmService::class)->name('smm-service');
 Route::get('/orm-services',App\Livewire\Public\DigitalMarketing\OrmService::class)->name('orm-services');
 Route::get('copywriting',Copywriting::class)->name('copywriting');
 Route::get('/content-writing',ContentWriting::class)->name('content-writing');
+
+
+//branding routes
+Route::get('/logo-designing',LogoDesign::class)->name('logo-designing');
 Route::get('/login', Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');
