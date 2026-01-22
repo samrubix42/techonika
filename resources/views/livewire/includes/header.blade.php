@@ -5,6 +5,10 @@
     packages:false,
     mobileServices:false,
     mobilePackages:false,
+    mobileWebDev:false,
+    mobileMobileApp:false,
+    mobileDigitalMarketing:false,
+    mobileBranding:false,
     scrolled:false
   }"
   x-init="
@@ -30,23 +34,103 @@
 
         <a href="{{ route('home') }}" class="hover:text-amber-400">Home</a>
 
-        <!-- SERVICES -->
+        <!-- SERVICES MEGA MENU -->
         <div class="relative" @mouseenter="mega=true" @mouseleave="mega=false">
           <button class="flex items-center gap-1 hover:text-amber-400">
             SERVICES <i class="ri-arrow-down-s-line text-amber-400"></i>
           </button>
 
           <div x-show="mega" x-cloak x-transition
-            class="absolute left-1/2 top-10 -translate-x-1/2 w-64
-                   bg-zinc-900/95 backdrop-blur border border-white/10
-                   rounded-2xl shadow-2xl p-4">
+            class="fixed left-0 right-0 top-16 
+                   bg-zinc-900/95 backdrop-blur-xl border-b border-white/10 shadow-2xl">
+            
+            <div class="max-w-7xl mx-auto px-6 py-8">
+              <div class="grid grid-cols-3 gap-8">
+                
+                <!-- WEB DEVELOPMENT -->
+                <div>
+                  <a href="{{ route('webdevelopment') }}" 
+                     class="text-amber-400 font-semibold text-sm mb-4 block hover:text-amber-300">
+                    WEB DEVELOPMENT
+                  </a>
+                  <div class="space-y-2 text-sm">
+                    <a href="{{ route('laravel-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Laravel Development</a>
+                    <a href="{{ route('mern-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">MERN Development</a>
+                    <a href="{{ route('wordpress-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">WordPress Development</a>
+                    <a href="{{ route('shopify-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Shopify Development</a>
+                    <a href="{{ route('woo-commerce-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">WooCommerce Development</a>
+                    <a href="{{ route('codeigniter-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">CodeIgniter Development</a>
+                    <a href="{{ route('magento-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Magento Development</a>
+                    <a href="{{ route('php-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">PHP Development</a>
+                    <a href="{{ route('symfony-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Symfony Development</a>
+                    <a href="{{ route('yii-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Yii Development</a>
+                    <a href="{{ route('wix-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Wix Development</a>
+                  </div>
 
-            <a href="{{ route('webdevelopment') }}" class="block px-4 py-2 rounded hover:bg-white/5">Web Development</a>
-            <a href="{{ route('webdesigning') }}" class="block px-4 py-2 rounded hover:bg-white/5">Web Designing</a>
-            <a wire:navigate href="{{ route('digital-marketing') }}" class="block px-4 py-2 rounded hover:bg-white/5">Digital Marketing</a>
-            <a href="{{ route('graphicdesigning') }}" class="block px-4 py-2 rounded hover:bg-white/5">Graphic Designing</a>
-            <a href="{{ route('mobileappdevelopment') }}" class="block px-4 py-2 rounded hover:bg-white/5">Mobile App Development</a>
-            <a href="{{ route('branding') }}" class="block px-4 py-2 rounded hover:bg-white/5">Branding</a>
+                  <a href="{{ route('webdesigning') }}" 
+                     class="text-amber-400 font-semibold text-sm mt-6 mb-2 block hover:text-amber-300">
+                    WEB DESIGNING
+                  </a>
+
+                  <a href="{{ route('graphicdesigning') }}" 
+                     class="text-amber-400 font-semibold text-sm mt-4 mb-2 block hover:text-amber-300">
+                    GRAPHIC DESIGNING
+                  </a>
+                </div>
+
+                <!-- MOBILE APP & DIGITAL MARKETING -->
+                <div>
+                  <a href="{{ route('mobileappdevelopment') }}" 
+                     class="text-amber-400 font-semibold text-sm mb-4 block hover:text-amber-300">
+                    MOBILE APP DEVELOPMENT
+                  </a>
+                  <div class="space-y-2 text-sm">
+                    <a href="{{ route('android-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Android Development</a>
+                    <a href="{{ route('ios-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">iOS Development</a>
+                    <a href="{{ route('hybrid-app-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Hybrid App Development</a>
+                    <a href="{{ route('react-native-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">React Native Development</a>
+                    <a href="{{ route('flutter-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Flutter Development</a>
+                  </div>
+
+                  <a href="{{ route('digital-marketing') }}" 
+                     class="text-amber-400 font-semibold text-sm mt-6 mb-4 block hover:text-amber-300">
+                    DIGITAL MARKETING
+                  </a>
+                  <div class="space-y-2 text-sm">
+                    <a href="{{ route('search-engine-optimization') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Search Engine Optimization</a>
+                    <a href="{{ route('local-seo') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Local SEO</a>
+                    <a href="{{ route('ppc-services') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">PPC Services</a>
+                    <a href="{{ route('smo-services') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">SMO Services</a>
+                    <a href="{{ route('smm-service') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">SMM Services</a>
+                    <a href="{{ route('orm-services') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">ORM Services</a>
+                  </div>
+                </div>
+
+                <!-- BRANDING & CONTENT -->
+                <div>
+                  <a href="{{ route('branding') }}" 
+                     class="text-amber-400 font-semibold text-sm mb-4 block hover:text-amber-300">
+                    BRANDING
+                  </a>
+                  <div class="space-y-2 text-sm">
+                    <a href="{{ route('logo-designing') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Logo Designing</a>
+                    <a href="{{ route('visit-card-designing') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Visiting Card Designing</a>
+                    <a href="{{ route('company-profile-designing') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Company Profile Designing</a>
+                    <a href="{{ route('package-designing') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Package Designing</a>
+                    <a href="{{ route('2d-video-explaination') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">2D Video Explainer</a>
+                  </div>
+
+                  <div class="text-amber-400 font-semibold text-sm mt-6 mb-4">
+                    CONTENT SERVICES
+                  </div>
+                  <div class="space-y-2 text-sm">
+                    <a href="{{ route('copywriting') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Copywriting</a>
+                    <a href="{{ route('content-writing') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Content Writing</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
 
@@ -101,7 +185,7 @@
 
   <!-- ================= MOBILE MENU ================= -->
   <div x-show="open" x-cloak x-transition
-    class="fixed inset-0 z-[999] bg-black md:hidden">
+    class="fixed inset-0 z-[999] bg-black md:hidden overflow-y-auto">
 
     <div class="p-6">
       <button @click="open=false" class="text-white text-2xl mb-8">
@@ -112,19 +196,89 @@
 
         <a href="{{ route('home') }}">Home</a>
 
-        <!-- SERVICES -->
+        <!-- SERVICES MEGA MENU -->
         <div>
-          <button @click="mobileServices=!mobileServices" class="flex justify-between  w-full">
+          <button @click="mobileServices=!mobileServices" class="flex justify-between w-full">
             Services <i class="ri-arrow-down-s-line"></i>
           </button>
 
-          <div x-show="mobileServices" x-transition class="pl-4 mt-3 space-y-3 flex flex-col text-white/80">
-            <a href="{{ route('webdevelopment') }}">Web Development</a>
-            <a href="{{ route('webdesigning') }}">Web Designing</a>
-            <a href="{{ route('digital-marketing') }}">Digital Marketing</a>
-            <a href="{{ route('graphicdesigning') }}">Graphic Designing</a>
-            <a href="{{ route('mobileappdevelopment') }}">Mobile App Development</a>
-            <a href="{{ route('branding') }}">Branding</a>
+          <div x-show="mobileServices" x-transition class="pl-4 mt-3 space-y-4 flex flex-col text-white/80">
+            
+            <!-- Web Development -->
+            <div>
+              <button @click="mobileWebDev=!mobileWebDev" class="flex justify-between w-full text-amber-400 font-semibold text-base">
+                Web Development <i class="ri-arrow-down-s-line"></i>
+              </button>
+              <div x-show="mobileWebDev" x-transition class="pl-4 mt-2 space-y-2 text-sm">
+                <a href="{{ route('webdevelopment') }}" class="block">Overview</a>
+                <a href="{{ route('laravel-development') }}" class="block">Laravel Development</a>
+                <a href="{{ route('mern-development') }}" class="block">MERN Development</a>
+                <a href="{{ route('wordpress-development') }}" class="block">WordPress Development</a>
+                <a href="{{ route('shopify-development') }}" class="block">Shopify Development</a>
+                <a href="{{ route('woo-commerce-development') }}" class="block">WooCommerce Development</a>
+                <a href="{{ route('codeigniter-development') }}" class="block">CodeIgniter Development</a>
+                <a href="{{ route('magento-development') }}" class="block">Magento Development</a>
+                <a href="{{ route('php-development') }}" class="block">PHP Development</a>
+                <a href="{{ route('symfony-development') }}" class="block">Symfony Development</a>
+                <a href="{{ route('yii-development') }}" class="block">Yii Development</a>
+                <a href="{{ route('wix-development') }}" class="block">Wix Development</a>
+              </div>
+            </div>
+
+            <!-- Web Designing -->
+            <a href="{{ route('webdesigning') }}" class="text-amber-400 font-semibold text-base">Web Designing</a>
+
+            <!-- Graphic Designing -->
+            <a href="{{ route('graphicdesigning') }}" class="text-amber-400 font-semibold text-base">Graphic Designing</a>
+
+            <!-- Mobile App Development -->
+            <div>
+              <button @click="mobileMobileApp=!mobileMobileApp" class="flex justify-between w-full text-amber-400 font-semibold text-base">
+                Mobile App Development <i class="ri-arrow-down-s-line"></i>
+              </button>
+              <div x-show="mobileMobileApp" x-transition class="pl-4 mt-2 space-y-2 text-sm">
+                <a href="{{ route('mobileappdevelopment') }}" class="block">Overview</a>
+                <a href="{{ route('android-development') }}" class="block">Android Development</a>
+                <a href="{{ route('ios-development') }}" class="block">iOS Development</a>
+                <a href="{{ route('hybrid-app-development') }}" class="block">Hybrid App Development</a>
+                <a href="{{ route('react-native-development') }}" class="block">React Native Development</a>
+                <a href="{{ route('flutter-development') }}" class="block">Flutter Development</a>
+              </div>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div>
+              <button @click="mobileDigitalMarketing=!mobileDigitalMarketing" class="flex justify-between w-full text-amber-400 font-semibold text-base">
+                Digital Marketing <i class="ri-arrow-down-s-line"></i>
+              </button>
+              <div x-show="mobileDigitalMarketing" x-transition class="pl-4 mt-2 space-y-2 text-sm">
+                <a href="{{ route('digital-marketing') }}" class="block">Overview</a>
+                <a href="{{ route('search-engine-optimization') }}" class="block">Search Engine Optimization</a>
+                <a href="{{ route('local-seo') }}" class="block">Local SEO</a>
+                <a href="{{ route('ppc-services') }}" class="block">PPC Services</a>
+                <a href="{{ route('smo-services') }}" class="block">SMO Services</a>
+                <a href="{{ route('smm-service') }}" class="block">SMM Services</a>
+                <a href="{{ route('orm-services') }}" class="block">ORM Services</a>
+                <a href="{{ route('copywriting') }}" class="block">Copywriting</a>
+                <a href="{{ route('content-writing') }}" class="block">Content Writing</a>
+              </div>
+            </div>
+
+            <!-- Branding -->
+            <div>
+              <button @click="mobileBranding=!mobileBranding" class="flex justify-between w-full text-amber-400 font-semibold text-base">
+                Branding <i class="ri-arrow-down-s-line"></i>
+              </button>
+              <div x-show="mobileBranding" x-transition class="pl-4 mt-2 space-y-2 text-sm">
+                <a href="{{ route('branding') }}" class="block">Overview</a>
+                <a href="{{ route('logo-designing') }}" class="block">Logo Designing</a>
+                <a href="{{ route('visit-card-designing') }}" class="block">Visiting Card Designing</a>
+                <a href="{{ route('company-profile-designing') }}" class="block">Company Profile Designing</a>
+                <a href="{{ route('package-designing') }}" class="block">Package Designing</a>
+                <a href="{{ route('2d-video-explaination') }}" class="block">2D Video Explainer</a>
+              </div>
+            </div>
+
           </div>
         </div>
 

@@ -3,46 +3,49 @@
 
   <!-- ================= HERO ================= -->
   <section class="relative py-32 border-b border-white/10">
-    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[280px]
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[720px] h-[280px]
                 bg-primary/20 blur-[180px] rounded-full"></div>
 
     <div class="relative max-w-6xl mx-auto px-4 text-center">
 
       <span class="inline-flex items-center gap-2 text-primary text-xs tracking-[0.3em] uppercase">
-        <i class="ri-pen-nib-line"></i>
-        Logo Design
+        <i class="ri-movie-line"></i>
+        2D Explainer Video
       </span>
 
       <h1 class="mt-10 text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
-        Logos That Represent<br>
-        Your <span class="text-primary">Brand Identity</span>
+        Explain Your Product<br>
+        With <span class="text-primary">Clarity & Impact</span>
       </h1>
 
       <p class="mt-6 max-w-3xl mx-auto text-white/65 text-lg leading-relaxed">
-        We design logos that communicate meaning, build recognition,
-        and create a lasting impression — not just visuals, but brand assets.
+        We create engaging 2D explainer videos that simplify complex ideas,
+        communicate value clearly, and help your audience understand
+        what you do in seconds.
       </p>
 
     </div>
   </section>
 
   <!-- ================= INTRO ================= -->
-  <section class="py-16">
+  <section class="py-24">
     <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-20">
 
       <div>
         <h2 class="text-3xl font-semibold">
-          What Makes a <span class="text-primary">Great Logo?</span>
+          What Is a <span class="text-primary">2D Explainer Video?</span>
         </h2>
 
         <p class="mt-6 text-white/65 leading-relaxed">
-          A logo is the foundation of your brand identity.
-          It should be simple, memorable, scalable, and meaningful.
+          A 2D explainer video is a short animated video that explains
+          your product, service, or idea using simple visuals,
+          motion graphics, and storytelling.
         </p>
 
         <p class="mt-4 text-white/65 leading-relaxed">
-          We focus on strategy-first logo design — understanding your
-          business, audience, and positioning before touching visuals.
+          These videos are widely used on websites, landing pages,
+          presentations, and social media to increase understanding
+          and engagement.
         </p>
       </div>
 
@@ -51,21 +54,21 @@
         <div class="flex gap-4">
           <i class="ri-lightbulb-line text-primary text-xl mt-1"></i>
           <p class="text-white/70">
-            Concept-driven, not trend-following
+            Simplifies complex concepts
           </p>
         </div>
 
         <div class="flex gap-4">
           <i class="ri-eye-line text-primary text-xl mt-1"></i>
           <p class="text-white/70">
-            Designed for recognition & clarity
+            Keeps viewers engaged visually
           </p>
         </div>
 
         <div class="flex gap-4">
-          <i class="ri-scales-3-line text-primary text-xl mt-1"></i>
+          <i class="ri-megaphone-line text-primary text-xl mt-1"></i>
           <p class="text-white/70">
-            Works across digital & print formats
+            Communicates your message quickly
           </p>
         </div>
 
@@ -74,45 +77,45 @@
     </div>
   </section>
 
-  <!-- ================= WHY LOGO DESIGN MATTERS ================= -->
-  <section class="py-16 border-t border-white/10">
+  <!-- ================= WHY IT WORKS ================= -->
+  <section class="py-24 border-t border-white/10">
     <div class="max-w-6xl mx-auto px-4">
 
       <h2 class="text-3xl font-semibold mb-16 text-center">
-        Why <span class="text-primary">Logo Design</span> Matters
+        Why <span class="text-primary">2D Explainer Videos</span> Work
       </h2>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
 
         <div class="p-6 border border-white/10 rounded-xl">
-          <i class="ri-shield-star-line text-primary text-2xl"></i>
-          <h4 class="mt-4 font-medium">Brand Recognition</h4>
+          <i class="ri-play-circle-line text-primary text-2xl"></i>
+          <h4 class="mt-4 font-medium">Higher Engagement</h4>
           <p class="mt-2 text-white/60 text-sm">
-            A strong logo makes your brand instantly identifiable.
+            Videos capture attention faster than text.
           </p>
         </div>
 
         <div class="p-6 border border-white/10 rounded-xl">
-          <i class="ri-trust-line text-primary text-2xl"></i>
-          <h4 class="mt-4 font-medium">Trust & Credibility</h4>
+          <i class="ri-message-3-line text-primary text-2xl"></i>
+          <h4 class="mt-4 font-medium">Clear Messaging</h4>
           <p class="mt-2 text-white/60 text-sm">
-            Professional design builds confidence in your business.
+            Explains your offering in a simple story.
           </p>
         </div>
 
         <div class="p-6 border border-white/10 rounded-xl">
-          <i class="ri-layout-line text-primary text-2xl"></i>
-          <h4 class="mt-4 font-medium">Visual Consistency</h4>
+          <i class="ri-line-chart-line text-primary text-2xl"></i>
+          <h4 class="mt-4 font-medium">Better Conversions</h4>
           <p class="mt-2 text-white/60 text-sm">
-            The anchor for all branding materials.
+            Helps users understand before they decide.
           </p>
         </div>
 
         <div class="p-6 border border-white/10 rounded-xl">
           <i class="ri-global-line text-primary text-2xl"></i>
-          <h4 class="mt-4 font-medium">Scalability</h4>
+          <h4 class="mt-4 font-medium">Multi-Platform Use</h4>
           <p class="mt-2 text-white/60 text-sm">
-            Looks great everywhere, at any size.
+            Use on web, ads, presentations & social media.
           </p>
         </div>
 
@@ -120,53 +123,53 @@
     </div>
   </section>
 
-  <!-- ================= LOGO TYPES ================= -->
-  <section class="py-16">
+  <!-- ================= WHAT WE DELIVER ================= -->
+  <section class="py-24">
     <div class="max-w-6xl mx-auto px-4">
 
       <h2 class="text-3xl font-semibold mb-16">
-        Types of <span class="text-primary">Logos</span> We Design
+        What We <span class="text-primary">Deliver</span>
       </h2>
 
       <div class="grid md:grid-cols-2 gap-12">
 
         <div>
           <h4 class="font-medium flex items-center gap-3">
-            <i class="ri-font-size-line text-primary"></i>
-            Wordmarks
+            <i class="ri-file-text-line text-primary"></i>
+            Script Writing
           </h4>
-          <p class="mt-3 text-white/65 leading-relaxed">
-            Typography-focused logos ideal for strong brand names.
+          <p class="mt-3 text-white/65">
+            Clear, concise scripts focused on your audience and goals.
           </p>
         </div>
 
         <div>
           <h4 class="font-medium flex items-center gap-3">
-            <i class="ri-shape-2-line text-primary"></i>
-            Symbol / Icon Logos
+            <i class="ri-layout-2-line text-primary"></i>
+            Storyboard
           </h4>
-          <p class="mt-3 text-white/65 leading-relaxed">
-            Visual marks that communicate meaning at a glance.
+          <p class="mt-3 text-white/65">
+            Scene-by-scene visual planning before animation.
           </p>
         </div>
 
         <div>
           <h4 class="font-medium flex items-center gap-3">
-            <i class="ri-layout-masonry-line text-primary"></i>
-            Combination Logos
+            <i class="ri-brush-line text-primary"></i>
+            2D Animation
           </h4>
-          <p class="mt-3 text-white/65 leading-relaxed">
-            Text + icon combinations for flexibility.
+          <p class="mt-3 text-white/65">
+            Clean, modern animation style aligned with your brand.
           </p>
         </div>
 
         <div>
           <h4 class="font-medium flex items-center gap-3">
-            <i class="ri-award-line text-primary"></i>
-            Monograms & Emblems
+            <i class="ri-volume-up-line text-primary"></i>
+            Voice-Over & Sound
           </h4>
-          <p class="mt-3 text-white/65 leading-relaxed">
-            Compact, premium marks for legacy brands.
+          <p class="mt-3 text-white/65">
+            Professional voice-over and background music (optional).
           </p>
         </div>
 
@@ -175,43 +178,43 @@
   </section>
 
   <!-- ================= PROCESS ================= -->
-  <section class="py-16 border-t border-white/10">
+  <section class="py-24 border-t border-white/10">
     <div class="max-w-6xl mx-auto px-4">
 
       <h2 class="text-3xl font-semibold mb-16 text-center">
-        Our <span class="text-primary">Logo Design Process</span>
+        Our <span class="text-primary">Explainer Video Process</span>
       </h2>
 
       <div class="grid md:grid-cols-5 gap-10 text-center text-sm">
 
         <div>
           <i class="ri-question-line text-primary text-2xl"></i>
-          <h4 class="mt-3 font-medium">Discovery</h4>
-          <p class="mt-2 text-white/60">Brand & goals</p>
+          <h4 class="mt-3 font-medium">Brief</h4>
+          <p class="mt-2 text-white/60">Understand product & goal</p>
         </div>
 
         <div>
-          <i class="ri-search-line text-primary text-2xl"></i>
-          <h4 class="mt-3 font-medium">Research</h4>
-          <p class="mt-2 text-white/60">Market & competitors</p>
+          <i class="ri-file-text-line text-primary text-2xl"></i>
+          <h4 class="mt-3 font-medium">Script</h4>
+          <p class="mt-2 text-white/60">Story & messaging</p>
         </div>
 
         <div>
-          <i class="ri-pencil-ruler-2-line text-primary text-2xl"></i>
-          <h4 class="mt-3 font-medium">Concept</h4>
-          <p class="mt-2 text-white/60">Sketch & direction</p>
+          <i class="ri-layout-2-line text-primary text-2xl"></i>
+          <h4 class="mt-3 font-medium">Storyboard</h4>
+          <p class="mt-2 text-white/60">Visual flow</p>
         </div>
 
         <div>
-          <i class="ri-palette-line text-primary text-2xl"></i>
-          <h4 class="mt-3 font-medium">Design</h4>
-          <p class="mt-2 text-white/60">Visual execution</p>
+          <i class="ri-movie-2-line text-primary text-2xl"></i>
+          <h4 class="mt-3 font-medium">Animation</h4>
+          <p class="mt-2 text-white/60">2D motion design</p>
         </div>
 
         <div>
           <i class="ri-checkbox-circle-line text-primary text-2xl"></i>
           <h4 class="mt-3 font-medium">Delivery</h4>
-          <p class="mt-2 text-white/60">Final assets</p>
+          <p class="mt-2 text-white/60">Final video files</p>
         </div>
 
       </div>
@@ -219,19 +222,19 @@
   </section>
 
   <!-- ================= FINAL CTA ================= -->
-  <section class="py-16 border-t border-white/10 text-center">
+  <section class="py-28 border-t border-white/10 text-center">
     <h2 class="text-3xl font-semibold">
-      Ready to Design Your <span class="text-primary">Brand Mark?</span>
+      Ready to <span class="text-primary">Explain Your Idea</span> Better?
     </h2>
 
     <p class="mt-6 text-white/60 max-w-xl mx-auto">
-      Let’s create a logo that truly represents your business.
+      Let’s create a 2D explainer video that clearly communicates your value.
     </p>
 
     <a href="/contact"
        class="inline-flex mt-10 px-12 py-4 rounded-lg
               bg-primary text-black font-medium hover:bg-primary/90 transition">
-      Start Logo Design
+      Start 2D Explainer Video
     </a>
   </section>
 

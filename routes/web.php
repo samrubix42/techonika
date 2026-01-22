@@ -22,8 +22,12 @@ use App\Livewire\PrivacyPolicy;
 use App\Livewire\Public\About\About;
 use App\Livewire\Public\Blog\Blog;
 use App\Livewire\Public\Blog\BlogView;
+use App\Livewire\Public\Branding\CompanyProfileDesign;
 use App\Livewire\Public\Branding\Index as BrandingIndex;
 use App\Livewire\Public\Branding\LogoDesign;
+use App\Livewire\Public\Branding\PackageDesign;
+use App\Livewire\Public\Branding\VideoExplainer;
+use App\Livewire\Public\Branding\VisitingCard;
 use App\Livewire\Public\DigitalMarketing\ContentWriting;
 use App\Livewire\Public\DigitalMarketing\Copywriting;
 use App\Livewire\Public\DigitalMarketing\LocalSeo;
@@ -115,6 +119,11 @@ Route::get('/content-writing',ContentWriting::class)->name('content-writing');
 
 //branding routes
 Route::get('/logo-designing',LogoDesign::class)->name('logo-designing');
+Route::get('visit-card-designing',VisitingCard::class)->name('visit-card-designing');
+Route::get('company-profile-designing',CompanyProfileDesign::class)->name('company-profile-designing');
+Route::get('package-designing',PackageDesign::class)->name('package-designing');
+Route::get('/2d-video-explaination',VideoExplainer::class)->name('2d-video-explaination');
+
 Route::get('/login', Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');
