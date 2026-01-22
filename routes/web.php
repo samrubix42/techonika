@@ -50,6 +50,9 @@ use App\Livewire\Public\Package\StartupPackage;
 use App\Livewire\Public\Portfolio\Portfolio;
 use App\Livewire\Public\Service\Service;
 use App\Livewire\Public\Service\ServiceView;
+use App\Livewire\Public\Webdesign\EcommerceDesign;
+use App\Livewire\Public\Webdesign\HindiWebsiteDesign;
+use App\Livewire\Public\Webdesign\ResponsiveDesign;
 use App\Livewire\Public\WebDesigning\Index as WebDesigningIndex;
 use App\Livewire\Public\WebDevelopment\CodeigniterDevelopment;
 use App\Livewire\Public\WebDevelopment\Index as WebDevelopmentIndex;
@@ -115,6 +118,12 @@ Route::get('smm-services',SmmService::class)->name('smm-service');
 Route::get('/orm-services',App\Livewire\Public\DigitalMarketing\OrmService::class)->name('orm-services');
 Route::get('copywriting',Copywriting::class)->name('copywriting');
 Route::get('/content-writing',ContentWriting::class)->name('content-writing');
+
+
+//web designing routes
+Route::get('/responsive-web-design',ResponsiveDesign::class)->name('responsive-web-design');
+Route::get('ecommerce-web-design',EcommerceDesign::class)->name('ecommerce-web-design');
+Route::get('hindi-website-design',HindiWebsiteDesign::class)->name('hindi-website-design');
 
 
 //branding routes
