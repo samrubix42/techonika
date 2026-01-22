@@ -23,6 +23,7 @@ use App\Livewire\Public\About\About;
 use App\Livewire\Public\Blog\Blog;
 use App\Livewire\Public\Blog\BlogView;
 use App\Livewire\Public\Branding\Index as BrandingIndex;
+use App\Livewire\Public\DigitalMarketing\ContentWriting;
 use App\Livewire\Public\DigitalMarketing\Copywriting;
 use App\Livewire\Public\DigitalMarketing\LocalSeo;
 use App\Livewire\Public\DigitalMarketing\PpcService;
@@ -105,6 +106,7 @@ Route::get('smo-services',App\Livewire\Public\DigitalMarketing\SmoService::class
 Route::get('smm-services',SmmService::class)->name('smm-service');
 Route::get('/orm-services',App\Livewire\Public\DigitalMarketing\OrmService::class)->name('orm-services');
 Route::get('copywriting',Copywriting::class)->name('copywriting');
+Route::get('/content-writing',ContentWriting::class)->name('content-writing');
 Route::get('/login', Login::class)->name('login');
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');
