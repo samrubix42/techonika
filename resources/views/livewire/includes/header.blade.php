@@ -15,8 +15,7 @@
   x-init="
     window.addEventListener('scroll', () => scrolled = window.scrollY > 60);
     $watch('open', v => document.body.classList.toggle('overflow-hidden', v))
-  "
->
+  ">
 
   <!-- ================= HEADER ================= -->
   <header
@@ -35,6 +34,23 @@
 
         <a href="{{ route('home') }}" class="hover:text-amber-400">Home</a>
 
+
+        <!-- PACKAGES -->
+        <div class="relative" @mouseenter="packages=true" @mouseleave="packages=false">
+          <button class="flex items-center gap-1 hover:text-amber-400">
+            PACKAGES <i class="ri-arrow-down-s-line text-amber-400"></i>
+          </button>
+
+          <div x-show="packages" x-cloak x-transition
+            class="absolute left-1/2 top-10 -translate-x-1/2 w-52
+                   bg-zinc-900/95 backdrop-blur border border-white/10
+                   rounded-2xl shadow-2xl p-4">
+
+            <a href="{{ route('seo-package') }}" class="block px-4 py-2 rounded hover:bg-white/5">SEO Package</a>
+            <a href="{{ route('smo-package') }}" class="block px-4 py-2 rounded hover:bg-white/5">SMO Package</a>
+            <a href="{{ route('startup-package') }}" class="block px-4 py-2 rounded hover:bg-white/5">Startup Package</a>
+          </div>
+        </div>
         <!-- SERVICES MEGA MENU -->
         <div class="relative" @mouseenter="mega=true" @mouseleave="mega=false">
           <button class="flex items-center gap-1 hover:text-amber-400">
@@ -42,16 +58,16 @@
           </button>
 
           <div x-show="mega" x-cloak x-transition
-            class="fixed left-0 right-0 top-16 
-                   bg-zinc-900/95 backdrop-blur-xl border-b border-white/10 shadow-2xl">
-            
-            <div class="max-w-7xl mx-auto px-6 py-8">
-              <div class="grid grid-cols-3 gap-8">
-                
+            class="absolute left-1/2 top-10 transform -translate-x-1/2 w-[92vw] max-w-[980px]
+                   bg-zinc-900/95 backdrop-blur-xl border border-white/10 shadow-2xl rounded-xl">
+
+            <div class="max-w-[980px] mx-auto px-4 py-6">
+              <div class="grid grid-cols-3 gap-6">
+
                 <!-- WEB DEVELOPMENT -->
                 <div>
-                  <a href="{{ route('webdevelopment') }}" 
-                     class="text-amber-400 font-semibold text-sm mb-4 block hover:text-amber-300">
+                  <a href="{{ route('webdevelopment') }}"
+                    class="text-amber-400 font-semibold text-sm mb-4 block hover:text-amber-300">
                     WEB DEVELOPMENT
                   </a>
                   <div class="space-y-2 text-sm">
@@ -68,8 +84,8 @@
                     <a href="{{ route('wix-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Wix Development</a>
                   </div>
 
-                  <a href="{{ route('webdesigning') }}" 
-                     class="text-amber-400 font-semibold text-sm mt-6 mb-2 block hover:text-amber-300">
+                  <a href="{{ route('webdesigning') }}"
+                    class="text-amber-400 font-semibold text-sm mt-6 mb-2 block hover:text-amber-300">
                     WEB DESIGNING
                   </a>
                   <div class="space-y-2 text-sm">
@@ -79,13 +95,13 @@
                     <a href="{{ route('corporate-website-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Corporate Website Design</a>
                   </div>
 
-              
+
                 </div>
 
                 <!-- MOBILE APP & DIGITAL MARKETING -->
                 <div>
-                  <a href="{{ route('mobileappdevelopment') }}" 
-                     class="text-amber-400 font-semibold text-sm mb-4 block hover:text-amber-300">
+                  <a href="{{ route('mobileappdevelopment') }}"
+                    class="text-amber-400 font-semibold text-sm mb-4 block hover:text-amber-300">
                     MOBILE APP DEVELOPMENT
                   </a>
                   <div class="space-y-2 text-sm">
@@ -96,8 +112,8 @@
                     <a href="{{ route('flutter-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Flutter Development</a>
                   </div>
 
-                  <a href="{{ route('digital-marketing') }}" 
-                     class="text-amber-400 font-semibold text-sm mt-6 mb-4 block hover:text-amber-300">
+                  <a href="{{ route('digital-marketing') }}"
+                    class="text-amber-400 font-semibold text-sm mt-6 mb-4 block hover:text-amber-300">
                     DIGITAL MARKETING
                   </a>
                   <div class="space-y-2 text-sm">
@@ -112,8 +128,8 @@
 
                 <!-- BRANDING & CONTENT -->
                 <div>
-                  <a href="{{ route('branding') }}" 
-                     class="text-amber-400 font-semibold text-sm mb-4 block hover:text-amber-300">
+                  <a href="{{ route('branding') }}"
+                    class="text-amber-400 font-semibold text-sm mb-4 block hover:text-amber-300">
                     BRANDING
                   </a>
                   <div class="space-y-2 text-sm">
@@ -138,22 +154,6 @@
           </div>
         </div>
 
-        <!-- PACKAGES -->
-        <div class="relative" @mouseenter="packages=true" @mouseleave="packages=false">
-          <button class="flex items-center gap-1 hover:text-amber-400">
-            PACKAGES <i class="ri-arrow-down-s-line text-amber-400"></i>
-          </button>
-
-          <div x-show="packages" x-cloak x-transition
-            class="absolute left-1/2 top-10 -translate-x-1/2 w-52
-                   bg-zinc-900/95 backdrop-blur border border-white/10
-                   rounded-2xl shadow-2xl p-4">
-
-            <a href="{{ route('seo-package') }}" class="block px-4 py-2 rounded hover:bg-white/5">SEO Package</a>
-            <a href="{{ route('smo-package') }}" class="block px-4 py-2 rounded hover:bg-white/5">SMO Package</a>
-            <a href="{{ route('startup-package') }}" class="block px-4 py-2 rounded hover:bg-white/5">Startup Package</a>
-          </div>
-        </div>
 
         <a href="{{ route('about') }}" class="hover:text-amber-400">About</a>
         <a href="{{ route('portfolio') }}" class="hover:text-amber-400">Portfolio</a>
@@ -173,7 +173,7 @@
       <div class="md:hidden flex items-center gap-3">
 
         <!-- MESSAGE -->
-        <button  @click="$dispatch('open-modal', { to: 'contact' })"
+        <button @click="$dispatch('open-modal', { to: 'contact' })"
           class="w-10 h-10 flex items-center justify-center rounded-full
                  bg-white/10 backdrop-blur border border-white/20 text-amber-400">
           <i class="ri-chat-3-line text-lg"></i>
@@ -207,7 +207,7 @@
           </button>
 
           <div x-show="mobileServices" x-transition class="pl-4 mt-3 space-y-4 flex flex-col text-white/80">
-            
+
             <!-- Web Development -->
             <div>
               <button @click="mobileWebDev=!mobileWebDev" class="flex justify-between w-full text-amber-400 font-semibold text-base">
@@ -349,11 +349,13 @@
     </div>
   </div>
 
-<!-- MOBILE SAFE SPACE -->
-<style>
-  @media (max-width: 768px) {
-    body { padding-bottom: 72px; }
-  }
-</style>
+  <!-- MOBILE SAFE SPACE -->
+  <style>
+    @media (max-width: 768px) {
+      body {
+        padding-bottom: 72px;
+      }
+    }
+  </style>
 
 </div>

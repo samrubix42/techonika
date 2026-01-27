@@ -94,7 +94,7 @@
                     <span>Website Designing</span>
                 </a>
 
-                <!-- Repeat --> 
+                <!-- Repeat -->
                 <a href="{{ route('webdevelopment') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
                px-3 py-4 sm:px-4 sm:py-2 min-h-[96px] sm:min-h-[42px]
                rounded-2xl sm:rounded-full bg-white/10 backdrop-blur-xl
@@ -137,7 +137,7 @@
                      bg-white/10 border border-white/20 group-hover:bg-white/30 transition">
                         <i class="ri-megaphone-line text-lg sm:text-sm text-primary group-hover:text-black"></i>
                     </span>
-                    <span>Social Marketing</span>
+                    <span>Social Media Marketing</span>
                 </a>
 
                 <a href="{{ route('webdevelopment') }}" class="group relative flex flex-col sm:flex-row items-center justify-center gap-2
@@ -566,7 +566,7 @@
            max-w-5xl mx-auto">
 
                 <!-- Pill / Card -->
-                <span
+                <a href="{{ route('shopify-development') }}"
                     class="group flex flex-col sm:flex-row
                items-center justify-center sm:justify-start
                gap-2 sm:gap-3
@@ -597,10 +597,10 @@
                     <span class="text-center sm:text-left">
                         Shopify Development
                     </span>
-                </span>
+                </a>
 
                 <!-- React -->
-                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+                <a href="{{ route('mern-development') }}" class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
                px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
                bg-white/10 backdrop-blur-md border border-white/20
                text-xs sm:text-sm font-medium text-white
@@ -611,10 +611,10 @@
                         <img src="{{ asset('images/tech/react.png') }}" class="w-6 h-6 object-contain">
                     </span>
                     <span>React Development</span>
-                </span>
+                </a>
 
                 <!-- PHP -->
-                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+                <a href="{{ route('php-development') }}" class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
                px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
                bg-white/10 backdrop-blur-md border border-white/20
                text-xs sm:text-sm font-medium text-white
@@ -625,10 +625,10 @@
                         <img src="{{ asset('images/tech/php.png') }}" class="w-6 h-6 object-contain">
                     </span>
                     <span>PHP Development</span>
-                </span>
+                </a>
 
                 <!-- Magento -->
-                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+                <a href="{{ route('magento-development') }}" class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
                px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
                bg-white/10 backdrop-blur-md border border-white/20
                text-xs sm:text-sm font-medium text-white
@@ -639,10 +639,10 @@
                         <img src="{{ asset('images/tech/magento.png') }}" class="w-6 h-6 object-contain">
                     </span>
                     <span>Magento Development</span>
-                </span>
+                </a>
 
                 <!-- Laravel -->
-                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+                <a href="{{ route('laravel-development') }}" class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
                px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
                bg-white/10 backdrop-blur-md border border-white/20
                text-xs sm:text-sm font-medium text-white
@@ -653,10 +653,10 @@
                         <img src="{{ asset('images/tech/laravel.png') }}" class="w-6 h-6 object-contain">
                     </span>
                     <span>Laravel Development</span>
-                </span>
+                </a>
 
                 <!-- CodeIgniter -->
-                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+                <a href="{{ route('codeigniter-development') }}" class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
                px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
                bg-white/10 backdrop-blur-md border border-white/20
                text-xs sm:text-sm font-medium text-white
@@ -667,10 +667,10 @@
                         <img src="{{ asset('images/tech/codeigniter.png') }}" class="w-6 h-6 object-contain">
                     </span>
                     <span>CodeIgniter Development</span>
-                </span>
+                </a>
 
-                <!-- Joomla -->
-                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+                <!-- MERN -->
+                <a href="{{ route('mern-development') }}" class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
                px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
                bg-white/10 backdrop-blur-md border border-white/20
                text-xs sm:text-sm font-medium text-white
@@ -680,11 +680,11 @@
                      bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
                         <img src="{{ asset('images/tech/nodejs.png') }}" class="w-6 h-6 object-contain">
                     </span>
-                    <span>Mern Development</span>
-                </span>
+                    <span>MERN Development</span>
+                </a>
 
                 <!-- Mobile App -->
-                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+                <a href="{{ route('mobileappdevelopment') }}" class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
                px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
                bg-white/10 backdrop-blur-md border border-white/20
                text-xs sm:text-sm font-medium text-white
@@ -695,10 +695,10 @@
                         <img src="{{ asset('images/tech/native.png') }}" class="w-6 h-6 object-contain">
                     </span>
                     <span>Mobile App Development</span>
-                </span>
+                </a>
 
                 <!-- WordPress -->
-                <span class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
+                <a href="{{ route('wordpress-development') }}" class="group flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3
                px-3 py-4 sm:px-5 sm:py-3 rounded-xl sm:rounded-full
                bg-white/10 backdrop-blur-md border border-white/20
                text-xs sm:text-sm font-medium text-white
@@ -709,7 +709,7 @@
                         <img src="{{ asset('images/tech/wordpress.png') }}" class="w-6 h-6 object-contain">
                     </span>
                     <span>WordPress Development</span>
-                </span>
+                </a>
 
             </div>
 
@@ -1024,7 +1024,8 @@
                 class="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
 
                 <!-- Pill -->
-                <span
+                <a
+                    href="{{route('search-engine-optimization')}}"
                     class="group px-6 py-3
                        rounded-full
                        bg-white/10 backdrop-blur-md
@@ -1035,61 +1036,74 @@
                        hover:border-primary
                        transition-all duration-300">
                     SEO For Startups
-                </span>
+                </a>
 
-                <span class="group px-6 py-3 rounded-full
+                <a
+                    href="{{route('search-engine-optimization')}}"
+
+                    class="group px-6 py-3 rounded-full
                        bg-white/10 backdrop-blur-md border border-white/20
                        text-sm font-medium text-white
                        shadow-lg shadow-primary/10
                        hover:bg-primary hover:text-black hover:border-primary
                        transition-all duration-300">
                     Ecommerce SEO
-                </span>
+                </a>
 
-                <span class="group px-6 py-3 rounded-full
+                <a
+                    href="{{route('search-engine-optimization')}}"
+
+                    class="group px-6 py-3 rounded-full
                        bg-white/10 backdrop-blur-md border border-white/20
                        text-sm font-medium text-white
                        shadow-lg shadow-primary/10
                        hover:bg-primary hover:text-black hover:border-primary
                        transition-all duration-300">
                     Limousine Services SEO
-                </span>
+                </a>
 
-                <span class="group px-6 py-3 rounded-full
+                <a
+                    href="{{route('search-engine-optimization')}}"
+
+                    class="group px-6 py-3 rounded-full
                        bg-white/10 backdrop-blur-md border border-white/20
                        text-sm font-medium text-white
                        shadow-lg shadow-primary/10
                        hover:bg-primary hover:text-black hover:border-primary
                        transition-all duration-300">
                     Healthcare SEO
-                </span>
+                </a>
+                <a
+                    href="{{route('search-engine-optimization')}}"
 
-                <span class="group px-6 py-3 rounded-full
+                    class="group px-6 py-3 rounded-full
                        bg-white/10 backdrop-blur-md border border-white/20
                        text-sm font-medium text-white
                        shadow-lg shadow-primary/10
                        hover:bg-primary hover:text-black hover:border-primary
                        transition-all duration-300">
                     SEO For Doctors
-                </span>
+                </a>
 
-                <span class="group px-6 py-3 rounded-full
+                <a href="{{route('search-engine-optimization')}}"
+                    class="group px-6 py-3 rounded-full
                        bg-white/10 backdrop-blur-md border border-white/20
                        text-sm font-medium text-white
                        shadow-lg shadow-primary/10
                        hover:bg-primary hover:text-black hover:border-primary
                        transition-all duration-300">
                     NGOs / NPO Website SEO
-                </span>
+                </a>
 
-                <span class="group px-6 py-3 rounded-full
+                <a href="{{route('search-engine-optimization')}}"
+                    class="group px-6 py-3 rounded-full
                        bg-white/10 backdrop-blur-md border border-white/20
                        text-sm font-medium text-white
                        shadow-lg shadow-primary/10
                        hover:bg-primary hover:text-black hover:border-primary
                        transition-all duration-300">
                     Hospitality Website SEO
-                </span>
+                </a>
 
             </div>
         </div>
