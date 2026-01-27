@@ -50,6 +50,7 @@ use App\Livewire\Public\Package\StartupPackage;
 use App\Livewire\Public\Portfolio\Portfolio;
 use App\Livewire\Public\Service\Service;
 use App\Livewire\Public\Service\ServiceView;
+use App\Livewire\Public\Webdesign\CoorporateWebDesign;
 use App\Livewire\Public\Webdesign\EcommerceDesign;
 use App\Livewire\Public\Webdesign\HindiWebsiteDesign;
 use App\Livewire\Public\Webdesign\ResponsiveDesign;
@@ -76,7 +77,6 @@ Route::get('/smo-package', SmoPackage::class)->name('smo-package');
 Route::get('/startup-package', StartupPackage::class)->name('startup-package');
 Route::get('/digital-marketing', DigitalMarktingIndex::class)->name('digital-marketing');
 Route::get('/web-designing', WebDesigningIndex::class)->name('webdesigning');
-Route::get('/graphic-designing', GraphicDesigningIndex::class)->name('graphicdesigning');
 Route::get('/mobile-app-development', App\Livewire\Public\MobileDevelopment\Index::class)->name('mobileappdevelopment');
 Route::get('/blog', Blog::class)->name('blog');
 Route::get('/blog-view/{slug}', BlogView::class)->name('blog.view');
@@ -124,6 +124,8 @@ Route::get('/content-writing',ContentWriting::class)->name('content-writing');
 Route::get('/responsive-web-design',ResponsiveDesign::class)->name('responsive-web-design');
 Route::get('ecommerce-web-design',EcommerceDesign::class)->name('ecommerce-web-design');
 Route::get('hindi-website-design',HindiWebsiteDesign::class)->name('hindi-website-design');
+Route::get('corporate-website-design',CoorporateWebDesign::class)->name('corporate-website-design');
+Route::get('/graphic-designing', GraphicDesigningIndex::class)->name('graphicdesigning');
 
 
 //branding routes

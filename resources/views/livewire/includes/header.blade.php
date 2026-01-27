@@ -6,6 +6,7 @@
     mobileServices:false,
     mobilePackages:false,
     mobileWebDev:false,
+    mobileWebDesign:false,
     mobileMobileApp:false,
     mobileDigitalMarketing:false,
     mobileBranding:false,
@@ -71,11 +72,14 @@
                      class="text-amber-400 font-semibold text-sm mt-6 mb-2 block hover:text-amber-300">
                     WEB DESIGNING
                   </a>
+                  <div class="space-y-2 text-sm">
+                    <a href="{{ route('responsive-web-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Responsive Web Design</a>
+                    <a href="{{ route('ecommerce-web-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Ecommerce Web Design</a>
+                    <a href="{{ route('hindi-website-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Hindi Website Design</a>
+                    <a href="{{ route('corporate-website-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Corporate Website Design</a>
+                  </div>
 
-                  <a href="{{ route('graphicdesigning') }}" 
-                     class="text-amber-400 font-semibold text-sm mt-4 mb-2 block hover:text-amber-300">
-                    GRAPHIC DESIGNING
-                  </a>
+              
                 </div>
 
                 <!-- MOBILE APP & DIGITAL MARKETING -->
@@ -226,10 +230,20 @@
             </div>
 
             <!-- Web Designing -->
-            <a href="{{ route('webdesigning') }}" class="text-amber-400 font-semibold text-base">Web Designing</a>
+            <div>
+              <button @click="mobileWebDesign=!mobileWebDesign" class="flex justify-between w-full text-amber-400 font-semibold text-base">
+                Web Designing <i class="ri-arrow-down-s-line"></i>
+              </button>
+              <div x-show="mobileWebDesign" x-transition class="pl-4 mt-2 space-y-2 text-sm">
+                <a href="{{ route('webdesigning') }}" class="block">Overview</a>
+                <a href="{{ route('responsive-web-design') }}" class="block">Responsive Web Design</a>
+                <a href="{{ route('ecommerce-web-design') }}" class="block">Ecommerce Web Design</a>
+                <a href="{{ route('hindi-website-design') }}" class="block">Hindi Website Design</a>
+                <a href="{{ route('corporate-website-design') }}" class="block">Corporate Website Design</a>
+              </div>
+            </div>
 
             <!-- Graphic Designing -->
-            <a href="{{ route('graphicdesigning') }}" class="text-amber-400 font-semibold text-base">Graphic Designing</a>
 
             <!-- Mobile App Development -->
             <div>
