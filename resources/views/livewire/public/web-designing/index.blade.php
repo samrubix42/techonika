@@ -1,7 +1,7 @@
 @section('meta')
-<title>Web Designing Company in Noida | Professional Website Design </title>
-<meta name="description" content="We are a trusted web designing company in Noida delivering responsive, user-friendly, and 
-SEO-optimized website designs for growing businesses.">
+<title>Best Website Designing Company in Noida – Custom & Responsive Design</title>
+<meta name="description" content="Techonika is a trusted website designing company in Noida offering SEO-friendly, 
+responsive, and business-focused web design services.">
 <meta name="keywords" content="web designing company in noida, website design noida, responsive web design noida, 
 professional web designers noida, custom website design noida">
 @endsection

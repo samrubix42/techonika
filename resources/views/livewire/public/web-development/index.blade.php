@@ -1,7 +1,7 @@
 @section('meta')
-<title>Web Development Company in Noida | Custom Web Solutions </title>
-<meta name="description" content="Looking for the best web development company in Noida? Technonika offers custom website development, responsive web design, and scalable web solutions for your business.">
-<meta name="keywords" content="web development company Noida, custom website development, responsive web design, web development services, website design company">
+<title>Website Development Company in Noida | Custom Web Solutions </title>
+<meta name="description" content="Looking for the best website development company in Noida? Technonika offers custom website development, responsive web design, and scalable web solutions for your business.">
+<meta name="keywords" content="website development company Noida, custom website development, responsive web design, website development services, website design company">
 @endsection
 
 <div>
@@ -19,7 +19,7 @@
                     text-[clamp(28px,6vw,52px)]">
                         Build a High-Performing Website
                         <span class="block text-primary mt-2">
-                            Best Web Development Company in Noida
+                            Best Website Development Company in Noida
                         </span>
                     </h1>
 
@@ -37,14 +37,14 @@
                         <li class="flex items-start gap-3 text-left">
                             <i class="ri-checkbox-circle-line text-primary text-xl mt-1"></i>
                             <span>
-                                Custom web development tailored to your business goals
+                                Custom website development tailored to your business goals
                             </span>
                         </li>
 
                         <li class="flex items-start gap-3 text-left">
                             <i class="ri-checkbox-circle-line text-primary text-xl mt-1"></i>
                             <span>
-                                E-commerce, WordPress, SaaS & enterprise web solutions
+                                E-commerce, WordPress, SaaS & enterprise website solutions
                             </span>
                         </li>
 
@@ -60,7 +60,7 @@
                     <!-- Supporting Line -->
                     <p class="text-white/70 leading-relaxed mb-10
                     max-w-xl mx-auto lg:mx-0">
-                        As a trusted web development company in Noida, we help startups,
+                        As a trusted website development company in Noida, we help startups,
                         SMEs, and enterprises build websites that not only look great
                         but are strategically developed to rank on Google and convert
                         visitors into customers.
@@ -303,7 +303,7 @@
                         max-w-xl mx-auto lg:mx-0">
 
                     <p class="text-white/70 leading-relaxed mb-6">
-                        As a trusted Noida web development company, we build
+                        As a trusted Noida website development company, we build
                         websites focused on performance, growth, and long-term
                         success.
                     </p>
@@ -362,10 +362,10 @@
             <!-- Section Header -->
             <div class="text-center max-w-3xl mx-auto mb-20">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold">
-                    Our <span class="text-primary">Web Development Services</span> in Noida
+                    Our <span class="text-primary">Website Development Services</span> in Noida
                 </h2>
                 <p class="mt-5 text-white/70 text-lg">
-                    Technology-driven web solutions built for performance, scalability,
+                    Technology-driven website solutions built for performance, scalability,
                     and long-term business growth.
                 </p>
             </div>
@@ -963,7 +963,7 @@
                         Custom Industry Solutions
                     </h3>
                     <p class="text-white/70 text-sm leading-relaxed">
-                        Industry-specific web solutions aligned with
+                        Industry-specific website solutions aligned with
                         real-world workflows, users, and business needs.
                     </p>
                 </div>
@@ -973,7 +973,7 @@
             <!-- Bottom Line -->
             <div class="max-w-4xl mx-auto text-center mt-20">
                 <p class="text-white/70 leading-relaxed">
-                    This industry-focused approach allows us to build web solutions
+                    This industry-focused approach allows us to build website solutions
                     that align with real-world business needs, user expectations,
                     and long-term growth objectives.
                 </p>
@@ -1086,7 +1086,7 @@
             <div class="max-w-4xl mx-auto text-center mt-20">
                 <p class="text-white/70 text-lg leading-relaxed">
 
-                    As an experienced <span class="text-white font-medium">web development company in Noida</span>,
+                    As an experienced <span class="text-white font-medium">website development company in Noida</span>,
                     we recommend <span class="text-white font-medium">custom website development</span>
                     for businesses focused on long-term growth, higher Google visibility,
                     and improved conversion potential not just a quick launch.
@@ -1104,7 +1104,7 @@
             <div class="text-center max-w-4xl mx-auto mb-20">
                 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
                     Why Choose Us as the
-                    <span class="text-primary">Best Web Development Company in Noida</span>
+                    <span class="text-primary">Best Website Development Company in Noida</span>
                 </h2>
                 <p class="mt-6 text-white/70 text-lg leading-relaxed">
                     Businesses choose us because we focus on outcomes, not just design.
@@ -1131,7 +1131,7 @@
                     </h3>
 
                     <p class="text-white/70 leading-relaxed">
-                        Our experienced developers build customized web solutions
+                        Our experienced developers build customized website solutions
                         aligned with your business goals, industry requirements,
                         and long-term growth strategy.
                     </p>
@@ -1876,7 +1876,7 @@
                             Local Market & Industry Understanding
                         </h3>
                         <p class="text-white/70 leading-relaxed">
-                            We deliver sector-specific web solutions tailored to
+                            We deliver sector-specific website solutions tailored to
                             businesses operating in Noida and the Delhi NCR region,
                             aligned with local customer expectations and market demand.
                         </p>
@@ -1939,7 +1939,7 @@
                     Serving <span class="text-primary">Noida & Nearby Areas</span>
                 </h2>
                 <p class="text-white/70 text-lg leading-relaxed">
-                    We proudly provide professional web development services in Noida, covering major business and IT
+                    We proudly provide professional website development services in Noida, covering major business and IT
                     hubs such as Sector 2, Sector 3, Sector 15, Sector 18, Sector 62, Sector 63, and Greater Noida, along
                     with the wider Delhi NCR region.
                     Our strong local market understanding helps businesses build high-performing, SEO-ready websites
@@ -1974,7 +1974,7 @@
                         <p
                             class="text-white/70 text-sm sm:text-base lg:text-lg
                                leading-relaxed mb-8 max-w-xl">
-                            If you’re looking for a reliable web development company
+                            If you’re looking for a reliable website development company
                             in Noida that understands performance, SEO, and user
                             behavior, we’re here to help you build a website that
                             delivers real business results.
@@ -2094,7 +2094,7 @@
                     Frequently Asked <span class="text-primary">Questions</span>
                 </h2>
                 <p class="mt-5 text-white/70 text-lg">
-                    Clear answers to common questions about our web development services.
+                    Clear answers to common questions about our website development services.
                 </p>
             </div>
 
@@ -2206,7 +2206,7 @@
                         class="w-full flex justify-between items-center
                                px-6 py-5 text-left">
                         <span class="font-medium text-lg">
-                            What technologies do you use for web development?
+                            What technologies do you use for website development?
                         </span>
                         <i :class="open === 6 ? 'ri-subtract-line' : 'ri-add-line'"
                             class="text-primary text-xl"></i>

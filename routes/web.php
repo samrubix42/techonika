@@ -71,12 +71,12 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', action: Home::class)->name('home');
-Route::get('/web-development', WebDevelopmentIndex::class)->name('webdevelopment');
+Route::get('/website-development-company-in-noida', WebDevelopmentIndex::class)->name('webdevelopment');
 Route::get('/seo-package', SeoPackage::class)->name('seo-package');
 Route::get('/smo-package', SmoPackage::class)->name('smo-package');
 Route::get('/startup-package', StartupPackage::class)->name('startup-package');
 Route::get('/digital-marketing', DigitalMarktingIndex::class)->name('digital-marketing');
-Route::get('/web-designing', WebDesigningIndex::class)->name('webdesigning');
+Route::get('/best-website-designing-company-in-noida', WebDesigningIndex::class)->name('webdesigning');
 Route::get('/mobile-app-development', App\Livewire\Public\MobileDevelopment\Index::class)->name('mobileappdevelopment');
 Route::get('/blog', Blog::class)->name('blog');
 Route::get('/blog-view/{slug}', BlogView::class)->name('blog.view');
