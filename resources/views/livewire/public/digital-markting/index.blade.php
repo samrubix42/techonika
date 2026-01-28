@@ -27,7 +27,7 @@
                     <!-- Heading -->
                     <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
                            font-semibold leading-snug lg:leading-tight">
-                        Techonika – Digital Marketing Agency in Noida <span class="text-primary font-bold block sm:inline">
+                       <span class="text-primary font-bold block sm:inline">
                             Techonika – Digital Marketing Agency in Noida
                         </span>
                         Growth & Leads

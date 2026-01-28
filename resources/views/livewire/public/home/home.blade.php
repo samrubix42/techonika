@@ -1008,6 +1008,7 @@
             </div>
         </div>
     </section>
+
     <section class="relative bg-black  md:mb-20 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4">
 
@@ -1439,6 +1440,261 @@
                         </div>
                     </div>
 
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-black py-20">
+        <div
+            x-data="{ tab: 'fullstack' }"
+            class="max-w-7xl mx-auto rounded-3xl overflow-hidden grid md:grid-cols-12 bg-[#0b0b0b]">
+
+            <!-- LEFT SIDEBAR -->
+            <div class="md:col-span-4 bg-[#0f0f0f] p-8 space-y-2 border-r border-white/10">
+
+                <!-- BUTTON -->
+                <template x-for="item in [
+                { key:'digital', label:'Digital Marketing', icon:'ri-megaphone-line' },
+                { key:'fullstack', label:'Full Stack & Frameworks', icon:'ri-stack-line' },
+                { key:'backend', label:'Backend & Frontend', icon:'ri-code-box-line' },
+                { key:'ecommerce', label:'eCommerce & CMS', icon:'ri-shopping-cart-line' },
+                { key:'mobile', label:'Mobile', icon:'ri-smartphone-line' },
+                { key:'devops', label:'DevOps', icon:'ri-settings-3-line' },
+                { key:'branding', label:'Branding', icon:'ri-brush-line' }
+            ]">
+                    <button
+                        @click="tab=item.key"
+                        :class="tab===item.key
+                        ? 'bg-[#ffc700] text-black'
+                        : 'text-white hover:bg-[#ffc700]/10'"
+                        class="w-full flex items-center gap-4 px-6 py-4 rounded-xl transition">
+                        <i :class="item.icon + ' text-xl'"></i>
+                        <span class="font-medium" x-text="item.label"></span>
+                    </button>
+                </template>
+
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="md:col-span-8 bg-[#121212] p-10">
+
+                <!-- DIGITAL MARKETING -->
+                <div x-show="tab==='digital'" x-transition class="grid sm:grid-cols-2 gap-6">
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-10 " src="{{asset('images/icons/creative-writing.png')}}" alt="">
+                        <span>Content Writing & Marketing
+                        </span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-10 " src="{{asset('images/icons/performance.png')}}" alt="">
+                        <span>Performance Marketing
+                        </span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-10 " src="{{asset('images/icons/pay-per-click.png')}}" alt="">
+                        <span>PPC
+                        </span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-10 " src="{{asset('images/icons/search-engine-optimization.png')}}" alt="">
+                        <span>SEO (E-commerce, Local)
+                        </span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-10 " src="{{asset('images/icons/social-media.png')}}" alt="">
+                        <span>Social Media Marketing
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- FULL STACK -->
+                <div x-show="tab==='fullstack'" x-transition class="grid sm:grid-cols-2 gap-6">
+                    <div class="bg-zinc-600/50 rounded-3xl flex items-center gap-4  text-white px-4 py-3">
+                        <img class="w-auto h-10 " src="{{asset('images/icons/Django.png')}}" alt="">
+                        <span>Django</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white flex items-center gap-4 px-4 py-3">
+                        <img class="w-auto h-10 " src="{{asset('images/icons/mean_logo.svg')}}" alt="">
+                        <span>MEAN Stack</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white flex items-center gap-4 px-4 py-3">
+                        <img class="w-auto h-10 rounded-full " src="{{asset('images/icons/mern.png')}}" alt="">
+                        <span>MERN Stack</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/laravel.png')}}" alt="">
+                        <span>Laravel</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/livewire.png')}}" alt="">
+                        <span>Livewire</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/Next.js.png')}}" alt="">
+                        <span>Next.js</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/angular.png')}}" alt="">
+                        <span>Angular</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/TypeScript.png')}}" alt="">
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/python.png')}}" alt="">
+                        <span>Python</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/langchain.png')}}" alt="">
+                        <span>LangChain(AI)</span>
+                    </div>
+                </div>
+
+                <!-- BACKEND & FRONTEND -->
+                <div x-show="tab==='backend'" x-transition class="grid sm:grid-cols-2 gap-6">
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/nodejs.png')}}" alt="">
+                        <span>Node.js</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/php.png')}}" alt="">
+                        <span>PHP</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/GraphQL.png')}}" alt="">
+                        <span>GraphQL</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/Express.png')}}" alt="">
+                        <span>Rest API</span>
+
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/react.png')}}" alt="">
+                        <span>React.js</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/Tailwind CSS.png')}}" alt="">
+                        <span>Tailwind CSS</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/html.png')}}" alt="">
+                        <span>HTML/CSS</span>
+                    </div>
+
+                </div>
+
+                <!-- ECOMMERCE -->
+                <div x-show="tab==='ecommerce'" x-transition class="grid sm:grid-cols-2 gap-6">
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/shopify.png')}}" alt="">
+                        <span>Shopify</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/Drupal.png')}}" alt="">
+                        <span>Drupal</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/woocommerce.png')}}" alt="">
+                        <span>WooCommerce</span>
+                    </div>
+
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/wordpress.png')}}" alt="">
+                        <span>WordPress</span>
+                    </div>
+
+                </div>
+
+                <!-- MOBILE -->
+                <div x-show="tab==='mobile'" x-transition class="grid sm:grid-cols-2 gap-6">
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/native.png')}}" alt="">
+                        <span>React Native</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/Flutter.png')}}" alt="">
+                        <span>Flutter</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/Android.png')}}" alt="">
+                        <span>Android</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/ios.jpg')}}" alt="">
+                        <span>iOS</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/kotlin.jpg')}}" alt="">
+                        <span>Kotlin</span>
+                    </div>
+                </div>
+
+                <!-- DEVOPS -->
+                <div x-show="tab==='devops'" x-transition class="grid sm:grid-cols-2 gap-6">
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/AWS.png')}}" alt="">
+                        <span>AWS</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/Azure.png')}}" alt="">
+                        <span>Azure</span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/Docker.png')}}" alt="">
+                        <span>Docker</span>
+                    </div>
+
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/tech/NGINX.png')}}" alt="">
+                        <span>NGNIX</span>
+                    </div>
+
+                </div>
+
+                <!-- Branding -->
+                <div x-show="tab==='branding'" x-transition class="grid sm:grid-cols-2 gap-6">
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/icons/illustrator.png')}}" alt="">
+                        <span>Logo Designing
+                        </span>
+
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/icons/font-design.png')}}" alt="">
+                        <span>Typography
+                        </span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/icons/card.png')}}" alt="">
+                        <span>Visiting Card Designing
+                        </span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/icons/solution.png')}}" alt="">
+                        <span>Company Profile Designing
+                        </span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/icons/cloth.png')}}" alt="">
+                        <span>Brand patterns & graphic elements
+                        </span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/icons/product-design.png')}}" alt="">
+                        <span>Package Designing
+                        </span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/icons/video.png')}}" alt="">
+                        <span>2D Video Explainer
+                        </span>
+                    </div>
+                    
                 </div>
 
             </div>
