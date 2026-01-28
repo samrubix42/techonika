@@ -1507,6 +1507,11 @@
                         <span>Social Media Marketing
                         </span>
                     </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-10 " src="{{asset('images/icons/artificial-intelligence.png')}}" alt="">
+                        <span>AEO / GEO Services
+                        </span>
+                    </div>
 
                 </div>
 
