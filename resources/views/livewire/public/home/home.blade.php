@@ -1460,9 +1460,9 @@
                 { key:'fullstack', label:'Full Stack & Frameworks', icon:'ri-stack-line' },
                 { key:'backend', label:'Backend & Frontend', icon:'ri-code-box-line' },
                 { key:'ecommerce', label:'eCommerce & CMS', icon:'ri-shopping-cart-line' },
-                { key:'mobile', label:'Mobile', icon:'ri-smartphone-line' },
-                { key:'devops', label:'DevOps', icon:'ri-settings-3-line' },
-                { key:'branding', label:'Branding', icon:'ri-brush-line' }
+                { key:'mobile', label:'Mobile App Development', icon:'ri-smartphone-line' },
+                { key:'devops', label:'DevOps&Cloud', icon:'ri-settings-3-line' },
+                { key:'branding', label:' Online Branding (Brand Identity)', icon:'ri-brush-line' }
             ]">
                     <button
                         @click="tab=item.key"

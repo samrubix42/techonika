@@ -5,11 +5,11 @@
 @endsection
 
 <div>
-    <section class="relative bg-black text-white overflow-hidden">
+    <section class="relative bg-black px-[12%] text-white overflow-hidden">
         <!-- Background glow -->
         <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent"></div>
 
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6
+        <div class="relative mx-auto 
                 py-20 sm:py-28 lg:py-28">
 
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-14 items-center">
@@ -27,7 +27,7 @@
                     <!-- Heading -->
                     <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
                            font-semibold leading-snug lg:leading-tight">
-                       <span class="text-primary font-bold block sm:inline">
+                        <span class="text-primary font-bold block sm:inline">
                             Techonika – Digital Marketing Agency in Noida
                         </span>
                         Growth & Leads
@@ -192,7 +192,7 @@
             </div>
         </div>
     </section>
-    <section class="relative bg-black text-white py-10 overflow-hidden">
+    <section class="relative bg-black  px-[12%] text-white py-10 overflow-hidden">
 
         <!-- ambient strategic glow -->
         <div class="absolute inset-0 pointer-events-none">
@@ -203,7 +203,7 @@
                     bg-primary/10 rounded-full blur-[120px]"></div>
         </div>
 
-        <div class="relative max-w-7xl mx-auto px-6">
+        <div class="relative mx-auto px-6">
 
             <!-- SECTION HEADER -->
             <div class=" mb-24">
@@ -345,11 +345,1008 @@
 
             </div>
 
-           
+
         </div>
     </section>
 
-    <section class="relative bg-black text-white py-10 overflow-hidden">
+    <section class="relative bg-black text-white py-10 sm:py-28 border-t border-white/10 overflow-hidden">
+
+        <!-- Soft background accent -->
+        <div class="absolute -top-48 left-1/2 -translate-x-1/2 w-[720px] h-[360px] bg-primary/10 blur-[200px] rounded-full"></div>
+
+        <div class="relative px-[12%] mx-auto px-4">
+
+            <!-- INTRO -->
+            <div class="mb-24">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6 leading-tight">
+                    Our <span class="text-primary">Digital Marketing Services</span> in Noida
+                </h2>
+                <p class="text-white/65 text-base sm:text-lg leading-relaxed">
+                    Techonika offers a complete portfolio of digital marketing services in Noida,
+                    designed to work independently or as an integrated growth engine.
+                    Each service is built around search intent, platform mechanics,
+                    and measurable business outcomes.
+                </p>
+            </div>
+
+            <!-- SERVICES -->
+            <div class="space-y-20">
+
+                <!-- SEO -->
+                <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-24 items-start">
+
+                    <!-- LEFT: STORY + IMAGE -->
+                    <div>
+
+                        <h3 class="text-2xl sm:text-3xl font-semibold mb-6">
+                            SEO Services in <span class="text-primary">Noida</span>
+                        </h3>
+
+                        <div class="space-y-6 max-w-xl text-white/70 leading-[1.75]">
+                            <p>
+                                Search Engine Optimization remains a core growth driver for sustainable online visibility.
+                                Techonika delivers SEO services in Noida that focus on rankings, relevance,
+                                and conversion intent.
+                            </p>
+
+                            <p>
+                                Our SEO methodology aligns with search engine guidelines,
+                                entity-based indexing, and evolving AI-driven search experiences.
+                            </p>
+                        </div>
+
+                        <!-- IMAGE -->
+                        <div class="mt-12 relative rounded-2xl overflow-hidden border border-white/10">
+                            <img
+                                src="{{ asset('images/seo-analytics-team-concept-illustration_114360-9255.jpg') }}"
+                                alt="SEO analytics and optimization process"
+                                class="w-full h-full object-cover opacity-95">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT: FEATURE RAIL -->
+                    <div class="relative">
+
+                        <!-- Vertical guide -->
+                        <div class="absolute left-3 top-0 bottom-0 w-px bg-white/10"></div>
+
+                        <div class="space-y-14 pl-12">
+
+                            <!-- Feature -->
+                            <div>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <span class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/15">
+                                        <i class="ri-map-pin-line text-primary"></i>
+                                    </span>
+                                    <h4 class="font-medium">
+                                        Local SEO & Google Business Profile
+                                    </h4>
+                                </div>
+
+                                <p class="text-sm text-white/70 leading-[1.7]">
+                                    Local SEO helps businesses appear for geographically relevant searches.
+                                    This includes optimization for Google Maps, local pack results,
+                                    and proximity-based queries.
+                                    <br><br>
+                                    We optimize Google Business Profiles by improving category relevance,
+                                    NAP consistency, service descriptions, images, reviews,
+                                    and engagement signals. Location-specific landing pages
+                                    support local intent while maintaining content uniqueness.
+                                </p>
+                            </div>
+
+                            <!-- Feature -->
+                            <div>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <span class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/15">
+                                        <i class="ri-settings-3-line text-primary"></i>
+                                    </span>
+                                    <h4 class="font-medium">
+                                        Technical SEO, On-Page & Off-Page Optimization
+                                    </h4>
+                                </div>
+
+                                <p class="text-sm text-white/70 leading-[1.7]">
+                                    Technical SEO ensures search engines can crawl, index,
+                                    and interpret website content efficiently.
+                                    This includes site architecture, page speed optimization,
+                                    mobile usability, structured data, and index management.
+                                    <br><br>
+                                    On-page SEO focuses on content structure, entity usage,
+                                    internal linking, and semantic relevance.
+                                    Off-page SEO strengthens authority through earned backlinks,
+                                    brand mentions, and digital PR signals.
+                                </p>
+                            </div>
+
+                            <!-- Feature -->
+                            <div>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <span class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/15">
+                                        <i class="ri-ai-generate text-primary"></i>
+                                    </span>
+                                    <h4 class="font-medium">
+                                        AI-Driven SEO & LLM Optimization
+                                    </h4>
+                                </div>
+
+                                <p class="text-sm text-white/70 leading-[1.7] max-w-xl">
+                                    Modern search increasingly relies on machine learning and large language models.
+                                    Techonika incorporates AI-driven SEO practices that improve content comprehension
+                                    for both traditional search engines and AI-powered discovery systems.
+                                    <br><br>
+                                    This includes entity consistency, topical authority building,
+                                    and structured content frameworks aligned with generative search behavior.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Divider -->
+                <div class="h-px bg-white/10"></div>
+                <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+                    <!-- LEFT : FEATURE CARDS -->
+                    <div class="grid sm:grid-cols-2 gap-6 order-2 lg:order-1">
+
+                        <!-- Card -->
+                        <div class="rounded-xl border border-white/10 bg-white/[0.04] p-7
+                hover:bg-white/[0.06] transition">
+                            <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/15">
+                                <i class="ri-google-line text-primary"></i>
+                            </div>
+                            <h4 class="font-medium mb-2">Google Ads (Search, Display & Shopping Ads)</h4>
+                            <p class="text-sm text-white/70 leading-relaxed">
+                                We design and manage Google Ads campaigns across search, display, and shopping networks. Campaign structure reflects keyword intent, match types, quality score optimization, and landing page relevance.
+                            </p>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="rounded-xl border border-white/10 bg-white/[0.04] p-7
+                hover:bg-white/[0.06] transition">
+                            <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/15">
+                                <i class="ri-funds-line text-primary"></i>
+                            </div>
+                            <h4 class="font-medium mb-2">Performance Marketing Campaigns for Lead & Sales Growth</h4>
+                            <p class="text-sm text-white/70 leading-relaxed">
+                                Meta Ads, remarketing, and cross-channel funnels aligned
+                                with each stage of the buyer journey.
+                            </p>
+                        </div>
+
+                        <!-- Wide Card -->
+                        <div class="sm:col-span-2 rounded-xl border border-white/10 bg-white/[0.04] p-7
+                hover:bg-white/[0.06] transition">
+                            <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/15">
+                                <i class="ri-layout-bottom-line text-primary"></i>
+                            </div>
+                            <h4 class="font-medium mb-2">Conversion-Optimized Landing Pages</h4>
+                            <p class="text-sm text-white/70 leading-relaxed">
+                                Paid traffic requires dedicated landing environments to convert effectively. Techonika designs landing pages focused on clarity, relevance, and user experience.
+                                Elements such as page speed, CTA placement, form structure, and messaging hierarchy are optimized using CRO principles.
+
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT : IMAGE + CONTENT -->
+                    <div class="order-1 lg:order-2">
+
+                        <!-- IMAGE -->
+                        <div class="mb-8 relative overflow-hidden rounded-2xl border border-white/10">
+                            <img
+                                src="{{ asset('images/ppc-specialist-pay-per-click-manager-contextual-advertsing-targeting_277904-14744.jpg') }}"
+                                alt="PPC campaign analytics and performance marketing"
+                                class="w-full object-cover opacity-95">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                        </div>
+
+                        <!-- TEXT -->
+                        <h3 class="text-2xl sm:text-3xl font-semibold mb-4">
+                            Pay-Per-Click (PPC) & <span class="text-primary">Performance Marketing Services</span>
+                        </h3>
+
+                        <p class="text-white/70 leading-relaxed max-w-xl">
+                            Performance marketing enables immediate visibility and controlled scaling when executed correctly. The best digital marketing agency in Noida manages PPC campaigns with a focus on intent, efficiency, and conversion performance.
+                        </p>
+
+                        <!-- Micro highlights -->
+                        <div class="mt-8 flex flex-wrap gap-4 text-sm text-white/60">
+                            <span class="flex items-center gap-2">
+                                <i class="ri-check-line text-primary"></i> Intent-driven targeting
+                            </span>
+                            <span class="flex items-center gap-2">
+                                <i class="ri-check-line text-primary"></i> ROI-focused bidding
+                            </span>
+                            <span class="flex items-center gap-2">
+                                <i class="ri-check-line text-primary"></i> Conversion attribution
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Divider -->
+                <div class="h-px bg-white/10"></div>
+
+                <!-- SOCIAL + CONTENT -->
+                <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+                    <!-- LEFT : CONTENT + IMAGE -->
+                    <div>
+
+                        <!-- IMAGE -->
+                        <div class="mb-8 relative overflow-hidden rounded-2xl border border-white/10">
+                            <img
+                                src="{{ asset('images/collaborating-develop-startup-business_18660-3166.jpg') }}"
+                                alt="Social media, content marketing and growth analytics"
+                                class="w-full h-full object-cover opacity-95">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                        </div>
+
+                        <!-- TEXT -->
+                        <h3 class="text-2xl sm:text-3xl font-semibold mb-4">
+                            Social Media Marketing & <span class="text-primary">SMO Services</span>
+                        </h3>
+
+                        <p class="text-white/70 leading-relaxed max-w-xl">
+                            Social media supports both demand generation and brand credibility. The noida digital marketing agency delivers social media marketing services that balance organic presence with paid amplification.
+                        </p>
+
+                        <!-- Micro highlights -->
+                        <div class="mt-8 flex flex-wrap gap-4 text-sm text-white/60">
+                            <span class="flex items-center gap-2">
+                                <i class="ri-check-line text-primary"></i> Brand credibility
+                            </span>
+                            <span class="flex items-center gap-2">
+                                <i class="ri-check-line text-primary"></i> Audience engagement
+                            </span>
+                            <span class="flex items-center gap-2">
+                                <i class="ri-check-line text-primary"></i> Conversion support
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT : CARDS -->
+                    <div class="grid sm:grid-cols-2 gap-6">
+
+                        <!-- Card -->
+                        <div class="rounded-xl border border-white/10 bg-white/[0.04] p-7
+                hover:bg-white/[0.06] transition">
+                            <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/15">
+                                <i class="ri-share-line text-primary"></i>
+                            </div>
+                            <h4 class="font-medium mb-2">
+                                Social Media Marketing & SMO
+                            </h4>
+                            <p class="text-sm text-white/70 leading-relaxed">
+                                Organic growth, paid amplification, and platform-specific
+                                optimization strategies for visibility and engagement.
+                            </p>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="rounded-xl border border-white/10 bg-white/[0.04] p-7
+                hover:bg-white/[0.06] transition">
+                            <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/15">
+                                <i class="ri-file-text-line text-primary"></i>
+                            </div>
+                            <h4 class="font-medium mb-2">
+                                Paid Social Media Advertising
+                            </h4>
+                            <p class="text-sm text-white/70 leading-relaxed">
+                                Paid social campaigns are structured around audience segmentation, creative testing, and conversion tracking. We manage campaigns across platforms such as Facebook, Instagram, and LinkedIn depending on business objectives.
+                            </p>
+                        </div>
+
+                        <!-- Wide Card -->
+                        <div class="sm:col-span-2 rounded-xl border border-white/10 bg-white/[0.04] p-7
+                hover:bg-white/[0.06] transition">
+                            <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/15">
+                                <i class="ri-bar-chart-box-line text-primary"></i>
+                            </div>
+                            <h4 class="font-medium mb-2">
+                                SMO Services for Brand Visibility & Engagement </h4>
+                            <p class="text-sm text-white/70 leading-relaxed">
+                                Social Media Optimization improves profile discoverability, content performance, and engagement rates. This includes bio-optimization, hashtag strategy, content formats, and platform-specific best practices.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+    </section>
+    <section class="relative px-[12%] bg-black text-white py-28 border-t border-white/10">
+
+        <div class="mx-auto px-6">
+
+            <div class="grid lg:grid-cols-2 gap-24 items-start">
+
+                <!-- LEFT : CORE MESSAGE -->
+                <div class="max-w-xl">
+
+                    <h3 class="text-2xl sm:text-3xl font-semibold leading-tight mb-6">
+                        Creative <span class="text-primary">Advertising Agency</span> Services
+                    </h3>
+
+                    <p class="text-white/70 leading-[1.75]">
+                        Creative execution directly influences campaign performance.
+                        Techonika operates as a creative advertising agency focused on clarity,
+                        relevance, and conversion impact.
+                    </p>
+
+                </div>
+
+                <!-- RIGHT : CREATIVE CAPABILITIES -->
+                <div class="space-y-14">
+
+                    <!-- Item -->
+                    <div class="relative pl-10">
+                        <span class="absolute left-0 top-1 h-6 w-[2px] bg-primary/60 rounded-full"></span>
+
+                        <h4 class="font-medium mb-3">
+                            Creative Ad Campaigns That Drive Clicks & Conversions
+                        </h4>
+
+                        <p class="text-sm text-white/70 leading-[1.7] max-w-xl">
+                            Ad creatives are developed based on audience psychology,
+                            platform norms, and performance data.
+                            Messaging emphasizes value propositions rather than
+                            generic promotional claims.
+                        </p>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="relative pl-10">
+                        <span class="absolute left-0 top-1 h-6 w-[2px] bg-primary/60 rounded-full"></span>
+
+                        <h4 class="font-medium mb-3">
+                            Visual Storytelling & Brand Communication
+                        </h4>
+
+                        <p class="text-sm text-white/70 leading-[1.7] max-w-xl">
+                            Visual consistency supports brand recognition across channels.
+                            We design creatives that reinforce brand identity
+                            while supporting campaign objectives.
+                        </p>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="relative pl-10">
+                        <span class="absolute left-0 top-1 h-6 w-[2px] bg-primary/60 rounded-full"></span>
+
+                        <h4 class="font-medium mb-3">
+                            Platform-Specific Ad Creatives
+                        </h4>
+
+                        <p class="text-sm text-white/70 leading-[1.7] max-w-xl">
+                            Each platform requires different creative specifications
+                            and messaging styles.
+                            Techonika adapts creatives accordingly to maintain
+                            relevance, compliance, and performance.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="relative bg-black text-white py-28 border-t border-white/10">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid lg:grid-cols-2 gap-24 items-start">
+
+                <!-- LEFT : CORE MESSAGE -->
+                <div class="max-w-xl">
+
+                    <h3 class="text-2xl sm:text-3xl font-semibold leading-tight mb-6">
+                        Website <span class="text-primary">Design & Development</span> Services
+                    </h3>
+
+                    <p class="text-white/70 leading-[1.75]">
+                        A website acts as the central conversion hub for digital marketing.
+                        As an online marketing agency in Noida, Techonika builds websites
+                        that support SEO, paid traffic, and user experience goals.
+                    </p>
+
+                </div>
+
+                <!-- RIGHT : DEVELOPMENT CAPABILITIES -->
+                <div class="space-y-14">
+
+                    <!-- Item -->
+                    <div class="relative pl-10">
+                        <span class="absolute left-0 top-1 h-6 w-[2px] bg-primary/60 rounded-full"></span>
+
+                        <h4 class="font-medium mb-3">
+                            SEO-Friendly Website Design
+                        </h4>
+
+                        <p class="text-sm text-white/70 leading-[1.7] max-w-xl">
+                            SEO considerations are integrated at the design stage rather than added later.
+                            This includes clean code, logical URL structures, optimized content sections,
+                            and internal linking frameworks.
+                        </p>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="relative pl-10">
+                        <span class="absolute left-0 top-1 h-6 w-[2px] bg-primary/60 rounded-full"></span>
+
+                        <h4 class="font-medium mb-3">
+                            CMS & E-Commerce Website Development
+                        </h4>
+
+                        <p class="text-sm text-white/70 leading-[1.7] max-w-xl">
+                            We develop websites using reliable CMS and e-commerce platforms
+                            based on scalability and security requirements.
+                            This ensures ease of content management and future expansion.
+                        </p>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="relative pl-10">
+                        <span class="absolute left-0 top-1 h-6 w-[2px] bg-primary/60 rounded-full"></span>
+
+                        <h4 class="font-medium mb-3">
+                            Mobile-First & High-Converting UX Design
+                        </h4>
+
+                        <p class="text-sm text-white/70 leading-[1.7] max-w-xl">
+                            Mobile usability directly impacts search rankings and conversion rates.
+                            Our UX design process prioritizes speed, clarity,
+                            friction reduction, and conversion optimization.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="relative bg-black text-white py-20 border-t border-white/10">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- SECTION INTRO -->
+            <div class="max-w-3xl mb-24">
+                <h3 class="text-2xl sm:text-3xl font-semibold leading-tight mb-6">
+                    Content, Reputation & <span class="text-primary">Growth Services</span>
+                </h3>
+
+                <p class="text-white/70 leading-[1.75]">
+                    Content supports SEO, authority building, and buyer education.
+                    As a top digital marketing company in Noida, Techonika delivers
+                    content, reputation, and growth services aligned with
+                    search intent and conversion goals.
+                </p>
+            </div>
+
+            <!-- SERVICES GRID -->
+            <div class="grid lg:grid-cols-2 gap-24">
+
+                <!-- LEFT COLUMN -->
+                <div class="space-y-20">
+
+                    <!-- CONTENT WRITING -->
+                    <div>
+                        <div class="flex items-center gap-4 mb-5">
+                            <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/15">
+                                <i class="ri-file-text-line text-primary text-lg"></i>
+                            </span>
+                            <h4 class="text-xl font-medium">
+                                Content Writing & Content Marketing Services
+                            </h4>
+                        </div>
+
+                        <p class="text-white/70 leading-[1.7] mb-8 max-w-xl">
+                            Content is planned to support organic visibility,
+                            authority building, and informed buying decisions
+                            throughout the customer journey.
+                        </p>
+
+                        <div class="space-y-6 pl-10 relative">
+                            <span class="absolute left-4 top-0 bottom-0 w-px bg-white/10"></span>
+
+                            <div>
+                                <h5 class="font-medium mb-2">
+                                    SEO Content Writing for Websites & Blogs
+                                </h5>
+                                <p class="text-sm text-white/70 leading-[1.7]">
+                                    SEO content is structured around entities, topics,
+                                    and semantic relevance. Each piece is designed
+                                    to comprehensively answer user queries.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h5 class="font-medium mb-2">
+                                    Content Marketing Strategies for Long-Term Growth
+                                </h5>
+                                <p class="text-sm text-white/70 leading-[1.7]">
+                                    Content marketing focuses on sustained visibility
+                                    rather than short-term traffic spikes.
+                                    We plan content clusters that reinforce
+                                    topical authority.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h5 class="font-medium mb-2">
+                                    High-Impact Copywriting Services
+                                </h5>
+                                <p class="text-sm text-white/70 leading-[1.7]">
+                                    Copywriting supports conversions across landing pages,
+                                    ads, and email campaigns. Messaging clarity
+                                    remains the priority.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div>
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/15">
+                                <i class="ri-mail-send-line text-primary text-lg"></i>
+                            </span>
+                            <h4 class="text-xl font-medium">
+                                Email Marketing & Marketing Automation
+                            </h4>
+                        </div>
+
+                        <p class="text-white/70 leading-[1.7] max-w-xl">
+                            Email marketing supports lead nurturing and customer retention.
+                            Techonika builds email workflows aligned with buyer journeys
+                            and automation triggers.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div class="space-y-20">
+
+                    <!-- ORM -->
+                    <div>
+                        <div class="flex items-center gap-4 mb-5">
+                            <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/15">
+                                <i class="ri-shield-star-line text-primary text-lg"></i>
+                            </span>
+                            <h4 class="text-xl font-medium">
+                                Online Reputation Management (ORM) Services
+                            </h4>
+                        </div>
+
+                        <p class="text-white/70 leading-[1.7] mb-8 max-w-xl">
+                            Online reputation directly influences trust
+                            and conversion behavior. As a top digital marketing agency
+                            in Noida, we manage and improve brand perception
+                            across key platforms.
+                        </p>
+
+                        <div class="space-y-6 pl-10 relative">
+                            <span class="absolute left-4 top-0 bottom-0 w-px bg-white/10"></span>
+
+                            <div>
+                                <h5 class="font-medium mb-2">
+                                    Brand Reputation Monitoring & Review Management
+                                </h5>
+                                <p class="text-sm text-white/70 leading-[1.7]">
+                                    We track reviews, mentions, and sentiment
+                                    across relevant platforms, enabling
+                                    timely responses and reputation stabilization.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h5 class="font-medium mb-2">
+                                    Trust-Building ORM Strategies
+                                </h5>
+                                <p class="text-sm text-white/70 leading-[1.7]">
+                                    ORM strategies focus on authenticity and consistency
+                                    rather than suppression tactics, aligning with
+                                    platform policies and long-term credibility.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ANALYTICS -->
+                    <div>
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/15">
+                                <i class="ri-line-chart-line text-primary text-lg"></i>
+                            </span>
+                            <h4 class="text-xl font-medium">
+                                Analytics, CRO & Growth Marketing
+                            </h4>
+                        </div>
+
+                        <p class="text-white/70 leading-[1.7] max-w-xl">
+                            Analytics connects strategy to outcomes.
+                            We use data insights to improve conversion rates,
+                            optimize user experience, and increase
+                            marketing efficiency across channels.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="relative bg-black text-white py-20 overflow-hidden border-t border-white/10">
+
+        <!-- Soft background glow -->
+        <div class="absolute -top-40 right-0 w-[520px] h-[320px]
+              bg-primary/15 blur-[200px] rounded-full"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <!-- Header -->
+            <div class="max-w-3xl mb-20">
+                <h2 class="text-3xl sm:text-4xl font-semibold leading-tight">
+                    Industries Techonika Serves in
+                    <span class="text-primary">Noida & Across India</span>
+                </h2>
+                <p class="mt-6 text-white/70 leading-relaxed">
+                    As a digital marketing agency in Noida, we work across diverse industries,
+                    adapting strategies to sector-specific challenges, regulations, and buying behavior.
+                </p>
+            </div>
+
+            <!-- Industries Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Healthcare -->
+                <div class="group rounded-2xl border border-white/10 bg-white/[0.04] p-8
+                  hover:bg-white/[0.06] transition">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="w-11 h-11 rounded-xl bg-primary/15 text-primary
+                       flex items-center justify-center text-xl">
+                            <i class="ri-heart-pulse-line"></i>
+                        </span>
+                        <h3 class="text-lg font-medium">Healthcare & Hospitals</h3>
+                    </div>
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        Healthcare marketing demands accuracy, compliance, and trust.
+                        We design campaigns aligned with platform guidelines and patient intent.
+                    </p>
+                </div>
+
+                <!-- Education -->
+                <div class="group rounded-2xl border border-white/10 bg-white/[0.04] p-8
+                  hover:bg-white/[0.06] transition">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="w-11 h-11 rounded-xl bg-primary/15 text-primary
+                       flex items-center justify-center text-xl">
+                            <i class="ri-graduation-cap-line"></i>
+                        </span>
+                        <h3 class="text-lg font-medium">Education & EdTech</h3>
+                    </div>
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        Education marketing focuses on lead quality and enrollment intent.
+                        Our strategies align with academic cycles and decision timelines.
+                    </p>
+                </div>
+
+                <!-- E-commerce -->
+                <div class="group rounded-2xl border border-white/10 bg-white/[0.04] p-8
+                  hover:bg-white/[0.06] transition">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="w-11 h-11 rounded-xl bg-primary/15 text-primary
+                       flex items-center justify-center text-xl">
+                            <i class="ri-shopping-bag-3-line"></i>
+                        </span>
+                        <h3 class="text-lg font-medium">E-Commerce & D2C Brands</h3>
+                    </div>
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        Growth depends on traffic quality and conversion optimization.
+                        We support SEO, paid ads, and funnel optimization for online stores.
+                    </p>
+                </div>
+
+                <!-- B2B -->
+                <div class="group rounded-2xl border border-white/10 bg-white/[0.04] p-8
+                  hover:bg-white/[0.06] transition">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="w-11 h-11 rounded-xl bg-primary/15 text-primary
+                       flex items-center justify-center text-xl">
+                            <i class="ri-building-4-line"></i>
+                        </span>
+                        <h3 class="text-lg font-medium">B2B, SaaS & Corporate</h3>
+                    </div>
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        B2B marketing involves longer sales cycles and multi-touch attribution.
+                        We focus on lead qualification and nurturing strategies.
+                    </p>
+                </div>
+
+                <!-- Local Services -->
+                <div class="group rounded-2xl border border-white/10 bg-white/[0.04] p-8
+                  hover:bg-white/[0.06] transition">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="w-11 h-11 rounded-xl bg-primary/15 text-primary
+                       flex items-center justify-center text-xl">
+                            <i class="ri-map-pin-line"></i>
+                        </span>
+                        <h3 class="text-lg font-medium">Local Service-Based Businesses</h3>
+                    </div>
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        Local businesses benefit from location-driven SEO and lead generation.
+                        We prioritize calls, inquiries, and appointment bookings.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="relative bg-black text-white py-20 border-t border-white/10 overflow-hidden">
+
+        <!-- Subtle Glow -->
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[320px]
+              bg-primary/15 blur-[220px] rounded-full"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <!-- Header -->
+            <div class="max-w-3xl mb-20">
+                <h2 class="text-3xl sm:text-4xl font-semibold leading-tight">
+                    Techonika’s <span class="text-primary">Digital Marketing Process</span>
+                </h2>
+                <p class="mt-6 text-white/70 leading-relaxed">
+                    Our process ensures consistency, accountability,
+                    and measurable growth across all digital channels.
+                </p>
+            </div>
+
+            <!-- Process Steps -->
+            <div class="max-w-5xl mx-auto space-y-8">
+
+                <!-- Step 1 -->
+                <div class="flex gap-6 bg-white/5 border border-white/15
+                  rounded-2xl p-6 md:p-8 hover:border-primary transition">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full
+                    bg-primary/15 text-primary
+                    flex items-center justify-center text-xl font-semibold">
+                        1
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 flex items-center gap-2">
+                            <i class="ri-search-line text-primary"></i>
+                            Discovery & Digital Audit
+                        </h3>
+                        <p class="text-white/80 leading-relaxed">
+                            We begin with a comprehensive audit of existing assets,
+                            performance data, analytics, and technical foundations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex gap-6 bg-white/5 border border-white/15
+                  rounded-2xl p-6 md:p-8 hover:border-primary transition">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full
+                    bg-primary/15 text-primary
+                    flex items-center justify-center text-xl font-semibold">
+                        2
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 flex items-center gap-2">
+                            <i class="ri-bar-chart-grouped-line text-primary"></i>
+                            Market Research & Competitor Analysis
+                        </h3>
+                        <p class="text-white/80 leading-relaxed">
+                            Competitor research helps identify gaps, opportunities,
+                            audience behavior, and clear differentiation points.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex gap-6 bg-white/5 border border-white/15
+                  rounded-2xl p-6 md:p-8 hover:border-primary transition">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full
+                    bg-primary/15 text-primary
+                    flex items-center justify-center text-xl font-semibold">
+                        3
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 flex items-center gap-2">
+                            <i class="ri-flow-chart text-primary"></i>
+                            Strategy & Funnel Planning
+                        </h3>
+                        <p class="text-white/80 leading-relaxed">
+                            We align marketing channels with user intent,
+                            decision stages, and optimized conversion paths.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex gap-6 bg-white/5 border border-white/15
+                  rounded-2xl p-6 md:p-8 hover:border-primary transition">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full
+                    bg-primary/15 text-primary
+                    flex items-center justify-center text-xl font-semibold">
+                        4
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 flex items-center gap-2">
+                            <i class="ri-megaphone-line text-primary"></i>
+                            Execution Across SEO, Paid & Social
+                        </h3>
+                        <p class="text-white/80 leading-relaxed">
+                            Campaign execution follows platform best practices,
+                            performance benchmarks, and proven frameworks.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="flex gap-6 bg-white/5 border border-white/15
+                  rounded-2xl p-6 md:p-8 hover:border-primary transition">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full
+                    bg-primary/15 text-primary
+                    flex items-center justify-center text-xl font-semibold">
+                        5
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 flex items-center gap-2">
+                            <i class="ri-line-chart-line text-primary"></i>
+                            Performance Tracking & Optimization
+                        </h3>
+                        <p class="text-white/80 leading-relaxed">
+                            Continuous monitoring allows timely adjustments
+                            to improve efficiency, ROI, and scalability.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="flex gap-6 bg-white/5 border border-white/15
+                  rounded-2xl p-6 md:p-8 hover:border-primary transition">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full
+                    bg-primary/15 text-primary
+                    flex items-center justify-center text-xl font-semibold">
+                        6
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2 flex items-center gap-2">
+                            <i class="ri-file-chart-line text-primary"></i>
+                            Transparent Reporting & Continuous Scaling
+                        </h3>
+                        <p class="text-white/80 leading-relaxed">
+                            Clear reporting supports informed decisions
+                            and sustainable, performance-led growth.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="relative bg-black text-white py-20 border-t border-white/10 overflow-hidden">
+
+        <!-- Soft glow -->
+        <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[300px]
+              bg-primary/15 blur-[220px] rounded-full"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <!-- Header -->
+            <div class="max-w-3xl mb-20">
+                <h2 class="text-3xl sm:text-4xl font-semibold leading-tight">
+                    Why Businesses Trust
+                    <span class="text-primary">Techonika</span>
+                    as Their Digital Marketing Partner in Noida
+                </h2>
+                <p class="mt-6 text-white/70 leading-relaxed">
+                    Trust is built through results, transparency, and consistency —
+                    not promises or short-term tactics.
+                </p>
+            </div>
+
+            <!-- Trust Pillars -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Item -->
+                <div class="group rounded-2xl border border-white/10 bg-white/[0.04] p-8
+                  hover:bg-white/[0.06] transition">
+                    <div class="w-12 h-12 rounded-xl bg-primary/15 text-primary
+                    flex items-center justify-center text-xl mb-5">
+                        <i class="ri-award-line"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-3">
+                        Proven Results Across Multiple Industries
+                    </h3>
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        Experience across diverse sectors strengthens execution quality
+                        and improves decision-making at every stage.
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="group rounded-2xl border border-white/10 bg-white/[0.04] p-8
+                  hover:bg-white/[0.06] transition">
+                    <div class="w-12 h-12 rounded-xl bg-primary/15 text-primary
+                    flex items-center justify-center text-xl mb-5">
+                        <i class="ri-shield-check-line"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-3">
+                        Certified Digital Marketing Experts
+                    </h3>
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        Our team follows platform standards, compliance requirements,
+                        and industry best practices across channels.
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="group rounded-2xl border border-white/10 bg-white/[0.04] p-8
+                  hover:bg-white/[0.06] transition">
+                    <div class="w-12 h-12 rounded-xl bg-primary/15 text-primary
+                    flex items-center justify-center text-xl mb-5">
+                        <i class="ri-eye-line"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-3">
+                        Ethical, Transparent & Scalable Marketing
+                    </h3>
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        We prioritize sustainable growth methods with clear reporting,
+                        honest communication, and measurable outcomes.
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="group rounded-2xl border border-white/10 bg-white/[0.04] p-8
+                  hover:bg-white/[0.06] transition">
+                    <div class="w-12 h-12 rounded-xl bg-primary/15 text-primary
+                    flex items-center justify-center text-xl mb-5">
+                        <i class="ri-infinity-line"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-3">
+                        Long-Term Growth Mindset
+                    </h3>
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        Our strategies are built for durability —
+                        not short-term hacks or risky growth shortcuts.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="relative bg-black text-white py-16 overflow-hidden">
         <!-- subtle accent -->
         <div class="absolute inset-0 bg-gradient-to-bl from-primary/5 via-transparent to-transparent"></div>
 
@@ -359,7 +1356,7 @@
                 <!-- LEFT IMAGE -->
                 <div class="relative order-1 lg:order-none">
                     <div class="rounded-3xl overflow-hidden
-                            bg-white/5 backdrop-blur-sm">
+                          backdrop-blur-sm">
                         <img
                             src="{{ asset('images/prototyping-process-concept-illustration_114360-7588.jpg') }}"
                             alt="How people find businesses online"
@@ -418,1081 +1415,24 @@
             </div>
         </div>
     </section>
-    <section class="relative bg-black text-white py-12 overflow-hidden">
-        <!-- layered background accents -->
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent"></div>
-        <div class="absolute right-0 top-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
 
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
 
-            <!-- SECTION HEADER -->
-            <div class="max-w-3xl mb-16">
-                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
-                    Our Digital Marketing
-                    <span class="text-primary font-bold">
-                        Approach at Techonika
-                    </span>
-                </h2>
-
-                <p class="mt-5 text-white/80 leading-relaxed">
-                    As a results-focused digital marketing company in Noida, we believe real growth
-                    starts with understanding — not tools, ads, or shortcuts.
-                    Before running campaigns, we study your business, your audience,
-                    and how people actually search online.
-                </p>
-            </div>
-
-            <!-- CONTENT GRID -->
-            <div class="grid lg:grid-cols-3 gap-8">
-
-                <!-- CARD 1 -->
-                <div class="bg-white/5 border border-white/15 rounded-3xl
-                        p-6 sm:p-8 backdrop-blur-xl">
-                    <span class="text-primary font-semibold text-sm">
-                        01. Understanding Your Customers
-                    </span>
-
-                    <h3 class="mt-3 text-lg font-semibold">
-                        Who Are You Really Trying to Reach?
-                    </h3>
-
-                    <p class="mt-4 text-white/80 text-sm leading-relaxed">
-                        We identify your ideal customers, their intent, their pain points,
-                        and what influences their buying decisions.
-                        This allows us to attract the
-                        <span class="text-white font-medium">
-                            right traffic, not just more traffic.
-                        </span>
-                    </p>
-                </div>
-
-                <!-- CARD 2 -->
-                <div class="bg-white/5 border border-white/15 rounded-3xl
-                        p-6 sm:p-8 backdrop-blur-xl">
-                    <span class="text-primary font-semibold text-sm">
-                        02. Search & Behavior Analysis
-                    </span>
-
-                    <h3 class="mt-3 text-lg font-semibold">
-                        How Do People Search for Your Services?
-                    </h3>
-
-                    <p class="mt-4 text-white/80 text-sm leading-relaxed">
-                        We analyze how your audience searches on Google, explores social platforms,
-                        and compares options online.
-                        This helps us build strong foundations for
-                        <span class="text-white font-medium">
-                            SEO, paid ads, and content marketing.
-                        </span>
-                    </p>
-                </div>
-
-                <!-- CARD 3 -->
-                <div class="bg-white/5 border border-white/15 rounded-3xl
-                        p-6 sm:p-8 backdrop-blur-xl">
-                    <span class="text-primary font-semibold text-sm">
-                        03. Strategy Before Execution
-                    </span>
-
-                    <h3 class="mt-3 text-lg font-semibold">
-                        A Plan Built for Your Business
-                    </h3>
-
-                    <p class="mt-4 text-white/80 text-sm leading-relaxed">
-                        Once we understand your market and goals, we create a digital marketing
-                        strategy designed specifically for your business —
-                        <span class="text-white font-medium">
-                            not a reused template.
-                        </span>
-                    </p>
-                </div>
-
-            </div>
-
-            <!-- BOTTOM STATEMENT -->
-            <div class="mt-16 max-w-4xl">
-                <p class="text-white/80 leading-relaxed">
-                    This approach allows us to deliver long-term visibility on search engines,
-                    meaningful engagement on social media, and consistent lead generation.
-                    At Techonika, we focus on
-                    <span class="text-primary font-medium">
-                        sustainable digital growth that supports real business outcomes.
-                    </span>
-                </p>
-            </div>
-
-        </div>
-    </section>
-    <section class="relative bg-black text-white py-10 overflow-hidden">
-        <!-- subtle background accent -->
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent"></div>
-
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="grid lg:grid-cols-2 gap-14 items-center">
-
-                <!-- LEFT CONTENT -->
-                <div>
-                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
-                        Our Digital Marketing
-                        <span class="text-primary font-bold">
-                            Approach at Techonika
-                        </span>
-                    </h2>
-
-                    <p class="mt-6 max-w-xl text-white/80 leading-relaxed">
-                        Instead of jumping straight into tools and ads, we begin by understanding
-                        your business journey. Every successful digital marketing strategy starts
-                        with clarity, not shortcuts.
-                    </p>
-
-                    <p class="mt-4 max-w-xl text-white/80 leading-relaxed">
-                        We take time to understand how your customers think, what they are searching
-                        for, and how they make decisions online.
-                    </p>
-                </div>
-
-                <!-- RIGHT GLASS CARD -->
-                <div class="bg-white/5 border border-white/15
-                        rounded-3xl p-6 sm:p-8 lg:p-10
-                        backdrop-blur-xl">
-
-                    <h3 class="text-lg sm:text-xl font-semibold mb-6">
-                        We ask the right questions:
-                    </h3>
-
-                    <ul class="space-y-5">
-                        <li class="flex gap-4">
-                            <span class="mt-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Who are
-                                <span class="text-white font-medium">
-                                    your customers
-                                </span>
-                                and what matters to them?
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                What
-                                <span class="text-white font-medium">
-                                    problems are they trying to solve
-                                </span>
-                                right now?
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                How do they usually
-                                <span class="text-white font-medium">
-                                    search for solutions online
-                                </span>?
-                            </p>
-                        </li>
-                    </ul>
-
-                    <div class="mt-8 pt-6 border-t border-white/10">
-                        <p class="text-white/80 leading-relaxed">
-                            Once we understand this, we create a digital marketing plan
-                            that fits
-                            <span class="text-primary font-medium">
-                                your business
-                            </span>,
-                            not someone else’s template.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="relative bg-black text-white py-12 overflow-hidden">
-        <!-- layered background accents -->
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent"></div>
-        <div class="absolute left-0 bottom-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
-
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
-
-            <!-- SECTION HEADER -->
-            <div class="max-w-3xl mb-20">
-                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
-                    Digital Marketing Services That
-                    <span class="text-primary font-bold">
-                        Support Real Business Goals
-                    </span>
-                </h2>
-
-                <p class="mt-6 text-white/80 leading-relaxed">
-                    Rather than listing services in a routine way, we focus on how our digital marketing
-                    work supports your business at different stages of growth.
-                    Every strategy is built to solve a real problem, not just check boxes.
-                </p>
-            </div>
-
-            <!-- STAGES GRID -->
-            <div class="grid md:grid-cols-2 gap-8 lg:gap-10">
-
-                <!-- STAGE 1 -->
-                <div class="bg-white/5 border border-white/15 rounded-3xl
-                        p-6 sm:p-8 backdrop-blur-xl">
-                    <span class="text-primary text-sm font-semibold">
-                        When You Want More Visibility
-                    </span>
-
-                    <h3 class="mt-3 text-lg font-semibold">
-                        Be Seen Where People Are Searching
-                    </h3>
-
-                    <p class="mt-4 text-white/80 leading-relaxed text-sm sm:text-base">
-                        We improve your online presence so more people can discover your brand through
-                        search engines and social platforms. This includes improving visibility,
-                        relevance, and consistency across the channels your audience already uses.
-                    </p>
-                </div>
-
-                <!-- STAGE 2 -->
-                <div class="bg-white/5 border border-white/15 rounded-3xl
-                        p-6 sm:p-8 backdrop-blur-xl">
-                    <span class="text-primary text-sm font-semibold">
-                        When You Want Better Quality Leads
-                    </span>
-
-                    <h3 class="mt-3 text-lg font-semibold">
-                        Reach People Who Actually Need Your Service
-                    </h3>
-
-                    <p class="mt-4 text-white/80 leading-relaxed text-sm sm:text-base">
-                        Instead of chasing random clicks, we focus on attracting people who are
-                        actively looking for what you offer. This helps improve lead quality,
-                        reduce wasted spend, and increase meaningful inquiries.
-                    </p>
-                </div>
-
-                <!-- STAGE 3 -->
-                <div class="bg-white/5 border border-white/15 rounded-3xl
-                        p-6 sm:p-8 backdrop-blur-xl">
-                    <span class="text-primary text-sm font-semibold">
-                        When You Want Trust and Authority
-                    </span>
-
-                    <h3 class="mt-3 text-lg font-semibold">
-                        Build Confidence Through Helpful Content
-                    </h3>
-
-                    <p class="mt-4 text-white/80 leading-relaxed text-sm sm:text-base">
-                        We help you share useful, relevant content that answers common questions
-                        and positions your business as a reliable choice. Trust grows when people
-                        feel informed, not pushed.
-                    </p>
-                </div>
-
-                <!-- STAGE 4 -->
-                <div class="bg-white/5 border border-white/15 rounded-3xl
-                        p-6 sm:p-8 backdrop-blur-xl">
-                    <span class="text-primary text-sm font-semibold">
-                        When You Want Consistent Growth
-                    </span>
-
-                    <h3 class="mt-3 text-lg font-semibold">
-                        Improve What’s Working, Fix What’s Not
-                    </h3>
-
-                    <p class="mt-4 text-white/80 leading-relaxed text-sm sm:text-base">
-                        We track performance, analyze results, and refine campaigns over time.
-                        This ensures your digital marketing efforts remain stable, scalable,
-                        and aligned with long-term business growth.
-                    </p>
-                </div>
-
-            </div>
-
-            <!-- BOTTOM STATEMENT -->
-            <div class="mt-16 max-w-4xl">
-                <p class="text-white/80 leading-relaxed">
-                    Our digital marketing services are designed to support your business
-                    at every stage — from discovery to trust to sustained growth.
-                    <span class="text-primary font-medium">
-                        Everything we do is tied back to real business outcomes.
-                    </span>
-                </p>
-            </div>
-
-        </div>
-    </section>
-    <section class="relative bg-black text-white py-12 overflow-hidden">
-        <!-- subtle background accent -->
-        <div class="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-transparent"></div>
-
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
-
-            <div class="grid lg:grid-cols-2 gap-14 items-start">
-
-                <!-- LEFT CONTENT -->
-                <div>
-                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
-                        Search Engine Optimization
-                        <span class="text-primary font-bold">
-                            That Works Strongly
-                        </span>
-                    </h2>
-
-                    <div class="mt-6 space-y-4 max-w-xl">
-                        <p class="text-white/80 leading-relaxed">
-                            SEO is not magic. It takes time, patience, and the right structure.
-                            As an experienced digital marketing company in Noida,
-                            <span class="text-white font-medium">Techonika</span> focuses on
-                            SEO that grows naturally and lasts.
-                        </p>
-
-                        <p class="text-white/80 leading-relaxed">
-                            Instead of chasing short-term rankings, we build strong foundations
-                            that help your website earn visibility and authority on search engines.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- RIGHT STRUCTURED LIST -->
-                <div class="bg-white/5 border border-white/15
-                        rounded-3xl p-6 sm:p-8 lg:p-10
-                        backdrop-blur-xl">
-
-                    <h3 class="text-lg sm:text-xl font-semibold mb-6">
-                        Our SEO work focuses on:
-                    </h3>
-
-                    <ul class="space-y-5">
-                        <li class="flex gap-4">
-                            <span class="mt-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Website
-                                <span class="text-white font-medium">
-                                    structure, speed, and clarity
-                                </span>
-                                for better user experience
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Useful,
-                                <span class="text-white font-medium">
-                                    easy-to-read content
-                                </span>
-                                that answers real search queries
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Improved
-                                <span class="text-white font-medium">
-                                    local search visibility
-                                </span>
-                                to attract nearby customers
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                On-page and
-                                <span class="text-white font-medium">
-                                    technical SEO improvements
-                                </span>
-                                that support long-term rankings
-                            </p>
-                        </li>
-                    </ul>
-
-                    <div class="mt-8 pt-6 border-t border-white/10">
-                        <p class="text-white/80 leading-relaxed text-sm sm:text-base">
-                            Our goal is to help your website
-                            <span class="text-primary font-medium">
-                                earn its place on search engines
-                            </span>
-                            — not force quick results that disappear later.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <section class="bg-black py-10 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6">
-
-            <!-- Decorative Glow -->
-            <div class="absolute -top-32 -right-32 w-96 h-96 bg-primary/20 blur-3xl rounded-full"></div>
-            <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-primary/10 blur-3xl rounded-full"></div>
-
-            <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-                <!-- LEFT CONTENT -->
-                <div>
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl
-                           font-light leading-tight text-white">
-                        Paid Ads That Focus on
-                        <span class="font-semibold text-primary">
-                            Purpose
-                        </span>,
-                        <br class="hidden sm:block">
-                        Not Waste
-                    </h2>
-
-                    <p class="mt-6 text-white/80 text-base sm:text-lg leading-relaxed">
-                        Running ads without a clear plan can drain money quickly.
-                        At <span class="text-white font-medium">Techonika</span>,
-                        we approach paid advertising with logic, clarity,
-                        and a strong focus on results.
-                    </p>
-
-                    <p class="mt-4 text-white/80 text-base sm:text-lg leading-relaxed">
-                        We don’t believe in guesswork or blind spending.
-                        Every campaign starts with understanding
-                        <span class="text-white font-medium">why</span>
-                        you are advertising and
-                        <span class="text-white font-medium">who</span>
-                        you want to reach.
-                    </p>
-                </div>
-
-                <!-- RIGHT CARD -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10 rounded-3xl p-10">
-
-                    <h3 class="text-xl font-semibold text-white mb-6">
-                        Before we run ads, we:
-                    </h3>
-
-                    <ul class="space-y-5">
-                        <li class="flex items-start gap-4">
-                            <span class="w-8 h-8 flex items-center justify-center
-                                     rounded-full bg-primary text-black font-bold">
-                                1
-                            </span>
-                            <p class="text-white/80 leading-relaxed">
-                                Clearly understand your offer and what makes it valuable
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="w-8 h-8 flex items-center justify-center
-                                     rounded-full bg-primary text-black font-bold">
-                                2
-                            </span>
-                            <p class="text-white/80 leading-relaxed">
-                                Identify the right audience most likely to take action
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="w-8 h-8 flex items-center justify-center
-                                     rounded-full bg-primary text-black font-bold">
-                                3
-                            </span>
-                            <p class="text-white/80 leading-relaxed">
-                                Set realistic goals based on your budget and growth stage
-                            </p>
-                        </li>
-                    </ul>
-
-                    <p class="mt-6 text-white/80 leading-relaxed">
-                        Once campaigns are live, we track performance carefully
-                        and improve them step by step.
-                        This ensures your ads reach people who are more likely
-                        to engage, convert, and bring real value to your business.
-                    </p>
-
-                    <!-- CTA -->
-                    <button @click="$dispatch('open-modal', { to: 'contact' })"
-                        class="inline-flex mt-8 items-center gap-2
-                         px-7 py-3 rounded-full
-                         bg-primary text-black font-semibold
-                         hover:opacity-90 transition">
-                        Plan My Ad Strategy
-                    </button>
-    </section>
-    <section class="bg-black py-10 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6">
-
-            <!-- Soft Accent Glow -->
-            <div class="absolute top-1/3 -right-40 w-[420px] h-[420px]
-                    bg-primary/10 blur-3xl rounded-full"></div>
-
-            <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-                <!-- LEFT CONTENT -->
-                <div>
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl
-                           font-light leading-tight text-white">
-                        Social Media Marketing
-                        <span class="font-semibold text-primary">
-                            That Feels Human
-                        </span>
-                    </h2>
-
-                    <p class="mt-6 text-white/80 text-base sm:text-lg leading-relaxed">
-                        Social media is about connection, not noise.
-                        As a thoughtful digital marketing company in
-                        <span class="text-white font-medium">Noida</span>,
-                        we help brands show up consistently without
-                        sounding forced or artificial.
-                    </p>
-
-                    <p class="mt-4 text-white/80 text-base sm:text-lg leading-relaxed">
-                        We focus on building trust over time by sharing
-                        content that feels natural, helpful,
-                        and easy for people to connect with.
-                    </p>
-                </div>
-
-                <!-- RIGHT POINTS -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10 rounded-3xl p-10">
-
-                    <h3 class="text-xl font-semibold text-white mb-6">
-                        Our social media approach focuses on:
-                    </h3>
-
-                    <ul class="space-y-5">
-                        <li class="flex items-start gap-4">
-                            <span class="w-9 h-9 flex items-center justify-center
-                                     rounded-full bg-primary text-black font-bold">
-                                1
-                            </span>
-                            <p class="text-white/80 leading-relaxed">
-                                A clear and consistent brand voice that feels genuine
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="w-9 h-9 flex items-center justify-center
-                                     rounded-full bg-primary text-black font-bold">
-                                2
-                            </span>
-                            <p class="text-white/80 leading-relaxed">
-                                Simple, clean, and engaging visuals that are easy to understand
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="w-9 h-9 flex items-center justify-center
-                                     rounded-full bg-primary text-black font-bold">
-                                3
-                            </span>
-                            <p class="text-white/80 leading-relaxed">
-                                Content that educates, guides, or genuinely helps your audience
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="w-9 h-9 flex items-center justify-center
-                                     rounded-full bg-primary text-black font-bold">
-                                4
-                            </span>
-                            <p class="text-white/80 leading-relaxed">
-                                Regular posting with purpose, not just for the sake of activity
-                            </p>
-                        </li>
-                    </ul>
-
-                    <p class="mt-6 text-white/80 leading-relaxed">
-                        This thoughtful approach helps your brand stay visible,
-                        relatable, and trusted — building long-term relationships
-                        instead of short-term attention.
-                    </p>
-
-                    <!-- CTA -->
-                    <button @click="$dispatch('open-modal', { to: 'contact' })"
-                        class="inline-flex mt-8 items-center gap-2
-                         px-7 py-3 rounded-full
-                         bg-primary text-black font-semibold
-                         hover:opacity-90 transition">
-                        Build My Social Presence
-                    </button>
-    </section>
-    <section class="bg-black py-10 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6">
-
-            <!-- Subtle Glow -->
-            <div class="absolute -top-32 left-1/2 -translate-x-1/2
-                    w-[500px] h-[500px] bg-primary/10
-                    blur-3xl rounded-full"></div>
-
-            <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-                <!-- LEFT CONTENT -->
-                <div>
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl
-                           font-light leading-tight text-white">
-                        Content That
-                        <span class="font-semibold text-primary">
-                            Explains, Not Confuses
-                        </span>
-                    </h2>
-
-                    <p class="mt-6 text-white/80 text-base sm:text-lg leading-relaxed">
-                        Good content answers questions before people even ask them.
-                        We create content that feels easy to read, clear to understand,
-                        and genuinely useful — not heavy, technical, or sales-focused.
-                    </p>
-
-                    <p class="mt-4 text-white/80 text-base sm:text-lg leading-relaxed">
-                        At <span class="text-white font-medium">Techonika</span>,
-                        every piece of content has a purpose.
-                        Nothing is written just to fill space.
-                    </p>
-                </div>
-
-                <!-- RIGHT FEATURES -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-
-                    <!-- Card 1 -->
-                    <div class="bg-white/5 backdrop-blur-xl
-                            border border-white/10 rounded-2xl p-6">
-                        <div class="w-10 h-10 rounded-full bg-primary
-                                text-black font-bold flex items-center justify-center mb-4">
-                            01
-                        </div>
-                        <h4 class="text-white font-semibold mb-2">
-                            Clear Service Explanation
-                        </h4>
-                        <p class="text-white/80 text-sm leading-relaxed">
-                            We explain your services in simple language
-                            so people quickly understand what you offer
-                            and how it helps them.
-                        </p>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="bg-white/5 backdrop-blur-xl
-                            border border-white/10 rounded-2xl p-6">
-                        <div class="w-10 h-10 rounded-full bg-primary
-                                text-black font-bold flex items-center justify-center mb-4">
-                            02
-                        </div>
-                        <h4 class="text-white font-semibold mb-2">
-                            Trust-Building Content
-                        </h4>
-                        <p class="text-white/80 text-sm leading-relaxed">
-                            Helpful, honest content builds confidence
-                            and shows readers that your brand understands
-                            their problems.
-                        </p>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="bg-white/5 backdrop-blur-xl
-                            border border-white/10 rounded-2xl p-6">
-                        <div class="w-10 h-10 rounded-full bg-primary
-                                text-black font-bold flex items-center justify-center mb-4">
-                            03
-                        </div>
-                        <h4 class="text-white font-semibold mb-2">
-                            SEO & Social Support
-                        </h4>
-                        <p class="text-white/80 text-sm leading-relaxed">
-                            Our content supports SEO and social media,
-                            helping your brand stay visible and searchable
-                            without forcing keywords.
-                        </p>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="bg-white/5 backdrop-blur-xl
-                            border border-white/10 rounded-2xl p-6">
-                        <div class="w-10 h-10 rounded-full bg-primary
-                                text-black font-bold flex items-center justify-center mb-4">
-                            04
-                        </div>
-                        <h4 class="text-white font-semibold mb-2">
-                            Guides Users to Action
-                        </h4>
-                        <p class="text-white/80 text-sm leading-relaxed">
-                            Well-written content gently guides users
-                            toward the next step without pressure
-                            or confusion.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Closing Line -->
-            <div class="mt-14 max-w-3xl">
-                <p class="text-white/80 text-base sm:text-lg leading-relaxed">
-                    At Techonika, content is never random.
-                    It always exists for a reason — to explain,
-                    support, and move your audience forward with clarity.
-                </p>
-            </div>
-
-        </div>
-    </section>
-    <section class="bg-black py-10 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6">
-
-            <!-- Local Accent Glow -->
-            <div class="absolute top-20 left-0 w-[420px] h-[420px]
-                    bg-primary/10 blur-3xl rounded-full"></div>
-
-            <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-                <!-- LEFT CONTENT -->
-                <div>
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl
-                           font-light leading-tight text-white">
-                        Digital Marketing for
-                        <span class="font-semibold text-primary">
-                            Local Businesses in Noida
-                        </span>
-                    </h2>
-
-                    <p class="mt-6 text-white/80 text-base sm:text-lg leading-relaxed">
-                        Local visibility matters — especially when your business
-                        serves a specific area. We help businesses in
-                        <span class="text-white font-medium">Noida</span>
-                        improve their local reach so nearby customers
-                        can find you easily and trust you quickly.
-                    </p>
-
-                    <p class="mt-4 text-white/80 text-base sm:text-lg leading-relaxed">
-                        Our local digital marketing approach focuses on
-                        real people searching in real locations,
-                        not broad strategies that waste time or budget.
-                    </p>
-                </div>
-
-                <!-- RIGHT POINTS -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10 rounded-3xl p-10">
-
-                    <h3 class="text-xl font-semibold text-white mb-6">
-                        Our local marketing support includes:
-                    </h3>
-
-                    <ul class="space-y-5">
-                        <li class="flex items-start gap-4">
-                            <span class="w-9 h-9 flex items-center justify-center
-                                     rounded-full bg-primary text-black font-bold">
-                                1
-                            </span>
-                            <p class="text-white/80 leading-relaxed">
-                                Local SEO optimization to improve visibility
-                                in nearby searches
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="w-9 h-9 flex items-center justify-center
-                                     rounded-full bg-primary text-black font-bold">
-                                2
-                            </span>
-                            <p class="text-white/80 leading-relaxed">
-                                Google Business Profile setup, optimization,
-                                and ongoing support
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="w-9 h-9 flex items-center justify-center
-                                     rounded-full bg-primary text-black font-bold">
-                                3
-                            </span>
-                            <p class="text-white/80 leading-relaxed">
-                                Location-based targeting to reach people
-                                near your business
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="w-9 h-9 flex items-center justify-center
-                                     rounded-full bg-primary text-black font-bold">
-                                4
-                            </span>
-                            <p class="text-white/80 leading-relaxed">
-                                Local content strategies that connect
-                                with your community
-                            </p>
-                        </li>
-                    </ul>
-
-                    <p class="mt-6 text-white/80 leading-relaxed">
-                        As a digital marketing company based in Noida,
-                        we understand how people search locally
-                        and use that behavior to your advantage.
-                    </p>
-
-                    <!-- CTA -->
-                    <button @click="$dispatch('open-modal', { to: 'contact' })"
-                        class="inline-flex mt-8 items-center gap-2
-                         px-7 py-3 rounded-full
-                         bg-primary text-black font-semibold
-                         hover:opacity-90 transition">
-                        Improve Local Visibility
-                    </button>
-                </div>
-    </section>
-    <section class="bg-black py-10 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6">
-
-            <!-- Soft Accent Glow -->
-            <div class="absolute bottom-10 right-0 w-[420px] h-[420px]
-                    bg-primary/10 blur-3xl rounded-full"></div>
-
-            <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-                <!-- LEFT CONTENT -->
-                <div>
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl
-                           font-light leading-tight text-white">
-                        Clear Reporting
-                        <span class="font-semibold text-primary">
-                            Without Complicated Words
-                        </span>
-                    </h2>
-
-                    <p class="mt-6 text-white/80 text-base sm:text-lg leading-relaxed">
-                        Numbers matter — but they should make sense.
-                        We believe reporting should help you understand
-                        what’s happening, not confuse you with
-                        technical terms or unreadable dashboards.
-                    </p>
-
-                    <p class="mt-4 text-white/80 text-base sm:text-lg leading-relaxed">
-                        Our reports are written in simple language
-                        and focused on real business outcomes,
-                        so you always know where things stand.
-                    </p>
-                </div>
-
-                <!-- RIGHT CARD -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10 rounded-3xl p-10">
-
-                    <h3 class="text-xl font-semibold text-white mb-6">
-                        You always know:
-                    </h3>
-
-                    <ul class="space-y-5">
-                        <li class="flex items-start gap-4">
-                            <span class="w-9 h-9 flex items-center justify-center
-                                     rounded-full bg-primary text-black font-bold">
-                                1
-                            </span>
-                            <p class="text-white/80 leading-relaxed">
-                                Where your traffic is coming from
-                                and how people find your business
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="w-9 h-9 flex items-center justify-center
-                                     rounded-full bg-primary text-black font-bold">
-                                2
-                            </span>
-                            <p class="text-white/80 leading-relaxed">
-                                What actions users are taking —
-                                calls, messages, forms, or purchases
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="w-9 h-9 flex items-center justify-center
-                                     rounded-full bg-primary text-black font-bold">
-                                3
-                            </span>
-                            <p class="text-white/80 leading-relaxed">
-                                How your campaigns are performing
-                                and what improvements are planned
-                            </p>
-                        </li>
-                    </ul>
-
-                    <p class="mt-6 text-white/80 leading-relaxed">
-                        This clear and honest approach keeps
-                        digital marketing transparent,
-                        practical, and trustworthy.
-                    </p>
-
-                    <!-- CTA -->
-                    <button @click="$dispatch('open-modal', { to: 'contact' })"
-                        class="inline-flex mt-8 items-center gap-2
-                         px-7 py-3 rounded-full
-                         bg-primary text-black font-semibold
-                         hover:opacity-90 transition">
-                        View Sample Report
-                    </button>
-                </div>
-    </section>
-
-    <section class="relative bg-black text-white py-12 overflow-hidden">
-        <!-- layered glow -->
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/15 via-transparent to-transparent"></div>
-        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
-                w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl"></div>
-
-        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
-
-            <!-- Heading -->
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
-                Ready to Build
-                <span class="text-primary font-bold">
-                    Sustainable Digital Growth?
-                </span>
-            </h2>
-
-            <!-- Description -->
-            <p class="mt-6 text-white/80 leading-relaxed max-w-2xl mx-auto">
-                If you are looking for a digital marketing company in Noida that focuses on
-                clarity, consistency, and long-term results — not shortcuts —
-                Techonika is ready to work with you.
-            </p>
-
-            <p class="mt-4 text-white/70 leading-relaxed max-w-2xl mx-auto">
-                Let’s talk about your goals, understand your audience, and build a digital
-                marketing strategy that actually supports your business growth.
-            </p>
-
-            <!-- CTA Buttons -->
-            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                <button @click="$dispatch('open-modal', { to: 'contact' })"
-                    class="px-8 py-3 rounded-xl bg-primary text-black font-medium
-                     hover:bg-primary/90 transition text-center">
-                    Get a Free Consultation
-                </button>
-         
-             
-            </div>
-
-            <!-- Trust Line -->
-            <p class="mt-10 text-sm text-white/60">
-                No pressure. No jargon. Just honest digital marketing that works.
-            </p>
-
-        </div>
-    </section>
-    <section class="relative bg-black text-white py-12 overflow-hidden">
-        <!-- subtle background accent -->
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent"></div>
-
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="grid lg:grid-cols-2 gap-14 items-center">
-
-                <!-- LEFT CONTENT -->
-                <div>
-                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
-                        Social Media Marketing
-                        <span class="text-primary font-bold">
-                            That Feels Human
-                        </span>
-                    </h2>
-
-                    <div class="mt-6 space-y-4 max-w-xl">
-                        <p class="text-white/80 leading-relaxed">
-                            Social media is about connection, not noise. As a thoughtful digital
-                            marketing company in Noida,
-                            <span class="text-white font-medium">Techonika</span> helps brands
-                            show up consistently without sounding forced or scripted.
-                        </p>
-
-                        <p class="text-white/80 leading-relaxed">
-                            We focus on clarity, relevance, and authenticity so your audience
-                            can understand your message and trust your brand over time.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- RIGHT GLASS CARD -->
-                <div class="bg-white/5 border border-white/15
-                        rounded-3xl p-6 sm:p-8 lg:p-10
-                        backdrop-blur-xl">
-
-                    <h3 class="text-lg sm:text-xl font-semibold mb-6">
-                        Our social media focus areas:
-                    </h3>
-
-                    <ul class="space-y-5">
-                        <li class="flex gap-4">
-                            <span class="mt-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                A
-                                <span class="text-white font-medium">
-                                    clear and consistent brand voice
-                                </span>
-                                across platforms
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Simple, clean, and
-                                <span class="text-white font-medium">
-                                    engaging visual content
-                                </span>
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Content that
-                                <span class="text-white font-medium">
-                                    educates, informs, or genuinely helps
-                                </span>
-                                your audience
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Regular posting with
-                                <span class="text-white font-medium">
-                                    purpose and direction
-                                </span>
-                            </p>
-                        </li>
-                    </ul>
-
-                    <div class="mt-8 pt-6 border-t border-white/10">
-                        <p class="text-white/80 leading-relaxed text-sm sm:text-base">
-                            This approach helps your brand stay
-                            <span class="text-primary font-medium">
-                                visible, relatable, and trusted
-                            </span>
-                            over time.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
 
     <section class="relative bg-black text-white py-12 overflow-hidden">
         <!-- subtle background -->
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent"></div>
+        <div class="absolute inset-0 "></div>
 
         <div class="relative max-w-4xl mx-auto px-4 sm:px-6">
 
             <!-- SECTION TITLE -->
             <div class="text-center mb-16">
                 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-                    FREQUENTLY ASKED <span class="text-[#f6b615]">QUESTIONS</span>
+                    FREQUENTLY ASKED <span class="text-primary">QUESTIONS</span>
                 </h2>
                 <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
-                    Answers to common questions about our services, process,
-                    pricing, and how we work with clients.
+                    Clear answers to common questions about Techonika’s digital marketing
+                    services, pricing, timelines, and performance measurement.
                 </p>
             </div>
 
@@ -1501,118 +1441,215 @@
 
                 <!-- FAQ 1 -->
                 <div class="bg-white/5 border border-white/15 rounded-2xl backdrop-blur-xl">
-                    <button
-                        @click="open === 1 ? open = null : open = 1"
-                        class="w-full flex justify-between items-center
-                           px-6 py-5 text-left">
+                    <button @click="open === 1 ? open = null : open = 1"
+                        class="w-full flex justify-between items-center px-6 py-5 text-left">
                         <span class="font-medium">
-                            What does a digital marketing company in Noida actually do for my business?
+                            What digital marketing services does Techonika offer in Noida?
                         </span>
-                        <span class="text-primary text-xl"
-                            x-text="open === 1 ? '−' : '+'"></span>
+                        <span class="text-primary text-xl" x-text="open === 1 ? '−' : '+'"></span>
                     </button>
 
-                    <div x-show="open === 1"
-                        x-collapse
+                    <div x-show="open === 1" x-collapse
                         class="px-6 pb-5 text-white/80 leading-relaxed">
-                        A digital marketing company helps your business get found online by the
-                        right people. At Techonika, we focus on improving visibility, building trust,
-                        and guiding visitors toward contacting or choosing your business.
+                        Techonika offers SEO, PPC advertising, social media marketing,
+                        content marketing, web development, online reputation management (ORM),
+                        email marketing, and analytics services tailored for businesses in Noida.
                     </div>
                 </div>
 
                 <!-- FAQ 2 -->
                 <div class="bg-white/5 border border-white/15 rounded-2xl backdrop-blur-xl">
-                    <button
-                        @click="open === 2 ? open = null : open = 2"
-                        class="w-full flex justify-between items-center
-                           px-6 py-5 text-left">
+                    <button @click="open === 2 ? open = null : open = 2"
+                        class="w-full flex justify-between items-center px-6 py-5 text-left">
                         <span class="font-medium">
-                            How long does it take to see results from digital marketing?
+                            How much does digital marketing cost in Noida?
                         </span>
-                        <span class="text-primary text-xl"
-                            x-text="open === 2 ? '−' : '+'"></span>
+                        <span class="text-primary text-xl" x-text="open === 2 ? '−' : '+'"></span>
                     </button>
 
-                    <div x-show="open === 2"
-                        x-collapse
+                    <div x-show="open === 2" x-collapse
                         class="px-6 pb-5 text-white/80 leading-relaxed">
-                        Digital marketing takes time because it builds steady growth.
-                        Some improvements may appear within a few weeks, while stronger and more
-                        consistent results usually develop over a few months.
-                        We focus on progress that lasts, not quick results that disappear.
+                        Digital marketing costs depend on your business goals, competition level,
+                        selected services, and campaign scope. We offer scalable pricing models
+                        aligned with realistic growth objectives.
                     </div>
                 </div>
 
                 <!-- FAQ 3 -->
                 <div class="bg-white/5 border border-white/15 rounded-2xl backdrop-blur-xl">
-                    <button
-                        @click="open === 3 ? open = null : open = 3"
-                        class="w-full flex justify-between items-center
-                           px-6 py-5 text-left">
+                    <button @click="open === 3 ? open = null : open = 3"
+                        class="w-full flex justify-between items-center px-6 py-5 text-left">
                         <span class="font-medium">
-                            Is digital marketing useful for small or local businesses in Noida?
+                            How long does SEO take to show results?
                         </span>
-                        <span class="text-primary text-xl"
-                            x-text="open === 3 ? '−' : '+'"></span>
+                        <span class="text-primary text-xl" x-text="open === 3 ? '−' : '+'"></span>
                     </button>
 
-                    <div x-show="open === 3"
-                        x-collapse
+                    <div x-show="open === 3" x-collapse
                         class="px-6 pb-5 text-white/80 leading-relaxed">
-                        Yes. Digital marketing works especially well for small and local businesses.
-                        We help nearby customers find you through search results, maps, and social
-                        platforms, increasing inquiries from your local area.
+                        SEO typically takes several months to demonstrate sustained improvements.
+                        The timeline depends on competition, website history, and content quality,
+                        but results are designed to compound over time.
                     </div>
                 </div>
 
                 <!-- FAQ 4 -->
                 <div class="bg-white/5 border border-white/15 rounded-2xl backdrop-blur-xl">
-                    <button
-                        @click="open === 4 ? open = null : open = 4"
-                        class="w-full flex justify-between items-center
-                           px-6 py-5 text-left">
+                    <button @click="open === 4 ? open = null : open = 4"
+                        class="w-full flex justify-between items-center px-6 py-5 text-left">
                         <span class="font-medium">
-                            Do I need to understand digital marketing to work with Techonika?
+                            Does Techonika provide local SEO services in Noida?
                         </span>
-                        <span class="text-primary text-xl"
-                            x-text="open === 4 ? '−' : '+'"></span>
+                        <span class="text-primary text-xl" x-text="open === 4 ? '−' : '+'"></span>
                     </button>
 
-                    <div x-show="open === 4"
-                        x-collapse
+                    <div x-show="open === 4" x-collapse
                         class="px-6 pb-5 text-white/80 leading-relaxed">
-                        No technical knowledge is required. We explain everything in simple,
-                        easy-to-understand language and guide you through each step so you always
-                        know what is happening and why it matters.
+                        Yes. Local SEO is a core service provided by our digital marketing agency
+                        in Noida, helping businesses improve map visibility, local rankings,
+                        calls, and inquiries.
                     </div>
                 </div>
 
                 <!-- FAQ 5 -->
                 <div class="bg-white/5 border border-white/15 rounded-2xl backdrop-blur-xl">
-                    <button
-                        @click="open === 5 ? open = null : open = 5"
-                        class="w-full flex justify-between items-center
-                           px-6 py-5 text-left">
+                    <button @click="open === 5 ? open = null : open = 5"
+                        class="w-full flex justify-between items-center px-6 py-5 text-left">
                         <span class="font-medium">
-                            How is Techonika different from other digital marketing companies in Noida?
+                            Which digital marketing service is right for my business?
                         </span>
-                        <span class="text-primary text-xl"
-                            x-text="open === 5 ? '−' : '+'"></span>
+                        <span class="text-primary text-xl" x-text="open === 5 ? '−' : '+'"></span>
                     </button>
 
-                    <div x-show="open === 5"
-                        x-collapse
+                    <div x-show="open === 5" x-collapse
                         class="px-6 pb-5 text-white/80 leading-relaxed">
-                        Techonika focuses on clarity, honesty, and long-term growth.
-                        We avoid confusing jargon and false promises, work closely with you,
-                        and build strategies that match your business goals and budget.
+                        The right service depends on your business goals, budget,
+                        competition, and timelines. We assess these factors and recommend
+                        a strategy aligned with measurable outcomes.
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="bg-white/5 border border-white/15 rounded-2xl backdrop-blur-xl">
+                    <button @click="open === 6 ? open = null : open = 6"
+                        class="w-full flex justify-between items-center px-6 py-5 text-left">
+                        <span class="font-medium">
+                            How does Techonika measure campaign success?
+                        </span>
+                        <span class="text-primary text-xl" x-text="open === 6 ? '−' : '+'"></span>
+                    </button>
+
+                    <div x-show="open === 6" x-collapse
+                        class="px-6 pb-5 text-white/80 leading-relaxed">
+                        Campaign success is measured using traffic quality,
+                        conversion rates, lead generation, and ROI metrics
+                        aligned with your business objectives.
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="bg-white/5 border border-white/15 rounded-2xl backdrop-blur-xl">
+                    <button @click="open === 7 ? open = null : open = 7"
+                        class="w-full flex justify-between items-center px-6 py-5 text-left">
+                        <span class="font-medium">
+                            Do you offer customized digital marketing strategies?
+                        </span>
+                        <span class="text-primary text-xl" x-text="open === 7 ? '−' : '+'"></span>
+                    </button>
+
+                    <div x-show="open === 7" x-collapse
+                        class="px-6 pb-5 text-white/80 leading-relaxed">
+                        Yes. Every strategy is customized by our digital agency in Noida
+                        based on your industry, audience behavior, goals, and growth stage.
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+
+
+    <section class="relative bg-black text-white py-20 overflow-hidden border-t border-white/10">
+
+        <!-- Soft background glow -->
+        <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[320px]
+              bg-primary/20 blur-[240px] rounded-full"></div>
+
+        <div class="relative max-w-6xl mx-auto px-6 text-center">
+
+            <!-- Headline -->
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
+                Get a Free <span class="text-primary">Digital Marketing Consultation</span><br>
+                with Techonika
+            </h2>
+
+            <!-- Subheadline -->
+            <p class="mt-6 text-white/70 leading-relaxed max-w-3xl mx-auto">
+                Request a free digital audit and growth plan.
+                A strategic audit identifies visibility gaps, conversion bottlenecks,
+                and scalable growth opportunities through a structured marketing approach.
+            </p>
+
+            <!-- CTA Box -->
+            <div class="mt-14 max-w-3xl mx-auto rounded-3xl
+                border border-white/10 bg-white/[0.04]
+                backdrop-blur-xl p-10 sm:p-12">
+
+                <h3 class="text-xl sm:text-2xl font-medium mb-4">
+                    Let’s Build Your Digital Growth Engine Together
+                </h3>
+
+                <p class="text-white/70 leading-[1.75] mb-10">
+                    Techonika partners with businesses ready for structured,
+                    measurable digital growth.
+                    As one of the best digital marketing services in Noida and
+                    among the top digital marketing agencies in Noida,
+                    we deliver performance-driven strategies that transform
+                    online presence into measurable business outcomes.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+                    <button @click="$dispatch('open-modal', { to: 'contact' })"
+                        class="inline-flex items-center justify-center gap-2
+                  rounded-xl bg-primary px-8 py-4
+                  text-black font-medium
+                  hover:bg-primary/90 transition">
+                        <i class="ri-calendar-line"></i>
+                        Request Free Consultation
+                    </button>
+
+                    <button @click="$dispatch('open-modal', { to: 'audit' })"
+                        class="inline-flex items-center justify-center gap-2
+                  rounded-xl border border-white/20 px-8 py-4
+                  text-white/80 hover:bg-white/[0.05] transition">
+                        <i class="ri-search-line"></i>
+                        Get Free Digital Audit
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Trust Signals -->
+            <div class="mt-10 flex flex-wrap justify-center gap-6 text-sm text-white/60">
+                <span class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i> No obligation
+                </span>
+                <span class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i> Strategy-first approach
+                </span>
+                <span class="flex items-center gap-2">
+                    <i class="ri-check-line text-primary"></i> Transparent recommendations
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
 
 
 </div>
