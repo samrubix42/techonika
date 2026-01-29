@@ -5,37 +5,38 @@
 @endsection
 
 <div>
-    <section class="relative bg-black px-[12%] text-white overflow-hidden">
+    <section class="relative bg-black text-white overflow-hidden">
         <!-- Background glow -->
         <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent"></div>
 
-        <div class="relative mx-auto 
-                py-10 sm:py-28 lg:py-28">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6
+                py-20 sm:py-24 md:py-28">
 
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-14 items-center">
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
 
                 <!-- LEFT CONTENT -->
                 <div class="text-center lg:text-left">
 
                     <!-- Badge -->
                     <span class="inline-flex items-center gap-2 px-4 py-1.5 mb-5
-                             rounded-full bg-white/10 border border-white/15
-                             text-xs sm:text-sm text-white/80 backdrop-blur-md">
+                    rounded-full bg-white/10 border border-white/15
+                    text-xs sm:text-sm text-white/80 backdrop-blur-md">
                         Digital Marketing Company in Noida
                     </span>
 
                     <!-- Heading -->
                     <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
-                           font-semibold leading-snug lg:leading-tight">
+                    font-semibold leading-snug lg:leading-tight">
                         <span class="text-primary font-bold block sm:inline">
                             Techonika – Digital Marketing Agency in Noida
                         </span>
-                        Growth & Leads
+                        <span class="block sm:inline"> Growth & Leads</span>
                     </h1>
 
                     <!-- Content -->
-                    <div class="mt-5 sm:mt-6 space-y-3 sm:space-y-4
-                            max-w-xl mx-auto lg:mx-0">
+                    <div class="mt-5 sm:mt-6 space-y-4
+                    max-w-xl mx-auto lg:mx-0">
+
                         <p class="text-sm sm:text-base text-white/80 leading-relaxed">
                             Techonika is a full-service digital marketing agency in Noida that helps businesses generate qualified
                             leads, improve conversion rates, and build long-term online visibility through SEO, performance
@@ -43,44 +44,42 @@
                             Our approach combines local market expertise in Noida and Delhi NCR with proven digital marketing
                             frameworks, analytics, and platform-specific execution.
                             Businesses choose Techonika when they need predictable growth rather than vanity metrics.
-
-
                         </p>
 
                         <p class="text-sm sm:text-base text-white/80 leading-relaxed">
                             Our focus remains on traffic quality, lead intent, and measurable return on investment across every
-                            digital channel. <span class="text-primary font-medium">Techonika</span>, we help businesses
+                            digital channel.
+                            <span class="text-primary font-medium"> Techonika</span> helps businesses
                             grow step by step in the online world.
                         </p>
-
 
                     </div>
 
                     <!-- CTA -->
                     <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4
-                            justify-center lg:justify-start">
-                        <button @click="$dispatch('open-modal', { to: 'contact' })"
+                    justify-center lg:justify-start">
+                        <button
+                            @click="$dispatch('open-modal', { to: 'contact' })"
                             class="w-full sm:w-auto px-6 py-3 rounded-xl
-                              bg-primary text-black font-medium
-                              hover:bg-primary/90 transition text-center">
+                        bg-primary text-black font-medium
+                        hover:bg-primary/90 transition">
                             Get Free Consultation
                         </button>
-
-
                     </div>
                 </div>
 
                 <!-- RIGHT FORM -->
-                <div class="relative">
+                <div class="relative w-full">
 
                     <div class="bg-white/5 border border-white/15
-                        rounded-2xl sm:rounded-3xl
-                        p-6 sm:p-8 lg:p-10
-                        backdrop-blur-xl">
+                    rounded-2xl sm:rounded-3xl
+                    p-5 sm:p-8 lg:p-10
+                    backdrop-blur-xl">
 
                         <h3 class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">
                             Let’s Grow Your Business
                         </h3>
+
                         <p class="text-xs sm:text-sm text-white/70 mb-4 sm:mb-6">
                             Fill in the details and our team will get back to you.
                         </p>
@@ -94,292 +93,309 @@
 
                         <form wire:submit.prevent="submit" class="space-y-4">
 
-                            <!-- NAME -->
-                            <div>
-                                <input wire:model.defer="name" type="text" placeholder="Your Name"
-                                    class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/15 text-white">
-                                @error('name') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
-                            </div>
+                            <!-- INPUT -->
+                            <input wire:model.defer="name" type="text" placeholder="Your Name"
+                                class="w-full px-4 py-3 rounded-xl
+                            bg-black/40 border border-white/15
+                            text-white placeholder-white/50 focus:outline-none">
 
-                            <!-- EMAIL -->
-                            <div>
-                                <input wire:model.defer="email" type="email" placeholder="Email Address"
-                                    class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/15 text-white">
-                                @error('email') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
-                            </div>
+                            @error('name') <p class="text-red-400 text-xs">{{ $message }}</p> @enderror
 
-                            <!-- PHONE -->
-                            <div>
-                                <input wire:model.defer="phone" type="tel" placeholder="Phone Number"
-                                    class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/15 text-white">
-                                @error('phone') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
-                            </div>
+                            <input wire:model.defer="email" type="email" placeholder="Email Address"
+                                class="w-full px-4 py-3 rounded-xl
+                            bg-black/40 border border-white/15
+                            text-white placeholder-white/50 focus:outline-none">
 
-                            <!-- SERVICE -->
-                            <div>
-                                <select wire:model.defer="service"
-                                    class="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/15 text-white">
-                                    <option value="">Select Service</option>
-                                    <option>SEO</option>
-                                    <option>Google Ads</option>
-                                    <option>Social Media Marketing</option>
-                                    <option>Website Development</option>
-                                </select>
-                                @error('service') <p class="text-red-400 text-xs mt-1">{{ $message }}</p> @enderror
-                            </div>
+                            @error('email') <p class="text-red-400 text-xs">{{ $message }}</p> @enderror
+
+                            <input wire:model.defer="phone" type="tel" placeholder="Phone Number"
+                                class="w-full px-4 py-3 rounded-xl
+                            bg-black/40 border border-white/15
+                            text-white placeholder-white/50 focus:outline-none">
+
+                            @error('phone') <p class="text-red-400 text-xs">{{ $message }}</p> @enderror
+
+                            <select wire:model.defer="service"
+                                class="w-full px-4 py-3 rounded-xl
+                            bg-black/40 border border-white/15
+                            text-white focus:outline-none">
+                                <option value="">Select Service</option>
+                                <option>SEO</option>
+                                <option>Google Ads</option>
+                                <option>Social Media Marketing</option>
+                                <option>Website Development</option>
+                            </select>
+
+                            @error('service') <p class="text-red-400 text-xs">{{ $message }}</p> @enderror
 
                             <!-- TURNSTILE -->
-                            <div wire:ignore>
+                            <div wire:ignore class="pt-1">
                                 <div id="turnstile-widget"></div>
                             </div>
 
-                            @error('turnstileToken')
-                            <p class="text-red-400 text-xs mt-1">{{ $message }}</p>
-                            @enderror
-
                             <!-- BUTTON -->
                             <button wire:loading.attr="disabled"
-                                class="w-full py-3 rounded-xl bg-primary text-black font-semibold">
+                                class="w-full py-3 rounded-xl
+                            bg-primary text-black font-semibold">
                                 <span wire:loading.remove>Request Callback</span>
                                 <span wire:loading>Submitting...</span>
                             </button>
                         </form>
 
                     </div>
-
-                    <script>
-                        document.addEventListener('DOMContentLoaded', () => {
-
-                            let widgetId = null;
-                            let rendered = false;
-                            const TURNSTILE_SRC = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
-
-                            function ensureScriptLoaded(cb) {
-                                if (window.turnstile) return cb && cb();
-
-                                let script = document.querySelector('script[src="' + TURNSTILE_SRC + '"]');
-                                if (!script) {
-                                    script = document.createElement('script');
-                                    script.src = TURNSTILE_SRC;
-                                    script.async = true;
-                                    script.defer = true;
-                                    script.onload = cb;
-                                    document.head.appendChild(script);
-                                } else {
-                                    if (script.getAttribute('data-loaded') === 'true') {
-                                        return cb && cb();
-                                    }
-                                    script.addEventListener('load', cb);
-                                }
-                            }
-
-                            function renderTurnstile() {
-                                if (rendered) return;
-
-                                const container = document.getElementById('turnstile-widget');
-                                if (!container) return;
-
-                                // Remove any existing iframe
-                                container.innerHTML = '';
-
-                                if (!window.turnstile) {
-                                    ensureScriptLoaded(renderTurnstile);
-                                    return;
-                                }
-
-                                widgetId = turnstile.render(container, {
-                                    sitekey: "{{ config('services.turnstile.site_key') }}",
-                                    callback: function(token) {
-                                        @this.set('turnstileToken', token);
-                                    }
-                                });
-
-                                rendered = true;
-                            }
-
-                            renderTurnstile();
-
-                            Livewire.off('turnstile-reset');
-                            Livewire.on('turnstile-reset', () => {
-                                if (widgetId !== null && window.turnstile) {
-                                    turnstile.reset(widgetId);
-                                    rendered = false; // allow re-render
-                                    renderTurnstile();
-                                }
-                            });
-                        });
-                    </script>
-
-
-
                 </div>
 
             </div>
         </div>
     </section>
-    <section class="relative bg-black  px-[12%] text-white py-10 overflow-hidden">
 
-        <!-- ambient strategic glow -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            let widgetId = null;
+            let rendered = false;
+            const TURNSTILE_SRC = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+
+            function ensureScriptLoaded(cb) {
+                if (window.turnstile) return cb && cb();
+
+                let script = document.querySelector('script[src="' + TURNSTILE_SRC + '"]');
+                if (!script) {
+                    script = document.createElement('script');
+                    script.src = TURNSTILE_SRC;
+                    script.async = true;
+                    script.defer = true;
+                    script.onload = cb;
+                    document.head.appendChild(script);
+                } else {
+                    if (script.getAttribute('data-loaded') === 'true') {
+                        return cb && cb();
+                    }
+                    script.addEventListener('load', cb);
+                }
+            }
+
+            function renderTurnstile() {
+                if (rendered) return;
+
+                const container = document.getElementById('turnstile-widget');
+                if (!container) return;
+
+                // Remove any existing iframe
+                container.innerHTML = '';
+
+                if (!window.turnstile) {
+                    ensureScriptLoaded(renderTurnstile);
+                    return;
+                }
+
+                widgetId = turnstile.render(container, {
+                    sitekey: "{{ config('services.turnstile.site_key') }}",
+                    callback: function(token) {
+                        @this.set('turnstileToken', token);
+                    }
+                });
+
+                rendered = true;
+            }
+
+            renderTurnstile();
+
+            Livewire.off('turnstile-reset');
+            Livewire.on('turnstile-reset', () => {
+                if (widgetId !== null && window.turnstile) {
+                    turnstile.reset(widgetId);
+                    rendered = false; // allow re-render
+                    renderTurnstile();
+                }
+            });
+        });
+    </script>
+    <section class="relative bg-black text-white overflow-hidden">
+
+        <!-- Subtle Background Accent -->
         <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/3 left-1/4 w-[38rem] h-[38rem]
-                    bg-gradient-to-br from-primary/15 via-primary/5 to-transparent
-                    rounded-full blur-[140px]"></div>
-            <div class="absolute bottom-0 right-0 w-[30rem] h-[30rem]
-                    bg-primary/10 rounded-full blur-[120px]"></div>
+            <div class="absolute top-1/3 left-1/4 w-[32rem] h-[32rem]
+            bg-primary/15 rounded-full blur-[180px]"></div>
+            <div class="absolute bottom-0 right-0 w-[24rem] h-[24rem]
+            bg-primary/10 rounded-full blur-[140px]"></div>
         </div>
 
-        <div class="relative mx-auto px-6">
+        <div class="relative max-w-7xl mx-auto
+        px-4 sm:px-6 lg:px-8
+        py-10 sm:py-24 lg:py-20">
 
-            <!-- SECTION HEADER -->
-            <div class=" mb-24">
+            <!-- HEADER -->
+            <div class="max-w-4xl mb-16 sm:mb-20">
 
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl
-                       font-semibold leading-tight">
-                    Why Choose
-                    <span class="text-primary font-bold">
-                        Techonika
-                    </span>
-                    as Your Digital Marketing Company in Noida
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+                font-semibold leading-tight">
+                    Why Choose Techonika as Your Digital Marketing Company in Noida?
                 </h2>
 
-                <p class="mt-8 text-white/75 leading-relaxed">
-                    Choosing a digital marketing company in Noida is not about comparing service lists.
-                    It is about understanding how strategy, platforms, data, and execution
-                    work together to drive measurable business outcomes.
+                <p class="mt-6 text-white/75 leading-relaxed text-sm sm:text-base">
+                    Choosing a digital marketing company in Noida requires more than comparing service lists.
+                    It requires understanding how strategy, platforms, data, and execution work together
+                    to drive business outcomes.
                 </p>
 
-                <p class="mt-4 text-white/75 leading-relaxed max-w-3xl">
-                    Techonika operates at this intersection by aligning marketing objectives
-                    with real customer behavior, platform algorithms,
-                    and conversion mechanics.
+                <p class="mt-4 text-white/75 leading-relaxed text-sm sm:text-base">
+                    Techonika operates at this intersection by aligning marketing objectives with real
+                    customer behavior, platform algorithms, and conversion mechanics.
                 </p>
             </div>
 
-            <!-- STRATEGY GRID -->
-            <div class="grid lg:grid-cols-2 gap-10">
+            <!-- CONTENT GRID -->
+            <div class="grid gap-8 lg:grid-cols-2 lg:gap-12">
 
-                <!-- CARD -->
-                <div class="group bg-white/5 border border-white/15
-                        rounded-3xl p-8 lg:p-10 backdrop-blur-xl
-                        hover:border-primary/40 hover:-translate-y-1
-                        transition-all duration-300">
+                <!-- LOCAL EXPERTISE -->
+                <div class="bg-white/5 border border-white/10
+                rounded-2xl sm:rounded-3xl
+                p-6 sm:p-8 lg:p-10 backdrop-blur-xl">
 
-                    <span class="text-primary text-xs font-semibold tracking-wider uppercase">
-                        Local Intelligence
-                    </span>
+                    <div class="flex items-start gap-4">
+                        <span class="w-11 h-11 flex items-center justify-center
+                        rounded-xl bg-primary/15 text-primary">
+                            <i class="ri-map-pin-2-line text-xl"></i>
+                        </span>
 
-                    <h3 class="mt-3 text-lg sm:text-xl font-semibold">
-                        Deep Local Market Expertise in Noida & Delhi NCR
-                    </h3>
+                        <h3 class="text-base sm:text-lg lg:text-xl font-semibold">
+                            Deep Local Market Expertise in Noida & Delhi NCR
+                        </h3>
+                    </div>
 
-                    <p class="mt-4 text-white/75 leading-relaxed">
-                        Techonika operates with a strong understanding of Noida’s local business ecosystem,
-                        search behavior, and competitive landscape across IT services,
-                        real estate, healthcare, education, manufacturing,
+                    <p class="mt-4 text-white/75 text-sm sm:text-base leading-relaxed">
+                        Techonika operates with an in-depth understanding of Noida's local business ecosystem,
+                        search behavior, and competitive landscape. This includes sector-specific demand
+                        patterns across IT services, real estate, healthcare, education, manufacturing,
                         and local service businesses.
                     </p>
 
-                    <p class="mt-4 text-white/75 leading-relaxed">
-                        Our local SEO strategies account for proximity signals,
-                        Google Business Profile optimization,
-                        and localized content — not generic national templates.
+                    <p class="mt-4 text-white/75 text-sm sm:text-base leading-relaxed">
+                        Local SEO performance depends on factors such as proximity, relevance,
+                        Google Business Profile optimization, and localized content signals.
+                        Our strategies account for these variables rather than applying generic
+                        national-level templates.
+                    </p>
+
+                    <p class="mt-4 text-white/75 text-sm sm:text-base leading-relaxed">
+                        For businesses targeting Delhi NCR, we structure campaigns that reflect
+                        inter-city competition, location-based keywords, and local user intent.
                     </p>
                 </div>
 
-                <!-- CARD -->
-                <div class="group bg-white/5 border border-white/15
-                        rounded-3xl p-8 lg:p-10 backdrop-blur-xl
-                        hover:border-primary/40 hover:-translate-y-1
-                        transition-all duration-300">
+                <!-- DATA STRATEGY -->
+                <div class="bg-white/5 border border-white/10
+                rounded-2xl sm:rounded-3xl
+                p-6 sm:p-8 lg:p-10 backdrop-blur-xl">
 
-                    <span class="text-primary text-xs font-semibold tracking-wider uppercase">
-                        Performance Strategy
-                    </span>
+                    <div class="flex items-start gap-4">
+                        <span class="w-11 h-11 flex items-center justify-center
+                        rounded-xl bg-primary/15 text-primary">
+                            <i class="ri-bar-chart-box-line text-xl"></i>
+                        </span>
 
-                    <h3 class="mt-3 text-lg sm:text-xl font-semibold">
-                        Data-Driven Digital Strategies That Scale
-                    </h3>
+                        <h3 class="text-base sm:text-lg lg:text-xl font-semibold">
+                            Data-Driven Digital Strategies That Scale
+                        </h3>
+                    </div>
 
-                    <p class="mt-4 text-white/75 leading-relaxed">
-                        Every digital marketing campaign at Techonika begins with data,
-                        not assumptions.
-                        Decisions are guided by analytics, ad platforms,
-                        and SEO intelligence tools.
+                    <p class="mt-4 text-white/75 text-sm sm:text-base leading-relaxed">
+                        Every digital marketing campaign at Techonika begins with data analysis
+                        rather than assumptions. We rely on platforms such as Google Analytics,
+                        Google Search Console, Google Ads, Meta Ads Manager,
+                        and SEO intelligence tools to guide decisions.
                     </p>
 
-                    <p class="mt-4 text-white/75 leading-relaxed">
-                        Strategy development considers intent, funnel drop-offs,
-                        acquisition costs, and lifetime value alignment —
-                        ensuring scale without performance loss.
+                    <p class="mt-4 text-white/75 text-sm sm:text-base leading-relaxed">
+                        Strategy development considers traffic sources, keyword intent,
+                        funnel drop-offs, cost per acquisition,
+                        and lifetime value alignment.
+                    </p>
+
+                    <p class="mt-4 text-white/75 text-sm sm:text-base leading-relaxed">
+                        Data insights are continuously fed back into optimization cycles
+                        across SEO, paid media, and conversion rate optimization.
                     </p>
                 </div>
 
-                <!-- CARD -->
-                <div class="group bg-white/5 border border-white/15
-                        rounded-3xl p-8 lg:p-10 backdrop-blur-xl
-                        hover:border-primary/40 hover:-translate-y-1
-                        transition-all duration-300">
+                <!-- TRANSPARENCY -->
+                <div class="bg-white/5 border border-white/10
+                rounded-2xl sm:rounded-3xl
+                p-6 sm:p-8 lg:p-10 backdrop-blur-xl">
 
-                    <span class="text-primary text-xs font-semibold tracking-wider uppercase">
-                        Transparency
-                    </span>
+                    <div class="flex items-start gap-4">
+                        <span class="w-11 h-11 flex items-center justify-center
+                        rounded-xl bg-primary/15 text-primary">
+                            <i class="ri-file-chart-line text-xl"></i>
+                        </span>
 
-                    <h3 class="mt-3 text-lg sm:text-xl font-semibold">
-                        Transparent Reporting & ROI-Focused Execution
-                    </h3>
+                        <h3 class="text-base sm:text-lg lg:text-xl font-semibold">
+                            Transparent Reporting & ROI-Focused Execution
+                        </h3>
+                    </div>
 
-                    <p class="mt-4 text-white/75 leading-relaxed">
-                        Our reporting connects activities directly to outcomes —
-                        not vanity metrics.
+                    <p class="mt-4 text-white/75 text-sm sm:text-base leading-relaxed">
+                        Transparency is foundational to sustainable digital marketing partnerships.
+                        Techonika provides clear reporting that connects activities to outcomes
+                        rather than isolated metrics.
                     </p>
 
                     <ul class="mt-4 space-y-2 text-white/80 text-sm sm:text-base">
-                        <li>• Organic traffic quality & intent</li>
-                        <li>• Keyword visibility by funnel stage</li>
-                        <li>• Lead attribution & conversion paths</li>
+                        <li>• Organic traffic quality</li>
+                        <li>• Keyword visibility by intent</li>
+                        <li>• Lead attribution</li>
+                        <li>• Conversion trends</li>
                         <li>• Cost efficiency across paid campaigns</li>
                     </ul>
+
+                    <p class="mt-4 text-white/75 text-sm sm:text-base leading-relaxed">
+                        This allows stakeholders to understand what is working,
+                        why it is working, and where improvements are required.
+                    </p>
                 </div>
 
-                <!-- CARD -->
-                <div class="group bg-white/5 border border-white/15
-                        rounded-3xl p-8 lg:p-10 backdrop-blur-xl
-                        hover:border-primary/40 hover:-translate-y-1
-                        transition-all duration-300">
+                <!-- GROWTH -->
+                <div class="bg-white/5 border border-white/10
+                rounded-2xl sm:rounded-3xl
+                p-6 sm:p-8 lg:p-10 backdrop-blur-xl">
 
-                    <span class="text-primary text-xs font-semibold tracking-wider uppercase">
-                        Business Growth
-                    </span>
+                    <div class="flex items-start gap-4">
+                        <span class="w-11 h-11 flex items-center justify-center
+                        rounded-xl bg-primary/15 text-primary">
+                            <i class="ri-rocket-2-line text-xl"></i>
+                        </span>
 
-                    <h3 class="mt-3 text-lg sm:text-xl font-semibold">
-                        Growth Solutions for Startups, SMEs & Enterprises
-                    </h3>
+                        <h3 class="text-base sm:text-lg lg:text-xl font-semibold">
+                            Growth Solutions for Startups, SMEs & Enterprises
+                        </h3>
+                    </div>
 
-                    <p class="mt-4 text-white/75 leading-relaxed">
-                        Startups need validation and leads.
-                        SMEs need predictable pipelines.
-                        Enterprises need scale, governance,
-                        and cross-channel attribution.
+                    <p class="mt-4 text-white/75 text-sm sm:text-base leading-relaxed">
+                        Techonika designs marketing systems suitable for different business
+                        maturity levels. Startups often require rapid validation and lead generation.
+                        SMEs focus on predictable pipelines and cost efficiency.
+                        Enterprises require scale, governance, and cross-channel attribution.
                     </p>
 
-                    <p class="mt-4 text-white/75 leading-relaxed">
-                        Our frameworks adapt to each stage
-                        without compromising long-term performance.
+                    <p class="mt-4 text-white/75 text-sm sm:text-base leading-relaxed">
+                        Our frameworks adapt to these requirements without compromising
+                        performance discipline.
                     </p>
                 </div>
 
             </div>
 
-
         </div>
     </section>
+
 
     <section class="relative bg-black text-white py-10 sm:py-28 border-t border-white/10 overflow-hidden">
 
         <!-- Soft background accent -->
         <div class="absolute -top-48 left-1/2 -translate-x-1/2 w-[720px] h-[360px] bg-primary/10 blur-[200px] rounded-full"></div>
 
-        <div class="relative px-[12%] mx-auto px-4">
+        <div class="relative max-w-7xl mx-auto px-4">
 
             <!-- INTRO -->
             <div class="mb-24">
@@ -1594,37 +1610,50 @@
     </section>
 
 
-    <section class="relative bg-black text-white py-10 overflow-hidden border-t border-white/10">
+    <section class="relative bg-black text-white overflow-hidden
+    py-14 sm:py-20 lg:py-28 border-t border-white/10">
 
         <!-- Soft background glow -->
-        <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[320px]
-              bg-primary/20 blur-[240px] rounded-full"></div>
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2
+        w-[520px] sm:w-[640px] lg:w-[700px]
+        h-[260px] sm:h-[300px] lg:h-[320px]
+        bg-primary/20 blur-[220px] rounded-full"></div>
 
-        <div class="relative max-w-6xl mx-auto px-6 text-center">
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 text-center">
 
             <!-- Headline -->
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
-                Get a Free <span class="text-primary">Digital Marketing Consultation</span><br>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+            font-semibold leading-tight">
+                Get a Free
+                <span class="text-primary block sm:inline">
+                    Digital Marketing Consultation
+                </span>
                 with Techonika
             </h2>
 
             <!-- Subheadline -->
-            <p class="mt-6 text-white/70 leading-relaxed max-w-3xl mx-auto">
+            <p class="mt-5 sm:mt-6 text-white/70
+            leading-relaxed text-sm sm:text-base
+            max-w-3xl mx-auto">
                 Request a free digital audit and growth plan.
-                A strategic audit identifies visibility gaps, conversion bottlenecks,
-                and scalable growth opportunities through a structured marketing approach.
+                A strategic audit identifies visibility gaps,
+                conversion bottlenecks, and scalable growth
+                opportunities through a structured marketing approach.
             </p>
 
             <!-- CTA Box -->
-            <div class="mt-14 max-w-3xl mx-auto rounded-3xl
-                border border-white/10 bg-white/[0.04]
-                backdrop-blur-xl p-10 sm:p-12">
+            <div class="mt-10 sm:mt-14 max-w-3xl mx-auto
+            rounded-2xl sm:rounded-3xl
+       
+            p-6 sm:p-10 lg:p-12">
 
-                <h3 class="text-xl sm:text-2xl font-medium mb-4">
+                <h3 class="text-lg sm:text-xl md:text-2xl
+                font-medium mb-3 sm:mb-4">
                     Let’s Build Your Digital Growth Engine Together
                 </h3>
 
-                <p class="text-white/70 leading-[1.75] mb-10">
+                <p class="text-white/70 leading-relaxed
+                text-sm sm:text-base mb-8 sm:mb-10">
                     Techonika partners with businesses ready for structured,
                     measurable digital growth.
                     As one of the best digital marketing services in Noida and
@@ -1634,44 +1663,56 @@
                 </p>
 
                 <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <div class="flex flex-col sm:flex-row
+                items-stretch sm:items-center
+                justify-center gap-3 sm:gap-4">
 
-                    <button @click="$dispatch('open-modal', { to: 'contact' })"
+                    <button
+                        @click="$dispatch('open-modal', { to: 'contact' })"
                         class="inline-flex items-center justify-center gap-2
-                  rounded-xl bg-primary px-8 py-4
-                  text-black font-medium
-                  hover:bg-primary/90 transition">
+                    rounded-xl bg-primary px-6 sm:px-8 py-3 sm:py-4
+                    text-black font-medium
+                    hover:bg-primary/90 transition">
                         <i class="ri-calendar-line"></i>
                         Request Free Consultation
                     </button>
 
-                    <button @click="$dispatch('open-modal', { to: 'audit' })"
+                    <button
+                        @click="$dispatch('open-modal', { to: 'audit' })"
                         class="inline-flex items-center justify-center gap-2
-                  rounded-xl border border-white/20 px-8 py-4
-                  text-white/80 hover:bg-white/[0.05] transition">
+                    rounded-xl border border-white/20
+                    px-6 sm:px-8 py-3 sm:py-4
+                    text-white/80 hover:bg-white/[0.05] transition">
                         <i class="ri-search-line"></i>
                         Get Free Digital Audit
                     </button>
 
                 </div>
-
             </div>
 
             <!-- Trust Signals -->
-            <div class="mt-10 flex flex-wrap justify-center gap-6 text-sm text-white/60">
+            <div class="mt-8 sm:mt-10
+            flex flex-wrap justify-center
+            gap-x-6 gap-y-3
+            text-xs sm:text-sm text-white/60">
+
                 <span class="flex items-center gap-2">
-                    <i class="ri-check-line text-primary"></i> No obligation
+                    <i class="ri-check-line text-primary"></i>
+                    No obligation
                 </span>
+
                 <span class="flex items-center gap-2">
-                    <i class="ri-check-line text-primary"></i> Strategy-first approach
+                    <i class="ri-check-line text-primary"></i>
+                    Strategy-first approach
                 </span>
+
                 <span class="flex items-center gap-2">
-                    <i class="ri-check-line text-primary"></i> Transparent recommendations
+                    <i class="ri-check-line text-primary"></i>
+                    Transparent recommendations
                 </span>
             </div>
 
         </div>
-
     </section>
 
 

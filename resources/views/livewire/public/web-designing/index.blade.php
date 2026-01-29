@@ -7,72 +7,240 @@ professional web designers noida, custom website design noida">
 @endsection
 
 <div>
-    <section class="relative bg-black py-10 overflow-hidden">
-        <!-- Background Glow -->
-        <div class="absolute inset-0">
-            <div class="absolute -top-40 -left-40 w-[600px] h-[600px] 
-                    bg-primary/20 rounded-full blur-[160px]"></div>
-            <div class="absolute bottom-0 right-0 w-[500px] h-[500px] 
-                    bg-white/5 rounded-full blur-[140px]"></div>
+    <section class="relative bg-black text-white overflow-hidden">
+        <!-- Background Glows -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute -top-48 -left-40 w-[650px] h-[650px]
+            bg-primary/25 blur-[180px] rounded-full"></div>
+
+            <div class="absolute bottom-0 right-0 w-[520px] h-[520px]
+            bg-white/5 blur-[160px] rounded-full"></div>
         </div>
 
-        <div class="relative max-w-7xl mx-auto px-6 py-14 md:py-32">
-            <div class="max-w-3xl">
+        <div class="relative px-[10%] mx-auto px-6 py-24 md:py-32">
+            <div class="grid lg:grid-cols-2 gap-14 items-center">
 
-                <!-- Small Label -->
-                <span class="inline-block mb-6 text-sm tracking-widest uppercase
-                         text-white/60">
-                    Website Designing Company in Noida
-                </span>
+                <!-- LEFT CONTENT -->
+                <div>
 
-                <!-- Main Heading -->
-                <h1 class="text-4xl md:text-5xl lg:text-6xl
-                       font-semibold leading-tight text-white">
-                    Focused on
-                    <span class="text-primary font-bold">
-                        Visual Clarity
+                    <!-- Label -->
+                    <span class="inline-block mb-6 text-sm tracking-widest uppercase text-white/60">
+                        Website Designing Company in Noida
                     </span>
-                    and
-                    <span class="text-primary font-bold">
-                        User Experience
-                    </span>
-                </h1>
 
-                <!-- Description -->
-                <p class="mt-8 text-lg md:text-xl text-white/70 leading-relaxed">
-                    Your website is not just a digital address. It is a visual
-                    conversation between your brand and your audience.
-                    <br><br>
-                    As a design-first website designing company in Noida,
-                    <span class="text-white font-medium">Techonika</span> focuses purely on how your
-                    website looks, feels, and communicates with real people.
-                    From layout and spacing to colors, typography, and flow,
-                    every element is crafted to build comfort, trust, and
-                    emotional connection — not confusion.
-                </p>
+                    <!-- Heading -->
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
+                        Website Designing Company in Noida
+                        <span class="text-primary font-bold block mt-2">
+                            Techonika
+                        </span>
+                    </h1>
 
-                <!-- Buttons -->
-                <div class="mt-12 flex flex-wrap gap-4">
-                    <button @click="$dispatch('open-modal', { to: 'contact' })"
-                        class="inline-flex items-center justify-center
-                          px-7 py-3 rounded-full
-                          bg-primary text-black font-medium
-                          hover:bg-primary/90 transition">
-                        Start Your Project
-                    </button>
+                    <!-- Subheading -->
+                    <p class="mt-6 text-xl md:text-2xl text-white/80 font-light leading-relaxed">
+                        Your Partner for
+                        <span class="text-white font-medium">
+                            Smart, SEO-Ready & High-Converting Website Designs
+                        </span>
+                    </p>
 
-                    <a href="{{route('portfolio')}}"
-                        class="inline-flex items-center justify-center
-                          px-7 py-3 rounded-full
-                          border border-white/20
-                          text-white/80 hover:text-white
-                          hover:border-white/40 transition">
-                        Our Design Philosophy
-                    </a>
+                    <!-- Content Blocks -->
+                    <div class="mt-8 space-y-5 text-white/70 leading-relaxed">
+
+                        <p>
+                            Your website is no longer just an online address.
+                            It is your <span class="text-white font-medium">sales tool, brand voice,</span>
+                            and <span class="text-white font-medium">first impression</span> rolled into one.
+                            If you are looking for a website designing company in Noida that builds websites
+                            with purpose, clarity, and results,
+                            <span class="text-white font-medium">Techonika</span> is built for you.
+                        </p>
+
+                        <p>
+                            We help businesses turn ideas into strong digital identities.
+                            At Techonika, every website starts with understanding your audience,
+                            your goals, and how people actually use the web.
+                        </p>
+
+                        <p>
+                            Instead of creating designs that only look good, we focus on
+                            <span class="text-white font-medium">
+                                usability, speed, mobile experience, and SEO-friendly structure.
+                            </span>
+                            This approach helps your website attract visitors, keep them engaged,
+                            and convert them into leads or customers.
+                        </p>
+
+                        <p>
+                            As a trusted website design company in Noida, we work with startups,
+                            growing businesses, and established brands that want a clean, modern,
+                            and high-performing website. Our designs stay simple, professional,
+                            and future-ready so your website continues to support your business
+                            as it grows.
+                        </p>
+
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="mt-12 flex flex-wrap gap-4">
+                        <button
+                            @click="$dispatch('open-modal', { to: 'contact' })"
+                            class="inline-flex items-center justify-center
+                        px-8 py-3 rounded-full
+                        bg-primary text-black font-medium
+                        hover:bg-primary/90 transition">
+                            Start Your Project
+                        </button>
+
+                        <a href="{{ route('portfolio') }}"
+                            class="inline-flex items-center justify-center
+                        px-8 py-3 rounded-full
+                        border border-white/20
+                        text-white/80 hover:text-white
+                        hover:border-white/40 transition">
+                            View Portfolio
+                        </a>
+                    </div>
                 </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                        <img
+                            src="{{asset('images/technology-hologram-indoors_23-2151833348.jpg')}}"
+                            alt="Website Design Services in Noida"
+                            class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Image Glow -->
+                    <div class="absolute -bottom-10 -right-10 w-64 h-64
+                    bg-primary/30 blur-[120px] rounded-full -z-10"></div>
+                </div>
+
             </div>
         </div>
     </section>
+
+    <section class="relative bg-black text-white overflow-hidden border-t border-white/10">
+    <!-- Background Accent -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-1/2 -left-40 -translate-y-1/2
+            w-[520px] h-[520px] bg-primary/20 blur-[180px] rounded-full"></div>
+    </div>
+
+    <div class="relative mx-auto px-[10%] py-24 md:py-32">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+            <!-- LEFT CONTENT -->
+            <div>
+                <span class="inline-block mb-5 text-sm tracking-widest uppercase text-white/60">
+                    Why Choose Techonika
+                </span>
+
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
+                    Why Techonika Is the Best
+                    <span class="text-primary font-bold block mt-2">
+                        Website Designing Company in Noida
+                    </span>
+                </h2>
+
+                <p class="mt-8 text-white/70 leading-relaxed text-lg">
+                    Many companies claim to be the best website design company in Noida,
+                    but very few focus on performance, clarity, and user intent together.
+                    Here’s what makes <span class="text-white font-medium">Techonika</span> different:
+                </p>
+
+                <p class="mt-6 text-white/70 leading-relaxed">
+                    We design with users in mind and optimize with search engines in focus.
+                    This balance helps your website
+                    <span class="text-white font-medium">rank better and perform better.</span>
+                </p>
+            </div>
+
+            <!-- RIGHT FEATURE GRID -->
+            <div class="grid sm:grid-cols-2 gap-6">
+
+                <!-- Card -->
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-10 h-10 flex items-center justify-center
+                            rounded-full bg-primary/15 text-primary">
+                            <i class="ri-focus-3-line text-xl"></i>
+                        </span>
+                        <h4 class="text-lg font-medium">Clear, business-focused design approach</h4>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-10 h-10 flex items-center justify-center
+                            rounded-full bg-primary/15 text-primary">
+                            <i class="ri-seo-line text-xl"></i>
+                        </span>
+                        <h4 class="text-lg font-medium">SEO-Friendly Structure</h4>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-10 h-10 flex items-center justify-center
+                            rounded-full bg-primary/15 text-primary">
+                            <i class="ri-smartphone-line text-xl"></i>
+                        </span>
+                        <h4 class="text-lg font-medium">Mobile-First & Responsive</h4>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-10 h-10 flex items-center justify-center
+                            rounded-full bg-primary/15 text-primary">
+                            <i class="ri-speed-line text-xl"></i>
+                        </span>
+                        <h4 class="text-lg font-medium">Fast Loading & Clean Code</h4>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-10 h-10 flex items-center justify-center
+                            rounded-full bg-primary/15 text-primary">
+                            <i class="ri-settings-3-line text-xl"></i>
+                        </span>
+                        <h4 class="text-lg font-medium">Easy-to-Manage Websites</h4>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-10 h-10 flex items-center justify-center
+                            rounded-full bg-primary/15 text-primary">
+                            <i class="ri-price-tag-3-line text-xl"></i>
+                        </span>
+                        <h4 class="text-lg font-medium">Transparent Pricing</h4>
+                    </div>
+                </div>
+
+                <!-- Highlight Card -->
+                <div class="sm:col-span-2 p-6 rounded-2xl
+                    bg-primary/10 border border-primary/30 backdrop-blur">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="w-10 h-10 flex items-center justify-center
+                            rounded-full bg-primary/20 text-primary">
+                            <i class="ri-customer-service-2-line text-xl"></i>
+                        </span>
+                        <h4 class="text-lg font-medium text-primary">
+                            Dedicated Support After Delivery
+                        </h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
     <section class="relative bg-black py-12 overflow-hidden">
         <!-- Soft Background Accents -->
         <div class="absolute inset-0 pointer-events-none">
