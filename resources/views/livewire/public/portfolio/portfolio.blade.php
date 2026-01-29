@@ -84,33 +84,32 @@
                 <div class="group relative bg-white/5 backdrop-blur-xl
                             border border-white/10 rounded-3xl
                             overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2">
-                   <div
-    x-data="autoManualScroller()"
-    @mouseenter="onEnter"
-    @mouseleave="onLeave"
-    class="relative h-80 overflow-hidden rounded-xl
+                    <div
+                        x-data="autoManualScroller()"
+                        @mouseenter="onEnter"
+                        @mouseleave="onLeave"
+                        class="relative h-80 overflow-hidden rounded-xl
            border border-white/10 bg-black group">
 
-    <div
-        x-ref="container"
-        @scroll="onUserScroll"
-        class="absolute inset-0 overflow-y-auto custom-scroll">
+                        <div
+                            x-ref="container"
+                            @scroll="onUserScroll"
+                            class="absolute inset-0 overflow-y-auto custom-scroll">
 
-        <img
-            x-ref="image"
-            src="{{ $portfolio->image ? asset('storage/' . $portfolio->image) : asset('/images/project-placeholder.jpg') }}"
-            alt="{{ $portfolio->title }}"
-            class="block w-full object-top select-none"
-            draggable="false"
-        />
-    </div>
+                            <img
+                                x-ref="image"
+                                src="{{ $portfolio->image ? asset('storage/' . $portfolio->image) : asset('/images/project-placeholder.jpg') }}"
+                                alt="{{ $portfolio->title }}"
+                                class="block w-full object-top select-none"
+                                draggable="false" />
+                        </div>
 
-    <div
-        class="pointer-events-none absolute inset-0
+                        <div
+                            class="pointer-events-none absolute inset-0
                bg-gradient-to-t from-black/70 via-black/30 to-transparent
                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-    </div>
-</div>
+                        </div>
+                    </div>
 
 
                     <script>
