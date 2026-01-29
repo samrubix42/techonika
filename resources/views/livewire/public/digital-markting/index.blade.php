@@ -1,6 +1,6 @@
 @section('meta')
-<title>Digital Marketing Services | SEO, SMO & Online Marketing Solutions</title>
-<meta name="description" content="Boost your online presence with Technonika digital marketing services. We offer SEO, SMO, PPC, content marketing, and comprehensive online marketing solutions.">
+<title>Best Digital Marketing Agency in Noida | Techonika</title>
+<meta name="description" content="Looking for the best digital marketing agency in Noida? Techonika delivers results-driven SEO, social media, PPC, and content marketing services to grow your business online.">
 <meta name="keywords" content="digital marketing services, SEO services, social media marketing, SMO, PPC advertising, online marketing, content marketing">
 @endsection
 
