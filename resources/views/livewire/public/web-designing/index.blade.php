@@ -17,7 +17,7 @@ professional web designers noida, custom website design noida">
             bg-white/5 blur-[160px] rounded-full"></div>
         </div>
 
-        <div class="relative px-[10%] mx-auto px-6 py-24 md:py-32">
+        <div class="relative max-w-7xl mx-auto py-10 md:py-32">
             <div class="grid lg:grid-cols-2 gap-14 items-center">
 
                 <!-- LEFT CONTENT -->
@@ -71,13 +71,7 @@ professional web designers noida, custom website design noida">
                             and convert them into leads or customers.
                         </p>
 
-                        <p>
-                            As a trusted website design company in Noida, we work with startups,
-                            growing businesses, and established brands that want a clean, modern,
-                            and high-performing website. Our designs stay simple, professional,
-                            and future-ready so your website continues to support your business
-                            as it grows.
-                        </p>
+
 
                     </div>
 
@@ -122,1209 +116,1311 @@ professional web designers noida, custom website design noida">
     </section>
 
     <section class="relative bg-black text-white overflow-hidden border-t border-white/10">
-    <!-- Background Accent -->
-    <div class="absolute inset-0 pointer-events-none">
-        <div class="absolute top-1/2 -left-40 -translate-y-1/2
-            w-[520px] h-[520px] bg-primary/20 blur-[180px] rounded-full"></div>
-    </div>
-
-    <div class="relative mx-auto px-[10%] py-24 md:py-32">
-        <div class="grid lg:grid-cols-2 gap-16 items-start">
-
-            <!-- LEFT CONTENT -->
-            <div>
-                <span class="inline-block mb-5 text-sm tracking-widest uppercase text-white/60">
-                    Why Choose Techonika
-                </span>
-
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
-                    Why Techonika Is the Best
-                    <span class="text-primary font-bold block mt-2">
-                        Website Designing Company in Noida
-                    </span>
-                </h2>
-
-                <p class="mt-8 text-white/70 leading-relaxed text-lg">
-                    Many companies claim to be the best website design company in Noida,
-                    but very few focus on performance, clarity, and user intent together.
-                    Here’s what makes <span class="text-white font-medium">Techonika</span> different:
-                </p>
-
-                <p class="mt-6 text-white/70 leading-relaxed">
-                    We design with users in mind and optimize with search engines in focus.
-                    This balance helps your website
-                    <span class="text-white font-medium">rank better and perform better.</span>
-                </p>
-            </div>
-
-            <!-- RIGHT FEATURE GRID -->
-            <div class="grid sm:grid-cols-2 gap-6">
-
-                <!-- Card -->
-                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
-                    <div class="flex items-center gap-3 mb-3">
-                        <span class="w-10 h-10 flex items-center justify-center
-                            rounded-full bg-primary/15 text-primary">
-                            <i class="ri-focus-3-line text-xl"></i>
-                        </span>
-                        <h4 class="text-lg font-medium">Clear, business-focused design approach</h4>
-                    </div>
-                </div>
-
-                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
-                    <div class="flex items-center gap-3 mb-3">
-                        <span class="w-10 h-10 flex items-center justify-center
-                            rounded-full bg-primary/15 text-primary">
-                            <i class="ri-seo-line text-xl"></i>
-                        </span>
-                        <h4 class="text-lg font-medium">SEO-Friendly Structure</h4>
-                    </div>
-                </div>
-
-                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
-                    <div class="flex items-center gap-3 mb-3">
-                        <span class="w-10 h-10 flex items-center justify-center
-                            rounded-full bg-primary/15 text-primary">
-                            <i class="ri-smartphone-line text-xl"></i>
-                        </span>
-                        <h4 class="text-lg font-medium">Mobile-First & Responsive</h4>
-                    </div>
-                </div>
-
-                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
-                    <div class="flex items-center gap-3 mb-3">
-                        <span class="w-10 h-10 flex items-center justify-center
-                            rounded-full bg-primary/15 text-primary">
-                            <i class="ri-speed-line text-xl"></i>
-                        </span>
-                        <h4 class="text-lg font-medium">Fast Loading & Clean Code</h4>
-                    </div>
-                </div>
-
-                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
-                    <div class="flex items-center gap-3 mb-3">
-                        <span class="w-10 h-10 flex items-center justify-center
-                            rounded-full bg-primary/15 text-primary">
-                            <i class="ri-settings-3-line text-xl"></i>
-                        </span>
-                        <h4 class="text-lg font-medium">Easy-to-Manage Websites</h4>
-                    </div>
-                </div>
-
-                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
-                    <div class="flex items-center gap-3 mb-3">
-                        <span class="w-10 h-10 flex items-center justify-center
-                            rounded-full bg-primary/15 text-primary">
-                            <i class="ri-price-tag-3-line text-xl"></i>
-                        </span>
-                        <h4 class="text-lg font-medium">Transparent Pricing</h4>
-                    </div>
-                </div>
-
-                <!-- Highlight Card -->
-                <div class="sm:col-span-2 p-6 rounded-2xl
-                    bg-primary/10 border border-primary/30 backdrop-blur">
-                    <div class="flex items-center gap-3 mb-3">
-                        <span class="w-10 h-10 flex items-center justify-center
-                            rounded-full bg-primary/20 text-primary">
-                            <i class="ri-customer-service-2-line text-xl"></i>
-                        </span>
-                        <h4 class="text-lg font-medium text-primary">
-                            Dedicated Support After Delivery
-                        </h4>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <section class="relative bg-black py-12 overflow-hidden">
-        <!-- Soft Background Accents -->
+        <!-- Background Accent -->
         <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/2 -left-40 w-[500px] h-[500px]
-                    bg-primary/15 rounded-full blur-[160px]"></div>
-            <div class="absolute -top-32 right-0 w-[420px] h-[420px]
-                    bg-white/5 rounded-full blur-[140px]"></div>
+            <div class="absolute top-1/2 -left-40 -translate-y-1/2
+            w-[520px] h-[520px] bg-primary/20 blur-[180px] rounded-full"></div>
         </div>
 
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div class="relative mx-auto px-[10%] py-10 md:py-16">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
 
                 <!-- LEFT CONTENT -->
                 <div>
-                    <span class="inline-block mb-5 text-sm tracking-widest uppercase
-                             text-white/60">
-                        Why Design Matters
+                    <span class="inline-block mb-5 text-sm tracking-widest uppercase text-white/60">
+                        Why Choose Techonika
                     </span>
 
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl
-                           font-semibold leading-tight text-white">
-                        Why Website Design
-                        <span class="text-primary font-bold">
-                            Matters More Than Ever
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
+                        Why Techonika Is the Best
+                        <span class="text-primary font-bold block mt-2">
+                            Website Designing Company in Noida
                         </span>
                     </h2>
 
-                    <p class="mt-7 text-lg text-white/70 leading-relaxed">
-                        People decide within seconds whether they trust a website.
-                        If the design feels cluttered, outdated, or confusing,
-                        visitors leave without reading a single word.
+                    <p class="mt-8 text-white/70 leading-relaxed text-lg">
+                        Many companies claim to be the best website design company in Noida,
+                        but very few focus on performance, clarity, and user intent together.
+                        Here’s what makes <span class="text-white font-medium">Techonika</span> different:
                     </p>
 
-                    <p class="mt-6 text-lg text-white/70 leading-relaxed">
-                        As a website designing company in Noida,
-                        <span class="text-white font-medium">Techonika</span>
-                        treats design as communication — not decoration.
-                        Every visual choice supports how users think, read,
-                        and feel while navigating your website.
+                    <p class="mt-6 text-white/70 leading-relaxed">
+                        We design with users in mind and optimize with search engines in focus.
+                        This balance helps your website
+                        <span class="text-white font-medium">rank better and perform better.</span>
                     </p>
                 </div>
 
-                <!-- RIGHT GLASS CARD -->
-                <div class="relative">
-                    <div class="bg-white/5 backdrop-blur-xl
-                            border border-white/10
-                            rounded-3xl p-8 md:p-10">
+                <!-- RIGHT FEATURE GRID -->
+                <div class="grid sm:grid-cols-2 gap-6">
 
-                        <h3 class="text-xl font-semibold text-white mb-8">
-                            Strong website design helps you:
-                        </h3>
-
-                        <ul class="space-y-5">
-                            <li class="flex gap-4">
-                                <span class="text-primary font-bold">01</span>
-                                <p class="text-white/80">
-                                    Create a positive first impression
-                                </p>
-                            </li>
-
-                            <li class="flex gap-4">
-                                <span class="text-primary font-bold">02</span>
-                                <p class="text-white/80">
-                                    Communicate professionalism without saying a word
-                                </p>
-                            </li>
-
-                            <li class="flex gap-4">
-                                <span class="text-primary font-bold">03</span>
-                                <p class="text-white/80">
-                                    Guide visitors naturally through your pages
-                                </p>
-                            </li>
-
-                            <li class="flex gap-4">
-                                <span class="text-primary font-bold">04</span>
-                                <p class="text-white/80">
-                                    Make information easier to understand
-                                </p>
-                            </li>
-
-                            <li class="flex gap-4">
-                                <span class="text-primary font-bold">05</span>
-                                <p class="text-white/80">
-                                    Build instant brand credibility
-                                </p>
-                            </li>
-                        </ul>
+                    <!-- Card -->
+                    <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="w-10 h-10 flex items-center justify-center
+                            rounded-full bg-primary/15 text-primary">
+                                <i class="ri-focus-3-line text-xl"></i>
+                            </span>
+                            <h4 class="text-lg font-medium">Clear, business-focused</h4>
+                        </div>
                     </div>
-                </div>
 
+                    <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="w-10 h-10 flex items-center justify-center
+                            rounded-full bg-primary/15 text-primary">
+                                <i class="ri-seo-line text-xl"></i>
+                            </span>
+                            <h4 class="text-lg font-medium">SEO-Friendly Structure</h4>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="w-10 h-10 flex items-center justify-center
+                            rounded-full bg-primary/15 text-primary">
+                                <i class="ri-smartphone-line text-xl"></i>
+                            </span>
+                            <h4 class="text-lg font-medium">Mobile-First & Responsive</h4>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="w-10 h-10 flex items-center justify-center
+                            rounded-full bg-primary/15 text-primary">
+                                <i class="ri-speed-line text-xl"></i>
+                            </span>
+                            <h4 class="text-lg font-medium">Fast Loading & Clean Code</h4>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="w-10 h-10 flex items-center justify-center
+                            rounded-full bg-primary/15 text-primary">
+                                <i class="ri-settings-3-line text-xl"></i>
+                            </span>
+                            <h4 class="text-lg font-medium">Easy-to-Manage Websites</h4>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="w-10 h-10 flex items-center justify-center
+                            rounded-full bg-primary/15 text-primary">
+                                <i class="ri-price-tag-3-line text-xl"></i>
+                            </span>
+                            <h4 class="text-lg font-medium">Transparent Pricing</h4>
+                        </div>
+                    </div>
+
+                    <!-- Highlight Card -->
+                    <div class="sm:col-span-2 p-6 rounded-2xl
+                    bg-primary/10 border border-primary/30 backdrop-blur">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="w-10 h-10 flex items-center justify-center
+                            rounded-full bg-primary/20 text-primary">
+                                <i class="ri-customer-service-2-line text-xl"></i>
+                            </span>
+                            <h4 class="text-lg font-medium text-primary">
+                                Dedicated Support After Delivery
+                            </h4>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
-    <section class="relative bg-black py-12 overflow-hidden">
-        <!-- Soft Ambient Glow -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute -top-32 left-1/3 w-[420px] h-[420px]
-                    bg-primary/12 rounded-full blur-[150px]"></div>
-            <div class="absolute bottom-0 right-0 w-[500px] h-[500px]
-                    bg-white/5 rounded-full blur-[160px]"></div>
+
+
+    <section class="relative bg-black text-white overflow-hidden
+    py-16 sm:py-10 lg:py-28 border-t border-white/10">
+
+        <!-- Soft Background Glow -->
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2
+        w-[600px] h-[300px] bg-primary/15 blur-[200px] rounded-full"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- SECTION INTRO -->
+            <div class="max-w-3xl mb-14 sm:mb-20">
+
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+                font-semibold leading-tight">
+                    Our <span class="text-primary">Website Designing Services</span> in Noida
+                </h2>
+
+                <p class="mt-6 text-white/75 leading-relaxed text-sm sm:text-base">
+                    As a top website designing company in Noida, Techonika offers complete web
+                    design solutions under one roof. Whether you need a simple business website
+                    or a complex web platform, our team delivers with precision and care.
+                </p>
+
+            </div>
+
+            <!-- SERVICES GRID -->
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+                <!-- CARD -->
+                <div class="rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7
+                hover:bg-white/[0.06] transition">
+
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-building-line text-primary text-xl"></i>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-3">
+                        Business Website Design
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        We create professional websites that represent your brand clearly
+                        and build trust. These websites are perfect for service providers,
+                        consultants, and local businesses in Noida.
+                    </p>
+                </div>
+
+                <!-- CARD -->
+                <div class="rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7
+                hover:bg-white/[0.06] transition">
+
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-seo-line text-primary text-xl"></i>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-3">
+                        SEO-Friendly Website Design
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        A good-looking website is not enough. We design websites with
+                        proper heading structure, clean URLs, optimized images,
+                        and fast performance to support SEO from the start.
+                    </p>
+                </div>
+
+                <!-- CARD -->
+                <div class="rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7
+                hover:bg-white/[0.06] transition">
+
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-smartphone-line text-primary text-xl"></i>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-3">
+                        Mobile-First Web Design
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        More than half of users visit websites from mobile devices.
+                        Our designs work smoothly on mobiles, tablets, and desktops
+                        without breaking layouts or slowing down.
+                    </p>
+                </div>
+
+                <!-- CARD -->
+                <div class="rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7
+                hover:bg-white/[0.06] transition">
+
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-layout-line text-primary text-xl"></i>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-3">
+                        UI/UX Focused Design
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        We design layouts that guide users naturally.
+                        Clear navigation, readable content, and strong
+                        call-to-actions help users take the right steps.
+                    </p>
+                </div>
+
+            </div>
+
         </div>
+    </section>
+    <section class="relative bg-black text-white overflow-hidden
+    py-16 sm:py-10 lg:py-28 border-t border-white/10">
 
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- Soft Glow -->
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2
+        w-[650px] h-[320px] bg-primary/15 blur-[220px] rounded-full"></div>
 
-                <!-- LEFT GLASS CARD -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-8 md:p-10">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                    <span class="inline-block mb-4 text-sm tracking-widest uppercase
-                             text-white/60">
-                        Comfort-First Design
-                    </span>
+            <!-- INTRO -->
+            <div class="max-w-3xl mb-14 sm:mb-20">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+                font-semibold leading-tight">
+                    Explore Our <span class="text-primary">Website Design Solutions</span>
+                </h2>
 
-                    <h2 class="text-3xl md:text-4xl font-semibold
-                           leading-tight text-white">
-                        Design That Makes Visitors
-                        <span class="text-primary font-bold">
-                            Feel Comfortable
+                <p class="mt-6 text-white/75 leading-relaxed text-sm sm:text-base">
+                    We offer specialized services for different business needs.
+                    Explore our web design subcategories below:
+                </p>
+            </div>
+
+            <!-- GRID -->
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+                <!-- CARD -->
+                <div class="group rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7
+                hover:bg-white/[0.06] transition">
+
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-shopping-cart-2-line text-primary text-xl"></i>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-2">
+                        Ecommerce Website Designing
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed mb-4">
+                        We design secure and easy-to-use ecommerce websites
+                        that help you sell products online.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2
+                    text-sm text-primary hover:underline">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <!-- CARD -->
+                <div class="group rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7 hover:bg-white/[0.06] transition">
+
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-layout-2-line text-primary text-xl"></i>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-2">
+                        Static Website Designing
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed mb-4">
+                        Simple, fast, and cost-effective static websites
+                        for small businesses and startups.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2
+                    text-sm text-primary hover:underline">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <!-- CARD -->
+                <div class="group rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7 hover:bg-white/[0.06] transition">
+
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-smartphone-line text-primary text-xl"></i>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-2">
+                        Responsive Website Designing
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed mb-4">
+                        Websites that adjust smoothly across all screen sizes
+                        for better user experience.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2
+                    text-sm text-primary hover:underline">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <!-- CARD -->
+                <div class="group rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7 hover:bg-white/[0.06] transition">
+
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-pencil-ruler-2-line text-primary text-xl"></i>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-2">
+                        Custom Web Design
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed mb-4">
+                        Unique website designs built from scratch
+                        based on your brand and goals.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2
+                    text-sm text-primary hover:underline">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <!-- CARD -->
+                <div class="group rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7 hover:bg-white/[0.06] transition">
+
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-angularjs-line text-primary text-xl"></i>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-2">
+                        Angular Website Design
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed mb-4">
+                        Modern and dynamic Angular-based websites
+                        for advanced web applications.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2
+                    text-sm text-primary hover:underline">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <!-- CARD -->
+                <div class="group rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7 hover:bg-white/[0.06] transition">
+
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-palette-line text-primary text-xl"></i>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-2">
+                        Graphic Design
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed mb-4">
+                        Creative graphics, banners, and visuals
+                        that match your website and branding.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2
+                    text-sm text-primary hover:underline">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <!-- CARD -->
+                <div class="group rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7 hover:bg-white/[0.06] transition">
+
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-building-line text-primary text-xl"></i>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-2">
+                        Corporate Website Design
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed mb-4">
+                        Professional corporate websites designed
+                        for credibility and business growth.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2
+                    text-sm text-primary hover:underline">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <!-- CARD -->
+                <div class="group rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7 hover:bg-white/[0.06] transition">
+
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-article-line text-primary text-xl"></i>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-2">
+                        Hindi Website Design
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed mb-4">
+                        Hindi language websites to connect better
+                        with regional and local audiences.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2
+                    text-sm text-primary hover:underline">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <!-- CARD -->
+                <div class="group rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7 hover:bg-white/[0.06] transition">
+
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-database-2-line text-primary text-xl"></i>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-2">
+                        Dynamic Website Design
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed mb-4">
+                        Websites with dynamic content, admin panels,
+                        and database integration.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2
+                    text-sm text-primary hover:underline">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <!-- CARD -->
+                <div class="group rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7 hover:bg-white/[0.06] transition">
+
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-focus-3-line text-primary text-xl"></i>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-2">
+                        Landing Page Design
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed mb-4">
+                        High-converting landing pages for ads,
+                        campaigns, and lead generation.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2
+                    text-sm text-primary hover:underline">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="relative bg-black text-white overflow-hidden
+    py-16 sm:py-10 lg:py-28 border-t border-white/10">
+
+        <!-- Soft Background Glow -->
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2
+        w-[600px] h-[300px] bg-primary/15 blur-[200px] rounded-full"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- SECTION HEADER -->
+            <div class="max-w-3xl mb-14 sm:mb-20">
+
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+                font-semibold leading-tight">
+                    Our <span class="text-primary">Website Design Process</span>
+                </h2>
+
+                <p class="mt-6 text-white/75 leading-relaxed text-sm sm:text-base">
+                    As a trusted web design company in Noida, we follow a clear and simple process
+                    to ensure smooth execution, transparency, and high-quality results.
+                </p>
+            </div>
+
+            <!-- PROCESS GRID -->
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+                <!-- STEP 1 -->
+                <div class="rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7">
+
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="flex h-11 w-11 items-center justify-center
+                        rounded-xl bg-primary/15">
+                            <i class="ri-questionnaire-line text-primary text-xl"></i>
                         </span>
+                        <span class="text-sm font-medium text-primary">
+                            Step 01
+                        </span>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-3">
+                        Requirement Understanding
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        We learn about your business, goals, and target audience to
+                        align the website with real business objectives.
+                    </p>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7">
+
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="flex h-11 w-11 items-center justify-center
+                        rounded-xl bg-primary/15">
+                            <i class="ri-flow-chart text-primary text-xl"></i>
+                        </span>
+                        <span class="text-sm font-medium text-primary">
+                            Step 02
+                        </span>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-3">
+                        Planning & Structure
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        We plan the website pages, layout, navigation, and user flow
+                        to ensure clarity and ease of use.
+                    </p>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7">
+
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="flex h-11 w-11 items-center justify-center
+                        rounded-xl bg-primary/15">
+                            <i class="ri-palette-line text-primary text-xl"></i>
+                        </span>
+                        <span class="text-sm font-medium text-primary">
+                            Step 03
+                        </span>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-3">
+                        Design & UI
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        Clean, modern, and brand-aligned designs that create
+                        a strong first impression.
+                    </p>
+                </div>
+
+                <!-- STEP 4 -->
+                <div class="rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7">
+
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="flex h-11 w-11 items-center justify-center
+                        rounded-xl bg-primary/15">
+                            <i class="ri-code-line text-primary text-xl"></i>
+                        </span>
+                        <span class="text-sm font-medium text-primary">
+                            Step 04
+                        </span>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-3">
+                        Development
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        Fast, secure, and responsive implementation using
+                        clean and scalable code.
+                    </p>
+                </div>
+
+                <!-- STEP 5 -->
+                <div class="rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7">
+
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="flex h-11 w-11 items-center justify-center
+                        rounded-xl bg-primary/15">
+                            <i class="ri-bug-line text-primary text-xl"></i>
+                        </span>
+                        <span class="text-sm font-medium text-primary">
+                            Step 05
+                        </span>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-3">
+                        Testing
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        Speed, mobile compatibility, browser support, and usability
+                        checks before launch.
+                    </p>
+                </div>
+
+                <!-- STEP 6 -->
+                <div class="rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-7">
+
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="flex h-11 w-11 items-center justify-center
+                        rounded-xl bg-primary/15">
+                            <i class="ri-rocket-line text-primary text-xl"></i>
+                        </span>
+                        <span class="text-sm font-medium text-primary">
+                            Step 06
+                        </span>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-3">
+                        Launch & Support
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed">
+                        Smooth website launch with ongoing support
+                        and assistance when needed.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- FOOTNOTE -->
+            <p class="mt-12 text-white/60 text-sm max-w-3xl">
+                This structured process helps us deliver quality websites
+                without delays or confusion.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="relative bg-black text-white overflow-hidden
+    py-16 sm:py-10 lg:py-28 border-t border-white/10">
+
+        <!-- Soft background glow -->
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2
+        w-[600px] h-[300px] bg-primary/15 blur-[200px] rounded-full"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- SECTION HEADER -->
+            <div class="max-w-3xl mb-14 sm:mb-20">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+                font-semibold leading-tight">
+                    Industries <span class="text-primary">We Serve</span>
+                </h2>
+
+                <p class="mt-6 text-white/75 leading-relaxed text-sm sm:text-base">
+                    We have experience working with businesses across multiple industries,
+                    delivering tailored digital solutions that align with industry-specific
+                    goals and customer behavior.
+                </p>
+            </div>
+
+            <!-- INDUSTRIES GRID -->
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+                <!-- Card -->
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04]
+                p-6 sm:p-7 hover:bg-white/[0.06] transition">
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-code-box-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-base font-medium">
+                        IT & Software Companies
+                    </h3>
+                </div>
+
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04]
+                p-6 sm:p-7 hover:bg-white/[0.06] transition">
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-lightbulb-flash-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-base font-medium">
+                        Startups & Entrepreneurs
+                    </h3>
+                </div>
+
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04]
+                p-6 sm:p-7 hover:bg-white/[0.06] transition">
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-heart-pulse-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-base font-medium">
+                        Healthcare & Clinics
+                    </h3>
+                </div>
+
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04]
+                p-6 sm:p-7 hover:bg-white/[0.06] transition">
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-graduation-cap-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-base font-medium">
+                        Education & Coaching Centers
+                    </h3>
+                </div>
+
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04]
+                p-6 sm:p-7 hover:bg-white/[0.06] transition">
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-building-4-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-base font-medium">
+                        Real Estate Companies
+                    </h3>
+                </div>
+
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04]
+                p-6 sm:p-7 hover:bg-white/[0.06] transition">
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-settings-5-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-base font-medium">
+                        Manufacturing Businesses
+                    </h3>
+                </div>
+
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04]
+                p-6 sm:p-7 hover:bg-white/[0.06] transition">
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-shopping-bag-3-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-base font-medium">
+                        E-commerce Brands
+                    </h3>
+                </div>
+
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04]
+                p-6 sm:p-7 hover:bg-white/[0.06] transition">
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-store-2-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-base font-medium">
+                        Local Service Providers
+                    </h3>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="relative bg-black text-white overflow-hidden
+    py-16 sm:py-10 lg:py-28 border-t border-white/10">
+
+        <!-- Soft Background Glow -->
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2
+        w-[600px] h-[300px] bg-primary/15 blur-[200px] rounded-full"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+                <!-- LEFT CONTENT -->
+                <div>
+
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+                    font-semibold leading-tight">
+                        Local Website Designing Company in
+                        <span class="text-primary">Noida You Can Trust</span>
                     </h2>
 
-                    <p class="mt-6 text-lg text-white/70 leading-relaxed">
-                        Good design should never feel loud or overwhelming.
-                        It should quietly guide users and help them move
-                        forward without friction.
+                    <p class="mt-6 text-white/75 leading-relaxed text-sm sm:text-base">
+                        Being a local website design company in Noida gives us an edge.
+                        We understand the local market, competition, and customer behavior
+                        in areas like Noida Extension, Sector 62, Sector 63, and Greater Noida.
                     </p>
+
+                    <p class="mt-4 text-white/75 leading-relaxed text-sm sm:text-base">
+                        Techonika works closely with Noida-based businesses
+                        to help them grow online through practical,
+                        location-aware website strategies.
+                    </p>
+
+                    <!-- BENEFITS LIST -->
+                    <div class="mt-8 grid sm:grid-cols-2 gap-4 text-sm sm:text-base">
+
+                        <div class="flex items-start gap-3">
+                            <span class="mt-1 text-primary">
+                                <i class="ri-map-pin-2-line"></i>
+                            </span>
+                            <span class="text-white/80">
+                                Better local SEO structure
+                            </span>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <span class="mt-1 text-primary">
+                                <i class="ri-file-text-line"></i>
+                            </span>
+                            <span class="text-white/80">
+                                Location-focused content
+                            </span>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <span class="mt-1 text-primary">
+                                <i class="ri-chat-3-line"></i>
+                            </span>
+                            <span class="text-white/80">
+                                Faster communication
+                            </span>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <span class="mt-1 text-primary">
+                                <i class="ri-customer-service-2-line"></i>
+                            </span>
+                            <span class="text-white/80">
+                                Personalized support
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="relative">
+
+                    <div class="relative overflow-hidden rounded-2xl
+                    border border-white/10">
+
+                        <!-- Replace image path -->
+                        <img
+                            src="{{asset('images/business-merger-concept-flat-composition-with-laptop-icons-documents-chat-bubbles-people-key-vector-illustration_98292-8980.jpg')}}"
+                            alt="Local website designing company in Noida"
+                            class="w-full h-full object-cover">
+
+                        <div class="absolute inset-0
+                        bg-gradient-to-t from-black/40 to-transparent"></div>
+                    </div>
+
+                    <!-- Image Accent -->
+                    <div class="absolute -bottom-8 -right-8
+                    w-40 h-40 bg-primary/20 blur-[120px]
+                    rounded-full -z-10"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="relative bg-black text-white overflow-hidden
+    py-16 sm:py-10 lg:py-28 border-t border-white/10">
+
+        <!-- Subtle Background Glow -->
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2
+        w-[600px] h-[300px] bg-primary/15 blur-[200px] rounded-full"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+                <!-- LEFT IMAGE -->
+                <div class="relative">
+
+                    <div class="relative overflow-hidden rounded-2xl
+                    border border-white/10">
+
+                        <!-- Replace image path -->
+                        <img
+                            src="{{asset('images/visual-teenager-reading-book-mobile-phone-educate-learing-online-concept-design-isometric-illustration_1150-37270.jpg')}}"
+                            alt="Why businesses choose Techonika web design company"
+                            class="w-full h-full object-cover">
+
+                        <div class="absolute inset-0
+                        bg-gradient-to-t from-black/45 to-transparent"></div>
+                    </div>
+
+                    <!-- Image Accent -->
+                    <div class="absolute -bottom-8 -left-8
+                    w-40 h-40 bg-primary/20 blur-[120px]
+                    rounded-full -z-10"></div>
+
                 </div>
 
                 <!-- RIGHT CONTENT -->
                 <div>
-                    <p class="text-lg text-white/70 leading-relaxed mb-8">
-                        At <span class="text-white font-medium">Techonika</span>,
-                        we believe users should never have to “figure out”
-                        a website. The design should already make sense the
-                        moment they land on the page.
+
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+                    font-semibold leading-tight">
+                        Why Businesses Choose
+                        <span class="text-primary">Techonika</span>
+                        Over Other Web Design Companies
+                    </h2>
+
+                    <p class="mt-6 text-white/75 leading-relaxed text-sm sm:text-base">
+                        Many competitors focus only on design or only on pricing.
+                        We focus on results.
                     </p>
 
-                    <ul class="space-y-5">
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Feel calm and visually balanced
-                            </p>
-                        </li>
+                    <p class="mt-4 text-white/75 leading-relaxed text-sm sm:text-base">
+                        Where others lack, we deliver:
+                    </p>
 
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Use white space to improve readability
-                            </p>
-                        </li>
+                    <!-- DIFFERENTIATORS -->
+                    <div class="mt-8 space-y-4">
 
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Present information in clear sections
+                        <div class="flex items-start gap-3">
+                            <span class="mt-1 text-primary">
+                                <i class="ri-search-eye-line"></i>
+                            </span>
+                            <p class="text-white/80 text-sm sm:text-base">
+                                Real SEO-ready design instead of just visuals
                             </p>
-                        </li>
+                        </div>
 
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Reduce visual noise and distractions
+                        <div class="flex items-start gap-3">
+                            <span class="mt-1 text-primary">
+                                <i class="ri-route-line"></i>
+                            </span>
+                            <p class="text-white/80 text-sm sm:text-base">
+                                Simple content flow that users understand
                             </p>
-                        </li>
+                        </div>
 
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Make navigation feel effortless and intuitive
+                        <div class="flex items-start gap-3">
+                            <span class="mt-1 text-primary">
+                                <i class="ri-speed-line"></i>
+                            </span>
+                            <p class="text-white/80 text-sm sm:text-base">
+                                Fast websites with performance focus
                             </p>
-                        </li>
-                    </ul>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <span class="mt-1 text-primary">
+                                <i class="ri-customer-service-2-line"></i>
+                            </span>
+                            <p class="text-white/80 text-sm sm:text-base">
+                                Long-term support, not project-only delivery
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <span class="mt-1 text-primary">
+                                <i class="ri-chat-check-line"></i>
+                            </span>
+                            <p class="text-white/80 text-sm sm:text-base">
+                                Clear timelines and honest communication
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- CLOSING LINE -->
+                    <p class="mt-8 text-white/70 leading-relaxed text-sm sm:text-base max-w-xl">
+                        This makes Techonika one of the best web design companies in Noida
+                        for businesses that want sustainable growth.
+                    </p>
+
                 </div>
 
             </div>
+
         </div>
     </section>
-    <section class="relative bg-black py-12 overflow-hidden">
-        <!-- Ambient Background -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/3 -left-32 w-[480px] h-[480px]
-                    bg-primary/12 rounded-full blur-[160px]"></div>
-            <div class="absolute -bottom-40 right-0 w-[520px] h-[520px]
-                    bg-white/5 rounded-full blur-[180px]"></div>
-        </div>
+    <section class="relative bg-black text-white overflow-hidden
+    py-16 sm:py-24 lg:py-28 border-t border-white/10">
 
-        <div class="relative max-w-7xl mx-auto px-6">
+        <!-- Soft background glow -->
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2
+        w-[600px] h-[300px] bg-primary/15 blur-[200px] rounded-full"></div>
 
-            <!-- Heading -->
-            <div class="max-w-3xl mb-16">
-                <span class="inline-block mb-4 text-sm tracking-widest uppercase
-                         text-white/60">
-                    Our Design Philosophy
-                </span>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <h2 class="text-3xl md:text-4xl lg:text-5xl
-                       font-semibold leading-tight text-white">
-                    Simple.
-                    <span class="text-primary font-bold">Human.</span>
-                    Purposeful.
+            <!-- HEADER -->
+            <div class=" mb-14 sm:mb-20">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+                font-semibold leading-tight">
+                    Companies <span class="text-primary">We Have Worked With</span>
                 </h2>
 
-                <p class="mt-6 text-lg text-white/70 leading-relaxed">
-                    Many websites fail because they try to impress instead of connect.
-                    Our design philosophy is built around clarity, empathy, and intention —
-                    so your website feels natural, not forced.
+                <p class="mt-6 text-white/75 leading-relaxed text-sm sm:text-base">
+                    Over the years, Techonika has partnered with businesses of different
+                    sizes and industries. From early-stage startups to well-established
+                    companies, we have helped brands build websites that support
+                    growth and credibility.
+                </p>
+
+                <p class="mt-4 text-white/75 leading-relaxed text-sm sm:text-base">
+                    Our experience across industries allows us to understand
+                    varied user behavior, market expectations,
+                    and business needs.
                 </p>
             </div>
+            <div class="space-y-10">
 
-            <!-- Philosophy Cards -->
-            <div class="grid md:grid-cols-3 gap-8">
+                <!-- ROW 1 (LEFT) -->
+                <div class="relative overflow-hidden">
+                    <div
+                        x-data="{ pause: false }"
+                        class="flex w-max gap-16 animate-marquee-left"
+                        :class="{ 'pause-marquee': pause }"
+                        @mouseenter="pause = true"
+                        @mouseleave="pause = false">
 
-                <!-- Simplicity -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-8">
-
-                    <span class="block mb-4 text-primary font-bold tracking-wide">
-                        01
-                    </span>
-
-                    <h3 class="text-xl font-semibold text-white mb-4">
-                        Simplicity
-                    </h3>
-
-                    <p class="text-white/70 leading-relaxed">
-                        Simple layouts help users focus on what truly matters.
-                        We remove unnecessary elements that distract visitors
-                        from your message and goals.
-                    </p>
+                        <!-- Logos -->
+                        <template x-for="i in 2">
+                            <div class="flex gap-16">
+                                <img src="/clients/6.jpg" class="client-logo" alt="">
+                                <img src="/clients/7.jpg" class="client-logo" alt="">
+                                <img src="/clients/8.jpg" class="client-logo" alt="">
+                                <img src="/clients/9.jpg" class="client-logo" alt="">
+                                <img src="/clients/10.jpg" class="client-logo" alt="">
+                            </div>
+                        </template>
+                    </div>
                 </div>
 
-                <!-- Human-Centered -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-8">
+                <!-- ROW 2 (RIGHT) -->
+                <div class="relative overflow-hidden">
+                    <div
+                        x-data="{ pause: false }"
+                        class="flex w-max gap-16 animate-marquee-right"
+                        :class="{ 'pause-marquee': pause }"
+                        @mouseenter="pause = true"
+                        @mouseleave="pause = false">
 
-                    <span class="block mb-4 text-primary font-bold tracking-wide">
-                        02
-                    </span>
-
-                    <h3 class="text-xl font-semibold text-white mb-4">
-                        Human-Centered Thinking
-                    </h3>
-
-                    <p class="text-white/70 leading-relaxed">
-                        We design for real people, not trends.
-                        Font size, spacing, contrast, and layout are chosen
-                        for comfort, clarity, and accessibility.
-                    </p>
+                        <template x-for="i in 2">
+                            <div class="flex gap-16">
+                                <img src="/clients/11.jpg" class="client-logo" alt="">
+                                <img src="/clients/12.jpg" class="client-logo" alt="">
+                                <img src="/clients/13.jpg" class="client-logo" alt="">
+                                <img src="/clients/14.jpg" class="client-logo" alt="">
+                                <img src="/clients/6.jpg" class="client-logo" alt="">
+                            </div>
+                        </template>
+                    </div>
                 </div>
 
-                <!-- Purpose Driven -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-8">
+                <!-- ROW 3 (LEFT) -->
+                <div class="relative overflow-hidden">
+                    <div
+                        x-data="{ pause: false }"
+                        class="flex w-max gap-16 animate-marquee-left"
+                        :class="{ 'pause-marquee': pause }"
+                        @mouseenter="pause = true"
+                        @mouseleave="pause = false">
 
-                    <span class="block mb-4 text-primary font-bold tracking-wide">
-                        03
-                    </span>
-
-                    <h3 class="text-xl font-semibold text-white mb-4">
-                        Purpose-Driven Design
-                    </h3>
-
-                    <p class="text-white/70 leading-relaxed">
-                        Every section exists for a reason.
-                        Whether it’s a banner, image, or content block,
-                        each element supports a clear step in the user journey.
-                    </p>
+                        <template x-for="i in 2">
+                            <div class="flex gap-16">
+                                <img src="/clients/7.jpg" class="client-logo" alt="">
+                                <img src="/clients/8.jpg" class="client-logo" alt="">
+                                <img src="/clients/9.jpg" class="client-logo" alt="">
+                                <img src="/clients/10.jpg" class="client-logo" alt="">
+                                <img src="/clients/11.jpg" class="client-logo" alt="">
+                            </div>
+                        </template>
+                    </div>
                 </div>
 
             </div>
 
-            <!-- Closing Line -->
-            <div class="max-w-3xl mt-16">
-                <p class="text-lg text-white/70 leading-relaxed">
-                    As a design-focused website designing company in Noida,
-                    <span class="text-white font-medium">Techonika</span>
-                    ensures your website looks intentional — never accidental.
-                </p>
-            </div>
+
+            <style>
+                .client-logo {
+                    height: 56px;
+                    width: auto;
+                    opacity: 0.75;
+                    filter: grayscale(100%);
+                    transition: all 0.3s ease;
+                }
+
+                .client-logo:hover {
+                    opacity: 1;
+                    filter: grayscale(0%);
+                }
+
+                @media (min-width: 640px) {
+                    .client-logo {
+                        height: 90px;
+                    }
+                }
+
+                @keyframes marquee-left {
+                    0% {
+                        transform: translateX(0);
+                    }
+
+                    100% {
+                        transform: translateX(-50%);
+                    }
+                }
+
+                @keyframes marquee-right {
+                    0% {
+                        transform: translateX(-50%);
+                    }
+
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
+
+                .animate-marquee-left {
+                    animation: marquee-left 28s linear infinite;
+                }
+
+                .animate-marquee-right {
+                    animation: marquee-right 32s linear infinite;
+                }
+
+                .pause-marquee {
+                    animation-play-state: paused;
+                }
+            </style>
+
 
         </div>
     </section>
-    <section class="relative bg-black py-12 overflow-hidden">
-        <!-- Subtle Background Glow -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute -top-40 right-1/4 w-[520px] h-[520px]
-                    bg-primary/12 rounded-full blur-[180px]"></div>
-            <div class="absolute bottom-0 -left-32 w-[420px] h-[420px]
-                    bg-white/5 rounded-full blur-[150px]"></div>
-        </div>
 
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
 
-                <!-- LEFT CONTENT -->
-                <div>
-                    <span class="inline-block mb-5 text-sm tracking-widest uppercase
-                             text-white/60">
-                        Brand-Focused Design
-                    </span>
+    <section class="relative bg-black text-white overflow-hidden
+    py-10 sm:py-24 lg:py-28 border-t border-white/10">
 
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl
-                           font-semibold leading-tight text-white">
-                        Design That Reflects
-                        <span class="text-primary font-bold">
-                            Your Brand Identity
-                        </span>
-                    </h2>
+        <!-- Soft background glow -->
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2
+        w-[600px] h-[300px] bg-primary/15 blur-[200px] rounded-full"></div>
 
-                    <p class="mt-7 text-lg text-white/70 leading-relaxed">
-                        Your website should clearly express who you are as a brand.
-                        We design with intention — not templates — so every page
-                        feels aligned, familiar, and authentic.
-                    </p>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                    <p class="mt-6 text-lg text-white/70 leading-relaxed">
-                        When design choices stay consistent across pages,
-                        visitors feel confident navigating your website.
-                        That sense of familiarity builds trust without needing
-                        extra explanation.
-                    </p>
-                </div>
-
-                <!-- RIGHT GLASS CARD -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-8 md:p-10">
-
-                    <h3 class="text-xl font-semibold text-white mb-8">
-                        Our design approach includes:
-                    </h3>
-
-                    <ul class="space-y-5">
-                        <li class="flex items-start gap-4">
-                            <span class="w-2 h-2 mt-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Consistent and intentional color usage
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="w-2 h-2 mt-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Clean, readable typography
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="w-2 h-2 mt-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Visual hierarchy that naturally guides attention
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="w-2 h-2 mt-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Layouts aligned with your brand personality
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="w-2 h-2 mt-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Design consistency across all pages
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="relative bg-black py-12 overflow-hidden">
-        <!-- Soft Mobile-Friendly Glow -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/2 -right-32 w-[420px] h-[420px]
-                    bg-primary/12 rounded-full blur-[150px]"></div>
-            <div class="absolute -bottom-40 left-0 w-[500px] h-[500px]
-                    bg-white/5 rounded-full blur-[180px]"></div>
-        </div>
-
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-
-                <!-- LEFT CONTENT -->
-                <div>
-                    <span class="inline-block mb-5 text-sm tracking-widest uppercase
-                             text-white/60">
-                        Mobile-First Design
-                    </span>
-
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl
-                           font-semibold leading-tight text-white">
-                        Mobile-First
-                        <span class="text-primary font-bold">
-                            Design Experience
-                        </span>
-                    </h2>
-
-                    <p class="mt-7 text-lg text-white/70 leading-relaxed">
-                        Most users experience your website on a phone first.
-                        If the design feels uncomfortable on small screens,
-                        visitors lose interest before they explore further.
-                    </p>
-
-                    <p class="mt-6 text-lg text-white/70 leading-relaxed">
-                        As a website designing company in Noida,
-                        <span class="text-white font-medium">Techonika</span>
-                        treats mobile design as a priority — not an afterthought.
-                        Every layout decision is made with real mobile usage in mind.
-                    </p>
-                </div>
-
-                <!-- RIGHT GLASS CARD -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-8 md:p-10">
-
-                    <h3 class="text-xl font-semibold text-white mb-8">
-                        We design mobile experiences that:
-                    </h3>
-
-                    <ul class="space-y-5">
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Look visually balanced on mobile screens
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Maintain comfortable, readable text sizes
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Keep buttons easy to tap and interact with
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Avoid overcrowded or cramped layouts
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Feel smooth and natural while scrolling
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="relative bg-black py-12 overflow-hidden">
-        <!-- Ambient Background Glow -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute -top-40 left-1/4 w-[520px] h-[520px]
-                    bg-primary/12 rounded-full blur-[180px]"></div>
-            <div class="absolute bottom-0 -right-32 w-[420px] h-[420px]
-                    bg-white/5 rounded-full blur-[150px]"></div>
-        </div>
-
-        <div class="relative max-w-7xl mx-auto px-6">
-
-            <!-- Section Heading -->
-            <div class="max-w-3xl mb-16">
-                <span class="inline-block mb-4 text-sm tracking-widest uppercase
-                         text-white/60">
-                    Our Website Design Expertise
-                </span>
-
-                <h2 class="text-3xl md:text-4xl lg:text-5xl
-                       font-semibold leading-tight text-white">
-                    Types of Website
-                    <span class="text-primary font-bold">
-                        Designs We Create
-                    </span>
+            <!-- SECTION HEADER -->
+            <div class="max-w-3xl mb-14 sm:mb-20">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+                font-semibold leading-tight">
+                    Our <span class="text-primary">Satisfied Clients</span>
                 </h2>
 
-                <p class="mt-6 text-lg text-white/70 leading-relaxed">
-                    We design websites for different business needs while keeping
-                    usability, clarity, and user experience at the center of
-                    every design decision.
+                <p class="mt-6 text-white/75 leading-relaxed text-sm sm:text-base">
+                    Client satisfaction is at the core of everything we do at Techonika.
+                    We believe a successful website is one that works smoothly for both
+                    the business owner and the end user.
+                </p>
+
+                <p class="mt-4 text-white/75 leading-relaxed text-sm sm:text-base">
+                    That is why many of our clients continue working with us for redesigns,
+                    upgrades, and ongoing support.
                 </p>
             </div>
 
-            <!-- Design Types Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- CONTENT GRID -->
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
-                <!-- Business Website -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-8">
-                    <h3 class="text-xl font-semibold text-white mb-4">
-                        Business Website Design
-                    </h3>
-                    <p class="text-white/70 leading-relaxed">
-                        Clean, focused layouts that clearly explain your services
-                        and build confidence with potential customers.
-                    </p>
-                </div>
-
-                <!-- Corporate Website -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-8">
-                    <h3 class="text-xl font-semibold text-white mb-4">
-                        Corporate Website Design
-                    </h3>
-                    <p class="text-white/70 leading-relaxed">
-                        Structured and professional designs that reflect
-                        authority, reliability, and organizational scale.
-                    </p>
-                </div>
-
-                <!-- Startup Website -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-8">
-                    <h3 class="text-xl font-semibold text-white mb-4">
-                        Startup Website Design
-                    </h3>
-                    <p class="text-white/70 leading-relaxed">
-                        Modern, energetic layouts that communicate your story,
-                        value, and vision quickly and clearly.
-                    </p>
-                </div>
-
-                <!-- Service-Based Website -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-8">
-                    <h3 class="text-xl font-semibold text-white mb-4">
-                        Service-Based Website Design
-                    </h3>
-                    <p class="text-white/70 leading-relaxed">
-                        Designs that highlight trust, experience, and make
-                        contacting you effortless for visitors.
-                    </p>
-                </div>
-
-                <!-- Portfolio & Brand -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-8">
-                    <h3 class="text-xl font-semibold text-white mb-4">
-                        Portfolio & Brand Websites
-                    </h3>
-                    <p class="text-white/70 leading-relaxed">
-                        Visually engaging layouts that showcase your work
-                        and brand story without overwhelming the viewer.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <section class="relative bg-black py-14 overflow-hidden">
-        <!-- Elegant Background Glow -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-20 left-1/2 -translate-x-1/2
-                    w-[700px] h-[700px]
-                    bg-primary/10 rounded-full blur-[220px]"></div>
-            <div class="absolute -bottom-40 right-0
-                    w-[520px] h-[520px]
-                    bg-white/5 rounded-full blur-[180px]"></div>
-        </div>
-
-        <div class="relative max-w-7xl mx-auto px-6">
-
-            <!-- Heading -->
-            <div class="max-w-3xl mb-20">
-                <span class="inline-block mb-4 text-sm tracking-widest uppercase text-white/60">
-                    Our Capabilities
-                </span>
-
-                <h2 class="text-3xl md:text-4xl lg:text-5xl
-                       font-semibold leading-tight text-white">
-                    Types of Website
-                    <span class="text-primary font-bold">
-                        Designs We Create
-                    </span>
-                </h2>
-
-                <p class="mt-6 text-lg text-white/70 leading-relaxed">
-                    We design websites for different business needs while keeping
-                    usability, clarity, and user experience at the center of
-                    every decision.
-                </p>
-            </div>
-
-            <!-- Cards -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
-
-                <!-- Card -->
-                <div class="group bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-9
-                        hover:border-white/25
-                        hover:-translate-y-1
-                        transition-all duration-300">
-
-                    <h3 class="text-xl font-semibold text-white mb-4">
-                        Business Website Design
-                    </h3>
-
-                    <p class="text-white/70 leading-relaxed">
-                        Clean and focused layouts that clearly explain your
-                        services, establish credibility, and guide visitors
-                        toward action.
-                    </p>
-                </div>
-
-                <!-- Card -->
-                <div class="group bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-9
-                        hover:border-white/25
-                        hover:-translate-y-1
-                        transition-all duration-300">
-
-                    <h3 class="text-xl font-semibold text-white mb-4">
-                        Corporate Website Design
-                    </h3>
-
-                    <p class="text-white/70 leading-relaxed">
-                        Structured, professional designs that communicate
-                        authority, reliability, and organizational scale.
-                    </p>
-                </div>
-
-                <!-- Card -->
-                <div class="group bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-9
-                        hover:border-white/25
-                        hover:-translate-y-1
-                        transition-all duration-300">
-
-                    <h3 class="text-xl font-semibold text-white mb-4">
-                        Startup Website Design
-                    </h3>
-
-                    <p class="text-white/70 leading-relaxed">
-                        Modern and energetic designs that tell your story
-                        quickly, clearly, and with confidence.
-                    </p>
-                </div>
-
-                <!-- Card -->
-                <div class="group bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-9
-                        hover:border-white/25
-                        hover:-translate-y-1
-                        transition-all duration-300">
-
-                    <h3 class="text-xl font-semibold text-white mb-4">
-                        Service-Based Website Design
-                    </h3>
-
-                    <p class="text-white/70 leading-relaxed">
-                        Designs that highlight trust, expertise, and make
-                        it easy for visitors to contact you.
-                    </p>
-                </div>
-
-                <!-- Card -->
-                <div class="group bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-9
-                        hover:border-white/25
-                        hover:-translate-y-1
-                        transition-all duration-300">
-
-                    <h3 class="text-xl font-semibold text-white mb-4">
-                        Portfolio & Brand Websites
-                    </h3>
-
-                    <p class="text-white/70 leading-relaxed">
-                        Visually engaging layouts that showcase your work
-                        and brand personality without overwhelming users.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="relative bg-black py-14 overflow-hidden">
-        <!-- Soft Transformation Glow -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute -top-40 left-0 w-[520px] h-[520px]
-                    bg-primary/12 rounded-full blur-[200px]"></div>
-            <div class="absolute bottom-0 right-1/4 w-[460px] h-[460px]
-                    bg-white/5 rounded-full blur-[160px]"></div>
-        </div>
-
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-
-                <!-- LEFT CONTENT -->
+                <!-- LEFT : VALUES -->
                 <div>
-                    <span class="inline-block mb-5 text-sm tracking-widest uppercase
-                             text-white/60">
-                        Website Redesign
-                    </span>
 
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl
-                           font-semibold leading-tight text-white">
-                        Redesigning Websites for
-                        <span class="text-primary font-bold">
-                            Better Visual Impact
-                        </span>
-                    </h2>
-
-                    <p class="mt-7 text-lg text-white/70 leading-relaxed">
-                        If your current website feels outdated, cluttered, or
-                        visually heavy, a thoughtful redesign can completely
-                        change how people perceive your brand.
-                    </p>
-
-                    <p class="mt-6 text-lg text-white/70 leading-relaxed">
-                        At <span class="text-white font-medium">Techonika</span>,
-                        we don’t just refresh visuals — we simplify, clarify,
-                        and refine your digital presence so it feels modern,
-                        confident, and comfortable to use.
-                    </p>
-                </div>
-
-                <!-- RIGHT GLASS CARD -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-8 md:p-10">
-
-                    <h3 class="text-xl font-semibold text-white mb-8">
-                        Our redesign approach focuses on:
+                    <h3 class="text-lg sm:text-xl font-medium mb-6">
+                        Our clients value us for:
                     </h3>
 
-                    <ul class="space-y-5">
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Cleaning up cluttered and confusing layouts
-                            </p>
-                        </li>
+                    <div class="space-y-4 text-sm sm:text-base">
 
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Improving visual hierarchy and content flow
-                            </p>
-                        </li>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-chat-check-line text-primary mt-1"></i>
+                            <span class="text-white/80">
+                                Clear communication and regular updates
+                            </span>
+                        </div>
 
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Updating typography and spacing for clarity
-                            </p>
-                        </li>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-layout-line text-primary mt-1"></i>
+                            <span class="text-white/80">
+                                Simple and easy-to-use website designs
+                            </span>
+                        </div>
 
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Making the design feel lighter and more modern
-                            </p>
-                        </li>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-time-line text-primary mt-1"></i>
+                            <span class="text-white/80">
+                                On-time project delivery
+                            </span>
+                        </div>
 
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Enhancing overall user comfort and usability
-                            </p>
-                        </li>
-                    </ul>
+                        <div class="flex items-start gap-3">
+                            <i class="ri-lightbulb-flash-line text-primary mt-1"></i>
+                            <span class="text-white/80">
+                                Honest guidance and practical suggestions
+                            </span>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <i class="ri-customer-service-2-line text-primary mt-1"></i>
+                            <span class="text-white/80">
+                                Reliable post-launch support
+                            </span>
+                        </div>
+
+                    </div>
                 </div>
 
-            </div>
+                <!-- RIGHT : TRUST MESSAGE -->
+                <div class="rounded-2xl border border-white/10
+                bg-white/[0.04] p-6 sm:p-8 lg:p-10 backdrop-blur-xl">
 
-            <!-- Closing Statement -->
-            <div class="max-w-3xl mt-16">
-                <p class="text-lg text-white/70 leading-relaxed">
-                    As a trusted website designing company in Noida,
-                    <span class="text-white font-medium">Techonika</span>
-                    transforms visually tired websites into clean,
-                    confident digital spaces that feel intentional
-                    from the very first scroll.
-                </p>
-            </div>
+                    <p class="text-white/75 leading-relaxed text-sm sm:text-base mb-6">
+                        Most of our new projects come through referrals and repeat clients.
+                        This trust reflects our commitment to quality work and long-term
+                        relationships.
+                    </p>
 
-        </div>
-    </section>
-    <section class="relative bg-black py-14 overflow-hidden">
-        <!-- Soft Continuity Glow -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/2 -left-40 w-[520px] h-[520px]
-                    bg-primary/10 rounded-full blur-[200px]"></div>
-            <div class="absolute -bottom-40 right-0 w-[480px] h-[480px]
-                    bg-white/5 rounded-full blur-[180px]"></div>
-        </div>
+                    <p class="text-white/75 leading-relaxed text-sm sm:text-base">
+                        When businesses choose Techonika as their website designing company
+                        in Noida, they choose a partner focused on results,
+                        not just delivery.
+                    </p>
 
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-
-                <!-- LEFT CONTENT -->
-                <div>
-                    <span class="inline-block mb-5 text-sm tracking-widest uppercase
-                             text-white/60">
-                        Ongoing Design Support
-                    </span>
-
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl
-                           font-semibold leading-tight text-white">
-                        Design Support and
-                        <span class="text-primary font-bold">
-                            Visual Improvements Over Time
+                    <!-- Trust Highlights -->
+                    <div class="mt-8 flex flex-wrap gap-4 text-sm text-white/60">
+                        <span class="flex items-center gap-2">
+                            <i class="ri-check-line text-primary"></i>
+                            Long-term partnerships
                         </span>
-                    </h2>
-
-                    <p class="mt-7 text-lg text-white/70 leading-relaxed">
-                        Design needs evolve as your business grows.
-                        Your website should continue to feel relevant,
-                        polished, and aligned with your brand — not stuck
-                        in the past.
-                    </p>
-
-                    <p class="mt-6 text-lg text-white/70 leading-relaxed">
-                        At <span class="text-white font-medium">Techonika</span>,
-                        we provide ongoing design support so your website
-                        improves naturally over time, without losing its
-                        visual consistency or clarity.
-                    </p>
-                </div>
-
-                <!-- RIGHT GLASS CARD -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-8 md:p-10">
-
-                    <h3 class="text-xl font-semibold text-white mb-8">
-                        Our design support includes:
-                    </h3>
-
-                    <ul class="space-y-5">
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Layout refinements to improve flow and clarity
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Visual consistency improvements across pages
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Content alignment and spacing updates
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Section-level redesigns when needed
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Brand refresh adjustments as your identity evolves
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <!-- Closing Statement -->
-            <div class="max-w-3xl mt-16">
-                <p class="text-lg text-white/70 leading-relaxed">
-                    We stay aligned with your brand as it grows —
-                    ensuring your website continues to feel intentional,
-                    consistent, and visually confident over time.
-                </p>
-            </div>
-
-        </div>
-    </section>
-    <section class="relative bg-black py-14 overflow-hidden">
-        <!-- Trust-Oriented Background Glow -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute -top-40 left-1/3 w-[520px] h-[520px]
-                    bg-primary/10 rounded-full blur-[200px]"></div>
-            <div class="absolute bottom-0 -right-32 w-[420px] h-[420px]
-                    bg-white/5 rounded-full blur-[160px]"></div>
-        </div>
-
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-
-                <!-- LEFT CONTENT -->
-                <div>
-                    <span class="inline-block mb-5 text-sm tracking-widest uppercase
-                             text-white/60">
-                        Why Choose Techonika
-                    </span>
-
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl
-                           font-semibold leading-tight text-white">
-                        Why Clients Choose
-                        <span class="text-primary font-bold">
-                            Techonika
+                        <span class="flex items-center gap-2">
+                            <i class="ri-check-line text-primary"></i>
+                            Repeat clients
                         </span>
-                        for Website Design
-                    </h2>
+                        <span class="flex items-center gap-2">
+                            <i class="ri-check-line text-primary"></i>
+                            Referral-driven growth
+                        </span>
+                    </div>
 
-                    <p class="mt-7 text-lg text-white/70 leading-relaxed">
-                        Clients choose Techonika because we listen before we design.
-                        We value clarity over trends and usability over decoration —
-                        so the final result feels natural, intentional, and easy to use.
-                    </p>
-
-                    <p class="mt-6 text-lg text-white/70 leading-relaxed">
-                        Our design approach is thoughtful and grounded in real user
-                        behavior, ensuring websites feel professional without
-                        feeling cold or impersonal.
-                    </p>
-                </div>
-
-                <!-- RIGHT GLASS CARD -->
-                <div class="bg-white/5 backdrop-blur-xl
-                        border border-white/10
-                        rounded-3xl p-8 md:p-10">
-
-                    <h3 class="text-xl font-semibold text-white mb-8">
-                        Businesses trust us for:
-                    </h3>
-
-                    <ul class="space-y-5">
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Thoughtful design decisions, not guesswork
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Clean, readable layouts that respect users
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Honest and transparent communication
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Design that respects real user behavior
-                            </p>
-                        </li>
-
-                        <li class="flex items-start gap-4">
-                            <span class="mt-1 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80">
-                                Long-term visual consistency and care
-                            </p>
-                        </li>
-                    </ul>
                 </div>
 
             </div>
 
-            <!-- Closing Line -->
-            <div class="max-w-3xl mt-16">
-                <p class="text-lg text-white/70 leading-relaxed">
-                    We design websites that feel professional —
-                    without feeling cold, complicated, or disconnected
-                    from the people using them.
-                </p>
-            </div>
-
         </div>
     </section>
-    <section class="relative bg-black py-32 overflow-hidden">
-        <!-- Centered Confidence Glow -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                    w-[720px] h-[720px]
-                    bg-primary/15 rounded-full blur-[220px]"></div>
-        </div>
 
-        <div class="relative max-w-4xl mx-auto px-6 text-center">
-
-            <span class="inline-block mb-6 text-sm tracking-widest uppercase
-                     text-white/60">
-                Final Thoughts
-            </span>
-
-            <h2 class="text-3xl md:text-4xl lg:text-5xl
-                   font-semibold leading-tight text-white">
-                Let’s Design a Website That
-                <span class="text-primary font-bold">
-                    Feels Right
-                </span>
-            </h2>
-
-            <p class="mt-8 text-lg md:text-xl text-white/70 leading-relaxed">
-                If you are looking for a website designing company in Noida
-                that focuses purely on design quality, user comfort, and
-                brand clarity, <span class="text-white font-medium">Techonika</span>
-                is ready to help.
-            </p>
-
-            <!-- Design Philosophy Lines -->
-            <div class="mt-12 space-y-3 text-lg md:text-xl text-white/80">
-                <p>We do not chase trends.</p>
-                <p>We design for people.</p>
-                <p>We create websites that feel easy to use and hard to forget.</p>
-            </div>
-
-            <p class="mt-10 text-lg text-white/70 leading-relaxed">
-                Let’s design a website that represents your brand the right way —
-                visually, emotionally, and confidently.
-            </p>
-
-            <!-- CTA Buttons -->
-            <div class="mt-14 flex flex-wrap justify-center gap-4">
-                <button @click="$dispatch('open-modal', { to: 'contact' })"
-                    class="inline-flex items-center justify-center
-                      px-8 py-3 rounded-full
-                      bg-primary text-black font-medium
-                      hover:bg-primary/90 transition">
-                    Start Your Website Design
-                </button>
-
-                <a href="{{route('portfolio')}}"
-                    class="inline-flex items-center justify-center
-                      px-8 py-3 rounded-full
-                      border border-white/20
-                      text-white/80 hover:text-white
-                      hover:border-white/40 transition">
-                    View Our Design Approach
-                </a>
-            </div>
-
-        </div>
-    </section>
-    <section class="relative bg-black py-14 overflow-hidden">
+    <section class="relative bg-black py-10 overflow-hidden border-t border-white/10">
         <!-- Soft Background Glow -->
         <div class="absolute inset-0 pointer-events-none">
             <div class="absolute -top-40 left-1/3 w-[520px] h-[520px]
-                    bg-primary/10 rounded-full blur-[200px]"></div>
+                bg-primary/10 rounded-full blur-[200px]"></div>
             <div class="absolute bottom-0 -right-32 w-[420px] h-[420px]
-                    bg-white/5 rounded-full blur-[160px]"></div>
+                bg-white/5 rounded-full blur-[160px]"></div>
         </div>
 
         <div class="relative max-w-4xl mx-auto px-6">
@@ -1336,7 +1432,7 @@ professional web designers noida, custom website design noida">
                 </span>
 
                 <h2 class="text-3xl md:text-4xl lg:text-5xl
-                       font-semibold leading-tight text-white">
+                   font-semibold leading-tight text-white">
                     Frequently Asked
                     <span class="text-primary font-bold">
                         Questions
@@ -1351,133 +1447,178 @@ professional web designers noida, custom website design noida">
             <!-- FAQ List -->
             <div x-data="{ active: null }" class="space-y-6">
 
-                <!-- FAQ ITEM 1 -->
+                <!-- FAQ 1 -->
                 <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl">
-                    <button
-                        @click="active === 1 ? active = null : active = 1"
-                        class="w-full flex items-center justify-between
-                           px-6 py-5 text-left">
-
+                    <button @click="active === 1 ? active = null : active = 1"
+                        class="w-full flex items-center justify-between px-6 py-5 text-left">
                         <span class="text-lg font-medium text-white">
-                            Why should I choose a website designing company in Noida for my business?
+                            How much does website designing cost in Noida?
                         </span>
-
-                        <span class="text-primary text-2xl"
-                            x-text="active === 1 ? '−' : '+'"></span>
+                        <span class="text-primary text-2xl" x-text="active === 1 ? '−' : '+'"></span>
                     </button>
 
-                    <div x-show="active === 1"
-                        x-collapse
+                    <div x-show="active === 1" x-collapse
                         class="px-6 pb-6 text-white/70 leading-relaxed">
-                        Choosing a website designing company in Noida helps you work
-                        with a team that understands local businesses and customer
-                        behavior. We design websites that match your business needs,
-                        stay easy to use, and help you reach more people online
-                        without confusion.
+                        The cost depends on the type of website, required features,
+                        and number of pages. We offer flexible pricing options
+                        based on your specific business needs.
                     </div>
                 </div>
 
-                <!-- FAQ ITEM 2 -->
+                <!-- FAQ 2 -->
                 <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl">
-                    <button
-                        @click="active === 2 ? active = null : active = 2"
-                        class="w-full flex items-center justify-between
-                           px-6 py-5 text-left">
-
+                    <button @click="active === 2 ? active = null : active = 2"
+                        class="w-full flex items-center justify-between px-6 py-5 text-left">
                         <span class="text-lg font-medium text-white">
                             How long does it take to design a website?
                         </span>
-
-                        <span class="text-primary text-2xl"
-                            x-text="active === 2 ? '−' : '+'"></span>
+                        <span class="text-primary text-2xl" x-text="active === 2 ? '−' : '+'"></span>
                     </button>
 
-                    <div x-show="active === 2"
-                        x-collapse
+                    <div x-show="active === 2" x-collapse
                         class="px-6 pb-6 text-white/70 leading-relaxed">
-                        The timeline depends on the size and type of your website.
-                        A simple business website usually takes two to four weeks,
-                        while larger or more complex websites may take longer.
-                        We always share a clear timeline before starting the work.
+                        A basic website usually takes 7–15 working days.
+                        More complex websites may take longer depending on
+                        functionality and design requirements.
                     </div>
                 </div>
 
-                <!-- FAQ ITEM 3 -->
+                <!-- FAQ 3 -->
                 <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl">
-                    <button
-                        @click="active === 3 ? active = null : active = 3"
-                        class="w-full flex items-center justify-between
-                           px-6 py-5 text-left">
-
+                    <button @click="active === 3 ? active = null : active = 3"
+                        class="w-full flex items-center justify-between px-6 py-5 text-left">
                         <span class="text-lg font-medium text-white">
-                            Will my website work properly on mobile phones and tablets?
+                            Will my website be mobile-friendly?
                         </span>
-
-                        <span class="text-primary text-2xl"
-                            x-text="active === 3 ? '−' : '+'"></span>
+                        <span class="text-primary text-2xl" x-text="active === 3 ? '−' : '+'"></span>
                     </button>
 
-                    <div x-show="active === 3"
-                        x-collapse
+                    <div x-show="active === 3" x-collapse
                         class="px-6 pb-6 text-white/70 leading-relaxed">
-                        Yes. Every website we design works smoothly on mobiles,
-                        tablets, and desktops. We test your website across
-                        different screen sizes to ensure a comfortable experience
-                        on all devices.
+                        Yes. All our websites are fully responsive and
+                        mobile-friendly, ensuring smooth performance
+                        across mobiles, tablets, and desktops.
                     </div>
                 </div>
 
-                <!-- FAQ ITEM 4 -->
+                <!-- FAQ 4 -->
                 <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl">
-                    <button
-                        @click="active === 4 ? active = null : active = 4"
-                        class="w-full flex items-center justify-between
-                           px-6 py-5 text-left">
-
+                    <button @click="active === 4 ? active = null : active = 4"
+                        class="w-full flex items-center justify-between px-6 py-5 text-left">
                         <span class="text-lg font-medium text-white">
-                            Can you redesign my old or existing website?
+                            Do you provide SEO-friendly website design?
                         </span>
-
-                        <span class="text-primary text-2xl"
-                            x-text="active === 4 ? '−' : '+'"></span>
+                        <span class="text-primary text-2xl" x-text="active === 4 ? '−' : '+'"></span>
                     </button>
 
-                    <div x-show="active === 4"
-                        x-collapse
+                    <div x-show="active === 4" x-collapse
                         class="px-6 pb-6 text-white/70 leading-relaxed">
-                        Yes, we can redesign your existing website to make it
-                        look modern and work better. We improve layout, speed,
-                        and content flow so visitors can find information easily
-                        and stay longer on your site.
+                        Yes. We follow SEO best practices during design and
+                        development, including clean structure,
+                        optimized images, and fast performance.
                     </div>
                 </div>
 
-                <!-- FAQ ITEM 5 -->
+                <!-- FAQ 5 -->
                 <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl">
-                    <button
-                        @click="active === 5 ? active = null : active = 5"
-                        class="w-full flex items-center justify-between
-                           px-6 py-5 text-left">
-
+                    <button @click="active === 5 ? active = null : active = 5"
+                        class="w-full flex items-center justify-between px-6 py-5 text-left">
                         <span class="text-lg font-medium text-white">
-                            Will I be able to update my website content myself?
+                            Can you redesign my existing website?
                         </span>
-
-                        <span class="text-primary text-2xl"
-                            x-text="active === 5 ? '−' : '+'"></span>
+                        <span class="text-primary text-2xl" x-text="active === 5 ? '−' : '+'"></span>
                     </button>
 
-                    <div x-show="active === 5"
-                        x-collapse
+                    <div x-show="active === 5" x-collapse
                         class="px-6 pb-6 text-white/70 leading-relaxed">
-                        Yes. We design websites that are easy to manage.
-                        You can update text, images, and basic content without
-                        technical knowledge. If you ever need help, our support
-                        team is always available.
+                        Yes. We redesign old or poorly performing websites
+                        to improve design, speed, usability,
+                        and overall performance.
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl">
+                    <button @click="active === 6 ? active = null : active = 6"
+                        class="w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="text-lg font-medium text-white">
+                            Do you offer website maintenance support?
+                        </span>
+                        <span class="text-primary text-2xl" x-text="active === 6 ? '−' : '+'"></span>
+                    </button>
+
+                    <div x-show="active === 6" x-collapse
+                        class="px-6 pb-6 text-white/70 leading-relaxed">
+                        Yes. We provide ongoing website maintenance and
+                        support plans to keep your website
+                        secure, updated, and running smoothly.
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl">
+                    <button @click="active === 7 ? active = null : active = 7"
+                        class="w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="text-lg font-medium text-white">
+                            Why should I choose Techonika as my website designing company in Noida?
+                        </span>
+                        <span class="text-primary text-2xl" x-text="active === 7 ? '−' : '+'"></span>
+                    </button>
+
+                    <div x-show="active === 7" x-collapse
+                        class="px-6 pb-6 text-white/70 leading-relaxed">
+                        Because we focus on clarity, performance,
+                        SEO best practices, and long-term
+                        business growth — not just visual design.
                     </div>
                 </div>
 
             </div>
+        </div>
+    </section>
+
+    <section class="relative bg-black text-white py-14 sm:py-20 border-t border-white/10 overflow-hidden">
+
+        <!-- Soft CTA Glow -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute -top-32 left-1/2 -translate-x-1/2
+            w-[600px] h-[300px] bg-primary/20 blur-[220px] rounded-full"></div>
+        </div>
+
+        <div class="relative max-w-5xl mx-auto px-6 text-center">
+
+            <!-- Headline -->
+            <h2 class="text-2xl sm:text-3xl md:text-4xl
+            font-semibold leading-tight">
+                Get Started With
+                <span class="text-primary">Techonika Today</span>
+            </h2>
+
+            <!-- Copy -->
+            <p class="mt-5 text-white/75 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+                If you want a reliable, professional, and growth-driven
+                website designing company in Noida, Techonika is ready to help.
+                Let’s build a website that works for your business,
+                not just looks good.
+            </p>
+
+            <!-- CTA Button -->
+            <div class="mt-8">
+                <button
+                    @click="$dispatch('open-modal', { to: 'contact' })"
+                    class="inline-flex items-center justify-center
+                px-8 sm:px-10 py-4 rounded-xl
+                bg-primary text-black font-medium
+                hover:bg-primary/90 transition">
+                    Contact Techonika Today
+                </button>
+            </div>
+
+            <!-- Trust Line -->
+            <p class="mt-6 text-xs sm:text-sm text-white/60">
+                Take the first step towards a stronger online presence
+            </p>
+
         </div>
     </section>
 
