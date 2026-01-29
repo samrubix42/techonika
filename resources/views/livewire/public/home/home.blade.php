@@ -1530,11 +1530,11 @@
                         <span>MERN Stack</span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/laravel.png')}}" alt="">
+                        <img class="w-auto h-9" src="{{asset('images/tech/Laravel.png')}}" alt="">
                         <span>Laravel</span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/livewire.png')}}" alt="">
+                        <img class="w-auto h-9" src="{{asset('images/tech/Livewire.png')}}" alt="">
                         <span>Livewire</span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
