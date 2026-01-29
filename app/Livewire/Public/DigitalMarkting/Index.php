@@ -33,7 +33,6 @@ class Index extends Component
     {
         $validated = $this->validate();
 
-
         $response = Http::withOptions([
             'verify'  => app()->environment('local') ? false : true,
             'timeout' => 10

@@ -1456,13 +1456,15 @@
 
                 <!-- BUTTON -->
                 <template x-for="item in [
+                { key:'branding', label:'Branding/Graphic Design', icon:'ri-brush-line' },
                 { key:'digital', label:'Digital Marketing', icon:'ri-megaphone-line' },
                 { key:'fullstack', label:'Full Stack & Frameworks', icon:'ri-stack-line' },
                 { key:'backend', label:'Backend & Frontend', icon:'ri-code-box-line' },
                 { key:'ecommerce', label:'eCommerce & CMS', icon:'ri-shopping-cart-line' },
                 { key:'mobile', label:'Mobile App Development', icon:'ri-smartphone-line' },
                 { key:'devops', label:'DevOps&Cloud', icon:'ri-settings-3-line' },
-                { key:'branding', label:' Online Branding (Brand Identity)', icon:'ri-brush-line' }
+                { key:'testing', label:'Testing/QA', icon:'ri-bug-line' }
+
             ]">
                     <button
                         @click="tab=item.key"
@@ -1526,11 +1528,11 @@
                         <span>MEAN Stack</span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white flex items-center gap-4 px-4 py-3">
-                        <img class="w-auto h-10 rounded-full " src="{{asset('images/icons/mern.png')}}" alt="">
+                        <img class="w-auto h-10 rounded-full" src="{{asset('images/icons/mern.png')}}" alt="">
                         <span>MERN Stack</span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/Laravel.png')}}" alt="">
+                        <img class="w-auto h-9" src="{{asset('images/tech/laravel.png')}}" alt="">
                         <span>Laravel</span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
@@ -1665,41 +1667,56 @@
                 <div x-show="tab==='branding'" x-transition class="grid sm:grid-cols-2 gap-6">
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
                         <img class="w-auto h-9" src="{{asset('images/icons/illustrator.png')}}" alt="">
-                        <span>Logo Designing
+                        <span>Logo Design
                         </span>
 
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/icons/font-design.png')}}" alt="">
-                        <span>Typography
+                        <img class="w-auto h-9 mt-2" src="{{asset('images/icons/branding.png')}}" alt="">
+                        <span>Brand Identity
                         </span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
                         <img class="w-auto h-9" src="{{asset('images/icons/card.png')}}" alt="">
-                        <span>Visiting Card Designing
+                        <span>Visiting Card Design
+                        </span>
+                    </div>
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/icons/note.png')}}" alt="">
+                        <span>Letterhead Design
                         </span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
                         <img class="w-auto h-9" src="{{asset('images/icons/solution.png')}}" alt="">
-                        <span>Company Profile Designing
+                        <span>Company Profile Design
+                        </span>
+                    </div>
+
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/icons/product-design.png')}}" alt="">
+                        <span>Packaging Design
                         </span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
                         <img class="w-auto h-9" src="{{asset('images/icons/cloth.png')}}" alt="">
-                        <span>Brand patterns & graphic elements
+                        <span>Banner/Poster Design
                         </span>
+                    </div>
+
+
+                </div>
+                <div x-show="tab==='testing'" x-transition class="grid sm:grid-cols-2 gap-6">
+                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                        <img class="w-auto h-9" src="{{asset('images/icons/hand.png')}}" alt="">
+                        <span>Manual Testing
+                        </span>
+
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/icons/product-design.png')}}" alt="">
-                        <span>Package Designing
+                        <img class="w-auto h-9 mt-2" src="{{asset('images/icons/effective.png')}}" alt="">
+                        <span>Automation Testing
                         </span>
                     </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/icons/video.png')}}" alt="">
-                        <span>2D Video Explainer
-                        </span>
-                    </div>
-                    
                 </div>
 
             </div>

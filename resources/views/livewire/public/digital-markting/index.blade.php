@@ -148,13 +148,32 @@
                     </div>
 
                     <script>
-                        document.addEventListener('livewire:navigated', () => {
+                        document.addEventListener('DOMContentLoaded', () => {
 
                             let widgetId = null;
                             let rendered = false;
+                            const TURNSTILE_SRC = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+
+                            function ensureScriptLoaded(cb) {
+                                if (window.turnstile) return cb && cb();
+
+                                let script = document.querySelector('script[src="' + TURNSTILE_SRC + '"]');
+                                if (!script) {
+                                    script = document.createElement('script');
+                                    script.src = TURNSTILE_SRC;
+                                    script.async = true;
+                                    script.defer = true;
+                                    script.onload = cb;
+                                    document.head.appendChild(script);
+                                } else {
+                                    if (script.getAttribute('data-loaded') === 'true') {
+                                        return cb && cb();
+                                    }
+                                    script.addEventListener('load', cb);
+                                }
+                            }
 
                             function renderTurnstile() {
-                                if (!window.turnstile) return;
                                 if (rendered) return;
 
                                 const container = document.getElementById('turnstile-widget');
@@ -163,10 +182,15 @@
                                 // Remove any existing iframe
                                 container.innerHTML = '';
 
+                                if (!window.turnstile) {
+                                    ensureScriptLoaded(renderTurnstile);
+                                    return;
+                                }
+
                                 widgetId = turnstile.render(container, {
                                     sitekey: "{{ config('services.turnstile.site_key') }}",
                                     callback: function(token) {
-                                        @this.set('turnstileToken', token); // ✅ DIRECT SET
+                                        @this.set('turnstileToken', token);
                                     }
                                 });
 
@@ -180,6 +204,7 @@
                                 if (widgetId !== null && window.turnstile) {
                                     turnstile.reset(widgetId);
                                     rendered = false; // allow re-render
+                                    renderTurnstile();
                                 }
                             });
                         });
