@@ -10,7 +10,7 @@
         <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent"></div>
 
         <div class="relative mx-auto 
-                py-20 sm:py-28 lg:py-28">
+                py-10 sm:py-28 lg:py-28">
 
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-14 items-center">
 
@@ -846,7 +846,7 @@
         </div>
 
     </section>
-    <section class="relative bg-black text-white py-20 border-t border-white/10">
+    <section class="relative bg-black text-white py-10 border-t border-white/10">
 
         <div class="max-w-7xl mx-auto px-6">
 
@@ -1022,7 +1022,7 @@
     </section>
 
 
-    <section class="relative bg-black text-white py-20 overflow-hidden border-t border-white/10">
+    <section class="relative bg-black text-white py-10 overflow-hidden border-t border-white/10">
 
         <!-- Soft background glow -->
         <div class="absolute -top-40 right-0 w-[520px] h-[320px]
@@ -1129,7 +1129,7 @@
 
         </div>
     </section>
-    <section class="relative bg-black text-white py-20 border-t border-white/10 overflow-hidden">
+    <section class="relative bg-black text-white py-10 border-t border-white/10 overflow-hidden">
 
         <!-- Subtle Glow -->
         <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[320px]
@@ -1275,7 +1275,7 @@
 
         </div>
     </section>
-    <section class="relative bg-black text-white py-20 border-t border-white/10 overflow-hidden">
+    <section class="relative bg-black text-white py-10 border-t border-white/10 overflow-hidden">
 
         <!-- Soft glow -->
         <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[300px]
@@ -1594,7 +1594,7 @@
     </section>
 
 
-    <section class="relative bg-black text-white py-20 overflow-hidden border-t border-white/10">
+    <section class="relative bg-black text-white py-10 overflow-hidden border-t border-white/10">
 
         <!-- Soft background glow -->
         <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[320px]
