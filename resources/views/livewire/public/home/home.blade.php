@@ -529,7 +529,7 @@
                            bg-white/5 backdrop-blur">
 
                         <img
-                            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+                            src="{{ asset('images/men-teamwork-with-gears-induatry-bulb-idea_24877-54770.jpg') }}"
                             alt="Best Web Design Company in Noida"
                             class="w-full h-full object-cover
                                scale-105 hover:scale-110
@@ -907,7 +907,7 @@
                            bg-white/5 backdrop-blur">
 
                         <img
-                            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
+                            src="{{ asset('images/illustration-man-analyzing-seo_1150725-942.jpg') }}"
                             alt="Best SEO Company in Noida"
                             class="w-full h-full object-cover
                                transition-transform duration-700
@@ -1385,7 +1385,7 @@
 
                 <div class="flex justify-center">
                     <div class="relative">
-                        <img class="object-cover rounded-full" src="{{asset('images/why.jpg')}}" alt="">
+                        <img class="object-cover rounded-full" src="{{asset('images/whychooseus.jpg')}}" alt="">
                     </div>
                 </div>
 
