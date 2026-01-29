@@ -1,97 +1,215 @@
 @section('meta')
-    <title>Portfolio | Our Web Development & Design Projects | Technonika</title>
-    <meta name="description" content="Explore Technonika portfolio showcasing our successful web development, design, and digital marketing projects. See how we have helped businesses achieve their goals.">
-    <meta name="keywords" content="portfolio, web development projects, design portfolio, client work, case studies, project showcase">
+<title>Portfolio | Our Web Development & Design Projects | Technonika</title>
+<meta name="description" content="Explore Technonika portfolio showcasing our successful web development, design, and digital marketing projects. See how we have helped businesses achieve their goals.">
+<meta name="keywords" content="portfolio, web development projects, design portfolio, client work, case studies, project showcase">
 @endsection
 
 <div>
     <section class="bg-black pt-40 pb-36 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 relative">
+        <div class="max-w-7xl mx-auto px-6 relative">
 
-        <!-- Soft centered glow -->
-        <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
-            <div class="w-[650px] h-[650px]
+            <!-- Soft centered glow -->
+            <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
+                <div class="w-[650px] h-[650px]
                         bg-primary/20 blur-[220px]
                         rounded-full"></div>
-        </div>
+            </div>
 
-        <!-- Content -->
-        <div class="relative max-w-4xl mx-auto text-center">
+            <!-- Content -->
+            <div class="relative max-w-4xl mx-auto text-center">
 
-            <span class="inline-flex items-center mb-6
+                <span class="inline-flex items-center mb-6
                          px-4 py-1.5 text-sm font-medium
                          rounded-full bg-white/10 text-white/80">
-                Our Work
-            </span>
-
-            <h1 class="text-4xl md:text-5xl xl:text-6xl
-                       font-semibold text-white leading-tight">
-                A Portfolio of Work
-                <span class="text-primary block mt-2">
-                    Designed to Be Used, Not Just Seen
+                    Our Work
                 </span>
-            </h1>
 
-            <p class="mt-10 text-lg text-white/70 leading-relaxed max-w-3xl mx-auto">
-                Every project here represents careful thinking,
-                clear communication, and design that works in real life —
-                across screens, platforms, and daily use.
-            </p>
+                <h1 class="text-4xl md:text-5xl xl:text-6xl
+                       font-semibold text-white leading-tight">
+                    A Portfolio of Work
+                    <span class="text-primary block mt-2">
+                        Designed to Be Used, Not Just Seen
+                    </span>
+                </h1>
 
-            <!-- CTA -->
-            <div class="mt-14 flex justify-center gap-4 flex-wrap">
+                <p class="mt-10 text-lg text-white/70 leading-relaxed max-w-3xl mx-auto">
+                    Every project here represents careful thinking,
+                    clear communication, and design that works in real life —
+                    across screens, platforms, and daily use.
+                </p>
 
-                <a href="#projects"
-                   class="inline-flex items-center justify-center
+                <!-- CTA -->
+                <div class="mt-14 flex justify-center gap-4 flex-wrap">
+
+                    <a href="#projects"
+                        class="inline-flex items-center justify-center
                           px-8 py-4 rounded-full
                           bg-primary text-black font-medium
                           hover:opacity-90 transition">
-                    View Our Projects
-                </a>
+                        View Our Projects
+                    </a>
 
-                <button @click="$dispatch('open-modal', { to: 'contact' })" 
-                   class="inline-flex items-center justify-center
+                    <button @click="$dispatch('open-modal', { to: 'contact' })"
+                        class="inline-flex items-center justify-center
                           px-8 py-4 rounded-full
                           border border-white/20
                           text-white/80
                           hover:bg-white/5 transition">
-                    Start a Project
-                </button>
+                        Start a Project
+                    </button>
+
+                </div>
 
             </div>
 
         </div>
+    </section>
+    <section class="bg-black py-24">
+        <div class="max-w-7xl mx-auto px-6">
 
-    </div>
-</section>
-<section class="bg-black py-24">
-    <div class="max-w-7xl mx-auto px-6">
+            <!-- SECTION HEADER -->
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-semibold text-white">
+                    Featured Projects
+                </h2>
+                <p class="mt-4 text-white/60">
+                    Real-world platforms built with performance, clarity, and scalability in mind.
+                </p>
+            </div>
 
-        <!-- SECTION HEADER -->
-        <div class="max-w-3xl mx-auto text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-semibold text-white">
-                Featured Projects
-            </h2>
-            <p class="mt-4 text-white/60">
-                Real-world platforms built with performance, clarity, and scalability in mind.
-            </p>
-        </div>
+            <!-- PROJECT GRID -->
+            <div class="grid gap-8 sm:grid-cols-2" id="projects">
 
-        <!-- PROJECT GRID -->
-        <div class="grid gap-8 sm:grid-cols-2" id="projects">
-
-            @forelse($portfolios as $portfolio)
+                @forelse($portfolios as $portfolio)
                 <div class="group relative bg-white/5 backdrop-blur-xl
                             border border-white/10 rounded-3xl
                             overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2">
+                   <div
+    x-data="autoManualScroller()"
+    @mouseenter="onEnter"
+    @mouseleave="onLeave"
+    class="relative h-80 overflow-hidden rounded-xl
+           border border-white/10 bg-black group">
 
-                    <div class="relative overflow-hidden">
-                        <img src="{{ $portfolio->image ? asset('storage/' . $portfolio->image) : asset('/images/project-placeholder.jpg') }}"
-                             alt="{{ $portfolio->title }}"
-                             class="w-full h-80 object-cover
-                                    transition duration-700 group-hover:scale-110" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
+    <div
+        x-ref="container"
+        @scroll="onUserScroll"
+        class="absolute inset-0 overflow-y-auto custom-scroll">
+
+        <img
+            x-ref="image"
+            src="{{ $portfolio->image ? asset('storage/' . $portfolio->image) : asset('/images/project-placeholder.jpg') }}"
+            alt="{{ $portfolio->title }}"
+            class="block w-full object-top select-none"
+            draggable="false"
+        />
+    </div>
+
+    <div
+        class="pointer-events-none absolute inset-0
+               bg-gradient-to-t from-black/70 via-black/30 to-transparent
+               opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    </div>
+</div>
+
+
+                    <script>
+                        function autoManualScroller() {
+                            return {
+                                raf: null,
+                                startTime: 0,
+                                duration: 14000,
+                                maxScroll: 0,
+                                isHovering: false,
+                                isUserScrolling: false,
+
+                                onEnter() {
+                                    this.isHovering = true;
+                                    this.isUserScrolling = false;
+                                    this.startAuto();
+                                },
+
+                                onLeave() {
+                                    this.isHovering = false;
+                                    this.stop();
+                                    this.reset();
+                                },
+
+                                startAuto() {
+                                    const c = this.$refs.container;
+                                    const img = this.$refs.image;
+
+                                    if (!img.complete) {
+                                        img.onload = () => this.startAuto();
+                                        return;
+                                    }
+
+                                    this.maxScroll = img.scrollHeight - c.clientHeight;
+                                    if (this.maxScroll <= 0) return;
+
+                                    this.startTime = performance.now();
+                                    this.stop();
+                                    this.animate();
+                                },
+
+                                animate() {
+                                    if (!this.isHovering || this.isUserScrolling) return;
+
+                                    const c = this.$refs.container;
+                                    const progress = Math.min(
+                                        (performance.now() - this.startTime) / this.duration,
+                                        1
+                                    );
+
+                                    c.scrollTop = this.maxScroll * progress;
+
+                                    if (progress < 1) {
+                                        this.raf = requestAnimationFrame(() => this.animate());
+                                    }
+                                },
+
+                                onUserScroll() {
+                                    if (!this.isHovering) return;
+                                    this.isUserScrolling = true;
+                                    this.stop();
+                                },
+
+                                stop() {
+                                    cancelAnimationFrame(this.raf);
+                                    this.raf = null;
+                                },
+
+                                reset() {
+                                    this.$refs.container.scrollTo({
+                                        top: 0,
+                                        behavior: 'smooth'
+                                    });
+                                }
+                            }
+                        }
+                    </script>
+
+                    <style>
+                        .custom-scroll::-webkit-scrollbar {
+                            width: 5px;
+                        }
+
+                        .custom-scroll::-webkit-scrollbar-thumb {
+                            background: rgba(255, 255, 255, 0.35);
+                            border-radius: 999px;
+                        }
+
+                        .custom-scroll::-webkit-scrollbar-track {
+                            background: transparent;
+                        }
+
+                        /* Firefox */
+                        .custom-scroll {
+                            scrollbar-width: thin;
+                            scrollbar-color: rgba(255, 255, 255, 0.35) transparent;
+                        }
+                    </style>
+
 
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-white group-hover:text-primary transition-colors">
@@ -103,18 +221,18 @@
                         </p>
 
                         @if($portfolio->tags && count($portfolio->tags) > 0)
-                            <div class="flex flex-wrap gap-2 mt-5">
-                                @foreach($portfolio->tags as $tag)
-                                    <span class="px-3 py-1.5 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20 backdrop-blur-sm">
-                                        {{ $tag }}
-                                    </span>
-                                @endforeach
-                            </div>
+                        <div class="flex flex-wrap gap-2 mt-5">
+                            @foreach($portfolio->tags as $tag)
+                            <span class="px-3 py-1.5 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20 backdrop-blur-sm">
+                                {{ $tag }}
+                            </span>
+                            @endforeach
+                        </div>
                         @endif
 
                         <a href="{{ $portfolio->project_url ?? '#' }}"
                             target="_blank"
-                           class="inline-flex items-center justify-center mt-6
+                            class="inline-flex items-center justify-center mt-6
                                   px-6 py-3 rounded-full
                                   bg-gradient-to-r from-primary to-primary/80 text-black text-sm font-semibold
                                   hover:from-primary/90 hover:to-primary/70 transition-all duration-300 shadow-lg shadow-primary/20">
@@ -126,21 +244,21 @@
                         </a>
                     </div>
                 </div>
-            @empty
+                @empty
                 <div class="col-span-2 text-center py-12">
                     <p class="text-white/60 text-lg">No portfolio projects available yet.</p>
                 </div>
-            @endforelse
+                @endforelse
 
-        </div>
+            </div>
 
-        @if($portfolios->hasPages())
+            @if($portfolios->hasPages())
             <div class="mt-12">
                 {{ $portfolios->links('vendor.pagination.theme') }}
             </div>
-        @endif
-    </div>
-</section>
+            @endif
+        </div>
+    </section>
 
 
 </div>
