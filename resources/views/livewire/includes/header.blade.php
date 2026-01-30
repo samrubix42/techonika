@@ -93,6 +93,9 @@
                     <a href="{{ route('ecommerce-web-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Ecommerce Web Design</a>
                     <a href="{{ route('hindi-website-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Hindi Website Design</a>
                     <a href="{{ route('corporate-website-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Corporate Website Design</a>
+                                        <a href="{{ route('graphicdesigning') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Graphic Designing</a>
+                    <a href="{{ route('static-website-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Static Website Design</a>
+                    <a href="{{ route('custom-web-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Custom Web Design</a>
                   </div>
 
 
@@ -240,6 +243,9 @@
                 <a href="{{ route('ecommerce-web-design') }}" class="block">Ecommerce Web Design</a>
                 <a href="{{ route('hindi-website-design') }}" class="block">Hindi Website Design</a>
                 <a href="{{ route('corporate-website-design') }}" class="block">Corporate Website Design</a>
+                <a href="{{ route('graphicdesigning') }}" class="block">Graphic Designing</a>
+                <a href="{{ route('static-website-design') }}" class="block">Static Website Design</a>
+                <a href="{{ route('custom-web-design') }}" class="block">Custom Web Design</a>
               </div>
             </div>
 

@@ -52,6 +52,7 @@ use App\Livewire\Public\Service\Service;
 use App\Livewire\Public\Service\ServiceView;
 use App\Livewire\Public\Webdesign\CoorporateWebDesign;
 use App\Livewire\Public\Webdesign\CustomWebDesign;
+use App\Livewire\Public\Webdesign\DynamicWebsiteDesign;
 use App\Livewire\Public\Webdesign\EcommerceDesign;
 use App\Livewire\Public\Webdesign\HindiWebsiteDesign;
 use App\Livewire\Public\Webdesign\ResponsiveDesign;
@@ -130,6 +131,7 @@ Route::get('corporate-website-design',CoorporateWebDesign::class)->name('corpora
 Route::get('/graphic-designing', GraphicDesigningIndex::class)->name('graphicdesigning');
 Route::get('/static-website-design',StaticWebsiteDesigning::class)->name('static-website-design');
 Route::get('/custom-web-design',CustomWebDesign::class)->name('custom-web-design');
+Route::get('/dynamic-website-design',DynamicWebsiteDesign::class)->name('dynamic-website-design');
 
 
 //branding routes
