@@ -57,6 +57,7 @@ use App\Livewire\Public\Webdesign\DynamicWebsiteDesign;
 use App\Livewire\Public\Webdesign\EcommerceDesign;
 use App\Livewire\Public\Webdesign\HindiWebsiteDesign;
 use App\Livewire\Public\Webdesign\LandingPageDesign;
+use App\Livewire\Public\Webdesign\ReactWebDesign;
 use App\Livewire\Public\Webdesign\ResponsiveDesign;
 use App\Livewire\Public\Webdesign\StaticWebsiteDesigning;
 use App\Livewire\Public\WebDesigning\Index as WebDesigningIndex;
@@ -135,8 +136,8 @@ Route::get('/static-website-design',StaticWebsiteDesigning::class)->name('static
 Route::get('/custom-web-design',CustomWebDesign::class)->name('custom-web-design');
 Route::get('/dynamic-website-design',DynamicWebsiteDesign::class)->name('dynamic-website-design');
 Route::get('/landing-page-design',LandingPageDesign::class)->name('landing-page-design');
-Route::get('angular-web-design',AngularWebsiteDesign::class)->name('angular-web-design');
-
+Route::get('angularjs-web-design',AngularWebsiteDesign::class)->name('angular-web-design');
+Route::get('/reactjs-web-design',ReactWebDesign::class)->name('reactjs-web-design');    
 //branding routes
 Route::get('/logo-designing',LogoDesign::class)->name('logo-designing');
 Route::get('visit-card-designing',VisitingCard::class)->name('visit-card-designing');

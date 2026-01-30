@@ -419,7 +419,7 @@ professional web designers noida, custom website design noida">
                         for small businesses and startups.
                     </p>
 
-                    <a href="#" class="inline-flex items-center gap-2
+                    <a href="{{route('static-website-design')}}" class="inline-flex items-center gap-2
                     text-sm text-primary hover:underline">
                         Learn More <i class="ri-arrow-right-line"></i>
                     </a>
@@ -443,7 +443,7 @@ professional web designers noida, custom website design noida">
                         for better user experience.
                     </p>
 
-                    <a href="#" class="inline-flex items-center gap-2
+                    <a href="{{route('responsive-web-design')}}" class="inline-flex items-center gap-2
                     text-sm text-primary hover:underline">
                         Learn More <i class="ri-arrow-right-line"></i>
                     </a>
@@ -467,7 +467,7 @@ professional web designers noida, custom website design noida">
                         based on your brand and goals.
                     </p>
 
-                    <a href="#" class="inline-flex items-center gap-2
+                    <a href="{{route('custom-web-design')}}" class="inline-flex items-center gap-2
                     text-sm text-primary hover:underline">
                         Learn More <i class="ri-arrow-right-line"></i>
                     </a>
@@ -491,7 +491,7 @@ professional web designers noida, custom website design noida">
                         for advanced web applications.
                     </p>
 
-                    <a href="#" class="inline-flex items-center gap-2
+                    <a href="{{route('angular-web-design')}}" class="inline-flex items-center gap-2
                     text-sm text-primary hover:underline">
                         Learn More <i class="ri-arrow-right-line"></i>
                     </a>
@@ -514,7 +514,7 @@ professional web designers noida, custom website design noida">
                         websites for modern user experiences.
                     </p>
 
-                    <a href="#" class="inline-flex items-center gap-2
+                    <a href="{{route('reactjs-web-design')}}" class="inline-flex items-center gap-2
         text-sm text-primary hover:underline">
                         Learn More <i class="ri-arrow-right-line"></i>
                     </a>
@@ -539,7 +539,7 @@ professional web designers noida, custom website design noida">
                         that match your website and branding.
                     </p>
 
-                    <a href="#" class="inline-flex items-center gap-2
+                    <a href="{{route('graphicdesigning')}}" class="inline-flex items-center gap-2
                     text-sm text-primary hover:underline">
                         Learn More <i class="ri-arrow-right-line"></i>
                     </a>
@@ -563,7 +563,7 @@ professional web designers noida, custom website design noida">
                         for credibility and business growth.
                     </p>
 
-                    <a href="#" class="inline-flex items-center gap-2
+                    <a href="{{route('corporate-website-design')}}" class="inline-flex items-center gap-2
                     text-sm text-primary hover:underline">
                         Learn More <i class="ri-arrow-right-line"></i>
                     </a>
@@ -587,7 +587,7 @@ professional web designers noida, custom website design noida">
                         with regional and local audiences.
                     </p>
 
-                    <a href="#" class="inline-flex items-center gap-2
+                    <a href="{{route('hindi-website-design')}}" class="inline-flex items-center gap-2
                     text-sm text-primary hover:underline">
                         Learn More <i class="ri-arrow-right-line"></i>
                     </a>
@@ -611,7 +611,7 @@ professional web designers noida, custom website design noida">
                         and database integration.
                     </p>
 
-                    <a href="#" class="inline-flex items-center gap-2
+                    <a href="{{route('dynamic-website-design')}}" class="inline-flex items-center gap-2
                     text-sm text-primary hover:underline">
                         Learn More <i class="ri-arrow-right-line"></i>
                     </a>
@@ -635,7 +635,7 @@ professional web designers noida, custom website design noida">
                         campaigns, and lead generation.
                     </p>
 
-                    <a href="#" class="inline-flex items-center gap-2
+                    <a href="{{route('landing-page-design')}}" class="inline-flex items-center gap-2
                     text-sm text-primary hover:underline">
                         Learn More <i class="ri-arrow-right-line"></i>
                     </a>
