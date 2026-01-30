@@ -54,6 +54,7 @@ use App\Livewire\Public\Webdesign\CoorporateWebDesign;
 use App\Livewire\Public\Webdesign\EcommerceDesign;
 use App\Livewire\Public\Webdesign\HindiWebsiteDesign;
 use App\Livewire\Public\Webdesign\ResponsiveDesign;
+use App\Livewire\Public\Webdesign\StaticWebsiteDesigning;
 use App\Livewire\Public\WebDesigning\Index as WebDesigningIndex;
 use App\Livewire\Public\WebDevelopment\CodeigniterDevelopment;
 use App\Livewire\Public\WebDevelopment\Index as WebDevelopmentIndex;
@@ -126,6 +127,7 @@ Route::get('ecommerce-web-design',EcommerceDesign::class)->name('ecommerce-web-d
 Route::get('hindi-website-design',HindiWebsiteDesign::class)->name('hindi-website-design');
 Route::get('corporate-website-design',CoorporateWebDesign::class)->name('corporate-website-design');
 Route::get('/graphic-designing', GraphicDesigningIndex::class)->name('graphicdesigning');
+Route::get('/static-website-design',StaticWebsiteDesigning::class)->name('static-website-design');
 
 
 //branding routes
