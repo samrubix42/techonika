@@ -50,7 +50,7 @@ py-24 sm:py-28 lg:py-32 border-b border-white/10">
         </div>
     </section>
     <section class="bg-black text-white py-10 sm:py-24 border-b border-white/10">
-        <div class="max-w-6xl mx-auto px-6">
+        <div class="max-w-7xl mx-auto px-6">
 
             <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6">
                 What Is a <span class="text-primary">Dynamic Website?</span>
