@@ -84,27 +84,8 @@
                     <a href="{{ route('wix-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Wix Development</a>
                   </div>
 
-                  <a href="{{ route('webdesigning') }}"
-                    class="text-amber-400 font-semibold text-sm mt-6 mb-2 block hover:text-amber-300">
-                    WEB DESIGNING
-                  </a>
-                  <div class="space-y-2 text-sm">
-                    <a href="{{ route('responsive-web-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Responsive Web Design</a>
-                    <a href="{{ route('ecommerce-web-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Ecommerce Web Design</a>
-                    <a href="{{ route('hindi-website-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Hindi Website Design</a>
-                    <a href="{{ route('corporate-website-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Corporate Website Design</a>
-                                        <a href="{{ route('graphicdesigning') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Graphic Designing</a>
-                    <a href="{{ route('static-website-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Static Website Design</a>
-                    <a href="{{ route('custom-web-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Custom Web Design</a>
-                  </div>
-
-
-                </div>
-
-                <!-- MOBILE APP & DIGITAL MARKETING -->
-                <div>
                   <a href="{{ route('mobileappdevelopment') }}"
-                    class="text-amber-400 font-semibold text-sm mb-4 block hover:text-amber-300">
+                    class="text-amber-400 font-semibold text-sm mt-4 mb-2 block hover:text-amber-300">
                     MOBILE APP DEVELOPMENT
                   </a>
                   <div class="space-y-2 text-sm">
@@ -113,6 +94,31 @@
                     <a href="{{ route('hybrid-app-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Hybrid App Development</a>
                     <a href="{{ route('react-native-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">React Native Development</a>
                     <a href="{{ route('flutter-development') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Flutter Development</a>
+                  </div>
+
+                </div>
+
+                <!-- MOBILE APP & DIGITAL MARKETING -->
+                <div>
+
+
+
+
+                  <a href="{{ route('webdesigning') }}"
+                    class="text-amber-400 font-semibold text-sm mb-2 block hover:text-amber-300">
+                    WEB DESIGNING
+                  </a>
+                  <div class="space-y-2 text-sm">
+                    <a href="{{ route('responsive-web-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Responsive Web Design</a>
+                    <a href="{{ route('ecommerce-web-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Ecommerce Web Design</a>
+                    <a href="{{ route('hindi-website-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Hindi Website Design</a>
+                    <a href="{{ route('corporate-website-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Corporate Website Design</a>
+                    <a href="{{ route('graphicdesigning') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Graphic Designing</a>
+                    <a href="{{ route('static-website-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Static Website Design</a>
+                    <a href="{{ route('custom-web-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Custom Web Design</a>
+                    <a href="{{ route('angular-web-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Angular Web Design</a>
+                    <a href="{{ route('reactjs-web-design') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">ReactJS Web Design</a>
+                    <a href="{{route('landing-page-design')}}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Landing Page Designing</a>
                   </div>
 
                   <a href="{{ route('digital-marketing') }}"
@@ -246,6 +252,9 @@
                 <a href="{{ route('graphicdesigning') }}" class="block">Graphic Designing</a>
                 <a href="{{ route('static-website-design') }}" class="block">Static Website Design</a>
                 <a href="{{ route('custom-web-design') }}" class="block">Custom Web Design</a>
+                <a href="{{ route('angular-web-design') }}" class="block">Angular Web Design</a>
+                <a href="{{ route('reactjs-web-design') }}" class="block">ReactJS Web Design</a>
+                <a href="{{route('landing-page-design')}}" class="block">Landing Page Designing</a>
               </div>
             </div>
 
