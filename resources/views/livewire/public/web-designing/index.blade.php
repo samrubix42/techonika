@@ -496,6 +496,30 @@ professional web designers noida, custom website design noida">
                         Learn More <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>
+                <div class="group rounded-2xl border border-white/10
+    bg-white/[0.04] p-6 sm:p-7
+    hover:bg-white/[0.06] transition">
+
+                    <div class="mb-4 flex h-11 w-11 items-center justify-center
+        rounded-xl bg-primary/15">
+                        <i class="ri-reactjs-line text-primary text-xl"></i>
+                    </div>
+
+                    <h3 class="text-lg font-medium mb-2">
+                        React JS Website Design
+                    </h3>
+
+                    <p class="text-sm text-white/70 leading-relaxed mb-4">
+                        Fast, scalable, and interactive React-based
+                        websites for modern user experiences.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2
+        text-sm text-primary hover:underline">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
 
                 <!-- CARD -->
                 <div class="group rounded-2xl border border-white/10
