@@ -83,7 +83,7 @@ Route::get('/smo-package', SmoPackage::class)->name('smo-package');
 Route::get('/startup-package', StartupPackage::class)->name('startup-package');
 Route::get('/digital-marketing-agency-in-noida', DigitalMarktingIndex::class)->name('digital-marketing');
 Route::get('/website-designing-company-in-noida', WebDesigningIndex::class)->name('webdesigning');
-Route::get('/mobile-app-development', App\Livewire\Public\MobileDevelopment\Index::class)->name('mobileappdevelopment');
+Route::get('/mobile-app-development-company-in-noida', App\Livewire\Public\MobileDevelopment\Index::class)->name('mobileappdevelopment');
 Route::get('/blog', Blog::class)->name('blog');
 Route::get('/blog-view/{slug}', BlogView::class)->name('blog.view');
 Route::get('/about', About::class)->name('about');
