@@ -1,1163 +1,853 @@
 @section('meta')
-<title>Professional Branding Services | Brand Identity Design Agency in Noida</title>
-<meta name="description" content="Techonika is a leading branding agency in Noida helping businesses build clear, consistent, and memorable brand identities. Professional branding services for startups and businesses.">
+<title>Branding Agency in Noida | Brand Strategy, Design & Identity</title>
+<meta name="description" content="Professional branding agency in Noida offering brand strategy, visual identity, and 
+positioning to help businesses stand out and grow.">
 <meta name="keywords" content="branding agency Noida, brand identity design, branding services, logo design, brand strategy, business branding, startup branding">
 @endsection
 
 <div>
-    <section class="relative bg-black text-white overflow-hidden">
+    <section class="relative bg-black text-white overflow-hidden
+py-20 sm:py-28 lg:py-32 border-b border-white/10">
 
-        <!-- Primary Gradient Orbs -->
+        <!-- Ambient Brand Glow -->
         <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute -top-40 -left-40 w-[32rem] h-[32rem]
-                    rounded-full blur-3xl
-                    bg-gradient-to-br from-primary/40 via-primary/20 to-transparent">
-            </div>
+            <div class="absolute -top-56 left-1/2 -translate-x-1/2
+            w-[900px] h-[420px] bg-primary/30 blur-[260px] rounded-full"></div>
 
-            <div class="absolute bottom-[-14rem] right-[-14rem] w-[30rem] h-[30rem]
-                    rounded-full blur-3xl
-                    bg-gradient-to-tr from-primary/35 via-primary/15 to-transparent">
-            </div>
-
-            <div class="absolute inset-0 bg-black/70"></div>
+            <div class="absolute bottom-0 right-0
+            w-[420px] h-[420px] bg-white/5 blur-[180px] rounded-full"></div>
         </div>
 
-        <div class="relative max-w-7xl mx-auto px-6 py-12 sm:py-36">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-
-                <!-- LEFT CONTENT -->
-                <div>
-
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold
-                           leading-tight tracking-tight max-w-xl">
-                        Techonika – A Branding Agency in Noida That Helps
-                        <span class="text-primary font-bold">
-                            People Remember Your Business
-                        </span>
-                    </h1>
-
-                    <div class="mt-8 max-w-xl space-y-4">
-                        <p class="text-white/75 leading-relaxed">
-                            Your brand is more than a logo or a color. It is the feeling people get when
-                            they see your business name, visit your website, or talk about you with others.
-                            At <span class="text-white font-medium">Techonika</span>, we help businesses
-                            build a clear and lasting identity people can recognize and trust.
-                        </p>
-
-                        <p class="text-white/75 leading-relaxed">
-                            When your brand feels strong and consistent, people feel confident choosing you.
-                            When it feels unclear, people hesitate.
-                            We remove that confusion with a
-                            <span class="text-primary font-medium">
-                                simple, honest, and natural branding approach.
-                            </span>
-                        </p>
-                    </div>
-
-                    <!-- CTA -->
-                    <div class="mt-12 flex flex-col sm:flex-row gap-4">
-                        <button @click="$dispatch('open-modal', { to: 'contact' })"
-                            class="inline-flex items-center justify-center
-                              px-8 py-4 rounded-full
-                              bg-primary text-black font-medium
-                              hover:bg-primary/90 transition">
-                            Start Building Your Brand
-                        </button>
-
-                        <a href="{{ route('contact') }}"
-                            class="inline-flex items-center justify-center
-                              px-8 py-4 rounded-full
-                              border border-white/20 text-white
-                              hover:bg-white/5 transition">
-                            Contact Us
-                        </a>
-                    </div>
-
-                    <p class="mt-10 text-sm text-white/50">
-                        Branding built for clarity, consistency, and long-term recall.
-                    </p>
-
-                </div>
-
-                <!-- RIGHT IMAGE (SMALLER & SUBTLE) -->
-                <div class="relative lg:flex lg:justify-end">
-                    <div class="relative w-full sm:w-[80%] lg:w-[80%]
-                            rounded-3xl overflow-hidden
-                            border border-white/15
-                            bg-white/5 backdrop-blur-sm
-                            shadow-xl">
-
-                        <img
-                            src="{{ asset('black-brick-wall-with-word-branding-written-colorful-letters-surrounded-by-digital-marketing-icons-symbols_872074-30987.jpg') }}"
-                            alt="Brand identity design mockup"
-                            class="w-full h-full object-cover
-                               aspect-[8/5]" />
-                    </div>
-
-                    <!-- soft glow accent -->
-                    <div class="absolute -bottom-6 -left-6 w-28 h-28
-                            bg-primary/20 rounded-full blur-2xl"></div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section class="relative bg-black text-white py-12 overflow-hidden">
-        <!-- layered primary accent -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/2 left-1/4 w-[28rem] h-[28rem]
-                    bg-primary/10 rounded-full blur-3xl"></div>
-        </div>
-
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-
-                <!-- LEFT GLASS CARD -->
-                <div class="order-2 lg:order-1 bg-white/5 border border-white/15
-                        rounded-3xl p-8 lg:p-10 backdrop-blur-xl">
-
-                    <!-- Card Title -->
-                    <div class="flex items-center gap-3 mb-6">
-                        <span class="w-2 h-2 rounded-full bg-primary"></span>
-                        <h3 class="text-lg sm:text-xl font-semibold">
-                            Your brand is made of
-                        </h3>
-                    </div>
-
-                    <ul class="space-y-6">
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                The way your business
-                                <span class="text-white font-medium">looks</span>
-                                across platforms
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                The way your business
-                                <span class="text-white font-medium">speaks</span>
-                                to people
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                The way people
-                                <span class="text-white font-medium">remember</span>
-                                you
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                The
-                                <span class="text-white font-medium">feeling</span>
-                                your brand leaves behind
-                            </p>
-                        </li>
-                    </ul>
-
-                    <!-- Divider -->
-                    <div class="mt-8 pt-6 border-t border-white/10">
-                        <p class="text-white/70 leading-relaxed text-sm sm:text-base">
-                            As a practical branding agency in Noida,
-                            <span class="text-white font-medium">Techonika</span>
-                            helps you shape this story so your business feels
-                            clear, confident, and consistent wherever people find you.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- RIGHT CONTENT -->
-                <div class="order-1 lg:order-2">
-
-                    <!-- Section eyebrow -->
-                    <span class="inline-flex items-center gap-2 mb-4
-                             text-xs tracking-widest uppercase text-white/60">
-                        Branding Explained
-                        <span class="w-6 h-px bg-primary/60"></span>
-                    </span>
-
-                    <h2 class="text-2xl sm:text-3xl lg:text-4xl
-                           font-semibold leading-tight max-w-xl">
-                        What Branding Really Means
-                        <span class="text-primary font-bold">
-                            in Everyday Business
-                        </span>
-                    </h2>
-
-                    <div class="mt-6 space-y-5 max-w-xl">
-                        <p class="text-white/75 leading-relaxed">
-                            Branding is not only for big companies.
-                            Every business already has a brand — planned or not.
-                            The real question is whether your brand is working
-                            <span class="text-white font-medium">for you</span>
-                            or quietly working
-                            <span class="text-white font-medium">against you</span>.
-                        </p>
-
-                        <p class="text-white/75 leading-relaxed">
-                            Branding shows up in everyday moments —
-                            when someone visits your website,
-                            reads your message, or hears your name mentioned.
-                            Those moments shape trust.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="relative bg-black text-white py-12 overflow-hidden">
-        <!-- layered primary accent -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/2 right-1/4 w-[26rem] h-[26rem]
-                    bg-primary/10 rounded-full blur-3xl"></div>
-        </div>
-
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-
-                <!-- LEFT CONTENT -->
-                <div>
-
-                    <!-- Eyebrow -->
-                    <span class="inline-flex items-center gap-2 mb-4
-                             text-xs tracking-widest uppercase text-white/60">
-                        Brand Trust " Psychology
-                        <span class="w-6 h-px bg-primary/60"></span>
-                    </span>
-
-                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight max-w-xl">
-                        Why People Trust
-                        <span class="text-primary font-bold">
-                            Some Brands More Than Others
-                        </span>
-                    </h2>
-
-                    <div class="mt-6 space-y-5 max-w-xl">
-                        <p class="text-white/75 leading-relaxed">
-                            People trust brands that feel familiar and consistent.
-                            When the same style, tone, and message appear again and again,
-                            people begin to feel comfortable.
-                        </p>
-
-                        <p class="text-white/75 leading-relaxed">
-                            That comfort slowly turns into trust.
-                            Consistency signals reliability, care, and long-term intent —
-                            qualities people naturally look for in a business.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- RIGHT GLASS CARD -->
-                <div class="bg-white/5 border border-white/15
-                        rounded-3xl p-8 lg:p-10
-                        backdrop-blur-xl">
-
-                    <!-- Card Header -->
-                    <div class="flex items-center gap-3 mb-6">
-                        <span class="w-2 h-2 rounded-full bg-primary"></span>
-                        <h3 class="text-lg sm:text-xl font-semibold">
-                            Where consistency matters most
-                        </h3>
-                    </div>
-
-                    <ul class="space-y-6">
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Website and
-                                <span class="text-white font-medium">social media</span>
-                                experience
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Business cards,
-                                <span class="text-white font-medium">
-                                    brochures, and print
-                                </span>
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Online ads and
-                                <span class="text-white font-medium">
-                                    offline brand materials
-                                </span>
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Everyday
-                                <span class="text-white font-medium">
-                                    customer communication
-                                </span>
-                            </p>
-                        </li>
-                    </ul>
-
-                    <!-- Emphasis Line -->
-                    <div class="mt-8 pt-6 border-t border-white/10">
-                        <p class="text-white/75 leading-relaxed text-sm sm:text-base">
-                            Consistency is not boring.
-                            <span class="text-primary font-medium">
-                                It is reassuring.
-                            </span>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section class="relative bg-black text-white py-12 overflow-hidden">
-        <!-- layered primary accent -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/2 left-1/3 w-[30rem] h-[30rem]
-                    bg-primary/10 rounded-full blur-3xl"></div>
-        </div>
-
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-
-                <!-- LEFT CONTENT -->
-                <div>
-
-                    <!-- Eyebrow -->
-                    <span class="inline-flex items-center gap-2 mb-4
-                             text-xs tracking-widest uppercase text-white/60">
-                        Our Branding Philosophy
-                        <span class="w-6 h-px bg-primary/60"></span>
-                    </span>
-
-                    <h2 class="text-2xl sm:text-3xl lg:text-4xl
-                           font-semibold leading-tight max-w-xl">
-                        How Techonika
-                        <span class="text-primary font-bold">
-                            Approaches Branding
-                        </span>
-                    </h2>
-
-                    <div class="mt-6 space-y-5 max-w-xl">
-                        <p class="text-white/75 leading-relaxed">
-                            We do not rush branding decisions.
-                            Strong brands are built with understanding, not pressure.
-                            That is why we take time to learn who you are,
-                            what you stand for, and who you want to reach.
-                        </p>
-
-                        <p class="text-white/75 leading-relaxed">
-                            Branding works best when it feels honest and natural —
-                            not designed just to look good for a moment,
-                            but built to last.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- RIGHT GLASS CARD -->
-                <div class="bg-white/5 border border-white/15
-                        rounded-3xl p-8 lg:p-10
-                        backdrop-blur-xl">
-
-                    <!-- Card Header -->
-                    <div class="flex items-center gap-3 mb-6">
-                        <span class="w-2 h-2 rounded-full bg-primary"></span>
-                        <h3 class="text-lg sm:text-xl font-semibold">
-                            We begin by asking
-                        </h3>
-                    </div>
-
-                    <ul class="space-y-6">
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                What do you want people to
-                                <span class="text-white font-medium">remember</span>
-                                about your brand?
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                What
-                                <span class="text-white font-medium">problem do you solve</span>
-                                for your customers?
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                How do you want your brand to
-                                <span class="text-white font-medium">feel</span>
-                                when people interact with it?
-                            </p>
-                        </li>
-                    </ul>
-
-                    <!-- Emphasis Line -->
-                    <div class="mt-8 pt-6 border-t border-white/10">
-                        <p class="text-white/75 leading-relaxed text-sm sm:text-base">
-                            As a reliable branding agency in Noida,
-                            <span class="text-white font-medium">Techonika</span>
-                            builds your brand step by step so it feels
-                            <span class="text-primary font-medium">
-                                natural, consistent, and genuine
-                            </span>
-                            — never forced.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section class="relative bg-black text-white py-12 overflow-hidden">
-        <!-- layered primary accent -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute bottom-1/3 right-1/4 w-[28rem] h-[28rem]
-                    bg-primary/10 rounded-full blur-3xl"></div>
-        </div>
-
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-
-                <!-- LEFT CONTENT -->
-                <div>
-
-                    <!-- Eyebrow -->
-                    <span class="inline-flex items-center gap-2 mb-4
-                             text-xs tracking-widest uppercase text-white/60">
-                        Branding & Growth
-                        <span class="w-6 h-px bg-primary/60"></span>
-                    </span>
-
-                    <h2 class="text-2xl sm:text-3xl lg:text-4xl
-                           font-semibold leading-tight max-w-xl">
-                        Branding That
-                        <span class="text-primary font-bold">
-                            Supports Business Growth
-                        </span>
-                    </h2>
-
-                    <div class="mt-6 space-y-5 max-w-xl">
-                        <p class="text-white/75 leading-relaxed">
-                            A strong brand makes marketing easier.
-                            When people already recognize and trust your business,
-                            they need less convincing before choosing you.
-                        </p>
-
-                        <p class="text-white/75 leading-relaxed">
-                            Branding works quietly in the background —
-                            supporting your business even when you are not
-                            actively running ads or promotions.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- RIGHT GLASS CARD -->
-                <div class="bg-white/5 border border-white/15
-                        rounded-3xl p-8 lg:p-10
-                        backdrop-blur-xl">
-
-                    <!-- Card Header -->
-                    <div class="flex items-center gap-3 mb-6">
-                        <span class="w-2 h-2 rounded-full bg-primary"></span>
-                        <h3 class="text-lg sm:text-xl font-semibold">
-                            How branding helps your business
-                        </h3>
-                    </div>
-
-                    <ul class="space-y-6">
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Stand out in a
-                                <span class="text-white font-medium">
-                                    crowded market
-                                </span>
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Look more
-                                <span class="text-white font-medium">
-                                    professional and reliable
-                                </span>
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Build
-                                <span class="text-white font-medium">
-                                    long-term trust
-                                </span>
-                                with your audience
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Create a real
-                                <span class="text-white font-medium">
-                                    emotional connection
-                                </span>
-                                with customers
-                            </p>
-                        </li>
-                    </ul>
-
-                    <!-- Emphasis Line -->
-                    <div class="mt-8 pt-6 border-t border-white/10">
-                        <p class="text-white/75 leading-relaxed text-sm sm:text-base">
-                            This kind of branding keeps working for your business —
-                            building recognition, confidence, and loyalty
-                            <span class="text-primary font-medium">
-                                over time.
-                            </span>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="relative bg-black text-white py-12 overflow-hidden">
-        <!-- layered primary accent -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/3 left-1/4 w-[30rem] h-[30rem]
-                    bg-primary/10 rounded-full blur-3xl"></div>
-        </div>
-
-        <div class="relative max-w-7xl mx-auto px-6">
-
-            <!-- SECTION HEADER -->
-            <div class="max-w-3xl mb-20">
-                <span class="inline-flex items-center gap-2 mb-4
-                         text-xs tracking-widest uppercase text-white/60">
-                    Real Business Moments
-                    <span class="w-6 h-px bg-primary/60"></span>
+        <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+
+            <!-- LEFT CONTENT -->
+            <div>
+
+                <!-- Badge -->
+                <span class="inline-flex items-center gap-2 mb-6
+                px-4 py-1.5 rounded-full
+                bg-white/10 border border-white/20
+                text-xs tracking-widest uppercase text-white/70 backdrop-blur">
+                    <i class="ri-palette-line text-primary"></i>
+                    Branding & Identity
                 </span>
 
-                <h2 class="text-2xl sm:text-3xl lg:text-4xl
-                       font-semibold leading-tight">
-                    When Businesses Usually
-                    <span class="text-primary font-bold">
-                        Need Branding Support
+                <!-- Heading -->
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl
+                font-semibold leading-tight max-w-2xl">
+                    Best Branding Agency in Noida
+                    <span class="text-primary block mt-3">
+                        Build a Brand That Stands Out
+                    </span>
+                </h1>
+
+                <!-- Description -->
+                <p class="mt-6 text-white/75 leading-relaxed max-w-xl text-base sm:text-lg">
+                    In a market where hundreds of businesses compete for the same attention, your brand is the only thing
+                    that makes you unforgettable. As a creative branding agency in Noida, we understand that a brand is
+                    not just a logo or a tagline. It is the experience, the emotion, and the promise you make to your
+                    audience. And building that kind of brand requires the right partner.
+                </p>
+
+                <p class="mt-4 text-white/70 leading-relaxed max-w-xl text-base sm:text-lg">
+                    Techonika is a creative agency in Noida built around one core belief: every business, regardless of
+                    size, deserves a brand that commands attention, earns trust, and drives real growth.
+                    Whether you are launching something entirely new or reinventing what already exists, our team
+                    brings strategy, creativity, and measurable results to the table.
+                </p>
+                <p class="mt-4 text-white/70 leading-relaxed max-w-xl text-base sm:text-lg">We do not believe in shortcuts, and we do not believe in generic solutions. Your brand is unique, and
+                    the way we build it should be too. </p>
+
+                <!-- CTA -->
+                <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                    <button
+                        @click="$dispatch('open-modal', { to: 'contact' })"
+                        class="inline-flex items-center justify-center gap-2
+                    px-8 py-4 rounded-xl
+                    bg-primary text-black font-medium
+                    hover:bg-primary/90 transition">
+                        <i class="ri-rocket-line"></i>
+                        Start Your Brand Journey
+                    </button>
+
+                    <button
+                        class="inline-flex items-center justify-center gap-2
+                    px-8 py-4 rounded-xl
+                    border border-white/25 text-white/80
+                    hover:bg-white/[0.05] transition">
+                        <i class="ri-eye-line"></i>
+                        View Branding Work
+                    </button>
+                </div>
+
+                <!-- Trust Line -->
+                <div class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/60">
+                    <span class="flex items-center gap-2">
+                        <i class="ri-check-line text-primary"></i> Strategy-Driven Branding
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <i class="ri-check-line text-primary"></i> Unique Brand Identity
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <i class="ri-check-line text-primary"></i> Growth-Focused Approach
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- RIGHT BRAND PILLARS -->
+            <div class="relative grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                <div class="p-6 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition">
+                    <i class="ri-lightbulb-flash-line text-primary text-2xl mb-3"></i>
+                    <h4 class="font-medium text-lg mb-1">Brand Strategy</h4>
+                    <p class="text-sm text-white/70">
+                        Positioning, messaging, and market clarity.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition">
+                    <i class="ri-brush-line text-primary text-2xl mb-3"></i>
+                    <h4 class="font-medium text-lg mb-1">Visual Identity</h4>
+                    <p class="text-sm text-white/70">
+                        Logos, colors, typography, and brand systems.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition">
+                    <i class="ri-emotion-happy-line text-primary text-2xl mb-3"></i>
+                    <h4 class="font-medium text-lg mb-1">Brand Experience</h4>
+                    <p class="text-sm text-white/70">
+                        Consistent, memorable customer touchpoints.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition">
+                    <i class="ri-line-chart-line text-primary text-2xl mb-3"></i>
+                    <h4 class="font-medium text-lg mb-1">Brand Growth</h4>
+                    <p class="text-sm text-white/70">
+                        Designed to scale with your business.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="relative bg-black text-white py-16 sm:py-24 border-b border-white/10 overflow-hidden">
+
+        <!-- Subtle Strategy Glow -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute -top-40 left-1/2 -translate-x-1/2
+            w-[780px] h-[360px] bg-primary/20 blur-[240px] rounded-full"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+
+            <!-- LEFT: CONTENT -->
+            <div>
+
+                <!-- Eyebrow -->
+                <span class="inline-flex items-center gap-2 mb-5
+                px-4 py-1.5 rounded-full
+                bg-white/10 border border-white/20
+                text-xs tracking-widest uppercase text-white/70">
+                    <i class="ri-focus-3-line text-primary"></i>
+                    Brand Strategy
+                </span>
+
+                <!-- Heading -->
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl
+                font-semibold leading-tight max-w-2xl">
+                    Strategic Branding Solutions
+                    <span class="text-primary block mt-2">
+                        Designed to Grow Your Business
                     </span>
                 </h2>
 
-                <p class="mt-6 text-white/75 leading-relaxed">
-                    Instead of listing branding services, these are the real moments
-                    when branding makes a meaningful difference for a business.
+                <!-- Paragraphs -->
+                <p class="mt-6 text-white/75 leading-relaxed max-w-xl text-base sm:text-lg">
+                    Noida is one of the fastest-growing commercial hubs in India, home to thousands of startups, mid-
+                    sized companies, and established enterprises, all competing for the same customers. Standing out in
+                    that kind of environment demands more than guesswork. It demands a strategy that is backed by
+                    research and driven by intent.
                 </p>
-            </div>
 
-            <!-- MOMENTS GRID -->
-            <div class="grid md:grid-cols-2 gap-8 lg:gap-10">
+                <p class="mt-4 text-white/70 leading-relaxed max-w-xl text-base sm:text-lg">
+                    At Techonika, as a branding and marketing agency, we combine deep market research with creative
+                    thinking to build brands that resonate. Our approach is not about aesthetics alone. It is about
+                    positioning your business in a way that speaks directly to what your audience actually needs, trusts,
+                    and values.
+                </p>
 
-                <!-- MOMENT CARD -->
-                <div class="bg-white/5 border border-white/15
-                        rounded-3xl p-7 sm:p-9
-                        backdrop-blur-xl">
-
-                    <span class="inline-block mb-3 text-primary text-sm font-semibold">
-                        Starting a New Business
-                    </span>
-
-                    <h3 class="text-lg font-semibold">
-                        Start With Clarity, Not Guesswork
-                    </h3>
-
-                    <p class="mt-4 text-white/80 leading-relaxed text-sm sm:text-base">
-                        We help you build a brand identity that feels clear from day one.
-                        This creates a strong foundation so people quickly understand
-                        who you are and what you stand for.
-                    </p>
-                </div>
-
-                <!-- MOMENT CARD -->
-                <div class="bg-white/5 border border-white/15
-                        rounded-3xl p-7 sm:p-9
-                        backdrop-blur-xl">
-
-                    <span class="inline-block mb-3 text-primary text-sm font-semibold">
-                        Brand Feels Confusing
-                    </span>
-
-                    <h3 class="text-lg font-semibold">
-                        Bring Everything Back Into Alignment
-                    </h3>
-
-                    <p class="mt-4 text-white/80 leading-relaxed text-sm sm:text-base">
-                        When visuals, messaging, and tone feel disconnected,
-                        we align everything into one clear and consistent
-                        brand story people can follow.
-                    </p>
-                </div>
-
-                <!-- MOMENT CARD -->
-                <div class="bg-white/5 border border-white/15
-                        rounded-3xl p-7 sm:p-9
-                        backdrop-blur-xl">
-
-                    <span class="inline-block mb-3 text-primary text-sm font-semibold">
-                        Growing or Changing Direction
-                    </span>
-
-                    <h3 class="text-lg font-semibold">
-                        Let Your Brand Grow With You
-                    </h3>
-
-                    <p class="mt-4 text-white/80 leading-relaxed text-sm sm:text-base">
-                        As your business evolves, your brand should evolve too.
-                        We refine your brand so it supports growth
-                        without losing recognition.
-                    </p>
-                </div>
-
-                <!-- MOMENT CARD -->
-                <div class="bg-white/5 border border-white/15
-                        rounded-3xl p-7 sm:p-9
-                        backdrop-blur-xl">
-
-                    <span class="inline-block mb-3 text-primary text-sm font-semibold">
-                        Brand Looks Outdated
-                    </span>
-
-                    <h3 class="text-lg font-semibold">
-                        Refresh Without Losing Familiarity
-                    </h3>
-
-                    <p class="mt-4 text-white/80 leading-relaxed text-sm sm:text-base">
-                        We modernize your brand while preserving the elements
-                        people already recognize and trust.
-                    </p>
-                </div>
+                <p class="mt-4 text-white/70 leading-relaxed max-w-xl text-base sm:text-lg">
+                    From the very first interaction a customer has with your company, whether that is your website, a
+                    social media post, or a printed brochure, we ensure every touchpoint tells a cohesive and compelling
+                    story. That consistency is what transforms a business into a brand people remember and choose, again
+                    and again.
+                </p>
 
             </div>
 
-            <!-- BOTTOM STATEMENT -->
-            <div class="mt-16 max-w-4xl">
-                <p class="text-white/75 leading-relaxed">
-                    Branding support is not about changing everything.
-                    It is about making sure your brand feels
-                    <span class="text-primary font-medium">
-                        clear, confident, and aligned
-                    </span>
-                    at every stage of your business.
-                </p>
+            <!-- RIGHT: STRATEGY POINTS -->
+            <div class="grid sm:grid-cols-2 gap-6">
+
+                <div class="p-6 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition">
+                    <i class="ri-search-eye-line text-primary text-2xl mb-3"></i>
+                    <h4 class="font-medium text-lg mb-1">Market Research</h4>
+                    <p class="text-sm text-white/70">
+                        Understanding competitors, audience behavior, and opportunities.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition">
+                    <i class="ri-map-pin-user-line text-primary text-2xl mb-3"></i>
+                    <h4 class="font-medium text-lg mb-1">Brand Positioning</h4>
+                    <p class="text-sm text-white/70">
+                        Clear messaging that defines why your brand is different.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition">
+                    <i class="ri-brush-3-line text-primary text-2xl mb-3"></i>
+                    <h4 class="font-medium text-lg mb-1">Creative Direction</h4>
+                    <p class="text-sm text-white/70">
+                        Visual and verbal identity aligned with brand intent.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition">
+                    <i class="ri-links-line text-primary text-2xl mb-3"></i>
+                    <h4 class="font-medium text-lg mb-1">Consistent Touchpoints</h4>
+                    <p class="text-sm text-white/70">
+                        Unified brand experience across all platforms.
+                    </p>
+                </div>
+
             </div>
 
         </div>
     </section>
+<section class="relative bg-black text-white py-16 sm:py-24 border-b border-white/10 overflow-hidden">
 
+    <!-- Ambient Glow -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2
+            w-[820px] h-[380px] bg-primary/20 blur-[260px] rounded-full"></div>
+    </div>
 
-    <section class="relative bg-black text-white py-12 overflow-hidden">
-        <!-- layered primary accent -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/3 right-1/4 w-[30rem] h-[30rem]
-                    bg-primary/10 rounded-full blur-3xl"></div>
-        </div>
+    <div class="relative max-w-7xl mx-auto px-6">
 
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-20">
+            <span class="inline-flex items-center gap-2 mb-5
+                px-4 py-1.5 rounded-full
+                bg-white/10 border border-white/20
+                text-xs tracking-widest uppercase text-white/70">
+                <i class="ri-stack-line text-primary"></i>
+                Our Services
+            </span>
 
-                <!-- LEFT CONTENT -->
-                <div>
-
-                    <!-- Eyebrow -->
-                    <span class="inline-flex items-center gap-2 mb-4
-                             text-xs tracking-widest uppercase text-white/60">
-                        Human-Centered Branding
-                        <span class="w-6 h-px bg-primary/60"></span>
-                    </span>
-
-                    <h2 class="text-2xl sm:text-3xl lg:text-4xl
-                           font-semibold leading-tight max-w-xl">
-                        Branding That Feels
-                        <span class="text-primary font-bold">
-                            Human, Not Corporate
-                        </span>
-                    </h2>
-
-                    <div class="mt-6 space-y-5 max-w-xl">
-                        <p class="text-white/75 leading-relaxed">
-                            Some branding feels cold and distant.
-                            It looks polished but feels hard to connect with.
-                            We believe branding should feel human —
-                            something people can relate to and trust.
-                        </p>
-
-                        <p class="text-white/75 leading-relaxed">
-                            As a people-focused branding agency in Noida,
-                            <span class="text-white font-medium">Techonika</span>
-                            designs brands that feel natural and genuine,
-                            never forced or overly corporate.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- RIGHT GLASS CARD -->
-                <div class="bg-white/5 border border-white/15
-                        rounded-3xl p-8 lg:p-10
-                        backdrop-blur-xl">
-
-                    <!-- Card Header -->
-                    <div class="flex items-center gap-3 mb-6">
-                        <span class="w-2 h-2 rounded-full bg-primary"></span>
-                        <h3 class="text-lg sm:text-xl font-semibold">
-                            Our branding feels
-                        </h3>
-                    </div>
-
-                    <ul class="space-y-6">
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Honest and
-                                <span class="text-white font-medium">
-                                    true to who you are
-                                </span>
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Clear and
-                                <span class="text-white font-medium">
-                                    easy to understand
-                                </span>
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Approachable without
-                                <span class="text-white font-medium">
-                                    losing professionalism
-                                </span>
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Confident, not
-                                <span class="text-white font-medium">
-                                    loud or aggressive
-                                </span>
-                            </p>
-                        </li>
-                    </ul>
-
-                    <!-- Emphasis Line -->
-                    <div class="mt-8 pt-6 border-t border-white/10">
-                        <p class="text-white/75 leading-relaxed text-sm sm:text-base">
-                            This kind of branding makes it easier for people to
-                            <span class="text-primary font-medium">
-                                connect with your business
-                            </span>
-                            and remember you for the right reasons.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="relative bg-black text-white py-12 overflow-hidden">
-        <!-- layered primary glow -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                    w-[44rem] h-[44rem] rounded-full blur-[120px]
-                    bg-gradient-to-br from-primary/20 via-primary/8 to-transparent">
-            </div>
-        </div>
-
-        <div class="relative max-w-7xl mx-auto px-6">
-
-            <!-- CENTERED INTRO -->
-            <div class="max-w-3xl mx-auto text-center mb-20">
-                <span class="inline-flex items-center gap-2 mb-4
-                         text-xs tracking-widest uppercase text-white/60">
-                    Consistent Brand Experience
-                    <span class="w-6 h-px bg-primary/60"></span>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6">
+                What We Offer –
+                <span class="text-primary">
+                    End-to-End Brand Building Services
                 </span>
+            </h2>
 
-                <h2 class="text-2xl sm:text-3xl lg:text-4xl
-                       font-semibold leading-tight">
-                    A Brand That
-                    <span class="text-primary font-bold">
-                        Works Everywhere
-                    </span>
-                </h2>
+            <p class="text-white/75 leading-relaxed text-base sm:text-lg">
+                A strong brand is built from multiple layers working in harmony.
+                Our branding services cover every stage of that process,
+                giving your business a complete foundation to grow with clarity,
+                consistency, and confidence.
+            </p>
+        </div>
 
-                <p class="mt-6 text-white/75 leading-relaxed">
-                    Your brand should feel strong whether it appears on a phone screen,
-                    a website, or a printed page.
-                    We design brand elements that remain clear, recognizable,
-                    and professional everywhere people encounter you.
+        <!-- Services Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Logo & Identity -->
+            <div class="group p-7 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition-all">
+                <i class="ri-shape-2-line text-primary text-2xl mb-4"></i>
+                <h3 class="text-lg font-medium mb-2">Custom Logo Design & Visual Identity</h3>
+                <p class="text-sm text-white/70 leading-relaxed">
+                    We create logos and visual identities that are recognizable,
+                    strategically aligned with your industry,
+                    and designed to stay relevant for years.
                 </p>
             </div>
 
-            <!-- CAPABILITY GRID -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-
-                <!-- CARD -->
-                <div class="group bg-white/5 border border-white/15
-                        rounded-3xl p-7 backdrop-blur-xl
-                        transition-all duration-300
-                        hover:-translate-y-1 hover:border-primary/40">
-                    <span class="block text-primary font-semibold text-sm mb-3">
-                        Digital First
-                    </span>
-                    <h3 class="text-base font-medium mb-2">
-                        Websites
-                    </h3>
-                    <p class="text-white/70 text-sm leading-relaxed">
-                        Clean layouts, readable typography, and strong hierarchy
-                        that feel consistent across all screen sizes.
-                    </p>
-                </div>
-
-                <!-- CARD -->
-                <div class="group bg-white/5 border border-white/15
-                        rounded-3xl p-7 backdrop-blur-xl
-                        transition-all duration-300
-                        hover:-translate-y-1 hover:border-primary/40">
-                    <span class="block text-primary font-semibold text-sm mb-3">
-                        Everyday Visibility
-                    </span>
-                    <h3 class="text-base font-medium mb-2">
-                        Social Media
-                    </h3>
-                    <p class="text-white/70 text-sm leading-relaxed">
-                        Visual systems that stay recognizable
-                        even when content changes daily.
-                    </p>
-                </div>
-
-                <!-- CARD -->
-                <div class="group bg-white/5 border border-white/15
-                        rounded-3xl p-7 backdrop-blur-xl
-                        transition-all duration-300
-                        hover:-translate-y-1 hover:border-primary/40">
-                    <span class="block text-primary font-semibold text-sm mb-3">
-                        Offline Presence
-                    </span>
-                    <h3 class="text-base font-medium mb-2">
-                        Marketing Materials
-                    </h3>
-                    <p class="text-white/70 text-sm leading-relaxed">
-                        Brochures, cards, and presentations
-                        that align perfectly with your digital identity.
-                    </p>
-                </div>
-
-                <!-- CARD -->
-                <div class="group bg-white/5 border border-white/15
-                        rounded-3xl p-7 backdrop-blur-xl
-                        transition-all duration-300
-                        hover:-translate-y-1 hover:border-primary/40">
-                    <span class="block text-primary font-semibold text-sm mb-3">
-                        Internal Consistency
-                    </span>
-                    <h3 class="text-base font-medium mb-2">
-                        Office Branding
-                    </h3>
-                    <p class="text-white/70 text-sm leading-relaxed">
-                        Visual elements that reinforce your brand
-                        for teams, visitors, and partners.
-                    </p>
-                </div>
-
+            <!-- Email Marketing -->
+            <div class="group p-7 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition-all">
+                <i class="ri-mail-send-line text-primary text-2xl mb-4"></i>
+                <h3 class="text-lg font-medium mb-2">Email Marketing That Converts</h3>
+                <p class="text-sm text-white/70 leading-relaxed">
+                    Personalized, well-timed campaigns designed to get opened,
+                    build trust, and turn inboxes into a consistent revenue channel.
+                </p>
             </div>
 
-            <!-- CLOSING LINE -->
-            <div class="mt-20 max-w-3xl mx-auto text-center">
-                <p class="text-white/75 leading-relaxed">
-                    When your brand works everywhere,
-                    your business feels more
-                    <span class="text-primary font-medium">
-                        organized, confident, and trustworthy
-                    </span>
-                    — without extra effort.
+            <!-- LinkedIn Marketing -->
+            <div class="group p-7 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition-all">
+                <i class="ri-linkedin-box-line text-primary text-2xl mb-4"></i>
+                <h3 class="text-lg font-medium mb-2">LinkedIn Marketing & B2B Leads</h3>
+                <p class="text-sm text-white/70 leading-relaxed">
+                    Profile optimization, content strategy, and positioning
+                    that puts your brand in front of real decision-makers.
+                </p>
+            </div>
+
+            <!-- SEO Content -->
+            <div class="group p-7 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition-all">
+                <i class="ri-file-text-line text-primary text-2xl mb-4"></i>
+                <h3 class="text-lg font-medium mb-2">SEO-Driven Content Creation</h3>
+                <p class="text-sm text-white/70 leading-relaxed">
+                    Blog posts, landing pages, and web content
+                    that rank in Google and genuinely help your audience.
+                </p>
+            </div>
+
+            <!-- SEO Services -->
+            <div class="group p-7 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition-all">
+                <i class="ri-bar-chart-2-line text-primary text-2xl mb-4"></i>
+                <h3 class="text-lg font-medium mb-2">Search Engine Optimization</h3>
+                <p class="text-sm text-white/70 leading-relaxed">
+                    Keyword research, on-page SEO, technical audits,
+                    and link building to rank — and stay ranked.
+                </p>
+            </div>
+
+            <!-- Website -->
+            <div class="group p-7 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition-all">
+                <i class="ri-window-line text-primary text-2xl mb-4"></i>
+                <h3 class="text-lg font-medium mb-2">Website Design & Development</h3>
+                <p class="text-sm text-white/70 leading-relaxed">
+                    Fast, clean, conversion-focused websites
+                    that make strong first impressions and sell for you.
+                </p>
+            </div>
+
+            <!-- Visiting Card -->
+            <div class="group p-7 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition-all">
+                <i class="ri-id-card-line text-primary text-2xl mb-4"></i>
+                <h3 class="text-lg font-medium mb-2">Visiting Card Designing</h3>
+                <p class="text-sm text-white/70 leading-relaxed">
+                    Thoughtfully designed visiting cards
+                    that turn a simple exchange into a brand moment.
+                </p>
+            </div>
+
+            <!-- Company Profile -->
+            <div class="group p-7 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition-all">
+                <i class="ri-file-list-3-line text-primary text-2xl mb-4"></i>
+                <h3 class="text-lg font-medium mb-2">Company Profile Designing</h3>
+                <p class="text-sm text-white/70 leading-relaxed">
+                    Clear, polished profiles that communicate
+                    who you are, what you do, and why clients should choose you.
+                </p>
+            </div>
+
+            <!-- Packaging -->
+            <div class="group p-7 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition-all">
+                <i class="ri-box-3-line text-primary text-2xl mb-4"></i>
+                <h3 class="text-lg font-medium mb-2">Package Designing</h3>
+                <p class="text-sm text-white/70 leading-relaxed">
+                    Packaging that grabs attention on shelves
+                    and delivers a memorable unboxing experience.
+                </p>
+            </div>
+
+            <!-- Video Explainer -->
+            <div class="group p-7 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06] transition-all">
+                <i class="ri-video-line text-primary text-2xl mb-4"></i>
+                <h3 class="text-lg font-medium mb-2">2D Video Explainers</h3>
+                <p class="text-sm text-white/70 leading-relaxed">
+                    Short animated videos that simplify complex ideas
+                    and motivate viewers to take action.
                 </p>
             </div>
 
         </div>
-    </section>
 
-    <section class="relative bg-black text-white py-12 overflow-hidden">
-        <!-- layered primary glow -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/3 right-1/4 w-[30rem] h-[30rem]
-                    rounded-full blur-[110px]
-                    bg-gradient-to-br from-primary/20 via-primary/8 to-transparent">
-            </div>
+    </div>
+</section>
+
+<section class="relative bg-black text-white py-16 sm:py-24 border-b border-white/10 overflow-hidden">
+
+    <!-- Subtle Background Glow -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2
+            w-[760px] h-[360px] bg-primary/20 blur-[240px] rounded-full"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
+
+        <!-- LEFT CONTENT -->
+        <div>
+
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6">
+                Why Noida Businesses
+                <span class="text-primary">Trust Techonika</span>
+                for Branding
+            </h2>
+
+            <p class="text-white/75 leading-relaxed mb-5">
+                There is no shortage of branding companies out there.
+                So why work with us?
+                Because Techonika does not treat branding as a one-time deliverable.
+                As a creative branding agency in Noida, we treat it as an ongoing relationship.
+            </p>
+
+            <p class="text-white/75 leading-relaxed mb-5">
+                When you partner with us, you are not just getting a logo
+                or a strategy document. You are getting a team that understands
+                your business, your market, and your goals,
+                and works with you to make all three align.
+            </p>
+
+            <p class="text-white/75 leading-relaxed mb-5">
+                We have worked with businesses across industries,
+                from technology and healthcare to food, fashion,
+                and real estate. That breadth of experience allows us
+                to bring perspectives and ideas that a single-niche agency
+                simply cannot offer.
+            </p>
+
+            <p class="text-white/75 leading-relaxed">
+                And because we are based right here in Noida,
+                we understand the local market dynamics,
+                the pace of business, and the expectations
+                of the customers you are trying to reach.
+                Our clients stay with Techonika because we deliver
+                results they can see and measure —
+                real growth in brand awareness, customer trust, and revenue.
+            </p>
+
         </div>
 
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- RIGHT IMAGE -->
+        <div class="relative">
 
-                <!-- LEFT CONTENT -->
-                <div>
+            <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                <img
+                    src="/images/brand-building-business-marketing-words-typography-concept_21336-10502.jpg"
+                    alt="Trusted branding agency in Noida"
+                    class="w-full h-full object-cover">
 
-                    <!-- Eyebrow -->
-                    <span class="inline-flex items-center gap-2 mb-4
-                             text-xs tracking-widest uppercase text-white/60">
-                        Ongoing Partnership
-                        <span class="w-6 h-px bg-primary/60"></span>
+                <!-- Image Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            </div>
+
+            <!-- Accent Glow -->
+            <div class="absolute -bottom-10 -right-10
+                w-48 h-48 bg-primary/25 blur-[140px]
+                rounded-full -z-10"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="relative bg-black text-white py-20 sm:py-28 border-b border-white/10 overflow-hidden">
+
+    <!-- Ambient Glow -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute -top-48 left-1/2 -translate-x-1/2
+            w-[800px] h-[380px] bg-primary/20 blur-[240px] rounded-full"></div>
+
+        <div class="absolute bottom-0 right-0
+            w-[420px] h-[420px] bg-white/5 blur-[180px] rounded-full"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="max-w-3xl mb-20">
+            <span class="inline-flex items-center gap-2 mb-5
+                px-4 py-1.5 rounded-full
+                bg-white/5 border border-white/10
+                text-xs uppercase tracking-widest text-primary">
+                Our Process
+            </span>
+
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-5">
+                How We Build <span class="text-primary">Brands That Last</span>
+            </h2>
+
+            <p class="text-white/70 leading-relaxed">
+                Great brands are not created overnight.
+                They are built through research, clarity,
+                and disciplined execution at every stage.
+            </p>
+        </div>
+
+        <!-- Process Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card -->
+            <div class="group p-8 rounded-2xl
+                bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06]
+                hover:-translate-y-1 transition-all duration-300">
+
+                <div class="flex items-center gap-4 mb-5">
+                    <span class="flex h-11 w-11 items-center justify-center
+                        rounded-full bg-primary text-black font-semibold">
+                        1
                     </span>
-
-                    <h2 class="text-2xl sm:text-3xl lg:text-4xl
-                           font-semibold leading-tight max-w-xl">
-                        Long-Term
-                        <span class="text-primary font-bold">
-                            Branding Support
-                        </span>
-                    </h2>
-
-                    <div class="mt-6 space-y-5 max-w-xl">
-                        <p class="text-white/75 leading-relaxed">
-                            Branding is not a one-time task.
-                            As your business grows, changes direction, or launches
-                            new ideas, your brand often needs thoughtful updates
-                            and steady guidance.
-                        </p>
-
-                        <p class="text-white/75 leading-relaxed">
-                            We stay involved so your brand continues to feel
-                            clear, relevant, and aligned with your goals —
-                            never outdated or disconnected.
-                        </p>
-                    </div>
+                    <i class="ri-search-eye-line text-primary text-xl"></i>
                 </div>
 
-                <!-- RIGHT SUPPORT CARD -->
-                <div class="bg-white/5 border border-white/15
-                        rounded-3xl p-8 lg:p-10
-                        backdrop-blur-xl">
+                <h3 class="text-lg font-medium mb-3">
+                    Discovery & Brand Audit
+                </h3>
 
-                    <!-- Card Header -->
-                    <div class="flex items-center gap-3 mb-6">
-                        <span class="w-2 h-2 rounded-full bg-primary"></span>
-                        <h3 class="text-lg sm:text-xl font-semibold">
-                            We stay available to
-                        </h3>
-                    </div>
-
-                    <ul class="space-y-6">
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Improve
-                                <span class="text-white font-medium">
-                                    brand consistency
-                                </span>
-                                across every touchpoint
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Support
-                                <span class="text-white font-medium">
-                                    new campaigns and launches
-                                </span>
-                                as you grow
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Adjust
-                                <span class="text-white font-medium">
-                                    visuals or messaging
-                                </span>
-                                when your direction evolves
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Keep your brand aligned with
-                                <span class="text-white font-medium">
-                                    long-term business goals
-                                </span>
-                            </p>
-                        </li>
-                    </ul>
-
-                    <!-- Emphasis Line -->
-                    <div class="mt-8 pt-6 border-t border-white/10">
-                        <p class="text-white/75 leading-relaxed text-sm sm:text-base">
-                            At <span class="text-white font-medium">Techonika</span>,
-                            we see branding as a
-                            <span class="text-primary font-medium">
-                                long-term relationship
-                            </span>
-                            — not a one-off project.
-                        </p>
-                    </div>
-                </div>
-
+                <p class="text-sm text-white/70 leading-relaxed">
+                    We deeply understand your business, audience,
+                    and goals. Existing brands are audited to uncover
+                    strengths, gaps, and opportunities for growth.
+                </p>
             </div>
-        </div>
-    </section>
 
-    <section class="relative bg-black text-white py-12 overflow-hidden">
-        <!-- layered primary accent -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-1/3 left-1/4 w-[30rem] h-[30rem]
-                    bg-primary/10 rounded-full blur-[120px]"></div>
-        </div>
+            <!-- Card -->
+            <div class="group p-8 rounded-2xl
+                bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06]
+                hover:-translate-y-1 transition-all duration-300">
 
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-
-                <!-- LEFT CONTENT -->
-                <div>
-
-                    <!-- Eyebrow -->
-                    <span class="inline-flex items-center gap-2 mb-4
-                             text-xs tracking-widest uppercase text-white/60">
-                        Why Clients Trust Us
-                        <span class="w-6 h-px bg-primary/60"></span>
+                <div class="flex items-center gap-4 mb-5">
+                    <span class="flex h-11 w-11 items-center justify-center
+                        rounded-full bg-primary text-black font-semibold">
+                        2
                     </span>
-
-                    <h2 class="text-2xl sm:text-3xl lg:text-4xl
-                           font-semibold leading-tight max-w-xl">
-                        Why Businesses Choose
-                        <span class="text-primary font-bold">
-                            Techonika
-                        </span>
-                        as Their Branding Agency in Noida
-                    </h2>
-
-                    <div class="mt-6 space-y-5 max-w-xl">
-                        <p class="text-white/75 leading-relaxed">
-                            Clients choose us because we respect their business story
-                            and help them express it clearly.
-                            We listen carefully, ask the right questions,
-                            and explain every decision in simple, honest words.
-                        </p>
-
-                        <p class="text-white/75 leading-relaxed">
-                            Your brand is not just a project to us.
-                            It represents your effort, your ideas,
-                            and the future you are building.
-                        </p>
-                    </div>
+                    <i class="ri-bar-chart-grouped-line text-primary text-xl"></i>
                 </div>
 
-                <!-- RIGHT VALUES CARD -->
-                <div class="bg-white/5 border border-white/15
-                        rounded-3xl p-8 lg:p-10
-                        backdrop-blur-xl">
+                <h3 class="text-lg font-medium mb-3">
+                    Market & Competitor Research
+                </h3>
 
-                    <!-- Card Header -->
-                    <div class="flex items-center gap-3 mb-6">
-                        <span class="w-2 h-2 rounded-full bg-primary"></span>
-                        <h3 class="text-lg sm:text-xl font-semibold">
-                            What we believe in
-                        </h3>
-                    </div>
-
-                    <ul class="space-y-6">
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Clear
-                                <span class="text-white font-medium">
-                                    thinking and direction
-                                </span>
-                                before design begins
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Honest
-                                <span class="text-white font-medium">
-                                    advice without exaggeration
-                                </span>
-                                or pressure
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Simple
-                                <span class="text-white font-medium">
-                                    design decisions that make sense
-                                </span>
-                                for your business
-                            </p>
-                        </li>
-
-                        <li class="flex gap-4">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-primary"></span>
-                            <p class="text-white/80 leading-relaxed">
-                                Long-term
-                                <span class="text-white font-medium">
-                                    value over quick results
-                                </span>
-                                or trends
-                            </p>
-                        </li>
-                    </ul>
-
-                    <!-- Emphasis Line -->
-                    <div class="mt-8 pt-6 border-t border-white/10">
-                        <p class="text-white/75 leading-relaxed text-sm sm:text-base">
-                            We treat your brand with care,
-                            because it represents your work, your reputation,
-                            and the trust people place in your business.
-                        </p>
-                    </div>
-                </div>
-
+                <p class="text-sm text-white/70 leading-relaxed">
+                    We study competitors, industry trends,
+                    and customer behavior to identify
+                    positioning opportunities others miss.
+                </p>
             </div>
+
+            <!-- Card -->
+            <div class="group p-8 rounded-2xl
+                bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06]
+                hover:-translate-y-1 transition-all duration-300">
+
+                <div class="flex items-center gap-4 mb-5">
+                    <span class="flex h-11 w-11 items-center justify-center
+                        rounded-full bg-primary text-black font-semibold">
+                        3
+                    </span>
+                    <i class="ri-compass-3-line text-primary text-xl"></i>
+                </div>
+
+                <h3 class="text-lg font-medium mb-3">
+                    Brand Strategy & Positioning
+                </h3>
+
+                <p class="text-sm text-white/70 leading-relaxed">
+                    We define your brand voice, messaging,
+                    and visual direction — creating a clear
+                    foundation for long-term growth.
+                </p>
+            </div>
+
+            <!-- Card -->
+            <div class="group p-8 rounded-2xl
+                bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06]
+                hover:-translate-y-1 transition-all duration-300">
+
+                <div class="flex items-center gap-4 mb-5">
+                    <span class="flex h-11 w-11 items-center justify-center
+                        rounded-full bg-primary text-black font-semibold">
+                        4
+                    </span>
+                    <i class="ri-palette-line text-primary text-xl"></i>
+                </div>
+
+                <h3 class="text-lg font-medium mb-3">
+                    Creative Execution & Launch
+                </h3>
+
+                <p class="text-sm text-white/70 leading-relaxed">
+                    From logos and websites to social media
+                    and marketing assets — everything is
+                    executed with consistency and precision.
+                </p>
+            </div>
+
+            <!-- Card -->
+            <div class="group p-8 rounded-2xl
+                bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06]
+                hover:-translate-y-1 transition-all duration-300">
+
+                <div class="flex items-center gap-4 mb-5">
+                    <span class="flex h-11 w-11 items-center justify-center
+                        rounded-full bg-primary text-black font-semibold">
+                        5
+                    </span>
+                    <i class="ri-line-chart-line text-primary text-xl"></i>
+                </div>
+
+                <h3 class="text-lg font-medium mb-3">
+                    Performance & Refinement
+                </h3>
+
+                <p class="text-sm text-white/70 leading-relaxed">
+                    We track results, analyze feedback,
+                    and continuously refine your brand
+                    to stay sharp, relevant, and competitive.
+                </p>
+            </div>
+
         </div>
-    </section>
+
+    </div>
+</section>
+
+<section class="relative bg-black text-white py-20 sm:py-28 border-b border-white/10 overflow-hidden">
+
+    <!-- Ambient Glow -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute -top-40 left-1/3
+            w-[700px] h-[360px] bg-primary/15 blur-[220px] rounded-full"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+        <!-- LEFT CONTENT -->
+        <div class="max-w-xl">
+
+            <span class="inline-flex items-center gap-2 mb-5
+                px-4 py-1.5 rounded-full
+                bg-white/5 border border-white/10
+                text-xs uppercase tracking-widest text-primary">
+                Proven Impact
+            </span>
+
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6">
+                Real Results –
+                <span class="text-primary">Projects That Delivered Impact</span>
+            </h2>
+
+            <p class="text-white/75 leading-relaxed mb-4">
+                Across dozens of projects for businesses of all sizes,
+                Techonika has helped brands go from being unknown
+                to becoming the trusted choice in their space.
+                From Noida-based startups building their identity
+                from scratch to established enterprises refreshing
+                their image for new market segments, every project
+                receives the same strategic focus and care.
+            </p>
+
+            <p class="text-white/70 leading-relaxed">
+                We measure success not just in how a brand looks,
+                but in how it performs. Stronger brand recognition,
+                higher website traffic, improved conversion rates,
+                and customers who return and refer others —
+                that is the standard we hold ourselves to on
+                every single project.
+            </p>
+
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="relative">
+
+            <div class="relative rounded-2xl overflow-hidden
+                border border-white/10 bg-white/[0.04]">
+
+                <img
+                    src="{{ asset('images/flat-tiny-people-innovation-concept-business-partner-generating-idea-projects_513217-80.jpg') }}"
+                    alt="Branding project success and collaboration"
+                    class="w-full h-full object-cover opacity-90">
+
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t
+                    from-black/60 via-black/20 to-transparent"></div>
+            </div>
+
+            <!-- Floating Stat -->
+            <div class="absolute -bottom-6 -left-6
+                bg-black/80 backdrop-blur
+                border border-white/10
+                rounded-xl px-6 py-4">
+
+                <p class="text-sm text-white/60">Impact Delivered</p>
+                <p class="text-xl font-semibold text-primary">
+                    Growth • Trust • Conversions
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="relative bg-black text-white py-20 sm:py-28 border-b border-white/10 overflow-hidden">
+
+    <!-- Soft Glow -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2
+            w-[760px] h-[360px] bg-primary/20 blur-[240px] rounded-full"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6">
+
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-20">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6">
+                The Pillars of a
+                <span class="text-primary">Strong Brand</span>
+            </h2>
+
+            <p class="text-white/75 leading-relaxed">
+                A powerful brand is not built by chance.
+                It is built on clear fundamentals that work
+                together to create recognition, trust,
+                and long-term growth.
+            </p>
+        </div>
+
+        <!-- Pillars Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Pillar 1 -->
+            <div class="group p-8 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/30 hover:bg-white/[0.06] transition-all">
+
+                <div class="mb-5 flex h-12 w-12 items-center justify-center
+                    rounded-xl bg-primary/15">
+                    <i class="ri-shape-2-line text-primary text-xl"></i>
+                </div>
+
+                <h3 class="text-lg font-medium mb-3">
+                    Brand Identity & Messaging
+                </h3>
+
+                <p class="text-sm text-white/70 leading-relaxed">
+                    We build visual identity and messaging together,
+                    ensuring how your brand looks and how it speaks
+                    reinforce each other at every customer touchpoint.
+                </p>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="group p-8 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/30 hover:bg-white/[0.06] transition-all">
+
+                <div class="mb-5 flex h-12 w-12 items-center justify-center
+                    rounded-xl bg-primary/15">
+                    <i class="ri-chat-voice-line text-primary text-xl"></i>
+                </div>
+
+                <h3 class="text-lg font-medium mb-3">
+                    Brand Voice & Tone
+                </h3>
+
+                <p class="text-sm text-white/70 leading-relaxed">
+                    We define a clear voice and tone that feels authentic,
+                    resonates with your audience, and stays consistent
+                    across every platform and communication.
+                </p>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="group p-8 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/30 hover:bg-white/[0.06] transition-all">
+
+                <div class="mb-5 flex h-12 w-12 items-center justify-center
+                    rounded-xl bg-primary/15">
+                    <i class="ri-focus-3-line text-primary text-xl"></i>
+                </div>
+
+                <h3 class="text-lg font-medium mb-3">
+                    Brand Positioning & Differentiation
+                </h3>
+
+                <p class="text-sm text-white/70 leading-relaxed">
+                    We help you own a clear position in your market,
+                    defining the unique value and promise that
+                    separates your brand from competitors.
+                </p>
+            </div>
+
+            <!-- Pillar 4 -->
+            <div class="group p-8 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/30 hover:bg-white/[0.06] transition-all">
+
+                <div class="mb-5 flex h-12 w-12 items-center justify-center
+                    rounded-xl bg-primary/15">
+                    <i class="ri-book-open-line text-primary text-xl"></i>
+                </div>
+
+                <h3 class="text-lg font-medium mb-3">
+                    Brand Guidelines & Consistency
+                </h3>
+
+                <p class="text-sm text-white/70 leading-relaxed">
+                    We create detailed brand guidelines that ensure
+                    your brand looks and sounds consistent across
+                    teams, platforms, and future campaigns.
+                </p>
+            </div>
+
+            <!-- Pillar 5 -->
+            <div class="group p-8 rounded-2xl bg-white/[0.04] border border-white/10
+                hover:border-primary/30 hover:bg-white/[0.06] transition-all">
+
+                <div class="mb-5 flex h-12 w-12 items-center justify-center
+                    rounded-xl bg-primary/15">
+                    <i class="ri-refresh-line text-primary text-xl"></i>
+                </div>
+
+                <h3 class="text-lg font-medium mb-3">
+                    Rebranding & Revitalization
+                </h3>
+
+                <p class="text-sm text-white/70 leading-relaxed">
+                    When your business evolves, your brand should too.
+                    We handle rebranding carefully, preserving what works
+                    while building a stronger foundation for growth.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
 
     <section class="relative bg-black text-white py-12 overflow-hidden">
         <!-- primary gradient atmosphere -->

@@ -93,7 +93,7 @@ Route::get('/privacy-policy', PrivacyPolicy::class)->name('privacy-policy');
 Route::get('/refund-policy', RefundCancellation::class)->name('refund-policy');
 Route::get('/terms-and-conditions', TermAndCondition::class)->name('terms-conditions');
 Route::get('/disclaimer', Disclaimer::class)->name('disclaimer');
-Route::get('/branding', BrandingIndex::class)->name('branding');
+Route::get('/branding-agency-in-noida', BrandingIndex::class)->name('branding');
 
 //web development routes
 Route::get('laravel-development', LaravelDevelopment::class)->name('laravel-development');

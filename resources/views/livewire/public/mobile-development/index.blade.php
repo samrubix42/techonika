@@ -6,182 +6,182 @@ cross-platform apps for startups to enterprises. Get a free quote today!">
 @endsection
 
 <div>
-   <section class="relative bg-black text-white overflow-hidden
+    <section class="relative bg-black text-white overflow-hidden
 py-20 sm:py-28 lg:py-32 border-b border-white/10">
 
-    <!-- Ambient Glows -->
-    <div class="absolute inset-0 pointer-events-none">
-        <div class="absolute -top-56 left-1/2 -translate-x-1/2
+        <!-- Ambient Glows -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute -top-56 left-1/2 -translate-x-1/2
             w-[900px] h-[420px] bg-primary/30 blur-[260px] rounded-full"></div>
 
-        <div class="absolute bottom-0 left-0
-            w-[420px] h-[420px] bg-white/5 blur-[180px] rounded-full"></div>
+            <div class="absolute bottom-0 left-0  
+                        w-[420px] h-[420px] bg-white/5 blur-[180px] rounded-full"></div>
 
-        <div class="absolute top-1/3 right-0
+            <div class="absolute top-1/3 right-0
             w-[360px] h-[360px] bg-primary/10 blur-[160px] rounded-full"></div>
-    </div>
+        </div>
 
-    <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+        <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
 
-        <!-- LEFT CONTENT -->
-        <div>
+            <!-- LEFT CONTENT -->
+            <div>
 
-            <!-- Badge -->
-            <span class="inline-flex items-center gap-2 mb-6
+                <!-- Badge -->
+                <span class="inline-flex items-center gap-2 mb-6
                 px-4 py-1.5 rounded-full
                 bg-white/10 border border-white/20
                 text-xs tracking-widest uppercase text-white/70 backdrop-blur">
-                <i class="ri-smartphone-line text-primary"></i>
-                Mobile App Development
-            </span>
-
-            <!-- Heading -->
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl
-                font-semibold leading-tight max-w-2xl">
-                Mobile App Development Company in Noida
-                <span class="text-primary block mt-3">
-                    Custom Solutions for Startups to Enterprises
+                    <i class="ri-smartphone-line text-primary"></i>
+                    Mobile App Development
                 </span>
-            </h1>
 
-            <!-- Description -->
-            <p class="mt-6 text-white/75 leading-relaxed max-w-xl text-base sm:text-lg">
-                Techonika delivers innovative mobile app development services that
-                transform business ideas into powerful digital solutions.
-                We combine technical expertise with creative design to build
-                apps users love and businesses trust.
-            </p>
+                <!-- Heading -->
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl
+                font-semibold leading-tight max-w-2xl">
+                    Mobile App Development Company in Noida
+                    <span class="text-primary block mt-3">
+                        Custom Solutions for Startups to Enterprises
+                    </span>
+                </h1>
 
-            <p class="mt-4 text-white/70 leading-relaxed max-w-xl text-base sm:text-lg">
-                From Android and iOS to cross-platform solutions, we help
-                startups, SMEs, and enterprises build scalable mobile
-                products with complete ownership from strategy to deployment.
-            </p>
+                <!-- Description -->
+                <p class="mt-6 text-white/75 leading-relaxed max-w-xl text-base sm:text-lg">
+                    Techonika delivers innovative mobile app development services that
+                    transform business ideas into powerful digital solutions.
+                    We combine technical expertise with creative design to build
+                    apps users love and businesses trust.
+                </p>
 
-            <!-- CTA -->
-            <div class="mt-10 flex flex-col sm:flex-row gap-4">
-                <button
-                    @click="$dispatch('open-modal', { to: 'contact' })"
-                    class="inline-flex items-center justify-center gap-2
+                <p class="mt-4 text-white/70 leading-relaxed max-w-xl text-base sm:text-lg">
+                    From Android and iOS to cross-platform solutions, we help
+                    startups, SMEs, and enterprises build scalable mobile
+                    products with complete ownership from strategy to deployment.
+                </p>
+
+                <!-- CTA -->
+                <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                    <button
+                        @click="$dispatch('open-modal', { to: 'contact' })"
+                        class="inline-flex items-center justify-center gap-2
                     px-8 py-4 rounded-xl
                     bg-primary text-black font-medium
                     hover:bg-primary/90 transition">
-                    <i class="ri-rocket-line"></i>
-                    Start Your App Project
-                </button>
+                        <i class="ri-rocket-line"></i>
+                        Start Your App Project
+                    </button>
 
-                <button
-                    class="inline-flex items-center justify-center gap-2
+                    <button
+                        class="inline-flex items-center justify-center gap-2
                     px-8 py-4 rounded-xl
                     border border-white/25 text-white/80
                     hover:bg-white/[0.05] transition">
-                    <i class="ri-folder-line"></i>
-                    View App Portfolio
-                </button>
+                        <i class="ri-folder-line"></i>
+                        View App Portfolio
+                    </button>
+                </div>
+
+                <!-- Trust Points -->
+                <div class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/60">
+                    <span class="flex items-center gap-2">
+                        <i class="ri-check-line text-primary"></i> Android & iOS Apps
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <i class="ri-check-line text-primary"></i> Cross-Platform
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <i class="ri-check-line text-primary"></i> Scalable Architecture
+                    </span>
+                </div>
+
             </div>
 
-            <!-- Trust Points -->
-            <div class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/60">
-                <span class="flex items-center gap-2">
-                    <i class="ri-check-line text-primary"></i> Android & iOS Apps
-                </span>
-                <span class="flex items-center gap-2">
-                    <i class="ri-check-line text-primary"></i> Cross-Platform
-                </span>
-                <span class="flex items-center gap-2">
-                    <i class="ri-check-line text-primary"></i> Scalable Architecture
-                </span>
+            <!-- RIGHT STATS -->
+            <div class="relative">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                    <!-- Stat Card -->
+                    <div class="group p-6 sm:p-7 rounded-2xl
+                    bg-white/[0.04] border border-white/10
+                    hover:border-primary/40 hover:bg-white/[0.06]
+                    transition-all">
+
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="flex h-11 w-11 items-center justify-center
+                            rounded-xl bg-primary/15">
+                                <i class="ri-time-line text-primary text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-lg">7+ Years Experience</h4>
+                        </div>
+
+                        <p class="text-sm text-white/70">
+                            Proven expertise in mobile product engineering.
+                        </p>
+                    </div>
+
+                    <!-- Stat Card -->
+                    <div class="group p-6 sm:p-7 rounded-2xl
+                    bg-white/[0.04] border border-white/10
+                    hover:border-primary/40 hover:bg-white/[0.06]
+                    transition-all">
+
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="flex h-11 w-11 items-center justify-center
+                            rounded-xl bg-primary/15">
+                                <i class="ri-team-line text-primary text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-lg">50+ Expert Developers</h4>
+                        </div>
+
+                        <p class="text-sm text-white/70">
+                            Skilled Android, iOS & cross-platform engineers.
+                        </p>
+                    </div>
+
+                    <!-- Stat Card -->
+                    <div class="group p-6 sm:p-7 rounded-2xl
+                    bg-white/[0.04] border border-white/10
+                    hover:border-primary/40 hover:bg-white/[0.06]
+                    transition-all">
+
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="flex h-11 w-11 items-center justify-center
+                            rounded-xl bg-primary/15">
+                                <i class="ri-apps-line text-primary text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-lg">200+ Apps Delivered</h4>
+                        </div>
+
+                        <p class="text-sm text-white/70">
+                            Successfully launched across industries.
+                        </p>
+                    </div>
+
+                    <!-- Stat Card -->
+                    <div class="group p-6 sm:p-7 rounded-2xl
+                    bg-white/[0.04] border border-white/10
+                    hover:border-primary/40 hover:bg-white/[0.06]
+                    transition-all">
+
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="flex h-11 w-11 items-center justify-center
+                            rounded-xl bg-primary/15">
+                                <i class="ri-star-smile-line text-primary text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-lg">98% Client Satisfaction</h4>
+                        </div>
+
+                        <p class="text-sm text-white/70">
+                            Trusted by startups & enterprises globally.
+                        </p>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
-
-        <!-- RIGHT STATS -->
-        <div class="relative">
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-
-                <!-- Stat Card -->
-                <div class="group p-6 sm:p-7 rounded-2xl
-                    bg-white/[0.04] border border-white/10
-                    hover:border-primary/40 hover:bg-white/[0.06]
-                    transition-all">
-
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="flex h-11 w-11 items-center justify-center
-                            rounded-xl bg-primary/15">
-                            <i class="ri-time-line text-primary text-xl"></i>
-                        </div>
-                        <h4 class="font-medium text-lg">7+ Years Experience</h4>
-                    </div>
-
-                    <p class="text-sm text-white/70">
-                        Proven expertise in mobile product engineering.
-                    </p>
-                </div>
-
-                <!-- Stat Card -->
-                <div class="group p-6 sm:p-7 rounded-2xl
-                    bg-white/[0.04] border border-white/10
-                    hover:border-primary/40 hover:bg-white/[0.06]
-                    transition-all">
-
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="flex h-11 w-11 items-center justify-center
-                            rounded-xl bg-primary/15">
-                            <i class="ri-team-line text-primary text-xl"></i>
-                        </div>
-                        <h4 class="font-medium text-lg">50+ Expert Developers</h4>
-                    </div>
-
-                    <p class="text-sm text-white/70">
-                        Skilled Android, iOS & cross-platform engineers.
-                    </p>
-                </div>
-
-                <!-- Stat Card -->
-                <div class="group p-6 sm:p-7 rounded-2xl
-                    bg-white/[0.04] border border-white/10
-                    hover:border-primary/40 hover:bg-white/[0.06]
-                    transition-all">
-
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="flex h-11 w-11 items-center justify-center
-                            rounded-xl bg-primary/15">
-                            <i class="ri-apps-line text-primary text-xl"></i>
-                        </div>
-                        <h4 class="font-medium text-lg">200+ Apps Delivered</h4>
-                    </div>
-
-                    <p class="text-sm text-white/70">
-                        Successfully launched across industries.
-                    </p>
-                </div>
-
-                <!-- Stat Card -->
-                <div class="group p-6 sm:p-7 rounded-2xl
-                    bg-white/[0.04] border border-white/10
-                    hover:border-primary/40 hover:bg-white/[0.06]
-                    transition-all">
-
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="flex h-11 w-11 items-center justify-center
-                            rounded-xl bg-primary/15">
-                            <i class="ri-star-smile-line text-primary text-xl"></i>
-                        </div>
-                        <h4 class="font-medium text-lg">98% Client Satisfaction</h4>
-                    </div>
-
-                    <p class="text-sm text-white/70">
-                        Trusted by startups & enterprises globally.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</section>
+    </section>
 
     <section class="relative bg-black text-white py-16 sm:py-24 border-b border-white/10 overflow-hidden">
 
