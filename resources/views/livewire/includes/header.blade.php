@@ -147,15 +147,10 @@
                     <a href="{{ route('company-profile-designing') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Company Profile Designing</a>
                     <a href="{{ route('package-designing') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Package Designing</a>
                     <a href="{{ route('2d-video-explaination') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">2D Video Explainer</a>
-                  </div>
-
-                  <div class="text-amber-400 font-semibold text-sm mt-6 mb-4">
-                    CONTENT SERVICES
-                  </div>
-                  <div class="space-y-2 text-sm">
                     <a href="{{ route('copywriting') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Copywriting</a>
                     <a href="{{ route('content-writing') }}" class="block text-white/70 hover:text-amber-400 hover:pl-2 transition-all">Content Writing</a>
                   </div>
+
                 </div>
 
               </div>
@@ -288,8 +283,7 @@
                 <a href="{{ route('smo-services') }}" class="block">SMO Services</a>
                 <a href="{{ route('smm-service') }}" class="block">SMM Services</a>
                 <a href="{{ route('orm-services') }}" class="block">ORM Services</a>
-                <a href="{{ route('copywriting') }}" class="block">Copywriting</a>
-                <a href="{{ route('content-writing') }}" class="block">Content Writing</a>
+              
               </div>
             </div>
 
@@ -305,6 +299,8 @@
                 <a href="{{ route('company-profile-designing') }}" class="block">Company Profile Designing</a>
                 <a href="{{ route('package-designing') }}" class="block">Package Designing</a>
                 <a href="{{ route('2d-video-explaination') }}" class="block">2D Video Explainer</a>
+                  <a href="{{ route('copywriting') }}" class="block">Copywriting</a>
+                <a href="{{ route('content-writing') }}" class="block">Content Writing</a>
               </div>
             </div>
 

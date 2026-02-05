@@ -14,76 +14,52 @@ py-20 sm:py-28 lg:py-32 border-b border-white/10">
             <div class="absolute -top-56 left-1/2 -translate-x-1/2
             w-[900px] h-[420px] bg-primary/30 blur-[260px] rounded-full"></div>
 
-            <div class="absolute bottom-0 left-0  
-                        w-[420px] h-[420px] bg-white/5 blur-[180px] rounded-full"></div>
+            <div class="absolute bottom-0 left-0
+            w-[420px] h-[420px] bg-white/5 blur-[180px] rounded-full"></div>
 
             <div class="absolute top-1/3 right-0
             w-[360px] h-[360px] bg-primary/10 blur-[160px] rounded-full"></div>
         </div>
 
-        <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+        <div class="relative max-w-7xl mx-auto px-6
+        grid lg:grid-cols-2 gap-16 items-center">
 
             <!-- LEFT CONTENT -->
             <div>
 
-                <!-- Badge -->
                 <span class="inline-flex items-center gap-2 mb-6
-                px-4 py-1.5 rounded-full
-                bg-white/10 border border-white/20
-                text-xs tracking-widest uppercase text-white/70 backdrop-blur">
+            px-4 py-1.5 rounded-full
+            bg-white/10 border border-white/20
+            text-xs tracking-widest uppercase text-white/70 backdrop-blur">
                     <i class="ri-smartphone-line text-primary"></i>
                     Mobile App Development
                 </span>
 
-                <!-- Heading -->
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl
-                font-semibold leading-tight max-w-2xl">
+            font-semibold leading-tight">
                     Mobile App Development Company in Noida
                     <span class="text-primary block mt-3">
-                        Custom Solutions for Startups to Enterprises
+                        Custom
+                        Solutions for Startups to Enterprises
                     </span>
                 </h1>
 
-                <!-- Description -->
-                <p class="mt-6 text-white/75 leading-relaxed max-w-xl text-base sm:text-lg">
-                    Techonika delivers innovative mobile app development services that
-                    transform business ideas into powerful digital solutions.
-                    We combine technical expertise with creative design to build
-                    apps users love and businesses trust.
+                <p class="mt-6 text-white/75 max-w-xl text-base sm:text-lg">
+                    Techonika delivers innovative mobile app development services that transform your business ideas
+                    into powerful digital solutions. As a leading mobile app development company in Noida, we combine
+                    technical expertise with creative design to build apps that users love and businesses trust.
                 </p>
 
-                <p class="mt-4 text-white/70 leading-relaxed max-w-xl text-base sm:text-lg">
-                    From Android and iOS to cross-platform solutions, we help
-                    startups, SMEs, and enterprises build scalable mobile
-                    products with complete ownership from strategy to deployment.
+                <p class="mt-4 text-white/70 max-w-xl text-base sm:text-lg">
+                    Our team specializes in creating custom mobile applications for Android, iOS, and cross-platform
+                    environments. We work with startups launching their first product, SMEs expanding their digital
+                    presence, and enterprises scaling their operations. Every project receives dedicated attention from
+                    strategy to deployment and beyond.
                 </p>
 
-                <!-- CTA -->
-                <div class="mt-10 flex flex-col sm:flex-row gap-4">
-                    <button
-                        @click="$dispatch('open-modal', { to: 'contact' })"
-                        class="inline-flex items-center justify-center gap-2
-                    px-8 py-4 rounded-xl
-                    bg-primary text-black font-medium
-                    hover:bg-primary/90 transition">
-                        <i class="ri-rocket-line"></i>
-                        Start Your App Project
-                    </button>
-
-                    <button
-                        class="inline-flex items-center justify-center gap-2
-                    px-8 py-4 rounded-xl
-                    border border-white/25 text-white/80
-                    hover:bg-white/[0.05] transition">
-                        <i class="ri-folder-line"></i>
-                        View App Portfolio
-                    </button>
-                </div>
-
-                <!-- Trust Points -->
                 <div class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/60">
                     <span class="flex items-center gap-2">
-                        <i class="ri-check-line text-primary"></i> Android & iOS Apps
+                        <i class="ri-check-line text-primary"></i> Android & iOS
                     </span>
                     <span class="flex items-center gap-2">
                         <i class="ri-check-line text-primary"></i> Cross-Platform
@@ -95,93 +71,242 @@ py-20 sm:py-28 lg:py-32 border-b border-white/10">
 
             </div>
 
-            <!-- RIGHT STATS -->
-            <div class="relative">
+            <!-- RIGHT FORM -->
+            <div class="relative w-full">
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-white/5 border border-white/15
+                    rounded-2xl sm:rounded-3xl
+                    p-5 sm:p-8 lg:p-10
+                    backdrop-blur-xl">
 
-                    <!-- Stat Card -->
-                    <div class="group p-6 sm:p-7 rounded-2xl
-                    bg-white/[0.04] border border-white/10
-                    hover:border-primary/40 hover:bg-white/[0.06]
-                    transition-all">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">
+                        Let’s Grow Your Business
+                    </h3>
 
-                        <div class="flex items-center gap-3 mb-3">
-                            <div class="flex h-11 w-11 items-center justify-center
-                            rounded-xl bg-primary/15">
-                                <i class="ri-time-line text-primary text-xl"></i>
-                            </div>
-                            <h4 class="font-medium text-lg">7+ Years Experience</h4>
+                    <p class="text-xs sm:text-sm text-white/70 mb-4 sm:mb-6">
+                        Fill in the details and our team will get back to you.
+                    </p>
+
+                    <!-- SUCCESS MESSAGE -->
+                    @if (session()->has('success'))
+                    <div class="mb-4 p-3 rounded-lg bg-green-500/20 text-green-400 text-sm">
+                        {{ session('success') }}
+                    </div>
+                    @endif
+
+                    <form wire:submit.prevent="submit" class="space-y-4">
+
+                        <!-- INPUT -->
+                        <input wire:model.defer="name" type="text" placeholder="Your Name"
+                            class="w-full px-4 py-3 rounded-xl
+                            bg-black/40 border border-white/15
+                            text-white placeholder-white/50 focus:outline-none">
+
+                        @error('name') <p class="text-red-400 text-xs">{{ $message }}</p> @enderror
+
+                        <input wire:model.defer="email" type="email" placeholder="Email Address"
+                            class="w-full px-4 py-3 rounded-xl
+                            bg-black/40 border border-white/15
+                            text-white placeholder-white/50 focus:outline-none">
+
+                        @error('email') <p class="text-red-400 text-xs">{{ $message }}</p> @enderror
+
+                        <input wire:model.defer="phone" type="tel" placeholder="Phone Number"
+                            class="w-full px-4 py-3 rounded-xl
+                            bg-black/40 border border-white/15
+                            text-white placeholder-white/50 focus:outline-none">
+
+                        @error('phone') <p class="text-red-400 text-xs">{{ $message }}</p> @enderror
+
+                        <select wire:model.defer="service"
+                            class="w-full px-4 py-3 rounded-xl
+                            bg-black/40 border border-white/15
+                            text-white focus:outline-none">
+                            <option value="" disabled selected>Select Service</option>
+                            <option value="Android App Development">Android App Development</option>
+                            <option value="iOS App Development">iOS App Development</option>
+                            <option value="Flutter App Development">Flutter App Development</option>
+                            <option value="React Native Development">React Native Development</option>
+                            <option value="Cross-Platform App Development">Cross-Platform App Development</option>
+                        </select>
+
+                        @error('service') <p class="text-red-400 text-xs">{{ $message }}</p> @enderror
+
+                        <!-- TURNSTILE -->
+                        <div wire:ignore class="pt-1">
+                            <div id="turnstile-widget"></div>
                         </div>
 
-                        <p class="text-sm text-white/70">
-                            Proven expertise in mobile product engineering.
-                        </p>
+                        <!-- BUTTON -->
+                        <button wire:loading.attr="disabled"
+                            class="w-full py-3 rounded-xl
+                            bg-primary text-black font-semibold">
+                            <span wire:loading.remove>Request Callback</span>
+                            <span wire:loading>Submitting...</span>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+
+                    let widgetId = null;
+                    let rendered = false;
+                    const TURNSTILE_SRC = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+
+                    function ensureScriptLoaded(cb) {
+                        if (window.turnstile) return cb && cb();
+
+                        let script = document.querySelector('script[src="' + TURNSTILE_SRC + '"]');
+                        if (!script) {
+                            script = document.createElement('script');
+                            script.src = TURNSTILE_SRC;
+                            script.async = true;
+                            script.defer = true;
+                            script.onload = cb;
+                            document.head.appendChild(script);
+                        } else {
+                            if (script.getAttribute('data-loaded') === 'true') {
+                                return cb && cb();
+                            }
+                            script.addEventListener('load', cb);
+                        }
+                    }
+
+                    function renderTurnstile() {
+                        if (rendered) return;
+
+                        const container = document.getElementById('turnstile-widget');
+                        if (!container) return;
+
+                        // Remove any existing iframe
+                        container.innerHTML = '';
+
+                        if (!window.turnstile) {
+                            ensureScriptLoaded(renderTurnstile);
+                            return;
+                        }
+
+                        widgetId = turnstile.render(container, {
+                            sitekey: "{{ config('services.turnstile.site_key') }}",
+                            callback: function(token) {
+                                @this.set('turnstileToken', token);
+                            }
+                        });
+
+                        rendered = true;
+                    }
+
+                    renderTurnstile();
+
+                    Livewire.off('turnstile-reset');
+                    Livewire.on('turnstile-reset', () => {
+                        if (widgetId !== null && window.turnstile) {
+                            turnstile.reset(widgetId);
+                            rendered = false; // allow re-render
+                            renderTurnstile();
+                        }
+                    });
+                });
+            </script>
+
+        </div>
+    </section>
+
+    <!-- RIGHT STATS -->
+    <section class="relative bg-black text-white py-16 sm:py-20 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+
+                <!-- Card -->
+                <div class="group rounded-2xl p-8
+                bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06]
+                transition-all duration-300">
+
+                    <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-time-line text-primary text-xl"></i>
                     </div>
 
-                    <!-- Stat Card -->
-                    <div class="group p-6 sm:p-7 rounded-2xl
-                    bg-white/[0.04] border border-white/10
-                    hover:border-primary/40 hover:bg-white/[0.06]
-                    transition-all">
+                    <h4 class="text-xl font-semibold mb-1">
+                        7+ Years
+                    </h4>
 
-                        <div class="flex items-center gap-3 mb-3">
-                            <div class="flex h-11 w-11 items-center justify-center
-                            rounded-xl bg-primary/15">
-                                <i class="ri-team-line text-primary text-xl"></i>
-                            </div>
-                            <h4 class="font-medium text-lg">50+ Expert Developers</h4>
-                        </div>
+                    <p class="text-sm text-white/60">
+                        Industry Experience
+                    </p>
+                </div>
 
-                        <p class="text-sm text-white/70">
-                            Skilled Android, iOS & cross-platform engineers.
-                        </p>
+                <!-- Card -->
+                <div class="group rounded-2xl p-8
+                bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06]
+                transition-all duration-300">
+
+                    <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-team-line text-primary text-xl"></i>
                     </div>
 
-                    <!-- Stat Card -->
-                    <div class="group p-6 sm:p-7 rounded-2xl
-                    bg-white/[0.04] border border-white/10
-                    hover:border-primary/40 hover:bg-white/[0.06]
-                    transition-all">
+                    <h4 class="text-xl font-semibold mb-1">
+                        50+ Experts
+                    </h4>
 
-                        <div class="flex items-center gap-3 mb-3">
-                            <div class="flex h-11 w-11 items-center justify-center
-                            rounded-xl bg-primary/15">
-                                <i class="ri-apps-line text-primary text-xl"></i>
-                            </div>
-                            <h4 class="font-medium text-lg">200+ Apps Delivered</h4>
-                        </div>
+                    <p class="text-sm text-white/60">
+                        Mobile App Developers
+                    </p>
+                </div>
 
-                        <p class="text-sm text-white/70">
-                            Successfully launched across industries.
-                        </p>
+                <!-- Card -->
+                <div class="group rounded-2xl p-8
+                bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06]
+                transition-all duration-300">
+
+                    <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-apps-line text-primary text-xl"></i>
                     </div>
 
-                    <!-- Stat Card -->
-                    <div class="group p-6 sm:p-7 rounded-2xl
-                    bg-white/[0.04] border border-white/10
-                    hover:border-primary/40 hover:bg-white/[0.06]
-                    transition-all">
+                    <h4 class="text-xl font-semibold mb-1">
+                        200+ Apps
+                    </h4>
 
-                        <div class="flex items-center gap-3 mb-3">
-                            <div class="flex h-11 w-11 items-center justify-center
-                            rounded-xl bg-primary/15">
-                                <i class="ri-star-smile-line text-primary text-xl"></i>
-                            </div>
-                            <h4 class="font-medium text-lg">98% Client Satisfaction</h4>
-                        </div>
+                    <p class="text-sm text-white/60">
+                        Successfully Delivered
+                    </p>
+                </div>
 
-                        <p class="text-sm text-white/70">
-                            Trusted by startups & enterprises globally.
-                        </p>
+                <!-- Card -->
+                <div class="group rounded-2xl p-8
+                bg-white/[0.04] border border-white/10
+                hover:border-primary/40 hover:bg-white/[0.06]
+                transition-all duration-300">
+
+                    <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center
+                    rounded-xl bg-primary/15">
+                        <i class="ri-star-smile-line text-primary text-xl"></i>
                     </div>
 
+                    <h4 class="text-xl font-semibold mb-1">
+                        98% Satisfaction
+                    </h4>
+
+                    <p class="text-sm text-white/60">
+                        Happy Clients Worldwide
+                    </p>
                 </div>
 
             </div>
 
         </div>
     </section>
+
+
 
     <section class="relative bg-black text-white py-16 sm:py-24 border-b border-white/10 overflow-hidden">
 
