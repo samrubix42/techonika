@@ -1232,68 +1232,68 @@ py-20 sm:py-28 lg:py-32 border-b border-white/10">
             </div>
         </div>
     </section>
-<section class="relative bg-black text-white py-16 sm:py-20 border-t border-white/10 overflow-hidden">
+    <section class="relative bg-black text-white py-16 sm:py-20 border-t border-white/10 overflow-hidden">
 
-    <!-- Subtle Background Accent -->
-    <div class="absolute inset-0 pointer-events-none">
-        <div class="absolute -top-32 left-1/2 -translate-x-1/2
+        <!-- Subtle Background Accent -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute -top-32 left-1/2 -translate-x-1/2
             w-[620px] h-[320px] bg-primary/15 blur-[220px] rounded-full">
-        </div>
-    </div>
-
-    <div class="relative max-w-4xl mx-auto px-6 text-center">
-
-        <!-- Heading -->
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
-            Build a Brand
-            <span class="text-primary font-bold block sm:inline">
-                People Remember
-            </span>
-        </h2>
-
-        <!-- Description -->
-        <p class="mt-6 text-white/70 leading-relaxed max-w-2xl mx-auto text-base sm:text-lg">
-            If you are looking for a dependable branding agency in Noida that helps
-            your business appear clear, confident, and trustworthy,
-            <span class="text-white font-medium">Techonika</span> is ready to partner with you.
-            We build brands designed to be remembered and chosen.
-        </p>
-
-        <!-- Quiet brand statement -->
-        <div class="mt-6 text-white/60 text-sm sm:text-base">
-            <p>Good branding does not shout.</p>
-            <p class="text-white font-medium">It stays with people.</p>
+            </div>
         </div>
 
-        <!-- CTAs -->
-        <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+        <div class="relative max-w-4xl mx-auto px-6 text-center">
 
-            <button
-                @click="$dispatch('open-modal', { to: 'contact' })"
-                class="inline-flex items-center justify-center
+            <!-- Heading -->
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
+                Build a Brand
+                <span class="text-primary font-bold block sm:inline">
+                    People Remember
+                </span>
+            </h2>
+
+            <!-- Description -->
+            <p class="mt-6 text-white/70 leading-relaxed max-w-2xl mx-auto text-base sm:text-lg">
+                If you are looking for a dependable branding agency in Noida that helps
+                your business appear clear, confident, and trustworthy,
+                <span class="text-white font-medium">Techonika</span> is ready to partner with you.
+                We build brands designed to be remembered and chosen.
+            </p>
+
+            <!-- Quiet brand statement -->
+            <div class="mt-6 text-white/60 text-sm sm:text-base">
+                <p>Good branding does not shout.</p>
+                <p class="text-white font-medium">It stays with people.</p>
+            </div>
+
+            <!-- CTAs -->
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+
+                <button
+                    @click="$dispatch('open-modal', { to: 'contact' })"
+                    class="inline-flex items-center justify-center
                 px-9 py-3.5 rounded-xl
                 bg-primary text-black font-medium
                 hover:bg-primary/90 transition">
-                Start Your Branding Journey
-            </button>
+                    Start Your Branding Journey
+                </button>
 
-            <a href="{{ route('contact') }}"
-                class="inline-flex items-center justify-center
+                <a href="{{ route('contact') }}"
+                    class="inline-flex items-center justify-center
                 px-9 py-3.5 rounded-xl
                 border border-white/20 text-white/80
                 hover:bg-white/[0.05] transition">
-                Get In Touch
-            </a>
+                    Get In Touch
+                </a>
+
+            </div>
+
+            <!-- Trust line -->
+            <p class="mt-10 text-xs sm:text-sm text-white/50">
+                Thoughtful branding • Clear decisions • Long-term value
+            </p>
 
         </div>
-
-        <!-- Trust line -->
-        <p class="mt-10 text-xs sm:text-sm text-white/50">
-            Thoughtful branding • Clear decisions • Long-term value
-        </p>
-
-    </div>
-</section>
+    </section>
 
 
 
