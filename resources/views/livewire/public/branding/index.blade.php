@@ -281,9 +281,9 @@ py-20 sm:py-28 lg:py-32 border-b border-white/10">
                     <i class="ri-shape-2-line text-primary text-2xl mb-4"></i>
                     <h3 class="text-lg font-medium mb-2">Custom Logo Design & Visual Identity</h3>
                     <p class="text-sm text-white/70 leading-relaxed">
-                        We create logos and visual identities that are recognizable,
-                        strategically aligned with your industry,
-                        and designed to stay relevant for years.
+                        Your brand starts with a strong logo. As a creative branding agency in Noida, our <a href="{{ route('logo-designing') }}">logo design
+                            services</a> go beyond just creating a symbol. We build a visual identity that is instantly recognizable,
+                        strategically aligned with your industry, and designed to stay relevant for years.
                     </p>
                 </div>
 
@@ -293,8 +293,9 @@ py-20 sm:py-28 lg:py-32 border-b border-white/10">
                     <i class="ri-mail-send-line text-primary text-2xl mb-4"></i>
                     <h3 class="text-lg font-medium mb-2">Email Marketing That Converts</h3>
                     <p class="text-sm text-white/70 leading-relaxed">
-                        Personalized, well-timed campaigns designed to get opened,
-                        build trust, and turn inboxes into a consistent revenue channel.
+                        Not all emails get opened. Ours do. Our Email Marketing services are built around personalization
+                        and timing. Techonika writes and designs every campaign to connect with your audience and turn
+                        inboxes into a consistent revenue channel for your business.
                     </p>
                 </div>
 
@@ -304,8 +305,9 @@ py-20 sm:py-28 lg:py-32 border-b border-white/10">
                     <i class="ri-linkedin-box-line text-primary text-2xl mb-4"></i>
                     <h3 class="text-lg font-medium mb-2">LinkedIn Marketing & B2B Leads</h3>
                     <p class="text-sm text-white/70 leading-relaxed">
-                        Profile optimization, content strategy, and positioning
-                        that puts your brand in front of real decision-makers.
+                        LinkedIn is where business decisions get made. Our LinkedIn Marketing services help you show up in
+                        front of the right decision-makers. From profile optimization to content strategy, we build a presence
+                        that earns trust and generates leads that actually matter.
                     </p>
                 </div>
 
@@ -315,8 +317,9 @@ py-20 sm:py-28 lg:py-32 border-b border-white/10">
                     <i class="ri-file-text-line text-primary text-2xl mb-4"></i>
                     <h3 class="text-lg font-medium mb-2">SEO-Driven Content Creation</h3>
                     <p class="text-sm text-white/70 leading-relaxed">
-                        Blog posts, landing pages, and web content
-                        that rank in Google and genuinely help your audience.
+                        Good content does two things at once. It ranks in Google and it actually helps your reader.
+                        Techonika's SEO <a href="{{ route('content-writing') }}">Content Writing services</a> deliver blog posts, landing pages, and web content that
+                        brings organic traffic to your site and keeps visitors engaged.
                     </p>
                 </div>
 
@@ -326,8 +329,9 @@ py-20 sm:py-28 lg:py-32 border-b border-white/10">
                     <i class="ri-bar-chart-2-line text-primary text-2xl mb-4"></i>
                     <h3 class="text-lg font-medium mb-2">Search Engine Optimization</h3>
                     <p class="text-sm text-white/70 leading-relaxed">
-                        Keyword research, on-page SEO, technical audits,
-                        and link building to rank — and stay ranked.
+                        Ranking on Google is not luck. It is a process, and Techonika knows it inside out. From keyword
+                        research and on-page fixes to technical audits and link-building, our <a href="{{ route('local-seo') }}">SEO services</a> are built to get your
+                        website to the top and keep it there.
                     </p>
                 </div>
 
@@ -337,8 +341,9 @@ py-20 sm:py-28 lg:py-32 border-b border-white/10">
                     <i class="ri-window-line text-primary text-2xl mb-4"></i>
                     <h3 class="text-lg font-medium mb-2">Website Design & Development</h3>
                     <p class="text-sm text-white/70 leading-relaxed">
-                        Fast, clean, conversion-focused websites
-                        that make strong first impressions and sell for you.
+                        First impressions online happen in seconds. Techonika builds websites that grab attention fast and
+                        hold it longer. Our <a href="{{ route('webdesigning') }}">Web Design</a> and Development services focus on speed, clean visuals, and smart
+                        structure so your site does the selling even when you are not online.
                     </p>
                 </div>
 
@@ -348,8 +353,9 @@ py-20 sm:py-28 lg:py-32 border-b border-white/10">
                     <i class="ri-id-card-line text-primary text-2xl mb-4"></i>
                     <h3 class="text-lg font-medium mb-2">Visiting Card Designing</h3>
                     <p class="text-sm text-white/70 leading-relaxed">
-                        Thoughtfully designed visiting cards
-                        that turn a simple exchange into a brand moment.
+                        A small card can leave a big impact. Our <a href="{{ route('visit-card-designing') }}">Visiting Card Designing services</a> turn a simple handout into
+                        a memorable brand moment. Every detail, from paper quality to layout, is chosen to reflect exactly
+                        who your business is.
                     </p>
                 </div>
 
@@ -359,8 +365,9 @@ py-20 sm:py-28 lg:py-32 border-b border-white/10">
                     <i class="ri-file-list-3-line text-primary text-2xl mb-4"></i>
                     <h3 class="text-lg font-medium mb-2">Company Profile Designing</h3>
                     <p class="text-sm text-white/70 leading-relaxed">
-                        Clear, polished profiles that communicate
-                        who you are, what you do, and why clients should choose you.
+                        Before you pitch, your company profile does the talking. Our <a href="{{ route('company-profile-designing') }}">Company Profile Designing services</a>
+                        create a polished document that clearly presents your business, your strengths, and why clients should
+                        choose you over the rest.
                     </p>
                 </div>
 
@@ -370,8 +377,9 @@ py-20 sm:py-28 lg:py-32 border-b border-white/10">
                     <i class="ri-box-3-line text-primary text-2xl mb-4"></i>
                     <h3 class="text-lg font-medium mb-2">Package Designing</h3>
                     <p class="text-sm text-white/70 leading-relaxed">
-                        Packaging that grabs attention on shelves
-                        and delivers a memorable unboxing experience.
+                        Packaging sells your product before you ever do. Techonika's <a href="{{ route('package-designing') }}">Package Designing services</a> create
+                        wrapping that stops buyers in their tracks. From shelf appeal to the unboxing moment, every layer is
+                        designed to reinforce your brand and build a lasting impression.
                     </p>
                 </div>
 
@@ -381,8 +389,9 @@ py-20 sm:py-28 lg:py-32 border-b border-white/10">
                     <i class="ri-video-line text-primary text-2xl mb-4"></i>
                     <h3 class="text-lg font-medium mb-2">2D Video Explainers</h3>
                     <p class="text-sm text-white/70 leading-relaxed">
-                        Short animated videos that simplify complex ideas
-                        and motivate viewers to take action.
+                        Say more in less time. Techonika's <a href="{{ route('2d-video-explaination') }}">2D Video Explainers</a> turn complex ideas into short,
+                        animated stories your audience actually watches till the end. It is one of the fastest ways to explain
+                        what you do and convince viewers to take action.
                     </p>
                 </div>
 
