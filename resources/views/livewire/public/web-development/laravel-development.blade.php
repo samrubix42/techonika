@@ -56,7 +56,7 @@ custom web applications, APIs, and eCommerce solutions. Get a free consultation 
                     <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 sm:gap-5">
 
                         <button
-                        @click="$dispatch('open-modal', { to: 'contact' })"
+                            @click="$dispatch('open-modal', { to: 'contact' })"
                             class="inline-flex justify-center items-center gap-2
                               px-7 sm:px-9 py-4 rounded-xl
                               bg-primary text-black font-medium
