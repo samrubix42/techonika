@@ -175,5 +175,5 @@ Route::get('/clear-cache', function () {
 
 Route::get("/logout", function () {
     auth()->logout();
-    return redirect()->route('index');
+    return redirect()->route('login');
 })->name('logout');
