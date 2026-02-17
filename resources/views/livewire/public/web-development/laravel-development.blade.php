@@ -160,7 +160,7 @@ custom web applications, APIs, and eCommerce solutions. Get a free consultation 
                     </div>
 
                     <div class="flex flex-col items-center gap-2">
-                        <img src="{{ asset('images/tech/livewire.png') }}" class="w-12 sm:w-14" alt="">
+                        <img src="{{ asset('images/tech/Livewire.png') }}" class="w-12 sm:w-14" alt="">
                         <span class="text-xs sm:text-sm text-white/70">Livewire</span>
                     </div>
 
