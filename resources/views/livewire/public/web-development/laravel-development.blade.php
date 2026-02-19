@@ -927,7 +927,7 @@ custom web applications, APIs, and eCommerce solutions. Get a free consultation 
 
                 <!-- Background Accent -->
                 <div class="absolute -top-40 right-0 w-[520px] h-[520px]
-                bg-primary/20 blur-[240px] rounded-full"></div>
+    bg-primary/20 blur-[240px] rounded-full"></div>
 
                 <div class="relative max-w-7xl mx-auto px-4">
 
@@ -939,15 +939,8 @@ custom web applications, APIs, and eCommerce solutions. Get a free consultation 
                         </span>
 
                         <h2 class="mt-8 text-3xl sm:text-4xl font-semibold leading-tight">
-                            What Makes <span class="text-primary">Laravel Right</span>
-                            for Your Project
+                            What Makes <span class="text-primary">Laravel Right</span> for Your Project
                         </h2>
-
-                        <p class="mt-6 text-white/70 text-lg leading-relaxed">
-                            Laravel isn’t just popular — it’s practical. It helps you
-                            launch faster, spend less, and build applications that
-                            are easy to grow and maintain.
-                        </p>
                     </div>
 
                     <!-- BENEFITS -->
@@ -960,9 +953,10 @@ custom web applications, APIs, and eCommerce solutions. Get a free consultation 
                                 Faster Time to Market
                             </h3>
                             <p class="mt-3 text-white/65 leading-relaxed text-sm">
-                                Laravel comes with pre-built components for common features like user login, password reset, and
-                                file uploads. This means we spend less time building basic stuff and more time on features that make
-                                your business unique. You launch 30-40% faster compared to building everything from scratch.
+                                Laravel comes with pre-built components for common features like user login, password reset,
+                                and file uploads. This means we spend less time building basic stuff and more time on
+                                features that make your business unique. You launch 30–40% faster compared to building
+                                everything from scratch.
                             </p>
                         </div>
 
@@ -973,8 +967,8 @@ custom web applications, APIs, and eCommerce solutions. Get a free consultation 
                                 Lower Development Costs
                             </h3>
                             <p class="mt-3 text-white/65 leading-relaxed text-sm">
-                                Because Laravel has so many ready-made solutions, we write less code. Less code means lower costs.
-                                You're paying for business logic and custom features, not reinventing the wheel.
+                                Because Laravel has so many ready-made solutions, we write less code. Less code means
+                                lower costs. You're paying for business logic and custom features, not reinventing the wheel.
                             </p>
                         </div>
 
@@ -985,8 +979,9 @@ custom web applications, APIs, and eCommerce solutions. Get a free consultation 
                                 Easy to Scale
                             </h3>
                             <p class="mt-3 text-white/65 leading-relaxed text-sm">
-                                Start with what you need now. As your business grows, your Laravel application grows with it. We
-                                can add new features, handle more users, and process more data without rebuilding everything.
+                                Start with what you need now. As your business grows, your Laravel application grows
+                                with it. We can add new features, handle more users, and process more data without
+                                rebuilding everything.
                             </p>
                         </div>
 
@@ -997,9 +992,9 @@ custom web applications, APIs, and eCommerce solutions. Get a free consultation 
                                 Built-in Security Features
                             </h3>
                             <p class="mt-3 text-white/65 leading-relaxed text-sm">
-                                Laravel protects against SQL injection, cross-site scripting, and other common attacks automatically.
-                                It encrypts passwords properly and handles user sessions securely. Your laravel web development
-                                company shouldn't make you worry about basic security.
+                                Laravel protects against SQL injection, cross-site scripting, and other common attacks
+                                automatically. It encrypts passwords properly and handles user sessions securely.
+                                Your Laravel web development company shouldn't make you worry about basic security.
                             </p>
                         </div>
 
@@ -1010,8 +1005,9 @@ custom web applications, APIs, and eCommerce solutions. Get a free consultation 
                                 Large Community Support
                             </h3>
                             <p class="mt-3 text-white/65 leading-relaxed text-sm">
-                                Thousands of developers use Laravel worldwide. This means lots of tutorials, packages, and solutions
-                                already exist. If you need to hire another developer later, finding someone who knows Laravel is easy.
+                                Thousands of developers use Laravel worldwide. This means lots of tutorials, packages,
+                                and solutions already exist. If you need to hire another developer later, finding someone
+                                who knows Laravel is easy.
                             </p>
                         </div>
 
@@ -1022,143 +1018,88 @@ custom web applications, APIs, and eCommerce solutions. Get a free consultation 
                                 Easy Maintenance
                             </h3>
                             <p class="mt-3 text-white/65 leading-relaxed text-sm">
-                                Laravel code is organized in a way that makes sense. Finding and fixing bugs is straightforward.
-                                Adding new features doesn't require untangling spaghetti code. Your future developers will thank you.
+                                Laravel code is organized in a way that makes sense. Finding and fixing bugs is
+                                straightforward. Adding new features doesn't require untangling spaghetti code.
+                                Your future developers will thank you.
                             </p>
                         </div>
 
                     </div>
 
-
-
                 </div>
             </section>
+
             <section class="relative bg-black text-white py-24 sm:py-32 border-t border-white/10 overflow-hidden">
 
                 <!-- Background Accent -->
-                <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[300px]
-                bg-primary/20 blur-[220px] rounded-full"></div>
+                <div class="absolute -bottom-40 left-0 w-[520px] h-[520px]
+    bg-primary/20 blur-[240px] rounded-full"></div>
 
                 <div class="relative max-w-7xl mx-auto px-4">
 
-                    <!-- SECTION HEADER -->
+                    <!-- HEADER -->
                     <div class="max-w-3xl">
                         <span class="inline-flex items-center gap-2 text-primary text-xs tracking-[0.45em] uppercase">
-                            <i class="ri-handshake-line"></i>
+                            <i class="ri-team-line"></i>
                             Engagement Models
                         </span>
 
                         <h2 class="mt-8 text-3xl sm:text-4xl font-semibold leading-tight">
-                            How We Work <span class="text-primary">Together</span>
+                            How We <span class="text-primary">Work Together</span>
                         </h2>
 
                         <p class="mt-6 text-white/70 text-lg leading-relaxed">
-                            Different projects need different engagement models.
-                            Choose the one that fits your goals, budget, and working style.
+                            Flexible engagement models designed to match your project goals,
+                            budget, and long-term vision.
                         </p>
                     </div>
 
                     <!-- MODELS -->
-                    <div class="mt-20 grid md:grid-cols-3 gap-8">
+                    <div class="mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
 
                         <!-- Fixed Price -->
-                        <div class="group p-8 rounded-2xl border border-white/10 bg-white/5
-                        hover:border-primary/40 hover:-translate-y-1 transition">
-                            <i class="ri-price-tag-3-line text-primary text-3xl"></i>
-
-                            <h3 class="mt-6 text-xl font-medium">
+                        <div class="relative pl-14">
+                            <i class="ri-price-tag-3-line text-primary text-3xl absolute left-0 top-0"></i>
+                            <h3 class="text-xl font-medium">
                                 Fixed Price Projects
                             </h3>
-
-                            <p class="mt-4 text-white/65 leading-relaxed text-sm">
-                                Best for projects with a clear and well-defined scope.
-                                You tell us exactly what you need, and we provide a
-                                total cost upfront.
+                            <p class="mt-3 text-white/65 leading-relaxed text-sm">
+                                Best for projects with a clear scope. You tell us exactly what you want,
+                                and we provide a total cost upfront. Ideal for MVPs, redesigns,
+                                or projects with clearly defined features.
                             </p>
-
-                            <ul class="mt-5 space-y-2 text-white/60 text-sm">
-                                <li class="flex items-center gap-2">
-                                    <i class="ri-check-line text-primary"></i>
-                                    Ideal for MVPs & redesigns
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="ri-check-line text-primary"></i>
-                                    Predictable budget
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="ri-check-line text-primary"></i>
-                                    Defined features & timelines
-                                </li>
-                            </ul>
                         </div>
 
-                        <!-- Dedicated -->
-                        <div class="group p-8 rounded-2xl border border-white/10 bg-white/5
-                        hover:border-primary/40 hover:-translate-y-1 transition">
-                            <i class="ri-user-settings-line text-primary text-3xl"></i>
-
-                            <h3 class="mt-6 text-xl font-medium">
+                        <!-- Dedicated Developers -->
+                        <div class="relative pl-14">
+                            <i class="ri-user-star-line text-primary text-3xl absolute left-0 top-0"></i>
+                            <h3 class="text-xl font-medium">
                                 Dedicated Laravel Developers
                             </h3>
-
-                            <p class="mt-4 text-white/65 leading-relaxed text-sm">
-                                Hire one or more Laravel developers who work
-                                exclusively on your project. You pay a monthly
-                                fee and get consistent, focused development.
+                            <p class="mt-3 text-white/65 leading-relaxed text-sm">
+                                Hire one or more developers who work exclusively on your project.
+                                You pay a monthly fee and receive consistent, focused development support.
+                                Perfect for long-term projects where requirements evolve frequently.
                             </p>
-
-                            <ul class="mt-5 space-y-2 text-white/60 text-sm">
-                                <li class="flex items-center gap-2">
-                                    <i class="ri-check-line text-primary"></i>
-                                    Full-time commitment
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="ri-check-line text-primary"></i>
-                                    Flexible requirements
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="ri-check-line text-primary"></i>
-                                    Long-term development
-                                </li>
-                            </ul>
                         </div>
 
-                        <!-- Hourly -->
-                        <div class="group p-8 rounded-2xl border border-white/10 bg-white/5
-                        hover:border-primary/40 hover:-translate-y-1 transition">
-                            <i class="ri-timer-line text-primary text-3xl"></i>
-
-                            <h3 class="mt-6 text-xl font-medium">
+                        <!-- Hourly Consulting -->
+                        <div class="relative pl-14">
+                            <i class="ri-time-line text-primary text-3xl absolute left-0 top-0"></i>
+                            <h3 class="text-xl font-medium">
                                 Hourly Consulting
                             </h3>
-
-                            <p class="mt-4 text-white/65 leading-relaxed text-sm">
-                                Perfect for small tasks, bug fixes, audits,
-                                or expert guidance. You pay only for the
-                                time we actually spend working.
+                            <p class="mt-3 text-white/65 leading-relaxed text-sm">
+                                Ideal for small tasks, bug fixes, or when you just need expert guidance.
+                                You only pay for the actual hours worked — no long-term commitment required.
                             </p>
-
-                            <ul class="mt-5 space-y-2 text-white/60 text-sm">
-                                <li class="flex items-center gap-2">
-                                    <i class="ri-check-line text-primary"></i>
-                                    No long-term commitment
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="ri-check-line text-primary"></i>
-                                    Fast problem-solving
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="ri-check-line text-primary"></i>
-                                    Pay-as-you-go
-                                </li>
-                            </ul>
                         </div>
 
                     </div>
 
-
                 </div>
             </section>
+
             <section class="relative bg-black text-white py-24 sm:py-32 border-t border-white/10 overflow-hidden">
 
                 <!-- Background Accent -->
@@ -1199,10 +1140,9 @@ custom web applications, APIs, and eCommerce solutions. Get a free consultation 
                             </div>
 
                             <p class="mt-4 text-white/65 leading-relaxed text-sm">
-                                CodeIgniter is lightweight and simple, but Laravel comes with
-                                far more built-in features. For applications that need user
-                                management, APIs, queues, or complex workflows, Laravel is
-                                the better long-term choice.
+                                 CodeIgniter is simpler and lighter, making it ideal for smaller projects, but 
+Laravel has more features built-in. If you need a complex application with user management and 
+APIs, Laravel is better. 
                             </p>
                         </div>
 
@@ -1217,10 +1157,8 @@ custom web applications, APIs, and eCommerce solutions. Get a free consultation 
                             </div>
 
                             <p class="mt-4 text-white/65 leading-relaxed text-sm">
-                                Symfony offers high flexibility but has a steeper learning curve.
-                                Laravel is built on Symfony components while providing a
-                                simpler, more developer-friendly experience — ideal for
-                                most business applications.
+                              Symfony framework is more flexible but harder to learn. Laravel uses 
+Symfony components but adds an easier interface. Laravel is better for most business applications. 
                             </p>
                         </div>
 
@@ -1235,10 +1173,8 @@ custom web applications, APIs, and eCommerce solutions. Get a free consultation 
                             </div>
 
                             <p class="mt-4 text-white/65 leading-relaxed text-sm">
-                                WordPress is excellent for blogs and content-focused sites.
-                                Laravel is the better choice for custom business applications,
-                                APIs, dashboards, and systems that require complex logic
-                                and scalability.
+                              WordPress is great for blogs and simple websites. Laravel is better for 
+custom business applications, APIs, and anything that needs complex logic. 
                             </p>
                         </div>
 
@@ -1253,10 +1189,8 @@ custom web applications, APIs, and eCommerce solutions. Get a free consultation 
                             </div>
 
                             <p class="mt-4 text-white/65 leading-relaxed text-sm">
-                                Building everything in custom PHP takes longer and requires
-                                extra effort for security and structure. Laravel provides
-                                a solid foundation with built-in security, saving both
-                                time and development costs.
+                              Writing custom PHP takes longer and requires more security work. Laravel 
+provides structure and security out of the box, saving you time and money. 
                             </p>
                         </div>
 
