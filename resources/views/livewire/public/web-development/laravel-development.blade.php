@@ -1140,9 +1140,9 @@ custom web applications, APIs, and eCommerce solutions. Get a free consultation 
                             </div>
 
                             <p class="mt-4 text-white/65 leading-relaxed text-sm">
-                                 CodeIgniter is simpler and lighter, making it ideal for smaller projects, but 
-Laravel has more features built-in. If you need a complex application with user management and 
-APIs, Laravel is better. 
+                                CodeIgniter is simpler and lighter, making it ideal for smaller projects, but
+                                Laravel has more features built-in. If you need a complex application with user management and
+                                APIs, Laravel is better.
                             </p>
                         </div>
 
@@ -1157,8 +1157,8 @@ APIs, Laravel is better.
                             </div>
 
                             <p class="mt-4 text-white/65 leading-relaxed text-sm">
-                              Symfony framework is more flexible but harder to learn. Laravel uses 
-Symfony components but adds an easier interface. Laravel is better for most business applications. 
+                                Symfony framework is more flexible but harder to learn. Laravel uses
+                                Symfony components but adds an easier interface. Laravel is better for most business applications.
                             </p>
                         </div>
 
@@ -1173,8 +1173,8 @@ Symfony components but adds an easier interface. Laravel is better for most busi
                             </div>
 
                             <p class="mt-4 text-white/65 leading-relaxed text-sm">
-                              WordPress is great for blogs and simple websites. Laravel is better for 
-custom business applications, APIs, and anything that needs complex logic. 
+                                WordPress is great for blogs and simple websites. Laravel is better for
+                                custom business applications, APIs, and anything that needs complex logic.
                             </p>
                         </div>
 
@@ -1189,8 +1189,8 @@ custom business applications, APIs, and anything that needs complex logic.
                             </div>
 
                             <p class="mt-4 text-white/65 leading-relaxed text-sm">
-                              Writing custom PHP takes longer and requires more security work. Laravel 
-provides structure and security out of the box, saving you time and money. 
+                                Writing custom PHP takes longer and requires more security work. Laravel
+                                provides structure and security out of the box, saving you time and money.
                             </p>
                         </div>
 
