@@ -1485,7 +1485,7 @@ integration, and scalable eCommerce solutions">
                         Working with a shopify website development company in India gives you quality work at competitive rates. You get skilled developers who understand both local and global markets.
                     </p>
                     <p class="mt-4 text-white/60 leading-relaxed">
-                        Flexible Hiring Models — Choose how you want to work with us. Full project, hourly support, dedicated developer, or monthly retainer. We adapt to your needs.
+                        Flexible Hiring Models  Choose how you want to work with us. Full project, hourly support, dedicated developer, or monthly retainer. We adapt to your needs.
                     </p>
                 </div>
 
