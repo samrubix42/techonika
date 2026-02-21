@@ -98,7 +98,7 @@ Route::get('/branding-agency-in-noida', BrandingIndex::class)->name('branding');
 //web development routes
 Route::get('laravel-development-company-in-india', LaravelDevelopment::class)->name('laravel-development');
 Route::get('mern-stack-development-company-india', MernDevelopment::class)->name('mern-development');
-Route::get('wordpress-development', WordpressDevelopment::class)->name('wordpress-development');
+Route::get('wordpress-development-company-noida', WordpressDevelopment::class)->name('wordpress-development');
 Route::get('shopify-development-company-in-india', ShopifyDevelopment::class)->name('shopify-development');
 Route::get('woo-commerce-development', WooCommerce::class)->name('woo-commerce-development');
 Route::get('codeigniter-development', CodeigniterDevelopment::class)->name('codeigniter-development');
