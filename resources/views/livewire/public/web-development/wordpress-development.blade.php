@@ -1204,7 +1204,7 @@ theme development, and scalable business solutions.">
                                 Content Integration
                             </h3>
                             <p class="mt-4 text-white/60 text-sm leading-relaxed">
-                                We format and optimize your content — service pages,
+                                We format and optimize your content  service pages,
                                 product details, blog posts, and images.
                             </p>
                         </div>
@@ -1261,7 +1261,7 @@ theme development, and scalable business solutions.">
                                 Training & Documentation
                             </h3>
                             <p class="mt-4 text-white/60 text-sm leading-relaxed">
-                                We train you on managing your site — content updates,
+                                We train you on managing your site  content updates,
                                 plugins, and page creation.
                             </p>
                         </div>
