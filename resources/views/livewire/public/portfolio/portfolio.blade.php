@@ -156,6 +156,9 @@
             <!-- PAGINATION -->
             @if($portfolios->hasPages())
             <div class="mt-12">
+                <div wire:loading.flex wire:target="gotoPage, nextPage, previousPage" class="justify-center mb-4">
+                    <span class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-primary"></span>
+                </div>
                 {{ $portfolios->links('vendor.pagination.theme') }}
             </div>
             @endif

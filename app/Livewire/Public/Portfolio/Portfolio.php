@@ -14,7 +14,7 @@ class Portfolio extends Component
     {
         $portfolios = PortfolioModel::where('is_active', true)
             ->orderBy('sequence')
-            ->paginate(6);
+            ->paginate(1);
 
         return view('livewire.public.portfolio.portfolio', [
             'portfolios' => $portfolios,
