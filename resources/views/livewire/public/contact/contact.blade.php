@@ -230,7 +230,8 @@
                         <div>
                             <h4 class="text-white font-medium mb-1">Office Address</h4>
                             <p class="text-white/70 text-sm leading-relaxed">
-                                Techonika, Plot No. C79, C Block, Sector 2, Noida, Uttar Pradesh 201301 </p>
+                                FA 132, First Floor, Galaxy Diamond Plaza, Sector 4, Greater Noida West, U.P. (India) 201306
+                            </p>
                         </div>
                     </div>
 
@@ -600,49 +601,49 @@
     </section>
 
 
-                     <script>
-                         document.addEventListener('livewire:init', () => {
+    <script>
+        document.addEventListener('livewire:init', () => {
 
-                             let widgetId = null;
-                             let rendered = false;
+            let widgetId = null;
+            let rendered = false;
 
-                             function renderTurnstile() {
-                                 if (!window.turnstile) {
-                                     // Wait for Turnstile to load
-                                     setTimeout(renderTurnstile, 100);
-                                     return;
-                                 }
-                                 
-                                 if (rendered) return;
+            function renderTurnstile() {
+                if (!window.turnstile) {
+                    // Wait for Turnstile to load
+                    setTimeout(renderTurnstile, 100);
+                    return;
+                }
 
-                                 const container = document.getElementById('turnstile-widget');
-                                 if (!container) return;
+                if (rendered) return;
 
-                                 // Remove any existing iframe
-                                 container.innerHTML = '';
+                const container = document.getElementById('turnstile-widget');
+                if (!container) return;
 
-                                 widgetId = turnstile.render(container, {
-                                     sitekey: "{{ config('services.turnstile.site_key') }}",
-                                     callback: function(token) {
-                                         @this.set('turnstilecontactToken', token); 
-                                     }
-                                 });
+                // Remove any existing iframe
+                container.innerHTML = '';
 
-                                 rendered = true;
-                             }
+                widgetId = turnstile.render(container, {
+                    sitekey: "{{ config('services.turnstile.site_key') }}",
+                    callback: function(token) {
+                        @this.set('turnstilecontactToken', token);
+                    }
+                });
 
-                             // Start rendering process
-                             renderTurnstile();
+                rendered = true;
+            }
 
-                             Livewire.off('turnstile-reset');
-                             Livewire.on('turnstile-reset', () => {
-                                 if (widgetId !== null && window.turnstile) {
-                                     turnstile.reset(widgetId);
-                                     rendered = false;
-                                 }
-                             });
-                         });
-                     </script>
+            // Start rendering process
+            renderTurnstile();
+
+            Livewire.off('turnstile-reset');
+            Livewire.on('turnstile-reset', () => {
+                if (widgetId !== null && window.turnstile) {
+                    turnstile.reset(widgetId);
+                    rendered = false;
+                }
+            });
+        });
+    </script>
 
 
 </div>
