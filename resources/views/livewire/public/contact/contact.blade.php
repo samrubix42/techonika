@@ -282,7 +282,7 @@
             <div class="bg-white/5 backdrop-blur-md
                     border border-white/15
                     rounded-3xl overflow-hidden shadow-xl">
-                <iframe class="w-full h-[380px] sm:h-[420px] border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.5466560702757!2d77.315358!3d28.583372999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf3b04325d403%3A0xd7c9c4a360456c75!2sTechonika!5e0!3m2!1sen!2sin!4v1768802255599!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="w-full h-[380px] sm:h-[420px] border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.7819885859494!2d77.4320992!3d28.606316399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee4b71461185%3A0xd1989111c49e52fa!2sGalaxy%20Diamond%20Plaza!5e0!3m2!1sen!2sin!4v1773653993119!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </div>
