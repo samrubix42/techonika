@@ -101,7 +101,7 @@ Route::get('mern-stack-development-company-india', MernDevelopment::class)->name
 Route::get('wordpress-development-company-noida', WordpressDevelopment::class)->name('wordpress-development');
 Route::get('shopify-development-company-in-india', ShopifyDevelopment::class)->name('shopify-development');
 Route::get('woo-commerce-development', WooCommerce::class)->name('woo-commerce-development');
-Route::get('codeigniter-development', CodeigniterDevelopment::class)->name('codeigniter-development');
+Route::get('codeigniter-development-services', CodeigniterDevelopment::class)->name('codeigniter-development');
 Route::get('/magento-development', MagentoDevelopment::class)->name('magento-development');
 Route::get('/php-development',PhpDevelopment::class)->name('php-development');
 Route::get('/symfony-development', App\Livewire\Public\WebDevelopment\SymfonyDevelopment::class)->name('symfony-development');
