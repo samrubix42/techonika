@@ -2352,7 +2352,7 @@
     @endphp
 
     @if($latestPosts->isNotEmpty())
-        <section class="relative bg-black overflow-hidden py-16 sm:py-20">
+        <section class="relative bg-black overflow-hidden py-20 sm:py-20">
             <div class="absolute inset-0 opacity-[0.04]
                 bg-[radial-gradient(#ffffff_1px,transparent_1px)]
                 bg-[size:26px_26px]"></div>
