@@ -5,7 +5,7 @@
 @endsection
 
 <div>
-    <section class="relative bg-black text-white py-32 overflow-hidden">
+    <section class="relative bg-black text-white pt-24 pb-10 overflow-hidden">
 
         <!-- Background glow -->
         <div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
@@ -57,11 +57,11 @@
 
         </div>
     </section>
-    <section class="bg-black py-6">
+    <section class="bg-black ">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- SECTION HEADER -->
-            <div class="max-w-3xl mx-auto text-center mb-16">
+            <div class="max-w-3xl mx-auto py-2 text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-semibold text-white">
                     Featured Projects
                 </h2>

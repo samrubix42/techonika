@@ -1484,31 +1484,31 @@
 
                 <!-- DIGITAL MARKETING -->
                 <div x-show="tab==='digital'" x-transition class="grid sm:grid-cols-2 gap-6">
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    <a wire:navigate href="{{ route('content-writing') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-10 " src="{{asset('images/icons/creative-writing.png')}}" alt="">
                         <span>Content Writing & Marketing
                         </span>
-                    </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    </a>
+                    <a wire:navigate href="{{ route('digital-marketing') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-10 " src="{{asset('images/icons/performance.png')}}" alt="">
                         <span>Performance Marketing
                         </span>
-                    </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    </a>
+                    <a wire:navigate href="{{ route('ppc-services') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-10 " src="{{asset('images/icons/pay-per-click.png')}}" alt="">
                         <span>PPC
                         </span>
-                    </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    </a>
+                    <a wire:navigate href="{{ route('search-engine-optimization') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-10 " src="{{asset('images/icons/search-engine-optimization.png')}}" alt="">
                         <span>SEO (E-commerce, Local)
                         </span>
-                    </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    </a>
+                    <a wire:navigate href="{{ route('smm-service') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-10 " src="{{asset('images/icons/social-media.png')}}" alt="">
                         <span>Social Media Marketing
                         </span>
-                    </div>
+                    </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
                         <img class="w-auto h-10 " src="{{asset('images/icons/artificial-intelligence.png')}}" alt="">
                         <span>AEO / GEO Services
@@ -1527,14 +1527,14 @@
                         <img class="w-auto h-10 " src="{{asset('images/icons/mean_logo.svg')}}" alt="">
                         <span>MEAN Stack</span>
                     </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white flex items-center gap-4 px-4 py-3">
+                    <a wire:navigate href="{{ route('mern-development') }}" class="bg-zinc-600/50 rounded-3xl text-white flex items-center gap-4 px-4 py-3 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-10 rounded-full" src="{{asset('images/icons/mern.png')}}" alt="">
                         <span>MERN Stack</span>
-                    </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    </a>
+                    <a wire:navigate href="{{ route('laravel-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-9" src="{{asset('images/tech/laravel.png')}}" alt="">
                         <span>Laravel</span>
-                    </div>
+                    </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
                         <img class="w-auto h-9" src="{{asset('images/tech/Livewire.png')}}" alt="">
                         <span>Livewire</span>
@@ -1543,10 +1543,10 @@
                         <img class="w-auto h-9" src="{{asset('images/tech/Next.js.png')}}" alt="">
                         <span>Next.js</span>
                     </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    <a wire:navigate href="{{ route('angular-web-design') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-9" src="{{asset('images/tech/angular.png')}}" alt="">
                         <span>Angular</span>
-                    </div>
+                    </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
                         <img class="w-auto h-9" src="{{asset('images/tech/TypeScript.png')}}" alt="">
                         <span>TypeScript</span>
@@ -1567,10 +1567,10 @@
                         <img class="w-auto h-9" src="{{asset('images/tech/nodejs.png')}}" alt="">
                         <span>Node.js</span>
                     </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    <a wire:navigate href="{{ route('php-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-9" src="{{asset('images/tech/php.png')}}" alt="">
                         <span>PHP</span>
-                    </div>
+                    </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
                         <img class="w-auto h-9" src="{{asset('images/tech/GraphQL.png')}}" alt="">
                         <span>GraphQL</span>
@@ -1580,10 +1580,10 @@
                         <span>Rest API</span>
 
                     </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    <a wire:navigate href="{{ route('reactjs-web-design') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-9" src="{{asset('images/tech/react.png')}}" alt="">
                         <span>React.js</span>
-                    </div>
+                    </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
                         <img class="w-auto h-9" src="{{asset('images/tech/Tailwind CSS.png')}}" alt="">
                         <span>Tailwind CSS</span>
@@ -1597,44 +1597,44 @@
 
                 <!-- ECOMMERCE -->
                 <div x-show="tab==='ecommerce'" x-transition class="grid sm:grid-cols-2 gap-6">
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    <a wire:navigate href="{{ route('shopify-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-9" src="{{asset('images/tech/shopify.png')}}" alt="">
                         <span>Shopify</span>
-                    </div>
+                    </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
                         <img class="w-auto h-9" src="{{asset('images/tech/Drupal.png')}}" alt="">
                         <span>Drupal</span>
                     </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    <a wire:navigate href="{{ route('woo-commerce-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-9" src="{{asset('images/tech/woocommerce.png')}}" alt="">
                         <span>WooCommerce</span>
-                    </div>
+                    </a>
 
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    <a wire:navigate href="{{ route('wordpress-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-9" src="{{asset('images/tech/wordpress.png')}}" alt="">
                         <span>WordPress</span>
-                    </div>
+                    </a>
 
                 </div>
 
                 <!-- MOBILE -->
                 <div x-show="tab==='mobile'" x-transition class="grid sm:grid-cols-2 gap-6">
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    <a wire:navigate href="{{ route('react-native-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-9" src="{{asset('images/tech/native.png')}}" alt="">
                         <span>React Native</span>
-                    </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    </a>
+                    <a wire:navigate href="{{ route('flutter-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-9" src="{{asset('images/tech/Flutter.png')}}" alt="">
                         <span>Flutter</span>
-                    </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    </a>
+                    <a wire:navigate href="{{ route('android-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-9" src="{{asset('images/tech/Android.png')}}" alt="">
                         <span>Android</span>
-                    </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    </a>
+                    <a wire:navigate href="{{ route('ios-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-9" src="{{asset('images/tech/ios.jpg')}}" alt="">
                         <span>iOS</span>
-                    </div>
+                    </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
                         <img class="w-auto h-9" src="{{asset('images/tech/kotlin.jpg')}}" alt="">
                         <span>Kotlin</span>
@@ -1665,38 +1665,38 @@
 
                 <!-- Branding -->
                 <div x-show="tab==='branding'" x-transition class="grid sm:grid-cols-2 gap-6">
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    <a wire:navigate href="{{ route('logo-designing') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-9" src="{{asset('images/icons/illustrator.png')}}" alt="">
                         <span>Logo Design
                         </span>
 
-                    </div>
+                    </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
                         <img class="w-auto h-9 mt-2" src="{{asset('images/icons/branding.png')}}" alt="">
                         <span>Brand Identity
                         </span>
                     </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    <a wire:navigate href="{{ route('visit-card-designing') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-9" src="{{asset('images/icons/card.png')}}" alt="">
                         <span>Visiting Card Design
                         </span>
-                    </div>
+                    </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
                         <img class="w-auto h-9" src="{{asset('images/icons/note.png')}}" alt="">
                         <span>Letterhead Design
                         </span>
                     </div>
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    <a wire:navigate href="{{ route('company-profile-designing') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-9" src="{{asset('images/icons/solution.png')}}" alt="">
                         <span>Company Profile Design
                         </span>
-                    </div>
+                    </a>
 
-                    <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
+                    <a wire:navigate href="{{ route('package-designing') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
                         <img class="w-auto h-9" src="{{asset('images/icons/product-design.png')}}" alt="">
                         <span>Packaging Design
                         </span>
-                    </div>
+                    </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
                         <img class="w-auto h-9" src="{{asset('images/icons/cloth.png')}}" alt="">
                         <span>Banner/Poster Design

@@ -4,6 +4,7 @@ namespace App\Livewire\Public\WebDevelopment;
 
 use Livewire\Component;
 use App\Models\Contact;
+use App\Models\Portfolio as PortfolioModel;
 use App\Models\Testimonial;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Http;
@@ -173,7 +174,17 @@ public function setBottomToken($token)
 
     public function render()
     {
+        $webDevelopmentPortfolios = PortfolioModel::query()
+            ->where('is_active', true)
+            ->whereHas('category', function ($query) {
+                $query->where('slug', 'web-development');
+            })
+            ->orderBy('sequence')
+            ->limit(6)
+            ->get();
+
         return view('livewire.public.web-development.index', [
+            'webDevelopmentPortfolios' => $webDevelopmentPortfolios,
             'testimonials' => Testimonial::where('is_active', true)
                 ->orderBy('sequence')
                 ->get()

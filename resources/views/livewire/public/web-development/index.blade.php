@@ -264,6 +264,10 @@
         <div class="absolute bottom-1/2 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
     </section>
 
+    @if(isset($webDevelopmentPortfolios) && $webDevelopmentPortfolios->isNotEmpty())
+        <x-portfolio.horizontal-slider :items="$webDevelopmentPortfolios" />
+    @endif
+
     <section class="bg-black text-white py-6 md:py-16 sm:py-20 lg:py-24 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-2 md:px-6">
 
