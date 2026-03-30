@@ -102,7 +102,7 @@ Route::get('wordpress-development-company-noida', WordpressDevelopment::class)->
 Route::get('shopify-development-company-in-india', ShopifyDevelopment::class)->name('shopify-development');
 Route::get('woo-commerce-development', WooCommerce::class)->name('woo-commerce-development');
 Route::get('codeigniter-development-services', CodeigniterDevelopment::class)->name('codeigniter-development');
-Route::get('/magento-development', MagentoDevelopment::class)->name('magento-development');
+Route::get('/magento-development-agency-india', MagentoDevelopment::class)->name('magento-development');
 Route::get('/php-development',PhpDevelopment::class)->name('php-development');
 Route::get('/symfony-development', App\Livewire\Public\WebDevelopment\SymfonyDevelopment::class)->name('symfony-development');
 Route::get('/yii-development',YiiDevelopment::class)->name('yii-development');
