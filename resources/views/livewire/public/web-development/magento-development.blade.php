@@ -20,7 +20,7 @@
                 <!-- LEFT CONTENT -->
                 <div class="text-center lg:text-left">
                     <!-- Heading -->
-                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 
+                    <h1 class="text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-4xl 
                         font-semibold tracking-tight leading-tight">
                         Magento Development Agency:<br/>
                         <span class="text-primary block">Adobe Commerce Experts Who Build Stores That Sell</span>
