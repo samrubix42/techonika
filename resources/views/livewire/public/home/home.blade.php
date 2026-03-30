@@ -219,6 +219,9 @@
 
         </div>
     </section>
+
+ 
+
     <section class="relative bg-black overflow-hidden py-16 sm:py-20 lg:py-24">
 
         <!-- Glow Background -->
@@ -2063,6 +2066,376 @@
                 </div>
             </div>
         </section>
+
+           @php
+    $reelsItems = collect($videoSliders ?? [])->values();
+
+    $embedInfo = function ($item): array {
+    $url = trim((string) ($item->video_url ?? ''));
+
+    if ($url === '') {
+    return ['kind' => 'link', 'src' => ''];
+    }
+
+    $lower = strtolower($url);
+    $path = (string) (parse_url($url, PHP_URL_PATH) ?? '');
+    $ext = strtolower(pathinfo($path, PATHINFO_EXTENSION));
+
+    if (in_array($ext, ['mp4', 'webm', 'ogg'], true)) {
+    return ['kind' => 'video', 'src' => $url];
+    }
+
+    // YouTube (supports Shorts + normal URLs)
+    $youtubeId = null;
+    if (preg_match('~youtu\.be/([^?&/]+)~i', $url, $m)) {
+    $youtubeId = $m[1];
+    } elseif (preg_match('~youtube\.com/(?:shorts|embed)/([^?&/]+)~i', $url, $m)) {
+    $youtubeId = $m[1];
+    } elseif (str_contains($lower, 'youtube.com') || str_contains($lower, 'youtu.be')) {
+    parse_str((string) (parse_url($url, PHP_URL_QUERY) ?? ''), $q);
+    if (!empty($q['v']) && is_string($q['v'])) {
+    $youtubeId = $q['v'];
+    }
+    }
+
+    if (is_string($youtubeId) && $youtubeId !== '') {
+    $src = 'https://www.youtube.com/embed/' . rawurlencode($youtubeId) . '?playsinline=1&rel=0&modestbranding=1';
+    return ['kind' => 'youtube', 'src' => $src];
+    }
+
+    // Instagram (Reels / Posts)
+    if (str_contains($lower, 'instagram.com')) {
+    if (preg_match('~instagram\.com/(reel|p)/([^/?#]+)~i', $url, $m)) {
+    $segment = strtolower($m[1]);
+    $code = $m[2];
+    $src = 'https://www.instagram.com/' . $segment . '/' . rawurlencode($code) . '/embed/?hidecaption=1';
+    return ['kind' => 'instagram', 'src' => $src];
+    }
+    }
+
+    // Fallback to saved type (if URL is already an embed URL etc.)
+    $type = strtolower((string) ($item->type ?? ''));
+    if ($type === 'youtube') {
+    return ['kind' => 'youtube', 'src' => $url];
+    }
+    if ($type === 'instagram') {
+    return ['kind' => 'instagram', 'src' => $url];
+    }
+
+    return ['kind' => 'link', 'src' => $url];
+    };
+    @endphp
+
+    @if($reelsItems->isNotEmpty())
+    <section class="relative bg-black overflow-hidden py-14 sm:py-16">
+        <div class="absolute inset-0 opacity-[0.05]
+                bg-[radial-gradient(#ffffff_1px,transparent_1px)]
+                bg-[size:20px_20px]"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6"
+            x-data="{
+                    index: 0,
+                    count: {{ $reelsItems->count() }},
+                    perView: 1,
+                    intervalMs: 4500,
+                    timer: null,
+                    startX: null,
+                    init() {
+                        this.updatePerView();
+                        window.addEventListener('resize', () => this.updatePerView());
+                        this.$nextTick(() => this.scrollToIndex(this.index));
+                        this.startAuto();
+                    },
+                    updatePerView() {
+                        const w = window.innerWidth || 0;
+                        this.perView = w < 640 ? 1 : w < 768 ? 2 : w < 1024 ? 3 : 4;
+                        this.index = Math.min(this.index, this.maxIndex());
+                        this.$nextTick(() => this.scrollToIndex(this.index));
+                    },
+                    maxIndex() { return Math.max(0, this.count - this.perView) },
+                    stopAuto() {
+                        if (this.timer) {
+                            clearInterval(this.timer);
+                            this.timer = null;
+                        }
+                    },
+                    startAuto() {
+                        this.stopAuto();
+                        if (this.maxIndex() <= 0) return;
+                        this.timer = setInterval(() => this.next(), this.intervalMs);
+                    },
+                    restartAuto() {
+                        this.startAuto();
+                    },
+                    scrollToIndex(i) {
+                        const track = this.$refs.track;
+                        const el = track?.children?.[i];
+                        if (!track || !el) return;
+                        track.scrollTo({ left: el.offsetLeft, behavior: 'smooth' });
+                    },
+                    onScroll() {
+                        const track = this.$refs.track;
+                        if (!track) return;
+                        const children = track.children;
+                        if (!children || children.length === 0) return;
+                        const left = track.scrollLeft;
+                        let bestIndex = 0;
+                        let bestDistance = Infinity;
+                        for (let i = 0; i < children.length; i++) {
+                            const d = Math.abs(children[i].offsetLeft - left);
+                            if (d < bestDistance) {
+                                bestDistance = d;
+                                bestIndex = i;
+                            }
+                        }
+                        this.index = Math.min(bestIndex, this.maxIndex());
+                    },
+                    go(i) {
+                        const clamped = Math.max(0, Math.min(i, this.maxIndex()));
+                        this.index = clamped;
+                        this.scrollToIndex(this.index);
+                        this.restartAuto();
+                    },
+                    next() {
+                        if (this.maxIndex() <= 0) return;
+                        this.go(this.index >= this.maxIndex() ? 0 : (this.index + 1));
+                    },
+                    prev() {
+                        if (this.maxIndex() <= 0) return;
+                        this.go(this.index <= 0 ? this.maxIndex() : (this.index - 1));
+                    },
+                    pages() { return Math.max(1, Math.ceil(this.count / this.perView)) },
+                    page() { return Math.floor(this.index / this.perView) },
+                    goPage(p) { this.go(p * this.perView) },
+                    onTouchStart(e) {
+                        this.stopAuto();
+                        this.startX = e.touches?.[0]?.clientX ?? null;
+                    },
+                    onTouchEnd(e) {
+                        if (this.startX === null) return;
+                        const endX = e.changedTouches?.[0]?.clientX ?? this.startX;
+                        const dx = endX - this.startX;
+                        this.startX = null;
+                        if (Math.abs(dx) < 40) return;
+                        dx < 0 ? this.next() : this.prev();
+                        this.restartAuto();
+                    },
+                }"
+            @keydown.window.prevent.arrow-right="next()"
+            @keydown.window.prevent.arrow-left="prev()">
+            <div class="flex items-end justify-between gap-6">
+                <div>
+                    <h2 class="text-white text-2xl sm:text-3xl font-semibold tracking-tight">
+                        Proof of Our <span class="text-primary"> Impact</span>
+                    </h2>
+                  
+                </div>
+
+                <div class="hidden sm:flex items-center gap-2" x-show="maxIndex() > 0">
+                    <button type="button" @click="prev()"
+                        class="w-11 h-11 rounded-full border border-white/15 bg-white/5 text-white
+                                hover:bg-white/10 transition flex items-center justify-center">
+                        <i class="ri-arrow-left-line text-xl"></i>
+                    </button>
+                    <button type="button" @click="next()"
+                        class="w-11 h-11 rounded-full border border-white/15 bg-white/5 text-white
+                                hover:bg-white/10 transition flex items-center justify-center">
+                        <i class="ri-arrow-right-line text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-10 relative">
+                <div class="rounded-[34px]">
+                    <div
+                        x-ref="track"
+                        class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth
+                                pb-2 pr-6 -mr-6
+                                [&::-webkit-scrollbar]:hidden [scrollbar-width:none]"
+                        @scroll.passive="onScroll()"
+                        @mouseenter="stopAuto()"
+                        @mouseleave="startAuto()"
+                        @focusin="stopAuto()"
+                        @focusout="startAuto()"
+                        @touchstart.passive="onTouchStart($event)"
+                        @touchend.passive="onTouchEnd($event)">
+                        @foreach($reelsItems as $item)
+                        @php
+                            $embed = $embedInfo($item);
+                        @endphp
+                        <div class="shrink-0 snap-start w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+                            <div class="relative aspect-[9/16] rounded-[34px] overflow-hidden
+                                        border border-white/10 bg-white/5 backdrop-blur shadow-2xl shadow-black/60">
+
+                                @if($embed['kind'] === 'youtube')
+                                <iframe
+                                    src="{{ $embed['src'] }}"
+                                    class="w-full h-full"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                @elseif($embed['kind'] === 'instagram')
+                                <iframe
+                                    src="{{ $embed['src'] }}"
+                                    class="w-full h-full bg-black"
+                                    loading="lazy"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allow="encrypted-media; fullscreen; picture-in-picture"></iframe>
+                                @elseif($embed['kind'] === 'video')
+                                <video
+                                    class="w-full h-full object-cover"
+                                    src="{{ $embed['src'] }}"
+                                    controls
+                                    playsinline
+                                    preload="metadata"></video>
+                                @else
+                                <a href="{{ $item->video_url }}" target="_blank" rel="noopener"
+                                    class="w-full h-full flex items-center justify-center text-white/80 hover:text-white transition">
+                                    Open video
+                                </a>
+                                @endif
+
+                                <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                                    <div class="flex items-end justify-between gap-3">
+                                        <div class="min-w-0">
+                                            <div class="text-white text-sm font-semibold truncate">
+                                                {{ $item->title }}
+                                            </div>
+                                            <div class="text-white/60 text-xs truncate">
+                                                {{ $item->type }}
+                                            </div>
+                                        </div>
+
+                                        <a href="{{ $item->video_url }}" target="_blank" rel="noopener"
+                                            class="shrink-0 text-xs text-white/70 underline underline-offset-4 hover:text-white">
+                                            Open
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+
+                <!-- Mobile controls -->
+                <div class="sm:hidden flex items-center justify-center gap-3 mt-7" x-show="maxIndex() > 0">
+                    <button type="button" @click="prev()"
+                        class="w-11 h-11 rounded-full border border-white/15 bg-white/5 text-white
+                                hover:bg-white/10 transition flex items-center justify-center">
+                        <i class="ri-arrow-left-line text-xl"></i>
+                    </button>
+                    <button type="button" @click="next()"
+                        class="w-11 h-11 rounded-full border border-white/15 bg-white/5 text-white
+                                hover:bg-white/10 transition flex items-center justify-center">
+                        <i class="ri-arrow-right-line text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- Dots -->
+                <div class="flex justify-center gap-2 mt-6" x-show="maxIndex() > 0">
+                    <template x-for="p in pages()" :key="p">
+                        <button type="button"
+                            class="h-2.5 rounded-full transition-all"
+                            :class="page() === (p - 1) ? 'w-7 bg-[color:var(--color-primary)]' : 'w-2.5 bg-white/30 hover:bg-white/50'"
+                            @click="goPage(p - 1)"
+                            :aria-label="`Go to reels page ${p}`"></button>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </section>
+    @endif
+
+    @php
+        $latestPosts = collect($latestPosts ?? [])->values();
+    @endphp
+
+    @if($latestPosts->isNotEmpty())
+        <section class="relative bg-black overflow-hidden py-16 sm:py-20">
+            <div class="absolute inset-0 opacity-[0.04]
+                bg-[radial-gradient(#ffffff_1px,transparent_1px)]
+                bg-[size:26px_26px]"></div>
+
+            <div class="relative max-w-7xl mx-auto px-6">
+                <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
+                    <div>
+                        <h2 class="text-white text-3xl sm:text-4xl font-semibold tracking-tight">
+                            Latest Blog <span class="text-primary">Posts</span>
+                        </h2>
+                        <p class="text-white/70 mt-2 text-sm sm:text-base max-w-xl">
+                            Fresh insights on web development, marketing, and building better digital products.
+                        </p>
+                    </div>
+
+                    <a href="{{ route('blog') }}"
+                        class="inline-flex items-center gap-2 text-sm font-semibold
+                            text-[color:var(--color-primary)] hover:text-white transition">
+                        View all
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    @foreach($latestPosts as $post)
+                        <article class="group">
+                            <a href="{{ route('blog.view', $post->slug) }}"
+                                class="block rounded-2xl border border-white/10 bg-white/5 backdrop-blur
+                                    hover:bg-white/10 transition overflow-hidden">
+
+                                <div class="relative">
+                                    @if($post->featured_image)
+                                        <img
+                                            src="{{ asset('storage/' . $post->featured_image) }}"
+                                            alt="{{ $post->title }}"
+                                            class="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-105"
+                                            loading="lazy"
+                                        >
+                                    @else
+                                        <div class="w-full h-44 bg-gradient-to-br from-white/10 to-transparent
+                                            flex items-center justify-center text-white/70">
+                                            <div class="flex items-center gap-2 text-sm">
+                                                <i class="ri-article-line text-xl"></i>
+                                                <span>Techonika Blog</span>
+                                            </div>
+                                        </div>
+                                    @endif
+
+                                    <div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                </div>
+
+                                <div class="p-6">
+                                    <div class="flex items-center justify-between gap-3 text-xs text-white/60">
+                                        <span class="inline-flex items-center gap-1">
+                                            <i class="ri-price-tag-3-line"></i>
+                                            {{ $post->category?->name ?? 'General' }}
+                                        </span>
+                                        <span class="inline-flex items-center gap-1">
+                                            <i class="ri-calendar-line"></i>
+                                            {{ optional($post->created_at)->format('M d, Y') }}
+                                        </span>
+                                    </div>
+
+                                    <h3 class="mt-3 text-white text-lg font-semibold leading-snug">
+                                        {{ $post->title }}
+                                    </h3>
+
+                                    <p class="mt-3 text-sm text-white/70 leading-relaxed line-clamp-3">
+                                        {{ \Illuminate\Support\Str::limit(strip_tags($post->intro ?: $post->content), 140) }}
+                                    </p>
+
+                                    <div class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[color:var(--color-primary)]">
+                                        Read more
+                                        <i class="ri-arrow-right-line"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    @endforeach
+                </div>
+            </div>
+        </section>
+    @endif
 
 
 

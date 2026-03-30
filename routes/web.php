@@ -14,6 +14,7 @@ use App\Livewire\Admin\RolePermission\RoleList;
 use App\Livewire\Admin\RolePermission\UserList;
 use App\Livewire\Admin\Service\ServiceCategoryList;
 use App\Livewire\Admin\Testimonial\TestimonialList;
+use App\Livewire\Admin\Slider\VideoSliderList;
 use App\Livewire\Auth\Login;
 use App\Livewire\FooterPage\Disclaimer;
 use App\Livewire\FooterPage\RefundCancellation;
@@ -152,6 +153,7 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/service-category', ServiceCategoryList::class)->name('service-category');
     Route::get('/package-enquiry', PackageEnquires::class)->name('package-enquiry');
     Route::get('/faq-management', Faq::class)->name('faq-management');
+    Route::get('/video-sliders', VideoSliderList::class)->name('video-sliders');
     Route::get('/Users', UserList::class)->name('users');
     Route::get('/permission', PermissionList::class)->name('permission');
     Route::get('/role-permission', RoleList::class)->name('role-permission');

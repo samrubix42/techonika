@@ -84,6 +84,13 @@ class AdminSidebar
                 'submenu' => [],
             ],
             (object)[
+                'title' => 'Video Sliders',
+                'icon' => 'ti ti-player-play',
+                'url' => route('admin.video-sliders'),
+                'hasSubmenu' => false,
+                'submenu' => [],
+            ],
+            (object)[
                 'title' => 'Blog',
                 'icon' => 'ti ti-article',
                 'url' => 'javascript:void(0)',
