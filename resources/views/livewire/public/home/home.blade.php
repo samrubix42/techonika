@@ -2035,109 +2035,7 @@
             </style>
         </section>
 
-
-        <section class="w-full bg-black py-10 overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4 lg:px-4">
-
-                <!-- SECTION TITLE -->
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-6">
-                    Our Satisfied <span class="text-primary">Clients</span>
-                </h2>
-                <p class="text-sm mb-20 md:text-justify text-white/80 leading-relaxed">
-                    We are proud to work with clients from different industries. Each project helps us learn and improve.
-                    Our clients stay with us because we communicate clearly, deliver on time, and care about their success.
-                </p>
-
-                <!-- SLIDER -->
-                <div
-                    x-data="{
-                active: 0,
-                interval: null,
-                cardWidth: 340,
-                pause: false,
-                cards: @js($testimonials->map(fn($t) => ['name' => $t->data['name'] ?? '', 'role' => $t->data['company'] ?? '', 'text' => $t->data['message'] ?? '', 'verified' => $t->data['verified'] ?? false])->values()),
-                start() {
-                    if (this.cards.length > 0) {
-                        this.interval = setInterval(() => {
-                            if (!this.pause) {
-                                this.active = (this.active + 1) % this.cards.length
-                            }
-                        }, 4000)
-                    }
-                }
-            }"
-                    x-init="start()"
-                    class="relative"
-                    @mouseenter="pause = true"
-                    @mouseleave="pause = false">
-
-                    <!-- VIEWPORT -->
-                    <div class="overflow-hidden">
-                        @if($testimonials->count() > 0)
-                        <div
-                            class="flex gap-6 transition-transform duration-700 ease-out"
-                            :style="`transform: translateX(-${active * cardWidth}px)`">
-
-                            <template x-for="(card, index) in cards" :key="index">
-                                <div
-                                    class="min-w-[300px] sm:min-w-[320px] max-w-[320px]
-                            bg-gradient-to-b from-[#1a1a1a] to-[#111]
-                            rounded-2xl p-6 shadow-xl
-                            border border-white/5">
-
-                                    <!-- HEADER (NO IMAGE) -->
-                                    <div class="flex items-center gap-4 mb-4">
-                                        <!-- INITIAL BADGE -->
-                                        <div
-                                            class="w-12 h-12 flex items-center justify-center
-                                    rounded-full bg-primary/20 text-primary
-                                    font-semibold uppercase">
-                                            <span x-text="card.name.charAt(0)"></span>
-                                        </div>
-
-                                        <div>
-                                            <h4 class="text-white font-semibold text-sm"
-                                                x-text="card.name"></h4>
-                                            <p class="text-gray-400 text-xs"
-                                                x-text="card.role"></p>
-                                        </div>
-                                    </div>
-
-                                    <!-- TEXT -->
-                                    <p class="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-6"
-                                        x-text="card.text"></p>
-
-                                    <span class="text-primary text-xs font-medium" x-show="card.verified">
-                                        Verified Client
-                                    </span>
-                                </div>
-                            </template>
-                        </div>
-                        @else
-                        <div class="text-center py-12">
-                            <p class="text-white/60">No testimonials available at the moment.</p>
-                        </div>
-                        @endif
-                    </div>
-
-                    <!-- DOTS -->
-                    @if($testimonials->count() > 0)
-                    <div class="flex justify-center gap-3 mt-10">
-                        <template x-for="(dot, i) in cards" :key="i">
-                            <button
-                                @click="active = i"
-                                class="w-2.5 h-2.5 rounded-full transition"
-                                :class="active === i ? 'bg-primary' : 'bg-gray-600'">
-                            </button>
-                        </template>
-                    </div>
-                    @endif
-
-                </div>
-            </div>
-        </section>
-
-        @php
+           @php
         $reelsItems = collect($videoSliders ?? [])->values();
 
         $embedInfo = function ($item): array {
@@ -2506,6 +2404,110 @@
         </section>
         @endif
 
+
+
+        <section class="w-full bg-black py-10 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 lg:px-4">
+
+                <!-- SECTION TITLE -->
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-6">
+                    Our Satisfied <span class="text-primary">Clients</span>
+                </h2>
+                <p class="text-sm mb-20 md:text-justify text-white/80 leading-relaxed">
+                    We are proud to work with clients from different industries. Each project helps us learn and improve.
+                    Our clients stay with us because we communicate clearly, deliver on time, and care about their success.
+                </p>
+
+                <!-- SLIDER -->
+                <div
+                    x-data="{
+                active: 0,
+                interval: null,
+                cardWidth: 340,
+                pause: false,
+                cards: @js($testimonials->map(fn($t) => ['name' => $t->data['name'] ?? '', 'role' => $t->data['company'] ?? '', 'text' => $t->data['message'] ?? '', 'verified' => $t->data['verified'] ?? false])->values()),
+                start() {
+                    if (this.cards.length > 0) {
+                        this.interval = setInterval(() => {
+                            if (!this.pause) {
+                                this.active = (this.active + 1) % this.cards.length
+                            }
+                        }, 4000)
+                    }
+                }
+            }"
+                    x-init="start()"
+                    class="relative"
+                    @mouseenter="pause = true"
+                    @mouseleave="pause = false">
+
+                    <!-- VIEWPORT -->
+                    <div class="overflow-hidden">
+                        @if($testimonials->count() > 0)
+                        <div
+                            class="flex gap-6 transition-transform duration-700 ease-out"
+                            :style="`transform: translateX(-${active * cardWidth}px)`">
+
+                            <template x-for="(card, index) in cards" :key="index">
+                                <div
+                                    class="min-w-[300px] sm:min-w-[320px] max-w-[320px]
+                            bg-gradient-to-b from-[#1a1a1a] to-[#111]
+                            rounded-2xl p-6 shadow-xl
+                            border border-white/5">
+
+                                    <!-- HEADER (NO IMAGE) -->
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <!-- INITIAL BADGE -->
+                                        <div
+                                            class="w-12 h-12 flex items-center justify-center
+                                    rounded-full bg-primary/20 text-primary
+                                    font-semibold uppercase">
+                                            <span x-text="card.name.charAt(0)"></span>
+                                        </div>
+
+                                        <div>
+                                            <h4 class="text-white font-semibold text-sm"
+                                                x-text="card.name"></h4>
+                                            <p class="text-gray-400 text-xs"
+                                                x-text="card.role"></p>
+                                        </div>
+                                    </div>
+
+                                    <!-- TEXT -->
+                                    <p class="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-6"
+                                        x-text="card.text"></p>
+
+                                    <span class="text-primary text-xs font-medium" x-show="card.verified">
+                                        Verified Client
+                                    </span>
+                                </div>
+                            </template>
+                        </div>
+                        @else
+                        <div class="text-center py-12">
+                            <p class="text-white/60">No testimonials available at the moment.</p>
+                        </div>
+                        @endif
+                    </div>
+
+                    <!-- DOTS -->
+                    @if($testimonials->count() > 0)
+                    <div class="flex justify-center gap-3 mt-10">
+                        <template x-for="(dot, i) in cards" :key="i">
+                            <button
+                                @click="active = i"
+                                class="w-2.5 h-2.5 rounded-full transition"
+                                :class="active === i ? 'bg-primary' : 'bg-gray-600'">
+                            </button>
+                        </template>
+                    </div>
+                    @endif
+
+                </div>
+            </div>
+        </section>
+
+     
 
 
         <section class="bg-black py-20">
