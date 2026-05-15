@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/techkinr/techonika.com/
+    - export DEPLOYPATH=/home2/letsa891/techonika.com
     - /bin/cp -R * $DEPLOYPATH 
