@@ -231,29 +231,29 @@
 
                         <!-- Shopify -->
                         <div class="group bg-zinc-50 opacity-90 rounded-md px-6 shadow-xl shadow-black/20 hover:-translate-y-1 transition-all duration-500">
-                            <img src="{{ asset('images/patners&reviews/shopify.webp') }}" alt="Shopify" class="h-12 w-auto md:h-20 object-cover transition duration-500 group-hover:scale-105">
+                            <img src="{{ asset('images/patners&reviews/shopify.webp') }}" alt="Shopify" class="h-12 w-auto md:h-16 object-cover transition duration-500 group-hover:scale-105">
                         </div>
 
                         <!-- Razorpay -->
                         <div class="group bg-zinc-50 opacity-90 rounded-md px-6 shadow-xl shadow-black/20 hover:-translate-y-1 transition-all duration-500">
-                            <img src="{{ asset('images/patners&reviews/razorpay.webp') }}" alt="Razorpay" class="h-12 w-auto md:h-20 object-cover transition duration-500 group-hover:scale-105">
+                            <img src="{{ asset('images/patners&reviews/razorpay.webp') }}" alt="Razorpay" class="h-12 w-auto md:h-16 object-cover transition duration-500 group-hover:scale-105">
                         </div>
 
                         <!-- PhonePe -->
                         <div class="group bg-zinc-50 opacity-90 rounded-md px-6 shadow-xl shadow-black/20 hover:-translate-y-1 transition-all duration-500">
-                            <img src="{{ asset('images/patners&reviews/phonepay.webp') }}" alt="PhonePe" class="h-12 w-auto md:h-20 object-cover transition duration-500 group-hover:scale-105">
+                            <img src="{{ asset('images/patners&reviews/phonepay.webp') }}" alt="PhonePe" class="h-12 w-auto md:h-16 object-cover transition duration-500 group-hover:scale-105">
                         </div>
 
                         <!-- Cashfree -->
                         <div class="group bg-zinc-50 opacity-90 rounded-md px-6 shadow-xl overflow-hidden shadow-black/20 hover:-translate-y-1 transition-all duration-500">
-                            <img src="{{ asset('images/patners&reviews/cashfree.webp') }}" alt="Cashfree" class="h-12 w-auto md:h-20 object-cover transition duration-500 group-hover:scale-105">
+                            <img src="{{ asset('images/patners&reviews/cashfree.webp') }}" alt="Cashfree" class="h-12 w-auto md:h-16 object-cover transition duration-500 group-hover:scale-105">
                         </div>
 
                     </div>
                 </div>
 
                 <!-- Reviews (No Cards) -->
-                <div class="flex flex-wrap justify-center gap-10">
+                <div class="flex flex-wrap justify-center md:mt-5 gap-10">
 
                     <!-- Google -->
                     <div class="flex flex-col items-center lg:items-start gap-1">
