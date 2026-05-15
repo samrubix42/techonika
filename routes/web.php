@@ -99,6 +99,7 @@ Route::get('/refund-policy', RefundCancellation::class)->name('refund-policy');
 Route::get('/terms-and-conditions', TermAndCondition::class)->name('terms-conditions');
 Route::get('/disclaimer', Disclaimer::class)->name('disclaimer');
 Route::get('/branding-agency-in-noida', BrandingIndex::class)->name('branding');
+Route::get('/our-clients', App\Livewire\Public\Client\Clients::class)->name('clients.list');
 
 //web development routes
 Route::get('laravel-development-company-in-india', LaravelDevelopment::class)->name('laravel-development');

@@ -32,10 +32,11 @@
       <!-- DESKTOP NAV -->
       <nav class="hidden md:flex items-center gap-10 text-sm uppercase tracking-widest text-white">
 
-        <a href="{{ route('home') }}" class="hover:text-amber-400">Home</a>
+
 
 
         <!-- PACKAGES -->
+        {{-- 
         <div class="relative" @mouseenter="packages=true" @mouseleave="packages=false">
           <button class="flex items-center gap-1 hover:text-amber-400">
             PACKAGES <i class="ri-arrow-down-s-line text-amber-400"></i>
@@ -51,6 +52,7 @@
             <a href="{{ route('startup-package') }}" class="block px-4 py-2 rounded hover:bg-white/5">Startup Package</a>
           </div>
         </div>
+        --}}
         <!-- SERVICES MEGA MENU -->
         <div class="relative" @mouseenter="mega=true" @mouseleave="mega=false">
           <button class="flex items-center gap-1 hover:text-amber-400">
@@ -162,6 +164,7 @@
         <a href="{{ route('about') }}" class="hover:text-amber-400">About</a>
         <a href="{{ route('portfolio') }}" class="hover:text-amber-400">Portfolio</a>
         <a href="{{ route('blog') }}" class="hover:text-amber-400">Blog</a>
+        <a href="{{ route('clients.list') }}" class="hover:text-amber-400">Clients</a>
         <a href="{{ route('contact') }}" class="hover:text-amber-400">Contact</a>
       </nav>
 
@@ -202,7 +205,7 @@
 
       <nav class="flex flex-col gap-5 text-lg text-white">
 
-        <a href="{{ route('home') }}">Home</a>
+
 
         <!-- SERVICES MEGA MENU -->
         <div>
@@ -308,6 +311,7 @@
         </div>
 
         <!-- PACKAGES -->
+        {{-- 
         <div>
           <button @click="mobilePackages=!mobilePackages" class="flex justify-between w-full">
             Packages <i class="ri-arrow-down-s-line"></i>
@@ -319,10 +323,12 @@
             <a href="{{ route('startup-package') }}">Startup Package</a>
           </div>
         </div>
+        --}}
 
         <a href="{{ route('about') }}">About</a>
         <a href="{{ route('portfolio') }}">Portfolio</a>
         <a href="{{ route('blog') }}">Blog</a>
+        <a href="{{ route('clients.list') }}">Clients</a>
 
         <a href="{{ route('contact') }}"
           class="mt-6 bg-amber-400 text-black py-3 rounded-xl text-center font-semibold">
