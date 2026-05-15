@@ -223,7 +223,7 @@
                 <div class="flex flex-col items-center lg:items-start gap-4">
 
                     <span class="text-xs uppercase tracking-[0.3em] text-white/40 font-medium">
-                        Official Partnerships
+                        Our Affiliate Partners
                     </span>
 
                     <!-- Partner Logos -->
