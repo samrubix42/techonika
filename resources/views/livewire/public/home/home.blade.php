@@ -220,7 +220,7 @@
             <div class="mt-20 pt-10 border-t border-white/10 flex flex-col lg:flex-row items-center justify-between gap-12">
 
                 <!-- Partnerships -->
-                <div class="flex flex-col items-center lg:items-start gap-6">
+                <div class="flex flex-col items-center lg:items-start gap-4">
 
                     <span class="text-xs uppercase tracking-[0.3em] text-white/40 font-medium">
                         Official Partnerships
@@ -230,23 +230,23 @@
                     <div class="flex flex-wrap justify-center lg:justify-start items-center gap-4 sm:gap-8">
 
                         <!-- Shopify -->
-                        <div class="group bg-zinc-50 opacity-90 rounded-md px-6 shadow-xl shadow-black/20 hover:-translate-y-1 transition-all duration-500">
-                            <img src="{{ asset('images/patners&reviews/shopify.webp') }}" alt="Shopify" class="h-12 w-auto md:h-16 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="group hover:-translate-y-1 transition-all duration-500">
+                            <img src="{{ asset('images/patners&reviews/shopify.svg') }}" alt="Shopify" class="h-10 w-auto md:h-12 object-contain transition duration-500 group-hover:scale-105">
                         </div>
 
                         <!-- Razorpay -->
-                        <div class="group bg-zinc-50 opacity-90 rounded-md px-6 shadow-xl shadow-black/20 hover:-translate-y-1 transition-all duration-500">
-                            <img src="{{ asset('images/patners&reviews/razorpay.webp') }}" alt="Razorpay" class="h-12 w-auto md:h-16 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="group hover:-translate-y-1 transition-all duration-500">
+                            <img src="{{ asset('images/patners&reviews/razorpay.svg') }}" alt="Razorpay" class="h-10 w-auto md:h-12 object-contain transition duration-500 group-hover:scale-105">
                         </div>
 
                         <!-- PhonePe -->
-                        <div class="group bg-zinc-50 opacity-90 rounded-md px-6 shadow-xl shadow-black/20 hover:-translate-y-1 transition-all duration-500">
-                            <img src="{{ asset('images/patners&reviews/phonepay.webp') }}" alt="PhonePe" class="h-12 w-auto md:h-16 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="group hover:-translate-y-1 transition-all duration-500">
+                            <img src="{{ asset('images/patners&reviews/phonepay.svg') }}" alt="PhonePe" class="h-10 w-auto md:h-12 object-contain transition duration-500 group-hover:scale-105">
                         </div>
 
                         <!-- Cashfree -->
-                        <div class="group bg-zinc-50 opacity-90 rounded-md px-6 shadow-xl overflow-hidden shadow-black/20 hover:-translate-y-1 transition-all duration-500">
-                            <img src="{{ asset('images/patners&reviews/cashfree.webp') }}" alt="Cashfree" class="h-12 w-auto md:h-16 object-cover transition duration-500 group-hover:scale-105">
+                        <div class="group hover:-translate-y-1 transition-all duration-500">
+                            <img src="{{ asset('images/patners&reviews/cashfree.png') }}" alt="Cashfree" class="h-10 w-auto md:h-12 object-contain transition duration-500 group-hover:scale-105">
                         </div>
 
                     </div>
