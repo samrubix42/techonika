@@ -4,6 +4,7 @@ use App\Livewire\Admin\Blog\AddBlog;
 use App\Livewire\Admin\Blog\BlogList;
 use App\Livewire\Admin\Blog\CategoryList;
 use App\Livewire\Admin\Blog\UpdateBlog;
+use App\Livewire\Admin\Client\ClientList;
 use App\Livewire\Admin\Contact\PackageEnquires;
 use App\Livewire\Admin\Dashboard\Dashboard;
 use App\Livewire\Admin\Faq\Faq;
@@ -168,6 +169,7 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/blog-list', BlogList::class)->name('blog-list');
     Route::get('/testimonial', TestimonialList::class)->name('testimonial');
     Route::get('/blog-category', CategoryList::class)->name('blog-category');
+    Route::get('/clients', ClientList::class)->name('client');
 });
 
 

@@ -121,6 +121,13 @@ class AdminSidebar
                 'submenu' => [],
             ],
             (object)[
+                'title' => 'Clients',
+                'icon' => 'ti ti-user-star',
+                'url' => route('admin.client'),
+                'hasSubmenu' => false, 
+                'submenu' => [],
+            ],
+            (object)[
                 'title' => 'Portfolio',
                 'icon' => 'ti ti-briefcase',
                 'url' => 'javascript:void(0)',
