@@ -123,9 +123,24 @@ class AdminSidebar
             (object)[
                 'title' => 'Portfolio',
                 'icon' => 'ti ti-briefcase',
-                'url' => route('admin.portfolio.list'),
-                'hasSubmenu' => false,
-                'submenu' => [],
+                'url' => 'javascript:void(0)',
+                'hasSubmenu' => true,
+                'submenu' => [
+                    (object)[
+                        'title' => 'Portfolio List',
+                        'icon' => 'ti ti-list-details',
+                        'url' => route('admin.portfolio.list'),
+                        'hasSubmenu' => false,
+                        'submenu' => [],
+                    ],
+                    (object)[
+                        'title' => 'SEO Portfolio',
+                        'icon' => 'ti ti-chart-bar',
+                        'url' => route('admin.seo-portfolio.list'),
+                        'hasSubmenu' => false,
+                        'submenu' => [],
+                    ],
+                ],
             ],
             (object)[
                 'title' => 'Package Enquiries',
