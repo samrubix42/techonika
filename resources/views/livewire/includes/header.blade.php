@@ -3,8 +3,10 @@
     open:false,
     mega:false,
     packages:false,
+    portfolio:false,
     mobileServices:false,
     mobilePackages:false,
+    mobilePortfolio:false,
     mobileWebDev:false,
     mobileWebDesign:false,
     mobileMobileApp:false,
@@ -162,7 +164,24 @@
 
 
         <a href="{{ route('about') }}" class="hover:text-amber-400">About</a>
-        <a href="{{ route('portfolio') }}" class="hover:text-amber-400">Portfolio</a>
+
+        <!-- PORTFOLIO DROPDOWN -->
+        <div class="relative" @mouseenter="portfolio=true" @mouseleave="portfolio=false">
+          <button class="flex items-center gap-1 hover:text-amber-400 uppercase">
+            PORTFOLIO <i class="ri-arrow-down-s-line text-amber-400"></i>
+          </button>
+
+          <div x-show="portfolio" x-cloak x-transition
+            class="absolute left-1/2 top-10 -translate-x-1/2 w-52
+                   bg-zinc-900/95 backdrop-blur border border-white/10
+                   rounded-2xl shadow-2xl p-4 space-y-1">
+
+            <a href="{{ route('web-portfolio') }}" class="block px-4 py-2 rounded text-white/80 hover:bg-white/5 hover:text-amber-400 transition-all">Web Portfolio</a>
+            <a href="{{ route('seo-portfolio') }}" class="block px-4 py-2 rounded text-white/80 hover:bg-white/5 hover:text-amber-400 transition-all">SEO Portfolio</a>
+            <a href="{{ route('smo-portfolio') }}" class="block px-4 py-2 rounded text-white/80 hover:bg-white/5 hover:text-amber-400 transition-all">SMO Portfolio</a>
+          </div>
+        </div>
+
         <a href="{{ route('blog') }}" class="hover:text-amber-400">Blog</a>
         <a href="{{ route('clients.list') }}" class="hover:text-amber-400">Clients</a>
         <a href="{{ route('contact') }}" class="hover:text-amber-400">Contact</a>
@@ -326,7 +345,20 @@
         --}}
 
         <a href="{{ route('about') }}">About</a>
-        <a href="{{ route('portfolio') }}">Portfolio</a>
+
+        <!-- MOBILE PORTFOLIO -->
+        <div>
+          <button @click="mobilePortfolio=!mobilePortfolio" class="flex justify-between items-center w-full">
+            <span>Portfolio</span> <i class="ri-arrow-down-s-line" :class="mobilePortfolio && 'rotate-180'"></i>
+          </button>
+
+          <div x-show="mobilePortfolio" x-transition class="pl-4 mt-3 flex flex-col space-y-3 text-white/80">
+            <a href="{{ route('web-portfolio') }}" class="hover:text-amber-400">Web Portfolio</a>
+            <a href="{{ route('seo-portfolio') }}" class="hover:text-amber-400">SEO Portfolio</a>
+            <a href="{{ route('smo-portfolio') }}" class="hover:text-amber-400">SMO Portfolio</a>
+          </div>
+        </div>
+
         <a href="{{ route('blog') }}">Blog</a>
         <a href="{{ route('clients.list') }}">Clients</a>
 

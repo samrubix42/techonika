@@ -1,7 +1,7 @@
 <div>
   <!-- ROOT WRAPPER (REQUIRED) -->
   <div
-    x-data="{ open:false, mega:false, mobileServices:false, packages:false, mobilePackages:false, scrolled:false }"
+    x-data="{ open:false, mega:false, mobileServices:false, packages:false, mobilePackages:false, portfolio:false, mobilePortfolio:false, scrolled:false }"
     x-init="
     window.addEventListener('scroll', () => scrolled = window.scrollY > 60);
     $watch('open', v => document.body.classList.toggle('overflow-hidden', v))
@@ -116,7 +116,35 @@
           </div>
 
           <a wire:navigate href="{{ route('about') }}" class="hover:text-amber-400">About</a>
-          <a wire:navigate href="{{ route('portfolio') }}" class="hover:text-amber-400">Portfolio</a>
+
+          <!-- DESKTOP PORTFOLIO DROPDOWN -->
+          <div class="relative uppercase" @mouseenter="portfolio=true" @mouseleave="portfolio=false">
+            <button class="flex items-center gap-1 hover:text-amber-400 uppercase">
+              Portfolio
+              <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <!-- PORTFOLIO PANEL -->
+            <div
+              x-show="portfolio"
+              x-cloak
+              x-transition
+              class="absolute left-1/2 top-10 -translate-x-1/2
+                 w-[200px] max-w-[95vw]
+                 bg-zinc-900/95 backdrop-blur
+                 border border-white/10
+                 rounded-2xl shadow-2xl p-4 z-50">
+
+              <div class="grid grid-cols-1 gap-2">
+                <a wire:navigate href="{{ route('web-portfolio') }}" class="block p-2 rounded hover:bg-white/5 hover:text-amber-400">Web Portfolio</a>
+                <a wire:navigate href="{{ route('seo-portfolio') }}" class="block p-2 rounded hover:bg-white/5 hover:text-amber-400">SEO Portfolio</a>
+                <a wire:navigate href="{{ route('smo-portfolio') }}" class="block p-2 rounded hover:bg-white/5 hover:text-amber-400">SMO Portfolio</a>
+              </div>
+            </div>
+          </div>
+
           <a wire:navigate href="{{ route('blog') }}" class="hover:text-amber-400">Blog</a>
           <a wire:navigate href="{{ route('clients') }}" class="hover:text-amber-400">Clients</a>
         </nav>
@@ -218,7 +246,27 @@
           </div>
 
           <a wire:navigate href="{{ route('about') }}">About</a>
-          <a wire:navigate href="{{ route('portfolio') }}">Portfolio</a>
+
+          <!-- MOBILE PORTFOLIO -->
+          <div class="mt-2">
+            <button
+              @click="mobilePortfolio = !mobilePortfolio"
+              class="flex items-center justify-between w-full rounded hover:bg-white/10">
+              <span>Portfolio</span>
+              <svg :class="mobilePortfolio && 'rotate-180'"
+                class="w-5 h-5 transition-transform"
+                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <div x-show="mobilePortfolio" x-transition class="pl-4 mt-3 space-y-3">
+              <a wire:navigate href="{{ route('web-portfolio') }}" class="block text-white/90">Web Portfolio</a>
+              <a wire:navigate href="{{ route('seo-portfolio') }}" class="block text-white/90">SEO Portfolio</a>
+              <a wire:navigate href="{{ route('smo-portfolio') }}" class="block text-white/90">SMO Portfolio</a>
+            </div>
+          </div>
+
           <a wire:navigate href="{{ route('blog') }}">Blog</a>
           <a wire:navigate href="{{ route('clients') }}">Clients</a>
 

@@ -147,6 +147,13 @@ class AdminSidebar
                         'hasSubmenu' => false,
                         'submenu' => [],
                     ],
+                    (object)[
+                        'title' => 'SMO Portfolio',
+                        'icon' => 'ti ti-brand-instagram',
+                        'url' => route('admin.smo-portfolio.list'),
+                        'hasSubmenu' => false,
+                        'submenu' => [],
+                    ],
                 ],
             ],
             (object)[
