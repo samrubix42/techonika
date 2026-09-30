@@ -115,7 +115,7 @@ Route::get('/magento-development-agency-india', MagentoDevelopment::class)->name
 Route::get('/php-development',PhpDevelopment::class)->name('php-development');
 Route::get('/symfony-development', App\Livewire\Public\WebDevelopment\SymfonyDevelopment::class)->name('symfony-development');
 Route::get('/yii-development',YiiDevelopment::class)->name('yii-development');
-Route::get('/wix-development',App\Livewire\Public\WebDevelopment\WixDevelopment::class)->name('wix-development');
+Route::get('/wix-development-company-noida',\App\Livewire\Public\WebDevelopment\WixDevelopment::class)->name('wix-development');
 
 //mobile development routes
 Route::get('android-development', AndriodDevelopment::class)->name('android-development');
