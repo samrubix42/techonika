@@ -182,6 +182,7 @@
           </div>
         </div>
 
+        <a href="{{ route('case-studies') }}" class="hover:text-amber-400">Case Studies</a>
         <a href="{{ route('blog') }}" class="hover:text-amber-400">Blog</a>
         <a href="{{ route('clients.list') }}" class="hover:text-amber-400">Clients</a>
         <a href="{{ route('contact') }}" class="hover:text-amber-400">Contact</a>
@@ -359,6 +360,7 @@
           </div>
         </div>
 
+        <a href="{{ route('case-studies') }}">Case Studies</a>
         <a href="{{ route('blog') }}">Blog</a>
         <a href="{{ route('clients.list') }}">Clients</a>
 

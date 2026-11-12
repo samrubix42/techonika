@@ -103,6 +103,8 @@ Route::get('/terms-and-conditions', TermAndCondition::class)->name('terms-condit
 Route::get('/disclaimer', Disclaimer::class)->name('disclaimer');
 Route::get('/branding-agency-in-noida', BrandingIndex::class)->name('branding');
 Route::get('/our-clients', App\Livewire\Public\Client\Clients::class)->name('clients.list');
+Route::get('/case-studies', App\Livewire\Public\CaseStudy\CaseStudies::class)->name('case-studies');
+Route::get('/case-study/{slug}', App\Livewire\Public\CaseStudy\CaseStudyView::class)->name('case-study.view');
 
 //web development routes
 Route::get('laravel-development-company-in-india', LaravelDevelopment::class)->name('laravel-development');
@@ -175,6 +177,12 @@ Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/testimonial', TestimonialList::class)->name('testimonial');
     Route::get('/blog-category', CategoryList::class)->name('blog-category');
     Route::get('/clients', ClientList::class)->name('client');
+
+    // Case Studies
+    Route::get('/case-study-category', App\Livewire\Admin\CaseStudy\CaseStudyCategoryList::class)->name('case-study.category');
+    Route::get('/case-studies', App\Livewire\Admin\CaseStudy\CaseStudyList::class)->name('case-study.list');
+    Route::get('/case-studies/add', App\Livewire\Admin\CaseStudy\AddCaseStudy::class)->name('case-study.add');
+    Route::get('/case-studies/{caseStudy}/edit', App\Livewire\Admin\CaseStudy\UpdateCaseStudy::class)->name('case-study.edit');
 });
 
 

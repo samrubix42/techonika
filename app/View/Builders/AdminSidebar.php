@@ -112,7 +112,29 @@ class AdminSidebar
                         'submenu' => [],
                     ],
                 ],
-            ],  
+            ],
+            (object)[
+                'title' => 'Case Studies',
+                'icon' => 'ti ti-file-analytics',
+                'url' => 'javascript:void(0)',
+                'hasSubmenu' => true,
+                'submenu' => [
+                    (object)[
+                        'title' => 'Case Study Categories',
+                        'icon' => 'ti ti-list',
+                        'url' => route('admin.case-study.category'),
+                        'hasSubmenu' => false,
+                        'submenu' => [],
+                    ],
+                    (object)[
+                        'title' => 'Case Study List',
+                        'icon' => 'ti ti-list-details',
+                        'url' => route('admin.case-study.list'),
+                        'hasSubmenu' => false,
+                        'submenu' => [],
+                    ],
+                ],
+            ],
             (object)[
                 'title' => 'Contacts',
                 'icon' => 'ti ti-mail',

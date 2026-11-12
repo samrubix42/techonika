@@ -21,6 +21,7 @@
                     <ul class="space-y-2 text-gray-400 text-sm">
                         <li><a href="{{ route('about') }}" class="hover:text-white transition">About us</a></li>
                         <li><a href="{{ route('portfolio') }}" class="hover:text-white transition">Portfolio</a></li>
+                        <li><a href="{{ route('case-studies') }}" class="hover:text-white transition">Case Studies</a></li>
                         <li><a href="{{ route('contact') }}" class="hover:text-white transition">Contact</a></li>
                         <li><a href="{{ route('blog') }}" class="hover:text-white transition">Blog</a></li>
                     </ul>
