@@ -39,45 +39,30 @@
 
     <link rel="canonical" href="{{ url()->current() }}" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet">
+    <!-- Fonts (Montserrat is the only text font used) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    </noscript>
 
-    <link
+    <!-- Icons (Remix Icon) - loaded without blocking first paint -->
+    <link rel="preload" as="style"
         href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
-        rel="stylesheet" />
-    <!-- Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css">
+    </noscript>
 
     <!-- Page specific meta -->
     @stack('meta')
 
-    <!-- Styles & Scripts -->
-    @if (file_exists(public_path('build/manifest.json')))
-    @php
-    $manifest = json_decode(file_get_contents(public_path('build/manifest.json')), true);
-    $css = $manifest['resources/css/app.css']['file'] ?? null;
-    $js = $manifest['resources/js/app.js']['file'] ?? null;
-    @endphp
-
-    @if ($css)
-    <link rel="stylesheet" href="{{ asset('build/'.$css) }}">
-    @endif
-
-    @if ($js)
-    <script src="{{ asset('build/'.$js) }}" defer></script>
-    @endif
-    @else
+    <!-- Styles & Scripts (loaded once) -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @endif
-    @vite('resources/css/app.css')
 
     @livewireStyles
 

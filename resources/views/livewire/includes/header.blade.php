@@ -27,8 +27,8 @@
     <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
       <!-- LOGO -->
-      <a href="{{ route('home') }}">
-        <img src="{{ asset('logo.png') }}" class="h-9 md:h-11">
+      <a href="{{ route('home') }}" aria-label="Techonika home">
+        <img src="{{ asset('logo.png') }}" alt="Techonika" width="400" height="110" class="h-9 md:h-11 w-auto">
       </a>
 
       <!-- DESKTOP NAV -->
@@ -200,13 +200,13 @@
       <div class="md:hidden flex items-center gap-3">
 
         <!-- MESSAGE -->
-        <button @click="$dispatch('open-modal', { to: 'contact' })"
+        <button @click="$dispatch('open-modal', { to: 'contact' })" aria-label="Quick enquiry"
           class="w-10 h-10 flex items-center justify-center rounded-full
                  bg-white/10 backdrop-blur border border-white/20 text-amber-400">
           <i class="ri-chat-3-line text-lg"></i>
         </button>
         <!-- MENU -->
-        <button @click="open=true" class="text-amber-400 text-2xl">
+        <button @click="open=true" aria-label="Open menu" class="text-amber-400 text-2xl">
           <i class="ri-menu-4-line"></i>
         </button>
 
@@ -219,7 +219,7 @@
     class="fixed inset-0 z-[999] bg-black md:hidden overflow-y-auto">
 
     <div class="p-6">
-      <button @click="open=false" class="text-white text-2xl mb-8">
+      <button @click="open=false" aria-label="Close menu" class="text-white text-2xl mb-8">
         <i class="ri-close-line"></i>
       </button>
 

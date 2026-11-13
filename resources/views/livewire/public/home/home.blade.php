@@ -264,7 +264,7 @@
                             <span class="text-xl font-bold text-white">4.9</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <img src="{{ asset('images/patners&reviews/google.png') }}" alt="Google" class="h-4 w-4 object-contain">
+                            <img src="{{ asset('images/patners&reviews/google.webp') }}" alt="Google" class="h-4 w-4 object-contain">
                             <span class="text-[11px] text-white/40 font-medium tracking-wide">Google Review</span>
                         </div>
                     </div>
@@ -278,7 +278,7 @@
                             <span class="text-xl font-bold text-white">4.8</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <img src="{{ asset('images/patners&reviews/facebook.png') }}" alt="Facebook" class="h-4 w-4 object-contain">
+                            <img src="{{ asset('images/patners&reviews/facebook.webp') }}" alt="Facebook" class="h-4 w-4 object-contain">
                             <span class="text-[11px] text-white/40 font-medium tracking-wide">Facebook Review</span>
                         </div>
                     </div>
@@ -318,8 +318,8 @@
                            border border-white/10
                            bg-white/5 backdrop-blur">
 
-                        <img
-                            src="{{ asset('images/Revolutionize_Your_Workplace_Office_Digital_Signage_Solutions_for_Modern_Businesses.jpg') }}"
+                        <img loading="lazy" decoding="async"
+                            src="{{ asset('images/Revolutionize_Your_Workplace_Office_Digital_Signage_Solutions_for_Modern_Businesses.webp') }}"
                             alt="Digital Solutions"
                             class="w-full h-full object-cover
                                transition-transform duration-500
@@ -424,21 +424,21 @@
                    rounded-2xl overflow-hidden">
 
                 <template x-for="item in [
-                { title: 'Fashion', desc: 'Digital solutions for fashion brands.', icon: '{{ asset('images/icons/shirt.png') }}' },
-                { title: 'Apparel', desc: 'Custom ecommerce and branding.', icon: '{{ asset('images/icons/dress.png') }}' },
-                { title: 'Businesses', desc: 'Scalable business platforms.', icon: '{{ asset('images/icons/cooperation.png') }}' },
-                { title: 'Jewellery', desc: 'Luxury digital presence.', icon: '{{ asset('images/icons/treasure.png') }}' },
-                { title: 'Healthcare', desc: 'Healthcare-focused solutions.', icon: '{{ asset('images/icons/healthcare.png') }}' },
-                { title: 'Food', desc: 'Online ordering & branding.', icon: '{{ asset('images/icons/fast-food.png') }}' },
-                { title: 'Doctors Clinics', desc: 'Clinic appointment systems.', icon: '{{ asset('images/icons/clinic.png') }}' },
-                { title: 'Real Estate', desc: 'High-converting property platforms.', icon: '{{ asset('images/icons/house.png') }}' },
-                { title: 'Education', desc: 'Digital education platforms.', icon: '{{ asset('images/icons/education.png') }}' },
-                { title: 'Beauty', desc: 'Beauty brand websites.', icon: '{{ asset('images/icons/skin-care.png') }}' },
-                { title: 'Consumer Products', desc: 'Ecommerce-driven growth.', icon: '{{ asset('images/icons/sale.png') }}' },
-                { title: 'Hospitality', desc: 'Hospitality & booking systems.', icon: '{{ asset('images/icons/medical-team.png') }}' },
-                { title: 'Pest Control', desc: 'Lead-focused service websites.', icon: '{{ asset('images/icons/bug-truck.png') }}' },
-                { title: 'Musical Instruments', desc: 'Music ecommerce platforms.', icon: '{{ asset('images/icons/headphones.png') }}' },
-                { title: 'Sports', desc: 'Sports brands & academies.', icon: '{{ asset('images/icons/sports-ball.png') }}' }
+                { title: 'Fashion', desc: 'Digital solutions for fashion brands.', icon: '{{ asset('images/icons/shirt.webp') }}' },
+                { title: 'Apparel', desc: 'Custom ecommerce and branding.', icon: '{{ asset('images/icons/dress.webp') }}' },
+                { title: 'Businesses', desc: 'Scalable business platforms.', icon: '{{ asset('images/icons/cooperation.webp') }}' },
+                { title: 'Jewellery', desc: 'Luxury digital presence.', icon: '{{ asset('images/icons/treasure.webp') }}' },
+                { title: 'Healthcare', desc: 'Healthcare-focused solutions.', icon: '{{ asset('images/icons/healthcare.webp') }}' },
+                { title: 'Food', desc: 'Online ordering & branding.', icon: '{{ asset('images/icons/fast-food.webp') }}' },
+                { title: 'Doctors Clinics', desc: 'Clinic appointment systems.', icon: '{{ asset('images/icons/clinic.webp') }}' },
+                { title: 'Real Estate', desc: 'High-converting property platforms.', icon: '{{ asset('images/icons/house.webp') }}' },
+                { title: 'Education', desc: 'Digital education platforms.', icon: '{{ asset('images/icons/education.webp') }}' },
+                { title: 'Beauty', desc: 'Beauty brand websites.', icon: '{{ asset('images/icons/skin-care.webp') }}' },
+                { title: 'Consumer Products', desc: 'Ecommerce-driven growth.', icon: '{{ asset('images/icons/sale.webp') }}' },
+                { title: 'Hospitality', desc: 'Hospitality & booking systems.', icon: '{{ asset('images/icons/medical-team.webp') }}' },
+                { title: 'Pest Control', desc: 'Lead-focused service websites.', icon: '{{ asset('images/icons/bug-truck.webp') }}' },
+                { title: 'Musical Instruments', desc: 'Music ecommerce platforms.', icon: '{{ asset('images/icons/headphones.webp') }}' },
+                { title: 'Sports', desc: 'Sports brands & academies.', icon: '{{ asset('images/icons/sports-ball.webp') }}' }
             ]" :key="item.title">
 
                     <!-- Card -->
@@ -464,7 +464,7 @@
                                transition-all duration-300"
                             :class="hover ? 'scale-110 bg-primary/20' : 'scale-100'">
 
-                            <img
+                            <img loading="lazy" decoding="async"
                                 :src="item.icon"
                                 alt=""
                                 class="w-6 h-6 sm:w-7 sm:h-7 object-contain">
@@ -601,8 +601,8 @@
                            border border-white/10
                            bg-white/5 backdrop-blur">
 
-                        <img
-                            src="{{ asset('images/men-teamwork-with-gears-induatry-bulb-idea_24877-54770.jpg') }}"
+                        <img loading="lazy" decoding="async"
+                            src="{{ asset('images/men-teamwork-with-gears-induatry-bulb-idea_24877-54770.webp') }}"
                             alt="Best Web Design Company in Noida"
                             class="w-full h-full object-cover
                                scale-105 hover:scale-110
@@ -662,7 +662,7 @@
                    group-hover:bg-white/20
                    transition-all duration-300">
 
-                        <img src="{{ asset('images/tech/shopify.png') }}"
+                        <img loading="lazy" decoding="async" src="{{ asset('images/tech/shopify.webp') }}"
                             alt="Shopify"
                             class="w-6 h-6 object-contain">
                     </span>
@@ -681,7 +681,7 @@
                hover:bg-primary hover:text-black hover:border-primary transition-all">
                     <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
                      bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
-                        <img src="{{ asset('images/tech/react.png') }}" class="w-6 h-6 object-contain">
+                        <img alt="React" loading="lazy" decoding="async" src="{{ asset('images/tech/react.webp') }}" class="w-6 h-6 object-contain">
                     </span>
                     <span>React Development</span>
                 </a>
@@ -695,7 +695,7 @@
                hover:bg-primary hover:text-black hover:border-primary transition-all">
                     <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
                      bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
-                        <img src="{{ asset('images/tech/php.png') }}" class="w-6 h-6 object-contain">
+                        <img alt="PHP" loading="lazy" decoding="async" src="{{ asset('images/tech/php.webp') }}" class="w-6 h-6 object-contain">
                     </span>
                     <span>PHP Development</span>
                 </a>
@@ -709,7 +709,7 @@
                hover:bg-primary hover:text-black hover:border-primary transition-all">
                     <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
                      bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
-                        <img src="{{ asset('images/tech/magento.png') }}" class="w-6 h-6 object-contain">
+                        <img alt="Magento" loading="lazy" decoding="async" src="{{ asset('images/tech/magento.webp') }}" class="w-6 h-6 object-contain">
                     </span>
                     <span>Magento Development</span>
                 </a>
@@ -723,7 +723,7 @@
                hover:bg-primary hover:text-black hover:border-primary transition-all">
                     <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
                      bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
-                        <img src="{{ asset('images/tech/laravel.png') }}" class="w-6 h-6 object-contain">
+                        <img alt="Laravel" loading="lazy" decoding="async" src="{{ asset('images/tech/laravel.webp') }}" class="w-6 h-6 object-contain">
                     </span>
                     <span>Laravel Development</span>
                 </a>
@@ -737,7 +737,7 @@
                hover:bg-primary hover:text-black hover:border-primary transition-all">
                     <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
                      bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
-                        <img src="{{ asset('images/tech/codeigniter.png') }}" class="w-6 h-6 object-contain">
+                        <img alt="CodeIgniter" loading="lazy" decoding="async" src="{{ asset('images/tech/codeigniter.webp') }}" class="w-6 h-6 object-contain">
                     </span>
                     <span>CodeIgniter Development</span>
                 </a>
@@ -751,7 +751,7 @@
                hover:bg-primary hover:text-black hover:border-primary transition-all">
                     <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
                      bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
-                        <img src="{{ asset('images/tech/nodejs.png') }}" class="w-6 h-6 object-contain">
+                        <img alt="Node.js" loading="lazy" decoding="async" src="{{ asset('images/tech/nodejs.webp') }}" class="w-6 h-6 object-contain">
                     </span>
                     <span>MERN Development</span>
                 </a>
@@ -765,7 +765,7 @@
                hover:bg-primary hover:text-black hover:border-primary transition-all">
                     <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
                      bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
-                        <img src="{{ asset('images/tech/native.png') }}" class="w-6 h-6 object-contain">
+                        <img alt="React Native" loading="lazy" decoding="async" src="{{ asset('images/tech/native.webp') }}" class="w-6 h-6 object-contain">
                     </span>
                     <span>Mobile App Development</span>
                 </a>
@@ -779,7 +779,7 @@
                hover:bg-primary hover:text-black hover:border-primary transition-all">
                     <span class="flex items-center justify-center w-10 h-10 sm:w-9 sm:h-9 rounded-full
                      bg-white/10 border border-white/20 group-hover:bg-white/20 transition">
-                        <img src="{{ asset('images/tech/wordpress.png') }}" class="w-6 h-6 object-contain">
+                        <img alt="WordPress" loading="lazy" decoding="async" src="{{ asset('images/tech/wordpress.webp') }}" class="w-6 h-6 object-contain">
                     </span>
                     <span>WordPress Development</span>
                 </a>
@@ -909,7 +909,7 @@
                     <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
                         80+
                     </h3>
-                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
+                    <p class="text-white/80 text-xs sm:text-sm leading-snug">
                         Projects Delivered
                     </p>
                 </div>
@@ -921,7 +921,7 @@
                     <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
                         80+
                     </h3>
-                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
+                    <p class="text-white/80 text-xs sm:text-sm leading-snug">
                         Clients Served
                     </p>
                 </div>
@@ -933,7 +933,7 @@
                     <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
                         15+
                     </h3>
-                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
+                    <p class="text-white/80 text-xs sm:text-sm leading-snug">
                         Ongoing Client Engagements
                     </p>
                 </div>
@@ -945,7 +945,7 @@
                     <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
                         10+
                     </h3>
-                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
+                    <p class="text-white/80 text-xs sm:text-sm leading-snug">
                         Expert Professionals
                     </p>
                 </div>
@@ -958,7 +958,7 @@
                     <h3 class="text-3xl sm:text-4xl font-bold text-primary mb-2">
                         7+
                     </h3>
-                    <p class="text-white/70 text-xs sm:text-sm leading-snug">
+                    <p class="text-white/80 text-xs sm:text-sm leading-snug">
                         Years of Proven Experience
                     </p>
                 </div>
@@ -979,8 +979,8 @@
                            border border-white/10
                            bg-white/5 backdrop-blur">
 
-                        <img
-                            src="{{ asset('images/illustration-man-analyzing-seo_1150725-942.jpg') }}"
+                        <img loading="lazy" decoding="async"
+                            src="{{ asset('images/illustration-man-analyzing-seo_1150725-942.webp') }}"
                             alt="Best SEO Company in Noida"
                             class="w-full h-full object-cover
                                transition-transform duration-700
@@ -1199,7 +1199,7 @@
 
         <!-- Background Section -->
         <section class="relative bg-black py-6 overflow-hidden bg-center bg-no-repeat bg-cover"
-            style="background-image: url('{{ asset('images/lines.png') }}');">
+            style="background-image: url('{{ asset('images/lines.webp') }}');">
 
             <!-- Glow -->
             <div class="absolute top-20 right-0 md:right-20 w-72 h-72 bg-primary opacity-20 rounded-full blur-3xl"></div>
@@ -1458,7 +1458,7 @@
 
                 <div class="flex justify-center">
                     <div class="relative">
-                        <img class="object-cover rounded-full" src="{{asset('images/whychooseus.jpg')}}" alt="">
+                        <img loading="lazy" decoding="async" class="object-cover rounded-full" src="{{asset('images/whychooseus.webp')}}" alt="">
                     </div>
                 </div>
 
@@ -1558,32 +1558,32 @@
                 <!-- DIGITAL MARKETING -->
                 <div x-show="tab==='digital'" x-transition class="grid sm:grid-cols-2 gap-6">
                     <a wire:navigate href="{{ route('content-writing') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-10 " src="{{asset('images/icons/creative-writing.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-10 " src="{{asset('images/icons/creative-writing.webp')}}" alt="">
                         <span>Content Writing & Marketing
                         </span>
                     </a>
                     <a wire:navigate href="{{ route('digital-marketing') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-10 " src="{{asset('images/icons/performance.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-10 " src="{{asset('images/icons/performance.webp')}}" alt="">
                         <span>Performance Marketing
                         </span>
                     </a>
                     <a wire:navigate href="{{ route('ppc-services') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-10 " src="{{asset('images/icons/pay-per-click.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-10 " src="{{asset('images/icons/pay-per-click.webp')}}" alt="">
                         <span>PPC
                         </span>
                     </a>
                     <a wire:navigate href="{{ route('search-engine-optimization') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-10 " src="{{asset('images/icons/search-engine-optimization.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-10 " src="{{asset('images/icons/search-engine-optimization.webp')}}" alt="">
                         <span>SEO (E-commerce, Local)
                         </span>
                     </a>
                     <a wire:navigate href="{{ route('smm-service') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-10 " src="{{asset('images/icons/social-media.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-10 " src="{{asset('images/icons/social-media.webp')}}" alt="">
                         <span>Social Media Marketing
                         </span>
                     </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-10 " src="{{asset('images/icons/artificial-intelligence.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-10 " src="{{asset('images/icons/artificial-intelligence.webp')}}" alt="">
                         <span>AEO / GEO Services
                         </span>
                     </div>
@@ -1593,43 +1593,43 @@
                 <!-- FULL STACK -->
                 <div x-show="tab==='fullstack'" x-transition class="grid sm:grid-cols-2 gap-6">
                     <div class="bg-zinc-600/50 rounded-3xl flex items-center gap-4  text-white px-4 py-3">
-                        <img class="w-auto h-10 " src="{{asset('images/icons/Django.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-10 " src="{{asset('images/icons/Django.webp')}}" alt="">
                         <span>Django</span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white flex items-center gap-4 px-4 py-3">
-                        <img class="w-auto h-10 " src="{{asset('images/icons/mean_logo.svg')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-10 " src="{{asset('images/icons/mean_logo.svg')}}" alt="">
                         <span>MEAN Stack</span>
                     </div>
                     <a wire:navigate href="{{ route('mern-development') }}" class="bg-zinc-600/50 rounded-3xl text-white flex items-center gap-4 px-4 py-3 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-10 rounded-full" src="{{asset('images/icons/mern.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-10 rounded-full" src="{{asset('images/icons/mern.webp')}}" alt="">
                         <span>MERN Stack</span>
                     </a>
                     <a wire:navigate href="{{ route('laravel-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-9" src="{{asset('images/tech/laravel.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/laravel.webp')}}" alt="">
                         <span>Laravel</span>
                     </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/Livewire.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/Livewire.webp')}}" alt="">
                         <span>Livewire</span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/Next.js.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/Next.js.webp')}}" alt="">
                         <span>Next.js</span>
                     </div>
                     <a wire:navigate href="{{ route('angular-web-design') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-9" src="{{asset('images/tech/angular.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/angular.webp')}}" alt="">
                         <span>Angular</span>
                     </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/TypeScript.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/TypeScript.webp')}}" alt="">
                         <span>TypeScript</span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/python.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/python.webp')}}" alt="">
                         <span>Python</span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/langchain.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/langchain.webp')}}" alt="">
                         <span>LangChain(AI)</span>
                     </div>
                 </div>
@@ -1637,32 +1637,32 @@
                 <!-- BACKEND & FRONTEND -->
                 <div x-show="tab==='backend'" x-transition class="grid sm:grid-cols-2 gap-6">
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/nodejs.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/nodejs.webp')}}" alt="">
                         <span>Node.js</span>
                     </div>
                     <a wire:navigate href="{{ route('php-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-9" src="{{asset('images/tech/php.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/php.webp')}}" alt="">
                         <span>PHP</span>
                     </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/GraphQL.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/GraphQL.webp')}}" alt="">
                         <span>GraphQL</span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/Express.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/Express.webp')}}" alt="">
                         <span>Rest API</span>
 
                     </div>
                     <a wire:navigate href="{{ route('reactjs-web-design') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-9" src="{{asset('images/tech/react.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/react.webp')}}" alt="">
                         <span>React.js</span>
                     </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/Tailwind CSS.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/Tailwind CSS.webp')}}" alt="">
                         <span>Tailwind CSS</span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/html.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/html.webp')}}" alt="">
                         <span>HTML/CSS</span>
                     </div>
 
@@ -1671,20 +1671,20 @@
                 <!-- ECOMMERCE -->
                 <div x-show="tab==='ecommerce'" x-transition class="grid sm:grid-cols-2 gap-6">
                     <a wire:navigate href="{{ route('shopify-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-9" src="{{asset('images/tech/shopify.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/shopify.webp')}}" alt="">
                         <span>Shopify</span>
                     </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/Drupal.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/Drupal.webp')}}" alt="">
                         <span>Drupal</span>
                     </div>
                     <a wire:navigate href="{{ route('woo-commerce-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-9" src="{{asset('images/tech/woocommerce.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/woocommerce.webp')}}" alt="">
                         <span>WooCommerce</span>
                     </a>
 
                     <a wire:navigate href="{{ route('wordpress-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-9" src="{{asset('images/tech/wordpress.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/wordpress.webp')}}" alt="">
                         <span>WordPress</span>
                     </a>
 
@@ -1693,23 +1693,23 @@
                 <!-- MOBILE -->
                 <div x-show="tab==='mobile'" x-transition class="grid sm:grid-cols-2 gap-6">
                     <a wire:navigate href="{{ route('react-native-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-9" src="{{asset('images/tech/native.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/native.webp')}}" alt="">
                         <span>React Native</span>
                     </a>
                     <a wire:navigate href="{{ route('flutter-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-9" src="{{asset('images/tech/Flutter.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/Flutter.webp')}}" alt="">
                         <span>Flutter</span>
                     </a>
                     <a wire:navigate href="{{ route('android-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-9" src="{{asset('images/tech/Android.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/Android.webp')}}" alt="">
                         <span>Android</span>
                     </a>
                     <a wire:navigate href="{{ route('ios-development') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-9" src="{{asset('images/tech/ios.jpg')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/ios.webp')}}" alt="">
                         <span>iOS</span>
                     </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/kotlin.jpg')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/kotlin.webp')}}" alt="">
                         <span>Kotlin</span>
                     </div>
                 </div>
@@ -1717,20 +1717,20 @@
                 <!-- DEVOPS -->
                 <div x-show="tab==='devops'" x-transition class="grid sm:grid-cols-2 gap-6">
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/AWS.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/AWS.webp')}}" alt="">
                         <span>AWS</span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/Azure.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/Azure.webp')}}" alt="">
                         <span>Azure</span>
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/Docker.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/Docker.webp')}}" alt="">
                         <span>Docker</span>
                     </div>
 
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/tech/NGINX.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/tech/NGINX.webp')}}" alt="">
                         <span>NGNIX</span>
                     </div>
 
@@ -1739,39 +1739,39 @@
                 <!-- Branding -->
                 <div x-show="tab==='branding'" x-transition class="grid sm:grid-cols-2 gap-6">
                     <a wire:navigate href="{{ route('logo-designing') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-9" src="{{asset('images/icons/illustrator.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/icons/illustrator.webp')}}" alt="">
                         <span>Logo Design
                         </span>
 
                     </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9 mt-2" src="{{asset('images/icons/branding.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9 mt-2" src="{{asset('images/icons/branding.webp')}}" alt="">
                         <span>Brand Identity
                         </span>
                     </div>
                     <a wire:navigate href="{{ route('visit-card-designing') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-9" src="{{asset('images/icons/card.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/icons/card.webp')}}" alt="">
                         <span>Visiting Card Design
                         </span>
                     </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/icons/note.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/icons/note.webp')}}" alt="">
                         <span>Letterhead Design
                         </span>
                     </div>
                     <a wire:navigate href="{{ route('company-profile-designing') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-9" src="{{asset('images/icons/solution.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/icons/solution.webp')}}" alt="">
                         <span>Company Profile Design
                         </span>
                     </a>
 
                     <a wire:navigate href="{{ route('package-designing') }}" class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4 border border-white/10 hover:border-primary/40 hover:bg-white/5 transition">
-                        <img class="w-auto h-9" src="{{asset('images/icons/product-design.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/icons/product-design.webp')}}" alt="">
                         <span>Packaging Design
                         </span>
                     </a>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/icons/cloth.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/icons/cloth.webp')}}" alt="">
                         <span>Banner/Poster Design
                         </span>
                     </div>
@@ -1780,13 +1780,13 @@
                 </div>
                 <div x-show="tab==='testing'" x-transition class="grid sm:grid-cols-2 gap-6">
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9" src="{{asset('images/icons/hand.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9" src="{{asset('images/icons/hand.webp')}}" alt="">
                         <span>Manual Testing
                         </span>
 
                     </div>
                     <div class="bg-zinc-600/50 rounded-3xl text-white px-4 py-3 flex items-center gap-4">
-                        <img class="w-auto h-9 mt-2" src="{{asset('images/icons/effective.png')}}" alt="">
+                        <img loading="lazy" decoding="async" class="w-auto h-9 mt-2" src="{{asset('images/icons/effective.webp')}}" alt="">
                         <span>Automation Testing
                         </span>
                     </div>
@@ -1868,8 +1868,8 @@
                            border border-white/10
                            bg-white/5 backdrop-blur">
 
-                        <img
-                            src="{{asset('images/vector-business-success-growth-green-arrow-chart_1005794-6310.jpg')}}"
+                        <img loading="lazy" decoding="async"
+                            src="{{asset('images/vector-business-success-growth-green-arrow-chart_1005794-6310.webp')}}"
                             alt="Business Growth & Digital Success"
                             class="w-full h-full object-cover
                                transition-transform duration-500
@@ -1925,11 +1925,11 @@
                             <!-- Logos -->
                             <template x-for="i in 2">
                                 <div class="flex gap-16">
-                                    <img src="/clients/6.jpg" class="client-logo" alt="">
-                                    <img src="/clients/7.jpg" class="client-logo" alt="">
-                                    <img src="/clients/8.jpg" class="client-logo" alt="">
-                                    <img src="/clients/9.jpg" class="client-logo" alt="">
-                                    <img src="/clients/10.jpg" class="client-logo" alt="">
+                                    <img loading="lazy" decoding="async" src="/clients/6.jpg" class="client-logo" alt="">
+                                    <img loading="lazy" decoding="async" src="/clients/7.jpg" class="client-logo" alt="">
+                                    <img loading="lazy" decoding="async" src="/clients/8.jpg" class="client-logo" alt="">
+                                    <img loading="lazy" decoding="async" src="/clients/9.jpg" class="client-logo" alt="">
+                                    <img loading="lazy" decoding="async" src="/clients/10.jpg" class="client-logo" alt="">
                                 </div>
                             </template>
                         </div>
@@ -1946,11 +1946,11 @@
 
                             <template x-for="i in 2">
                                 <div class="flex gap-16">
-                                    <img src="/clients/11.jpg" class="client-logo" alt="">
-                                    <img src="/clients/12.jpg" class="client-logo" alt="">
-                                    <img src="/clients/13.jpg" class="client-logo" alt="">
-                                    <img src="/clients/14.jpg" class="client-logo" alt="">
-                                    <img src="/clients/6.jpg" class="client-logo" alt="">
+                                    <img loading="lazy" decoding="async" src="/clients/11.jpg" class="client-logo" alt="">
+                                    <img loading="lazy" decoding="async" src="/clients/12.jpg" class="client-logo" alt="">
+                                    <img loading="lazy" decoding="async" src="/clients/13.jpg" class="client-logo" alt="">
+                                    <img loading="lazy" decoding="async" src="/clients/14.jpg" class="client-logo" alt="">
+                                    <img loading="lazy" decoding="async" src="/clients/6.jpg" class="client-logo" alt="">
                                 </div>
                             </template>
                         </div>
@@ -1967,11 +1967,11 @@
 
                             <template x-for="i in 2">
                                 <div class="flex gap-16">
-                                    <img src="/clients/7.jpg" class="client-logo" alt="">
-                                    <img src="/clients/8.jpg" class="client-logo" alt="">
-                                    <img src="/clients/9.jpg" class="client-logo" alt="">
-                                    <img src="/clients/10.jpg" class="client-logo" alt="">
-                                    <img src="/clients/11.jpg" class="client-logo" alt="">
+                                    <img loading="lazy" decoding="async" src="/clients/7.jpg" class="client-logo" alt="">
+                                    <img loading="lazy" decoding="async" src="/clients/8.jpg" class="client-logo" alt="">
+                                    <img loading="lazy" decoding="async" src="/clients/9.jpg" class="client-logo" alt="">
+                                    <img loading="lazy" decoding="async" src="/clients/10.jpg" class="client-logo" alt="">
+                                    <img loading="lazy" decoding="async" src="/clients/11.jpg" class="client-logo" alt="">
                                 </div>
                             </template>
                         </div>
@@ -2492,12 +2492,16 @@
 
                     <!-- DOTS -->
                     @if($testimonials->count() > 0)
-                    <div class="flex justify-center gap-3 mt-10">
+                    <div class="flex justify-center gap-1 mt-10">
                         <template x-for="(dot, i) in cards" :key="i">
                             <button
+                                type="button"
                                 @click="active = i"
-                                class="w-2.5 h-2.5 rounded-full transition"
-                                :class="active === i ? 'bg-primary' : 'bg-gray-600'">
+                                :aria-label="'Show testimonial ' + (i + 1)"
+                                :aria-current="active === i ? 'true' : 'false'"
+                                class="w-6 h-6 flex items-center justify-center">
+                                <span class="block w-2.5 h-2.5 rounded-full transition"
+                                    :class="active === i ? 'bg-primary' : 'bg-gray-600'"></span>
                             </button>
                         </template>
                     </div>
@@ -2547,8 +2551,8 @@
                         <!-- Glow -->
                         <div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"></div>
 
-                        <img
-                            src="{{ asset('images/2150938426.jpg') }}"
+                        <img loading="lazy" decoding="async"
+                            src="{{ asset('images/2150938426.webp') }}"
                             alt="Commitment to quality"
                             class="relative rounded-3xl border border-white/10
                            shadow-2xl object-cover w-full
@@ -2572,7 +2576,7 @@
                     <div class="relative">
                         <div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"></div>
 
-                        <img
+                        <img loading="lazy" decoding="async"
                             src="{{ asset('images/growth.svg') }}"
                             alt="Let us grow together"
                             class="relative rounded-3xl border border-white/10
