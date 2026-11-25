@@ -4,6 +4,8 @@
     mega:false,
     packages:false,
     portfolio:false,
+    caseStudies:false,
+    mobileCaseStudies:false,
     mobileServices:false,
     mobilePackages:false,
     mobilePortfolio:false,
@@ -182,7 +184,22 @@
             </div>
           </div>
         </div>
-        <a href="{{ route('case-studies') }}" class="hover:text-amber-400">Case Studies</a>
+        <!-- CASE STUDIES DROPDOWN -->
+        <div class="relative" @mouseenter="caseStudies=true" @mouseleave="caseStudies=false">
+          <a href="{{ route('case-studies') }}" class="flex items-center gap-1 hover:text-amber-400 uppercase">
+            Case Studies <i class="ri-arrow-down-s-line text-amber-400"></i>
+          </a>
+
+          <div x-show="caseStudies" x-cloak x-transition
+            class="absolute left-1/2 top-10 -translate-x-1/2 w-56
+                   bg-zinc-900/95 backdrop-blur border border-white/10
+                   rounded-2xl shadow-2xl p-4 space-y-1">
+
+            <a href="{{ route('case-studies', ['category' => 'seo']) }}" class="block px-4 py-2 rounded text-white/80 hover:bg-white/5 hover:text-amber-400 transition-all">SEO</a>
+            <a href="{{ route('case-studies', ['category' => 'smo']) }}" class="block px-4 py-2 rounded text-white/80 hover:bg-white/5 hover:text-amber-400 transition-all">SMO</a>
+            <a href="{{ route('case-studies', ['category' => 'web-development']) }}" class="block px-4 py-2 rounded text-white/80 hover:bg-white/5 hover:text-amber-400 transition-all">Web Development</a>
+          </div>
+        </div>
         <a href="{{ route('blog') }}" class="hover:text-amber-400">Blog</a>
         <a href="{{ route('clients.list') }}" class="hover:text-amber-400">Clients</a>
         <a href="{{ route('contact') }}" class="hover:text-amber-400">Contact</a>
@@ -360,7 +377,19 @@
 
           </div>
         </div>
-        <a href="{{ route('case-studies') }}">Case Studies</a>
+        <!-- MOBILE CASE STUDIES -->
+        <div>
+          <button @click="mobileCaseStudies=!mobileCaseStudies" class="flex justify-between items-center w-full">
+            <span>Case Studies</span> <i class="ri-arrow-down-s-line" :class="mobileCaseStudies && 'rotate-180'"></i>
+          </button>
+
+          <div x-show="mobileCaseStudies" x-transition class="pl-4 mt-3 flex flex-col space-y-3 text-white/80">
+            <a href="{{ route('case-studies') }}" class="hover:text-amber-400">All Case Studies</a>
+            <a href="{{ route('case-studies', ['category' => 'seo']) }}" class="hover:text-amber-400">SEO</a>
+            <a href="{{ route('case-studies', ['category' => 'smo']) }}" class="hover:text-amber-400">SMO</a>
+            <a href="{{ route('case-studies', ['category' => 'web-development']) }}" class="hover:text-amber-400">Web Development</a>
+          </div>
+        </div>
         <a href="{{ route('blog') }}">Blog</a>
         <a href="{{ route('clients.list') }}">Clients</a>
 

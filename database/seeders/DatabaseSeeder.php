@@ -33,7 +33,7 @@ class DatabaseSeeder extends Seeder
         $this->call(\Database\Seeders\TestimonialSeeder::class);
         // Case study categories
         $this->call(\Database\Seeders\CaseStudyCategorySeeder::class);
-        // Case studies
-        $this->call(\Database\Seeders\CaseStudySeeder::class);
+        // Client case studies (SEO + SMO)
+        $this->call(\Database\Seeders\ClientCaseStudySeeder::class);
     }
 }

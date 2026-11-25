@@ -29,7 +29,8 @@ class CaseStudies extends Component
             ->withCount(['caseStudies' => fn ($q) => $q->where('is_active', true)])
             ->orderBy('title')
             ->get()
-            ->filter(fn ($cat) => $cat->case_studies_count > 0)
+            // Hide empty categories, but keep the selected one (e.g. opened from the header dropdown)
+            ->filter(fn ($cat) => $cat->case_studies_count > 0 || $cat->slug === $this->category)
             ->values();
 
         $caseStudies = CaseStudy::with('category')

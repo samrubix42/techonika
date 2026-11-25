@@ -14,9 +14,9 @@ class CaseStudyCategorySeeder extends Seeder
     public function run(): void
     {
         $categories = [
-            'Web Development',
-            'Digital Marketing',
             'SEO',
+            'SMO',
+            'Web Development',
         ];
 
         foreach ($categories as $title) {
